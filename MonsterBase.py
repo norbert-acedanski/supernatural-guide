@@ -261,7 +261,7 @@ class MonsterBase:
 
     def printAllSortedSymptoms(self):
         sortedSymptoms = [None]*len(self.symptoms)
-        print(bcolors.BOLD + bcolors.YELLOW + "\nBase of all symptoms:" + bcolors.ENDC)
+        print(bcolors.BOLD + bcolors.YELLOW + "\nBase of all clues:" + bcolors.ENDC)
         i = 0
         sortedSymptoms = sorted(self.symptoms)
         for symptom in sortedSymptoms:
@@ -269,18 +269,18 @@ class MonsterBase:
             i += 1
 
     def printAllSymptoms(self):
-        print(bcolors.BOLD + bcolors.YELLOW + "\nBase of all symptoms:" + bcolors.ENDC)
+        print(bcolors.BOLD + bcolors.YELLOW + "\nBase of all clues:" + bcolors.ENDC)
         i = 0
         for symptom in self.symptoms:
             print(" »%5d  " % (i + 1) + symptom)
             i += 1
 
     def chooseSymptoms(self):
-        symptoms = input(bcolors.UNDERLINE + "\nChoose symptoms:" + bcolors.ENDC + " ")
+        symptoms = input(bcolors.UNDERLINE + "\nChoose clues:" + bcolors.ENDC + " ")
         symptoms = re.sub('[a-zA-Z,&^%$#@?|/:;"_=]', ' ', symptoms)
         self.chosenSymptoms = [int(symptom) - 1 for symptom in symptoms.split() if (symptom.isdigit() and int(symptom) <= len(self.symptoms))]
         if self.chosenSymptoms == []:
-            print("No symptoms chosen. Try again")
+            print("No clues chosen. Try again")
             self.chooseSymptoms()
 
     def printAllMachtes(self):

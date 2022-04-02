@@ -29,7 +29,7 @@ class Monster:
             print("   " + self.discription)
 
     def printSymptomsBase(self):
-        print(bcolors.YELLOW + "Symptoms:" + bcolors.ENDC)
+        print(bcolors.YELLOW + "Clues:" + bcolors.ENDC)
         if self.symptoms == None:
             print("  »  None found")
         else:

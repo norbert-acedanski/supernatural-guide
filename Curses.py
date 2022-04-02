@@ -16,7 +16,7 @@ class Curse():
         print(bcolors.GREEN + "\n" + self.name + ":" + bcolors.ENDC)
     
     def printSymptomsBase(self):
-        print(bcolors.YELLOW + "Symptoms:" + bcolors.ENDC)
+        print(bcolors.YELLOW + "Clues:" + bcolors.ENDC)
         if self.symptoms != None:
             for symptom in self.symptoms:
                 print("  *  " + symptom)
