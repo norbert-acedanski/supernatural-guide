@@ -50,13 +50,14 @@ def chooseOption():
             print("Choose option from the list...")
             pass
 
-try:
-    baseOfMonsters = MonsterBase()
-    baseOfCurses = CursesBase()
-    chooseOption()
+if __name__ == "__main__":
+    try:
+        baseOfMonsters = MonsterBase()
+        baseOfCurses = CursesBase()
+        chooseOption()
 
-except ValueError as ve:
-    print(traceback.format_exc())
+    except ValueError as ve:
+        print(traceback.format_exc())
 
-except Exception as e:
-    print(traceback.format_exc())
+    except Exception as e:
+        print(traceback.format_exc())
