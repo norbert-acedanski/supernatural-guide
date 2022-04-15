@@ -7,7 +7,7 @@ So I decided to go through all seasons of Supernatural and collect information n
 
 
 # Built With
-Python 3.8.0
+Python 3.9.10
 
 # Getting started
 
