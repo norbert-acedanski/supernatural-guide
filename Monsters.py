@@ -1,66 +1,66 @@
 from Colors import bcolors
 
-class Monster:
-    def __init__(self, name, discription = ""):
-        self.name = name
-        self.discription = discription
-        self.symptoms = None
-        self.killMethods = None
-        self.disableMethods = None
-        self.cureMethods = None
 
-    def symptomsBase(self, symptoms = []):
+class Monster:
+    def __init__(self, name, description =""):
+        self.name = name
+        self.description = description
+        self.symptoms = None
+        self.kill_methods = None
+        self.disable_methods = None
+        self.cure_methods = None
+
+    def symptoms_base(self, symptoms=[]):
         self.symptoms = symptoms
 
-    def killMethodsBase(self, killMethods = []):
-        self.killMethods = killMethods
+    def kill_methods_base(self, kill_methods=[]):
+        self.kill_methods = kill_methods
 
-    def disableMethodsBase(self, disableMethods = []):
-        self.disableMethods = disableMethods
+    def disable_methods_base(self, disable_methods=[]):
+        self.disable_methods = disable_methods
 
-    def cureMethodsBase(self, cureMethods = []):
-        self.cureMethods = cureMethods
+    def cure_methods_base(self, cure_methods=[]):
+        self.cure_methods = cure_methods
 
-    def printName(self):
+    def print_name(self):
         print(bcolors.GREEN + "\n" + self.name + ":" + bcolors.ENDC)
 
-    def printDiscription(self):
-        if self.discription != "":
-            print("   " + self.discription)
+    def print_description(self):
+        if self.description != "":
+            print("   " + self.description)
 
-    def printSymptomsBase(self):
+    def print_symptoms_base(self):
         print(bcolors.YELLOW + "Clues:" + bcolors.ENDC)
-        if self.symptoms == None:
-            print("  »  None found")
-        else:
+        if self.symptoms is not None:
             for symptom in self.symptoms:
                 print("  »  " + symptom)
+        else:
+            print("  »  None found")
 
-    def printDisableMethods(self):
-        if self.disableMethods != None:
+    def print_disable_methods(self):
+        if self.disable_methods is not None:
             print(bcolors.MAGENTA + "Disable Methods:" + bcolors.ENDC)
-            for method in self.disableMethods:
+            for method in self.disable_methods:
                 print("  »  " + method)
 
-    def printKillMethodsBase(self):
+    def print_kill_methods_base(self):
         print(bcolors.RED + "Kill methods:" + bcolors.ENDC)
-        if self.killMethods == None:
-            print("  »  None found")
+        if self.kill_methods is not None:
+            for kill_method in self.kill_methods:
+                print("  »  " + kill_method)
         else:
-            for killMethod in self.killMethods:
-                print("  »  " + killMethod)
+            print("  »  None found")
 
-    def printCureMethodsBase(self):
-        if self.cureMethods != None:
+    def print_cure_methods_base(self):
+        if self.cure_methods is not None:
             print(bcolors.CYAN + "Cure methods:" + bcolors.ENDC)
-            for cure in self.cureMethods:
+            for cure in self.cure_methods:
                 print("  »  " + cure)
 
-
-    def printAll(self):
-        self.printName()
-        self.printDiscription()
-        self.printSymptomsBase()
-        self.printDisableMethods()
-        self.printKillMethodsBase()
-        self.printCureMethodsBase()
+    def print_all(self):
+        self.print_name()
+        self.print_description()
+        self.print_symptoms_base()
+        self.print_disable_methods()
+        self.print_kill_methods_base()
+        self.print_cure_methods_base()
