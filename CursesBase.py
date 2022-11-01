@@ -112,8 +112,7 @@ class CursesBase:
             curse.print_all()
 
     def print_curses_names(self):
-        sorted_curses = [curse.name for curse in self.curses]
-        sorted_curses = sorted(sorted_curses)
+        sorted_curses = sorted([curse.name for curse in self.curses])
         print(bcolors.RED + bcolors.BOLD + "All curses:" + bcolors.ENDC)
         for curse in sorted_curses:
             print(" *  " + curse)

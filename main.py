@@ -25,25 +25,25 @@ def choose_option():
         else:
             chosen_option = -1
         if chosen_option == 1:
-            base_of_monsters.printMonstersNames()
+            base_of_monsters.print_monsters_names()
         elif chosen_option == 2:
-            base_of_monsters.printAllMonsters()
+            base_of_monsters.print_all_monsters()
         elif chosen_option == 3:
-            base_of_monsters.printAllSortedSymptoms()
+            base_of_monsters.print_all_sorted_symptoms()
         elif chosen_option == 4:
-            base_of_monsters.printAllSymptoms()
-            base_of_monsters.chooseSymptoms()
-            base_of_monsters.printAllMachtes()
+            base_of_monsters.print_all_symptoms()
+            base_of_monsters.choose_symptoms()
+            base_of_monsters.print_all_matches()
         elif chosen_option == 5:
-            base_of_curses.printCursesNames()
+            base_of_curses.print_curses_names()
         elif chosen_option == 6:
-            base_of_curses.printAllCurses()
+            base_of_curses.print_all_curses()
         elif chosen_option == 7:
-            base_of_curses.printAllSortedSymptoms()
+            base_of_curses.print_all_sorted_symptoms()
         elif chosen_option == 8:
-            base_of_curses.printAllSymptoms()
-            base_of_curses.chooseSymptoms()
-            base_of_curses.printAllMachtes()
+            base_of_curses.print_all_symptoms()
+            base_of_curses.choose_symptoms()
+            base_of_curses.print_all_matches()
         elif chosen_option == 0:
             print("Thank you for playing with this project!")
         else:
