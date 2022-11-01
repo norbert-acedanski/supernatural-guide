@@ -2,130 +2,118 @@ import re
 from Curses import Curse
 from Colors import bcolors
 
-class CursesBase():
+
+class CursesBase:
     def __init__(self):
         self.symptoms = ["sealed with a kiss", "the last person that got kissed dies (reverse order - first kisses, dies last)", "slow loss of the memory"]
-        self.disableMethod = ["kill the Witch that cursed a person"]
-        self.chosenSymptoms = []
+        self.disable_method = ["kill the Witch that cursed a person"]
+        self.chosen_symptoms = []
         
-        # SESON 1:
+        # SEASON 1:
 
 
 
-        # SESON 3:
+        # SEASON 2:
 
 
 
-        # SESON 3:
+        # SEASON 3:
 
 
 
-        # SESON 4:
+        # SEASON 4:
 
 
 
-        # SESON 5:
+        # SEASON 5:
 
 
 
-        # SESON 6:
+        # SEASON 6:
 
 
 
-        # SESON 7:
+        # SEASON 7:
 
 
 
-        # SESON 8:
+        # SEASON 8:
 
 
 
-        # SESON 9:
+        # SEASON 9:
 
 
 
-        # SESON 10:
+        # SEASON 10:
 
 
 
-        # SESON 11:
+        # SEASON 11:
 
-        self.KissOfDeath = Curse("Kiss of death (Arameic curse)")
-        self.KissOfDeath.symptoms = [self.symptoms[0], self.symptoms[1]]
-        self.KissOfDeath.disableMethods = [self.disableMethod[0]]
+        self.kiss_of_death = Curse("Kiss of death (Arameic curse)")
+        self.kiss_of_death.symptoms = [self.symptoms[0], self.symptoms[1]]
+        self.kiss_of_death.disable_methods = [self.disable_method[0]]
 
-        # SESON 12:
+        # SEASON 12:
 
-        self.MemoryCurse = Curse("Memory curse")
-        self.MemoryCurse.symptoms = [self.symptoms[2]]
-        self.MemoryCurse.disableMethods = [self.disableMethod[0]]
+        self.memory_curse = Curse("Memory curse")
+        self.memory_curse.symptoms = [self.symptoms[2]]
+        self.memory_curse.disable_methods = [self.disable_method[0]]
 
-        # SESON 13:
-
-
-
-        # SESON 14:
+        # SEASON 13:
 
 
 
-        # SESON 15:
+        # SEASON 14:
 
 
 
-        self.Curses = [self.KissOfDeath, self.MemoryCurse]
+        # SEASON 15:
 
-    def printAllSortedSymptoms(self):
-        sortedSymptoms = [None]*len(self.symptoms)
+
+
+        self.curses = [self.kiss_of_death, self.memory_curse]
+
+    def print_all_sorted_symptoms(self):
         print(bcolors.BOLD + bcolors.YELLOW + "\nBase of all clues:" + bcolors.ENDC)
-        i = 0
-        sortedSymptoms = sorted(self.symptoms)
-        for symptom in sortedSymptoms:
-            print(" *%5d  " % (i + 1) + symptom)
-            i += 1
+        sorted_symptoms = sorted(self.symptoms)
+        for symptom_number, symptom in enumerate(sorted_symptoms, 1):
+            print(" *%5d  " % symptom_number + symptom)
 
-    def printAllSymptoms(self):
+    def print_all_symptoms(self):
         print(bcolors.BOLD + bcolors.YELLOW + "\nBase of all clues:" + bcolors.ENDC)
-        i = 0
-        for symptom in self.symptoms:
-            print(" *%5d  " % (i + 1) + symptom)
-            i += 1
+        for symptom_number, symptom in enumerate(self.symptoms, 1):
+            print(" *%5d  " % symptom_number + symptom)
     
-    def chooseSymptoms(self):
+    def choose_symptoms(self):
         symptoms = input(bcolors.UNDERLINE + "\nChoose clues:" + bcolors.ENDC + " ")
         symptoms = re.sub('[a-zA-Z,&^%$#@?|/:;"_=]', ' ', symptoms)
-        self.chosenSymptoms = [int(symptom) - 1 for symptom in symptoms.split() if (symptom.isdigit() and int(symptom) <= len(self.symptoms))]
-        if self.chosenSymptoms == []:
+        self.chosen_symptoms = [int(symptom) - 1 for symptom in symptoms.split() if (symptom.isdigit() and int(symptom) <= len(self.symptoms))]
+        if not self.chosen_symptoms:
             print("No clues chosen. Try again")
-            self.chooseSymptoms()
+            self.choose_symptoms()
 
-    def printAllMachtes(self):
-        curseSymptomList = [None]*len(self.Curses)
-        for curse in range(len(self.Curses)):
-            curseSymptomList[curse] = 0
-        i = 0
-        for curse in self.Curses:
+    def print_all_matches(self):
+        curse_symptom_list = [0] * len(self.curses)
+        for curse_number, curse in enumerate(self.curses):
             if curse.symptoms is not None:
                 for symptom in curse.symptoms:
-                    for choosenSympton in self.chosenSymptoms:
-                        if symptom == self.symptoms[choosenSympton]:
-                            curseSymptomList[i] += 1
-            i += 1
-        for number in range(len(curseSymptomList)):
-            if curseSymptomList[number] != 0:
-                print(bcolors.BOLD + bcolors.BLUE + "\n" + str(curseSymptomList[number]) + "/" + str(len(self.chosenSymptoms)) + " Matches:" + bcolors.ENDC, end=" ")
-                self.Curses[number].printAll()
+                    for chosen_symptom in self.chosen_symptoms:
+                        if symptom == self.symptoms[chosen_symptom]:
+                            curse_symptom_list[curse_number] += 1
+        for curse_number, curse_match_count in enumerate(curse_symptom_list):
+            if curse_match_count != 0:
+                print(bcolors.BOLD + bcolors.BLUE + "\n" + str(curse_match_count) + "/" + str(len(self.chosen_symptoms)) + " Matches:" + bcolors.ENDC, end=" ")
+                self.curses[curse_number].print_all()
 
-    def printAllCurses(self):
-        for curse in self.Curses:
-            curse.printAll()
+    def print_all_curses(self):
+        for curse in self.curses:
+            curse.print_all()
 
-    def printCursesNames(self):
-        sortedCurses = [None]*len(self.Curses)
-        i = 0
-        for curse in self.Curses:
-            sortedCurses[i] = curse.name
-            i += 1
-        sortedCurses = sorted(sortedCurses)
+    def print_curses_names(self):
+        sorted_curses = [curse.name for curse in self.curses]
+        sorted_curses = sorted(sorted_curses)
         print(bcolors.RED + bcolors.BOLD + "All curses:" + bcolors.ENDC)
-        for name in range(len(sortedCurses)):
-            print(" *  " + sortedCurses[name])
+        for curse in sorted_curses:
+            print(" *  " + curse)
