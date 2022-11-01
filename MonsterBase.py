@@ -2,6 +2,7 @@ import re
 from Monsters import Monster
 from Colors import bcolors
 
+
 class MonsterBase:
     def __init__(self):
         self.symptoms = ["ripped throat", "burned eyes of victims", "eyes - black", "weird weather", "blood - black", "burned by holy water", 
@@ -22,7 +23,7 @@ class MonsterBase:
                          "weird fire/spontanious combustion", "Bible burns him", "traveling as a white fog", "eyes - yellow", "invisible dogs", 
                          "goat-man", "biblical-like events (storms, diseases, plagues, power losses)", "empty graves"]
 
-        self.killMethod = ["decapitation", "angel blade", "exorcism", "demon killing knife", "holy oil", "first blade", 
+        self.kill_method = ["decapitation", "angel blade", "exorcism", "demon killing knife", "holy oil", "first blade",
                            "angel sword", "colt of Colt with magic bullets (silver bullets covered with holy oil, mirra and sage than use a spell)", "magic red high heels", "witch-killing brew", "scythe of the death", 
                            "burn salted corps/remains or destroy object that ghost is bound to", "burn it", "silver bullets into the heart", "surviving the curse", "mixture of Angelica root, van-van oil, dust from the crossroads and other put into the walls facing each world side on each floor", 
                            "burn the sacred tree", "copper coin placed under the tongue", "Zanna killing knife", "cut throat", "gold blade", 
@@ -30,287 +31,273 @@ class MonsterBase:
                            "stabing the heart", "will of archangel", "celtic sigil made of blood in the house and in the nest", "The Darkness", "like a human", 
                            "bullet into the head", "lance of the Archangel Michael", "will of Prince of Hell", "will of the Nephilim"]
         
-        self.disableMethod = ["iron bullets/iron in general", "salt/salted bullets", "symbols of Anastasia (anable to cross)", "dead mans blood", "silver/silver bullets", "decapitation", 
+        self.disable_method = ["iron bullets/iron in general", "salt/salted bullets", "symbols of Anastasia (anable to cross)", "dead mans blood", "silver/silver bullets", "decapitation",
                               "Lucyfers cage in hell", "witchcatcher", "all of angels single blow (release of energy)", "celtic imprisonment spell", "symbol made with blood", 
                               "celtic sigit to trap monsters", "holy oil - can't cross it", "dust for hell hounds?", "angel knuckle duster"]
         
-        self.cureMethods = ["coctail made of blood of the vampire that bit the victim", "plasma therapy wit the blood of the warevolf that bit the victim"]
-        self.chosenSymptoms = []
+        self.cure_methods = ["coctail made of blood of the vampire that bit the victim", "plasma therapy wit the blood of the warevolf that bit the victim"]
+        self.chosen_symptoms = []
 
-        # SESON #1:
+        # SEASON #1:
 
-        self.PrinceOfHell = Monster("Prince of Hell (Azazel, Ramiel, Asmodeus, Dagon)", "The oldest of old demons. One generation after Lilith. They were turned by Lucyfer himself before the Atlantis drown. They were trained to be demonic generals in the war against heaven.")
-        self.PrinceOfHell.symptoms = [self.symptoms[12], self.symptoms[3], self.symptoms[64]]
-        self.PrinceOfHell.killMethods = [self.killMethod[7], self.killMethod[27], self.killMethod[29]]
+        self.prince_of_hell = Monster("Prince of Hell (Azazel, Ramiel, Asmodeus, Dagon)", "The oldest of old demons. One generation after Lilith. They were turned by Lucyfer himself before the Atlantis drown. They were trained to be demonic generals in the war against heaven.")
+        self.prince_of_hell.symptoms = [self.symptoms[12], self.symptoms[3], self.symptoms[64]]
+        self.prince_of_hell.kill_methods = [self.kill_method[7], self.kill_method[27], self.kill_method[29]]
 
-        self.WengefulSpirit = Monster("Vengeful Spirit")
-        self.WengefulSpirit.symptoms = [self.symptoms[11], self.symptoms[25], self.symptoms[26], self.symptoms[31], self.symptoms[32], self.symptoms[33], 
-                                        self.symptoms[23], self.symptoms[44],self.symptoms[46], self.symptoms[49], self.symptoms[52]]
-        self.WengefulSpirit.disableMethods = [self.disableMethod[0], self.disableMethod[1]]
-        self.WengefulSpirit.killMethods = [self.killMethod[11]]
+        self.vengeful_spirit = Monster("Vengeful Spirit")
+        self.vengeful_spirit.symptoms = [self.symptoms[11], self.symptoms[25], self.symptoms[26], self.symptoms[31], self.symptoms[32], self.symptoms[33],
+                                         self.symptoms[23], self.symptoms[44], self.symptoms[46], self.symptoms[49], self.symptoms[52]]
+        self.vengeful_spirit.disable_methods = [self.disable_method[0], self.disable_method[1]]
+        self.vengeful_spirit.kill_methods = [self.kill_method[11]]
 
-        self.Wendigo = Monster("Wendigo", "It's a product of a kanibalism.")
-        self.Wendigo.symptoms = [self.symptoms[13], self.symptoms[14], self.symptoms[15], self.symptoms[16], self.symptoms[17], self.symptoms[18]]
-        self.Wendigo.disableMethods = [self.disableMethod[2]]
-        self.Wendigo.killMethods = [self.killMethod[12]]
+        self.wendigo = Monster("Wendigo", "It's a product of a kanibalism.")
+        self.wendigo.symptoms = [self.symptoms[13], self.symptoms[14], self.symptoms[15], self.symptoms[16], self.symptoms[17], self.symptoms[18]]
+        self.wendigo.disable_methods = [self.disable_method[2]]
+        self.wendigo.kill_methods = [self.kill_method[12]]
 
-        self.Demon = Monster("Demon")
-        self.Demon.symptoms = [self.symptoms[2], self.symptoms[4], self.symptoms[5], self.symptoms[6], self.symptoms[9], self.symptoms[23], 
+        self.demon = Monster("Demon")
+        self.demon.symptoms = [self.symptoms[2], self.symptoms[4], self.symptoms[5], self.symptoms[6], self.symptoms[9], self.symptoms[23],
                                self.symptoms[24], self.symptoms[33], self.symptoms[46]]
-        self.Demon.killMethods = [self.killMethod[1], self.killMethod[2], self.killMethod[3], self.killMethod[7], self.killMethod[27], self.killMethod[22]]
+        self.demon.kill_methods = [self.kill_method[1], self.kill_method[2], self.kill_method[3], self.kill_method[7], self.kill_method[27], self.kill_method[22]]
 
-        self.ShapeShifter = Monster("Shape Shifter")
-        self.ShapeShifter.symptoms = [self.symptoms[27], self.symptoms[28], self.symptoms[29], self.symptoms[30]]
-        self.ShapeShifter.killMethods = [self.killMethod[13]]
+        self.shape_shifter = Monster("Shape Shifter")
+        self.shape_shifter.symptoms = [self.symptoms[27], self.symptoms[28], self.symptoms[29], self.symptoms[30]]
+        self.shape_shifter.kill_methods = [self.kill_method[13]]
 
-        self.RevengeCurse = Monster("Revenge Curse")
-        self.RevengeCurse.symptoms = [self.symptoms[11], self.symptoms[46]]
-        self.RevengeCurse.killMethods = [self.killMethod[14]]
+        self.revenge_curse = Monster("Revenge Curse")
+        self.revenge_curse.symptoms = [self.symptoms[11], self.symptoms[46]]
+        self.revenge_curse.kill_methods = [self.kill_method[14]]
 
-        self.Poltergeist = Monster("Poltergeist")
-        self.Poltergeist.symptoms = [self.symptoms[34], self.symptoms[35], self.symptoms[36], self.symptoms[33], self.symptoms[23], self.symptoms[49]]
-        self.Poltergeist.killMethods = [self.killMethod[15]]
+        self.poltergeist = Monster("Poltergeist")
+        self.poltergeist.symptoms = [self.symptoms[34], self.symptoms[35], self.symptoms[36], self.symptoms[33], self.symptoms[23], self.symptoms[49]]
+        self.poltergeist.kill_methods = [self.kill_method[15]]
 
-        self.GodOfNorseVanir = Monster("God Of Norse - Vanir", "Norvegian God of the harvest. Once a year it requires a sacriface in order to maintain prosperity.")
-        self.GodOfNorseVanir.symptoms = [self.symptoms[13], self.symptoms[23], self.symptoms[37]]
-        self.GodOfNorseVanir.killMethods = [self.killMethod[16]]
+        self.god_of_norse_vanir = Monster("God Of Norse - Vanir", "Norvegian God of the harvest. Once a year it requires a sacriface in order to maintain prosperity.")
+        self.god_of_norse_vanir.symptoms = [self.symptoms[13], self.symptoms[23], self.symptoms[37]]
+        self.god_of_norse_vanir.kill_methods = [self.kill_method[16]]
 
-        # SESON 2:
-
-
-
-        # SESON 3:
+        # SEASON 2:
 
 
 
-        # SESON 4:
+        # SEASON 3:
 
 
 
-        # SESON 5:
+        # SEASON 4:
 
 
 
-        # SESON 6:
+        # SEASON 5:
 
 
 
-        # SESON 7:
+        # SEASON 6:
 
 
 
-        # SESON 8:
+        # SEASON 7:
 
 
 
-        # SESON 9:
+        # SEASON 8:
 
 
 
-        # SESON #XX:
+        # SEASON 9:
 
-        self.DemonCrowley = Monster("Demon - King of Hell - Crowley")
-        self.DemonCrowley.symptoms = [self.symptoms[4], self.symptoms[5], self.symptoms[21], self.symptoms[22]]
 
-        self.Warewolf = Monster("Warewolf")
-        self.Warewolf.symptoms = [self.symptoms[38], self.symptoms[40], self.symptoms[42]]
-        self.Warewolf.killMethods = [self.killMethod[13]]
-        self.Warewolf.cureMethods = [self.cureMethods[1]]
 
-        self.Vampire = Monster("Vampire")
-        self.Vampire.symptoms = [self.symptoms[0], self.symptoms[39], self.symptoms[58]]
-        self.Vampire.disableMethods = [self.disableMethod[3]]
-        self.Vampire.killMethods = [self.killMethod[0], self.killMethod[1]]
-        self.Vampire.cureMethods = [self.cureMethods[0]]
+        # SEASON #XX:
 
-        self.Angel = Monster("Angel")
-        self.Angel.symptoms = [self.symptoms[1], self.symptoms[7], self.symptoms[63]]
-        self.Angel.disableMethods = [self.disableMethod[10]]
-        self.Angel.killMethods = [self.killMethod[1], self.killMethod[4], self.killMethod[22], self.killMethod[27], self.killMethod[28]]
+        self.demon_crowley = Monster("Demon - King of Hell - Crowley")
+        self.demon_crowley.symptoms = [self.symptoms[4], self.symptoms[5], self.symptoms[21], self.symptoms[22]]
 
-        self.Cupid = Monster("Cupid")
-        self.Cupid.killMethods = [self.killMethod[1]]
+        self.werewolf = Monster("Warewolf")
+        self.werewolf.symptoms = [self.symptoms[38], self.symptoms[40], self.symptoms[42]]
+        self.werewolf.kill_methods = [self.kill_method[13]]
+        self.werewolf.cure_methods = [self.cure_methods[1]]
 
-        self.ArchangelLucyfer = Monster("Archangel - Lucyfer")
-        self.ArchangelLucyfer.symptoms = [self.symptoms[47], self.symptoms[36], self.symptoms[35], self.symptoms[33], self.symptoms[12], self.symptoms[1], self.symptoms[62], self.symptoms[63]]
-        self.ArchangelLucyfer.disableMethods = [self.disableMethod[6], self.disableMethod[10], self.disableMethod[12], self.disableMethod[14]]
-        self.ArchangelLucyfer.killMethods = [self.killMethod[24]]
+        self.vampire = Monster("Vampire")
+        self.vampire.symptoms = [self.symptoms[0], self.symptoms[39], self.symptoms[58]]
+        self.vampire.disable_methods = [self.disable_method[3]]
+        self.vampire.kill_methods = [self.kill_method[0], self.kill_method[1]]
+        self.vampire.cure_methods = [self.cure_methods[0]]
 
-        self.ArchangelMichael = Monster("Archangel - Michael")
-        self.ArchangelMichael.symptoms = [self.symptoms[63]]
-        self.ArchangelMichael.disableMethods = [self.disableMethod[6],self.disableMethod[10]]
-        self.ArchangelMichael.killMethods = [self.killMethod[24]]
+        self.angel = Monster("Angel")
+        self.angel.symptoms = [self.symptoms[1], self.symptoms[7], self.symptoms[63]]
+        self.angel.disable_methods = [self.disable_method[10]]
+        self.angel.kill_methods = [self.kill_method[1], self.kill_method[4], self.kill_method[22], self.kill_method[27], self.kill_method[28]]
 
-        self.God = Monster("THE God", "The light, the beginning of everything. Brother of the Darkness. A being with almost unlimited power.")
-        self.God.symptoms = [self.symptoms[59]]
-        self.God.killMethods = [self.killMethod[24]]
+        self.cupid = Monster("Cupid")
+        self.cupid.kill_methods = [self.kill_method[1]]
 
-        self.Psychic = Monster("Psychic")
-        self.Psychic.symptoms = [self.symptoms[46]]
-        self.Psychic.killMethods = [self.killMethod[25]]
+        self.archangel_lucyfer = Monster("Archangel - Lucyfer")
+        self.archangel_lucyfer.symptoms = [self.symptoms[47], self.symptoms[36], self.symptoms[35], self.symptoms[33], self.symptoms[12], self.symptoms[1], self.symptoms[62], self.symptoms[63]]
+        self.archangel_lucyfer.disable_methods = [self.disable_method[6], self.disable_method[10], self.disable_method[12], self.disable_method[14]]
+        self.archangel_lucyfer.kill_methods = [self.kill_method[24]]
 
-        self.Thul = Monster("Thul", "Nazi members. Used blood magic to make themselves almost undead.")
-        self.Thul.symptoms = [self.symptoms[61]]
-        self.Thul.killMethods = [self.killMethod[12], self.symptoms[46]]
+        self.archangel_michael = Monster("Archangel - Michael")
+        self.archangel_michael.symptoms = [self.symptoms[63]]
+        self.archangel_michael.disable_methods = [self.disable_method[6], self.disable_method[10]]
+        self.archangel_michael.kill_methods = [self.kill_method[24]]
 
-        self.VampireAlpha = Monster("Vampire Alpha", "First Vampire. All Vampires are descendants of the Alpha.")
-        self.VampireAlpha.killMethods = [self.killMethod[7]]
+        self.god = Monster("THE God", "The light, the beginning of everything. Brother of the Darkness. A being with almost unlimited power.")
+        self.god.symptoms = [self.symptoms[59]]
+        self.god.kill_methods = [self.kill_method[24]]
 
-        self.HellHound = Monster("Hell Hound", "Creation of God, but they were too vicious so God kept them short. Now they hunt people that sold their souls.")
-        self.HellHound.symptoms = [self.symptoms[65]]
-        self.HellHound.killMethods = [self.killMethod[3], self.killMethod[6]]
-        self.HellHound.disableMethods = [self.disableMethod[13]]
+        self.psychic = Monster("Psychic")
+        self.psychic.symptoms = [self.symptoms[46]]
+        self.psychic.kill_methods = [self.kill_method[25]]
 
-        self.Nephilim = Monster("Nephilim", "Child of human and angel/archangel. Human with an angelic grace.")
-        self.Nephilim.symptoms = [self.symptoms[3], self.symptoms[67]]
+        self.thule = Monster("Thule", "Nazi members. Used blood magic to make themselves almost undead.")
+        self.thule.symptoms = [self.symptoms[61]]
+        self.thule.kill_methods = [self.kill_method[12], self.symptoms[46]]
+
+        self.vampire_alpha = Monster("Vampire Alpha", "First Vampire. All Vampires are descendants of the Alpha.")
+        self.vampire_alpha.kill_methods = [self.kill_method[7]]
+
+        self.hell_hound = Monster("Hell Hound", "Creation of God, but they were too vicious so God kept them short. Now they hunt people that sold their souls.")
+        self.hell_hound.symptoms = [self.symptoms[65]]
+        self.hell_hound.kill_methods = [self.kill_method[3], self.kill_method[6]]
+        self.hell_hound.disable_methods = [self.disable_method[13]]
+
+        self.nephilim = Monster("Nephilim", "Child of human and angel/archangel. Human with an angelic grace.")
+        self.nephilim.symptoms = [self.symptoms[3], self.symptoms[67]]
         
-        # SESON #10:
+        # SEASON #10:
 
-        self.AngelWatcher = Monster("Angel Watcher - Grigori")
-        self.AngelWatcher.symptoms = [self.symptoms[8]]
-        self.AngelWatcher.killMethods = [self.killMethod[6]]
+        self.angel_watcher = Monster("Angel Watcher - Grigori")
+        self.angel_watcher.symptoms = [self.symptoms[8]]
+        self.angel_watcher.kill_methods = [self.kill_method[6]]
 
-        self.KnightOfHell = Monster("Knight of hell (Abaddon)")
-        self.KnightOfHell.killMethods = [self.killMethod[5]]
+        self.knight_of_hell = Monster("Knight of hell (Abaddon)")
+        self.knight_of_hell.kill_methods = [self.kill_method[5]]
 
-        self.WitchFromOzz = Monster("Witch from Ozz")
-        self.WitchFromOzz.symptoms = [self.symptoms[10]]
-        self.WitchFromOzz.killMethods = [self.killMethod[8]]
+        self.witch_from_ozz = Monster("Witch from Ozz")
+        self.witch_from_ozz.symptoms = [self.symptoms[10]]
+        self.witch_from_ozz.kill_methods = [self.kill_method[8]]
 
-        self.Witch = Monster("Witch")
-        self.Witch.symptoms = [self.symptoms[11], self.symptoms[42]]
-        self.Witch.disableMethod = [self.disableMethod[7]]
-        self.Witch.killMethods = [self.killMethod[9], self.killMethod[19], self.symptoms[22]]
+        self.witch = Monster("Witch")
+        self.witch.symptoms = [self.symptoms[11], self.symptoms[42]]
+        self.witch.disableMethod = [self.disable_method[7]]
+        self.witch.kill_methods = [self.kill_method[9], self.kill_method[19], self.symptoms[22]]
 
-        self.ReaperDeath = Monster("Reaper - Death")
-        self.ReaperDeath.killMethods = [self.killMethod[10]]
+        self.reaper_death = Monster("Reaper - Death")
+        self.reaper_death.kill_methods = [self.kill_method[10]]
 
-        # SESON 11:
+        # SEASON 11:
 
-        self.Darkness = Monster("Darkness", "Sister of God. He was the light, she is the dark. A being with almost unlimited power.")
-        self.Darkness.symptoms = [self.symptoms[19], self.symptoms[20], self.symptoms[43], self.symptoms[33], self.symptoms[3], self.symptoms[46]]
-        self.Darkness.disableMethod = [self.disableMethod[8]]
+        self.darkness = Monster("Darkness", "Sister of God. He was the light, she is the dark. A being with almost unlimited power.")
+        self.darkness.symptoms = [self.symptoms[19], self.symptoms[20], self.symptoms[43], self.symptoms[33], self.symptoms[3], self.symptoms[46]]
+        self.darkness.disableMethod = [self.disable_method[8]]
 
-        self.Whisper = Monster("Whisper")
-        self.Whisper.symptoms = [self.symptoms[38], self.symptoms[39], self.symptoms[40], self.symptoms[41]]
-        self.Whisper.killMethods = [self.killMethod[0], self.killMethod[13]]
+        self.whisper = Monster("Whisper")
+        self.whisper.symptoms = [self.symptoms[38], self.symptoms[39], self.symptoms[40], self.symptoms[41]]
+        self.whisper.kill_methods = [self.kill_method[0], self.kill_method[13]]
 
-        self.Nachzehrer = Monster("Nachzehrer (Ghul & Vampire) aka Ghulpire")
-        self.Nachzehrer.symptoms = [self.symptoms[28], self.symptoms[29], self.symptoms[30], self.symptoms[32]]
-        self.Nachzehrer.disableMethods = [self.disableMethod[4], self.disableMethod[5]]
-        self.Nachzehrer.killMethods = [self.killMethod[17]]
+        self.nachzehrer = Monster("Nachzehrer (Ghul & Vampire) aka Ghulpire")
+        self.nachzehrer.symptoms = [self.symptoms[28], self.symptoms[29], self.symptoms[30], self.symptoms[32]]
+        self.nachzehrer.disable_methods = [self.disable_method[4], self.disable_method[5]]
+        self.nachzehrer.kill_methods = [self.kill_method[17]]
 
-        self.Zanna = Monster("Zanna", "Invisible entities that help children when they are young. When a child no longer needs leeding Zanna leaves a child.")
-        self.Zanna.symptoms = [self.symptoms[45]]
-        self.Zanna.killMethods = [self.killMethod[18]]
+        self.zanna = Monster("Zanna", "Invisible entities that help children when they are young. When a child no longer needs leeding Zanna leaves a child.")
+        self.zanna.symptoms = [self.symptoms[45]]
+        self.zanna.kill_methods = [self.kill_method[18]]
 
-        self.Banshee = Monster("Banshee")
-        self.Banshee.symptoms = [self.symptoms[23], self.symptoms[35], self.symptoms[48], self.symptoms[49], self.symptoms[50], self.symptoms[51]]
-        self.Banshee.disableMethods = [self.disableMethod[9]]
-        self.Banshee.killMethods = [self.killMethod[20]]
+        self.banshee = Monster("Banshee")
+        self.banshee.symptoms = [self.symptoms[23], self.symptoms[35], self.symptoms[48], self.symptoms[49], self.symptoms[50], self.symptoms[51]]
+        self.banshee.disable_methods = [self.disable_method[9]]
+        self.banshee.kill_methods = [self.kill_method[20]]
 
-        self.Quareen = Monster("Quareen", "Slave creature with bodily form. When curse is layed on a person, Quareen seduces this person as a form of deepest, darkest desire and kills one. The preson that posseses a Quareens heart, commands it.")
-        self.Quareen.symptoms = [self.symptoms[46], self.symptoms[42]]
-        self.Quareen.killMethods = [self.killMethod[21]]
+        self.quareen = Monster("Quareen", "Slave creature with bodily form. When curse is layed on a person, Quareen seduces this person as a form of deepest, darkest desire and kills one. The preson that posseses a Quareens heart, commands it.")
+        self.quareen.symptoms = [self.symptoms[46], self.symptoms[42]]
+        self.quareen.kill_methods = [self.kill_method[21]]
 
-        self.SoulEater = Monster("Soul Eater", "Ghost-like creature existing between worlds. Soul eater moves into a house and makes a nest, which exists outside time and space. The nest feels like a house that a soul eater is in.")
-        self.SoulEater.symptoms = [self.symptoms[23], self.symptoms[34], self.symptoms[35], self.symptoms[49], self.symptoms[52], self.symptoms[53], 
-                                   self.symptoms[54]]
-        self.SoulEater.disableMethods = [self.disableMethod[11]]
-        self.SoulEater.killMethods = [self.killMethod[23]]
+        self.soul_eater = Monster("Soul Eater", "Ghost-like creature existing between worlds. Soul eater moves into a house and makes a nest, which exists outside time and space. The nest feels like a house that a soul eater is in.")
+        self.soul_eater.symptoms = [self.symptoms[23], self.symptoms[34], self.symptoms[35], self.symptoms[49], self.symptoms[52], self.symptoms[53],
+                                    self.symptoms[54]]
+        self.soul_eater.disable_methods = [self.disable_method[11]]
+        self.soul_eater.kill_methods = [self.kill_method[23]]
 
-        self.Bissan = Monster("Bissan", "Spirits of the Cicada. Every 27 years they come out and have orgies. They can't multiply on their own due to a lack of junk so they 'posses' people to do it.")
-        self.Bissan.symptoms = [self.symptoms[55], self.symptoms[13], self.symptoms[56], self.symptoms[57], self.symptoms[34], self.symptoms[58]]
-        self.Bissan.killMethods = [self.killMethod[0]]
+        self.bissan = Monster("Bissan", "Spirits of the Cicada. Every 27 years they come out and have orgies. They can't multiply on their own due to a lack of junk so they 'posses' people to do it.")
+        self.bissan.symptoms = [self.symptoms[55], self.symptoms[13], self.symptoms[56], self.symptoms[57], self.symptoms[34], self.symptoms[58]]
+        self.bissan.kill_methods = [self.kill_method[0]]
 
-        # SESON 12:
+        # SEASON 12:
 
-        self.Myling = Monster("Myling", "Scandinavian children ghost. They vry to bring adaults and kill them.")
-        self.Myling.symptoms = [self.symptoms[60], self.symptoms[46]]
-        self.Myling.killMethods = [self.killMethod[11]]
+        self.myling = Monster("Myling", "Scandinavian children ghost. They vry to bring adaults and kill them.")
+        self.myling.symptoms = [self.symptoms[60], self.symptoms[46]]
+        self.myling.kill_methods = [self.kill_method[11]]
 
-        self.Satyr = Monster("Satyr", "Half man half goat creature from greek mythology. They lead people to the woods to grand orgies. When orgy is over satyr feeds on the victim.")
-        self.Satyr.symptoms = [self.symptoms[11], self.symptoms[66]]
+        self.satyr = Monster("Satyr", "Half man half goat creature from greek mythology. They lead people to the woods to grand orgies. When orgy is over satyr feeds on the victim.")
+        self.satyr.symptoms = [self.symptoms[11], self.symptoms[66]]
 
-        self.Moloch = Monster("Moloch", "God of sacrifice.")
-        self.Moloch.symptoms = [self.symptoms[11], self.symptoms[66]]
-        self.Moloch.killMethods = [self.killMethod[7]]
+        self.moloch = Monster("Moloch", "God of sacrifice.")
+        self.moloch.symptoms = [self.symptoms[11], self.symptoms[66]]
+        self.moloch.kill_methods = [self.kill_method[7]]
 
         # SEZON 13:
 
-        self.Empty = Monster("Empty", "The place (and a cosmic beeing) that angels and demons go to when they die. THE God has no power there.")
+        self.empty = Monster("Empty", "The place (and a cosmic beeing) that angels and demons go to when they die. THE God has no power there.")
 
-        self.Ghul = Monster("Ghul", "Ghul is a creature, that feeds on dead people. It can take the form of a person that it ate.")
-        self.Ghul.symptoms = [self.symptoms[68]]
-        self.Ghul.killMethods = [self.killMethod[0]]
+        self.ghul = Monster("Ghul", "Ghul is a creature, that feeds on dead people. It can take the form of a person that it ate.")
+        self.ghul.symptoms = [self.symptoms[68]]
+        self.ghul.kill_methods = [self.kill_method[0]]
 
-        self.Monsters = [self.PrinceOfHell, self.WengefulSpirit, self.Wendigo, self.Demon, self.ShapeShifter, self.RevengeCurse, 
-                         self.Poltergeist, self.GodOfNorseVanir, 
+        self.monsters = [self.prince_of_hell, self.vengeful_spirit, self.wendigo, self.demon, self.shape_shifter, self.revenge_curse,
+                         self.poltergeist, self.god_of_norse_vanir,
 
-                         self.DemonCrowley, self.Warewolf, self.Vampire, self.Angel, self.Cupid, 
-                         self.ArchangelLucyfer, self.ArchangelMichael, self.God, self.Psychic, self.Thul, 
-                         self.VampireAlpha, self.HellHound, self.Nephilim, 
-                         
-                         self.AngelWatcher, self.KnightOfHell, self.WitchFromOzz, self.Witch, self.ReaperDeath, 
-                         
-                         self.Darkness, self.Whisper, self.Nachzehrer, self.Zanna, self.Banshee, 
-                         self.Quareen, self.SoulEater, self.Bissan, 
-                         
-                         self.Myling, self.Satyr, self.Moloch, 
-                         self.Empty, self.Ghul]
+                         self.demon_crowley, self.werewolf, self.vampire, self.angel, self.cupid,
+                         self.archangel_lucyfer, self.archangel_michael, self.god, self.psychic, self.thule,
+                         self.vampire_alpha, self.hell_hound, self.nephilim,
 
-    def printAllSortedSymptoms(self):
-        sortedSymptoms = [None]*len(self.symptoms)
+                         self.angel_watcher, self.knight_of_hell, self.witch_from_ozz, self.witch, self.reaper_death,
+
+                         self.darkness, self.whisper, self.nachzehrer, self.zanna, self.banshee,
+                         self.quareen, self.soul_eater, self.bissan,
+
+                         self.myling, self.satyr, self.moloch,
+                         self.empty, self.ghul]
+
+    def print_all_sorted_symptoms(self):
         print(bcolors.BOLD + bcolors.YELLOW + "\nBase of all clues:" + bcolors.ENDC)
-        i = 0
-        sortedSymptoms = sorted(self.symptoms)
-        for symptom in sortedSymptoms:
-            print(" »%5d  " % (i + 1) + symptom)
-            i += 1
+        sorted_symptoms = sorted(self.symptoms)
+        for symptom_number, symptom in enumerate(sorted_symptoms, 1):
+            print(" »%5d  " % symptom_number + symptom)
 
-    def printAllSymptoms(self):
+    def print_all_symptoms(self):
         print(bcolors.BOLD + bcolors.YELLOW + "\nBase of all clues:" + bcolors.ENDC)
-        i = 0
-        for symptom in self.symptoms:
-            print(" »%5d  " % (i + 1) + symptom)
-            i += 1
+        for symptom_number, symptom in enumerate(self.symptoms, 1):
+            print(" »%5d  " % symptom_number + symptom)
 
-    def chooseSymptoms(self):
+    def choose_symptoms(self):
         symptoms = input(bcolors.UNDERLINE + "\nChoose clues:" + bcolors.ENDC + " ")
         symptoms = re.sub('[a-zA-Z,&^%$#@?|/:;"_=]', ' ', symptoms)
-        self.chosenSymptoms = [int(symptom) - 1 for symptom in symptoms.split() if (symptom.isdigit() and int(symptom) <= len(self.symptoms))]
-        if self.chosenSymptoms == []:
+        self.chosen_symptoms = [int(symptom) - 1 for symptom in symptoms.split() if (symptom.isdigit() and int(symptom) <= len(self.symptoms))]
+        if not self.chosen_symptoms:
             print("No clues chosen. Try again")
-            self.chooseSymptoms()
+            self.choose_symptoms()
 
-    def printAllMachtes(self):
-        monsterSymptomList = [None]*len(self.Monsters)
-        for monster in range(len(self.Monsters)):
-            monsterSymptomList[monster] = 0
-        i = 0
-        for monster in self.Monsters:
+    def print_all_matches(self):
+        monster_symptom_list = [0]*len(self.monsters)
+        for monster_number, monster in enumerate(self.monsters):
             if monster.symptoms is not None:
                 for symptom in monster.symptoms:
-                    for choosenSympton in self.chosenSymptoms:
-                        if symptom == self.symptoms[choosenSympton]:
-                            monsterSymptomList[i] += 1
-            i += 1
-        for number in range(len(monsterSymptomList)):
-            if monsterSymptomList[number] != 0:
-                print(bcolors.BOLD + bcolors.BLUE + "\n" + str(monsterSymptomList[number]) + "/" + str(len(self.chosenSymptoms)) + " Matches:" + bcolors.ENDC, end=" ")
-                self.Monsters[number].printAll()
+                    for chosen_symptom in self.chosen_symptoms:
+                        if symptom == self.symptoms[chosen_symptom]:
+                            monster_symptom_list[monster_number] += 1
+        for symptom_number, symptom_match_count in enumerate(monster_symptom_list):
+            if symptom_match_count != 0:
+                print(bcolors.BOLD + bcolors.BLUE + "\n" + str(symptom_match_count) + "/" + str(len(self.chosen_symptoms)) + " Matches:" + bcolors.ENDC, end=" ")
+                self.monsters[symptom_number].print_all()
 
-    def printAllMonsters(self):
-        for monster in self.Monsters:
-            monster.printAll()
+    def print_all_monsters(self):
+        for monster in self.monsters:
+            monster.print_all()
 
-    def printMonstersNames(self):
-        sortedMonsters = [None]*len(self.Monsters)
-        i = 0
-        for monster in self.Monsters:
-            sortedMonsters[i] = monster.name
-            i += 1
-        sortedMonsters = sorted(sortedMonsters)
+    def print_monsters_names(self):
+        sorted_monsters = sorted([monster.name for monster in self.monsters])
         print(bcolors.RED + bcolors.BOLD + "All monsters:" + bcolors.ENDC)
-        for name in range(len(sortedMonsters)):
-            print(" »  " + sortedMonsters[name])
+        for monster in sorted_monsters:
+            print(" »  " + monster)
