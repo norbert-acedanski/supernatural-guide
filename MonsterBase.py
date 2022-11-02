@@ -1,5 +1,5 @@
 import re
-from Monsters import Monster
+from monster import Monster
 from colors import Colors
 
 
