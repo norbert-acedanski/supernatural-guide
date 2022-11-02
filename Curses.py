@@ -1,4 +1,4 @@
-from Colors import bcolors
+from Colors import Colors
 
 
 class Curse:
@@ -14,10 +14,10 @@ class Curse:
         self.disable_methods = disable_methods
 
     def print_name(self):
-        print(bcolors.GREEN + "\n" + self.name + ":" + bcolors.ENDC)
+        print(Colors.GREEN + "\n" + self.name + ":" + Colors.ENDC)
     
     def print_symptoms_base(self):
-        print(bcolors.YELLOW + "Clues:" + bcolors.ENDC)
+        print(Colors.YELLOW + "Clues:" + Colors.ENDC)
         if self.symptoms is not None:
             for symptom in self.symptoms:
                 print("  *  " + symptom)
@@ -25,7 +25,7 @@ class Curse:
             print("  *  None found")
 
     def print_disable_methods(self):
-        print(bcolors.MAGENTA + "Disable Methods:" + bcolors.ENDC)
+        print(Colors.MAGENTA + "Disable Methods:" + Colors.ENDC)
         if self.disable_methods is not None:
             for method in self.disable_methods:
                 print("  *  " + method)

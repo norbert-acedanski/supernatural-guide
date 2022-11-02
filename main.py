@@ -2,22 +2,22 @@ import traceback
 import re
 from MonsterBase import MonsterBase
 from CursesBase import CursesBase
-from Colors import bcolors
+from Colors import Colors
 
 
 def choose_option():
     chosen_option = 1
     while chosen_option != 0:
-        print(bcolors.GREEN + bcolors.BOLD + "\nChoose option: " + bcolors.ENDC)
-        print(bcolors.MAGENTA + "1" + bcolors.ENDC + " - print all monster names")
-        print(bcolors.MAGENTA + "2" + bcolors.ENDC + " - print all monsters with their atributes")
-        print(bcolors.MAGENTA + "3" + bcolors.ENDC + " - print all clues of monsters")
-        print(bcolors.MAGENTA + "4" + bcolors.ENDC + " - find matching monster")
-        print(bcolors.MAGENTA + "5" + bcolors.ENDC + " - print all curses names")
-        print(bcolors.MAGENTA + "6" + bcolors.ENDC + " - print all curses with their atributes")
-        print(bcolors.MAGENTA + "7" + bcolors.ENDC + " - print all clues of curses")
-        print(bcolors.MAGENTA + "8" + bcolors.ENDC + " - find matching curse")
-        print(bcolors.MAGENTA + "0" + bcolors.ENDC + " - exit")
+        print(Colors.GREEN + Colors.BOLD + "\nChoose option: " + Colors.ENDC)
+        print(Colors.MAGENTA + "1" + Colors.ENDC + " - print all monster names")
+        print(Colors.MAGENTA + "2" + Colors.ENDC + " - print all monsters with their atributes")
+        print(Colors.MAGENTA + "3" + Colors.ENDC + " - print all clues of monsters")
+        print(Colors.MAGENTA + "4" + Colors.ENDC + " - find matching monster")
+        print(Colors.MAGENTA + "5" + Colors.ENDC + " - print all curses names")
+        print(Colors.MAGENTA + "6" + Colors.ENDC + " - print all curses with their atributes")
+        print(Colors.MAGENTA + "7" + Colors.ENDC + " - print all clues of curses")
+        print(Colors.MAGENTA + "8" + Colors.ENDC + " - find matching curse")
+        print(Colors.MAGENTA + "0" + Colors.ENDC + " - exit")
         chosen_option_str = input()
         chosen_option_str = re.sub('[a-zA-Z,.&^%$#@?|/:;"_=]', '', chosen_option_str)
         if chosen_option_str.isdigit():

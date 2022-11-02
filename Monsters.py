@@ -1,4 +1,4 @@
-from Colors import bcolors
+from Colors import Colors
 
 
 class Monster:
@@ -23,14 +23,14 @@ class Monster:
         self.cure_methods = cure_methods
 
     def print_name(self):
-        print(bcolors.GREEN + "\n" + self.name + ":" + bcolors.ENDC)
+        print(Colors.GREEN + "\n" + self.name + ":" + Colors.ENDC)
 
     def print_description(self):
         if self.description != "":
             print("   " + self.description)
 
     def print_symptoms_base(self):
-        print(bcolors.YELLOW + "Clues:" + bcolors.ENDC)
+        print(Colors.YELLOW + "Clues:" + Colors.ENDC)
         if self.symptoms is not None:
             for symptom in self.symptoms:
                 print("  »  " + symptom)
@@ -39,12 +39,12 @@ class Monster:
 
     def print_disable_methods(self):
         if self.disable_methods is not None:
-            print(bcolors.MAGENTA + "Disable Methods:" + bcolors.ENDC)
+            print(Colors.MAGENTA + "Disable Methods:" + Colors.ENDC)
             for method in self.disable_methods:
                 print("  »  " + method)
 
     def print_kill_methods_base(self):
-        print(bcolors.RED + "Kill methods:" + bcolors.ENDC)
+        print(Colors.RED + "Kill methods:" + Colors.ENDC)
         if self.kill_methods is not None:
             for kill_method in self.kill_methods:
                 print("  »  " + kill_method)
@@ -53,7 +53,7 @@ class Monster:
 
     def print_cure_methods_base(self):
         if self.cure_methods is not None:
-            print(bcolors.CYAN + "Cure methods:" + bcolors.ENDC)
+            print(Colors.CYAN + "Cure methods:" + Colors.ENDC)
             for cure in self.cure_methods:
                 print("  »  " + cure)
 

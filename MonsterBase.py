@@ -1,6 +1,6 @@
 import re
 from Monsters import Monster
-from Colors import bcolors
+from Colors import Colors
 
 
 class MonsterBase:
@@ -261,18 +261,18 @@ class MonsterBase:
                          self.empty, self.ghul]
 
     def print_all_sorted_symptoms(self):
-        print(bcolors.BOLD + bcolors.YELLOW + "\nBase of all clues:" + bcolors.ENDC)
+        print(Colors.BOLD + Colors.YELLOW + "\nBase of all clues:" + Colors.ENDC)
         sorted_symptoms = sorted(self.symptoms)
         for symptom_number, symptom in enumerate(sorted_symptoms, 1):
             print(" »%5d  " % symptom_number + symptom)
 
     def print_all_symptoms(self):
-        print(bcolors.BOLD + bcolors.YELLOW + "\nBase of all clues:" + bcolors.ENDC)
+        print(Colors.BOLD + Colors.YELLOW + "\nBase of all clues:" + Colors.ENDC)
         for symptom_number, symptom in enumerate(self.symptoms, 1):
             print(" »%5d  " % symptom_number + symptom)
 
     def choose_symptoms(self):
-        symptoms = input(bcolors.UNDERLINE + "\nChoose clues:" + bcolors.ENDC + " ")
+        symptoms = input(Colors.UNDERLINE + "\nChoose clues:" + Colors.ENDC + " ")
         symptoms = re.sub('[a-zA-Z,&^%$#@?|/:;"_=]', ' ', symptoms)
         self.chosen_symptoms = [int(symptom) - 1 for symptom in symptoms.split() if (symptom.isdigit() and int(symptom) <= len(self.symptoms))]
         if not self.chosen_symptoms:
@@ -289,7 +289,7 @@ class MonsterBase:
                             monster_symptom_list[monster_number] += 1
         for symptom_number, symptom_match_count in enumerate(monster_symptom_list):
             if symptom_match_count != 0:
-                print(bcolors.BOLD + bcolors.BLUE + "\n" + str(symptom_match_count) + "/" + str(len(self.chosen_symptoms)) + " Matches:" + bcolors.ENDC, end=" ")
+                print(Colors.BOLD + Colors.BLUE + "\n" + str(symptom_match_count) + "/" + str(len(self.chosen_symptoms)) + " Matches:" + Colors.ENDC, end=" ")
                 self.monsters[symptom_number].print_all()
 
     def print_all_monsters(self):
@@ -298,6 +298,6 @@ class MonsterBase:
 
     def print_monsters_names(self):
         sorted_monsters = sorted([monster.name for monster in self.monsters])
-        print(bcolors.RED + bcolors.BOLD + "All monsters:" + bcolors.ENDC)
+        print(Colors.RED + Colors.BOLD + "All monsters:" + Colors.ENDC)
         for monster in sorted_monsters:
             print(" »  " + monster)

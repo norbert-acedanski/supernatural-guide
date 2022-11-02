@@ -1,6 +1,6 @@
 import re
 from Curses import Curse
-from Colors import bcolors
+from Colors import Colors
 
 
 class CursesBase:
@@ -76,18 +76,18 @@ class CursesBase:
         self.curses = [self.kiss_of_death, self.memory_curse]
 
     def print_all_sorted_symptoms(self):
-        print(bcolors.BOLD + bcolors.YELLOW + "\nBase of all clues:" + bcolors.ENDC)
+        print(Colors.BOLD + Colors.YELLOW + "\nBase of all clues:" + Colors.ENDC)
         sorted_symptoms = sorted(self.symptoms)
         for symptom_number, symptom in enumerate(sorted_symptoms, 1):
             print(" *%5d  " % symptom_number + symptom)
 
     def print_all_symptoms(self):
-        print(bcolors.BOLD + bcolors.YELLOW + "\nBase of all clues:" + bcolors.ENDC)
+        print(Colors.BOLD + Colors.YELLOW + "\nBase of all clues:" + Colors.ENDC)
         for symptom_number, symptom in enumerate(self.symptoms, 1):
             print(" *%5d  " % symptom_number + symptom)
     
     def choose_symptoms(self):
-        symptoms = input(bcolors.UNDERLINE + "\nChoose clues:" + bcolors.ENDC + " ")
+        symptoms = input(Colors.UNDERLINE + "\nChoose clues:" + Colors.ENDC + " ")
         symptoms = re.sub('[a-zA-Z,&^%$#@?|/:;"_=]', ' ', symptoms)
         self.chosen_symptoms = [int(symptom) - 1 for symptom in symptoms.split() if (symptom.isdigit() and int(symptom) <= len(self.symptoms))]
         if not self.chosen_symptoms:
@@ -104,7 +104,7 @@ class CursesBase:
                             curse_symptom_list[curse_number] += 1
         for curse_number, curse_match_count in enumerate(curse_symptom_list):
             if curse_match_count != 0:
-                print(bcolors.BOLD + bcolors.BLUE + "\n" + str(curse_match_count) + "/" + str(len(self.chosen_symptoms)) + " Matches:" + bcolors.ENDC, end=" ")
+                print(Colors.BOLD + Colors.BLUE + "\n" + str(curse_match_count) + "/" + str(len(self.chosen_symptoms)) + " Matches:" + Colors.ENDC, end=" ")
                 self.curses[curse_number].print_all()
 
     def print_all_curses(self):
@@ -113,6 +113,6 @@ class CursesBase:
 
     def print_curses_names(self):
         sorted_curses = sorted([curse.name for curse in self.curses])
-        print(bcolors.RED + bcolors.BOLD + "All curses:" + bcolors.ENDC)
+        print(Colors.RED + Colors.BOLD + "All curses:" + Colors.ENDC)
         for curse in sorted_curses:
             print(" *  " + curse)
