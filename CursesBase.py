@@ -1,5 +1,5 @@
 import re
-from Curses import Curse
+from curse import Curse
 from colors import Colors
 
 
