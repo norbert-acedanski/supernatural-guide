@@ -1,6 +1,6 @@
 import traceback
 import re
-from MonsterBase import MonsterBase
+from monsters_base import MonsterBase
 from CursesBase import CursesBase
 from colors import Colors
 
