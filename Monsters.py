@@ -1,4 +1,4 @@
-from Colors import Colors
+from colors import Colors
 
 
 class Monster:

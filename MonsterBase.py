@@ -1,6 +1,6 @@
 import re
 from Monsters import Monster
-from Colors import Colors
+from colors import Colors
 
 
 class MonsterBase:

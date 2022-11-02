@@ -2,7 +2,7 @@ import traceback
 import re
 from MonsterBase import MonsterBase
 from CursesBase import CursesBase
-from Colors import Colors
+from colors import Colors
 
 
 def choose_option():

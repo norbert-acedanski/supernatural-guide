@@ -1,6 +1,6 @@
 import re
 from Curses import Curse
-from Colors import Colors
+from colors import Colors
 
 
 class CursesBase:
