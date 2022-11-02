@@ -59,7 +59,7 @@ class MonstersClues:
     cold_spots = "cold spots"
     feeling_of_something_bad = "feeling of something bad"
     victims_in_coma_fading_and_dying = "victims in coma, fading and dying"
-    junkless_creatures = "junkless creatures"
+    junkless_creature = "junkless creature"
     mutant_pale_creature = "mutant pale creature"
     needle_like_teeth = "needle-like teeth"
     shining_of_magic_neckless = "shining of the magic neckless"
