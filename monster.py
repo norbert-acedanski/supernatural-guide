@@ -2,7 +2,7 @@ from colors import Colors
 
 
 class Monster:
-    def __init__(self, name, description =""):
+    def __init__(self, name, description=""):
         self.name = name
         self.description = description
         self.symptoms = None
@@ -10,16 +10,16 @@ class Monster:
         self.disable_methods = None
         self.cure_methods = None
 
-    def symptoms_base(self, symptoms=[]):
+    def symptoms_base(self, symptoms=None):
         self.symptoms = symptoms
 
-    def kill_methods_base(self, kill_methods=[]):
+    def kill_methods_base(self, kill_methods=None):
         self.kill_methods = kill_methods
 
-    def disable_methods_base(self, disable_methods=[]):
+    def disable_methods_base(self, disable_methods=None):
         self.disable_methods = disable_methods
 
-    def cure_methods_base(self, cure_methods=[]):
+    def cure_methods_base(self, cure_methods=None):
         self.cure_methods = cure_methods
 
     def print_name(self):
