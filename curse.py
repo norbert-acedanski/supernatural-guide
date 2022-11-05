@@ -7,10 +7,10 @@ class Curse:
         self.symptoms = None
         self.disable_methods = None
 
-    def symptoms_base(self, symptoms=[]):
+    def symptoms_base(self, symptoms=None):
         self.symptoms = symptoms
 
-    def disable_methods_base(self, disable_methods=[]):
+    def disable_methods_base(self, disable_methods=None):
         self.disable_methods = disable_methods
 
     def print_name(self):
