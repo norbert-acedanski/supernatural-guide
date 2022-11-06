@@ -70,7 +70,7 @@ class MonsterBase:
         self.black_dog.clues = [MonstersClues.claws, MonstersClues.moves_fast]
 
         self.water_wraith = Monster("Water Wraith", description="Not seen. Only mentioned in S01E03")
-        self.water_wraith.clues = [MonstersClues.controls_water]
+        self.water_wraith.clues = [MonstersClues.can_control_water]
 
         self.demon = Monster("Demon")
         self.demon.clues = [MonstersClues.black_eyes, MonstersClues.black_blood, MonstersClues.burned_by_holy_water,
