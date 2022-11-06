@@ -24,6 +24,7 @@ class MonstersClues:
     missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area = \
         "people missing/dead weirdly, similarly, randomly across a time(weeks/months/years) in the same area"
     missing_or_dead_people_regularly_in_the_same_area = "groups of people missing/dead regularly in the same area"
+    missing_body = "missing body"
     people_burned_on_the_ceiling = "people burned on the ceiling of their house"
     moves_fast = "moves fast"
     strange_roar = "strange roar"
@@ -59,6 +60,7 @@ class MonstersClues:
     ghost_like_creature = "ghost-like creature"
     victims_hear_screams = "victims hear scream"
     victims_hear_children_cry = "victims hear children cry"
+    victims_hear_voices = "victims hear voices"
     cold_spots = "cold spots"
     feeling_of_something_bad = "feeling of something bad"
     victims_in_coma_fading_and_dying = "victims in coma, fading and dying"
@@ -74,6 +76,7 @@ class MonstersClues:
     local_legend_about_somebody_killed_or_died = "local legend about somebody killed/died in the past"
     silent_area = "silent area - not even crickets are heard"
     intelligent = "intelligent"
+    can_control_water = "can control water"
 
 
 class MonstersKillMethods:
@@ -93,6 +96,7 @@ class MonstersKillMethods:
     burn_salted_corpe_or_destroy_object_that_ghost_is_bound_to = \
         "burn salted corps/remains or destroy object that ghost is bound to"
     bring_the_spirit_to_its_crime_place = "bring the spirit to its crime place - for other ghosts to kill it"
+    bring_the_spirit_what_it_wants = "bring the spirit, what it wants (an object of revenge)"
     burn_it = "burn it"
     silver_bullet_into_the_heart = "silver bullet into the heart"
     # bullet_into_the_head = "bullet into the head"  ???

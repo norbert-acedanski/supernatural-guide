@@ -35,19 +35,19 @@ class MonsterBase:
                                       MonstersClues.people_dead_weirdly, MonstersClues.ghost_like_creature,
                                       MonstersClues.weird_electronics_behavior, MonstersClues.weird_things_behavior,
                                       MonstersClues.local_legend_about_somebody_killed_or_died,
-                                      MonstersClues.telekinesis,
+                                      MonstersClues.telekinesis, MonstersClues.invisible_entity,
+                                      MonstersClues.missing_body, MonstersClues.high_strength,
+                                      MonstersClues.can_control_water, MonstersClues.victims_hear_voices,
 
-                                      MonstersClues.objects_seen_in_night_vision, MonstersClues.invisible_entity,
+                                      MonstersClues.objects_seen_in_night_vision,
                                       MonstersClues.summoned_by_saying_bloody_marry_in_front_of_the_mirror,
                                       MonstersClues.ozone_smell,
-                                      MonstersClues.emf, MonstersClues.high_strength, MonstersClues.cold_spots]
-        self.vengeful_spirit.disable_methods = [
+                                      MonstersClues.emf, MonstersClues.cold_spots]
+        self.vengeful_spirit.disable_methods = [MonstersKillMethods.bring_the_spirit_to_its_crime_place,
+                                                MonstersKillMethods.bring_the_spirit_what_it_wants,
                                                 MonstersDisableMethods.iron_or_iron_bullets,
                                                 MonstersDisableMethods.salt_or_salted_bullets]
-        self.vengeful_spirit.kill_methods = [MonstersKillMethods.bring_the_spirit_to_its_crime_place,
-
-                                             MonstersKillMethods.burn_salted_corpe_or_destroy_object_that_ghost_is_bound_to
-                                             ]
+        self.vengeful_spirit.kill_methods = [MonstersKillMethods.burn_salted_corpe_or_destroy_object_that_ghost_is_bound_to]
 
         self.wendigo = Monster("Wendigo", description="Wending in Cree Indian means 'evil, that devours'. "
                                                       "These creatures can live to hundreds of years. "
@@ -68,6 +68,9 @@ class MonsterBase:
 
         self.black_dog = Monster("Black Dog", description="Not seen. Only mentioned in S01E02")
         self.black_dog.clues = [MonstersClues.claws, MonstersClues.moves_fast]
+
+        self.water_wraith = Monster("Water Wraith", description="Not seen. Only mentioned in S01E03")
+        self.water_wraith.clues = [MonstersClues.controls_water]
 
         self.demon = Monster("Demon")
         self.demon.clues = [MonstersClues.black_eyes, MonstersClues.black_blood, MonstersClues.burned_by_holy_water,
