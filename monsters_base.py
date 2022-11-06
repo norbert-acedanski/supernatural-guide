@@ -15,7 +15,7 @@ class MonsterBase:
                              if not key.startswith("__")]
         self.chosen_clues = []
 
-        # SEASON #1:
+        # SEASON 1:
 
         self.prince_of_hell = Monster("Prince of Hell (Azazel, Ramiel, Asmodeus, Dagon)",
                                       description="The oldest of old demons. One generation after Lilith. "
@@ -49,12 +49,25 @@ class MonsterBase:
                                              MonstersKillMethods.burn_salted_corpe_or_destroy_object_that_ghost_is_bound_to
                                              ]
 
-        self.wendigo = Monster("Wendigo", description="It's a product of a cannibalism.")
+        self.wendigo = Monster("Wendigo", description="Wending in Cree Indian means 'evil, that devours'. "
+                                                      "These creatures can live to hundreds of years. "
+                                                      "Each Wendigo was once a man. "
+                                                      "It's a product of a cannibalism - people in "
+                                                      "camps/mineshafts/tribes due to lack of supplies eat others. "
+                                                      "Stores other man as a supply for winters as food.")
         self.wendigo.clues = [MonstersClues.missing_or_dead_people_regularly_in_the_same_area,
-                              MonstersClues.moves_fast, MonstersClues.strange_roar,
-                              MonstersClues.able_to_use_doors, MonstersClues.claws, MonstersClues.mimics_human_voice]
-        self.wendigo.disable_methods = [MonstersDisableMethods.symbols_of_anastasia]
+                              MonstersClues.moves_fast, MonstersClues.strange_roar, MonstersClues.attacks_at_night,
+                              MonstersClues.able_to_use_doors, MonstersClues.intelligent, MonstersClues.claws,
+                              MonstersClues.animal_like_attack, MonstersClues.silent_area, MonstersClues.high_strength,
+                              MonstersClues.mimics_human_voice]
+        self.wendigo.disable_methods = [MonstersDisableMethods.symbols_of_anasazi]
         self.wendigo.kill_methods = [MonstersKillMethods.burn_it]
+
+        self.skinwalker = Monster("Skinwalker", description="Not seen. Only mentioned in S01E02")
+        self.skinwalker.clues = [MonstersClues.claws, MonstersClues.moves_fast]
+
+        self.black_dog = Monster("Black Dog", description="Not seen. Only mentioned in S01E02")
+        self.black_dog.clues = [MonstersClues.claws, MonstersClues.moves_fast]
 
         self.demon = Monster("Demon")
         self.demon.clues = [MonstersClues.black_eyes, MonstersClues.black_blood, MonstersClues.burned_by_holy_water,
@@ -122,7 +135,7 @@ class MonsterBase:
 
 
 
-        # SEASON #XX:
+        # SEASON XX - unknown when:
 
         self.demon_crowley = Monster("Demon - King of Hell - Crowley")
         self.demon_crowley.clues = [MonstersClues.black_blood, MonstersClues.burned_by_holy_water,
@@ -197,7 +210,7 @@ class MonsterBase:
                                                         "Human with an angelic grace.")
         self.nephilim.clues = [MonstersClues.weird_weather, MonstersClues.biblical_like_events]
         
-        # SEASON #10:
+        # SEASON 10:
 
         self.angel_watcher = Monster("Angel Watcher - Grigori")
         self.angel_watcher.clues = [MonstersClues.triangle_wound_with_burns]
@@ -302,7 +315,7 @@ class MonsterBase:
                              MonstersClues.goat_man]
         self.moloch.kill_methods = [MonstersKillMethods.colt_of_colt_with_magic_bullets]
 
-        # SEZON 13:
+        # SEASON 13:
 
         self.empty = Monster("Empty", description="The place (and a cosmic being) that angels "
                                                   "and demons go to when they die. "
@@ -313,20 +326,12 @@ class MonsterBase:
         self.ghoul.clues = [MonstersClues.empty_graves]
         self.ghoul.kill_methods = [MonstersKillMethods.decapitation]
 
-        self.monsters = [self.prince_of_hell, self.vengeful_spirit, self.wendigo, self.demon, self.shape_shifter, self.revenge_curse,
-                         self.poltergeist, self.god_of_norse_vanir,
+        # SEASON 14:
 
-                         self.demon_crowley, self.werewolf, self.vampire, self.angel, self.cupid,
-                         self.archangel_lucyfer, self.archangel_michael, self.god, self.psychic, self.thule,
-                         self.vampire_alpha, self.hell_hound, self.nephilim,
+        # SEASON 15:
 
-                         self.angel_watcher, self.knight_of_hell, self.witch_from_ozz, self.witch, self.reaper_death,
 
-                         self.darkness, self.whisper, self.nachzehrer, self.zanna, self.banshee,
-                         self.quareen, self.soul_eater, self.bissan,
-
-                         self.myling, self.satyr, self.moloch,
-                         self.empty, self.ghoul]
+        self.monsters = [monster for monster in self.__dict__.values() if not isinstance(monster, list)]
 
     def print_all_sorted_clues(self):
         print(Colors.BOLD + Colors.YELLOW + "\nBase of all clues:" + Colors.ENDC)

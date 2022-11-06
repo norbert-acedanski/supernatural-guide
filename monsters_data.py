@@ -27,7 +27,7 @@ class MonstersClues:
     people_burned_on_the_ceiling = "people burned on the ceiling of their house"
     moves_fast = "moves fast"
     strange_roar = "strange roar"
-    able_to_use_doors = "able to use doors (inteligence)"
+    able_to_use_doors = "able to use doors"
     claws = "claws"
     mimics_human_voice = "mimics human voice"
     enormous_black_fog = "enormous black fog"
@@ -48,6 +48,7 @@ class MonstersClues:
     animal_like_attack = "animal-like attack"
     feeding_during_solar_eclipse = "feeding during the solar eclipse"
     feeding_at_night = "feeding at night"
+    attacks_at_night = "attacks at night"
     feeding_on_vulnerable = "feeding on vulnerable"
     missing_heart = "missing heart"
     leaves_soulless_people_behind = "leaving soulless people behind"
@@ -71,6 +72,8 @@ class MonstersClues:
     biblical_like_events = "biblical-like events (storms, diseases, plagues, power losses)"
     empty_graves = "empty graves"
     local_legend_about_somebody_killed_or_died = "local legend about somebody killed/died in the past"
+    silent_area = "silent area - not even crickets are heard"
+    intelligent = "intelligent"
 
 
 class MonstersKillMethods:
@@ -114,7 +117,7 @@ class MonstersDisableMethods:
     iron_or_iron_bullets = "iron bullets/iron in general"
     salt_or_salted_bullets = "salt/salted bullets"
     silver_or_silver_bullets = "silver/silver bullets"
-    symbols_of_anastasia = "symbols of Anastasia - can't cross it"
+    symbols_of_anasazi = "symbols of anasazi - can't cross it"
     holy_oil = "holy oil - can't cross it"
     dead_mans_blood = "dead mans blood"
     decapitation = "decapitation"
