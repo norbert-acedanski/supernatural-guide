@@ -2,7 +2,7 @@ from colors import Colors
 
 
 class Monster:
-    def __init__(self, name, description=""):
+    def __init__(self, name, description=None):
         self.name = name
         self.description = description
         self.clues = None
@@ -26,7 +26,7 @@ class Monster:
         print(Colors.GREEN + "\n" + self.name + ":" + Colors.ENDC)
 
     def print_description(self):
-        if self.description != "":
+        if self.description is not None:
             print("   " + self.description)
 
     def print_clues_base(self):
