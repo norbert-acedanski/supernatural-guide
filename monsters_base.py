@@ -72,12 +72,17 @@ class MonsterBase:
         self.water_wraith = Monster("Water Wraith", description="Not seen. Only mentioned in S01E03")
         self.water_wraith.clues = [MonstersClues.can_control_water]
 
-        self.demon = Monster("Demon")
-        self.demon.clues = [MonstersClues.black_eyes, MonstersClues.black_blood, MonstersClues.burned_by_holy_water,
-                            MonstersClues.sulfur, MonstersClues.travels_as_black_fog, MonstersClues.emf,
-                            MonstersClues.reacts_to_gods_name_in_latin, MonstersClues.telekinesis,
+        self.demon = Monster("Demon", description="In every religion there is information about demonic possessions. "
+                                                  "Demons are man that were stuck in hell for a long time.")
+        self.demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
+                            MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
+                            MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
+
+                            MonstersClues.black_blood, MonstersClues.telekinesis,
                             MonstersClues.people_dead_weirdly]
-        self.demon.kill_methods = [MonstersKillMethods.angel_blade, MonstersKillMethods.exorcism,
+        self.demon.kill_methods = [MonstersKillMethods.exorcism,
+
+                                   MonstersKillMethods.angel_blade,
                                    MonstersKillMethods.demon_killing_knife, MonstersKillMethods.will_of_an_archangel,
                                    MonstersKillMethods.colt_of_colt_with_magic_bullets,
                                    MonstersKillMethods.lance_of_archangel_michael]

@@ -84,7 +84,7 @@ class MonstersKillMethods:
     angel_blade = "angel blade"
     first_blade = "first blade"
     gold_blade = "gold blade"
-    exorcism = "exorcism"
+    exorcism = "exorcism - The Rituale Romanum (sends a demon back to hell for good)"
     demon_killing_knife = "demon killing knife"
     holy_oil = "holy oil"
     angel_sword = "angel sword"
