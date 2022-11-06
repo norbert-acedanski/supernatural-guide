@@ -4,11 +4,11 @@ from colors import Colors
 class Curse:
     def __init__(self, name):
         self.name = name
-        self.symptoms = None
+        self.clues = None
         self.disable_methods = None
 
-    def symptoms_base(self, symptoms=None):
-        self.symptoms = symptoms
+    def clues_base(self, clues=None):
+        self.clues = clues
 
     def disable_methods_base(self, disable_methods=None):
         self.disable_methods = disable_methods
@@ -16,11 +16,11 @@ class Curse:
     def print_name(self):
         print(Colors.GREEN + "\n" + self.name + ":" + Colors.ENDC)
     
-    def print_symptoms_base(self):
+    def print_clues_base(self):
         print(Colors.YELLOW + "Clues:" + Colors.ENDC)
-        if self.symptoms is not None:
-            for symptom in self.symptoms:
-                print("  *  " + symptom)
+        if self.clues is not None:
+            for clue in self.clues:
+                print("  *  " + clue)
         else:
             print("  *  None found")
 
@@ -34,5 +34,5 @@ class Curse:
 
     def print_all(self):
         self.print_name()
-        self.print_symptoms_base()
+        self.print_clues_base()
         self.print_disable_methods()

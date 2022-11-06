@@ -5,9 +5,9 @@ from colors import Colors
 
 class CursesBase:
     def __init__(self):
-        self.symptoms = ["sealed with a kiss", "the last person that got kissed dies (reverse order - first kisses, dies last)", "slow loss of the memory"]
+        self.clues = ["sealed with a kiss", "the last person that got kissed dies (reverse order - first kisses, dies last)", "slow loss of the memory"]
         self.disable_method = ["kill the Witch that cursed a person"]
-        self.chosen_symptoms = []
+        self.chosen_clues = []
         
         # SEASON 1:
 
@@ -52,13 +52,13 @@ class CursesBase:
         # SEASON 11:
 
         self.kiss_of_death = Curse("Kiss of death (Arameic curse)")
-        self.kiss_of_death.symptoms = [self.symptoms[0], self.symptoms[1]]
+        self.kiss_of_death.clues = [self.clues[0], self.clues[1]]
         self.kiss_of_death.disable_methods = [self.disable_method[0]]
 
         # SEASON 12:
 
         self.memory_curse = Curse("Memory curse")
-        self.memory_curse.symptoms = [self.symptoms[2]]
+        self.memory_curse.clues = [self.clues[2]]
         self.memory_curse.disable_methods = [self.disable_method[0]]
 
         # SEASON 13:
@@ -75,36 +75,36 @@ class CursesBase:
 
         self.curses = [self.kiss_of_death, self.memory_curse]
 
-    def print_all_sorted_symptoms(self):
+    def print_all_sorted_clues(self):
         print(Colors.BOLD + Colors.YELLOW + "\nBase of all clues:" + Colors.ENDC)
-        sorted_symptoms = sorted(self.symptoms)
-        for symptom_number, symptom in enumerate(sorted_symptoms, 1):
-            print(" *%5d  " % symptom_number + symptom)
+        sorted_clues = sorted(self.clues)
+        for clue_number, clue in enumerate(sorted_clues, 1):
+            print(" *%5d  " % clue_number + clue)
 
-    def print_all_symptoms(self):
+    def print_all_clues(self):
         print(Colors.BOLD + Colors.YELLOW + "\nBase of all clues:" + Colors.ENDC)
-        for symptom_number, symptom in enumerate(self.symptoms, 1):
-            print(" *%5d  " % symptom_number + symptom)
+        for clue_number, clue in enumerate(self.clues, 1):
+            print(" *%5d  " % clue_number + clue)
     
-    def choose_symptoms(self):
-        symptoms = input(Colors.UNDERLINE + "\nChoose clues:" + Colors.ENDC + " ")
-        symptoms = re.sub('[a-zA-Z,&^%$#@?|/:;"_=]', ' ', symptoms)
-        self.chosen_symptoms = [int(symptom) - 1 for symptom in symptoms.split() if (symptom.isdigit() and int(symptom) <= len(self.symptoms))]
-        if not self.chosen_symptoms:
+    def choose_clues(self):
+        clues = input(Colors.UNDERLINE + "\nChoose clues:" + Colors.ENDC + " ")
+        clues = re.sub('[a-zA-Z,&^%$#@?|/:;"_=]', ' ', clues)
+        self.chosen_clues = [int(clue) - 1 for clue in clues.split() if (clue.isdigit() and int(clue) <= len(self.clues))]
+        if not self.chosen_clues:
             print("No clues chosen. Try again")
-            self.choose_symptoms()
+            self.choose_clues()
 
     def print_all_matches(self):
-        curse_symptom_list = [0] * len(self.curses)
+        curse_clues_list = [0] * len(self.curses)
         for curse_number, curse in enumerate(self.curses):
-            if curse.symptoms is not None:
-                for symptom in curse.symptoms:
-                    for chosen_symptom in self.chosen_symptoms:
-                        if symptom == self.symptoms[chosen_symptom]:
-                            curse_symptom_list[curse_number] += 1
-        for curse_number, curse_match_count in enumerate(curse_symptom_list):
+            if curse.clues is not None:
+                for clue in curse.clues:
+                    for chosen_clue in self.chosen_clues:
+                        if clue == self.clues[chosen_clue]:
+                            curse_clues_list[curse_number] += 1
+        for curse_number, curse_match_count in enumerate(curse_clues_list):
             if curse_match_count != 0:
-                print(Colors.BOLD + Colors.BLUE + "\n" + str(curse_match_count) + "/" + str(len(self.chosen_symptoms)) + " Matches:" + Colors.ENDC, end=" ")
+                print(Colors.BOLD + Colors.BLUE + "\n" + str(curse_match_count) + "/" + str(len(self.chosen_clues)) + " Matches:" + Colors.ENDC, end=" ")
                 self.curses[curse_number].print_all()
 
     def print_all_curses(self):
