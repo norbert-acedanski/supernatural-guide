@@ -21,25 +21,33 @@ class MonsterBase:
                                       description="The oldest of old demons. One generation after Lilith. "
                                                   "They were turned by Lucyfer himself before the Atlantis drown. "
                                                   "They were trained to be demonic generals in the war against heaven.")
-        self.prince_of_hell.clues = [MonstersClues.weird_things_behavior, MonstersClues.people_burned_on_the_ceiling,
+        self.prince_of_hell.clues = [MonstersClues.people_burned_on_the_ceiling,
+
+                                     MonstersClues.weird_things_behavior,
                                      MonstersClues.weird_weather, MonstersClues.yellow_eyes]
-        self.prince_of_hell.kill_methods = [MonstersKillMethods.colt_of_colt_with_magic_bullets,
+        self.prince_of_hell.kill_methods = [
+                                            MonstersKillMethods.colt_of_colt_with_magic_bullets,
                                             MonstersKillMethods.lance_of_archangel_michael,
                                             MonstersKillMethods.will_of_a_nephilim]
 
         self.vengeful_spirit = Monster("Vengeful Spirit")
         self.vengeful_spirit.clues = [MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
-                                      MonstersClues.summoned_by_saying_bloody_marry_in_front_of_the_mirror,
-                                      MonstersClues.objects_seen_in_night_vision, MonstersClues.invisible_entity,
-                                      MonstersClues.ozone_smell, MonstersClues.telekinesis,
-                                      MonstersClues.emf, MonstersClues.high_strength, MonstersClues.cold_spots,
                                       MonstersClues.people_dead_weirdly, MonstersClues.ghost_like_creature,
                                       MonstersClues.weird_electronics_behavior, MonstersClues.weird_things_behavior,
-                                      MonstersClues.local_legend_about_somebody_killed_or_died]
-        self.vengeful_spirit.disable_methods = [MonstersDisableMethods.iron_or_iron_bullets,
+                                      MonstersClues.local_legend_about_somebody_killed_or_died,
+                                      MonstersClues.telekinesis,
+
+                                      MonstersClues.objects_seen_in_night_vision, MonstersClues.invisible_entity,
+                                      MonstersClues.summoned_by_saying_bloody_marry_in_front_of_the_mirror,
+                                      MonstersClues.ozone_smell,
+                                      MonstersClues.emf, MonstersClues.high_strength, MonstersClues.cold_spots]
+        self.vengeful_spirit.disable_methods = [
+                                                MonstersDisableMethods.iron_or_iron_bullets,
                                                 MonstersDisableMethods.salt_or_salted_bullets]
-        self.vengeful_spirit.kill_methods = [MonstersKillMethods.burn_salted_corpe_or_destroy_object_that_ghost_is_bound_to,
-                                             MonstersKillMethods.bring_the_spirit_to_its_crime_place]
+        self.vengeful_spirit.kill_methods = [MonstersKillMethods.bring_the_spirit_to_its_crime_place,
+
+                                             MonstersKillMethods.burn_salted_corpe_or_destroy_object_that_ghost_is_bound_to
+                                             ]
 
         self.wendigo = Monster("Wendigo", description="It's a product of a cannibalism.")
         self.wendigo.clues = [MonstersClues.missing_or_dead_people_regularly_in_the_same_area,
