@@ -90,10 +90,12 @@ class MonsterBase:
                                    MonstersKillMethods.colt_of_colt_with_magic_bullets,
                                    MonstersKillMethods.lance_of_archangel_michael]
 
-        self.shape_shifter = Monster("Shape Shifter")
-        self.shape_shifter.clues = [MonstersClues.being_at_two_places_at_once, MonstersClues.bright_eyes,
-                                    MonstersClues.weird_animal_behavior, MonstersClues.skin_left_behind]
-        self.shape_shifter.kill_methods = [MonstersKillMethods.silver_bullet_into_the_heart]
+        self.shapeshifter = Monster("Shapeshifter", description="These creatures can transform themselves into "
+                                                                "other man or animals.")
+        self.shapeshifter.clues = [MonstersClues.can_take_form_of_other_people, MonstersClues.skin_left_behind,
+                                   MonstersClues.being_at_two_places_at_once, MonstersClues.bright_eyes,
+                                   MonstersClues.weird_animal_behavior, MonstersClues.can_copy_memories_of_other_people]
+        self.shapeshifter.kill_methods = [MonstersKillMethods.silver_bullet_into_the_heart]
 
         self.revenge_curse = Monster("Revenge Curse")
         self.revenge_curse.clues = [MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,

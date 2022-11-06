@@ -37,6 +37,8 @@ class MonstersClues:
     reacts_to_gods_name_in_latin = "reacts to Gods name in latin"
     summoned_by_saying_bloody_marry_in_front_of_the_mirror = "summoned by saying Bloody Marry in front of the mirror"
     objects_seen_in_night_vision = "objects seen in night vision"
+    can_take_form_of_other_people = "can take form of other people"
+    can_copy_memories_of_other_people = "can copy memories of other people"
     being_at_two_places_at_once = "being at 2 places at once"
     skin_left_behind = "skin left behind"
     invisible_entity = "invisible entity"
