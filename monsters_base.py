@@ -30,7 +30,9 @@ class MonsterBase:
                                             MonstersKillMethods.lance_of_archangel_michael,
                                             MonstersKillMethods.will_of_a_nephilim]
 
-        self.vengeful_spirit = Monster("Vengeful Spirit")
+        self.vengeful_spirit = Monster("Vengeful Spirit", description="Appears, when somebody died tragically, "
+                                                                      "committed suicide or was killed. "
+                                                                      "Usually bound to a place or to things.")
         self.vengeful_spirit.clues = [MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                                       MonstersClues.people_dead_weirdly, MonstersClues.ghost_like_creature,
                                       MonstersClues.weird_electronics_behavior, MonstersClues.weird_things_behavior,
@@ -38,16 +40,17 @@ class MonsterBase:
                                       MonstersClues.telekinesis, MonstersClues.invisible_entity,
                                       MonstersClues.missing_body, MonstersClues.high_strength,
                                       MonstersClues.can_control_water, MonstersClues.victims_hear_voices,
-
-                                      MonstersClues.objects_seen_in_night_vision,
                                       MonstersClues.summoned_by_saying_bloody_marry_in_front_of_the_mirror,
+                                      MonstersClues.objects_seen_in_night_vision,
+
                                       MonstersClues.ozone_smell,
                                       MonstersClues.emf, MonstersClues.cold_spots]
         self.vengeful_spirit.disable_methods = [MonstersKillMethods.bring_the_spirit_to_its_crime_place,
                                                 MonstersKillMethods.bring_the_spirit_what_it_wants,
                                                 MonstersDisableMethods.iron_or_iron_bullets,
                                                 MonstersDisableMethods.salt_or_salted_bullets]
-        self.vengeful_spirit.kill_methods = [MonstersKillMethods.burn_salted_corpe_or_destroy_object_that_ghost_is_bound_to]
+        self.vengeful_spirit.kill_methods = [MonstersKillMethods.burn_salted_corpse,
+                                             MonstersKillMethods.destroy_the_object_that_the_ghost_is_bound_to]
 
         self.wendigo = Monster("Wendigo", description="Wending in Cree Indian means 'evil, that devours'. "
                                                       "These creatures can live to hundreds of years. "
@@ -310,7 +313,8 @@ class MonsterBase:
         self.myling = Monster("Myling", description="Scandinavian children ghost. "
                                                     "They try to bring adults and kill them.")
         self.myling.clues = [MonstersClues.victims_hear_children_cry, MonstersClues.people_dead_weirdly]
-        self.myling.kill_methods = [MonstersKillMethods.burn_salted_corpe_or_destroy_object_that_ghost_is_bound_to]
+        self.myling.kill_methods = [MonstersKillMethods.burn_salted_corpse,
+                                    MonstersKillMethods.destroy_the_object_that_the_ghost_is_bound_to]
 
         self.satyr = Monster("Satyr", description="Half man half goat creature from greek mythology. "
                                                   "They lead people to the woods to grand orgies. "

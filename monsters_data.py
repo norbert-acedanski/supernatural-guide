@@ -93,8 +93,8 @@ class MonstersKillMethods:
     magic_red_high_heels = "magic red high heels"
     witch_killing_brew = "witch-killing brew"
     scythe_of_death = "scythe of the death"
-    burn_salted_corpe_or_destroy_object_that_ghost_is_bound_to = \
-        "burn salted corps/remains or destroy object that ghost is bound to"
+    burn_salted_corpse = "burn salted corpse/remains"
+    destroy_the_object_that_the_ghost_is_bound_to = "destroy the object, that the ghost is bound to"
     bring_the_spirit_to_its_crime_place = "bring the spirit to its crime place - for other ghosts to kill it"
     bring_the_spirit_what_it_wants = "bring the spirit, what it wants (an object of revenge)"
     burn_it = "burn it"
