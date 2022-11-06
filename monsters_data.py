@@ -70,6 +70,7 @@ class MonstersClues:
     goat_man = "goat-man"
     biblical_like_events = "biblical-like events (storms, diseases, plagues, power losses)"
     empty_graves = "empty graves"
+    local_legend_about_somebody_killed_or_died = "local legend about somebody killed/died in the past"
 
 
 class MonstersKillMethods:
@@ -88,9 +89,10 @@ class MonstersKillMethods:
     scythe_of_death = "scythe of the death"
     burn_salted_corpe_or_destroy_object_that_ghost_is_bound_to = \
         "burn salted corps/remains or destroy object that ghost is bound to"
+    bring_the_spirit_to_its_crime_place = "bring the spirit to its crime place - for other ghosts to kill it"
     burn_it = "burn it"
     silver_bullet_into_the_heart = "silver bullet into the heart"
-    bullet_into_the_head = "bullet into the head"
+    # bullet_into_the_head = "bullet into the head"  ???
     surviving_the_curse = "surviving the curse"
     angelica_root_mixture = "mixture of Angelica root, van-van oil, dust from the crossroads and other " \
                             "put into the walls facing each world side on each floor"
@@ -104,7 +106,7 @@ class MonstersKillMethods:
     will_of_a_nephilim = "will of a Nephilim"
     celtic_sigil = "celtic sigil made of blood in the house and in the nest"
     the_darkness = "The Darkness"
-    like_any_human = "like any human",
+    like_any_human = "like any human"
     lance_of_archangel_michael = "lance of Archangel Michael"
 
 
