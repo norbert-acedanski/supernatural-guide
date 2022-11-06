@@ -20,7 +20,8 @@ class MonsterBase:
         self.prince_of_hell = Monster("Prince of Hell (Azazel, Ramiel, Asmodeus, Dagon)",
                                       description="The oldest of old demons. One generation after Lilith. "
                                                   "They were turned by Lucyfer himself before the Atlantis drown. "
-                                                  "They were trained to be demonic generals in the war against heaven.")
+                                                  "They were trained to be demonic generals in the war against heaven.",
+                                      episodes={"S01": [1]})
         self.prince_of_hell.clues = [MonstersClues.people_burned_on_the_ceiling,
 
                                      MonstersClues.weird_things_behavior,
@@ -30,9 +31,10 @@ class MonsterBase:
                                             MonstersKillMethods.lance_of_archangel_michael,
                                             MonstersKillMethods.will_of_a_nephilim]
 
-        self.vengeful_spirit = Monster("Vengeful Spirit", description="Appears, when somebody died tragically, "
-                                                                      "committed suicide or was killed. "
-                                                                      "Usually bound to a place or to things.")
+        self.vengeful_spirit = Monster("Vengeful Spirit (Bloody Mary, Hook Man)",
+                                       description="Appears, when somebody died tragically, committed suicide "
+                                                   "or was killed. Usually bound to a place or to things.",
+                                       episodes={"S01": [1, 3, 5, 7]})
         self.vengeful_spirit.clues = [MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                                       MonstersClues.people_dead_weirdly, MonstersClues.ghost_like_creature,
                                       MonstersClues.weird_electronics_behavior, MonstersClues.weird_things_behavior,
@@ -41,9 +43,9 @@ class MonsterBase:
                                       MonstersClues.missing_body, MonstersClues.high_strength,
                                       MonstersClues.can_control_water, MonstersClues.victims_hear_voices,
                                       MonstersClues.summoned_by_saying_bloody_marry_in_front_of_the_mirror,
-                                      MonstersClues.objects_seen_in_night_vision,
-
+                                      MonstersClues.objects_seen_in_night_vision, MonstersClues.weird_noises,
                                       MonstersClues.ozone_smell,
+
                                       MonstersClues.emf, MonstersClues.cold_spots]
         self.vengeful_spirit.disable_methods = [MonstersKillMethods.bring_the_spirit_to_its_crime_place,
                                                 MonstersKillMethods.bring_the_spirit_what_it_wants,
@@ -57,7 +59,8 @@ class MonsterBase:
                                                       "Each Wendigo was once a man. "
                                                       "It's a product of a cannibalism - people in "
                                                       "camps/mineshafts/tribes due to lack of supplies eat others. "
-                                                      "Stores other man as a supply for winters as food.")
+                                                      "Stores other man as a supply for winters as food.",
+                               episodes={"S01": [2]})
         self.wendigo.clues = [MonstersClues.missing_or_dead_people_regularly_in_the_same_area,
                               MonstersClues.moves_fast, MonstersClues.strange_roar, MonstersClues.attacks_at_night,
                               MonstersClues.able_to_use_doors, MonstersClues.intelligent, MonstersClues.claws,
@@ -76,7 +79,8 @@ class MonsterBase:
         self.water_wraith.clues = [MonstersClues.can_control_water]
 
         self.demon = Monster("Demon", description="In every religion there is information about demonic possessions. "
-                                                  "Demons are man that were stuck in hell for a long time.")
+                                                  "Demons are man that were stuck in hell for a long time.",
+                             episodes={"S01": [4]})
         self.demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                             MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                             MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -91,7 +95,8 @@ class MonsterBase:
                                    MonstersKillMethods.lance_of_archangel_michael]
 
         self.shapeshifter = Monster("Shapeshifter", description="These creatures can transform themselves into "
-                                                                "other man or animals.")
+                                                                "other man or animals.",
+                                    episodes={"S01": [6]})
         self.shapeshifter.clues = [MonstersClues.can_take_form_of_other_people, MonstersClues.skin_left_behind,
                                    MonstersClues.being_at_two_places_at_once, MonstersClues.bright_eyes,
                                    MonstersClues.weird_animal_behavior, MonstersClues.can_copy_memories_of_other_people]
