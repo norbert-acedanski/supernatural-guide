@@ -21,6 +21,8 @@ class MonstersClues:
     travels_as_white_fog = "travels as a white fog"
     travels_as_red_fog = "travels as a red fog"
     travels_as_black_green_fog = "travels as a black - green fog"
+    people_acting_weirdly = "people acting weirdly - like not themselves"
+    people_seeing_things = "people seeing things (ghosts, etc.)"
     missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area = \
         "people missing/dead weirdly, similarly, randomly across a time(weeks/months/years) in the same area"
     missing_or_dead_people_regularly_in_the_same_area = "groups of people missing/dead regularly in the same area"
