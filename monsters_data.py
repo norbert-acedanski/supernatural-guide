@@ -45,6 +45,7 @@ class MonstersClues:
     ozone_smell = "ozone smell"
     telekinesis = "telekinesis"
     flashing_lights = "flashing lights"
+    seen_as_fire = "seen as fire"
     seen_as_a_scarecrow = "seen as a scarecrow"
     body_torn_apart = "body torn apart"
     no_blood_in_the_body = "no blood in the body"
@@ -79,6 +80,8 @@ class MonstersClues:
     silent_area = "silent area - not even crickets are heard"
     intelligent = "intelligent"
     can_control_water = "can control water"
+    psychic_abilities = "psychic abilities - knows the past, the future and the present of people or places, " \
+                        "senses energies and spirits"
 
 
 class MonstersKillMethods:
@@ -102,8 +105,8 @@ class MonstersKillMethods:
     burn_it = "burn it"
     silver_bullet_into_the_heart = "silver bullet into the heart"
     # bullet_into_the_head = "bullet into the head"  ???
-    angelica_root_mixture = "mixture of Angelica root, van-van oil, dust from the crossroads and other " \
-                            "put into the walls facing each world side on each floor"
+    angelica_root_mixture = "mixture of Angelica root, Van Van oil, dust from the crossroads and other 'odds and ends' " \
+                            "put into the corners facing each world side on each floor - it purifies the haunted house"
     burn_the_sacred_tree = "burn the sacred tree"
     copper_coin_placed_under_the_tongue = "copper coin placed under the tongue"
     zanna_killing_knife = "Zanna killing knife"

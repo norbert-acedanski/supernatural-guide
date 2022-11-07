@@ -31,10 +31,10 @@ class MonsterBase:
                                             MonstersKillMethods.lance_of_archangel_michael,
                                             MonstersKillMethods.will_of_a_nephilim]
 
-        self.vengeful_spirit = Monster("Vengeful Spirit (Bloody Mary, Hook Man)",
+        self.vengeful_spirit = Monster("Vengeful Spirit or Ghost (Bloody Mary, Hook Man)",
                                        description="Appears, when somebody died tragically, committed suicide "
                                                    "or was killed. Usually bound to a place or to things.",
-                                       episodes={"S01": [1, 3, 5, 7]})
+                                       episodes={"S01": [1, 3, 5, 7, 9]})
         self.vengeful_spirit.clues = [MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                                       MonstersClues.people_dead_weirdly, MonstersClues.ghost_like_creature,
                                       MonstersClues.weird_electronics_behavior, MonstersClues.weird_things_behavior,
@@ -44,7 +44,7 @@ class MonsterBase:
                                       MonstersClues.can_control_water, MonstersClues.victims_hear_voices,
                                       MonstersClues.summoned_by_saying_bloody_marry_in_front_of_the_mirror,
                                       MonstersClues.objects_seen_in_night_vision, MonstersClues.weird_noises,
-                                      MonstersClues.ozone_smell,
+                                      MonstersClues.ozone_smell, MonstersClues.seen_as_fire,
 
                                       MonstersClues.emf, MonstersClues.cold_spots]
         self.vengeful_spirit.disable_methods = [MonstersKillMethods.bring_the_spirit_to_its_crime_place,
@@ -102,10 +102,18 @@ class MonsterBase:
                                    MonstersClues.weird_animal_behavior, MonstersClues.can_copy_memories_of_other_people]
         self.shapeshifter.kill_methods = [MonstersKillMethods.silver_bullet_into_the_heart]
 
-        self.poltergeist = Monster("Poltergeist")
-        self.poltergeist.clues = [MonstersClues.weird_noises, MonstersClues.flashing_lights,
-                                  MonstersClues.weird_things_behavior, MonstersClues.telekinesis, MonstersClues.emf,
-                                  MonstersClues.ghost_like_creature]
+        self.psychic = Monster("Psychic", description="A person, that can read minds, knows past, "
+                                                      "present and future of people or in general. "
+                                                      "Senses energies and spirits also.",
+                               episodes={"S01": [9]})
+        self.psychic.clues = [MonstersClues.psychic_abilities,
+
+                              MonstersClues.people_dead_weirdly]
+        self.psychic.kill_methods = [MonstersKillMethods.like_any_human]
+
+        self.poltergeist = Monster("Poltergeist", episodes={"S01": [9]})
+        self.poltergeist.clues = [MonstersClues.weird_noises, MonstersClues.flashing_lights, MonstersClues.telekinesis,
+                                  MonstersClues.weird_things_behavior]
         self.poltergeist.kill_methods = [MonstersKillMethods.angelica_root_mixture]
 
         self.god_of_norse_vanir = Monster("God Of Norse - Vanir",
@@ -200,10 +208,6 @@ class MonsterBase:
                                                   "Brother of the Darkness. A being with almost unlimited power.")
         self.god.clues = [MonstersClues.shining_of_magic_neckless]
         self.god.kill_methods = [MonstersKillMethods.the_darkness]
-
-        self.psychic = Monster("Psychic")
-        self.psychic.clues = [MonstersClues.people_dead_weirdly]
-        self.psychic.kill_methods = [MonstersKillMethods.like_any_human]
 
         self.thule = Monster("Thule", description="Nazi members. Used blood magic to make themselves almost undead.")
         self.thule.clues = [MonstersClues.weird_fire_spontaneous_combustion]
