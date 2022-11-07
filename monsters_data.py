@@ -102,7 +102,6 @@ class MonstersKillMethods:
     burn_it = "burn it"
     silver_bullet_into_the_heart = "silver bullet into the heart"
     # bullet_into_the_head = "bullet into the head"  ???
-    surviving_the_curse = "surviving the curse"
     angelica_root_mixture = "mixture of Angelica root, van-van oil, dust from the crossroads and other " \
                             "put into the walls facing each world side on each floor"
     burn_the_sacred_tree = "burn the sacred tree"

@@ -102,11 +102,6 @@ class MonsterBase:
                                    MonstersClues.weird_animal_behavior, MonstersClues.can_copy_memories_of_other_people]
         self.shapeshifter.kill_methods = [MonstersKillMethods.silver_bullet_into_the_heart]
 
-        self.revenge_curse = Monster("Revenge Curse")
-        self.revenge_curse.clues = [MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
-                                    MonstersClues.people_dead_weirdly]
-        self.revenge_curse.kill_methods = [MonstersKillMethods.surviving_the_curse]
-
         self.poltergeist = Monster("Poltergeist")
         self.poltergeist.clues = [MonstersClues.weird_noises, MonstersClues.flashing_lights,
                                   MonstersClues.weird_things_behavior, MonstersClues.telekinesis, MonstersClues.emf,
@@ -350,7 +345,7 @@ class MonsterBase:
         # SEASON 15:
 
 
-        self.monsters = [monster for monster in self.__dict__.values() if not isinstance(monster, list)]
+        self.monsters = [monster for monster in self.__dict__.values() if isinstance(monster, Monster)]
 
     def print_all_sorted_clues(self):
         print(Colors.BOLD + Colors.YELLOW + "\nBase of all clues:" + Colors.ENDC)
