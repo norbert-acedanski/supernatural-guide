@@ -1,16 +1,26 @@
 import re
 from curse import Curse
+from curses_data import CursesClues, CursesDisableMethods
 from colors import Colors
 
 
 class CursesBase:
     def __init__(self):
-        self.clues = ["sealed with a kiss", "the last person that got kissed dies (reverse order - first kisses, dies last)", "slow loss of the memory"]
-        self.disable_method = ["kill the Witch that cursed a person"]
+        self.clues = [clue for key, clue in list(CursesClues.__dict__.items()) if not key.startswith("__")]
+        self.disable_methods = [d_method for key, d_method in list(CursesDisableMethods.__dict__.items())
+                                if not key.startswith("__")]
         self.chosen_clues = []
         
         # SEASON 1:
 
+        self.revenge_curse = Curse("Revenge Curse", description="Casted by Chief of the Village of Native Americans "
+                                                                "in Atoka Valley. Chief said, that no white man would "
+                                                                "ever tarnish this land again. Nature would rise up "
+                                                                "and protect the valley.",
+                                   episodes={"E01": [8]})
+        self.revenge_curse.clues = [CursesClues.missing_or_dead_people_regularly_in_the_same_area,
+                                    CursesClues.people_dead_weirdly, CursesClues.weird_animal_behavior]
+        self.revenge_curse.kill_methods = [CursesDisableMethods.surviving_the_curse]
 
 
         # SEASON 2:
@@ -51,15 +61,15 @@ class CursesBase:
 
         # SEASON 11:
 
-        self.kiss_of_death = Curse("Kiss of death (Arameic curse)")
-        self.kiss_of_death.clues = [self.clues[0], self.clues[1]]
-        self.kiss_of_death.disable_methods = [self.disable_method[0]]
+        self.kiss_of_death = Curse("Kiss of death (Aramaic curse)")
+        self.kiss_of_death.clues = [CursesClues.sealed_with_a_kiss, CursesClues.the_last_person_that_got_kissed_dies]
+        self.kiss_of_death.disable_methods = [CursesDisableMethods.kill_the_witch_that_cursed_a_person]
 
         # SEASON 12:
 
         self.memory_curse = Curse("Memory curse")
-        self.memory_curse.clues = [self.clues[2]]
-        self.memory_curse.disable_methods = [self.disable_method[0]]
+        self.memory_curse.clues = [CursesClues.slow_loss_of_the_memory]
+        self.memory_curse.disable_methods = [CursesDisableMethods.kill_the_witch_that_cursed_a_person]
 
         # SEASON 13:
 
@@ -73,7 +83,7 @@ class CursesBase:
 
 
 
-        self.curses = [self.kiss_of_death, self.memory_curse]
+        self.curses = [curse for curse in self.__dict__.values() if isinstance(curse, Curse)]
 
     def print_all_sorted_clues(self):
         print(Colors.BOLD + Colors.YELLOW + "\nBase of all clues:" + Colors.ENDC)
