@@ -139,6 +139,7 @@ class MonstersDisableMethods:
     celtic_sigit_to_trap_monsters = "celtic sigit to trap monsters"
     dust_for_hell_hounds = "dust for hell hounds?"
     angel_knuckle_duster = "angel knuckle duster"
+    bring_it_what_it_wants = "bring it what it wants"
 
 
 class MonstersCureMethods:

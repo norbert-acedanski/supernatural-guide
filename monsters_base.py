@@ -23,8 +23,8 @@ class MonsterBase:
                                                   "They were trained to be demonic generals in the war against heaven.",
                                       episodes={"S01": [1]})
         self.prince_of_hell.clues = [MonstersClues.people_burned_on_the_ceiling,
-
                                      MonstersClues.weird_things_behavior,
+                                     
                                      MonstersClues.weird_weather, MonstersClues.yellow_eyes]
         self.prince_of_hell.kill_methods = [
                                             MonstersKillMethods.colt_of_colt_with_magic_bullets,
@@ -117,15 +117,18 @@ class MonsterBase:
                                   MonstersClues.weird_things_behavior]
         self.poltergeist.kill_methods = [MonstersKillMethods.angelica_root_mixture]
 
-        self.god_of_norse_vanir = Monster("God Of Norse - Vanir",
-                                          description="Norvegian God of the harvest. "
-                                                      "Once a year it requires a sacriface "
-                                                      "in order to maintain prosperity.")
-        self.god_of_norse_vanir.clues = [MonstersClues.missing_or_dead_people_regularly_in_the_same_area,
-                                         MonstersClues.emf, MonstersClues.seen_as_a_scarecrow]
-        self.god_of_norse_vanir.kill_methods = [MonstersKillMethods.burn_the_sacred_tree]
+        self.norwegian_god_vanir = Monster("Norwegian god - Vanir",
+                                           description="Norwegian God of the harvest, protection and prosperity. "
+                                                       "Once a year it requires a sacrifice of a man and a woman "
+                                                       "in order to maintain prosperity. Sacrifice takes place in April",
+                                           episodes={"S01": [11]})
+        self.norwegian_god_vanir.clues = [MonstersClues.missing_or_dead_people_regularly_in_the_same_area,
+                                          MonstersClues.emf, MonstersClues.seen_as_a_scarecrow,
+                                          MonstersClues.weird_noises]
+        self.norwegian_god_vanir.disable_methods = [MonstersDisableMethods.bring_it_what_it_wants]
+        self.norwegian_god_vanir.kill_methods = [MonstersKillMethods.burn_the_sacred_tree]
 
-        # Last episode: 10
+        # Last episode: 11
 
         # SEASON 2:
 
