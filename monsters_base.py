@@ -24,6 +24,7 @@ class MonsterBase:
                                       episodes={"S01": [1]})
         self.prince_of_hell.clues = [MonstersClues.people_burned_on_the_ceiling,
                                      MonstersClues.weird_things_behavior,
+                                     MonstersClues.children_of_victims_that_died_on_the_ceiling_have_abilities,
                                      
                                      MonstersClues.weird_weather, MonstersClues.yellow_eyes]
         self.prince_of_hell.kill_methods = [
@@ -138,7 +139,16 @@ class MonsterBase:
                              MonstersClues.weird_things_behavior, MonstersClues.people_seeing_things_or_figures,
                              MonstersClues.seen_as_a_person_in_a_suit]
 
-        # Last episode: 12
+        self.people_with_abilities = Monster("People with abilities", description="People, that were infants, "
+                                                                                  "when prince of hell killed "
+                                                                                  "their mother on the ceiling",
+                                             episodes={"S01": [14]})
+        self.people_with_abilities.clues = [MonstersClues.people_dead_weirdly, MonstersClues.weird_things_behavior,
+                                            MonstersClues.telekinesis,
+                                            MonstersClues.their_mother_was_burned_on_the_ceiling_when_they_were_infants]
+        self.people_with_abilities.kill_methods = [MonstersKillMethods.like_any_human]
+
+        # Last episode: 13
 
         # SEASON 2:
 

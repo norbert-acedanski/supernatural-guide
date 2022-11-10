@@ -21,6 +21,10 @@ class MonstersClues:
     travels_as_white_fog = "travels as a white fog"
     travels_as_red_fog = "travels as a red fog"
     travels_as_black_green_fog = "travels as a black - green fog"
+    children_of_victims_that_died_on_the_ceiling_have_abilities = \
+        "children of victims that died on the ceiling have abilities"
+    their_mother_was_burned_on_the_ceiling_when_they_were_infants = \
+        "their mother was burned on the ceiling when they were infants"
     people_cured_miraculously = "people cured miraculously"
     people_acting_weirdly = "people acting weirdly - like not themselves"
     people_seeing_things_or_figures = "people seeing things or figures (ghosts, people, reapers, beings, etc.)"
@@ -87,7 +91,6 @@ class MonstersClues:
     can_control_water = "can control water"
     psychic_abilities = "psychic abilities - knows the past, the future and the present of people or places, " \
                         "senses energies and spirits"
-
 
 
 class MonstersKillMethods:
