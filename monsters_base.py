@@ -34,7 +34,7 @@ class MonsterBase:
         self.vengeful_spirit = Monster("Vengeful Spirit or Ghost (Bloody Mary, Hook Man)",
                                        description="Appears, when somebody died tragically, committed suicide "
                                                    "or was killed. Usually bound to a place or to things.",
-                                       episodes={"S01": [1, 3, 5, 7, 9, 10]})
+                                       episodes={"S01": [1, 3, 5, 7, 9, 10, 13]})
         self.vengeful_spirit.clues = [MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                                       MonstersClues.people_dead_weirdly, MonstersClues.ghost_like_creature,
                                       MonstersClues.weird_electronics_behavior, MonstersClues.weird_things_behavior,
@@ -46,6 +46,7 @@ class MonsterBase:
                                       MonstersClues.objects_seen_in_night_vision, MonstersClues.weird_noises,
                                       MonstersClues.ozone_smell, MonstersClues.seen_as_fire,
                                       MonstersClues.people_acting_weirdly, MonstersClues.victims_hear_voices,
+                                      MonstersClues.seen_as_black_truck,
 
                                       MonstersClues.emf, MonstersClues.cold_spots]
         self.vengeful_spirit.disable_methods = [MonstersKillMethods.bring_the_spirit_to_its_crime_place,

@@ -51,6 +51,7 @@ class MonstersClues:
     seen_as_fire = "seen as fire"
     seen_as_a_scarecrow = "seen as a scarecrow"
     seen_as_a_person_in_a_suit = "seen as a person in a suit"
+    seen_as_black_truck = "seen as black truck"
     body_torn_apart = "body torn apart"
     no_blood_in_the_body = "no blood in the body"
     animal_like_attack = "animal-like attack"
