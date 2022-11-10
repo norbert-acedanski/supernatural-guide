@@ -95,6 +95,8 @@ class MonstersClues:
     can_control_water = "can control water"
     psychic_abilities = "psychic abilities - knows the past, the future and the present of people or places, " \
                         "senses energies and spirits"
+    keeps_changing_appearances = "keeps changing appearances"
+    salt_does_not_affect_it = "salt does not affect it"
 
 
 class MonstersKillMethods:
@@ -134,6 +136,7 @@ class MonstersKillMethods:
     lance_of_archangel_michael = "lance of Archangel Michael"
     apply_large_voltage = "apply large voltage - more than 100kV"
     very_bright_light = "very bright light"
+    make_a_story_that_it_will_unite_with_and_weaken = "make a story that it will unite with and weaken because of it"
 
 
 class MonstersDisableMethods:
@@ -154,6 +157,7 @@ class MonstersDisableMethods:
     angel_knuckle_duster = "angel knuckle duster"
     bring_it_what_it_wants = "bring it what it wants"
     very_bright_light = "very bright light"
+    destroy_the_place_that_the_tulpa_resides = "destroy the place that the tulpa resides"
 
 
 class MonstersCureMethods:

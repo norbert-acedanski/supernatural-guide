@@ -169,6 +169,14 @@ class MonsterBase:
         self.daeva.kill_methods = [MonstersKillMethods.very_bright_light]
         self.daeva.disable_methods = [MonstersDisableMethods.very_bright_light]
 
+        self.tupla = Monster("Tulpa", description="A Tibetan thought-form. "
+                                                  "To summon one there needs to be a tibetan spirit sigil drawn.",
+                             episodes={"S01": [17]})
+        self.tupla.clues = [MonstersClues.ghost_like_creature, MonstersClues.high_strength,
+                            MonstersClues.keeps_changing_appearances, MonstersClues.salt_does_not_affect_it]
+        self.tupla.kill_methods = [MonstersKillMethods.make_a_story_that_it_will_unite_with_and_weaken]
+        self.tupla.disable_methods = [MonstersDisableMethods.destroy_the_place_that_the_tulpa_resides]
+
         # Last episode: 16
 
         # SEASON 2:
