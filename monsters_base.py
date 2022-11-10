@@ -154,7 +154,22 @@ class MonsterBase:
         self.phantom_gassers = Monster("Phantom gassers", description="Not seen. Only mentioned in S01E15")
         self.phantom_gassers.clues = [MonstersClues.people_kidnapped_weirdly]
 
-        # Last episode: 15
+        self.werewolf = Monster("Werewolf", description="Not seen. Only mentioned in S01E16")
+        self.werewolf.clues = [MonstersClues.body_torn_apart, MonstersClues.animal_like_attack,
+                               MonstersClues.missing_heart]
+        self.werewolf.kill_methods = [MonstersKillMethods.silver_bullet_into_the_heart]
+        self.werewolf.cure_methods = \
+            [MonstersCureMethods.plasma_therapy_with_the_blood_of_the_werewolf_that_bit_the_victim]
+
+        self.daeva = Monster("Daeva", description="Zoroastrian demon - demon of darkness", episodes={"S01": [16]})
+        self.daeva.clues = [MonstersClues.victims_hear_voices, MonstersClues.seen_as_a_shadow,
+                            MonstersClues.animal_like_attack, MonstersClues.emf, MonstersClues.missing_heart,
+                            MonstersClues.body_torn_apart, MonstersClues.left_zoroastrian_symbol_made_with_blood,
+                            MonstersClues.high_strength, MonstersClues.claws, MonstersClues.invisible_entity]
+        self.daeva.kill_methods = [MonstersKillMethods.very_bright_light]
+        self.daeva.disable_methods = [MonstersDisableMethods.very_bright_light]
+
+        # Last episode: 16
 
         # SEASON 2:
 
@@ -193,13 +208,6 @@ class MonsterBase:
         self.demon_crowley = Monster("Demon - King of Hell - Crowley")
         self.demon_crowley.clues = [MonstersClues.black_blood, MonstersClues.burned_by_holy_water,
                                     MonstersClues.travels_as_red_fog, MonstersClues.red_eyes]
-
-        self.werewolf = Monster("Werewolf")
-        self.werewolf.clues = [MonstersClues.body_torn_apart, MonstersClues.animal_like_attack,
-                               MonstersClues.missing_heart]
-        self.werewolf.kill_methods = [MonstersKillMethods.silver_bullet_into_the_heart]
-        self.werewolf.cure_methods = \
-            [MonstersCureMethods.plasma_therapy_with_the_blood_of_the_werewolf_that_bit_the_victim]
 
         self.vampire = Monster("Vampire")
         self.vampire.clues = [MonstersClues.ripped_throat, MonstersClues.no_blood_in_the_body,

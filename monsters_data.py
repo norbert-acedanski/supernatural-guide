@@ -49,6 +49,8 @@ class MonstersClues:
     can_copy_memories_of_other_people = "can copy memories of other people"
     being_at_two_places_at_once = "being at 2 places at once"
     skin_left_behind = "skin left behind"
+    left_zoroastrian_symbol_made_with_blood = "left zoroastrian symbol made with blood - " \
+                                              "Sigil for Daeva (demon of darkness)"
     invisible_entity = "invisible entity"
     ozone_smell = "ozone smell"
     telekinesis = "telekinesis"
@@ -57,6 +59,7 @@ class MonstersClues:
     seen_as_a_scarecrow = "seen as a scarecrow"
     seen_as_a_person_in_a_suit = "seen as a person in a suit"
     seen_as_black_truck = "seen as black truck"
+    seen_as_a_shadow = "seen as a shadow"
     body_torn_apart = "body torn apart"
     no_blood_in_the_body = "no blood in the body"
     animal_like_attack = "animal-like attack"
@@ -130,6 +133,7 @@ class MonstersKillMethods:
     like_any_human = "like any human"
     lance_of_archangel_michael = "lance of Archangel Michael"
     apply_large_voltage = "apply large voltage - more than 100kV"
+    very_bright_light = "very bright light"
 
 
 class MonstersDisableMethods:
@@ -149,6 +153,7 @@ class MonstersDisableMethods:
     dust_for_hell_hounds = "dust for hell hounds?"
     angel_knuckle_duster = "angel knuckle duster"
     bring_it_what_it_wants = "bring it what it wants"
+    very_bright_light = "very bright light"
 
 
 class MonstersCureMethods:
