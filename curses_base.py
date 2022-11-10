@@ -17,10 +17,17 @@ class CursesBase:
                                                                 "in Atoka Valley. Chief said, that no white man would "
                                                                 "ever tarnish this land again. Nature would rise up "
                                                                 "and protect the valley.",
-                                   episodes={"E01": [8]})
+                                   episodes={"S01": [8]})
         self.revenge_curse.clues = [CursesClues.missing_or_dead_people_regularly_in_the_same_area,
                                     CursesClues.people_dead_weirdly, CursesClues.weird_animal_behavior]
         self.revenge_curse.kill_methods = [CursesDisableMethods.surviving_the_curse]
+
+        self.reaper_trapping_spell = Curse("Reaper trapping spell", description="Spell, that controls a reaper",
+                                           episodes={"S01": [12]})
+        self.reaper_trapping_spell.clues = [CursesClues.control_over_a_reaper, CursesClues.black_altar,
+                                            CursesClues.controlled_with_a_spell_and_a_cross]
+        self.reaper_trapping_spell.disable_methods = [CursesDisableMethods.destroy_the_coptic_cross,
+                                                      CursesDisableMethods.destroy_the_black_altar]
 
 
         # SEASON 2:

@@ -21,8 +21,9 @@ class MonstersClues:
     travels_as_white_fog = "travels as a white fog"
     travels_as_red_fog = "travels as a red fog"
     travels_as_black_green_fog = "travels as a black - green fog"
+    people_cured_miraculously = "people cured miraculously"
     people_acting_weirdly = "people acting weirdly - like not themselves"
-    people_seeing_things = "people seeing things (ghosts, etc.)"
+    people_seeing_things_or_figures = "people seeing things or figures (ghosts, people, reapers, beings, etc.)"
     missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area = \
         "people missing/dead weirdly, similarly, randomly across a time(weeks/months/years) in the same area"
     missing_or_dead_people_regularly_in_the_same_area = "groups of people missing/dead regularly in the same area"
@@ -49,6 +50,7 @@ class MonstersClues:
     flashing_lights = "flashing lights"
     seen_as_fire = "seen as fire"
     seen_as_a_scarecrow = "seen as a scarecrow"
+    seen_as_a_person_in_a_suit = "seen as a person in a suit"
     body_torn_apart = "body torn apart"
     no_blood_in_the_body = "no blood in the body"
     animal_like_attack = "animal-like attack"
@@ -86,6 +88,7 @@ class MonstersClues:
                         "senses energies and spirits"
 
 
+
 class MonstersKillMethods:
     decapitation = "decapitation"
     angel_blade = "angel blade"
@@ -121,6 +124,7 @@ class MonstersKillMethods:
     the_darkness = "The Darkness"
     like_any_human = "like any human"
     lance_of_archangel_michael = "lance of Archangel Michael"
+    apply_large_voltage = "apply large voltage - more than 100kV"
 
 
 class MonstersDisableMethods:

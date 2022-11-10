@@ -41,11 +41,11 @@ class MonsterBase:
                                       MonstersClues.local_legend_about_somebody_killed_or_died,
                                       MonstersClues.telekinesis, MonstersClues.invisible_entity,
                                       MonstersClues.missing_body, MonstersClues.high_strength,
-                                      MonstersClues.can_control_water, MonstersClues.victims_hear_voices,
+                                      MonstersClues.can_control_water, MonstersClues.people_seeing_things_or_figures,
                                       MonstersClues.summoned_by_saying_bloody_marry_in_front_of_the_mirror,
                                       MonstersClues.objects_seen_in_night_vision, MonstersClues.weird_noises,
                                       MonstersClues.ozone_smell, MonstersClues.seen_as_fire,
-                                      MonstersClues.people_acting_weirdly, MonstersClues.people_seeing_things,
+                                      MonstersClues.people_acting_weirdly, MonstersClues.victims_hear_voices,
 
                                       MonstersClues.emf, MonstersClues.cold_spots]
         self.vengeful_spirit.disable_methods = [MonstersKillMethods.bring_the_spirit_to_its_crime_place,
@@ -128,7 +128,16 @@ class MonsterBase:
         self.norwegian_god_vanir.disable_methods = [MonstersDisableMethods.bring_it_what_it_wants]
         self.norwegian_god_vanir.kill_methods = [MonstersKillMethods.burn_the_sacred_tree]
 
-        # Last episode: 11
+        self.rawhead = Monster("Rawhead", episodes={"S01": [12]})
+        self.rawhead.kill_methods = [MonstersKillMethods.apply_large_voltage]
+
+        self.reaper = Monster("Reaper", description="Can give and take life. Can also transfer illnesses of people.",
+                              episodes={"S01": [12]})
+        self.reaper.clues = [MonstersClues.people_dead_weirdly, MonstersClues.people_cured_miraculously,
+                             MonstersClues.weird_things_behavior, MonstersClues.people_seeing_things_or_figures,
+                             MonstersClues.seen_as_a_person_in_a_suit]
+
+        # Last episode: 12
 
         # SEASON 2:
 
