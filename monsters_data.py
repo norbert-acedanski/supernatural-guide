@@ -25,14 +25,15 @@ class MonstersClues:
         "children of victims that died on the ceiling have abilities"
     their_mother_was_burned_on_the_ceiling_when_they_were_infants = \
         "their mother was burned on the ceiling when they were infants"
+    people_kidnapped_weirdly = "people kidnapped weirdly"
     people_cured_miraculously = "people cured miraculously"
     people_acting_weirdly = "people acting weirdly - like not themselves"
+    people_burned_on_the_ceiling = "people burned on the ceiling of their house"
     people_seeing_things_or_figures = "people seeing things or figures (ghosts, people, reapers, beings, etc.)"
     missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area = \
         "people missing/dead weirdly, similarly, randomly across a time(weeks/months/years) in the same area"
     missing_or_dead_people_regularly_in_the_same_area = "groups of people missing/dead regularly in the same area"
     missing_body = "missing body"
-    people_burned_on_the_ceiling = "people burned on the ceiling of their house"
     moves_fast = "moves fast"
     strange_roar = "strange roar"
     able_to_use_doors = "able to use doors"

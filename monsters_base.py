@@ -148,7 +148,13 @@ class MonsterBase:
                                             MonstersClues.their_mother_was_burned_on_the_ceiling_when_they_were_infants]
         self.people_with_abilities.kill_methods = [MonstersKillMethods.like_any_human]
 
-        # Last episode: 13
+        self.spring_heeled_jacks = Monster("Sprint Heeled Jacks", description="Not seen. Only mentioned in S01E15")
+        self.spring_heeled_jacks.clues = [MonstersClues.people_kidnapped_weirdly]
+
+        self.phantom_gassers = Monster("Phantom gassers", description="Not seen. Only mentioned in S01E15")
+        self.phantom_gassers.clues = [MonstersClues.people_kidnapped_weirdly]
+
+        # Last episode: 15
 
         # SEASON 2:
 
