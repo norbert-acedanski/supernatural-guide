@@ -177,7 +177,18 @@ class MonsterBase:
         self.tupla.kill_methods = [MonstersKillMethods.make_a_story_that_it_will_unite_with_and_weaken]
         self.tupla.disable_methods = [MonstersDisableMethods.destroy_the_place_that_the_tulpa_resides]
 
-        # Last episode: 16
+        self.shtriga = Monster("Shtriga", description="Witch-like entity from Albanian folklore. Feeds on life energy, "
+                                                      "but particularly on children (also siblings)",
+                               episodes={"S01": [18]})
+        self.shtriga.clues = [MonstersClues.people_or_children_severely_sick, MonstersClues.no_emf,
+                              MonstersClues.nothing_on_ultraviolet, MonstersClues.leaves_burned_marks,
+                              MonstersClues.feeding_on_life_essence, MonstersClues.seen_as_human_when_not_feeding,
+                              MonstersClues.dead_people_or_children_regularly_in_different_places,
+                              MonstersClues.high_strength, MonstersClues.moves_fast,
+                              MonstersClues.weird_electronics_behavior]
+        self.shtriga.kill_methods = [MonstersKillMethods.consecrated_wrought_iron_when_it_eats]
+
+        # Last episode: 18
 
         # SEASON 2:
 
