@@ -4,7 +4,7 @@ from colors import Colors
 
 
 class Monster:
-    def __init__(self, name, description: str = None, episodes: Dict[str, List[int]] = None):
+    def __init__(self, name: str, description: str = None, episodes: Dict[str, List[int]] = None):
         self.name = name
         self.description = description
         self.episodes = episodes
@@ -12,18 +12,6 @@ class Monster:
         self.kill_methods = None
         self.disable_methods = None
         self.cure_methods = None
-
-    def clues_base(self, clues=None):
-        self.clues = clues
-
-    def kill_methods_base(self, kill_methods=None):
-        self.kill_methods = kill_methods
-
-    def disable_methods_base(self, disable_methods=None):
-        self.disable_methods = disable_methods
-
-    def cure_methods_base(self, cure_methods=None):
-        self.cure_methods = cure_methods
 
     def print_name(self):
         print(Colors.GREEN + "\n" + self.name + ":" + Colors.ENDC)
