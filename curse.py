@@ -4,18 +4,12 @@ from colors import Colors
 
 
 class Curse:
-    def __init__(self, name, description: str = None, episodes: Dict[str, List[int]] = None):
+    def __init__(self, name: str, description: str = None, episodes: Dict[str, List[int]] = None):
         self.name = name
         self.description = description
         self.episodes = episodes
         self.clues = None
         self.disable_methods = None
-
-    def clues_base(self, clues=None):
-        self.clues = clues
-
-    def disable_methods_base(self, disable_methods=None):
-        self.disable_methods = disable_methods
 
     def print_name(self):
         print(Colors.GREEN + "\n" + self.name + ":" + Colors.ENDC)
@@ -37,7 +31,7 @@ class Curse:
             for clue in self.clues:
                 print("  *  " + clue)
         else:
-            print("  *  None found")
+            print("  *  None found...")
 
     def print_disable_methods(self):
         print(Colors.MAGENTA + "Disable Methods:" + Colors.ENDC)
