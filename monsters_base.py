@@ -35,7 +35,7 @@ class MonsterBase:
         self.vengeful_spirit = Monster("Vengeful Spirit or Ghost (Bloody Mary, Hook Man)",
                                        description="Appears, when somebody died tragically, committed suicide "
                                                    "or was killed. Usually bound to a place or to things.",
-                                       episodes={"S01": [1, 3, 5, 7, 9, 10, 13]})
+                                       episodes={"S01": [1, 3, 5, 7, 9, 10, 13, 19]})
         self.vengeful_spirit.clues = [MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                                       MonstersClues.people_dead_weirdly, MonstersClues.ghost_like_creature,
                                       MonstersClues.weird_electronics_behavior, MonstersClues.weird_things_behavior,
