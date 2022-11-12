@@ -188,7 +188,25 @@ class MonsterBase:
                               MonstersClues.weird_electronics_behavior]
         self.shtriga.kill_methods = [MonstersKillMethods.consecrated_wrought_iron_when_it_eats]
 
-        # Last episode: 18
+        self.vampire = Monster("Vampire", description="They were once people. They need fresh human blood to survive. "
+                                                      "A coss will not repel them, sunlight will not kill them. "
+                                                      "Neither will a stake to the heart. "
+                                                      "Vampires nest in groups 8 to 10. "
+                                                      "Smaller packs are sent out to hunt for food. "
+                                                      "Kidnapped people are taken to nests and then "
+                                                      "bleeding them for days or weeks. "
+                                                      "One can become a vampire, when drinking vampire blood.",
+                               episodes={"S01": [20]})
+        self.vampire.clues = [MonstersClues.ripped_throat, MonstersClues.no_blood_in_the_body,
+                              MonstersClues.needle_like_teeth, MonstersClues.moving_in_groups_usually,
+                              MonstersClues.invulnerable, MonstersClues.high_strength, MonstersClues.bright_eyes,
+                              MonstersClues.great_sense_of_smell]
+        self.vampire.kill_methods = [MonstersKillMethods.decapitation, MonstersKillMethods.angel_blade,
+                                     MonstersKillMethods.colt_of_colt_with_magic_bullets]
+        self.vampire.disable_methods = [MonstersDisableMethods.dead_mans_blood]
+        self.vampire.cure_methods = [MonstersCureMethods.cocktail_made_of_blood_of_the_vampire_that_bit_the_victim]
+
+        # Last episode: 20
 
         # SEASON 2:
 
@@ -227,13 +245,6 @@ class MonsterBase:
         self.demon_crowley = Monster("Demon - King of Hell - Crowley")
         self.demon_crowley.clues = [MonstersClues.black_blood, MonstersClues.burned_by_holy_water,
                                     MonstersClues.travels_as_red_fog, MonstersClues.red_eyes]
-
-        self.vampire = Monster("Vampire")
-        self.vampire.clues = [MonstersClues.ripped_throat, MonstersClues.no_blood_in_the_body,
-                              MonstersClues.needle_like_teeth]
-        self.vampire.disable_methods = [MonstersDisableMethods.dead_mans_blood]
-        self.vampire.kill_methods = [MonstersKillMethods.decapitation, MonstersKillMethods.angel_blade]
-        self.vampire.cure_methods = [MonstersCureMethods.cocktail_made_of_blood_of_the_vampire_that_bit_the_victim]
 
         self.angel = Monster("Angel")
         self.angel.clues = [MonstersClues.burned_eyes_of_victims, MonstersClues.triangle_wound,
