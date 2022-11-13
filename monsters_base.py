@@ -21,12 +21,13 @@ class MonsterBase:
                                       description="The oldest of old demons. One generation after Lilith. "
                                                   "They were turned by Lucyfer himself before the Atlantis drown. "
                                                   "They were trained to be demonic generals in the war against heaven.",
-                                      episodes={"S01": [1]})
-        self.prince_of_hell.clues = [MonstersClues.people_burned_on_the_ceiling,
-                                     MonstersClues.weird_things_behavior,
+                                      episodes={"S01": [1, 21]})
+        self.prince_of_hell.clues = [MonstersClues.people_burned_on_the_ceiling, MonstersClues.telekinesis,
+                                     MonstersClues.weird_things_behavior, MonstersClues.yellow_eyes,
                                      MonstersClues.children_of_victims_that_died_on_the_ceiling_have_abilities,
-                                     
-                                     MonstersClues.weird_weather, MonstersClues.yellow_eyes]
+                                     MonstersClues.mothers_burned_when_children_are_6_months_old,
+                                     MonstersClues.weird_weather, MonstersClues.cattle_deaths,
+                                     MonstersClues.temperature_fluctuations, MonstersClues.electrical_storms]
         self.prince_of_hell.kill_methods = [
                                             MonstersKillMethods.colt_of_colt_with_magic_bullets,
                                             MonstersKillMethods.lance_of_archangel_michael,
@@ -83,13 +84,13 @@ class MonsterBase:
 
         self.demon = Monster("Demon", description="In every religion there is information about demonic possessions. "
                                                   "Demons are man that were stuck in hell for a long time.",
-                             episodes={"S01": [4]})
+                             episodes={"S01": [4, 21]})
         self.demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                             MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                             MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
+                            MonstersClues.people_dead_weirdly,
 
-                            MonstersClues.black_blood, MonstersClues.telekinesis,
-                            MonstersClues.people_dead_weirdly]
+                            MonstersClues.black_blood, MonstersClues.telekinesis]
         self.demon.kill_methods = [MonstersKillMethods.exorcism,
 
                                    MonstersKillMethods.angel_blade,
@@ -200,13 +201,13 @@ class MonsterBase:
         self.vampire.clues = [MonstersClues.ripped_throat, MonstersClues.no_blood_in_the_body,
                               MonstersClues.needle_like_teeth, MonstersClues.moving_in_groups_usually,
                               MonstersClues.invulnerable, MonstersClues.high_strength, MonstersClues.bright_eyes,
-                              MonstersClues.great_sense_of_smell]
+                              MonstersClues.great_sense_of_smell, MonstersClues.white_skin]
         self.vampire.kill_methods = [MonstersKillMethods.decapitation, MonstersKillMethods.angel_blade,
                                      MonstersKillMethods.colt_of_colt_with_magic_bullets]
         self.vampire.disable_methods = [MonstersDisableMethods.dead_mans_blood]
         self.vampire.cure_methods = [MonstersCureMethods.cocktail_made_of_blood_of_the_vampire_that_bit_the_victim]
 
-        # Last episode: 20
+        # Last episode: 21
 
         # SEASON 2:
 

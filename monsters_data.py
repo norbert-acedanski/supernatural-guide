@@ -25,6 +25,10 @@ class MonstersClues:
         "children of victims that died on the ceiling have abilities"
     their_mother_was_burned_on_the_ceiling_when_they_were_infants = \
         "their mother was burned on the ceiling when they were infants"
+    mothers_burned_when_children_are_6_months_old = "mothers burned when children are 6 months old"
+    cattle_deaths = "cattle deaths"
+    temperature_fluctuations = "temperature fluctuations"
+    electrical_storms = "electrical storms"
     people_or_children_severely_sick = "people or children severely sick"
     people_kidnapped_weirdly = "people kidnapped weirdly"
     people_cured_miraculously = "people cured miraculously"
@@ -107,6 +111,7 @@ class MonstersClues:
                         "senses energies and spirits"
     keeps_changing_appearances = "keeps changing appearances"
     salt_does_not_affect_it = "salt does not affect it"
+    white_skin = "white skin"
 
 
 class MonstersKillMethods:
