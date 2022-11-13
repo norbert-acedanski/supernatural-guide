@@ -21,13 +21,14 @@ class MonsterBase:
                                       description="The oldest of old demons. One generation after Lilith. "
                                                   "They were turned by Lucyfer himself before the Atlantis drown. "
                                                   "They were trained to be demonic generals in the war against heaven.",
-                                      episodes={"S01": [1, 21]})
+                                      episodes={"S01": [1, 21, 22]})
         self.prince_of_hell.clues = [MonstersClues.people_burned_on_the_ceiling, MonstersClues.telekinesis,
                                      MonstersClues.weird_things_behavior, MonstersClues.yellow_eyes,
                                      MonstersClues.children_of_victims_that_died_on_the_ceiling_have_abilities,
                                      MonstersClues.mothers_burned_when_children_are_6_months_old,
                                      MonstersClues.weird_weather, MonstersClues.cattle_deaths,
-                                     MonstersClues.temperature_fluctuations, MonstersClues.electrical_storms]
+                                     MonstersClues.temperature_fluctuations, MonstersClues.electrical_storms,
+                                     MonstersClues.holy_water_does_not_affect_it, MonstersClues.travels_as_black_fog]
         self.prince_of_hell.kill_methods = [
                                             MonstersKillMethods.colt_of_colt_with_magic_bullets,
                                             MonstersKillMethods.lance_of_archangel_michael,
@@ -48,9 +49,9 @@ class MonsterBase:
                                       MonstersClues.objects_seen_in_night_vision, MonstersClues.weird_noises,
                                       MonstersClues.ozone_smell, MonstersClues.seen_as_fire,
                                       MonstersClues.people_acting_weirdly, MonstersClues.victims_hear_voices,
-                                      MonstersClues.seen_as_black_truck,
+                                      MonstersClues.seen_as_black_truck, MonstersClues.emf,
 
-                                      MonstersClues.emf, MonstersClues.cold_spots]
+                                      MonstersClues.cold_spots]
         self.vengeful_spirit.disable_methods = [MonstersKillMethods.bring_the_spirit_to_its_crime_place,
                                                 MonstersKillMethods.bring_the_spirit_what_it_wants,
                                                 MonstersDisableMethods.iron_or_iron_bullets,
@@ -84,19 +85,20 @@ class MonsterBase:
 
         self.demon = Monster("Demon", description="In every religion there is information about demonic possessions. "
                                                   "Demons are man that were stuck in hell for a long time.",
-                             episodes={"S01": [4, 21]})
+                             episodes={"S01": [4, 21, 22]})
         self.demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                             MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                             MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
-                            MonstersClues.people_dead_weirdly,
+                            MonstersClues.people_dead_weirdly, MonstersClues.telekinesis,
 
-                            MonstersClues.black_blood, MonstersClues.telekinesis]
+                            MonstersClues.black_blood]
         self.demon.kill_methods = [MonstersKillMethods.exorcism,
 
                                    MonstersKillMethods.angel_blade,
                                    MonstersKillMethods.demon_killing_knife, MonstersKillMethods.will_of_an_archangel,
                                    MonstersKillMethods.colt_of_colt_with_magic_bullets,
                                    MonstersKillMethods.lance_of_archangel_michael]
+        self.demon.disable_methods = [MonstersDisableMethods.devils_trap]
 
         self.shapeshifter = Monster("Shapeshifter", description="These creatures can transform themselves into "
                                                                 "other man or animals.",
@@ -207,7 +209,7 @@ class MonsterBase:
         self.vampire.disable_methods = [MonstersDisableMethods.dead_mans_blood]
         self.vampire.cure_methods = [MonstersCureMethods.cocktail_made_of_blood_of_the_vampire_that_bit_the_victim]
 
-        # Last episode: 21
+        # ---------------------------------------------- ALL EPISODES DONE ---------------------------------------------
 
         # SEASON 2:
 
@@ -297,7 +299,7 @@ class MonsterBase:
         self.nephilim = Monster("Nephilim", description="Child of human and angel/archangel. "
                                                         "Human with an angelic grace.")
         self.nephilim.clues = [MonstersClues.weird_weather, MonstersClues.biblical_like_events]
-        
+
         # SEASON 10:
 
         self.angel_watcher = Monster("Angel Watcher - Grigori")

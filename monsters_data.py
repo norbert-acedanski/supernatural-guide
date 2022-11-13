@@ -111,6 +111,7 @@ class MonstersClues:
                         "senses energies and spirits"
     keeps_changing_appearances = "keeps changing appearances"
     salt_does_not_affect_it = "salt does not affect it"
+    holy_water_does_not_affect_it = "holy water does not affect it"
     white_skin = "white skin"
 
 
@@ -174,6 +175,7 @@ class MonstersDisableMethods:
     bring_it_what_it_wants = "bring it what it wants"
     very_bright_light = "very bright light"
     destroy_the_place_that_the_tulpa_resides = "destroy the place that the tulpa resides"
+    devils_trap = "devil's trap - sigil trap for a demon (they can't exit them)"
 
 
 class MonstersCureMethods:
