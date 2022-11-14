@@ -21,14 +21,15 @@ class MonsterBase:
                                       description="The oldest of old demons. One generation after Lilith. "
                                                   "They were turned by Lucyfer himself before the Atlantis drown. "
                                                   "They were trained to be demonic generals in the war against heaven.",
-                                      episodes={"S01": [1, 21, 22]})
+                                      episodes={"S01": [1, 21, 22], "S02": [1]})
         self.prince_of_hell.clues = [MonstersClues.people_burned_on_the_ceiling, MonstersClues.telekinesis,
                                      MonstersClues.weird_things_behavior, MonstersClues.yellow_eyes,
                                      MonstersClues.children_of_victims_that_died_on_the_ceiling_have_abilities,
                                      MonstersClues.mothers_burned_when_children_are_6_months_old,
                                      MonstersClues.weird_weather, MonstersClues.cattle_deaths,
                                      MonstersClues.temperature_fluctuations, MonstersClues.electrical_storms,
-                                     MonstersClues.holy_water_does_not_affect_it, MonstersClues.travels_as_black_fog]
+                                     MonstersClues.holy_water_does_not_affect_it, MonstersClues.travels_as_black_fog,
+                                     MonstersClues.can_posses_a_reaper]
         self.prince_of_hell.kill_methods = [
                                             MonstersKillMethods.colt_of_colt_with_magic_bullets,
                                             MonstersKillMethods.lance_of_archangel_michael,
@@ -85,7 +86,7 @@ class MonsterBase:
 
         self.demon = Monster("Demon", description="In every religion there is information about demonic possessions. "
                                                   "Demons are man that were stuck in hell for a long time.",
-                             episodes={"S01": [4, 21, 22]})
+                             episodes={"S01": [4, 21, 22], "S02": [1]})
         self.demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                             MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                             MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -137,10 +138,12 @@ class MonsterBase:
         self.rawhead.kill_methods = [MonstersKillMethods.apply_large_voltage]
 
         self.reaper = Monster("Reaper", description="Can give and take life. Can also transfer illnesses of people.",
-                              episodes={"S01": [12]})
+                              episodes={"S01": [12], "S02": [1]})
         self.reaper.clues = [MonstersClues.people_dead_weirdly, MonstersClues.people_cured_miraculously,
                              MonstersClues.weird_things_behavior, MonstersClues.people_seeing_things_or_figures,
-                             MonstersClues.seen_as_a_person_in_a_suit]
+                             MonstersClues.seen_as_a_person_in_a_suit, MonstersClues.ghost_like_creature,
+                             MonstersClues.visible_by_other_ghosts_and_people_close_to_death_only,
+                             MonstersClues.can_make_themselves_appear_as_they_like]
 
         self.people_with_abilities = Monster("People with abilities", description="People, that were infants, "
                                                                                   "when prince of hell killed "

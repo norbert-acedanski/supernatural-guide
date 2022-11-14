@@ -13,7 +13,8 @@ class ObjectsBase:
         self.colt_of_colt = Object("Colt of Colt", description="Colt made by Samuel Colt in 1835, when Halley's Comet "
                                                                "was overhead and the same night those men died "
                                                                "at the Alamo. He made it for a hunter along with "
-                                                               "13 bullets.", episodes={"S01": [20]})
+                                                               "13 bullets.",
+                                   episodes={"S01": [20, 21, 22], "S02": [1]})
         self.colt_of_colt.abilities = [ObjectAbilities.can_kill_anything]
 
         self.objects = [object for object in self.__dict__.values() if isinstance(object, Object)]

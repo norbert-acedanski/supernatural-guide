@@ -62,6 +62,8 @@ class MonstersClues:
     left_zoroastrian_symbol_made_with_blood = "left zoroastrian symbol made with blood - " \
                                               "Sigil for Daeva (demon of darkness)"
     invisible_entity = "invisible entity"
+    visible_by_other_ghosts_and_people_close_to_death_only = "visible by other ghosts and people close to death only"
+    can_make_themselves_appear_as_they_like = "can make themselves appear as they like"
     ozone_smell = "ozone smell"
     telekinesis = "telekinesis"
     flashing_lights = "flashing lights"
@@ -107,6 +109,7 @@ class MonstersClues:
     silent_area = "silent area - not even crickets are heard"
     intelligent = "intelligent"
     can_control_water = "can control water"
+    can_posses_a_reaper = "can posses a reaper"
     psychic_abilities = "psychic abilities - knows the past, the future and the present of people or places, " \
                         "senses energies and spirits"
     keeps_changing_appearances = "keeps changing appearances"
