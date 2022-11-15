@@ -29,7 +29,7 @@ class MonsterBase:
                                      MonstersClues.weird_weather, MonstersClues.cattle_deaths,
                                      MonstersClues.temperature_fluctuations, MonstersClues.electrical_storms,
                                      MonstersClues.holy_water_does_not_affect_it, MonstersClues.travels_as_black_fog,
-                                     MonstersClues.can_posses_a_reaper]
+                                     MonstersClues.can_posses_a_reaper, MonstersClues.one_can_make_a_deal_with_it]
         self.prince_of_hell.kill_methods = [
                                             MonstersKillMethods.colt_of_colt_with_magic_bullets,
                                             MonstersKillMethods.lance_of_archangel_michael,
@@ -216,7 +216,17 @@ class MonsterBase:
 
         # SEASON 2:
 
-
+        self.rakshasa = Monster("Rakshasa", description="Race of ancient Hindu creatures. "
+                                                        "They appear in human form and feed on human flesh. "
+                                                        "Can make themselves invisible and cannot enter a home "
+                                                        "without being invited. "
+                                                        "They live in squalor and sleep on a bed of dead insects.",
+                                episodes={"S02": [2]})
+        self.rakshasa.clues = [MonstersClues.seen_as_a_clown, MonstersClues.people_dead_weirdly,
+                               MonstersClues.people_seeing_things_or_figures, MonstersClues.invulnerable,
+                               MonstersClues.dead_people_or_children_regularly_in_different_places,
+                               MonstersClues.can_become_invisible, MonstersClues.cannot_enter_a_home_without_invitation]
+        self.rakshasa.kill_methods = [MonstersKillMethods.dagger_made_of_pure_brass]
 
         # SEASON 3:
 

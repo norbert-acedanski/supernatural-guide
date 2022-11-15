@@ -70,8 +70,9 @@ class MonstersClues:
     seen_as_fire = "seen as fire"
     seen_as_a_scarecrow = "seen as a scarecrow"
     seen_as_a_person_in_a_suit = "seen as a person in a suit"
-    seen_as_black_truck = "seen as black truck"
     seen_as_a_shadow = "seen as a shadow"
+    seen_as_a_clown = "seen as a clown"
+    seen_as_black_truck = "seen as black truck"
     seen_as_human_when_not_feeding = "seen as human when not feeding (particularly an old woman)"
     body_torn_apart = "body torn apart"
     no_blood_in_the_body = "no blood in the body"
@@ -108,6 +109,7 @@ class MonstersClues:
     local_legend_about_somebody_killed_or_died = "local legend about somebody killed/died in the past"
     silent_area = "silent area - not even crickets are heard"
     intelligent = "intelligent"
+    can_become_invisible = "can become invisible"
     can_control_water = "can control water"
     can_posses_a_reaper = "can posses a reaper"
     psychic_abilities = "psychic abilities - knows the past, the future and the present of people or places, " \
@@ -116,6 +118,8 @@ class MonstersClues:
     salt_does_not_affect_it = "salt does not affect it"
     holy_water_does_not_affect_it = "holy water does not affect it"
     white_skin = "white skin"
+    one_can_make_a_deal_with_it = "one can make a deal with it"
+    cannot_enter_a_home_without_invitation = "cannot enter a home without invitation"
 
 
 class MonstersKillMethods:
@@ -157,6 +161,7 @@ class MonstersKillMethods:
     very_bright_light = "very bright light"
     make_a_story_that_it_will_unite_with_and_weaken = "make a story that it will unite with and weaken because of it"
     consecrated_wrought_iron_when_it_eats = "consecrated wrought iron when it eats"
+    dagger_made_of_pure_brass = "dagger made of pure brass"
 
 
 class MonstersDisableMethods:
