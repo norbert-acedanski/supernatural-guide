@@ -202,11 +202,11 @@ class MonsterBase:
                                                       "Kidnapped people are taken to nests and then "
                                                       "bleeding them for days or weeks. "
                                                       "One can become a vampire, when drinking vampire blood.",
-                               episodes={"S01": [20]})
+                               episodes={"S01": [20], "S02": [3]})
         self.vampire.clues = [MonstersClues.ripped_throat, MonstersClues.no_blood_in_the_body,
                               MonstersClues.needle_like_teeth, MonstersClues.moving_in_groups_usually,
                               MonstersClues.invulnerable, MonstersClues.high_strength, MonstersClues.bright_eyes,
-                              MonstersClues.great_sense_of_smell, MonstersClues.white_skin]
+                              MonstersClues.great_sense_of_smell, MonstersClues.white_skin, MonstersClues.cattle_deaths]
         self.vampire.kill_methods = [MonstersKillMethods.decapitation, MonstersKillMethods.angel_blade,
                                      MonstersKillMethods.colt_of_colt_with_magic_bullets]
         self.vampire.disable_methods = [MonstersDisableMethods.dead_mans_blood]
@@ -227,6 +227,11 @@ class MonsterBase:
                                MonstersClues.dead_people_or_children_regularly_in_different_places,
                                MonstersClues.can_become_invisible, MonstersClues.cannot_enter_a_home_without_invitation]
         self.rakshasa.kill_methods = [MonstersKillMethods.dagger_made_of_pure_brass]
+
+        self.unknown = Monster("Unknown", description="", episodes={})
+        self.unknown.clues = []
+
+        # Last episode: 3
 
         # -------------------------------------------------- SEASON 3 --------------------------------------------------
 
