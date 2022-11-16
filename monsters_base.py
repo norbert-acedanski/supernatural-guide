@@ -15,7 +15,7 @@ class MonsterBase:
                              if not key.startswith("__")]
         self.chosen_clues = []
 
-        # SEASON 1:
+        # -------------------------------------------------- SEASON 1 --------------------------------------------------
 
         self.prince_of_hell = Monster("Prince of Hell (Azazel, Ramiel, Asmodeus, Dagon)",
                                       description="The oldest of old demons. One generation after Lilith. "
@@ -214,7 +214,7 @@ class MonsterBase:
 
         # ---------------------------------------------- ALL EPISODES DONE ---------------------------------------------
 
-        # SEASON 2:
+        # -------------------------------------------------- SEASON 2 --------------------------------------------------
 
         self.rakshasa = Monster("Rakshasa", description="Race of ancient Hindu creatures. "
                                                         "They appear in human form and feed on human flesh. "
@@ -228,31 +228,31 @@ class MonsterBase:
                                MonstersClues.can_become_invisible, MonstersClues.cannot_enter_a_home_without_invitation]
         self.rakshasa.kill_methods = [MonstersKillMethods.dagger_made_of_pure_brass]
 
-        # SEASON 3:
+        # -------------------------------------------------- SEASON 3 --------------------------------------------------
 
 
 
-        # SEASON 4:
+        # -------------------------------------------------- SEASON 4 --------------------------------------------------
 
 
 
-        # SEASON 5:
+        # -------------------------------------------------- SEASON 5 --------------------------------------------------
 
 
 
-        # SEASON 6:
+        # -------------------------------------------------- SEASON 6 --------------------------------------------------
 
 
 
-        # SEASON 7:
+        # -------------------------------------------------- SEASON 7 --------------------------------------------------
 
 
 
-        # SEASON 8:
+        # -------------------------------------------------- SEASON 8 --------------------------------------------------
 
 
 
-        # SEASON 9:
+        # -------------------------------------------------- SEASON 9 --------------------------------------------------
 
 
 
@@ -313,7 +313,7 @@ class MonsterBase:
                                                         "Human with an angelic grace.")
         self.nephilim.clues = [MonstersClues.weird_weather, MonstersClues.biblical_like_events]
 
-        # SEASON 10:
+        # -------------------------------------------------- SEASON 10 -------------------------------------------------
 
         self.angel_watcher = Monster("Angel Watcher - Grigori")
         self.angel_watcher.clues = [MonstersClues.triangle_wound_with_burns]
@@ -337,7 +337,7 @@ class MonsterBase:
         self.reaper_death = Monster("Reaper - Death")
         self.reaper_death.kill_methods = [MonstersKillMethods.scythe_of_death]
 
-        # SEASON 11:
+        # -------------------------------------------------- SEASON 11 -------------------------------------------------
 
         self.darkness = Monster("Darkness", description="Sister of God. He was the light, she is the dark. "
                                                         "A being with almost unlimited power.")
@@ -400,7 +400,7 @@ class MonsterBase:
                              MonstersClues.needle_like_teeth]
         self.bissan.kill_methods = [MonstersKillMethods.decapitation]
 
-        # SEASON 12:
+        # -------------------------------------------------- SEASON 12 -------------------------------------------------
 
         self.myling = Monster("Myling", description="Scandinavian children ghost. "
                                                     "They try to bring adults and kill them.")
@@ -419,7 +419,7 @@ class MonsterBase:
                              MonstersClues.goat_man]
         self.moloch.kill_methods = [MonstersKillMethods.colt_of_colt_with_magic_bullets]
 
-        # SEASON 13:
+        # -------------------------------------------------- SEASON 13 -------------------------------------------------
 
         self.empty = Monster("Empty", description="The place (and a cosmic being) that angels "
                                                   "and demons go to when they die. "
@@ -430,9 +430,13 @@ class MonsterBase:
         self.ghoul.clues = [MonstersClues.empty_graves]
         self.ghoul.kill_methods = [MonstersKillMethods.decapitation]
 
-        # SEASON 14:
+        # -------------------------------------------------- SEASON 14 -------------------------------------------------
 
-        # SEASON 15:
+
+
+        # -------------------------------------------------- SEASON 15 -------------------------------------------------
+
+
 
 
         self.monsters = [monster for monster in self.__dict__.values() if isinstance(monster, Monster)]
