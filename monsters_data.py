@@ -67,6 +67,7 @@ class MonstersClues:
     can_make_themselves_appear_as_they_like = "can make themselves appear as they like"
     ozone_smell = "ozone smell"
     telekinesis = "telekinesis"
+    mind_control = "mind control"
     flashing_lights = "flashing lights"
     seen_as_fire = "seen as fire"
     seen_as_a_scarecrow = "seen as a scarecrow"
