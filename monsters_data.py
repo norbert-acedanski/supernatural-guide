@@ -14,6 +14,7 @@ class MonstersClues:
     weird_fire_spontaneous_combustion = "weird fire/spontaneous combustion"
     weird_plant_deaths_or_behavior = "weird plant deaths or behavior"
     black_blood = "blood - black"
+    ectoplasm = "ectoplasm (black goo)"
     burned_by_holy_water = "burned by holy water"
     sulfur = "sulfur"
     triangle_wound = "victims wound shaped like triangle"
