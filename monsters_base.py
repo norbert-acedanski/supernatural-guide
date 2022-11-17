@@ -228,10 +228,17 @@ class MonsterBase:
                                MonstersClues.can_become_invisible, MonstersClues.cannot_enter_a_home_without_invitation]
         self.rakshasa.kill_methods = [MonstersKillMethods.dagger_made_of_pure_brass]
 
+        self.resurrected_person = Monster("Resurrected person", description="Brought back from the dead by ancient "
+                                                                            "Greek necromancy ritual.",
+                                          episodes={"S02": [4]})
+        self.resurrected_person.clues = [MonstersClues.people_dead_weirdly, MonstersClues.missing_body,
+                                         MonstersClues.weird_plant_deaths_or_behavior, MonstersClues.invulnerable]
+        self.resurrected_person.kill_methods = [MonstersKillMethods.nail_it_back_to_the_grave]
+
         self.unknown = Monster("Unknown", description="", episodes={})
         self.unknown.clues = []
 
-        # Last episode: 3
+        # Last episode: 4
 
         # -------------------------------------------------- SEASON 3 --------------------------------------------------
 

@@ -12,6 +12,7 @@ class MonstersClues:
     weird_electronics_behavior = "weird electronics behavior"
     weird_noises = "weird noises"
     weird_fire_spontaneous_combustion = "weird fire/spontaneous combustion"
+    weird_plant_deaths_or_behavior = "weird plant deaths or behavior"
     black_blood = "blood - black"
     burned_by_holy_water = "burned by holy water"
     sulfur = "sulfur"
@@ -162,6 +163,7 @@ class MonstersKillMethods:
     make_a_story_that_it_will_unite_with_and_weaken = "make a story that it will unite with and weaken because of it"
     consecrated_wrought_iron_when_it_eats = "consecrated wrought iron when it eats"
     dagger_made_of_pure_brass = "dagger made of pure brass"
+    nail_it_back_to_the_grave = "nail it back to the grave"
 
 
 class MonstersDisableMethods:
