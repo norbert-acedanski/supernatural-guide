@@ -15,8 +15,12 @@ class MonstersClues:
     weird_plant_deaths_or_behavior = "weird plant deaths or behavior"
     black_blood = "blood - black"
     ectoplasm = "ectoplasm (black goo)"
+    pact_sealed_with_a_kiss = "pact sealed with a kiss"
     burned_by_holy_water = "burned by holy water"
     sulfur = "sulfur"
+    sulfur_in_the_blood = "sulfur in the blood"
+    elevated_lymphocyte_percentage = "elevated lymphocyte percentage"
+    infected_with_blood_to_blood_contact = "infected with blood to blood contact"
     triangle_wound = "victims wound shaped like triangle"
     triangle_wound_with_burns = "victims wound shaped like triangle with burns around"
     travels_as_black_fog = "travels as a black fog"
@@ -194,6 +198,7 @@ class MonstersDisableMethods:
     devils_trap = "devil's trap - sigil trap for a demon (they can't exit them)"
     bring_the_spirit_to_its_crime_place = "bring the spirit to its crime place - for other ghosts to kill/take it"
     bring_the_spirit_what_it_wants = "bring the spirit, what it wants (an object of revenge)"
+    wait_until_its_over = "wait until its over"
 
 
 class MonstersCureMethods:

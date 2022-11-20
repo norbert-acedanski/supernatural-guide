@@ -264,14 +264,24 @@ class MonsterBase:
                                         episodes={"S02": [8]})
         self.crossroads_demon.clues = [MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
                                        MonstersClues.red_eyes, MonstersClues.summoned_by_placing_box_in_the_crossroads,
-                                       MonstersClues.travels_as_black_fog]
+                                       MonstersClues.travels_as_black_fog, MonstersClues.pact_sealed_with_a_kiss]
         self.crossroads_demon.disable_methods = [MonstersDisableMethods.devils_trap]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S02": [8]})
-        self.unknown.clues = [MonstersClues.victims_hear_dogs_barking_and_growling, MonstersClues.people_dead_weirdly,
-                              MonstersClues.victims_see_black_dogs, MonstersClues.people_seeing_strange_things,
-                              MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
-                              MonstersClues.animal_like_attack]
+        self.demonic_virus = Monster("Demonic virus", description="Probably caused Roanoke colony disappearance. "
+                                                                  "Croatoan might be a name of the demon. "
+                                                                  "Names also include Dever and Reshef - "
+                                                                  "demon of plague and pestilence.",
+                                     episodes={"S02": [9]})
+        self.demonic_virus.clues = [MonstersClues.people_acting_weirdly, MonstersClues.sulfur_in_the_blood,
+                                    MonstersClues.elevated_lymphocyte_percentage, MonstersClues.high_strength,
+                                    MonstersClues.infected_with_blood_to_blood_contact]
+        self.demonic_virus.kill_methods = [MonstersKillMethods.like_any_human]
+        self.demonic_virus.disable_methods = [MonstersDisableMethods.wait_until_its_over]
+
+        self.unknown = Monster("Unknown", description="", episodes={"S02": [9]})
+        self.unknown.clues = [MonstersClues.people_acting_weirdly, MonstersClues.sulfur_in_the_blood,
+                              MonstersClues.elevated_lymphocyte_percentage, MonstersClues.high_strength,
+                              MonstersClues.infected_with_blood_to_blood_contact]
 
         # -------------------------------------------------- SEASON 3 --------------------------------------------------
 
