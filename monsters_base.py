@@ -79,8 +79,8 @@ class MonsterBase:
         self.skinwalker = Monster("Skinwalker", description="Not seen. Only mentioned in S01E02")
         self.skinwalker.clues = [MonstersClues.claws, MonstersClues.moves_fast]
 
-        self.black_dog = Monster("Black Dog", description="Not seen. Only mentioned in S01E02")
-        self.black_dog.clues = [MonstersClues.claws, MonstersClues.moves_fast]
+        self.black_dog = Monster("Black Dog", description="Not seen. Only mentioned in S01E02 and S02E08")
+        self.black_dog.clues = [MonstersClues.claws, MonstersClues.moves_fast, MonstersClues.victims_see_black_dogs]
 
         self.water_wraith = Monster("Water Wraith", description="Not seen. Only mentioned in S01E03")
         self.water_wraith.clues = [MonstersClues.can_control_water]
@@ -244,10 +244,34 @@ class MonsterBase:
                                  MonstersClues.weird_electronics_behavior]
         self.death_omen.disable_methods = [MonstersDisableMethods.bring_the_spirit_what_it_wants]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S02": [7]})
-        self.unknown.clues = [MonstersClues.invisible_entity, MonstersClues.people_dead_weirdly,
-                              MonstersClues.people_seeing_things_or_figures, MonstersClues.weird_electronics_behavior,
-                              MonstersClues.flashing_lights]
+        self.hell_hound = Monster("Hell Hound", description="Creation of God, but they were too vicious, "
+                                                            "so God kept them short. "
+                                                            "Now they hunt people that sold their souls.",
+                                  episodes={"S02": [8]})
+        self.hell_hound.clues = [MonstersClues.victims_hear_dogs_barking_and_growling, MonstersClues.invisible_dogs,
+                                 MonstersClues.victims_see_black_dogs, MonstersClues.people_seeing_strange_things,
+                                 MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
+                                 MonstersClues.people_dead_weirdly, MonstersClues.animal_like_attack]
+        self.hell_hound.kill_methods = [MonstersKillMethods.demon_killing_knife, MonstersKillMethods.angel_sword]
+        self.hell_hound.disable_methods = [MonstersDisableMethods.goofer_dust,
+                                           MonstersDisableMethods.demon_must_call_it_off]
+
+        self.crossroads_demon = Monster("Crossroads demon", description="One can make a deal with that demon. "
+                                                                        "Can give anything, but will collect ones soul "
+                                                                        "after 10 years. One can summon it by placing "
+                                                                        "a box with: graveyard dirt, black cat cone, "
+                                                                        "ones photo in the center of a crossroad.",
+                                        episodes={"S02": [8]})
+        self.crossroads_demon.clues = [MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
+                                       MonstersClues.red_eyes, MonstersClues.summoned_by_placing_box_in_the_crossroads,
+                                       MonstersClues.travels_as_black_fog]
+        self.crossroads_demon.disable_methods = [MonstersDisableMethods.devils_trap]
+
+        self.unknown = Monster("Unknown", description="", episodes={"S02": [8]})
+        self.unknown.clues = [MonstersClues.victims_hear_dogs_barking_and_growling, MonstersClues.people_dead_weirdly,
+                              MonstersClues.victims_see_black_dogs, MonstersClues.people_seeing_strange_things,
+                              MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
+                              MonstersClues.animal_like_attack]
 
         # -------------------------------------------------- SEASON 3 --------------------------------------------------
 
@@ -322,13 +346,6 @@ class MonsterBase:
 
         self.vampire_alpha = Monster("Vampire Alpha", "First Vampire. All Vampires are descendants of the Alpha.")
         self.vampire_alpha.kill_methods = [MonstersKillMethods.colt_of_colt_with_magic_bullets]
-
-        self.hell_hound = Monster("Hell Hound", description="Creation of God, but they were too vicious, "
-                                                            "so God kept them short. "
-                                                            "Now they hunt people that sold their souls.")
-        self.hell_hound.clues = [MonstersClues.invisible_dogs]
-        self.hell_hound.kill_methods = [MonstersKillMethods.demon_killing_knife, MonstersKillMethods.angel_sword]
-        self.hell_hound.disable_methods = [MonstersDisableMethods.dust_for_hell_hounds]
 
         self.nephilim = Monster("Nephilim", description="Child of human and angel/archangel. "
                                                         "Human with an angelic grace.")
