@@ -131,8 +131,6 @@ class MonstersKillMethods:
     scythe_of_death = "scythe of the death"
     burn_salted_corpse = "burn salted corpse/remains"
     destroy_the_object_that_the_ghost_is_bound_to = "destroy the object, that the ghost is bound to"
-    bring_the_spirit_to_its_crime_place = "bring the spirit to its crime place - for other ghosts to kill it"
-    bring_the_spirit_what_it_wants = "bring the spirit, what it wants (an object of revenge)"
     burn_it = "burn it"
     silver_bullet_into_the_heart = "silver bullet into the heart"
     # bullet_into_the_head = "bullet into the head"  ???
@@ -176,6 +174,8 @@ class MonstersDisableMethods:
     very_bright_light = "very bright light"
     destroy_the_place_that_the_tulpa_resides = "destroy the place that the tulpa resides"
     devils_trap = "devil's trap - sigil trap for a demon (they can't exit them)"
+    bring_the_spirit_to_its_crime_place = "bring the spirit to its crime place - for other ghosts to kill/take it"
+    bring_the_spirit_what_it_wants = "bring the spirit, what it wants (an object of revenge)"
 
 
 class MonstersCureMethods:
