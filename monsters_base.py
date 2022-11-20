@@ -37,7 +37,7 @@ class MonsterBase:
 
         self.vengeful_spirit = Monster("Vengeful Spirit or Ghost (Bloody Mary, Hook Man)",
                                        description="Appears, when somebody died tragically, committed suicide "
-                                                   "or was killed. Usually bound to a place or to things.",
+                                                   "or was killed violently. Usually bound to a place or to things.",
                                        episodes={"S01": [1, 3, 5, 7, 9, 10, 13, 19], "S02": [6]})
         self.vengeful_spirit.clues = [MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                                       MonstersClues.people_dead_weirdly, MonstersClues.ghost_like_creature,
@@ -235,10 +235,17 @@ class MonsterBase:
                                          MonstersClues.weird_plant_deaths_or_behavior, MonstersClues.invulnerable]
         self.resurrected_person.kill_methods = [MonstersKillMethods.nail_it_back_to_the_grave]
 
-        self.unknown = Monster("Unknown", description="", episodes={})
-        self.unknown.clues = []
+        self.death_omen = Monster("Death omen", description="A spirit, that appears, when somebody will die soon.",
+                                  episodes={"S02": [7]})
+        self.death_omen.clues = [MonstersClues.invisible_entity, MonstersClues.people_dead_weirdly,
+                                 MonstersClues.people_seeing_things_or_figures, MonstersClues.flashing_lights,
+                                 MonstersClues.weird_electronics_behavior]
+        self.death_omen.disable_methods = [MonstersKillMethods.bring_the_spirit_what_it_wants]
 
-        # Last episode: 6
+        self.unknown = Monster("Unknown", description="", episodes={"S02": [7]})
+        self.unknown.clues = [MonstersClues.invisible_entity, MonstersClues.people_dead_weirdly,
+                              MonstersClues.people_seeing_things_or_figures, MonstersClues.weird_electronics_behavior,
+                              MonstersClues.flashing_lights]
 
         # -------------------------------------------------- SEASON 3 --------------------------------------------------
 
