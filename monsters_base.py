@@ -39,7 +39,8 @@ class MonsterBase:
                                        description="Appears, when somebody died tragically, committed suicide "
                                                    "or was killed violently. Usually bound to a place or to things.",
                                        episodes={"S01": [1, 3, 5, 7, 9, 10, 13, 19], "S02": [6]})
-        self.vengeful_spirit.clues = [MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
+        self.vengeful_spirit.clues = [MonstersClues.
+                                      missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                                       MonstersClues.people_dead_weirdly, MonstersClues.ghost_like_creature,
                                       MonstersClues.weird_electronics_behavior, MonstersClues.weird_things_behavior,
                                       MonstersClues.local_legend_about_somebody_killed_or_died, MonstersClues.ectoplasm,
@@ -53,8 +54,8 @@ class MonsterBase:
                                       MonstersClues.seen_as_black_truck, MonstersClues.emf,
 
                                       MonstersClues.cold_spots]
-        self.vengeful_spirit.disable_methods = [MonstersKillMethods.bring_the_spirit_to_its_crime_place,
-                                                MonstersKillMethods.bring_the_spirit_what_it_wants,
+        self.vengeful_spirit.disable_methods = [MonstersDisableMethods.bring_the_spirit_to_its_crime_place,
+                                                MonstersDisableMethods.bring_the_spirit_what_it_wants,
                                                 MonstersDisableMethods.iron_or_iron_bullets,
                                                 MonstersDisableMethods.salt_or_salted_bullets]
         self.vengeful_spirit.kill_methods = [MonstersKillMethods.burn_salted_corpse,
@@ -126,7 +127,8 @@ class MonsterBase:
         self.norwegian_god_vanir = Monster("Norwegian god - Vanir",
                                            description="Norwegian God of the harvest, protection and prosperity. "
                                                        "Once a year it requires a sacrifice of a man and a woman "
-                                                       "in order to maintain prosperity. Sacrifice takes place in April",
+                                                       "in order to maintain prosperity. "
+                                                       "Sacrifice takes place in April.",
                                            episodes={"S01": [11]})
         self.norwegian_god_vanir.clues = [MonstersClues.missing_or_dead_people_regularly_in_the_same_area,
                                           MonstersClues.emf, MonstersClues.seen_as_a_scarecrow,
@@ -346,9 +348,8 @@ class MonsterBase:
         self.witch_from_ozz.kill_methods = [MonstersKillMethods.magic_red_high_heels]
 
         self.witch = Monster("Witch")
-        self.witch.clues = \
-            [MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
-             MonstersClues.missing_heart]
+        self.witch.clues = [MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
+                            MonstersClues.missing_heart]
         self.witch.disableMethod = [MonstersDisableMethods.witch_catcher]
         self.witch.kill_methods = [MonstersKillMethods.witch_killing_brew, MonstersKillMethods.cut_thoroat,
                                    MonstersClues.red_eyes]
@@ -474,7 +475,8 @@ class MonsterBase:
     def choose_clues(self):
         clues = input(Colors.UNDERLINE + "\nChoose clues:" + Colors.ENDC + " ")
         clues = re.sub('[a-zA-Z,&^%$#@?|/:;"_=]', ' ', clues)
-        self.chosen_clues = [int(clue) - 1 for clue in clues.split() if (clue.isdigit() and int(clue) <= len(self.clues))]
+        self.chosen_clues = [int(clue) - 1 for clue in clues.split() if (clue.isdigit() and
+                                                                         int(clue) <= len(self.clues))]
         if not self.chosen_clues:
             print("No clues chosen. Try again")
             self.choose_clues()
@@ -489,7 +491,8 @@ class MonsterBase:
                             monster_clues_list[monster_number] += 1
         for clue_number, clue_match_count in enumerate(monster_clues_list):
             if clue_match_count != 0:
-                print(Colors.BOLD + Colors.BLUE + "\n" + str(clue_match_count) + "/" + str(len(self.chosen_clues)) + " Matches:" + Colors.ENDC, end=" ")
+                print(Colors.BOLD + Colors.BLUE + "\n" + str(clue_match_count) + "/" + str(len(self.chosen_clues)) +
+                      " Matches:" + Colors.ENDC, end=" ")
                 self.monsters[clue_number].print_all()
 
     def print_all_monsters(self):
