@@ -242,7 +242,7 @@ class MonsterBase:
         self.death_omen.clues = [MonstersClues.invisible_entity, MonstersClues.people_dead_weirdly,
                                  MonstersClues.people_seeing_things_or_figures, MonstersClues.flashing_lights,
                                  MonstersClues.weird_electronics_behavior]
-        self.death_omen.disable_methods = [MonstersKillMethods.bring_the_spirit_what_it_wants]
+        self.death_omen.disable_methods = [MonstersDisableMethods.bring_the_spirit_what_it_wants]
 
         self.unknown = Monster("Unknown", description="", episodes={"S02": [7]})
         self.unknown.clues = [MonstersClues.invisible_entity, MonstersClues.people_dead_weirdly,
