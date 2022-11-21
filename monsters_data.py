@@ -78,6 +78,7 @@ class MonstersClues:
     mind_control = "mind control"
     able_to_electrocute = "able to electrocute"
     flashing_lights = "flashing lights"
+    drawn_quincunx = "drawn quincunx (hoodoo pattern for spells)"
     seen_as_fire = "seen as fire"
     seen_as_a_scarecrow = "seen as a scarecrow"
     seen_as_a_person_in_a_suit = "seen as a person in a suit"

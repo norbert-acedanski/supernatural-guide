@@ -29,10 +29,13 @@ class CursesBase:
         self.reaper_trapping_spell.disable_methods = [CursesDisableMethods.destroy_the_coptic_cross,
                                                       CursesDisableMethods.destroy_the_black_altar]
 
+        # ---------------------------------------------- ALL EPISODES DONE ---------------------------------------------
 
         # SEASON 2:
 
-
+        self.hoodoo_protection_spell = Curse("Hoodoo protection spell", description="Protects against evil spirits",
+                                             episodes={"S02": [11]})
+        self.hoodoo_protection_spell.clues = [CursesClues.drawn_quincunx]
 
         # SEASON 3:
 

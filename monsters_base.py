@@ -38,7 +38,7 @@ class MonsterBase:
         self.vengeful_spirit = Monster("Vengeful Spirit or Ghost (Bloody Mary, Hook Man)",
                                        description="Appears, when somebody died tragically, committed suicide "
                                                    "or was killed violently. Usually bound to a place or to things.",
-                                       episodes={"S01": [1, 3, 5, 7, 9, 10, 13, 19], "S02": [6]})
+                                       episodes={"S01": [1, 3, 5, 7, 9, 10, 13, 19], "S02": [6, 11]})
         self.vengeful_spirit.clues = [MonstersClues.
                                       missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                                       MonstersClues.people_dead_weirdly, MonstersClues.ghost_like_creature,
@@ -280,10 +280,9 @@ class MonsterBase:
         self.demonic_virus.kill_methods = [MonstersKillMethods.like_any_human]
         self.demonic_virus.disable_methods = [MonstersDisableMethods.wait_until_its_over]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S02": [9]})
-        self.unknown.clues = [MonstersClues.people_acting_weirdly, MonstersClues.sulfur_in_the_blood,
-                              MonstersClues.elevated_lymphocyte_percentage, MonstersClues.high_strength,
-                              MonstersClues.infected_with_blood_to_blood_contact]
+        self.unknown = Monster("Unknown", description="", episodes={"S02": [11]})
+        self.unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.weird_things_behavior,
+                              MonstersClues.people_acting_weirdly]
 
         # -------------------------------------------------- SEASON 3 --------------------------------------------------
 

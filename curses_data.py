@@ -5,6 +5,7 @@ class CursesClues:
     control_over_a_reaper = "control over a reaper"
     black_altar = "black altar"
     controlled_with_a_spell_and_a_cross = "controlled with a spell and a cross"
+    drawn_quincunx = "drawn quincunx"
     sealed_with_a_kiss = "sealed with a kiss"
     the_last_person_that_got_kissed_dies = "the last person that got kissed dies " \
                                            "(reverse order - first kisses, dies last)"
