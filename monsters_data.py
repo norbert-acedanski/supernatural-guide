@@ -155,6 +155,7 @@ class MonstersKillMethods:
     destroy_the_object_that_the_ghost_is_bound_to = "destroy the object, that the ghost is bound to"
     burn_it = "burn it"
     silver_bullet_into_the_heart = "silver bullet into the heart"
+    silver_blade = "silver blade"
     # bullet_into_the_head = "bullet into the head"  ???
     angelica_root_mixture = "mixture of Angelica root, Van Van oil, dust from the crossroads and other 'odds and ends' " \
                             "put into the corners facing each world side on each floor - it purifies the haunted house"

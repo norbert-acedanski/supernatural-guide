@@ -104,11 +104,13 @@ class MonsterBase:
 
         self.shapeshifter = Monster("Shapeshifter", description="These creatures can transform themselves into "
                                                                 "other man or animals.",
-                                    episodes={"S01": [6]})
+                                    episodes={"S01": [6], "S02": [12]})
         self.shapeshifter.clues = [MonstersClues.can_take_form_of_other_people, MonstersClues.skin_left_behind,
                                    MonstersClues.being_at_two_places_at_once, MonstersClues.bright_eyes,
-                                   MonstersClues.weird_animal_behavior, MonstersClues.can_copy_memories_of_other_people]
-        self.shapeshifter.kill_methods = [MonstersKillMethods.silver_bullet_into_the_heart]
+                                   MonstersClues.weird_animal_behavior, MonstersClues.can_copy_memories_of_other_people,
+                                   MonstersClues.people_dead_weirdly]
+        self.shapeshifter.kill_methods = [MonstersKillMethods.silver_bullet_into_the_heart,
+                                          MonstersKillMethods.silver_blade]
 
         self.psychic = Monster("Psychic", description="A person, that can read minds, knows past, "
                                                       "present and future of people or in general. "
@@ -280,9 +282,8 @@ class MonsterBase:
         self.demonic_virus.kill_methods = [MonstersKillMethods.like_any_human]
         self.demonic_virus.disable_methods = [MonstersDisableMethods.wait_until_its_over]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S02": [11]})
-        self.unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.weird_things_behavior,
-                              MonstersClues.people_acting_weirdly]
+        self.unknown = Monster("Unknown", description="", episodes={"S02": [12]})
+        self.unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.bright_eyes]
 
         # -------------------------------------------------- SEASON 3 --------------------------------------------------
 
