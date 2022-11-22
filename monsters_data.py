@@ -18,6 +18,7 @@ class MonstersClues:
     pact_sealed_with_a_kiss = "pact sealed with a kiss"
     burned_by_holy_water = "burned by holy water"
     sulfur = "sulfur"
+    no_sulfur = "no sulfur"
     sulfur_in_the_blood = "sulfur in the blood"
     elevated_lymphocyte_percentage = "elevated lymphocyte percentage"
     infected_with_blood_to_blood_contact = "infected with blood to blood contact"
@@ -35,6 +36,9 @@ class MonstersClues:
     cattle_deaths = "cattle deaths"
     temperature_fluctuations = "temperature fluctuations"
     electrical_storms = "electrical storms"
+    people_feel_spiritual_ecstasy = "people feel spiritual ecstasy"
+    people_hear_voices = "people hear voices"
+    people_seeing_figure_of_light = "people seeing figure of light"
     people_seeing_strange_things = "people seeing strange things"
     people_or_children_severely_sick = "people or children severely sick"
     people_kidnapped_weirdly = "people kidnapped weirdly"
@@ -63,18 +67,14 @@ class MonstersClues:
     summoned_by_saying_bloody_marry_in_front_of_the_mirror = "summoned by saying Bloody Marry in front of the mirror"
     summoned_by_placing_box_in_the_crossroads = "summoned by placing box in the crossroads"
     objects_seen_in_night_vision = "objects seen in night vision"
-    can_take_form_of_other_people = "can take form of other people"
-    can_copy_memories_of_other_people = "can copy memories of other people"
     being_at_two_places_at_once = "being at 2 places at once"
     skin_left_behind = "skin left behind"
     left_zoroastrian_symbol_made_with_blood = "left zoroastrian symbol made with blood - " \
                                               "Sigil for Daeva (demon of darkness)"
     invisible_entity = "invisible entity"
     visible_by_other_ghosts_and_people_close_to_death_only = "visible by other ghosts and people close to death only"
-    can_make_themselves_appear_as_they_like = "can make themselves appear as they like"
     ozone_smell = "ozone smell"
     telekinesis = "telekinesis"
-    can_see_future = "can see future"
     mind_control = "mind control"
     able_to_electrocute = "able to electrocute"
     flashing_lights = "flashing lights"
@@ -127,6 +127,12 @@ class MonstersClues:
     can_become_invisible = "can become invisible"
     can_control_water = "can control water"
     can_posses_a_reaper = "can posses a reaper"
+    can_take_form_of_other_people = "can take form of other people"
+    can_copy_memories_of_other_people = "can copy memories of other people"
+    can_read_peoples_minds = "can read peoples minds"
+    can_make_themselves_appear_as_they_like = "can make themselves appear as they like"
+    can_see_future = "can see future"
+    knows_past = "knows past"
     psychic_abilities = "psychic abilities - knows the past, the future and the present of people or places, " \
                         "senses energies and spirits"
     keeps_changing_appearances = "keeps changing appearances"
@@ -135,6 +141,7 @@ class MonstersClues:
     white_skin = "white skin"
     one_can_make_a_deal_with_it = "one can make a deal with it"
     cannot_enter_a_home_without_invitation = "cannot enter a home without invitation"
+    small_earth_quake = "small earth quake"
 
 
 class MonstersKillMethods:
@@ -203,6 +210,7 @@ class MonstersDisableMethods:
     bring_the_spirit_to_its_crime_place = "bring the spirit to its crime place - for other ghosts to kill/take it"
     bring_the_spirit_what_it_wants = "bring the spirit, what it wants (an object of revenge)"
     wait_until_its_over = "wait until its over"
+    give_it_last_rites = "give it last rites"
 
 
 class MonstersCureMethods:

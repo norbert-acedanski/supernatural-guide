@@ -282,8 +282,24 @@ class MonsterBase:
         self.demonic_virus.kill_methods = [MonstersKillMethods.like_any_human]
         self.demonic_virus.disable_methods = [MonstersDisableMethods.wait_until_its_over]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S02": [12]})
-        self.unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.bright_eyes]
+        self.angel_like_spirit = Monster("Angel-like spirit", description="Spirit of a person that died tragically "
+                                                                          "(like vengeful spirit), but instead of evil,"
+                                                                          " that spirit becomes better-ish.",
+                                         episodes={"S02": [13]})
+        self.angel_like_spirit.clues = [MonstersClues.flashing_lights, MonstersClues.weird_electronics_behavior,
+                                        MonstersClues.people_seeing_things_or_figures, MonstersClues.people_hear_voices,
+                                        MonstersClues.weird_things_behavior, MonstersClues.small_earth_quake,
+                                        MonstersClues.people_seeing_figure_of_light, MonstersClues.knows_past,
+                                        MonstersClues.no_emf, MonstersClues.people_feel_spiritual_ecstasy,
+                                        MonstersClues.can_read_peoples_minds, MonstersClues.no_sulfur]
+        self.angel_like_spirit.disable_methods = [MonstersDisableMethods.give_it_last_rites]
+
+        self.unknown = Monster("Unknown", description="", episodes={"S02": [13]})
+        self.unknown.clues = [MonstersClues.flashing_lights, MonstersClues.weird_electronics_behavior,
+                              MonstersClues.people_seeing_things_or_figures, MonstersClues.weird_things_behavior,
+                              MonstersClues.people_hear_voices, MonstersClues.people_seeing_figure_of_light,
+                              MonstersClues.people_feel_spiritual_ecstasy, MonstersClues.no_emf,
+                              MonstersClues.no_sulfur, MonstersClues.small_earth_quake, MonstersClues.knows_past]
 
         # -------------------------------------------------- SEASON 3 --------------------------------------------------
 
