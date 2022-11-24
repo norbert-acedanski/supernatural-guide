@@ -17,6 +17,11 @@ class ObjectsBase:
                                    episodes={"S01": [20, 21, 22], "S02": [1]})
         self.colt_of_colt.abilities = [ObjectAbilities.can_kill_anything]
 
+        self.charm_against_demons = Object("Charm against demons", description="Fend off possessions. Stops a demon "
+                                                                               "from taking a person as a host.",
+                                           episodes={"S02": [14]})
+        self.charm_against_demons.abilities = [ObjectAbilities.unables_possessions]
+
         self.objects = [object for object in self.__dict__.values() if isinstance(object, Object)]
 
     def print_objects_names(self):
@@ -28,5 +33,3 @@ class ObjectsBase:
     def print_all_objects(self):
         for object in self.objects:
             object.print_all()
-
-
