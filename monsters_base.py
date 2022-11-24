@@ -87,20 +87,20 @@ class MonsterBase:
 
         self.demon = Monster("Demon", description="In every religion there is information about demonic possessions. "
                                                   "Demons are man that were stuck in hell for a long time.",
-                             episodes={"S01": [4, 21, 22], "S02": [1]})
+                             episodes={"S01": [4, 21, 22], "S02": [1, 14]})
         self.demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                             MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                             MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
-                            MonstersClues.people_dead_weirdly, MonstersClues.telekinesis,
+                            MonstersClues.people_dead_weirdly, MonstersClues.with_a_binding_link_exorcism_does_not_work,
+                            MonstersClues.people_acting_weirdly, MonstersClues.telekinesis, MonstersClues.amnesia,
 
                             MonstersClues.black_blood]
-        self.demon.kill_methods = [MonstersKillMethods.exorcism,
-
+        self.demon.kill_methods = [
                                    MonstersKillMethods.angel_blade,
                                    MonstersKillMethods.demon_killing_knife, MonstersKillMethods.will_of_an_archangel,
                                    MonstersKillMethods.colt_of_colt_with_magic_bullets,
                                    MonstersKillMethods.lance_of_archangel_michael]
-        self.demon.disable_methods = [MonstersDisableMethods.devils_trap]
+        self.demon.disable_methods = [MonstersDisableMethods.exorcism, MonstersDisableMethods.devils_trap]
 
         self.shapeshifter = Monster("Shapeshifter", description="These creatures can transform themselves into "
                                                                 "other man or animals.",
@@ -294,12 +294,9 @@ class MonsterBase:
                                         MonstersClues.can_read_peoples_minds, MonstersClues.no_sulfur]
         self.angel_like_spirit.disable_methods = [MonstersDisableMethods.give_it_last_rites]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S02": [13]})
-        self.unknown.clues = [MonstersClues.flashing_lights, MonstersClues.weird_electronics_behavior,
-                              MonstersClues.people_seeing_things_or_figures, MonstersClues.weird_things_behavior,
-                              MonstersClues.people_hear_voices, MonstersClues.people_seeing_figure_of_light,
-                              MonstersClues.people_feel_spiritual_ecstasy, MonstersClues.no_emf,
-                              MonstersClues.no_sulfur, MonstersClues.small_earth_quake, MonstersClues.knows_past]
+        self.unknown = Monster("Unknown", description="", episodes={"S02": [14]})
+        self.unknown.clues = [MonstersClues.people_acting_weirdly, MonstersClues.amnesia,
+                              MonstersClues.people_dead_weirdly]
 
         # -------------------------------------------------- SEASON 3 --------------------------------------------------
 

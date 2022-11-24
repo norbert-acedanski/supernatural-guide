@@ -76,6 +76,7 @@ class MonstersClues:
     ozone_smell = "ozone smell"
     telekinesis = "telekinesis"
     mind_control = "mind control"
+    amnesia = "amnesia"
     able_to_electrocute = "able to electrocute"
     flashing_lights = "flashing lights"
     drawn_quincunx = "drawn quincunx (hoodoo pattern for spells)"
@@ -119,6 +120,8 @@ class MonstersClues:
     bible_burns_it = "Bible burns it"
     invisible_dogs = "invisible dogs"
     goat_man = "goat-man"
+    with_a_binding_link_exorcism_does_not_work = \
+        "with a binding link (used for keeping demon inside a host) exorcism does not work"
     biblical_like_events = "biblical-like events (storms, diseases, plagues, power losses)"
     empty_graves = "empty graves"
     local_legend_about_somebody_killed_or_died = "local legend about somebody killed/died in the past"
@@ -149,7 +152,6 @@ class MonstersKillMethods:
     angel_blade = "angel blade"
     first_blade = "first blade"
     gold_blade = "gold blade"
-    exorcism = "exorcism - The Rituale Romanum (sends a demon back to hell for good)"
     demon_killing_knife = "demon killing knife"
     holy_oil = "holy oil"
     angel_sword = "angel sword"
@@ -187,6 +189,7 @@ class MonstersKillMethods:
 
 
 class MonstersDisableMethods:
+    exorcism = "exorcism - The Rituale Romanum (sends a demon back to hell)"
     iron_or_iron_bullets = "iron bullets/iron in general"
     salt_or_salted_bullets = "salt/salted bullets"
     silver_or_silver_bullets = "silver/silver bullets"
