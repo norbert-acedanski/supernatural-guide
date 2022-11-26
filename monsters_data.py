@@ -40,13 +40,14 @@ class MonstersClues:
     people_hear_voices = "people hear voices"
     people_seeing_figure_of_light = "people seeing figure of light"
     people_seeing_strange_things = "people seeing strange things"
+    people_seeing_things_or_figures = "people seeing things or figures (ghosts, people, reapers, beings, etc.)"
+    people_seeing_aliens = "people seeing aliens"
     people_or_children_severely_sick = "people or children severely sick"
     people_kidnapped_weirdly = "people kidnapped weirdly"
     people_cured_miraculously = "people cured miraculously"
     people_acting_weirdly = "people acting weirdly - like not themselves"
     people_burned_on_the_ceiling = "people burned on the ceiling of their house"
     dead_people_or_children_regularly_in_different_places = "dead people or children regularly in different places"
-    people_seeing_things_or_figures = "people seeing things or figures (ghosts, people, reapers, beings, etc.)"
     missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area = \
         "people missing/dead weirdly, similarly, randomly across a time(weeks/months/years) in the same area"
     missing_or_dead_people_regularly_in_the_same_area = "groups of people missing/dead regularly in the same area"
@@ -62,6 +63,8 @@ class MonstersClues:
     enormous_black_fog = "enormous black fog"
     emf = "Electromagnetic Field"
     no_emf = "no Electromagnetic Field"
+    strange_different_things_happening = "strange, different things happening"
+    things_disappearing = "things disappearing"
     nothing_on_ultraviolet = "nothing on ultraviolet"
     reacts_to_gods_name_in_latin = "reacts to Gods name in latin"
     summoned_by_saying_bloody_marry_in_front_of_the_mirror = "summoned by saying Bloody Marry in front of the mirror"
@@ -135,6 +138,9 @@ class MonstersClues:
     can_read_peoples_minds = "can read peoples minds"
     can_make_themselves_appear_as_they_like = "can make themselves appear as they like"
     can_see_future = "can see future"
+    can_create_thngs_out_of_thin_air = "can create thngs out of thin air"
+    immortal = "immortal"
+    loves_sugar = "loves sugar"
     knows_past = "knows past"
     psychic_abilities = "psychic abilities - knows the past, the future and the present of people or places, " \
                         "senses energies and spirits"
@@ -171,7 +177,7 @@ class MonstersKillMethods:
     burn_the_sacred_tree = "burn the sacred tree"
     copper_coin_placed_under_the_tongue = "copper coin placed under the tongue"
     zanna_killing_knife = "Zanna killing knife"
-    cut_thoroat = "cut throat"
+    cut_throat = "cut throat"
     stabbing_the_heart = "stabbing the heart"
     will_of_an_archangel = "will of an archangel"
     will_of_prince_of_hell = "will of Prince of Hell"
@@ -186,6 +192,7 @@ class MonstersKillMethods:
     consecrated_wrought_iron_when_it_eats = "consecrated wrought iron when it eats"
     dagger_made_of_pure_brass = "dagger made of pure brass"
     nail_it_back_to_the_grave = "nail it back to the grave"
+    aspen_pin = "aspen pin"
 
 
 class MonstersDisableMethods:

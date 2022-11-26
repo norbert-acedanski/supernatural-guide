@@ -294,9 +294,23 @@ class MonsterBase:
                                         MonstersClues.can_read_peoples_minds, MonstersClues.no_sulfur]
         self.angel_like_spirit.disable_methods = [MonstersDisableMethods.give_it_last_rites]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S02": [14]})
-        self.unknown.clues = [MonstersClues.people_acting_weirdly, MonstersClues.amnesia,
-                              MonstersClues.people_dead_weirdly]
+        self.trickster = Monster("Trickster (Loki, Anansi)", description="Demigod (Loki in Scandinavia, Anansi in "
+                                                                         "West Africa). Can create chaos and mischief "
+                                                                         "as easy as breathing.",
+                                 episodes={"S02": [15]})
+        self.trickster.clues = [MonstersClues.people_seeing_things_or_figures, MonstersClues.people_dead_weirdly,
+                                MonstersClues.no_emf, MonstersClues.weird_noises, MonstersClues.people_seeing_aliens,
+                                MonstersClues.strange_different_things_happening, MonstersClues.things_disappearing,
+                                MonstersClues.can_create_thngs_out_of_thin_air, MonstersClues.immortal,
+                                MonstersClues.can_make_themselves_appear_as_they_like, MonstersClues.loves_sugar]
+        self.trickster.kill_methods = [MonstersKillMethods.aspen_pin]
+
+        self.unknown = Monster("Unknown", description="", episodes={"S02": [15]})
+        self.unknown.clues = [MonstersClues.people_seeing_things_or_figures, MonstersClues.people_dead_weirdly,
+                              MonstersClues.no_emf, MonstersClues.weird_noises, MonstersClues.people_seeing_aliens,
+                              MonstersClues.strange_different_things_happening, MonstersClues.things_disappearing,
+                              MonstersClues.can_create_thngs_out_of_thin_air, MonstersClues.immortal,
+                              MonstersClues.can_make_themselves_appear_as_they_like, MonstersClues.loves_sugar]
 
         # -------------------------------------------------- SEASON 3 --------------------------------------------------
 
@@ -393,7 +407,7 @@ class MonsterBase:
         self.witch.clues = [MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                             MonstersClues.missing_heart]
         self.witch.disableMethod = [MonstersDisableMethods.witch_catcher]
-        self.witch.kill_methods = [MonstersKillMethods.witch_killing_brew, MonstersKillMethods.cut_thoroat,
+        self.witch.kill_methods = [MonstersKillMethods.witch_killing_brew, MonstersKillMethods.cut_throat,
                                    MonstersClues.red_eyes]
 
         self.reaper_death = Monster("Reaper - Death")
