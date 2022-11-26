@@ -38,26 +38,26 @@ class MonsterBase:
         self.vengeful_spirit = Monster("Vengeful Spirit or Ghost (Bloody Mary, Hook Man)",
                                        description="Appears, when somebody died tragically, committed suicide "
                                                    "or was killed violently. Usually bound to a place or to things.",
-                                       episodes={"S01": [1, 3, 5, 7, 9, 10, 13, 19], "S02": [6, 11]})
+                                       episodes={"S01": [1, 3, 5, 7, 9, 10, 13, 19], "S02": [6, 11, 16]})
         self.vengeful_spirit.clues = [MonstersClues.
                                       missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                                       MonstersClues.people_dead_weirdly, MonstersClues.ghost_like_creature,
                                       MonstersClues.weird_electronics_behavior, MonstersClues.weird_things_behavior,
                                       MonstersClues.local_legend_about_somebody_killed_or_died, MonstersClues.ectoplasm,
                                       MonstersClues.telekinesis, MonstersClues.invisible_entity,
-                                      MonstersClues.missing_body, MonstersClues.high_strength,
+                                      MonstersClues.missing_body, MonstersClues.high_strength, MonstersClues.cold_spots,
                                       MonstersClues.can_control_water, MonstersClues.people_seeing_things_or_figures,
                                       MonstersClues.summoned_by_saying_bloody_marry_in_front_of_the_mirror,
                                       MonstersClues.objects_seen_in_night_vision, MonstersClues.weird_noises,
                                       MonstersClues.ozone_smell, MonstersClues.seen_as_fire,
                                       MonstersClues.people_acting_weirdly, MonstersClues.victims_hear_voices,
                                       MonstersClues.seen_as_black_truck, MonstersClues.emf,
-
-                                      MonstersClues.cold_spots]
+                                      MonstersClues.missing_or_dead_people_regularly_in_the_same_area]
         self.vengeful_spirit.disable_methods = [MonstersDisableMethods.bring_the_spirit_to_its_crime_place,
                                                 MonstersDisableMethods.bring_the_spirit_what_it_wants,
                                                 MonstersDisableMethods.iron_or_iron_bullets,
-                                                MonstersDisableMethods.salt_or_salted_bullets]
+                                                MonstersDisableMethods.salt_or_salted_bullets,
+                                                MonstersDisableMethods.finish_its_unfinished_business]
         self.vengeful_spirit.kill_methods = [MonstersKillMethods.burn_salted_corpse,
                                              MonstersKillMethods.destroy_the_object_that_the_ghost_is_bound_to]
 
@@ -305,12 +305,13 @@ class MonsterBase:
                                 MonstersClues.can_make_themselves_appear_as_they_like, MonstersClues.loves_sugar]
         self.trickster.kill_methods = [MonstersKillMethods.aspen_pin]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S02": [15]})
-        self.unknown.clues = [MonstersClues.people_seeing_things_or_figures, MonstersClues.people_dead_weirdly,
-                              MonstersClues.no_emf, MonstersClues.weird_noises, MonstersClues.people_seeing_aliens,
-                              MonstersClues.strange_different_things_happening, MonstersClues.things_disappearing,
-                              MonstersClues.can_create_thngs_out_of_thin_air, MonstersClues.immortal,
-                              MonstersClues.can_make_themselves_appear_as_they_like, MonstersClues.loves_sugar]
+        self.phantom_hitchhiker = Monster("Phantom hitchhiker", description="Not seen. Only mentioned in S01E16")
+        self.phantom_hitchhiker.clues = [MonstersClues.missing_or_dead_people_regularly_in_the_same_area]
+
+        self.unknown = Monster("Unknown", description="", episodes={"S02": [16]})
+        self.unknown.clues = [MonstersClues.people_seeing_things_or_figures, MonstersClues.weird_electronics_behavior,
+                              MonstersClues.weird_noises,
+                              MonstersClues.missing_or_dead_people_regularly_in_the_same_area]
 
         # -------------------------------------------------- SEASON 3 --------------------------------------------------
 

@@ -200,6 +200,7 @@ class MonstersDisableMethods:
     iron_or_iron_bullets = "iron bullets/iron in general"
     salt_or_salted_bullets = "salt/salted bullets"
     silver_or_silver_bullets = "silver/silver bullets"
+    finish_its_unfinished_business = "finish its unfinished business"
     symbols_of_anasazi = "symbols of anasazi - can't cross it"
     holy_oil = "holy oil - can't cross it"
     dead_mans_blood = "dead mans blood"
