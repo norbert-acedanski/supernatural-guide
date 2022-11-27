@@ -166,13 +166,6 @@ class MonsterBase:
         self.phantom_gassers = Monster("Phantom gassers", description="Not seen. Only mentioned in S01E15")
         self.phantom_gassers.clues = [MonstersClues.people_kidnapped_weirdly]
 
-        self.werewolf = Monster("Werewolf", description="Not seen. Only mentioned in S01E16")
-        self.werewolf.clues = [MonstersClues.body_torn_apart, MonstersClues.animal_like_attack,
-                               MonstersClues.missing_heart]
-        self.werewolf.kill_methods = [MonstersKillMethods.silver_bullet_into_the_heart]
-        self.werewolf.cure_methods = \
-            [MonstersCureMethods.plasma_therapy_with_the_blood_of_the_werewolf_that_bit_the_victim]
-
         self.daeva = Monster("Daeva", description="Zoroastrian demon - demon of darkness", episodes={"S01": [16]})
         self.daeva.clues = [MonstersClues.victims_hear_voices, MonstersClues.seen_as_a_shadow,
                             MonstersClues.animal_like_attack, MonstersClues.emf, MonstersClues.missing_heart,
@@ -308,10 +301,21 @@ class MonsterBase:
         self.phantom_hitchhiker = Monster("Phantom hitchhiker", description="Not seen. Only mentioned in S01E16")
         self.phantom_hitchhiker.clues = [MonstersClues.missing_or_dead_people_regularly_in_the_same_area]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S02": [16]})
-        self.unknown.clues = [MonstersClues.people_seeing_things_or_figures, MonstersClues.weird_electronics_behavior,
-                              MonstersClues.weird_noises,
-                              MonstersClues.missing_or_dead_people_regularly_in_the_same_area]
+        self.werewolf = Monster("Werewolf", description="Human by day, animal killing machine by moonlight. "
+                                                        "Killing a werewolf, that bit a person "
+                                                        "does not revert the curse. "
+                                                        "Also mentioned in S01E16", episodes={"S02": [17]})
+        self.werewolf.clues = [MonstersClues.body_torn_apart, MonstersClues.animal_like_attack,
+                               MonstersClues.missing_heart, MonstersClues.murders_during_full_moon_week,
+                               MonstersClues.claws, MonstersClues.attacks_at_night, MonstersClues.animal_like_noises,
+                               MonstersClues.amnesia]
+        self.werewolf.kill_methods = [MonstersKillMethods.silver_bullet_into_the_heart]
+        self.werewolf.cure_methods = \
+            [MonstersCureMethods.plasma_therapy_with_the_blood_of_the_werewolf_that_bit_the_victim]
+
+        self.unknown = Monster("Unknown", description="", episodes={"S02": [17]})
+        self.unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.animal_like_attack,
+                              MonstersClues.missing_heart, MonstersClues.murders_during_full_moon_week]
 
         # -------------------------------------------------- SEASON 3 --------------------------------------------------
 
