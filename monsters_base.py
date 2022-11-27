@@ -37,22 +37,23 @@ class MonsterBase:
 
         self.vengeful_spirit = Monster("Vengeful Spirit or Ghost (Bloody Mary, Hook Man)",
                                        description="Appears, when somebody died tragically, committed suicide "
-                                                   "or was killed violently. Usually bound to a place or to things.",
-                                       episodes={"S01": [1, 3, 5, 7, 9, 10, 13, 19], "S02": [6, 11, 16]})
+                                                   "or was killed violently. Usually bound to a place or to things. "
+                                                   "Can be summoned by Enochian, necromantic summoning rituals",
+                                       episodes={"S01": [1, 3, 5, 7, 9, 10, 13, 19], "S02": [6, 11, 16, 18]})
         self.vengeful_spirit.clues = [MonstersClues.
                                       missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                                       MonstersClues.people_dead_weirdly, MonstersClues.ghost_like_creature,
                                       MonstersClues.weird_electronics_behavior, MonstersClues.weird_things_behavior,
                                       MonstersClues.local_legend_about_somebody_killed_or_died, MonstersClues.ectoplasm,
-                                      MonstersClues.telekinesis, MonstersClues.invisible_entity,
+                                      MonstersClues.telekinesis, MonstersClues.invisible_entity, MonstersClues.emf,
                                       MonstersClues.missing_body, MonstersClues.high_strength, MonstersClues.cold_spots,
                                       MonstersClues.can_control_water, MonstersClues.people_seeing_things_or_figures,
                                       MonstersClues.summoned_by_saying_bloody_marry_in_front_of_the_mirror,
                                       MonstersClues.objects_seen_in_night_vision, MonstersClues.weird_noises,
+                                      MonstersClues.missing_or_dead_people_regularly_in_the_same_area,
                                       MonstersClues.ozone_smell, MonstersClues.seen_as_fire,
-                                      MonstersClues.people_acting_weirdly, MonstersClues.victims_hear_voices,
-                                      MonstersClues.seen_as_black_truck, MonstersClues.emf,
-                                      MonstersClues.missing_or_dead_people_regularly_in_the_same_area]
+                                      MonstersClues.people_acting_weirdly, MonstersClues.small_earth_quake,
+                                      MonstersClues.seen_as_black_truck]
         self.vengeful_spirit.disable_methods = [MonstersDisableMethods.bring_the_spirit_to_its_crime_place,
                                                 MonstersDisableMethods.bring_the_spirit_what_it_wants,
                                                 MonstersDisableMethods.iron_or_iron_bullets,
@@ -313,9 +314,10 @@ class MonsterBase:
         self.werewolf.cure_methods = \
             [MonstersCureMethods.plasma_therapy_with_the_blood_of_the_werewolf_that_bit_the_victim]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S02": [17]})
-        self.unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.animal_like_attack,
-                              MonstersClues.missing_heart, MonstersClues.murders_during_full_moon_week]
+        self.unknown = Monster("Unknown", description="", episodes={"S02": [18]})
+        self.unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.people_seeing_things_or_figures,
+                              MonstersClues.weird_electronics_behavior, MonstersClues.emf,
+                              MonstersClues.ghost_like_creature, MonstersClues.weird_things_behavior]
 
         # -------------------------------------------------- SEASON 3 --------------------------------------------------
 
