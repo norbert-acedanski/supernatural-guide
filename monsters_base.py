@@ -39,7 +39,7 @@ class MonsterBase:
                                        description="Appears, when somebody died tragically, committed suicide "
                                                    "or was killed violently. Usually bound to a place or to things. "
                                                    "Can be summoned by Enochian, necromantic summoning rituals",
-                                       episodes={"S01": [1, 3, 5, 7, 9, 10, 13, 19], "S02": [6, 11, 16, 18]})
+                                       episodes={"S01": [1, 3, 5, 7, 9, 10, 13, 19], "S02": [6, 11, 16, 18, 19]})
         self.vengeful_spirit.clues = [MonstersClues.
                                       missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                                       MonstersClues.people_dead_weirdly, MonstersClues.ghost_like_creature,
@@ -314,10 +314,10 @@ class MonsterBase:
         self.werewolf.cure_methods = \
             [MonstersCureMethods.plasma_therapy_with_the_blood_of_the_werewolf_that_bit_the_victim]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S02": [18]})
-        self.unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.people_seeing_things_or_figures,
-                              MonstersClues.weird_electronics_behavior, MonstersClues.emf,
-                              MonstersClues.ghost_like_creature, MonstersClues.weird_things_behavior]
+        self.unknown = Monster("Unknown", description="", episodes={"S02": [19]})
+        self.unknown.clues = [MonstersClues.cold_spots, MonstersClues.weird_things_behavior,
+                              MonstersClues.weird_electronics_behavior, MonstersClues.flashing_lights,
+                              MonstersClues.people_seeing_things_or_figures]
 
         # -------------------------------------------------- SEASON 3 --------------------------------------------------
 
