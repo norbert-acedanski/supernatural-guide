@@ -206,7 +206,8 @@ class MonsterBase:
         self.vampire.clues = [MonstersClues.ripped_throat, MonstersClues.no_blood_in_the_body,
                               MonstersClues.needle_like_teeth, MonstersClues.moving_in_groups_usually,
                               MonstersClues.invulnerable, MonstersClues.high_strength, MonstersClues.bright_eyes,
-                              MonstersClues.great_sense_of_smell, MonstersClues.white_skin, MonstersClues.cattle_deaths]
+                              MonstersClues.great_sense_of_smell, MonstersClues.white_skin, MonstersClues.cattle_deaths,
+                              MonstersClues.feeds_on_blood]
         self.vampire.kill_methods = [MonstersKillMethods.decapitation, MonstersKillMethods.angel_blade,
                                      MonstersKillMethods.colt_of_colt_with_magic_bullets]
         self.vampire.disable_methods = [MonstersDisableMethods.dead_mans_blood]
@@ -314,10 +315,19 @@ class MonsterBase:
         self.werewolf.cure_methods = \
             [MonstersCureMethods.plasma_therapy_with_the_blood_of_the_werewolf_that_bit_the_victim]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S02": [19]})
-        self.unknown.clues = [MonstersClues.cold_spots, MonstersClues.weird_things_behavior,
-                              MonstersClues.weird_electronics_behavior, MonstersClues.flashing_lights,
-                              MonstersClues.people_seeing_things_or_figures]
+        self.jinn = Monster("Jinn", description="Mythical creatures, that feed on people. They have godlike power "
+                                                "and can shaper reality as they like. Usually reside in ruins - "
+                                                "the bigger, the better.",
+                            episodes={"S02": [20]})
+        self.jinn.clues = [MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
+                           MonstersClues.blue_eyes, MonstersClues.can_put_a_person_in_wonderland,
+                           MonstersClues.blue_fire_on_its_arms, MonstersClues.feeds_on_blood]
+        self.jinn.kill_methods = [MonstersKillMethods.silver_knife_dipped_in_lambs_blood]
+
+        self.unknown = Monster("Unknown", description="", episodes={"S02": [20]})
+        self.unknown.clues = [MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
+                              MonstersClues.blue_eyes, MonstersClues.can_put_a_person_in_wonderland,
+                              MonstersClues.blue_fire_on_its_arms]
 
         # -------------------------------------------------- SEASON 3 --------------------------------------------------
 
