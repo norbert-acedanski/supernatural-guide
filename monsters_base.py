@@ -21,7 +21,7 @@ class MonsterBase:
                                       description="The oldest of old demons. One generation after Lilith. "
                                                   "They were turned by Lucyfer himself before the Atlantis drown. "
                                                   "They were trained to be demonic generals in the war against heaven.",
-                                      episodes={"S01": [1, 21, 22], "S02": [1, 21]})
+                                      episodes={"S01": [1, 21, 22], "S02": [1, 21, 22]})
         self.prince_of_hell.clues = [MonstersClues.people_burned_on_the_ceiling, MonstersClues.telekinesis,
                                      MonstersClues.weird_things_behavior, MonstersClues.yellow_eyes,
                                      MonstersClues.children_of_victims_that_died_on_the_ceiling_have_abilities,
@@ -31,8 +31,8 @@ class MonsterBase:
                                      MonstersClues.holy_water_does_not_affect_it, MonstersClues.travels_as_black_fog,
                                      MonstersClues.can_posses_a_reaper, MonstersClues.one_can_make_a_deal_with_it,
                                      MonstersClues.can_show_past_to_people]
-        self.prince_of_hell.kill_methods = [
-                                            MonstersKillMethods.colt_of_colt_with_magic_bullets,
+        self.prince_of_hell.kill_methods = [MonstersKillMethods.colt_of_colt_with_magic_bullets,
+
                                             MonstersKillMethods.lance_of_archangel_michael,
                                             MonstersKillMethods.will_of_a_nephilim]
 
@@ -262,7 +262,7 @@ class MonsterBase:
                                                                         "after 10 years. One can summon it by placing "
                                                                         "a box with: graveyard dirt, black cat cone, "
                                                                         "ones photo in the center of a crossroad.",
-                                        episodes={"S02": [8]})
+                                        episodes={"S02": [8, 22]})
         self.crossroads_demon.clues = [MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
                                        MonstersClues.red_eyes, MonstersClues.summoned_by_placing_box_in_the_crossroads,
                                        MonstersClues.travels_as_black_fog, MonstersClues.pact_sealed_with_a_kiss]
@@ -331,9 +331,10 @@ class MonsterBase:
         self.acheri.clues = [MonstersClues.seen_as_a_little_girl, MonstersClues.claws, MonstersClues.animal_like_attack]
         self.acheri.disable_methods = [MonstersDisableMethods.iron_or_iron_bullets]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S02": [21]})
-        self.unknown.clues = [MonstersClues.weird_electronics_behavior, MonstersClues.people_dead_weirdly,
-                              MonstersClues.sulfur]
+        # ---------------------------------------------- ALL EPISODES DONE ---------------------------------------------
+
+        self.unknown = Monster("Unknown", description="", episodes={"S02": [22]})
+        self.unknown.clues = []
 
         # -------------------------------------------------- SEASON 3 --------------------------------------------------
 
