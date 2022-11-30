@@ -21,7 +21,7 @@ class MonsterBase:
                                       description="The oldest of old demons. One generation after Lilith. "
                                                   "They were turned by Lucyfer himself before the Atlantis drown. "
                                                   "They were trained to be demonic generals in the war against heaven.",
-                                      episodes={"S01": [1, 21, 22], "S02": [1]})
+                                      episodes={"S01": [1, 21, 22], "S02": [1, 21]})
         self.prince_of_hell.clues = [MonstersClues.people_burned_on_the_ceiling, MonstersClues.telekinesis,
                                      MonstersClues.weird_things_behavior, MonstersClues.yellow_eyes,
                                      MonstersClues.children_of_victims_that_died_on_the_ceiling_have_abilities,
@@ -29,7 +29,8 @@ class MonsterBase:
                                      MonstersClues.weird_weather, MonstersClues.cattle_deaths,
                                      MonstersClues.temperature_fluctuations, MonstersClues.electrical_storms,
                                      MonstersClues.holy_water_does_not_affect_it, MonstersClues.travels_as_black_fog,
-                                     MonstersClues.can_posses_a_reaper, MonstersClues.one_can_make_a_deal_with_it]
+                                     MonstersClues.can_posses_a_reaper, MonstersClues.one_can_make_a_deal_with_it,
+                                     MonstersClues.can_show_past_to_people]
         self.prince_of_hell.kill_methods = [
                                             MonstersKillMethods.colt_of_colt_with_magic_bullets,
                                             MonstersKillMethods.lance_of_archangel_michael,
@@ -158,7 +159,8 @@ class MonsterBase:
                                             MonstersClues.telekinesis, MonstersClues.mind_control,
                                             MonstersClues.able_to_electrocute, MonstersClues.can_see_future,
                                             MonstersClues.people_seeing_things_or_figures,
-                                            MonstersClues.their_mother_was_burned_on_the_ceiling_when_they_were_infants]
+                                            MonstersClues.their_mother_was_burned_on_the_ceiling_when_they_were_infants,
+                                            MonstersClues.as_babies_fed_with_demon_blood]
         self.people_with_abilities.kill_methods = [MonstersKillMethods.like_any_human]
 
         self.spring_heeled_jacks = Monster("Sprint Heeled Jacks", description="Not seen. Only mentioned in S01E15")
@@ -324,10 +326,14 @@ class MonsterBase:
                            MonstersClues.blue_fire_on_its_arms, MonstersClues.feeds_on_blood]
         self.jinn.kill_methods = [MonstersKillMethods.silver_knife_dipped_in_lambs_blood]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S02": [20]})
-        self.unknown.clues = [MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
-                              MonstersClues.blue_eyes, MonstersClues.can_put_a_person_in_wonderland,
-                              MonstersClues.blue_fire_on_its_arms]
+        self.acheri = Monster("Acheri", description="Demon, that disguises itself as a little girl.",
+                              episodes={"S02": [21]})
+        self.acheri.clues = [MonstersClues.seen_as_a_little_girl, MonstersClues.claws, MonstersClues.animal_like_attack]
+        self.acheri.disable_methods = [MonstersDisableMethods.iron_or_iron_bullets]
+
+        self.unknown = Monster("Unknown", description="", episodes={"S02": [21]})
+        self.unknown.clues = [MonstersClues.weird_electronics_behavior, MonstersClues.people_dead_weirdly,
+                              MonstersClues.sulfur]
 
         # -------------------------------------------------- SEASON 3 --------------------------------------------------
 
