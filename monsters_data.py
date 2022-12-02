@@ -83,7 +83,7 @@ class MonstersClues:
     ozone_smell = "ozone smell"
     telekinesis = "telekinesis"
     mind_control = "mind control"
-    amnesia = "amnesia"
+    amnesia_blackout = "amnesia/blackout"
     able_to_electrocute = "able to electrocute"
     as_babies_fed_with_demon_blood = "as babies fed with demon blood"
     flashing_lights = "flashing lights"
@@ -148,6 +148,7 @@ class MonstersClues:
     can_create_thngs_out_of_thin_air = "can create thngs out of thin air"
     can_put_a_person_in_wonderland = "can put a person in wonderland - dream world inside ones mind"
     can_show_past_to_people = "can show past to people"
+    can_vanish = "can vanish"
     immortal = "immortal"
     loves_sugar = "loves sugar"
     knows_past = "knows past"
@@ -206,6 +207,8 @@ class MonstersKillMethods:
 
 
 class MonstersDisableMethods:
+    holy_water = "holy water"
+    holy_wood = "holy wood (palo santo) - tree from peru"
     exorcism = "exorcism - The Rituale Romanum (sends a demon back to hell)"
     iron_or_iron_bullets = "iron bullets/iron in general"
     salt_or_salted_bullets = "salt/salted bullets"

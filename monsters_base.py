@@ -89,12 +89,13 @@ class MonsterBase:
 
         self.demon = Monster("Demon", description="In every religion there is information about demonic possessions. "
                                                   "Demons are man that were stuck in hell for a long time.",
-                             episodes={"S01": [4, 21, 22], "S02": [1, 14]})
+                             episodes={"S01": [4, 21, 22], "S02": [1, 14], "S03": [1]})
         self.demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                             MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                             MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
                             MonstersClues.people_dead_weirdly, MonstersClues.with_a_binding_link_exorcism_does_not_work,
-                            MonstersClues.people_acting_weirdly, MonstersClues.telekinesis, MonstersClues.amnesia,
+                            MonstersClues.people_acting_weirdly, MonstersClues.telekinesis,
+                            MonstersClues.amnesia_blackout, MonstersClues.can_vanish,
 
                             MonstersClues.black_blood]
         self.demon.kill_methods = [
@@ -102,7 +103,8 @@ class MonsterBase:
                                    MonstersKillMethods.demon_killing_knife, MonstersKillMethods.will_of_an_archangel,
                                    MonstersKillMethods.colt_of_colt_with_magic_bullets,
                                    MonstersKillMethods.lance_of_archangel_michael]
-        self.demon.disable_methods = [MonstersDisableMethods.exorcism, MonstersDisableMethods.devils_trap]
+        self.demon.disable_methods = [MonstersDisableMethods.holy_water, MonstersDisableMethods.holy_wood,
+                                      MonstersDisableMethods.exorcism, MonstersDisableMethods.devils_trap]
 
         self.shapeshifter = Monster("Shapeshifter", description="These creatures can transform themselves into "
                                                                 "other man or animals.",
@@ -312,7 +314,7 @@ class MonsterBase:
         self.werewolf.clues = [MonstersClues.body_torn_apart, MonstersClues.animal_like_attack,
                                MonstersClues.missing_heart, MonstersClues.murders_during_full_moon_week,
                                MonstersClues.claws, MonstersClues.attacks_at_night, MonstersClues.animal_like_noises,
-                               MonstersClues.amnesia]
+                               MonstersClues.amnesia_blackout]
         self.werewolf.kill_methods = [MonstersKillMethods.silver_bullet_into_the_heart]
         self.werewolf.cure_methods = \
             [MonstersCureMethods.plasma_therapy_with_the_blood_of_the_werewolf_that_bit_the_victim]
@@ -333,12 +335,24 @@ class MonsterBase:
 
         # ---------------------------------------------- ALL EPISODES DONE ---------------------------------------------
 
-        self.unknown = Monster("Unknown", description="", episodes={"S02": [22]})
-        self.unknown.clues = []
-
         # -------------------------------------------------- SEASON 3 --------------------------------------------------
 
+        self.seven_deadly_sins = Monster("Seven deadly sins", description="In 1589 Binsfeld's classification of demons,"
+                                                                          " he IDd all of them not just as human vices "
+                                                                          "but as actual devils.",
+                                         episodes={"S03": [1]})
+        self.seven_deadly_sins.clues = [MonstersClues.black_eyes, MonstersClues.mind_control, MonstersClues.no_emf,
+                                        MonstersClues.burned_by_holy_water, MonstersClues.travels_as_black_fog,
+                                        MonstersClues.people_acting_weirdly, MonstersClues.people_dead_weirdly,
+                                        MonstersClues.no_sulfur, MonstersClues.can_read_peoples_minds,
+                                        MonstersClues.weird_electronics_behavior, MonstersClues.high_strength]
+        self.seven_deadly_sins.kill_methods = [MonstersKillMethods.demon_killing_knife]
+        self.seven_deadly_sins.disable_methods = [MonstersDisableMethods.holy_water, MonstersDisableMethods.devils_trap,
+                                                  MonstersDisableMethods.exorcism]
 
+        self.unknown = Monster("Unknown", description="", episodes={"S03": [1]})
+        self.unknown.clues = [MonstersClues.weird_things_behavior, MonstersClues.flashing_lights,
+                              MonstersClues.burned_by_holy_water, MonstersClues.travels_as_black_fog]
 
         # -------------------------------------------------- SEASON 4 --------------------------------------------------
 
