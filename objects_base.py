@@ -22,6 +22,11 @@ class ObjectsBase:
                                            episodes={"S02": [14]})
         self.charm_against_demons.abilities = [ObjectAbilities.unables_possessions]
 
+        self.demon_killing_knife = Object("Demon killing knife", description="Can literally kill demons, "
+                                                                             "not get them back to hell.",
+                                          episodes={"S03": [1]})
+        self.demon_killing_knife.abilities = [ObjectAbilities.can_kill_demons]
+
         self.objects = [object for object in self.__dict__.values() if isinstance(object, Object)]
 
     def print_objects_names(self):
