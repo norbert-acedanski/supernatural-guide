@@ -17,7 +17,8 @@ class MonsterBase:
 
         # -------------------------------------------------- SEASON 1 --------------------------------------------------
 
-        self.prince_of_hell = Monster("Prince of Hell (Azazel, Ramiel, Asmodeus, Dagon)",
+        self.prince_of_hell = Monster("Prince of Hell (Azazel - the yellow eyed demon that made people with abilities, "
+                                      "Ramiel, Asmodeus, Dagon)",
                                       description="The oldest of old demons. One generation after Lilith. "
                                                   "They were turned by Lucyfer himself before the Atlantis drown. "
                                                   "They were trained to be demonic generals in the war against heaven.",
@@ -89,7 +90,7 @@ class MonsterBase:
 
         self.demon = Monster("Demon", description="In every religion there is information about demonic possessions. "
                                                   "Demons are man that were stuck in hell for a long time.",
-                             episodes={"S01": [4, 21, 22], "S02": [1, 14], "S03": [1, 2]})
+                             episodes={"S01": [4, 21, 22], "S02": [1, 14], "S03": [1, 2, 4]})
         self.demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                             MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                             MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -365,11 +366,9 @@ class MonsterBase:
                                  MonstersClues.real_appearance_can_be_seen_in_a_reflection]
         self.changeling.kill_methods = [MonstersKillMethods.burn_it]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S03": [2]})
-        self.unknown.clues = [MonstersClues.weird_things_behavior, MonstersClues.babies_or_children_acting_weirdly,
-                              MonstersClues.missing_or_dead_people_regularly_in_the_same_area,
-                              MonstersClues.bite_marks_on_peoples_necks, MonstersClues.people_dead_weirdly,
-                              MonstersClues.feeding_at_night, MonstersClues.may_leave_marks_on_windows]
+        self.unknown = Monster("Unknown", description="", episodes={"S03": [4]})
+        self.unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.people_acting_weirdly,
+                              MonstersClues.telekinesis, MonstersClues.sulfur]
 
         # -------------------------------------------------- SEASON 4 --------------------------------------------------
 
