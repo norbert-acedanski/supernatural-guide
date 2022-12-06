@@ -14,7 +14,7 @@ class ObjectsBase:
                                                                "was overhead and the same night those men died "
                                                                "at the Alamo. He made it for a hunter along with "
                                                                "13 bullets. Bullets can be crafted for this gun.",
-                                   episodes={"S01": [20, 21, 22], "S02": [1, 22], "S03": [4]})
+                                   episodes={"S01": [20, 21, 22], "S02": [1, 22], "S03": [4, 5]})
         self.colt_of_colt.abilities = [ObjectAbilities.can_kill_anything]
 
         self.charm_against_demons = Object("Charm against demons", description="Fend off possessions. Stops a demon "
