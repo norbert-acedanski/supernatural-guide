@@ -89,7 +89,7 @@ class MonsterBase:
 
         self.demon = Monster("Demon", description="In every religion there is information about demonic possessions. "
                                                   "Demons are man that were stuck in hell for a long time.",
-                             episodes={"S01": [4, 21, 22], "S02": [1, 14], "S03": [1]})
+                             episodes={"S01": [4, 21, 22], "S02": [1, 14], "S03": [1, 2]})
         self.demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                             MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                             MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -350,9 +350,26 @@ class MonsterBase:
         self.seven_deadly_sins.disable_methods = [MonstersDisableMethods.holy_water, MonstersDisableMethods.devils_trap,
                                                   MonstersDisableMethods.exorcism]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S03": [1]})
-        self.unknown.clues = [MonstersClues.weird_things_behavior, MonstersClues.flashing_lights,
-                              MonstersClues.burned_by_holy_water, MonstersClues.travels_as_black_fog]
+        self.changeling = Monster("Changeling", description="Evil monster babies/children. They can perfectly mimic "
+                                                            "children. According to lore, they climb the window and "
+                                                            "kidnap the kid. Feeding on moms' synovial fluid. "
+                                                            "They can feed on a victim for months. "
+                                                            "Kidnapped kids are hidden usually underground. "
+                                                            "There can be a mother changeling. "
+                                                            "Burning her burns also kid changelings.",
+                                  episodes={"S03": [2]})
+        self.changeling.clues = [MonstersClues.weird_things_behavior, MonstersClues.babies_or_children_acting_weirdly,
+                                 MonstersClues.missing_or_dead_people_regularly_in_the_same_area,
+                                 MonstersClues.bite_marks_on_peoples_necks, MonstersClues.people_dead_weirdly,
+                                 MonstersClues.feeding_at_night, MonstersClues.may_leave_marks_on_windows,
+                                 MonstersClues.real_appearance_can_be_seen_in_a_reflection]
+        self.changeling.kill_methods = [MonstersKillMethods.burn_it]
+
+        self.unknown = Monster("Unknown", description="", episodes={"S03": [2]})
+        self.unknown.clues = [MonstersClues.weird_things_behavior, MonstersClues.babies_or_children_acting_weirdly,
+                              MonstersClues.missing_or_dead_people_regularly_in_the_same_area,
+                              MonstersClues.bite_marks_on_peoples_necks, MonstersClues.people_dead_weirdly,
+                              MonstersClues.feeding_at_night, MonstersClues.may_leave_marks_on_windows]
 
         # -------------------------------------------------- SEASON 4 --------------------------------------------------
 
