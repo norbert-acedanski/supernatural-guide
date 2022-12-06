@@ -1,6 +1,6 @@
 from colors import Colors
 from object import Object
-from objects_data import ObjectAbilities, ObjectMaintenance
+from objects_data import ObjectAbilities, ObjectMaintenance, ObjectDestroyMethods
 
 
 class ObjectsBase:
@@ -26,6 +26,15 @@ class ObjectsBase:
                                                                              "not get them back to hell.",
                                           episodes={"S03": [1]})
         self.demon_killing_knife.abilities = [ObjectAbilities.can_kill_demons]
+
+        self.lucky_rabbits_foot = Object("Lucky rabbits foot",
+                                         description="Person, who touches it becomes incredibly lucky. If another "
+                                                     "person touches it, the previous one becomes incredibly unlucky "
+                                                     "and dies in a week. To make one, you have to cut rabbits foot in "
+                                                     "a cemetery under a full moon on a Friday the 13th.",
+                                         episodes={"S03": [3]})
+        self.lucky_rabbits_foot.abilities = [ObjectAbilities.grants_incredible_luck]
+        self.lucky_rabbits_foot.destroy_methods = [ObjectDestroyMethods.burn_it]
 
         self.objects = [object for object in self.__dict__.values() if isinstance(object, Object)]
 

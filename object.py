@@ -10,6 +10,7 @@ class Object:
         self.episodes = episodes
         self.abilities = None
         self.maintenance_methods = None
+        self.destroy_methods = None
 
     def print_name(self):
         print(Colors.GREEN + "\n" + self.name + ":" + Colors.ENDC)
@@ -41,9 +42,18 @@ class Object:
         else:
             print("  *  None found...")
 
+    def print_destroy_methods(self):
+        print(Colors.MAGENTA + "Destroy Methods:" + Colors.ENDC)
+        if self.destroy_methods is not None:
+            for method in self.destroy_methods:
+                print("  *  " + method)
+        else:
+            print("  *  None found...")
+
     def print_all(self):
         self.print_name()
         self.print_description()
         self.print_episodes()
         self.print_abilities()
         self.print_maintenance_methods()
+        self.print_destroy_methods()
