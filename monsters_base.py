@@ -40,8 +40,10 @@ class MonsterBase:
         self.vengeful_spirit = Monster("Vengeful Spirit or Ghost (Bloody Mary, Hook Man)",
                                        description="Appears, when somebody died tragically, committed suicide "
                                                    "or was killed violently. Usually bound to a place or to things. "
-                                                   "Can be summoned by Enochian, necromantic summoning rituals",
-                                       episodes={"S01": [1, 3, 5, 7, 9, 10, 13, 19], "S02": [6, 11, 16, 18, 19]})
+                                                   "Can be summoned by Enochian, necromantic summoning rituals. "
+                                                   "Sometimes it's a spirit of a person, that is in the coma.",
+                                       episodes={"S01": [1, 3, 5, 7, 9, 10, 13, 19], "S02": [6, 11, 16, 18, 19],
+                                                 "S03": [5]})
         self.vengeful_spirit.clues = [MonstersClues.
                                       missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                                       MonstersClues.people_dead_weirdly, MonstersClues.ghost_like_creature,
@@ -53,9 +55,10 @@ class MonsterBase:
                                       MonstersClues.summoned_by_saying_bloody_marry_in_front_of_the_mirror,
                                       MonstersClues.objects_seen_in_night_vision, MonstersClues.weird_noises,
                                       MonstersClues.missing_or_dead_people_regularly_in_the_same_area,
-                                      MonstersClues.ozone_smell, MonstersClues.seen_as_fire,
+                                      MonstersClues.ozone_smell, MonstersClues.seen_as_fire, MonstersClues.no_sulfur,
                                       MonstersClues.people_acting_weirdly, MonstersClues.small_earth_quake,
-                                      MonstersClues.seen_as_black_truck]
+                                      MonstersClues.seen_as_black_truck, MonstersClues.no_missing_heart,
+                                      MonstersClues.seen_as_a_little_girl]
         self.vengeful_spirit.disable_methods = [MonstersDisableMethods.bring_the_spirit_to_its_crime_place,
                                                 MonstersDisableMethods.bring_the_spirit_what_it_wants,
                                                 MonstersDisableMethods.iron_or_iron_bullets,
@@ -270,6 +273,7 @@ class MonsterBase:
                                        MonstersClues.red_eyes, MonstersClues.summoned_by_placing_box_in_the_crossroads,
                                        MonstersClues.travels_as_black_fog, MonstersClues.pact_sealed_with_a_kiss]
         self.crossroads_demon.disable_methods = [MonstersDisableMethods.devils_trap]
+        self.crossroads_demon.kill_methods = [MonstersKillMethods.colt_of_colt_with_magic_bullets]
 
         self.demonic_virus = Monster("Demonic virus", description="Probably caused Roanoke colony disappearance. "
                                                                   "Croatoan might be a name of the demon. "
@@ -366,9 +370,11 @@ class MonsterBase:
                                  MonstersClues.real_appearance_can_be_seen_in_a_reflection]
         self.changeling.kill_methods = [MonstersKillMethods.burn_it]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S03": [4]})
-        self.unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.people_acting_weirdly,
-                              MonstersClues.telekinesis, MonstersClues.sulfur]
+        self.unknown = Monster("Unknown", description="", episodes={"S03": [5]})
+        self.unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.animal_like_attack,
+                              MonstersClues.animal_like_noises, MonstersClues.no_missing_heart,
+                              MonstersClues.people_acting_weirdly, MonstersClues.no_sulfur, MonstersClues.emf,
+                              MonstersClues.seen_as_a_little_girl]
 
         # -------------------------------------------------- SEASON 4 --------------------------------------------------
 

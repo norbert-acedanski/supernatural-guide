@@ -56,6 +56,7 @@ class MonstersClues:
     missing_or_dead_people_regularly_in_the_same_area = "groups of people missing/dead regularly in the same area"
     missing_body = "missing body"
     missing_heart = "missing heart"
+    no_missing_heart = " no missing heart"
     murders_during_full_moon_week = "murders during full moon week"
     moves_fast = "moves fast"
     moving_in_groups_usually = "moving in groups usually"
@@ -68,7 +69,8 @@ class MonstersClues:
     enormous_black_fog = "enormous black fog"
     emf = "Electromagnetic Field"
     no_emf = "no Electromagnetic Field"
-    strange_different_things_happening = "strange, different things happening"
+    strange_different_things_happening = "strange, different things happening - " \
+                                         "like aliens, grimm brothers fairy tails, etc."
     things_disappearing = "things disappearing"
     nothing_on_ultraviolet = "nothing on ultraviolet"
     reacts_to_gods_name_in_latin = "reacts to Gods name in latin"
