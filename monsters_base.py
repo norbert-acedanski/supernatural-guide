@@ -43,7 +43,7 @@ class MonsterBase:
                                                    "Can be summoned by Enochian, necromantic summoning rituals. "
                                                    "Sometimes it's a spirit of a person, that is in the coma.",
                                        episodes={"S01": [1, 3, 5, 7, 9, 10, 13, 19], "S02": [6, 11, 16, 18, 19],
-                                                 "S03": [5]})
+                                                 "S03": [5, 6]})
         self.vengeful_spirit.clues = [MonstersClues.
                                       missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                                       MonstersClues.people_dead_weirdly, MonstersClues.ghost_like_creature,
@@ -57,9 +57,9 @@ class MonsterBase:
                                       MonstersClues.missing_or_dead_people_regularly_in_the_same_area,
                                       MonstersClues.ozone_smell, MonstersClues.seen_as_fire, MonstersClues.no_sulfur,
                                       MonstersClues.people_acting_weirdly, MonstersClues.small_earth_quake,
-                                      MonstersClues.seen_as_black_truck, MonstersClues.no_missing_heart,
-                                      MonstersClues.seen_as_a_little_girl,
-                                      MonstersClues.strange_different_things_happening]
+                                      MonstersClues.seen_as_black_truck, MonstersClues.people_seeing_things_or_figures,
+                                      MonstersClues.seen_as_a_little_girl, MonstersClues.seen_as_a_drown_man,
+                                      MonstersClues.strange_different_things_happening, MonstersClues.no_missing_heart]
         self.vengeful_spirit.disable_methods = [MonstersDisableMethods.bring_the_spirit_to_its_crime_place,
                                                 MonstersDisableMethods.bring_the_spirit_what_it_wants,
                                                 MonstersDisableMethods.iron_or_iron_bullets,
@@ -371,8 +371,10 @@ class MonsterBase:
                                  MonstersClues.real_appearance_can_be_seen_in_a_reflection]
         self.changeling.kill_methods = [MonstersKillMethods.burn_it]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S03": [5]})
-        self.unknown.clues = [MonstersClues.people_seeing_things_or_figures, MonstersClues.strange_different_things_happening]
+        self.unknown = Monster("Unknown", description="", episodes={"S03": [6]})
+        self.unknown.clues = [MonstersClues.people_seeing_things_or_figures, MonstersClues.victims_see_ships,
+                              MonstersClues.people_dead_weirdly, MonstersClues.seen_as_a_drown_man,
+                              MonstersClues.missing_or_dead_people_regularly_in_the_same_area]
 
         # -------------------------------------------------- SEASON 4 --------------------------------------------------
 
