@@ -58,7 +58,8 @@ class MonsterBase:
                                       MonstersClues.ozone_smell, MonstersClues.seen_as_fire, MonstersClues.no_sulfur,
                                       MonstersClues.people_acting_weirdly, MonstersClues.small_earth_quake,
                                       MonstersClues.seen_as_black_truck, MonstersClues.no_missing_heart,
-                                      MonstersClues.seen_as_a_little_girl]
+                                      MonstersClues.seen_as_a_little_girl,
+                                      MonstersClues.strange_different_things_happening]
         self.vengeful_spirit.disable_methods = [MonstersDisableMethods.bring_the_spirit_to_its_crime_place,
                                                 MonstersDisableMethods.bring_the_spirit_what_it_wants,
                                                 MonstersDisableMethods.iron_or_iron_bullets,
@@ -371,10 +372,7 @@ class MonsterBase:
         self.changeling.kill_methods = [MonstersKillMethods.burn_it]
 
         self.unknown = Monster("Unknown", description="", episodes={"S03": [5]})
-        self.unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.animal_like_attack,
-                              MonstersClues.animal_like_noises, MonstersClues.no_missing_heart,
-                              MonstersClues.people_acting_weirdly, MonstersClues.no_sulfur, MonstersClues.emf,
-                              MonstersClues.seen_as_a_little_girl]
+        self.unknown.clues = [MonstersClues.people_seeing_things_or_figures, MonstersClues.strange_different_things_happening]
 
         # -------------------------------------------------- SEASON 4 --------------------------------------------------
 
