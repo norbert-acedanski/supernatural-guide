@@ -211,7 +211,7 @@ class MonsterBase:
                                                       "Kidnapped people are taken to nests and then "
                                                       "bleeding them for days or weeks. "
                                                       "One can become a vampire, when drinking vampire blood.",
-                               episodes={"S01": [20], "S02": [3]})
+                               episodes={"S01": [20], "S02": [3], "S03": [7]})
         self.vampire.clues = [MonstersClues.ripped_throat, MonstersClues.no_blood_in_the_body,
                               MonstersClues.needle_like_teeth, MonstersClues.moving_in_groups_usually,
                               MonstersClues.invulnerable, MonstersClues.high_strength, MonstersClues.bright_eyes,
@@ -371,10 +371,8 @@ class MonsterBase:
                                  MonstersClues.real_appearance_can_be_seen_in_a_reflection]
         self.changeling.kill_methods = [MonstersKillMethods.burn_it]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S03": [6]})
-        self.unknown.clues = [MonstersClues.people_seeing_things_or_figures, MonstersClues.victims_see_ships,
-                              MonstersClues.people_dead_weirdly, MonstersClues.seen_as_a_drown_man,
-                              MonstersClues.missing_or_dead_people_regularly_in_the_same_area]
+        self.unknown = Monster("Unknown", description="", episodes={"S03": [7]})
+        self.unknown.clues = []
 
         # -------------------------------------------------- SEASON 4 --------------------------------------------------
 
