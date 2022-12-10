@@ -54,6 +54,8 @@ class MonstersClues:
     missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area = \
         "people missing/dead weirdly, similarly, randomly across a time(weeks/months/years) in the same area"
     missing_or_dead_people_regularly_in_the_same_area = "groups of people missing/dead regularly in the same area"
+    missing_or_dead_people_around_christmas = "missing or dead people around christmas"
+    missing_or_dead_people_regularly_in_different_areas = "missing or dead people regularly in different areas"
     missing_body = "missing body"
     missing_heart = "missing heart"
     no_missing_heart = " no missing heart"
@@ -100,6 +102,7 @@ class MonstersClues:
     seen_as_human_when_not_feeding = "seen as human when not feeding (particularly an old woman)"
     seen_as_a_little_girl = "seen as a little girl"
     seen_as_a_drown_man = "seen as a drown man"
+    seen_as_a_santa_like_figure = "seen as a santa like figure"
     body_torn_apart = "body torn apart"
     no_blood_in_the_body = "no blood in the body"
     animal_like_attack = "animal-like attack"
@@ -129,6 +132,7 @@ class MonstersClues:
     victims_see_black_dogs = "victims see black dogs"
     victims_see_ships = "victims see ships"
     victims_got_better_at_something_up_to_ten_years_earlier = "victims got better at something up to ten years earlier"
+    victims_have_meadowsweet_somewhere = "victims have meadowsweet somewhere"
     cold_spots = "cold spots"
     feeling_of_something_bad = "feeling of something bad"
     junkless_creature = "junkless creature"
@@ -212,6 +216,7 @@ class MonstersKillMethods:
     dagger_made_of_pure_brass = "dagger made of pure brass"
     nail_it_back_to_the_grave = "nail it back to the grave"
     aspen_pin = "aspen pin"
+    evergreen_pin = "evergreen pin"
 
 
 class MonstersDisableMethods:

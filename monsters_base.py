@@ -371,8 +371,31 @@ class MonsterBase:
                                  MonstersClues.real_appearance_can_be_seen_in_a_reflection]
         self.changeling.kill_methods = [MonstersKillMethods.burn_it]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S03": [7]})
-        self.unknown.clues = []
+        self.krampus = Monster("Krampus", description="Evil brother of Santa. Comes in many names - Belsnickel, "
+                                                      "Black Peter. Lore says, that Santa's brother went rogue and now "
+                                                      "he punishes the wicked around Christmas time. "
+                                                      "Not seen, only mentioned in S03E08")
+        self.krampus.clues = [MonstersClues.weird_noises, MonstersClues.people_dead_weirdly,
+                              MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
+                              MonstersClues.missing_or_dead_people_around_christmas,
+                              MonstersClues.seen_as_a_santa_like_figure]
+
+        self.holdenacar = Monster("Holdenacar", description="God of the winter solstice. Attracted to meadowsweet, "
+                                                            "which is one of the most powerful plants in pagan lore",
+                                  episodes={"S03": [8]})
+        self.holdenacar.clues = [MonstersClues.missing_or_dead_people_regularly_in_different_areas,
+                                 MonstersClues.weird_noises, MonstersClues.people_dead_weirdly,
+                                 MonstersClues.missing_or_dead_people_around_christmas, MonstersClues.high_strength,
+                                 MonstersClues.seen_as_a_santa_like_figure,
+                                 MonstersClues.victims_have_meadowsweet_somewhere, MonstersClues.weird_weather]
+        self.holdenacar.kill_methods = [MonstersKillMethods.evergreen_pin]
+
+        self.unknown = Monster("Unknown", description="", episodes={"S03": [8]})
+        self.unknown.clues = [MonstersClues.weird_noises, MonstersClues.people_dead_weirdly,
+                              MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
+                              MonstersClues.missing_or_dead_people_around_christmas,
+                              MonstersClues.seen_as_a_santa_like_figure,
+                              MonstersClues.victims_have_meadowsweet_somewhere]
 
         # -------------------------------------------------- SEASON 4 --------------------------------------------------
 
