@@ -39,6 +39,10 @@ class CursesBase:
 
         # SEASON 3:
 
+        self.curse = Curse("Unknown curse", episodes={"S03": [9]})
+        self.curse.clues = [CursesClues.hex_bag_hidden_somewhere, CursesClues.people_dead_weirdly,
+                            CursesClues.weird_electronics_behavior, CursesClues.people_feeling_weird_or_bad]
+        self.curse.disable_methods = [CursesDisableMethods.burn_the_hex, CursesDisableMethods.magic_brew]
 
 
         # SEASON 4:
