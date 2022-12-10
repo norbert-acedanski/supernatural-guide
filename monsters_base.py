@@ -109,7 +109,8 @@ class MonsterBase:
                                    MonstersKillMethods.colt_of_colt_with_magic_bullets,
                                    MonstersKillMethods.lance_of_archangel_michael]
         self.demon.disable_methods = [MonstersDisableMethods.holy_water, MonstersDisableMethods.holy_wood,
-                                      MonstersDisableMethods.exorcism, MonstersDisableMethods.devils_trap]
+                                      MonstersDisableMethods.exorcism, MonstersDisableMethods.devils_trap,
+                                      MonstersDisableMethods.witch_spell_to_get_a_demon_out_of_the_body]
 
         self.shapeshifter = Monster("Shapeshifter", description="These creatures can transform themselves into "
                                                                 "other man or animals.",
@@ -390,12 +391,29 @@ class MonsterBase:
                                  MonstersClues.victims_have_meadowsweet_somewhere, MonstersClues.weird_weather]
         self.holdenacar.kill_methods = [MonstersKillMethods.evergreen_pin]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S03": [8]})
-        self.unknown.clues = [MonstersClues.weird_noises, MonstersClues.people_dead_weirdly,
-                              MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
-                              MonstersClues.missing_or_dead_people_around_christmas,
-                              MonstersClues.seen_as_a_santa_like_figure,
-                              MonstersClues.victims_have_meadowsweet_somewhere]
+        self.witch = Monster("Witch", description="A woman, that deals with different kinds of magic (like black, "
+                                                  "old world, etc.)",
+                             episodes={"S03": [9]})
+        self.witch.clues = [MonstersClues.people_dead_weirdly, MonstersClues.hex_bag_hidden_somewhere,
+                            MonstersClues.weird_electronics_behavior,
+
+                            MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
+                            MonstersClues.missing_heart]
+        self.witch.disableMethod = [MonstersDisableMethods.stop_it_from_speaking,
+                                    MonstersDisableMethods.witch_catcher]
+        self.witch.kill_methods = [MonstersKillMethods.like_any_human,
+                                   MonstersKillMethods.witch_killing_brew, MonstersKillMethods.cut_throat,
+                                   MonstersClues.red_eyes]
+
+        self.demon_astaroth = Monster("Demon Astaroth", description="Collects human souls by changing them into "
+                                                                    "witches.",
+                                      episodes={"S03": [9]})
+        self.demon_astaroth.clues = [MonstersClues.black_eyes, MonstersClues.telekinesis, MonstersClues.high_strength,
+                                     MonstersClues.can_stop_bullets]
+        self.demon_astaroth.kill_methods = [MonstersKillMethods.demon_killing_knife]
+
+        self.unknown = Monster("Unknown", description="", episodes={"S03": [9]})
+        self.unknown.clues = []
 
         # -------------------------------------------------- SEASON 4 --------------------------------------------------
 
@@ -483,13 +501,6 @@ class MonsterBase:
         self.witch_from_ozz = Monster("Witch from Ozz")
         self.witch_from_ozz.clues = [MonstersClues.travels_as_black_green_fog]
         self.witch_from_ozz.kill_methods = [MonstersKillMethods.magic_red_high_heels]
-
-        self.witch = Monster("Witch")
-        self.witch.clues = [MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
-                            MonstersClues.missing_heart]
-        self.witch.disableMethod = [MonstersDisableMethods.witch_catcher]
-        self.witch.kill_methods = [MonstersKillMethods.witch_killing_brew, MonstersKillMethods.cut_throat,
-                                   MonstersClues.red_eyes]
 
         self.reaper_death = Monster("Reaper - Death")
         self.reaper_death.kill_methods = [MonstersKillMethods.scythe_of_death]
