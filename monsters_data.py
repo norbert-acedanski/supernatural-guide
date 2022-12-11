@@ -58,6 +58,7 @@ class MonstersClues:
     missing_or_dead_people_around_christmas = "missing or dead people around christmas"
     missing_or_dead_people_regularly_in_different_areas = "missing or dead people regularly in different areas"
     missing_body = "missing body"
+    missing_organs = "missing organs"
     missing_heart = "missing heart"
     no_missing_heart = " no missing heart"
     murders_during_full_moon_week = "murders during full moon week"
@@ -250,6 +251,7 @@ class MonstersDisableMethods:
     stop_it_from_speaking = "stop it from speaking"
     witch_spell_to_get_a_demon_out_of_the_body = "witch spell to get a demon out of the body"
     goofer_dust = "goofer dust"
+    devils_shoestring = "devils shoestring"
     demon_must_call_it_off = "demon must call it off"
     angel_knuckle_duster = "angel knuckle duster"
     bring_it_what_it_wants = "bring it what it wants"
@@ -261,6 +263,8 @@ class MonstersDisableMethods:
     wait_until_its_over = "wait until its over"
     give_it_last_rites = "give it last rites"
     shock_it_out_of_its_loop = "shock it out of its loop (by bringing something personal for example)"
+    chloroform = "chloroform"
+    bury_it_alive = "bury it alive"
 
 
 class MonstersCureMethods:

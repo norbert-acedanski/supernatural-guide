@@ -94,7 +94,7 @@ class MonsterBase:
 
         self.demon = Monster("Demon", description="In every religion there is information about demonic possessions. "
                                                   "Demons are man that were stuck in hell for a long time.",
-                             episodes={"S01": [4, 21, 22], "S02": [1, 14], "S03": [1, 2, 4, 12]})
+                             episodes={"S01": [4, 21, 22], "S02": [1, 14], "S03": [1, 2, 4, 12, 15]})
         self.demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                             MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                             MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -263,7 +263,7 @@ class MonsterBase:
                                  MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
                                  MonstersClues.people_dead_weirdly, MonstersClues.animal_like_attack]
         self.hell_hound.kill_methods = [MonstersKillMethods.demon_killing_knife, MonstersKillMethods.angel_sword]
-        self.hell_hound.disable_methods = [MonstersDisableMethods.goofer_dust,
+        self.hell_hound.disable_methods = [MonstersDisableMethods.goofer_dust, MonstersDisableMethods.devils_shoestring,
                                            MonstersDisableMethods.demon_must_call_it_off]
 
         self.crossroads_demon = Monster("Crossroads demon", description="One can make a deal with that demon. "
@@ -434,9 +434,17 @@ class MonsterBase:
                                MonstersClues.needle_like_teeth, MonstersClues.can_control_electronics]
         self.crocotta.kill_methods = [MonstersKillMethods.sharp_object_into_the_spine]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S03": [14]})
-        self.unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.weird_electronics_behavior,
-                              MonstersClues.contact_from_dead_people, MonstersClues.tells_victims_come_to_me]
+        self.eternal_living_person = Monster("Eternal living person", description="Person, that can live forever in "
+                                                                                  "theory by replacing faulty organs.",
+                                             episodes={"S03": [15]})
+        self.eternal_living_person.clues = [MonstersClues.missing_organs, MonstersClues.people_dead_weirdly,
+                                            MonstersClues.invulnerable]
+        self.eternal_living_person.disable_methods = [MonstersDisableMethods.chloroform,
+                                                      MonstersDisableMethods.bury_it_alive]
+
+        self.unknown = Monster("Unknown", description="", episodes={"S03": [15]})
+        self.unknown.clues = [MonstersClues.missing_organs, MonstersClues.people_dead_weirdly,
+                              MonstersClues.invulnerable]
 
         # -------------------------------------------------- SEASON 4 --------------------------------------------------
 
