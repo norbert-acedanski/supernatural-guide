@@ -94,7 +94,7 @@ class MonsterBase:
 
         self.demon = Monster("Demon", description="In every religion there is information about demonic possessions. "
                                                   "Demons are man that were stuck in hell for a long time.",
-                             episodes={"S01": [4, 21, 22], "S02": [1, 14], "S03": [1, 2, 4]})
+                             episodes={"S01": [4, 21, 22], "S02": [1, 14], "S03": [1, 2, 4, 12]})
         self.demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                             MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                             MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -103,14 +103,15 @@ class MonsterBase:
                             MonstersClues.amnesia_blackout, MonstersClues.can_vanish,
 
                             MonstersClues.black_blood]
-        self.demon.kill_methods = [
-                                   MonstersKillMethods.angel_blade,
-                                   MonstersKillMethods.demon_killing_knife, MonstersKillMethods.will_of_an_archangel,
+        self.demon.kill_methods = [MonstersKillMethods.demon_killing_knife,
                                    MonstersKillMethods.colt_of_colt_with_magic_bullets,
+
+                                   MonstersKillMethods.angel_blade, MonstersKillMethods.will_of_an_archangel,
                                    MonstersKillMethods.lance_of_archangel_michael]
         self.demon.disable_methods = [MonstersDisableMethods.holy_water, MonstersDisableMethods.holy_wood,
                                       MonstersDisableMethods.exorcism, MonstersDisableMethods.devils_trap,
-                                      MonstersDisableMethods.witch_spell_to_get_a_demon_out_of_the_body]
+                                      MonstersDisableMethods.witch_spell_to_get_a_demon_out_of_the_body,
+                                      MonstersDisableMethods.salt_or_salted_bullets]
 
         self.shapeshifter = Monster("Shapeshifter", description="These creatures can transform themselves into "
                                                                 "other man or animals.",
@@ -414,8 +415,11 @@ class MonsterBase:
                                      MonstersClues.can_stop_bullets]
         self.demon_astaroth.kill_methods = [MonstersKillMethods.demon_killing_knife]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S03": [11]})
-        self.unknown.clues = [MonstersClues.can_put_somebody_in_a_time_loop, MonstersClues.telekinesis]
+        self.demon_lilith = Monster("Demon Lilith", episodes={"S03": [12]})
+        self.demon_lilith.clues = [MonstersClues.white_eyes, MonstersClues.yellow_blast]
+
+        self.unknown = Monster("Unknown", description="", episodes={"S03": [12]})
+        self.unknown.clues = []
 
         # -------------------------------------------------- SEASON 4 --------------------------------------------------
 

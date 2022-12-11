@@ -7,6 +7,7 @@ class MonstersClues:
     green_eyes = " eyes"
     bright_eyes = "bright eyes"
     blue_eyes = "blue eyes"
+    white_eyes = "white eyes"
     weird_weather = "weird weather"
     weird_animal_behavior = "weird animal behavior"
     weird_things_behavior = "weird things behavior"
@@ -71,6 +72,7 @@ class MonstersClues:
     enormous_black_fog = "enormous black fog"
     emf = "Electromagnetic Field"
     no_emf = "no Electromagnetic Field"
+    yellow_blast = "yellow blast"
     strange_different_things_happening = "strange, different things happening - " \
                                          "like aliens, grimm brothers fairy tails, etc."
     things_disappearing = "things disappearing"
