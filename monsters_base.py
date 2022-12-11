@@ -302,13 +302,15 @@ class MonsterBase:
 
         self.trickster = Monster("Trickster (Loki, Anansi)", description="Demigod (Loki in Scandinavia, Anansi in "
                                                                          "West Africa). Can create chaos and mischief "
-                                                                         "as easy as breathing.",
-                                 episodes={"S02": [15]})
+                                                                         "as easy as breathing. Can control time.",
+                                 episodes={"S02": [15], "S03": [11]})
         self.trickster.clues = [MonstersClues.people_seeing_things_or_figures, MonstersClues.people_dead_weirdly,
                                 MonstersClues.no_emf, MonstersClues.weird_noises, MonstersClues.people_seeing_aliens,
                                 MonstersClues.strange_different_things_happening, MonstersClues.things_disappearing,
                                 MonstersClues.can_create_thngs_out_of_thin_air, MonstersClues.immortal,
-                                MonstersClues.can_make_themselves_appear_as_they_like, MonstersClues.loves_sugar]
+                                MonstersClues.can_make_themselves_appear_as_they_like, MonstersClues.loves_sugar,
+                                MonstersClues.telekinesis, MonstersClues.can_put_somebody_in_a_time_loop,
+                                MonstersClues.can_reverse_time]
         self.trickster.kill_methods = [MonstersKillMethods.aspen_pin]
 
         self.phantom_hitchhiker = Monster("Phantom hitchhiker", description="Not seen. Only mentioned in S01E16")
@@ -412,8 +414,8 @@ class MonsterBase:
                                      MonstersClues.can_stop_bullets]
         self.demon_astaroth.kill_methods = [MonstersKillMethods.demon_killing_knife]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S03": [9]})
-        self.unknown.clues = []
+        self.unknown = Monster("Unknown", description="", episodes={"S03": [11]})
+        self.unknown.clues = [MonstersClues.can_put_somebody_in_a_time_loop, MonstersClues.telekinesis]
 
         # -------------------------------------------------- SEASON 4 --------------------------------------------------
 

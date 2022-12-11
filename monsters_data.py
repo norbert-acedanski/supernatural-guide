@@ -163,6 +163,8 @@ class MonstersClues:
     can_show_past_to_people = "can show past to people"
     can_vanish = "can vanish"
     can_stop_bullets = "can stop bullets"
+    can_put_somebody_in_a_time_loop = "can put somebody in a time loop"
+    can_reverse_time = "can reverse time"
     immortal = "immortal"
     loves_sugar = "loves sugar"
     knows_past = "knows past"
