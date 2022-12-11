@@ -256,6 +256,7 @@ class MonstersDisableMethods:
     bring_the_spirit_what_it_wants = "bring the spirit, what it wants (an object of revenge)"
     wait_until_its_over = "wait until its over"
     give_it_last_rites = "give it last rites"
+    shock_it_out_of_its_loop = "shock it out of its loop (by bringing something personal for example)"
 
 
 class MonstersCureMethods:

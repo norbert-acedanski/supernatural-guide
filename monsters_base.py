@@ -43,7 +43,7 @@ class MonsterBase:
                                                    "Can be summoned by Enochian, necromantic summoning rituals. "
                                                    "Sometimes it's a spirit of a person, that is in the coma.",
                                        episodes={"S01": [1, 3, 5, 7, 9, 10, 13, 19], "S02": [6, 11, 16, 18, 19],
-                                                 "S03": [5, 6]})
+                                                 "S03": [5, 6, 13]})
         self.vengeful_spirit.clues = [MonstersClues.
                                       missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                                       MonstersClues.people_dead_weirdly, MonstersClues.ghost_like_creature,
@@ -418,7 +418,14 @@ class MonsterBase:
         self.demon_lilith = Monster("Demon Lilith", episodes={"S03": [12]})
         self.demon_lilith.clues = [MonstersClues.white_eyes, MonstersClues.yellow_blast]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S03": [12]})
+        self.death_echo = Monster("Death echo", description="Echos are trapped in a loop. They keep replaying how they "
+                                                            "died over and over again usually at the place of death.",
+                                  episodes={"S03": [13]})
+        self.death_echo.clues = [MonstersClues.ghost_like_creature, MonstersClues.can_vanish, MonstersClues.emf,
+                                 MonstersClues.weird_electronics_behavior]
+        self.death_echo.disable_methods = [MonstersDisableMethods.shock_it_out_of_its_loop]
+
+        self.unknown = Monster("Unknown", description="", episodes={"S03": [13]})
         self.unknown.clues = []
 
         # -------------------------------------------------- SEASON 4 --------------------------------------------------
