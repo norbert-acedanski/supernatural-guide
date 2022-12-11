@@ -36,6 +36,14 @@ class ObjectsBase:
         self.lucky_rabbits_foot.abilities = [ObjectAbilities.grants_incredible_luck]
         self.lucky_rabbits_foot.destroy_methods = [ObjectDestroyMethods.burn_it]
 
+        self.sleep_potion = Object("Sleep Potion", description="Made of African Dream Root. Was use by shaman and "
+                                                               "medicine men for centuries. It is used for "
+                                                               "dreamwalking - entering another person's dreams.",
+                                   episodes={"S03": [10]})
+        self.sleep_potion.abilities = [ObjectAbilities.can_make_a_person_sleep_for_days,
+                                       ObjectAbilities.brings_back_dreams_for_those_that_dont_have_them,
+                                       ObjectAbilities.gives_people_control_over_dreams]
+
         self.objects = [object for object in self.__dict__.values() if isinstance(object, Object)]
 
     def print_objects_names(self):
