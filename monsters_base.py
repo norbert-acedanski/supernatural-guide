@@ -425,8 +425,18 @@ class MonsterBase:
                                  MonstersClues.weird_electronics_behavior]
         self.death_echo.disable_methods = [MonstersDisableMethods.shock_it_out_of_its_loop]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S03": [13]})
-        self.unknown.clues = []
+        self.crocotta = Monster("Crocotta", description="Soul scavenger. Mimics loved ones. Whispers \"Come to me\", "
+                                                        "then lures victims into the dark and swallows their souls. "
+                                                        "Usually live in filth.",
+                                episodes={"S03": [14]})
+        self.crocotta.clues = [MonstersClues.people_dead_weirdly, MonstersClues.weird_electronics_behavior,
+                               MonstersClues.contact_from_dead_people, MonstersClues.tells_victims_come_to_me,
+                               MonstersClues.needle_like_teeth, MonstersClues.can_control_electronics]
+        self.crocotta.kill_methods = [MonstersKillMethods.sharp_object_into_the_spine]
+
+        self.unknown = Monster("Unknown", description="", episodes={"S03": [14]})
+        self.unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.weird_electronics_behavior,
+                              MonstersClues.contact_from_dead_people, MonstersClues.tells_victims_come_to_me]
 
         # -------------------------------------------------- SEASON 4 --------------------------------------------------
 

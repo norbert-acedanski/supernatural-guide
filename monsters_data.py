@@ -167,6 +167,7 @@ class MonstersClues:
     can_stop_bullets = "can stop bullets"
     can_put_somebody_in_a_time_loop = "can put somebody in a time loop"
     can_reverse_time = "can reverse time"
+    can_control_electronics = "can control electronics"
     immortal = "immortal"
     loves_sugar = "loves sugar"
     knows_past = "knows past"
@@ -179,6 +180,8 @@ class MonstersClues:
     one_can_make_a_deal_with_it = "one can make a deal with it"
     cannot_enter_a_home_without_invitation = "cannot enter a home without invitation"
     small_earth_quake = "small earth quake"
+    contact_from_dead_people = "contact from dead people (calls, messages, etc.)"
+    tells_victims_come_to_me = "tells victims come to me"
 
 
 class MonstersKillMethods:
@@ -223,6 +226,7 @@ class MonstersKillMethods:
     nail_it_back_to_the_grave = "nail it back to the grave"
     aspen_pin = "aspen pin"
     evergreen_pin = "evergreen pin"
+    sharp_object_into_the_spine = "sharp object into the spine"
 
 
 class MonstersDisableMethods:
