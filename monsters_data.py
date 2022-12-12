@@ -4,7 +4,7 @@ class MonstersClues:
     black_eyes = "black eyes"
     red_eyes = "red eyes"
     yellow_eyes = "yellow eyes"
-    green_eyes = " eyes"
+    green_eyes = "green eyes"
     bright_eyes = "bright eyes"
     blue_eyes = "blue eyes"
     white_eyes = "white eyes"

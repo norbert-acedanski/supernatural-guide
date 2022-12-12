@@ -44,14 +44,14 @@ class ObjectsBase:
                                        ObjectAbilities.brings_back_dreams_for_those_that_dont_have_them,
                                        ObjectAbilities.gives_people_control_over_dreams]
 
-        self.objects = [object for object in self.__dict__.values() if isinstance(object, Object)]
+        self.objects = [obj for obj in self.__dict__.values() if isinstance(obj, Object)]
 
     def print_objects_names(self):
-        sorted_objects = sorted([object.name for object in self.objects])
+        sorted_objects = sorted([obj.name for obj in self.objects])
         print(Colors.RED + Colors.BOLD + "All objects:" + Colors.ENDC)
-        for object in sorted_objects:
-            print(" *  " + object)
+        for obj in sorted_objects:
+            print(" *  " + obj)
 
     def print_all_objects(self):
-        for object in self.objects:
-            object.print_all()
+        for obj in self.objects:
+            obj.print_all()

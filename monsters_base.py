@@ -1,4 +1,6 @@
 import re
+from typing import List
+
 from monster import Monster
 from monsters_data import MonstersClues, MonstersKillMethods, MonstersDisableMethods, MonstersCureMethods
 from colors import Colors
@@ -654,28 +656,27 @@ class MonsterBase:
         for clue_number, clue in enumerate(self.clues, 1):
             print(" »%5d  " % clue_number + clue)
 
-    def choose_clues(self):
+    def choose_clues(self) -> List[str]:
         clues = input(Colors.UNDERLINE + "\nChoose clues:" + Colors.ENDC + " ")
         clues = re.sub('[a-zA-Z,&^%$#@?|/:;"_=]', ' ', clues)
-        self.chosen_clues = [int(clue) - 1 for clue in clues.split() if (clue.isdigit() and
-                                                                         int(clue) <= len(self.clues))]
-        if not self.chosen_clues:
-            print("No clues chosen. Try again")
-            self.choose_clues()
+        chosen_clues = [self.clues[int(clue) - 1] for clue in clues.split()
+                        if (clue.isdigit() and int(clue) <= len(self.clues))]
+        return chosen_clues
 
-    def print_all_matches(self):
-        monster_clues_list = [0] * len(self.monsters)
+    def print_all_matches(self, selected_clues: List[str]):
+        monster_clues_dict = {}
         for monster_number, monster in enumerate(self.monsters):
-            if monster.clues is not None:
-                for clue in monster.clues:
-                    for chosen_clue in self.chosen_clues:
-                        if clue == self.clues[chosen_clue]:
-                            monster_clues_list[monster_number] += 1
-        for clue_number, clue_match_count in enumerate(monster_clues_list):
-            if clue_match_count != 0:
-                print(Colors.BOLD + Colors.BLUE + "\n" + str(clue_match_count) + "/" + str(len(self.chosen_clues)) +
-                      " Matches:" + Colors.ENDC, end=" ")
-                self.monsters[clue_number].print_all()
+            if monster.clues is not None \
+                    and (clues_intersection := len(set(monster.clues).intersection(set(selected_clues)))):
+                monster_clues_dict[monster_number] = clues_intersection
+        sorted_monster_clues_dict = {m: c for m, c in sorted(monster_clues_dict.items(), key=lambda item: item[1],
+                                                             reverse=True)}
+        print(f"\n{len(sorted_monster_clues_dict)} MATCHED MONSTERS FOUND: \n")
+        for monster_number, number_of_matching_clues in sorted_monster_clues_dict.items():
+            print(Colors.BOLD + Colors.BLUE + f"{number_of_matching_clues}/{len(selected_clues)} Matches:"
+                  + Colors.ENDC, end=" ")
+            self.monsters[monster_number].print_all()
+            print("")
 
     def print_all_monsters(self):
         for monster in self.monsters:
