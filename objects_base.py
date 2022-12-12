@@ -24,8 +24,8 @@ class ObjectsBase:
 
         self.demon_killing_knife = Object("Demon killing knife", description="Can literally kill demons, "
                                                                              "not get them back to hell.",
-                                          episodes={"S03": [1, 9, 16]})
-        self.demon_killing_knife.abilities = [ObjectAbilities.can_kill_demons]
+                                          episodes={"S03": [1, 9, 16], "S04": [1]})
+        self.demon_killing_knife.abilities = [ObjectAbilities.can_kill_demons, ObjectAbilities.cannot_kill_angels]
 
         self.lucky_rabbits_foot = Object("Lucky rabbits foot",
                                          description="Person, who touches it becomes incredibly lucky. If another "
