@@ -15,7 +15,6 @@ class MonsterBase:
                                 if not key.startswith("__")]
         self.cure_methods = [cure for key, cure in list(MonstersCureMethods.__dict__.items())
                              if not key.startswith("__")]
-        self.chosen_clues = []
 
         # -------------------------------------------------- SEASON 1 --------------------------------------------------
 
@@ -43,9 +42,13 @@ class MonsterBase:
                                        description="Appears, when somebody died tragically, committed suicide "
                                                    "or was killed violently. Usually bound to a place or to things. "
                                                    "Can be summoned by Enochian, necromantic summoning rituals. "
-                                                   "Sometimes it's a spirit of a person, that is in the coma.",
+                                                   "Sometimes it's a spirit of a person, that is in the coma. "
+                                                   "Ghosts can be forced to rise and keep risen. If it is done with "
+                                                   "very powerful spell, then a Mark of Witness remains on them if "
+                                                   "they were killed by supernatural. Witnesses can be pu to rest by a "
+                                                   "special spell (has to be cast over an open fire).",
                                        episodes={"S01": [1, 3, 5, 7, 9, 10, 13, 19], "S02": [6, 11, 16, 18, 19],
-                                                 "S03": [5, 6, 13]})
+                                                 "S03": [5, 6, 13], "S04": [2]})
         self.vengeful_spirit.clues = [MonstersClues.
                                       missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                                       MonstersClues.people_dead_weirdly, MonstersClues.ghost_like_creature,
@@ -61,7 +64,8 @@ class MonsterBase:
                                       MonstersClues.people_acting_weirdly, MonstersClues.small_earth_quake,
                                       MonstersClues.seen_as_black_truck, MonstersClues.people_seeing_things_or_figures,
                                       MonstersClues.seen_as_a_little_girl, MonstersClues.seen_as_a_drown_man,
-                                      MonstersClues.strange_different_things_happening, MonstersClues.no_missing_heart]
+                                      MonstersClues.strange_different_things_happening, MonstersClues.no_missing_heart,
+                                      MonstersClues.flashing_lights, MonstersClues.body_torn_apart]
         self.vengeful_spirit.disable_methods = [MonstersDisableMethods.bring_the_spirit_to_its_crime_place,
                                                 MonstersDisableMethods.bring_the_spirit_what_it_wants,
                                                 MonstersDisableMethods.iron_or_iron_bullets,
@@ -313,7 +317,7 @@ class MonsterBase:
         self.trickster.clues = [MonstersClues.people_seeing_things_or_figures, MonstersClues.people_dead_weirdly,
                                 MonstersClues.no_emf, MonstersClues.weird_noises, MonstersClues.people_seeing_aliens,
                                 MonstersClues.strange_different_things_happening, MonstersClues.things_disappearing,
-                                MonstersClues.can_create_thngs_out_of_thin_air, MonstersClues.immortal,
+                                MonstersClues.can_create_things_out_of_thin_air, MonstersClues.immortal,
                                 MonstersClues.can_make_themselves_appear_as_they_like, MonstersClues.loves_sugar,
                                 MonstersClues.telekinesis, MonstersClues.can_put_somebody_in_a_time_loop,
                                 MonstersClues.can_reverse_time]
@@ -453,14 +457,16 @@ class MonsterBase:
 
         # -------------------------------------------------- SEASON 4 --------------------------------------------------
 
-        self.angel = Monster("Angel", description=" (Castiel)", episodes={"S04": [1]})
+        self.angel = Monster("Angel", description=" (Castiel). They can bring people back from the dead.",
+                             episodes={"S04": [1, 2]})
         self.angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                             MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion,
                             MonstersClues.leaves_burned_marks, MonstersClues.weird_electronics_behavior,
                             MonstersClues.can_repair_human_body, MonstersClues.telekinesis, MonstersClues.invulnerable,
                             MonstersClues.can_put_a_person_to_sleep, MonstersClues.demon_killing_knife_is_ineffective,
-                            MonstersClues.has_wings, MonstersClues.true_voice_can_hurt_people,
+                            MonstersClues.has_wings, MonstersClues.true_voice_can_hurt_people, MonstersClues.can_vanish,
                             MonstersClues.immune_to_salt_rounds, MonstersClues.immune_to_devils_trap,
+                            MonstersClues.can_contact_a_person_in_a_dream,
 
                             MonstersClues.triangle_wound, MonstersClues.travels_as_white_fog]
         self.angel.disable_methods = [
@@ -470,13 +476,10 @@ class MonsterBase:
                                    MonstersKillMethods.will_of_an_archangel, MonstersKillMethods.will_of_prince_of_hell,
                                    MonstersKillMethods.lance_of_archangel_michael]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S04": [1]})
-        self.unknown.clues = [MonstersClues.can_bring_back_dead_people,
-                              MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion,
-                              MonstersClues.leaves_burned_marks, MonstersClues.can_repair_human_body,
-                              MonstersClues.weird_electronics_behavior, MonstersClues.in_true_form_burns_eyes_of_people,
-                              MonstersClues.telekinesis, MonstersClues.invulnerable, MonstersClues.has_wings,
-                              MonstersClues.can_put_a_person_to_sleep, MonstersClues.demon_killing_knife_is_ineffective]
+        self.unknown = Monster("Unknown", description="", episodes={"S04": [2]})
+        self.unknown.clues = [MonstersClues.weird_electronics_behavior, MonstersClues.flashing_lights,
+                              MonstersClues.cold_spots, MonstersClues.emf, MonstersClues.people_dead_weirdly,
+                              MonstersClues.body_torn_apart, MonstersClues.telekinesis]
 
         # -------------------------------------------------- SEASON 5 --------------------------------------------------
 
