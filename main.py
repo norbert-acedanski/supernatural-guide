@@ -4,6 +4,7 @@ from monsters_base import MonsterBase
 from curses_base import CursesBase
 from objects_base import ObjectsBase
 from colors import Colors
+from places_base import PlacesBase
 
 
 def choose_option():
@@ -51,6 +52,10 @@ def choose_option():
             base_of_objects.print_objects_names()
         elif chosen_option == 10:
             base_of_objects.print_all_objects()
+        elif chosen_option == 11:
+            base_of_places.print_places_names()
+        elif chosen_option == 12:
+            base_of_places.print_all_places()
         elif chosen_option == 0:
             print("Thank you for playing with this project!")
         else:
@@ -63,6 +68,7 @@ if __name__ == "__main__":
         base_of_monsters = MonsterBase()
         base_of_curses = CursesBase()
         base_of_objects = ObjectsBase()
+        base_of_places = PlacesBase()
         choose_option()
     except Exception as e:
         print(traceback.format_exc())
