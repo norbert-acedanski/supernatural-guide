@@ -183,6 +183,8 @@ class MonstersClues:
     small_earth_quake = "small earth quake"
     contact_from_dead_people = "contact from dead people (calls, messages, etc.)"
     tells_victims_come_to_me = "tells victims come to me"
+    unable_to_hurt_people_with_abilities_with_its_yellow_blast = \
+        "unable to hurt people with abilities with its yellow blast"
 
 
 class MonstersKillMethods:

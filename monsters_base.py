@@ -94,7 +94,7 @@ class MonsterBase:
 
         self.demon = Monster("Demon", description="In every religion there is information about demonic possessions. "
                                                   "Demons are man that were stuck in hell for a long time.",
-                             episodes={"S01": [4, 21, 22], "S02": [1, 14], "S03": [1, 2, 4, 12, 15]})
+                             episodes={"S01": [4, 21, 22], "S02": [1, 14], "S03": [1, 2, 4, 12, 15, 16]})
         self.demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                             MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                             MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -257,7 +257,7 @@ class MonsterBase:
         self.hell_hound = Monster("Hell Hound", description="Creation of God, but they were too vicious, "
                                                             "so God kept them short. "
                                                             "Now they hunt people that sold their souls.",
-                                  episodes={"S02": [8]})
+                                  episodes={"S02": [8], "S03": [16]})
         self.hell_hound.clues = [MonstersClues.victims_hear_dogs_barking_and_growling, MonstersClues.invisible_dogs,
                                  MonstersClues.victims_see_black_dogs, MonstersClues.people_seeing_strange_things,
                                  MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
@@ -415,8 +415,10 @@ class MonsterBase:
                                      MonstersClues.can_stop_bullets]
         self.demon_astaroth.kill_methods = [MonstersKillMethods.demon_killing_knife]
 
-        self.demon_lilith = Monster("Demon Lilith", episodes={"S03": [12]})
-        self.demon_lilith.clues = [MonstersClues.white_eyes, MonstersClues.yellow_blast]
+        self.demon_lilith = Monster("Demon Lilith", episodes={"S03": [12, 16]})
+        self.demon_lilith.clues = [MonstersClues.white_eyes, MonstersClues.yellow_blast, MonstersClues.telekinesis,
+                                   MonstersClues.travels_as_black_fog,
+                                   MonstersClues.unable_to_hurt_people_with_abilities_with_its_yellow_blast]
 
         self.death_echo = Monster("Death echo", description="Echos are trapped in a loop. They keep replaying how they "
                                                             "died over and over again usually at the place of death.",
@@ -442,9 +444,10 @@ class MonsterBase:
         self.eternal_living_person.disable_methods = [MonstersDisableMethods.chloroform,
                                                       MonstersDisableMethods.bury_it_alive]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S03": [15]})
-        self.unknown.clues = [MonstersClues.missing_organs, MonstersClues.people_dead_weirdly,
-                              MonstersClues.invulnerable]
+        # ---------------------------------------------- ALL EPISODES DONE ---------------------------------------------
+
+        self.unknown = Monster("Unknown", description="", episodes={"S03": [16]})
+        self.unknown.clues = []
 
         # -------------------------------------------------- SEASON 4 --------------------------------------------------
 
