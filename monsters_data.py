@@ -1,6 +1,7 @@
 class MonstersClues:
     ripped_throat = "ripped throat"
-    burned_eyes_of_victims = "burned eyes of victims"
+    in_true_form_burns_eyes_of_people = "in true form burns eyes of people"
+    true_voice_can_hurt_people = "true voice can hurt people"
     black_eyes = "black eyes"
     red_eyes = "red eyes"
     yellow_eyes = "yellow eyes"
@@ -64,7 +65,6 @@ class MonstersClues:
     murders_during_full_moon_week = "murders during full moon week"
     moves_fast = "moves fast"
     moving_in_groups_usually = "moving in groups usually"
-    invulnerable = "invulnerable"
     great_sense_of_smell = "great sense of smell"
     strange_roar = "strange roar"
     able_to_use_doors = "able to use doors"
@@ -169,7 +169,15 @@ class MonstersClues:
     can_put_somebody_in_a_time_loop = "can put somebody in a time loop"
     can_reverse_time = "can reverse time"
     can_control_electronics = "can control electronics"
+    can_bring_back_dead_people = "can bring back dead people"
+    can_repair_human_body = "can repair human body"
+    can_control_demons = "can control demons"
+    can_send_demons_back_to_hell_with_power_of_will = "can send demons back to hell with power of will"
+    can_put_a_person_to_sleep = "can put a person to sleep"
+    demon_killing_knife_is_ineffective = "demon_killing_knife_is_ineffective"
     immortal = "immortal"
+    invulnerable = "invulnerable"
+    has_wings = "has wings"
     loves_sugar = "loves sugar"
     knows_past = "knows past"
     psychic_abilities = "psychic abilities - knows the past, the future and the present of people or places, " \
@@ -185,6 +193,9 @@ class MonstersClues:
     tells_victims_come_to_me = "tells victims come to me"
     unable_to_hurt_people_with_abilities_with_its_yellow_blast = \
         "unable to hurt people with abilities with its yellow blast"
+    place_where_person_was_resurrected_looks_like_after_explosion = \
+        "place where person was resurrected looks like after explosion"
+    immune_to_liliths_yellow_blast = "immune to Lilith's yellow blast"
 
 
 class MonstersKillMethods:

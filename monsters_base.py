@@ -96,7 +96,7 @@ class MonsterBase:
 
         self.demon = Monster("Demon", description="In every religion there is information about demonic possessions. "
                                                   "Demons are man that were stuck in hell for a long time.",
-                             episodes={"S01": [4, 21, 22], "S02": [1, 14], "S03": [1, 2, 4, 12, 15, 16]})
+                             episodes={"S01": [4, 21, 22], "S02": [1, 14], "S03": [1, 2, 4, 12, 15, 16], "S04": [1]})
         self.demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                             MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                             MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -164,14 +164,17 @@ class MonsterBase:
 
         self.people_with_abilities = Monster("People with abilities", description="People, that were infants, "
                                                                                   "when prince of hell killed "
-                                                                                  "their mother on the ceiling",
-                                             episodes={"S01": [14], "S02": [5, 10]})
+                                                                                  "their mother on the ceiling.",
+                                             episodes={"S01": [14], "S02": [5, 10], "S03": [16]})
         self.people_with_abilities.clues = [MonstersClues.people_dead_weirdly, MonstersClues.weird_things_behavior,
                                             MonstersClues.telekinesis, MonstersClues.mind_control,
                                             MonstersClues.able_to_electrocute, MonstersClues.can_see_future,
                                             MonstersClues.people_seeing_things_or_figures,
                                             MonstersClues.their_mother_was_burned_on_the_ceiling_when_they_were_infants,
-                                            MonstersClues.as_babies_fed_with_demon_blood]
+                                            MonstersClues.as_babies_fed_with_demon_blood,
+                                            MonstersClues.immune_to_liliths_yellow_blast,
+                                            MonstersClues.can_control_demons,
+                                            MonstersClues.can_send_demons_back_to_hell_with_power_of_will]
         self.people_with_abilities.kill_methods = [MonstersKillMethods.like_any_human]
 
         self.spring_heeled_jacks = Monster("Sprint Heeled Jacks", description="Not seen. Only mentioned in S01E15")
@@ -448,12 +451,31 @@ class MonsterBase:
 
         # ---------------------------------------------- ALL EPISODES DONE ---------------------------------------------
 
-        self.unknown = Monster("Unknown", description="", episodes={"S03": [16]})
-        self.unknown.clues = []
-
         # -------------------------------------------------- SEASON 4 --------------------------------------------------
 
+        self.angel = Monster("Angel", description=" (Castiel)", episodes={"S04": [1]})
+        self.angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
+                            MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion,
+                            MonstersClues.leaves_burned_marks, MonstersClues.weird_electronics_behavior,
+                            MonstersClues.can_repair_human_body, MonstersClues.telekinesis, MonstersClues.invulnerable,
+                            MonstersClues.can_put_a_person_to_sleep, MonstersClues.demon_killing_knife_is_ineffective,
+                            MonstersClues.has_wings, MonstersClues.true_voice_can_hurt_people,
 
+                            MonstersClues.triangle_wound, MonstersClues.travels_as_white_fog]
+        self.angel.disable_methods = [
+                                      MonstersDisableMethods.symbol_made_with_blood]
+        self.angel.kill_methods = [
+                                   MonstersKillMethods.angel_blade, MonstersKillMethods.holy_oil,
+                                   MonstersKillMethods.will_of_an_archangel, MonstersKillMethods.will_of_prince_of_hell,
+                                   MonstersKillMethods.lance_of_archangel_michael]
+
+        self.unknown = Monster("Unknown", description="", episodes={"S04": [1]})
+        self.unknown.clues = [MonstersClues.can_bring_back_dead_people,
+                              MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion,
+                              MonstersClues.leaves_burned_marks, MonstersClues.can_repair_human_body,
+                              MonstersClues.weird_electronics_behavior, MonstersClues.in_true_form_burns_eyes_of_people,
+                              MonstersClues.telekinesis, MonstersClues.invulnerable, MonstersClues.has_wings,
+                              MonstersClues.can_put_a_person_to_sleep, MonstersClues.demon_killing_knife_is_ineffective]
 
         # -------------------------------------------------- SEASON 5 --------------------------------------------------
 
@@ -481,14 +503,6 @@ class MonsterBase:
         self.demon_crowley.clues = [MonstersClues.black_blood, MonstersClues.burned_by_holy_water,
                                     MonstersClues.travels_as_red_fog, MonstersClues.red_eyes]
 
-        self.angel = Monster("Angel")
-        self.angel.clues = [MonstersClues.burned_eyes_of_victims, MonstersClues.triangle_wound,
-                            MonstersClues.travels_as_white_fog]
-        self.angel.disable_methods = [MonstersDisableMethods.symbol_made_with_blood]
-        self.angel.kill_methods = [MonstersKillMethods.angel_blade, MonstersKillMethods.holy_oil,
-                                   MonstersKillMethods.will_of_an_archangel, MonstersKillMethods.will_of_prince_of_hell,
-                                   MonstersKillMethods.lance_of_archangel_michael]
-
         self.cupid = Monster("Cupid")
         self.cupid.kill_methods = [MonstersKillMethods.angel_blade]
 
@@ -496,7 +510,7 @@ class MonsterBase:
         self.archangel_lucyfer.clues = [MonstersClues.visions, MonstersClues.weird_things_behavior,
                                         MonstersClues.flashing_lights, MonstersClues.travels_as_white_fog,
                                         MonstersClues.people_burned_on_the_ceiling, MonstersClues.telekinesis,
-                                        MonstersClues.burned_eyes_of_victims, MonstersClues.bible_burns_it]
+                                        MonstersClues.in_true_form_burns_eyes_of_people, MonstersClues.bible_burns_it]
         self.archangel_lucyfer.disable_methods = [MonstersDisableMethods.cage_of_lucyfer_in_hell,
                                                   MonstersDisableMethods.symbol_made_with_blood,
                                                   MonstersDisableMethods.holy_oil,
