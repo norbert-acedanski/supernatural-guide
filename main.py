@@ -35,8 +35,9 @@ def choose_option():
             base_of_monsters.print_all_sorted_clues()
         elif chosen_option == 4:
             base_of_monsters.print_all_clues()
-            base_of_monsters.choose_clues()
-            base_of_monsters.print_all_matches()
+            while not (chosen_clues := base_of_monsters.choose_clues()):
+                print("No clues chosen, try again...")
+            base_of_monsters.print_all_matches(chosen_clues)
         elif chosen_option == 5:
             base_of_curses.print_curses_names()
         elif chosen_option == 6:
@@ -45,8 +46,9 @@ def choose_option():
             base_of_curses.print_all_sorted_clues()
         elif chosen_option == 8:
             base_of_curses.print_all_clues()
-            base_of_curses.choose_clues()
-            base_of_curses.print_all_matches()
+            while not (chosen_clues := base_of_curses.choose_clues()):
+                print("No clues chosen, try again...")
+            base_of_curses.print_all_matches(chosen_clues)
         elif chosen_option == 9:
             base_of_objects.print_objects_names()
         elif chosen_option == 10:

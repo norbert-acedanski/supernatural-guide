@@ -1,4 +1,6 @@
 import re
+from typing import List
+
 from curse import Curse
 from curses_data import CursesClues, CursesDisableMethods
 from colors import Colors
@@ -106,26 +108,27 @@ class CursesBase:
         for clue_number, clue in enumerate(self.clues, 1):
             print(" *%5d  " % clue_number + clue)
     
-    def choose_clues(self):
+    def choose_clues(self) -> List[str]:
         clues = input(Colors.UNDERLINE + "\nChoose clues:" + Colors.ENDC + " ")
         clues = re.sub('[a-zA-Z,&^%$#@?|/:;"_=]', ' ', clues)
-        self.chosen_clues = [int(clue) - 1 for clue in clues.split() if (clue.isdigit() and int(clue) <= len(self.clues))]
-        if not self.chosen_clues:
-            print("No clues chosen. Try again")
-            self.choose_clues()
+        chosen_clues = [self.clues[int(clue) - 1] for clue in clues.split()
+                        if (clue.isdigit() and int(clue) <= len(self.clues))]
+        return chosen_clues
 
-    def print_all_matches(self):
-        curse_clues_list = [0] * len(self.curses)
+    def print_all_matches(self, selected_clues: List[str]):
+        curses_clues_dict = {}
         for curse_number, curse in enumerate(self.curses):
-            if curse.clues is not None:
-                for clue in curse.clues:
-                    for chosen_clue in self.chosen_clues:
-                        if clue == self.clues[chosen_clue]:
-                            curse_clues_list[curse_number] += 1
-        for curse_number, curse_match_count in enumerate(curse_clues_list):
-            if curse_match_count != 0:
-                print(Colors.BOLD + Colors.BLUE + "\n" + str(curse_match_count) + "/" + str(len(self.chosen_clues)) + " Matches:" + Colors.ENDC, end=" ")
-                self.curses[curse_number].print_all()
+            if curse.clues is not None \
+                    and (clues_intersection := len(set(curse.clues).intersection(set(selected_clues)))):
+                curses_clues_dict[curse_number] = clues_intersection
+        sorted_curses_clues_dict = {m: c for m, c in sorted(curses_clues_dict.items(), key=lambda item: item[1],
+                                                            reverse=True)}
+        print(f"\n{len(sorted_curses_clues_dict)} MATCHED CURSES FOUND: \n")
+        for curse_number, number_of_matching_clues in sorted_curses_clues_dict.items():
+            print(Colors.BOLD + Colors.BLUE + f"{number_of_matching_clues}/{len(selected_clues)} Matches:"
+                  + Colors.ENDC, end=" ")
+            self.curses[curse_number].print_all()
+            print("")
 
     def print_all_curses(self):
         for curse in self.curses:
