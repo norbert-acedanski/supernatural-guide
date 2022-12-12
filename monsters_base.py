@@ -460,6 +460,7 @@ class MonsterBase:
                             MonstersClues.can_repair_human_body, MonstersClues.telekinesis, MonstersClues.invulnerable,
                             MonstersClues.can_put_a_person_to_sleep, MonstersClues.demon_killing_knife_is_ineffective,
                             MonstersClues.has_wings, MonstersClues.true_voice_can_hurt_people,
+                            MonstersClues.immune_to_salt_rounds, MonstersClues.immune_to_devils_trap,
 
                             MonstersClues.triangle_wound, MonstersClues.travels_as_white_fog]
         self.angel.disable_methods = [

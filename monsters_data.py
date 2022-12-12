@@ -196,6 +196,8 @@ class MonstersClues:
     place_where_person_was_resurrected_looks_like_after_explosion = \
         "place where person was resurrected looks like after explosion"
     immune_to_liliths_yellow_blast = "immune to Lilith's yellow blast"
+    immune_to_salt_rounds = "immune to salt rounds"
+    immune_to_devils_trap = "immune to devils trap"
 
 
 class MonstersKillMethods:
