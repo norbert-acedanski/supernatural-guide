@@ -175,6 +175,7 @@ class MonstersClues:
     can_send_demons_back_to_hell_with_power_of_will = "can send demons back to hell with power of will"
     can_put_a_person_to_sleep = "can put a person to sleep"
     can_contact_a_person_in_a_dream = "can contact a person in a dream"
+    can_send_people_to_the_past = "can send people to the past"
     demon_killing_knife_is_ineffective = "demon killing knife is ineffective"
     immortal = "immortal"
     invulnerable = "invulnerable"

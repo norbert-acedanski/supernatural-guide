@@ -23,7 +23,7 @@ class MonsterBase:
                                       description="The oldest of old demons. One generation after Lilith. "
                                                   "They were turned by Lucyfer himself before the Atlantis drown. "
                                                   "They were trained to be demonic generals in the war against heaven.",
-                                      episodes={"S01": [1, 21, 22], "S02": [1, 21, 22]})
+                                      episodes={"S01": [1, 21, 22], "S02": [1, 21, 22], "S04": [3]})
         self.prince_of_hell.clues = [MonstersClues.people_burned_on_the_ceiling, MonstersClues.telekinesis,
                                      MonstersClues.weird_things_behavior, MonstersClues.yellow_eyes,
                                      MonstersClues.children_of_victims_that_died_on_the_ceiling_have_abilities,
@@ -466,7 +466,7 @@ class MonsterBase:
                             MonstersClues.can_put_a_person_to_sleep, MonstersClues.demon_killing_knife_is_ineffective,
                             MonstersClues.has_wings, MonstersClues.true_voice_can_hurt_people, MonstersClues.can_vanish,
                             MonstersClues.immune_to_salt_rounds, MonstersClues.immune_to_devils_trap,
-                            MonstersClues.can_contact_a_person_in_a_dream,
+                            MonstersClues.can_contact_a_person_in_a_dream, MonstersClues.can_send_people_to_the_past,
 
                             MonstersClues.triangle_wound, MonstersClues.travels_as_white_fog]
         self.angel.disable_methods = [
@@ -476,10 +476,8 @@ class MonsterBase:
                                    MonstersKillMethods.will_of_an_archangel, MonstersKillMethods.will_of_prince_of_hell,
                                    MonstersKillMethods.lance_of_archangel_michael]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S04": [2]})
-        self.unknown.clues = [MonstersClues.weird_electronics_behavior, MonstersClues.flashing_lights,
-                              MonstersClues.cold_spots, MonstersClues.emf, MonstersClues.people_dead_weirdly,
-                              MonstersClues.body_torn_apart, MonstersClues.telekinesis]
+        self.unknown = Monster("Unknown", description="", episodes={"S04": [3]})
+        self.unknown.clues = []
 
         # -------------------------------------------------- SEASON 5 --------------------------------------------------
 
