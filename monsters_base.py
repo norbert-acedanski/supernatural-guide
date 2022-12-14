@@ -100,7 +100,7 @@ class MonsterBase:
 
         self.demon = Monster("Demon", description="In every religion there is information about demonic possessions. "
                                                   "Demons are man that were stuck in hell for a long time.",
-                             episodes={"S01": [4, 21, 22], "S02": [1, 14], "S03": [1, 2, 4, 12, 15, 16], "S04": [1]})
+                             episodes={"S01": [4, 21, 22], "S02": [1, 14], "S03": [1, 2, 4, 12, 15, 16], "S04": [1, 4]})
         self.demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                             MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                             MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -169,7 +169,7 @@ class MonsterBase:
         self.people_with_abilities = Monster("People with abilities", description="People, that were infants, "
                                                                                   "when prince of hell killed "
                                                                                   "their mother on the ceiling.",
-                                             episodes={"S01": [14], "S02": [5, 10], "S03": [16], "S04": [1]})
+                                             episodes={"S01": [14], "S02": [5, 10], "S03": [16], "S04": [1, 4]})
         self.people_with_abilities.clues = [MonstersClues.people_dead_weirdly, MonstersClues.weird_things_behavior,
                                             MonstersClues.telekinesis, MonstersClues.mind_control,
                                             MonstersClues.able_to_electrocute, MonstersClues.can_see_future,
@@ -476,8 +476,21 @@ class MonsterBase:
                                    MonstersKillMethods.will_of_an_archangel, MonstersKillMethods.will_of_prince_of_hell,
                                    MonstersKillMethods.lance_of_archangel_michael]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S04": [3]})
-        self.unknown.clues = []
+        self.rougarou = Monster("Rougarou", description="Once a human. Now - rotten teeth, wormy skin. "
+                                                        "When going through metamorphosis, their hunger increases. "
+                                                        "At first for everything, but after a while - for human flesh. "
+                                                        "Hunger grows, until it is irresistible. After the first bite "
+                                                        "of the human flesh, they transform completely and fast. "
+                                                        "They feed once, they're a monster forever. "
+                                                        "This may be a genetic condition.",
+                                episodes={"S04": [4]})
+        self.rougarou.clues = [MonstersClues.enormous_appetite, MonstersClues.body_metamorphosis,
+                               MonstersClues.high_strength, MonstersClues.bloodshot_eyes, MonstersClues.wormy_skin]
+        self.rougarou.kill_methods = [MonstersKillMethods.burn_it]
+
+        self.unknown = Monster("Unknown", description="", episodes={"S04": [4]})
+        self.unknown.clues = [MonstersClues.enormous_appetite, MonstersClues.body_metamorphosis,
+                              MonstersClues.high_strength, MonstersClues.bloodshot_eyes, MonstersClues.wormy_skin]
 
         # -------------------------------------------------- SEASON 5 --------------------------------------------------
 
