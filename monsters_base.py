@@ -169,7 +169,7 @@ class MonsterBase:
         self.people_with_abilities = Monster("People with abilities", description="People, that were infants, "
                                                                                   "when prince of hell killed "
                                                                                   "their mother on the ceiling.",
-                                             episodes={"S01": [14], "S02": [5, 10], "S03": [16]})
+                                             episodes={"S01": [14], "S02": [5, 10], "S03": [16], "S04": [1]})
         self.people_with_abilities.clues = [MonstersClues.people_dead_weirdly, MonstersClues.weird_things_behavior,
                                             MonstersClues.telekinesis, MonstersClues.mind_control,
                                             MonstersClues.able_to_electrocute, MonstersClues.can_see_future,
