@@ -121,11 +121,12 @@ class MonsterBase:
 
         self.shapeshifter = Monster("Shapeshifter", description="These creatures can transform themselves into "
                                                                 "other man or animals.",
-                                    episodes={"S01": [6], "S02": [12]})
+                                    episodes={"S01": [6], "S02": [12], "S04": [5]})
         self.shapeshifter.clues = [MonstersClues.can_take_form_of_other_people, MonstersClues.skin_left_behind,
                                    MonstersClues.being_at_two_places_at_once, MonstersClues.bright_eyes,
                                    MonstersClues.weird_animal_behavior, MonstersClues.can_copy_memories_of_other_people,
-                                   MonstersClues.people_dead_weirdly]
+                                   MonstersClues.people_dead_weirdly, MonstersClues.strange_different_things_happening,
+                                   MonstersClues.can_make_themselves_appear_as_they_like]
         self.shapeshifter.kill_methods = [MonstersKillMethods.silver_bullet_into_the_heart,
                                           MonstersKillMethods.silver_blade]
 
@@ -227,7 +228,7 @@ class MonsterBase:
                               MonstersClues.needle_like_teeth, MonstersClues.moving_in_groups_usually,
                               MonstersClues.invulnerable, MonstersClues.high_strength, MonstersClues.bright_eyes,
                               MonstersClues.great_sense_of_smell, MonstersClues.white_skin, MonstersClues.cattle_deaths,
-                              MonstersClues.feeds_on_blood]
+                              MonstersClues.feeds_on_blood, MonstersClues.bite_marks_on_peoples_necks]
         self.vampire.kill_methods = [MonstersKillMethods.decapitation, MonstersKillMethods.angel_blade,
                                      MonstersKillMethods.colt_of_colt_with_magic_bullets]
         self.vampire.disable_methods = [MonstersDisableMethods.dead_mans_blood]
@@ -488,9 +489,10 @@ class MonsterBase:
                                MonstersClues.high_strength, MonstersClues.bloodshot_eyes, MonstersClues.wormy_skin]
         self.rougarou.kill_methods = [MonstersKillMethods.burn_it]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S04": [4]})
-        self.unknown.clues = [MonstersClues.enormous_appetite, MonstersClues.body_metamorphosis,
-                              MonstersClues.high_strength, MonstersClues.bloodshot_eyes, MonstersClues.wormy_skin]
+        self.unknown = Monster("Unknown", description="", episodes={"S04": [5]})
+        self.unknown.clues = [MonstersClues.no_blood_in_the_body, MonstersClues.strange_different_things_happening,
+                              MonstersClues.people_dead_weirdly, MonstersClues.bite_marks_on_peoples_necks,
+                              MonstersClues.can_make_themselves_appear_as_they_like]
 
         # -------------------------------------------------- SEASON 5 --------------------------------------------------
 

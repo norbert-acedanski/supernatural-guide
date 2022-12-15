@@ -78,8 +78,8 @@ class MonstersClues:
     emf = "Electromagnetic Field"
     no_emf = "no Electromagnetic Field"
     yellow_blast = "yellow blast"
-    strange_different_things_happening = "strange, different things happening - " \
-                                         "like aliens, grimm brothers fairy tails, etc."
+    strange_different_things_happening = "strange, different things happening - like aliens, grimm brothers " \
+                                         "fairy tails, werewolfs, vampires, mummies (like in movies), etc."
     things_disappearing = "things disappearing"
     nothing_on_ultraviolet = "nothing on ultraviolet"
     reacts_to_gods_name_in_latin = "reacts to Gods name in latin"
