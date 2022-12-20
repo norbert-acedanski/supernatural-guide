@@ -169,11 +169,13 @@ class MonstersClues:
     can_put_a_person_in_wonderland = "can put a person in wonderland - dream world inside ones mind"
     can_show_past_to_people = "can show past to people"
     can_vanish = "can vanish"
+    can_appear_out_of_thin_air = "can appear out of thin air"
     can_stop_bullets = "can stop bullets"
     can_put_somebody_in_a_time_loop = "can put somebody in a time loop"
     can_reverse_time = "can reverse time"
     can_control_electronics = "can control electronics"
     can_bring_back_dead_people = "can bring back dead people"
+    can_summon_ghosts = "can summon ghosts"
     can_repair_human_body = "can repair human body"
     can_control_demons = "can control demons"
     can_send_demons_back_to_hell_with_power_of_will = "can send demons back to hell with power of will"
@@ -286,6 +288,7 @@ class MonstersDisableMethods:
     shock_it_out_of_its_loop = "shock it out of its loop (by bringing something personal for example)"
     chloroform = "chloroform"
     bury_it_alive = "bury it alive"
+    extrusion_by_people_with_abilities = "extrusion by people with abilities"
 
 
 class MonstersCureMethods:

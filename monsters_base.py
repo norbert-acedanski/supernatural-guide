@@ -107,6 +107,7 @@ class MonsterBase:
                             MonstersClues.people_dead_weirdly, MonstersClues.with_a_binding_link_exorcism_does_not_work,
                             MonstersClues.people_acting_weirdly, MonstersClues.telekinesis,
                             MonstersClues.amnesia_blackout, MonstersClues.can_vanish,
+                            MonstersClues.can_appear_out_of_thin_air,
 
                             MonstersClues.black_blood]
         self.demon.kill_methods = [MonstersKillMethods.demon_killing_knife,
@@ -117,7 +118,8 @@ class MonsterBase:
         self.demon.disable_methods = [MonstersDisableMethods.holy_water, MonstersDisableMethods.holy_wood,
                                       MonstersDisableMethods.exorcism, MonstersDisableMethods.devils_trap,
                                       MonstersDisableMethods.witch_spell_to_get_a_demon_out_of_the_body,
-                                      MonstersDisableMethods.salt_or_salted_bullets]
+                                      MonstersDisableMethods.salt_or_salted_bullets,
+                                      MonstersDisableMethods.extrusion_by_people_with_abilities]
 
         self.shapeshifter = Monster("Shapeshifter", description="These creatures can transform themselves into "
                                                                 "other man or animals.",
@@ -404,11 +406,11 @@ class MonsterBase:
                                  MonstersClues.victims_have_meadowsweet_somewhere, MonstersClues.weird_weather]
         self.holdenacar.kill_methods = [MonstersKillMethods.evergreen_pin]
 
-        self.witch = Monster("Witch", description="A woman, that deals with different kinds of magic (like black, "
-                                                  "old world, etc.)",
-                             episodes={"S03": [9]})
+        self.witch = Monster("Witch", description="A woman/man, that deals with different kinds of magic (like black, "
+                                                  "old world, etc.). Witch has magic powers, can bring demons etc.",
+                             episodes={"S03": [9], "S04": [7]})
         self.witch.clues = [MonstersClues.people_dead_weirdly, MonstersClues.hex_bag_hidden_somewhere,
-                            MonstersClues.weird_electronics_behavior,
+                            MonstersClues.weird_electronics_behavior, MonstersClues.telekinesis,
 
                             MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                             MonstersClues.missing_heart]
@@ -458,8 +460,10 @@ class MonsterBase:
 
         # -------------------------------------------------- SEASON 4 --------------------------------------------------
 
-        self.angel = Monster("Angel", description=" (Castiel). They can bring people back from the dead.",
-                             episodes={"S04": [1, 2]})
+        self.angel = Monster("Angel", description="Angel of God (Castiel, Uriel). "
+                                                  "They can bring people back from the dead. Cannot track people, "
+                                                  "that use powerful spells to hide themselves.",
+                             episodes={"S04": [1, 2, 7]})
         self.angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                             MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion,
                             MonstersClues.leaves_burned_marks, MonstersClues.weird_electronics_behavior,
@@ -468,6 +472,7 @@ class MonsterBase:
                             MonstersClues.has_wings, MonstersClues.true_voice_can_hurt_people, MonstersClues.can_vanish,
                             MonstersClues.immune_to_salt_rounds, MonstersClues.immune_to_devils_trap,
                             MonstersClues.can_contact_a_person_in_a_dream, MonstersClues.can_send_people_to_the_past,
+                            MonstersClues.can_appear_out_of_thin_air,
 
                             MonstersClues.triangle_wound, MonstersClues.travels_as_white_fog]
         self.angel.disable_methods = [
@@ -489,10 +494,18 @@ class MonsterBase:
                                MonstersClues.high_strength, MonstersClues.bloodshot_eyes, MonstersClues.wormy_skin]
         self.rougarou.kill_methods = [MonstersKillMethods.burn_it]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S04": [5]})
-        self.unknown.clues = [MonstersClues.no_blood_in_the_body, MonstersClues.strange_different_things_happening,
-                              MonstersClues.people_dead_weirdly, MonstersClues.bite_marks_on_peoples_necks,
-                              MonstersClues.can_make_themselves_appear_as_they_like]
+        self.samhain = Monster("Samhain", description="A demon that is the origin of Halloween. Celts believed, that "
+                                                      "the 31st of October is the day, when the veil is the thinnest "
+                                                      "between the living and dead. And this is also Samhain's night. "
+                                                      "Masks were put on to hide from him, sweets left on doorsteps to "
+                                                      "appease him and faces carved into pumpkins to worship him.",
+                               episodes={"S04": [7]})
+        self.samhain.clues = [MonstersClues.travels_as_black_fog, MonstersClues.white_eyes, MonstersClues.yellow_blast,
+                              MonstersClues.can_bring_back_dead_people, MonstersClues.can_summon_ghosts]
+        self.samhain.disable_methods = [MonstersDisableMethods.extrusion_by_people_with_abilities]
+
+        self.unknown = Monster("Unknown", description="", episodes={"S04": [7]})
+        self.unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.hex_bag_hidden_somewhere]
 
         # -------------------------------------------------- SEASON 5 --------------------------------------------------
 
