@@ -11,9 +11,8 @@ class EventsBase:
 
         self.apocalypse = Event("Apocalypse", description="Apocalypse is an event, that can be brought by breaking all "
                                                           "66 seals. When all seals are broken, Lucyfer is released "
-                                                          "from his cage.", episodes={"S04": [2]})
-        self.apocalypse.clues = [EventClues.rise_of_the_witnesses]
-
+                                                          "from his cage.", episodes={"S04": [2, 7]})
+        self.apocalypse.clues = [EventClues.rise_of_the_witnesses, EventClues.summoning_of_samhain]
 
         self.events = [event for event in self.__dict__.values() if isinstance(event, Event)]
 
