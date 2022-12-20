@@ -65,6 +65,12 @@ class CursesBase:
                                    CursesClues.people_scared_of_everything, CursesClues.hallucinations]
         self.yellow_fever.disable_methods = [CursesDisableMethods.disable_the_spirit_that_causes_it]
 
+        self.samhain_summoning_spell = Curse("Samhain summoning spell", description="Spell, that can summon Samhain. "
+                                                                                    "The ritual can only be performed "
+                                                                                    "every 600 years before the 31st "
+                                                                                    "of October.")
+        self.samhain_summoning_spell.clues = [CursesClues.people_dead_weirdly, CursesClues.hex_bag_hidden_somewhere]
+
         # SEASON 5:
 
 
