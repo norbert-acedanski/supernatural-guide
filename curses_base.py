@@ -39,12 +39,16 @@ class CursesBase:
                                              episodes={"S02": [11]})
         self.hoodoo_protection_spell.clues = [CursesClues.drawn_quincunx]
 
+        # ---------------------------------------------- ALL EPISODES DONE ---------------------------------------------
+
         # SEASON 3:
 
         self.curse = Curse("Unknown curse", episodes={"S03": [9]})
         self.curse.clues = [CursesClues.hex_bag_hidden_somewhere, CursesClues.people_dead_weirdly,
                             CursesClues.weird_electronics_behavior, CursesClues.people_feeling_weird_or_bad]
         self.curse.disable_methods = [CursesDisableMethods.burn_the_hex, CursesDisableMethods.magic_brew]
+
+        # ---------------------------------------------- ALL EPISODES DONE ---------------------------------------------
 
 
         # SEASON 4:
