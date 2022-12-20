@@ -50,10 +50,20 @@ class CursesBase:
 
         # ---------------------------------------------- ALL EPISODES DONE ---------------------------------------------
 
-
         # SEASON 4:
 
-
+        self.yellow_fever = Curse("Yellow fever", description="Sickness that is transferred from a ghost (Buru Buru) "
+                                                              "of a person and then it behaves like any other disease. "
+                                                              "People get anxious, then scared, then more scared "
+                                                              "and at the end, their heart gives up. "
+                                                              "Symptoms also include hallucinations.",
+                                  episodes={"S04": [6]})
+        self.yellow_fever.clues = [CursesClues.
+                                   missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
+                                   CursesClues.people_dead_weirdly, CursesClues.people_acting_weirdly,
+                                   CursesClues.no_hex_bags, CursesClues.emf, CursesClues.no_sulfur,
+                                   CursesClues.people_scared_of_everything, CursesClues.hallucinations]
+        self.yellow_fever.disable_methods = [CursesDisableMethods.disable_the_spirit_that_causes_it]
 
         # SEASON 5:
 
