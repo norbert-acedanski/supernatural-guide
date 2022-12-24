@@ -7,9 +7,9 @@ class PlacesBase:
     def __init__(self):
         self.clues = [clue for key, clue in list(PlaceClues.__dict__.items()) if not key.startswith("__")]
 
-        self.hell = Place("Hell", description="Place of eternal torture.", episodes={"S03": [16], "S04": [1]})
+        self.hell = Place("Hell", description="Place of eternal torture.", episodes={"S03": [16], "S04": [1, 8]})
         self.hell.clues = [PlaceClues.people_chained_in_a_void, PlaceClues.electrical_storms, PlaceClues.dark_place,
-                           PlaceClues.people_chained_in_a_void, PlaceClues.flashing_lights]
+                           PlaceClues.flashing_lights]
 
         self.places = [place for place in self.__dict__.values() if isinstance(place, Place)]
 
