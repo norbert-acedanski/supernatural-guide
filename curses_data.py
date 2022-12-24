@@ -6,6 +6,7 @@ class CursesClues:
     people_acting_weirdly = "people acting weirdly"
     people_feeling_weird_or_bad = "people feeling weird or bad"
     people_scared_of_everything = "people scared of everything"
+    people_wishes_come_true = "people wishes come true"
     hallucinations = "hallucinations"
     weird_animal_behavior = "weird animal behavior"
     control_over_a_reaper = "control over a reaper"
@@ -19,6 +20,9 @@ class CursesClues:
         "hex bag hidden somewhere (made with bird bones, rabbit's teeth, something that a person owned"
     weird_electronics_behavior = "weird electronics behavior"
     sealed_with_a_kiss = "sealed with a kiss"
+    strange_different_things_happening = "strange, different things happening - like invisible people, Bigfoot, " \
+                                         "large lottery wins, etc."
+    magical_coin = "magical coin"
     the_last_person_that_got_kissed_dies = "the last person that got kissed dies " \
                                            "(reverse order - first kisses, dies last)"
     slow_loss_of_the_memory = "slow loss of the memory"
@@ -31,4 +35,6 @@ class CursesDisableMethods:
     burn_the_hex = "burn the hex"
     magic_brew = "magic brew"
     disable_the_spirit_that_causes_it = "disable the spirit that causes it"
+    first_person_that_wished_has_to_remove_the_coin = "first person that wished has to remove the coin"
+    melt_the_coin = "melt the coin"
     kill_the_witch_that_cursed_a_person = "kill the Witch that cursed a person"

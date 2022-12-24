@@ -71,6 +71,16 @@ class CursesBase:
                                                                                     "of October.")
         self.samhain_summoning_spell.clues = [CursesClues.people_dead_weirdly, CursesClues.hex_bag_hidden_somewhere]
 
+        self.babylonian_wishing_curse = Curse("Babylonian wishing curse",
+                                              description="A curse, that grants wishes, then turns them bad. "
+                                                          "Is a part of an object (a coin for example). "
+                                                          "A spell was made by babylonian priests for Tiamat "
+                                                          "(A Babylonian god of primordial chaos).",
+                                              episodes={"S04": [8]})
+        self.babylonian_wishing_curse.clues = [CursesClues.strange_different_things_happening, CursesClues.magical_coin]
+        self.babylonian_wishing_curse.disable_methods = \
+            [CursesDisableMethods.first_person_that_wished_has_to_remove_the_coin, CursesDisableMethods.melt_the_coin]
+
         # SEASON 5:
 
 

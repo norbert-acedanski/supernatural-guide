@@ -504,8 +504,8 @@ class MonsterBase:
                               MonstersClues.can_bring_back_dead_people, MonstersClues.can_summon_ghosts]
         self.samhain.disable_methods = [MonstersDisableMethods.extrusion_by_people_with_abilities]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S04": [7]})
-        self.unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.hex_bag_hidden_somewhere]
+        self.unknown = Monster("Unknown", description="", episodes={"S04": [8]})
+        self.unknown.clues = [MonstersClues.no_emf, MonstersClues.strange_different_things_happening]
 
         # -------------------------------------------------- SEASON 5 --------------------------------------------------
 
