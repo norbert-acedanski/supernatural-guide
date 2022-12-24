@@ -40,6 +40,7 @@ class MonstersClues:
     cattle_deaths = "cattle deaths"
     temperature_fluctuations = "temperature fluctuations"
     electrical_storms = "electrical storms"
+    babies_or_children_acting_weirdly = "babies or children acting weirdly - like not themselves"
     people_feel_spiritual_ecstasy = "people feel spiritual ecstasy"
     people_hear_voices = "people hear voices"
     people_seeing_figure_of_light = "people seeing figure of light"
@@ -50,7 +51,6 @@ class MonstersClues:
     people_kidnapped_weirdly = "people kidnapped weirdly"
     people_cured_miraculously = "people cured miraculously"
     people_acting_weirdly = "people acting weirdly - like not themselves"
-    babies_or_children_acting_weirdly = "babies or children acting weirdly - like not themselves"
     people_burned_on_the_ceiling = "people burned on the ceiling of their house"
     dead_people_or_children_regularly_in_different_places = "dead people or children regularly in different places"
     missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area = \
