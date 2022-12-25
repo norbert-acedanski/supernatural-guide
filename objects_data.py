@@ -12,6 +12,8 @@ class ObjectAbilities:
     the_place_it_hits_is_not_destroyed_but_flourishes = "the place it hits is not destroyed but flourishes"
     can_kill_entities_when_reconnecting_with_an_angel = \
         "can kill entities (people, demons) when reconnecting with an angel"
+    traps_a_reaper = "traps a reaper"
+    angels_cant_get_past_it = "angels can't get past it"
 
 
 class ObjectMaintenance:

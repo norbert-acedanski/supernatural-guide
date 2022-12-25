@@ -55,6 +55,15 @@ class ObjectsBase:
                                       ObjectAbilities.the_place_it_hits_is_not_destroyed_but_flourishes,
                                       ObjectAbilities.can_kill_entities_when_reconnecting_with_an_angel]
 
+        self.reaper_imprison_sigint = Object("Reaper imprison sigint", description="Sigint, that can trap a reaper.",
+                                             episodes={"S04": [15]})
+        self.reaper_imprison_sigint.abilities = [ObjectAbilities.traps_a_reaper]
+
+        self.angel_protection_sigint = Object("Angel protection sigint", description="Angels can't get past it when "
+                                                                                     "the place is marked with it.",
+                                              episodes={"S04": [15]})
+        self.angel_protection_sigint.abilities = [ObjectAbilities.angels_cant_get_past_it]
+
         self.objects = [obj for obj in self.__dict__.values() if isinstance(obj, Object)]
 
     def print_objects_names(self):
