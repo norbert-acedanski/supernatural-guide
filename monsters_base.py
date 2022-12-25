@@ -62,10 +62,10 @@ class MonsterBase:
                                       MonstersClues.missing_or_dead_people_regularly_in_the_same_area,
                                       MonstersClues.ozone_smell, MonstersClues.seen_as_fire, MonstersClues.no_sulfur,
                                       MonstersClues.people_acting_weirdly, MonstersClues.small_earth_quake,
-                                      MonstersClues.seen_as_black_truck, MonstersClues.people_seeing_things_or_figures,
-                                      MonstersClues.seen_as_a_little_girl, MonstersClues.seen_as_a_drown_man,
+                                      MonstersClues.seen_as_black_truck, MonstersClues.seen_as_a_little_girl,
+                                      MonstersClues.seen_as_a_drown_man, MonstersClues.flashing_lights,
                                       MonstersClues.strange_different_things_happening, MonstersClues.no_missing_heart,
-                                      MonstersClues.flashing_lights, MonstersClues.body_torn_apart]
+                                      MonstersClues.body_torn_apart]
         self.vengeful_spirit.disable_methods = [MonstersDisableMethods.bring_the_spirit_to_its_crime_place,
                                                 MonstersDisableMethods.bring_the_spirit_what_it_wants,
                                                 MonstersDisableMethods.iron_or_iron_bullets,
@@ -185,6 +185,15 @@ class MonsterBase:
                                             MonstersClues.can_control_demons,
                                             MonstersClues.can_send_demons_back_to_hell_with_power_of_will]
         self.people_with_abilities.kill_methods = [MonstersKillMethods.like_any_human]
+
+        self.crazy_humans = Monster("Crazy humans", description="Ordinary humans, that are mad or crazy. "
+                                                                "Sometimes can be mistaken for ghosts or vampires.",
+                                    episodes={"S01": [15], "S04": [11]})
+        self.crazy_humans.clues = [MonstersClues.people_kidnapped_weirdly, MonstersClues.weird_electronics_behavior,
+                                   MonstersClues.flashing_lights, MonstersClues.people_seeing_things_or_figures,
+                                   MonstersClues.people_dead_weirdly, MonstersClues.weird_things_behavior,
+                                   MonstersClues.body_torn_apart, MonstersClues.weird_noises]
+        self.crazy_humans.kill_methods = [MonstersKillMethods.like_any_human]
 
         self.spring_heeled_jacks = Monster("Sprint Heeled Jacks", description="Not seen. Only mentioned in S01E15")
         self.spring_heeled_jacks.clues = [MonstersClues.people_kidnapped_weirdly]
@@ -523,8 +532,11 @@ class MonsterBase:
         self.demon_alastair.disable_methods = [MonstersDisableMethods.demon_killing_knife]
         self.demon_alastair.kill_methods = [MonstersKillMethods.reconnection_of_angel_with_its_grace]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S04": [10]})
-        self.unknown.clues = []
+        self.unknown = Monster("Unknown", description="", episodes={"S04": [11]})
+        self.unknown.clues = [MonstersClues.weird_electronics_behavior, MonstersClues.flashing_lights,
+                              MonstersClues.people_seeing_things_or_figures, MonstersClues.people_dead_weirdly,
+                              MonstersClues.body_torn_apart, MonstersClues.weird_noises,
+                              MonstersClues.weird_things_behavior]
 
         # -------------------------------------------------- SEASON 5 --------------------------------------------------
 
