@@ -591,7 +591,7 @@ class MonsterBase:
                                  MonstersClues.ghost_like_creature, MonstersClues.cold_spots,
                                  MonstersClues.feeling_of_something_bad,
                                  MonstersClues.victims_in_coma_fading_and_dying]
-        self.soul_eater.disable_methods = [MonstersDisableMethods.celtic_sigit_to_trap_monsters]
+        self.soul_eater.disable_methods = [MonstersDisableMethods.celtic_sigint_to_trap_monsters]
         self.soul_eater.kill_methods = [MonstersKillMethods.celtic_sigil]
 
         self.bissan = Monster("Bissan", description="Spirits of the Cicada. "
