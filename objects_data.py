@@ -6,6 +6,7 @@ class ObjectAbilities:
     can_make_a_person_sleep_for_days = "can make a person sleep for days"
     brings_back_dreams_for_those_that_dont_have_them = "brings back dreams for those that dont have them"
     gives_people_control_over_dreams = "gives people control over dreams"
+    can_kill_angels = "can kill angels"
     cannot_kill_angels = "cannot kill angels"
     can_send_angels_back_to_heaven = "can send angels back to heaven"
     can_appear_as_falling_meteor = "can appear as falling meteor"

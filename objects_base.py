@@ -64,6 +64,10 @@ class ObjectsBase:
                                               episodes={"S04": [15]})
         self.angel_protection_sigint.abilities = [ObjectAbilities.angels_cant_get_past_it]
 
+        self.angel_blade = Object("Angel blade", description="A triangular, silvery blade, that each angel has.",
+                                  episodes={"S04": [16]})
+        self.angel_blade.abilities = [ObjectAbilities.can_kill_angels]
+
         self.objects = [obj for obj in self.__dict__.values() if isinstance(obj, Object)]
 
     def print_objects_names(self):
