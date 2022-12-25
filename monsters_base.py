@@ -419,16 +419,19 @@ class MonsterBase:
         self.holdenacar.kill_methods = [MonstersKillMethods.evergreen_pin]
 
         self.witch = Monster("Witch", description="A woman/man, that deals with different kinds of magic (like black, "
-                                                  "old world, etc.). Witch has magic powers, can bring demons etc.",
-                             episodes={"S03": [9], "S04": [7]})
+                                                  "old world, etc.). Witch has magic powers, can bring demons, "
+                                                  "be immortal, teleport etc.",
+                             episodes={"S03": [9], "S04": [7, 12]})
         self.witch.clues = [MonstersClues.people_dead_weirdly, MonstersClues.hex_bag_hidden_somewhere,
                             MonstersClues.weird_electronics_behavior, MonstersClues.telekinesis,
+                            MonstersClues.can_vanish, MonstersClues.immortal, MonstersClues.invulnerable,
+                            MonstersClues.telekinesis, MonstersClues.card_found_on_a_victim,
 
                             MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                             MonstersClues.missing_heart]
         self.witch.disableMethod = [MonstersDisableMethods.stop_it_from_speaking,
                                     MonstersDisableMethods.witch_catcher]
-        self.witch.kill_methods = [MonstersKillMethods.like_any_human,
+        self.witch.kill_methods = [MonstersKillMethods.like_any_human, MonstersKillMethods.death_transfer_spell,
                                    MonstersKillMethods.witch_killing_brew, MonstersKillMethods.cut_throat,
                                    MonstersClues.red_eyes]
 
@@ -532,11 +535,8 @@ class MonsterBase:
         self.demon_alastair.disable_methods = [MonstersDisableMethods.demon_killing_knife]
         self.demon_alastair.kill_methods = [MonstersKillMethods.reconnection_of_angel_with_its_grace]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S04": [11]})
-        self.unknown.clues = [MonstersClues.weird_electronics_behavior, MonstersClues.flashing_lights,
-                              MonstersClues.people_seeing_things_or_figures, MonstersClues.people_dead_weirdly,
-                              MonstersClues.body_torn_apart, MonstersClues.weird_noises,
-                              MonstersClues.weird_things_behavior]
+        self.unknown = Monster("Unknown", description="", episodes={"S04": [12]})
+        self.unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.card_found_on_a_victim]
 
         # -------------------------------------------------- SEASON 5 --------------------------------------------------
 

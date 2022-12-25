@@ -132,6 +132,7 @@ class MonstersClues:
     people_dead_weirdly = "people dead weirdly"
     visions = "visions"
     ghost_like_creature = "ghost-like creature"
+    card_found_on_a_victim = "card found on a victim"
     victims_hear_screams = "victims hear scream"
     victims_hear_children_cry = "victims hear children cry"
     victims_hear_voices = "victims hear voices"
@@ -260,6 +261,7 @@ class MonstersKillMethods:
     sharp_object_into_the_spine = "sharp object into the spine"
     angel_exorcism = "angel exorcism"
     reconnection_of_angel_with_its_grace = "reconnection of angel with its grace"
+    death_transfer_spell = "death transfer spell"
 
 
 class MonstersDisableMethods:
