@@ -12,6 +12,12 @@ class PlacesBase:
         self.hell.clues = [PlaceClues.people_chained_in_a_void, PlaceClues.electrical_storms, PlaceClues.dark_place,
                            PlaceClues.flashing_lights, PlaceClues.time_runs_faster_there]
 
+        self.alternate_timeline = Place("Alternate timeline",
+                                        description="A universe, where the history played out differently",
+                                        episodes={"S04": [17]})
+        self.alternate_timeline.clues = [PlaceClues.different_history, PlaceClues.different_memories,
+                                         PlaceClues.strange_feeling_that_things_should_be_different]
+
         self.places = [place for place in self.__dict__.values() if isinstance(place, Place)]
 
     def print_places_names(self):
