@@ -181,10 +181,12 @@ class MonsterBase:
         self.reaper.disable_methods = [MonstersDisableMethods.reaper_imprison_sigint]
         self.reaper.kill_methods = [MonstersKillMethods.reaper_blade_combined_with_a_spell]
 
-        self.people_with_abilities = Monster("People with abilities", description="People, that were infants, "
-                                                                                  "when prince of hell killed "
-                                                                                  "their mother on the ceiling.",
-                                             episodes={"S01": [14], "S02": [5, 10], "S03": [16], "S04": [1, 4]})
+        self.people_with_abilities = Monster("People with abilities",
+                                             description="People, that were infants, when prince of hell killed their "
+                                                         "mother on the ceiling. Can get stronger, "
+                                                         "when consuming demon blood.",
+                                             episodes={"S01": [14], "S02": [5, 10], "S03": [16],
+                                                       "S04": [1, 4, 7, 9, 15, 16]})
         self.people_with_abilities.clues = [MonstersClues.people_dead_weirdly, MonstersClues.weird_things_behavior,
                                             MonstersClues.telekinesis, MonstersClues.mind_control,
                                             MonstersClues.able_to_electrocute, MonstersClues.can_see_future,
@@ -193,7 +195,8 @@ class MonsterBase:
                                             MonstersClues.as_babies_fed_with_demon_blood,
                                             MonstersClues.immune_to_liliths_yellow_blast,
                                             MonstersClues.can_control_demons,
-                                            MonstersClues.can_send_demons_back_to_hell_with_power_of_will]
+                                            MonstersClues.can_send_demons_back_to_hell_with_power_of_will,
+                                            MonstersClues.can_kill_demons_with_power_of_will]
         self.people_with_abilities.kill_methods = [MonstersKillMethods.like_any_human]
 
         self.crazy_humans = Monster("Crazy humans", description="Ordinary humans, that are mad or crazy. "
@@ -489,8 +492,9 @@ class MonsterBase:
                                                   "They can bring people back from the dead. Cannot track people, "
                                                   "that use powerful spells to hide themselves. All angels have graces "
                                                   "- energy source for their power. When they disobey, as a punishment "
-                                                  "they can become human (they fall).",
-                             episodes={"S04": [1, 2, 7, 9, 10, 15]})
+                                                  "they can become human (they fall). "
+                                                  "When dying, they leave wing marks.",
+                             episodes={"S04": [1, 2, 7, 9, 10, 15, 16]})
         self.angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                             MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion,
                             MonstersClues.leaves_burned_marks, MonstersClues.weird_electronics_behavior,
@@ -501,12 +505,15 @@ class MonsterBase:
                             MonstersClues.can_contact_a_person_in_a_dream, MonstersClues.can_send_people_to_the_past,
                             MonstersClues.can_appear_out_of_thin_air, MonstersClues.high_strength,
                             MonstersClues.can_exorcise_certain_demons_with_hand_on_forehead,
-                            MonstersClues.mimics_human_voice,
+                            MonstersClues.mimics_human_voice, MonstersClues.can_control_electronics,
+                            MonstersClues.triangle_wound,
 
-                            MonstersClues.triangle_wound, MonstersClues.travels_as_white_fog]
-        self.angel.disable_methods = [MonstersDisableMethods.symbol_made_with_blood]
-        self.angel.kill_methods = [
-                                   MonstersKillMethods.angel_blade, MonstersKillMethods.holy_oil,
+                            MonstersClues.travels_as_white_fog]
+        self.angel.disable_methods = [MonstersDisableMethods.symbol_made_with_blood,
+                                      MonstersDisableMethods.exorcism_for_angels]
+        self.angel.kill_methods = [MonstersKillMethods.angel_blade,
+
+                                   MonstersKillMethods.holy_oil,
                                    MonstersKillMethods.will_of_an_archangel, MonstersKillMethods.will_of_prince_of_hell,
                                    MonstersKillMethods.lance_of_archangel_michael]
 
@@ -539,13 +546,17 @@ class MonsterBase:
                                    MonstersClues.can_hear_angel_radio, MonstersClues.can_hear_demon_radio,
                                    MonstersClues.falling_meteor]
 
-        self.demon_alastair = Monster("Demon Alastair", description="Tortures souls in Hell.",
-                                      episodes={"S04": [9, 10, 15]})
+        self.demon_alastair = Monster("Demon Alastair", description="A very powerful demon. Tortures souls in Hell.",
+                                      episodes={"S04": [9, 10, 15, 16]})
         self.demon_alastair.clues = [MonstersClues.white_eyes, MonstersClues.demon_killing_knife_is_ineffective,
                                      MonstersClues.immune_to_extrusion_by_people_with_abilities,
                                      MonstersClues.immune_to_exorcism_of_an_angel]
         self.demon_alastair.disable_methods = [MonstersDisableMethods.demon_killing_knife,
-                                               MonstersDisableMethods.reconnection_of_angel_with_its_grace]
+                                               MonstersDisableMethods.reconnection_of_angel_with_its_grace,
+                                               MonstersDisableMethods.enochian_devils_trap,
+                                               MonstersDisableMethods.holy_water,
+                                               MonstersDisableMethods.salt_or_salted_bullets]
+        self.demon_alastair.kill_methods = [MonstersKillMethods.will_of_a_person_with_abilities]
 
         self.siren = Monster("Siren", description="Beautiful creatures, that prey on men, "
                                                   "entice them with their siren song. For men, they are perfect and "
@@ -559,9 +570,8 @@ class MonsterBase:
                             MonstersClues.real_appearance_can_be_seen_in_a_reflection]
         self.siren.kill_methods = [MonstersKillMethods.its_own_venom]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S04": [15]})
-        self.unknown.clues = [MonstersClues.people_not_dying, MonstersClues.strange_different_things_happening,
-                              MonstersClues.people_feel_spiritual_ecstasy]
+        self.unknown = Monster("Unknown", description="", episodes={"S04": [16]})
+        self.unknown.clues = []
 
         # -------------------------------------------------- SEASON 5 --------------------------------------------------
 
