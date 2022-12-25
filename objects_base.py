@@ -39,11 +39,21 @@ class ObjectsBase:
 
         self.sleep_potion = Object("Sleep Potion", description="Made of African Dream Root. Was use by shaman and "
                                                                "medicine men for centuries. It is used for "
-                                                               "dreamwalking - entering another person's dreams.",
+                                                               "dream-walking - entering another person's dreams.",
                                    episodes={"S03": [10]})
         self.sleep_potion.abilities = [ObjectAbilities.can_make_a_person_sleep_for_days,
                                        ObjectAbilities.brings_back_dreams_for_those_that_dont_have_them,
                                        ObjectAbilities.gives_people_control_over_dreams]
+
+        self.sigint_against_angels = Object("Sigint against angels", description="Sigint made with blood, that can "
+                                                                                 "send angels back to heaven",
+                                            episodes={"S04": [10]})
+        self.sigint_against_angels.abilities = [ObjectAbilities.can_send_angels_back_to_heaven]
+
+        self.angel_grace = Object("Angel grace", description="A power source for an angel", episodes={"S04": [10]})
+        self.angel_grace.abilities = [ObjectAbilities.can_appear_as_falling_meteor,
+                                      ObjectAbilities.the_place_it_hits_is_not_destroyed_but_flourishes,
+                                      ObjectAbilities.can_kill_entities_when_reconnecting_with_an_angel]
 
         self.objects = [obj for obj in self.__dict__.values() if isinstance(obj, Object)]
 

@@ -7,6 +7,11 @@ class ObjectAbilities:
     brings_back_dreams_for_those_that_dont_have_them = "brings back dreams for those that dont have them"
     gives_people_control_over_dreams = "gives people control over dreams"
     cannot_kill_angels = "cannot kill angels"
+    can_send_angels_back_to_heaven = "can send angels back to heaven"
+    can_appear_as_falling_meteor = "can appear as falling meteor"
+    the_place_it_hits_is_not_destroyed_but_flourishes = "the place it hits is not destroyed but flourishes"
+    can_kill_entities_when_reconnecting_with_an_angel = \
+        "can kill entities (people, demons) when reconnecting with an angel"
 
 
 class ObjectMaintenance:
