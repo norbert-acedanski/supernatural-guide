@@ -10,10 +10,11 @@ class EventsBase:
                                 if not key.startswith("__")]
 
         self.apocalypse = Event("Apocalypse", description="Apocalypse is an event, that can be brought by breaking any "
-                                                          "66 seals of possible 600 of them. "
-                                                          "When seals are broken, Lucyfer is released from his cage.",
-                                episodes={"S04": [2, 7, 9]})
-        self.apocalypse.clues = [EventClues.rise_of_the_witnesses, EventClues.summoning_of_samhain]
+                                                          "66 seals of possible 600 of them. When 66 seals are broken, "
+                                                          "Lucyfer is released from his cage.",
+                                episodes={"S04": [2, 7, 9, 15]})
+        self.apocalypse.clues = [EventClues.rise_of_the_witnesses, EventClues.summoning_of_samhain,
+                                 EventClues.rippers_killed_under_the_solstice_moon]
 
         self.events = [event for event in self.__dict__.values() if isinstance(event, Event)]
 
