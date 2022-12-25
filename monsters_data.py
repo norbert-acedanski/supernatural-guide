@@ -29,6 +29,7 @@ class MonstersClues:
     infected_with_blood_to_blood_contact = "infected with blood to blood contact"
     triangle_wound = "victims wound shaped like triangle"
     triangle_wound_with_burns = "victims wound shaped like triangle with burns around"
+    no_black_fog = "no black smoke"
     travels_as_black_fog = "travels as a black fog"
     travels_as_white_fog = "travels as a white fog"
     travels_as_red_fog = "travels as a red fog"
@@ -214,6 +215,7 @@ class MonstersClues:
     immune_to_devils_trap = "immune to devils trap"
     immune_to_extrusion_by_people_with_abilities = "immune to extrusion by people with abilities"
     immune_to_exorcism_of_an_angel = "immune to exorcism of an angel"
+    lack_of_body_control = "lack of body control"
 
 
 class MonstersKillMethods:

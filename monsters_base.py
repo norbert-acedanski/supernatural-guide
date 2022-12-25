@@ -41,6 +41,9 @@ class MonsterBase:
         self.vengeful_spirit = Monster("Vengeful Spirit or Ghost (Bloody Mary, Hook Man)",
                                        description="Appears, when somebody died tragically, committed suicide "
                                                    "or was killed violently. Usually bound to a place or to things. "
+                                                   "Ghost can occasionally possess people. "
+                                                   "When they do, sometimes they can travel for a while before "
+                                                   "coming back to the usual haunting place."
                                                    "Can be summoned by Enochian, necromantic summoning rituals. "
                                                    "Sometimes it's a spirit of a person, that is in the coma. "
                                                    "Ghosts can be forced to rise and keep risen. If it is done with "
@@ -48,7 +51,7 @@ class MonsterBase:
                                                    "they were killed by supernatural. Witnesses can be pu to rest by a "
                                                    "special spell (has to be cast over an open fire).",
                                        episodes={"S01": [1, 3, 5, 7, 9, 10, 13, 19], "S02": [6, 11, 16, 18, 19],
-                                                 "S03": [5, 6, 13], "S04": [2]})
+                                                 "S03": [5, 6, 13], "S04": [2, 13]})
         self.vengeful_spirit.clues = [MonstersClues.
                                       missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                                       MonstersClues.people_dead_weirdly, MonstersClues.ghost_like_creature,
@@ -65,7 +68,8 @@ class MonsterBase:
                                       MonstersClues.seen_as_black_truck, MonstersClues.seen_as_a_little_girl,
                                       MonstersClues.seen_as_a_drown_man, MonstersClues.flashing_lights,
                                       MonstersClues.strange_different_things_happening, MonstersClues.no_missing_heart,
-                                      MonstersClues.body_torn_apart]
+                                      MonstersClues.body_torn_apart, MonstersClues.no_black_fog,
+                                      MonstersClues.lack_of_body_control]
         self.vengeful_spirit.disable_methods = [MonstersDisableMethods.bring_the_spirit_to_its_crime_place,
                                                 MonstersDisableMethods.bring_the_spirit_what_it_wants,
                                                 MonstersDisableMethods.iron_or_iron_bullets,
@@ -106,9 +110,9 @@ class MonsterBase:
                             MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                             MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
                             MonstersClues.people_dead_weirdly, MonstersClues.with_a_binding_link_exorcism_does_not_work,
-                            MonstersClues.people_acting_weirdly, MonstersClues.telekinesis,
-                            MonstersClues.amnesia_blackout, MonstersClues.can_vanish,
-                            MonstersClues.can_appear_out_of_thin_air,
+                            MonstersClues.people_acting_weirdly, MonstersClues.can_appear_out_of_thin_air,
+                            MonstersClues.amnesia_blackout, MonstersClues.telekinesis, MonstersClues.can_vanish,
+                            MonstersClues.lack_of_body_control,
 
                             MonstersClues.black_blood]
         self.demon.kill_methods = [MonstersKillMethods.demon_killing_knife, MonstersKillMethods.angel_exorcism,
@@ -536,7 +540,8 @@ class MonsterBase:
         self.demon_alastair.kill_methods = [MonstersKillMethods.reconnection_of_angel_with_its_grace]
 
         self.unknown = Monster("Unknown", description="", episodes={"S04": [12]})
-        self.unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.card_found_on_a_victim]
+        self.unknown.clues = [MonstersClues.people_acting_weirdly, MonstersClues.ectoplasm, MonstersClues.no_black_fog,
+                              MonstersClues.lack_of_body_control, MonstersClues.no_sulfur]
 
         # -------------------------------------------------- SEASON 5 --------------------------------------------------
 
