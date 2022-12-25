@@ -539,9 +539,22 @@ class MonsterBase:
         self.demon_alastair.disable_methods = [MonstersDisableMethods.demon_killing_knife]
         self.demon_alastair.kill_methods = [MonstersKillMethods.reconnection_of_angel_with_its_grace]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S04": [12]})
-        self.unknown.clues = [MonstersClues.people_acting_weirdly, MonstersClues.ectoplasm, MonstersClues.no_black_fog,
-                              MonstersClues.lack_of_body_control, MonstersClues.no_sulfur]
+        self.siren = Monster("Siren", description="Beautiful creatures, that prey on men, "
+                                                  "entice them with their siren song. For men, they are perfect and "
+                                                  "they want to do anything for them. "
+                                                  "Sirens lived on islands in the past. Has a venom in it's mouth. "
+                                                  "Can be killed with it's own venom or the blood of the victim, "
+                                                  "that is under the spell.",
+                             episodes={"S04": [14]})
+        self.siren.clues = [MonstersClues.people_dead_weirdly, MonstersClues.people_acting_weirdly,
+                            MonstersClues.high_oxytocin_levels, MonstersClues.can_read_peoples_minds,
+                            MonstersClues.real_appearance_can_be_seen_in_a_reflection]
+        self.siren.kill_methods = [MonstersKillMethods.its_own_venom]
+
+        self.unknown = Monster("Unknown", description="", episodes={"S04": [14]})
+        self.unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.people_acting_weirdly,
+                              MonstersClues.high_oxytocin_levels, MonstersClues.can_read_peoples_minds,
+                              MonstersClues.real_appearance_can_be_seen_in_a_reflection]
 
         # -------------------------------------------------- SEASON 5 --------------------------------------------------
 

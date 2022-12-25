@@ -129,6 +129,7 @@ class MonstersClues:
     leaves_zombie_like_people_with_black_veins_around_neck = "leaves zombie-like people with black veins around neck"
     real_appearance_can_be_seen_in_a_reflection = "real appearance can be seen in a reflection"
     high_strength = "high strength"
+    high_oxytocin_levels = "high oxytocin levels"
     kids_imaginary_friend = "kids' imaginary friend"
     people_dead_weirdly = "people dead weirdly"
     visions = "visions"
@@ -264,6 +265,7 @@ class MonstersKillMethods:
     angel_exorcism = "angel exorcism"
     reconnection_of_angel_with_its_grace = "reconnection of angel with its grace"
     death_transfer_spell = "death transfer spell"
+    its_own_venom = "its own venom"
 
 
 class MonstersDisableMethods:
