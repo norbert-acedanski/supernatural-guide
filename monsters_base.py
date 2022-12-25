@@ -51,7 +51,7 @@ class MonsterBase:
                                                    "they were killed by supernatural. Witnesses can be put to rest "
                                                    "by a special spell (has to be cast over an open fire).",
                                        episodes={"S01": [1, 3, 5, 7, 9, 10, 13, 19], "S02": [6, 11, 16, 18, 19],
-                                                 "S03": [5, 6, 13], "S04": [2, 13, 15]})
+                                                 "S03": [5, 6, 13], "S04": [2, 13, 15, 17]})
         self.vengeful_spirit.clues = [MonstersClues.
                                       missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                                       MonstersClues.people_dead_weirdly, MonstersClues.ghost_like_creature,
@@ -570,8 +570,15 @@ class MonsterBase:
                             MonstersClues.real_appearance_can_be_seen_in_a_reflection]
         self.siren.kill_methods = [MonstersKillMethods.its_own_venom]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S04": [16]})
-        self.unknown.clues = []
+        self.angel_zachariah = Monster("Angel Zachariah", description="High Tier Angel", episodes={"S04": [17]})
+        self.angel_zachariah.clues = [MonstersClues.can_put_people_into_alternate_timelines,
+                                      MonstersClues.can_erase_and_bring_back_memories]
+
+        self.unknown = Monster("Unknown", description="", episodes={"S04": [17]})
+        self.unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.people_acting_weirdly,
+                              MonstersClues.ghost_like_creature, MonstersClues.weird_electronics_behavior,
+                              MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
+                              MonstersClues.cold_spots]
 
         # -------------------------------------------------- SEASON 5 --------------------------------------------------
 

@@ -192,6 +192,8 @@ class MonstersClues:
     can_hear_angel_radio = "can hear angel radio"
     can_hear_demon_radio = "can hear demon radio"
     can_exorcise_certain_demons_with_hand_on_forehead = "can exorcise certain demons with hand on forehead"
+    can_put_people_into_alternate_timelines = "can put people into alternate timelines"
+    can_erase_and_bring_back_memories = "can erase and bring back memories"
     demon_killing_knife_is_ineffective = "demon killing knife is ineffective"
     immortal = "immortal"
     invulnerable = "invulnerable"
