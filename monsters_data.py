@@ -43,6 +43,7 @@ class MonstersClues:
     temperature_fluctuations = "temperature fluctuations"
     electrical_storms = "electrical storms"
     babies_or_children_acting_weirdly = "babies or children acting weirdly - like not themselves"
+    people_not_dying = "people not dying"
     people_feel_spiritual_ecstasy = "people feel spiritual ecstasy"
     people_hear_voices = "people hear voices"
     people_seeing_figure_of_light = "people seeing figure of light"
@@ -263,9 +264,9 @@ class MonstersKillMethods:
     evergreen_pin = "evergreen pin"
     sharp_object_into_the_spine = "sharp object into the spine"
     angel_exorcism = "angel exorcism"
-    reconnection_of_angel_with_its_grace = "reconnection of angel with its grace"
     death_transfer_spell = "death transfer spell"
     its_own_venom = "its own venom"
+    reaper_blade_combined_with_a_spell = "reaper blade combined with a spell"
 
 
 class MonstersDisableMethods:
@@ -305,6 +306,8 @@ class MonstersDisableMethods:
     bury_it_alive = "bury it alive"
     extrusion_by_people_with_abilities = "extrusion by people with abilities"
     demon_killing_knife = "demon killing knife"
+    reaper_imprison_sigint = "reaper_imprison_sigint"
+    reconnection_of_angel_with_its_grace = "reconnection of angel with its grace"
 
 
 class MonstersCureMethods:

@@ -48,10 +48,10 @@ class MonsterBase:
                                                    "Sometimes it's a spirit of a person, that is in the coma. "
                                                    "Ghosts can be forced to rise and keep risen. If it is done with "
                                                    "very powerful spell, then a Mark of Witness remains on them if "
-                                                   "they were killed by supernatural. Witnesses can be pu to rest by a "
-                                                   "special spell (has to be cast over an open fire).",
+                                                   "they were killed by supernatural. Witnesses can be put to rest "
+                                                   "by a special spell (has to be cast over an open fire).",
                                        episodes={"S01": [1, 3, 5, 7, 9, 10, 13, 19], "S02": [6, 11, 16, 18, 19],
-                                                 "S03": [5, 6, 13], "S04": [2, 13]})
+                                                 "S03": [5, 6, 13], "S04": [2, 13, 15]})
         self.vengeful_spirit.clues = [MonstersClues.
                                       missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                                       MonstersClues.people_dead_weirdly, MonstersClues.ghost_like_creature,
@@ -167,13 +167,19 @@ class MonsterBase:
         self.rawhead = Monster("Rawhead", episodes={"S01": [12]})
         self.rawhead.kill_methods = [MonstersKillMethods.apply_large_voltage]
 
-        self.reaper = Monster("Reaper", description="Can give and take life. Can also transfer illnesses of people.",
-                              episodes={"S01": [12], "S02": [1]})
+        self.reaper = Monster("Reaper", description="Can give and take life. Can also transfer illnesses of people. "
+                                                    "When gone, people are not dying. "
+                                                    "When a reaper dies, there are electrical storms.",
+                              episodes={"S01": [12], "S02": [1], "S04": [15]})
         self.reaper.clues = [MonstersClues.people_dead_weirdly, MonstersClues.people_cured_miraculously,
                              MonstersClues.weird_things_behavior, MonstersClues.people_seeing_things_or_figures,
                              MonstersClues.seen_as_a_person_in_a_suit, MonstersClues.ghost_like_creature,
                              MonstersClues.visible_by_other_ghosts_and_people_close_to_death_only,
-                             MonstersClues.can_make_themselves_appear_as_they_like]
+                             MonstersClues.can_make_themselves_appear_as_they_like, MonstersClues.people_not_dying,
+                             MonstersClues.strange_different_things_happening, MonstersClues.invisible_entity,
+                             MonstersClues.electrical_storms]
+        self.reaper.disable_methods = [MonstersDisableMethods.reaper_imprison_sigint]
+        self.reaper.kill_methods = [MonstersKillMethods.reaper_blade_combined_with_a_spell]
 
         self.people_with_abilities = Monster("People with abilities", description="People, that were infants, "
                                                                                   "when prince of hell killed "
@@ -484,7 +490,7 @@ class MonsterBase:
                                                   "that use powerful spells to hide themselves. All angels have graces "
                                                   "- energy source for their power. When they disobey, as a punishment "
                                                   "they can become human (they fall).",
-                             episodes={"S04": [1, 2, 7, 9, 10]})
+                             episodes={"S04": [1, 2, 7, 9, 10, 15]})
         self.angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                             MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion,
                             MonstersClues.leaves_burned_marks, MonstersClues.weird_electronics_behavior,
@@ -495,6 +501,7 @@ class MonsterBase:
                             MonstersClues.can_contact_a_person_in_a_dream, MonstersClues.can_send_people_to_the_past,
                             MonstersClues.can_appear_out_of_thin_air, MonstersClues.high_strength,
                             MonstersClues.can_exorcise_certain_demons_with_hand_on_forehead,
+                            MonstersClues.mimics_human_voice,
 
                             MonstersClues.triangle_wound, MonstersClues.travels_as_white_fog]
         self.angel.disable_methods = [MonstersDisableMethods.symbol_made_with_blood]
@@ -532,12 +539,13 @@ class MonsterBase:
                                    MonstersClues.can_hear_angel_radio, MonstersClues.can_hear_demon_radio,
                                    MonstersClues.falling_meteor]
 
-        self.demon_alastair = Monster("Demon Alastair", description="Tortures souls in Hell.", episodes={"S04": [9, 10]})
+        self.demon_alastair = Monster("Demon Alastair", description="Tortures souls in Hell.",
+                                      episodes={"S04": [9, 10, 15]})
         self.demon_alastair.clues = [MonstersClues.white_eyes, MonstersClues.demon_killing_knife_is_ineffective,
                                      MonstersClues.immune_to_extrusion_by_people_with_abilities,
                                      MonstersClues.immune_to_exorcism_of_an_angel]
-        self.demon_alastair.disable_methods = [MonstersDisableMethods.demon_killing_knife]
-        self.demon_alastair.kill_methods = [MonstersKillMethods.reconnection_of_angel_with_its_grace]
+        self.demon_alastair.disable_methods = [MonstersDisableMethods.demon_killing_knife,
+                                               MonstersDisableMethods.reconnection_of_angel_with_its_grace]
 
         self.siren = Monster("Siren", description="Beautiful creatures, that prey on men, "
                                                   "entice them with their siren song. For men, they are perfect and "
@@ -551,10 +559,9 @@ class MonsterBase:
                             MonstersClues.real_appearance_can_be_seen_in_a_reflection]
         self.siren.kill_methods = [MonstersKillMethods.its_own_venom]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S04": [14]})
-        self.unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.people_acting_weirdly,
-                              MonstersClues.high_oxytocin_levels, MonstersClues.can_read_peoples_minds,
-                              MonstersClues.real_appearance_can_be_seen_in_a_reflection]
+        self.unknown = Monster("Unknown", description="", episodes={"S04": [15]})
+        self.unknown.clues = [MonstersClues.people_not_dying, MonstersClues.strange_different_things_happening,
+                              MonstersClues.people_feel_spiritual_ecstasy]
 
         # -------------------------------------------------- SEASON 5 --------------------------------------------------
 
