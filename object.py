@@ -11,6 +11,7 @@ class Object:
         self.abilities = None
         self.maintenance_methods = None
         self.destroy_methods = None
+        self._information = None
 
     def print_name(self):
         print(Colors.GREEN + "\n" + self.name + ":" + Colors.ENDC)
@@ -50,6 +51,12 @@ class Object:
         else:
             print("  *  None found...")
 
+    def print_information(self):
+        if self._information:
+            print(Colors.MAGENTA + "Information:" + Colors.ENDC)
+            for info in self._information:
+                print("  *  " + info)
+
     def print_all(self):
         self.print_name()
         self.print_description()
@@ -57,3 +64,4 @@ class Object:
         self.print_abilities()
         self.print_maintenance_methods()
         self.print_destroy_methods()
+        self.print_information()
