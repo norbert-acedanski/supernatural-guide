@@ -81,6 +81,11 @@ class CursesBase:
         self.babylonian_wishing_curse.disable_methods = \
             [CursesDisableMethods.first_person_that_wished_has_to_remove_the_coin, CursesDisableMethods.melt_the_coin]
 
+        self.death_transfer_spell = Curse("Death Transfer Spell", description="Spell, that allows to transfer death "
+                                                                              "from one person to another.",
+                                          episodes={"S04": [12]})
+        self.death_transfer_spell.clues = [CursesClues.people_dead_weirdly, CursesClues.card_found_on_a_victim]
+
         # SEASON 5:
 
 

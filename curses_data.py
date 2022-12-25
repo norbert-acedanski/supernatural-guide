@@ -17,12 +17,13 @@ class CursesClues:
     drawn_quincunx = "drawn quincunx"
     no_hex_bags = "no hex bags"
     hex_bag_hidden_somewhere = \
-        "hex bag hidden somewhere (made with bird bones, rabbit's teeth, something that a person owned"
+        "hex bag hidden somewhere (made with bird bones, rabbit's teeth, something that a person owned)"
     weird_electronics_behavior = "weird electronics behavior"
     sealed_with_a_kiss = "sealed with a kiss"
     strange_different_things_happening = "strange, different things happening - like invisible people, Bigfoot, " \
                                          "large lottery wins, etc."
     magical_coin = "magical coin"
+    card_found_on_a_victim = "card found on a victim"
     the_last_person_that_got_kissed_dies = "the last person that got kissed dies " \
                                            "(reverse order - first kisses, dies last)"
     slow_loss_of_the_memory = "slow loss of the memory"
