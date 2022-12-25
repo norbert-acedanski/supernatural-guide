@@ -100,7 +100,8 @@ class MonsterBase:
 
         self.demon = Monster("Demon", description="In every religion there is information about demonic possessions. "
                                                   "Demons are man that were stuck in hell for a long time.",
-                             episodes={"S01": [4, 21, 22], "S02": [1, 14], "S03": [1, 2, 4, 12, 15, 16], "S04": [1, 4]})
+                             episodes={"S01": [4, 21, 22], "S02": [1, 14], "S03": [1, 2, 4, 12, 15, 16],
+                                       "S04": [1, 4, 9]})
         self.demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                             MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                             MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -283,12 +284,13 @@ class MonsterBase:
                                                                         "after 10 years. One can summon it by placing "
                                                                         "a box with: graveyard dirt, black cat cone, "
                                                                         "ones photo in the center of a crossroad.",
-                                        episodes={"S02": [8, 22]})
+                                        episodes={"S02": [8, 22], "S04": [9]})
         self.crossroads_demon.clues = [MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
                                        MonstersClues.red_eyes, MonstersClues.summoned_by_placing_box_in_the_crossroads,
                                        MonstersClues.travels_as_black_fog, MonstersClues.pact_sealed_with_a_kiss]
         self.crossroads_demon.disable_methods = [MonstersDisableMethods.devils_trap]
-        self.crossroads_demon.kill_methods = [MonstersKillMethods.colt_of_colt_with_magic_bullets]
+        self.crossroads_demon.kill_methods = [MonstersKillMethods.colt_of_colt_with_magic_bullets,
+                                              MonstersKillMethods.demon_killing_knife]
 
         self.demonic_virus = Monster("Demonic virus", description="Probably caused Roanoke colony disappearance. "
                                                                   "Croatoan might be a name of the demon. "
@@ -463,7 +465,7 @@ class MonsterBase:
         self.angel = Monster("Angel", description="Angel of God (Castiel, Uriel). "
                                                   "They can bring people back from the dead. Cannot track people, "
                                                   "that use powerful spells to hide themselves.",
-                             episodes={"S04": [1, 2, 7]})
+                             episodes={"S04": [1, 2, 7, 9]})
         self.angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                             MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion,
                             MonstersClues.leaves_burned_marks, MonstersClues.weird_electronics_behavior,
@@ -504,8 +506,19 @@ class MonsterBase:
                               MonstersClues.can_bring_back_dead_people, MonstersClues.can_summon_ghosts]
         self.samhain.disable_methods = [MonstersDisableMethods.extrusion_by_people_with_abilities]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S04": [8]})
-        self.unknown.clues = [MonstersClues.no_emf, MonstersClues.strange_different_things_happening]
+        self.prophet = Monster("Prophet", description="", episodes={"S04": [9]})
+        self.prophet.clues = [MonstersClues.people_hear_voices, MonstersClues.can_see_real_appearance_of_entities,
+                              MonstersClues.telekinesis, MonstersClues.people_acting_weirdly,
+                              MonstersClues.can_hear_angel_radio, MonstersClues.can_hear_demon_radio]
+
+        self.demon_alastair = Monster("Demon Alastair", description="", episodes={"S04": [9]})
+        self.demon_alastair.clues = [MonstersClues.white_eyes, MonstersClues.demon_killing_knife_is_ineffective,
+                                     MonstersClues.immune_to_extrusion_by_people_with_abilities]
+
+        self.unknown = Monster("Unknown", description="", episodes={"S04": [9]})
+        self.unknown.clues = [MonstersClues.people_hear_voices, MonstersClues.can_see_real_appearance_of_entities,
+                              MonstersClues.telekinesis, MonstersClues.people_acting_weirdly,
+                              MonstersClues.can_hear_angel_radio, MonstersClues.can_hear_demon_radio]
 
         # -------------------------------------------------- SEASON 5 --------------------------------------------------
 

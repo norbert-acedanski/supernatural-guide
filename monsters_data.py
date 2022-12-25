@@ -165,6 +165,7 @@ class MonstersClues:
     can_read_peoples_minds = "can read peoples minds"
     can_make_themselves_appear_as_they_like = "can make themselves appear as they like"
     can_see_future = "can see future"
+    can_see_real_appearance_of_entities = "can see real appearance of entities"
     can_create_things_out_of_thin_air = "can create things out of thin air"
     can_put_a_person_in_wonderland = "can put a person in wonderland - dream world inside ones mind"
     can_show_past_to_people = "can show past to people"
@@ -182,6 +183,8 @@ class MonstersClues:
     can_put_a_person_to_sleep = "can put a person to sleep"
     can_contact_a_person_in_a_dream = "can contact a person in a dream"
     can_send_people_to_the_past = "can send people to the past"
+    can_hear_angel_radio = "can hear angel radio"
+    can_hear_demon_radio = "can hear demon radio"
     demon_killing_knife_is_ineffective = "demon killing knife is ineffective"
     immortal = "immortal"
     invulnerable = "invulnerable"
@@ -206,6 +209,7 @@ class MonstersClues:
     immune_to_liliths_yellow_blast = "immune to Lilith's yellow blast"
     immune_to_salt_rounds = "immune to salt rounds"
     immune_to_devils_trap = "immune to devils trap"
+    immune_to_extrusion_by_people_with_abilities = "immune to extrusion by people with abilities"
 
 
 class MonstersKillMethods:
