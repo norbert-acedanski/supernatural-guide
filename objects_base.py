@@ -19,7 +19,7 @@ class ObjectsBase:
 
         self.charm_against_demons = Object("Charm against demons", description="Fend off possessions. Stops a demon "
                                                                                "from taking a person as a host.",
-                                           episodes={"S02": [14]})
+                                           episodes={"S02": [14], "S03": [12]})
         self.charm_against_demons.abilities = [ObjectAbilities.unables_possessions]
 
         self.demon_killing_knife = Object("Demon killing knife", description="Can literally kill demons, "
