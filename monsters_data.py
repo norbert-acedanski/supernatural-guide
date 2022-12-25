@@ -221,6 +221,8 @@ class MonstersClues:
     immune_to_extrusion_by_people_with_abilities = "immune to extrusion by people with abilities"
     immune_to_exorcism_of_an_angel = "immune to exorcism of an angel"
     lack_of_body_control = "lack of body control"
+    protected_by_an_archangel = "protected by an archangel"
+    bright_light = "bright light"
 
 
 class MonstersKillMethods:

@@ -186,7 +186,7 @@ class MonsterBase:
                                                          "mother on the ceiling. Can get stronger, "
                                                          "when consuming demon blood.",
                                              episodes={"S01": [14], "S02": [5, 10], "S03": [16],
-                                                       "S04": [1, 4, 7, 9, 15, 16]})
+                                                       "S04": [1, 4, 7, 9, 15, 16, 18]})
         self.people_with_abilities.clues = [MonstersClues.people_dead_weirdly, MonstersClues.weird_things_behavior,
                                             MonstersClues.telekinesis, MonstersClues.mind_control,
                                             MonstersClues.able_to_electrocute, MonstersClues.can_see_future,
@@ -455,7 +455,7 @@ class MonsterBase:
                                      MonstersClues.can_stop_bullets]
         self.demon_astaroth.kill_methods = [MonstersKillMethods.demon_killing_knife]
 
-        self.demon_lilith = Monster("Demon Lilith", episodes={"S03": [12, 16]})
+        self.demon_lilith = Monster("Demon Lilith", episodes={"S03": [12, 16], "S04": [18]})
         self.demon_lilith.clues = [MonstersClues.white_eyes, MonstersClues.yellow_blast, MonstersClues.telekinesis,
                                    MonstersClues.travels_as_black_fog,
                                    MonstersClues.unable_to_hurt_people_with_abilities_with_its_yellow_blast]
@@ -494,7 +494,7 @@ class MonsterBase:
                                                   "- energy source for their power. When they disobey, as a punishment "
                                                   "they can become human (they fall). "
                                                   "When dying, they leave wing marks.",
-                             episodes={"S04": [1, 2, 7, 9, 10, 15, 16]})
+                             episodes={"S04": [1, 2, 7, 9, 10, 15, 16, 18]})
         self.angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                             MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion,
                             MonstersClues.leaves_burned_marks, MonstersClues.weird_electronics_behavior,
@@ -570,15 +570,21 @@ class MonsterBase:
                             MonstersClues.real_appearance_can_be_seen_in_a_reflection]
         self.siren.kill_methods = [MonstersKillMethods.its_own_venom]
 
-        self.angel_zachariah = Monster("Angel Zachariah", description="High Tier Angel", episodes={"S04": [17]})
+        self.angel_zachariah = Monster("Angel Zachariah", description="High Tier Angel", episodes={"S04": [17, 18]})
         self.angel_zachariah.clues = [MonstersClues.can_put_people_into_alternate_timelines,
                                       MonstersClues.can_erase_and_bring_back_memories]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S04": [17]})
-        self.unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.people_acting_weirdly,
-                              MonstersClues.ghost_like_creature, MonstersClues.weird_electronics_behavior,
-                              MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
-                              MonstersClues.cold_spots]
+        self.prophet = Monster("Prophet of the Lord", description="A person that is gifted with the knowledge "
+                                                                  "of the future.",
+                               episodes={"S04": [18]})
+        self.prophet.clues = [MonstersClues.can_see_future, MonstersClues.protected_by_an_archangel]
+
+        self.archangel = Monster("Archangel", description="They are heaven's most terrifying weapon. "
+                                                          "They are fierce and absolute.", episodes={"S04": [18]})
+        self.archangel.clues = [MonstersClues.small_earth_quake, MonstersClues.bright_light]
+
+        self.unknown = Monster("Unknown", description="", episodes={"S04": [18]})
+        self.unknown.clues = [MonstersClues.can_see_future]
 
         # -------------------------------------------------- SEASON 5 --------------------------------------------------
 
