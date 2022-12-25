@@ -101,7 +101,7 @@ class MonsterBase:
         self.demon = Monster("Demon", description="In every religion there is information about demonic possessions. "
                                                   "Demons are man that were stuck in hell for a long time.",
                              episodes={"S01": [4, 21, 22], "S02": [1, 14], "S03": [1, 2, 4, 12, 15, 16],
-                                       "S04": [1, 4, 9]})
+                                       "S04": [1, 4, 9, 10]})
         self.demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                             MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                             MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -111,7 +111,7 @@ class MonsterBase:
                             MonstersClues.can_appear_out_of_thin_air,
 
                             MonstersClues.black_blood]
-        self.demon.kill_methods = [MonstersKillMethods.demon_killing_knife,
+        self.demon.kill_methods = [MonstersKillMethods.demon_killing_knife, MonstersKillMethods.angel_exorcism,
                                    MonstersKillMethods.colt_of_colt_with_magic_bullets,
 
                                    MonstersKillMethods.angel_blade, MonstersKillMethods.will_of_an_archangel,
@@ -120,7 +120,8 @@ class MonsterBase:
                                       MonstersDisableMethods.exorcism, MonstersDisableMethods.devils_trap,
                                       MonstersDisableMethods.witch_spell_to_get_a_demon_out_of_the_body,
                                       MonstersDisableMethods.salt_or_salted_bullets,
-                                      MonstersDisableMethods.extrusion_by_people_with_abilities]
+                                      MonstersDisableMethods.extrusion_by_people_with_abilities,
+                                      MonstersDisableMethods.demon_killing_knife]
 
         self.shapeshifter = Monster("Shapeshifter", description="These creatures can transform themselves into "
                                                                 "other man or animals.",
@@ -464,8 +465,10 @@ class MonsterBase:
 
         self.angel = Monster("Angel", description="Angel of God (Castiel, Uriel). "
                                                   "They can bring people back from the dead. Cannot track people, "
-                                                  "that use powerful spells to hide themselves.",
-                             episodes={"S04": [1, 2, 7, 9]})
+                                                  "that use powerful spells to hide themselves. All angels have graces "
+                                                  "- energy source for their power. When they disobey, as a punishment "
+                                                  "they can become human (they fall).",
+                             episodes={"S04": [1, 2, 7, 9, 10]})
         self.angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                             MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion,
                             MonstersClues.leaves_burned_marks, MonstersClues.weird_electronics_behavior,
@@ -474,11 +477,11 @@ class MonsterBase:
                             MonstersClues.has_wings, MonstersClues.true_voice_can_hurt_people, MonstersClues.can_vanish,
                             MonstersClues.immune_to_salt_rounds, MonstersClues.immune_to_devils_trap,
                             MonstersClues.can_contact_a_person_in_a_dream, MonstersClues.can_send_people_to_the_past,
-                            MonstersClues.can_appear_out_of_thin_air,
+                            MonstersClues.can_appear_out_of_thin_air, MonstersClues.high_strength,
+                            MonstersClues.can_exorcise_certain_demons_with_hand_on_forehead,
 
                             MonstersClues.triangle_wound, MonstersClues.travels_as_white_fog]
-        self.angel.disable_methods = [
-                                      MonstersDisableMethods.symbol_made_with_blood]
+        self.angel.disable_methods = [MonstersDisableMethods.symbol_made_with_blood]
         self.angel.kill_methods = [
                                    MonstersKillMethods.angel_blade, MonstersKillMethods.holy_oil,
                                    MonstersKillMethods.will_of_an_archangel, MonstersKillMethods.will_of_prince_of_hell,
@@ -506,19 +509,22 @@ class MonsterBase:
                               MonstersClues.can_bring_back_dead_people, MonstersClues.can_summon_ghosts]
         self.samhain.disable_methods = [MonstersDisableMethods.extrusion_by_people_with_abilities]
 
-        self.prophet = Monster("Prophet", description="", episodes={"S04": [9]})
-        self.prophet.clues = [MonstersClues.people_hear_voices, MonstersClues.can_see_real_appearance_of_entities,
-                              MonstersClues.telekinesis, MonstersClues.people_acting_weirdly,
-                              MonstersClues.can_hear_angel_radio, MonstersClues.can_hear_demon_radio]
+        self.fallen_angel = Monster("Fallen angel", description="An angel, that disobeyed the orders "
+                                                                "and fell to Earth.", episodes={"S04": [9, 10]})
+        self.fallen_angel.clues = [MonstersClues.people_hear_voices, MonstersClues.can_see_real_appearance_of_entities,
+                                   MonstersClues.telekinesis, MonstersClues.people_acting_weirdly,
+                                   MonstersClues.can_hear_angel_radio, MonstersClues.can_hear_demon_radio,
+                                   MonstersClues.falling_meteor]
 
-        self.demon_alastair = Monster("Demon Alastair", description="", episodes={"S04": [9]})
+        self.demon_alastair = Monster("Demon Alastair", description="Tortures souls in Hell.", episodes={"S04": [9, 10]})
         self.demon_alastair.clues = [MonstersClues.white_eyes, MonstersClues.demon_killing_knife_is_ineffective,
-                                     MonstersClues.immune_to_extrusion_by_people_with_abilities]
+                                     MonstersClues.immune_to_extrusion_by_people_with_abilities,
+                                     MonstersClues.immune_to_exorcism_of_an_angel]
+        self.demon_alastair.disable_methods = [MonstersDisableMethods.demon_killing_knife]
+        self.demon_alastair.kill_methods = [MonstersKillMethods.reconnection_of_angel_with_its_grace]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S04": [9]})
-        self.unknown.clues = [MonstersClues.people_hear_voices, MonstersClues.can_see_real_appearance_of_entities,
-                              MonstersClues.telekinesis, MonstersClues.people_acting_weirdly,
-                              MonstersClues.can_hear_angel_radio, MonstersClues.can_hear_demon_radio]
+        self.unknown = Monster("Unknown", description="", episodes={"S04": [10]})
+        self.unknown.clues = []
 
         # -------------------------------------------------- SEASON 5 --------------------------------------------------
 

@@ -9,6 +9,7 @@ class MonstersClues:
     bright_eyes = "bright eyes"
     blue_eyes = "blue eyes"
     white_eyes = "white eyes"
+    falling_meteor = "falling meteor"
     weird_weather = "weird weather"
     weird_animal_behavior = "weird animal behavior"
     weird_things_behavior = "weird things behavior"
@@ -185,6 +186,7 @@ class MonstersClues:
     can_send_people_to_the_past = "can send people to the past"
     can_hear_angel_radio = "can hear angel radio"
     can_hear_demon_radio = "can hear demon radio"
+    can_exorcise_certain_demons_with_hand_on_forehead = "can exorcise certain demons with hand on forehead"
     demon_killing_knife_is_ineffective = "demon killing knife is ineffective"
     immortal = "immortal"
     invulnerable = "invulnerable"
@@ -210,6 +212,7 @@ class MonstersClues:
     immune_to_salt_rounds = "immune to salt rounds"
     immune_to_devils_trap = "immune to devils trap"
     immune_to_extrusion_by_people_with_abilities = "immune to extrusion by people with abilities"
+    immune_to_exorcism_of_an_angel = "immune to exorcism of an angel"
 
 
 class MonstersKillMethods:
@@ -255,6 +258,8 @@ class MonstersKillMethods:
     aspen_pin = "aspen pin"
     evergreen_pin = "evergreen pin"
     sharp_object_into_the_spine = "sharp object into the spine"
+    angel_exorcism = "angel exorcism"
+    reconnection_of_angel_with_its_grace = "reconnection of angel with its grace"
 
 
 class MonstersDisableMethods:
@@ -293,6 +298,7 @@ class MonstersDisableMethods:
     chloroform = "chloroform"
     bury_it_alive = "bury it alive"
     extrusion_by_people_with_abilities = "extrusion by people with abilities"
+    demon_killing_knife = "demon killing knife"
 
 
 class MonstersCureMethods:
