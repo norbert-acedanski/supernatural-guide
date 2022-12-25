@@ -54,8 +54,8 @@ class Object:
     def print_information(self):
         if self._information:
             print(Colors.MAGENTA + "Information:" + Colors.ENDC)
-            for info in self._information:
-                print("  *  " + info)
+            for season_episode, info in self._information.items():
+                print(f"{season_episode}: {info}")
 
     def print_all(self):
         self.print_name()
