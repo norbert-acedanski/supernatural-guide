@@ -583,8 +583,19 @@ class MonsterBase:
                                                           "They are fierce and absolute.", episodes={"S04": [18]})
         self.archangel.clues = [MonstersClues.small_earth_quake, MonstersClues.bright_light]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S04": [18]})
-        self.unknown.clues = [MonstersClues.can_see_future]
+        self.ghoul = Monster("Ghoul", description="Ghoul is a creature, that feeds on dead people. "
+                                                  "It can take the form of a person that it ate with all memories "
+                                                  "and thoughts.",
+                             episodes={"S04": [19]})
+        self.ghoul.clues = [MonstersClues.empty_graves, MonstersClues.body_torn_apart, MonstersClues.missing_body,
+                            MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
+                            MonstersClues.holy_water_does_not_affect_it, MonstersClues.silver_does_not_affect_it]
+        self.ghoul.kill_methods = [MonstersKillMethods.decapitation]
+
+        self.unknown = Monster("Unknown", description="", episodes={"S04": [19]})
+        self.unknown.clues = [MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
+                              MonstersClues.body_torn_apart, MonstersClues.missing_body, MonstersClues.empty_graves,
+                              MonstersClues.holy_water_does_not_affect_it, MonstersClues.silver_does_not_affect_it]
 
         # -------------------------------------------------- SEASON 5 --------------------------------------------------
 
@@ -751,11 +762,6 @@ class MonsterBase:
         self.empty = Monster("Empty", description="The place (and a cosmic being) that angels "
                                                   "and demons go to when they die. "
                                                   "THE God has no power there.")
-
-        self.ghoul = Monster("Ghoul", description="Ghoul is a creature, that feeds on dead people. "
-                                                  "It can take the form of a person that it ate.")
-        self.ghoul.clues = [MonstersClues.empty_graves]
-        self.ghoul.kill_methods = [MonstersKillMethods.decapitation]
 
         # -------------------------------------------------- SEASON 14 -------------------------------------------------
 

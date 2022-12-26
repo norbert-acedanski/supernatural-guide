@@ -61,7 +61,7 @@ class MonstersClues:
     missing_or_dead_people_regularly_in_the_same_area = "groups of people missing/dead regularly in the same area"
     missing_or_dead_people_around_christmas = "missing or dead people around christmas"
     missing_or_dead_people_regularly_in_different_areas = "missing or dead people regularly in different areas"
-    missing_body = "missing body"
+    missing_body = "missing body/bodies (sometimes from the cemetery)"
     missing_organs = "missing organs"
     missing_heart = "missing heart"
     no_missing_heart = " no missing heart"
@@ -223,6 +223,7 @@ class MonstersClues:
     lack_of_body_control = "lack of body control"
     protected_by_an_archangel = "protected by an archangel"
     bright_light = "bright light"
+    silver_does_not_affect_it = "silver does not affect it"
 
 
 class MonstersKillMethods:
