@@ -105,7 +105,7 @@ class MonsterBase:
         self.demon = Monster("Demon", description="In every religion there is information about demonic possessions. "
                                                   "Demons are man that were stuck in hell for a long time.",
                              episodes={"S01": [4, 21, 22], "S02": [1, 14], "S03": [1, 2, 4, 12, 15, 16],
-                                       "S04": [1, 4, 9, 10, 20]})
+                                       "S04": [1, 4, 9, 10, 20, 21]})
         self.demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                             MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                             MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -184,9 +184,10 @@ class MonsterBase:
         self.people_with_abilities = Monster("People with abilities",
                                              description="People, that were infants, when prince of hell killed their "
                                                          "mother on the ceiling. Can get stronger, "
-                                                         "when consuming demon blood.",
+                                                         "when consuming demon blood. After using the blood for a long "
+                                                         "time, a person becomes addicted to it like to a drug.",
                                              episodes={"S01": [14], "S02": [5, 10], "S03": [16],
-                                                       "S04": [1, 4, 7, 9, 15, 16, 18, 20]})
+                                                       "S04": [1, 4, 7, 9, 15, 16, 18, 20, 21]})
         self.people_with_abilities.clues = [MonstersClues.people_dead_weirdly, MonstersClues.weird_things_behavior,
                                             MonstersClues.telekinesis, MonstersClues.mind_control,
                                             MonstersClues.able_to_electrocute, MonstersClues.can_see_future,
@@ -455,10 +456,12 @@ class MonsterBase:
                                      MonstersClues.can_stop_bullets]
         self.demon_astaroth.kill_methods = [MonstersKillMethods.demon_killing_knife]
 
-        self.demon_lilith = Monster("Demon Lilith", episodes={"S03": [12, 16], "S04": [18]})
-        self.demon_lilith.clues = [MonstersClues.white_eyes, MonstersClues.yellow_blast, MonstersClues.telekinesis,
-                                   MonstersClues.travels_as_black_fog,
-                                   MonstersClues.unable_to_hurt_people_with_abilities_with_its_yellow_blast]
+        self.first_demon = Monster("First Demon - Lilith", description="First demon created by Lucifer out of a human "
+                                                                       "soul by twisting it.",
+                                   episodes={"S03": [12, 16], "S04": [18]})
+        self.first_demon.clues = [MonstersClues.white_eyes, MonstersClues.yellow_blast, MonstersClues.telekinesis,
+                                  MonstersClues.travels_as_black_fog,
+                                  MonstersClues.unable_to_hurt_people_with_abilities_with_its_yellow_blast]
 
         self.death_echo = Monster("Death echo", description="Echos are trapped in a loop. They keep replaying how they "
                                                             "died over and over again usually at the place of death.",
@@ -494,7 +497,7 @@ class MonsterBase:
                                                   "- energy source for their power. When they disobey, as a punishment "
                                                   "they can become human (they fall). "
                                                   "When dying, they leave wing marks.",
-                             episodes={"S04": [1, 2, 7, 9, 10, 15, 16, 18, 20]})
+                             episodes={"S04": [1, 2, 7, 9, 10, 15, 16, 18, 20, 21]})
         self.angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                             MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion,
                             MonstersClues.leaves_burned_marks, MonstersClues.weird_electronics_behavior,
@@ -592,9 +595,8 @@ class MonsterBase:
                             MonstersClues.holy_water_does_not_affect_it, MonstersClues.silver_does_not_affect_it]
         self.ghoul.kill_methods = [MonstersKillMethods.decapitation]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S04": [20]})
-        self.unknown.clues = [MonstersClues.true_voice_can_hurt_people, MonstersClues.weird_electronics_behavior,
-                              MonstersClues.amnesia_blackout]
+        self.unknown = Monster("Unknown", description="", episodes={"S04": [21]})
+        self.unknown.clues = []
 
         # -------------------------------------------------- SEASON 5 --------------------------------------------------
 
