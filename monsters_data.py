@@ -293,7 +293,7 @@ class MonstersDisableMethods:
     witch_catcher = "witch-catcher"
     all_of_angels_single_blow = "all of angels single blow (release of energy)"
     celtic_imprisonment_spell = "celtic imprisonment spell"
-    symbol_made_with_blood = "symbol made with blood"
+    symbol_made_with_blood_against_angels = "symbol made with blood against angels (for low and high tier)"
     celtic_sigit_to_trap_monsters = "celtic sigit to trap monsters"
     stop_it_from_speaking = "stop it from speaking"
     witch_spell_to_get_a_demon_out_of_the_body = "witch spell to get a demon out of the body"
