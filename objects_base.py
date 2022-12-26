@@ -17,7 +17,7 @@ class ObjectsBase:
         # https://supernatural.fandom.com/wiki/John_Winchester%27s_Journal#Appearances
         self.john_winchesters_journal = Object("John Winchester's Journal",
                                                description="A journal of John Winchester, that contains a lot "
-                                                           "information about monster in Supernatural Universe.",
+                                                           "information about monsters in Supernatural Universe.",
                                                episodes={"S01": [], "S04": [19]})
         self.john_winchesters_journal._information = {"S04E19": JohnWinchesterJournal.entry_about_johns_other_son}
 
