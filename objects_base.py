@@ -1,6 +1,6 @@
 from colors import Colors
 from object import Object
-from objects_data import ObjectAbilities, ObjectMaintenance, ObjectDestroyMethods
+from objects_data import ObjectAbilities, ObjectMaintenance, ObjectDestroyMethods, JohnWinchesterJournal
 
 
 class ObjectsBase:
@@ -9,6 +9,15 @@ class ObjectsBase:
                           if not key.startswith("__")]
         self.maintenance_methods = [method for key, method in list(ObjectMaintenance.__dict__.items())
                                     if not key.startswith("__")]
+
+        # TODO: Watch each episode until S04E18 that contains John's journal
+        # List of episodes, that the journal appears in:
+        # https://supernatural.fandom.com/wiki/John_Winchester%27s_Journal#Appearances
+        self.john_winchesters_journal = Object("John Winchester's Journal",
+                                               description="A journal of John Winchester, that contains a lot "
+                                                           "information about monster in Supernatural Universe.",
+                                               episodes={"S04": [19]})
+        self.john_winchesters_journal._information = {"S04E19": JohnWinchesterJournal.entry_about_johns_other_son}
 
         self.colt_of_colt = Object("Colt of Colt", description="Colt made by Samuel Colt in 1835, when Halley's Comet "
                                                                "was overhead and the same night those men died "

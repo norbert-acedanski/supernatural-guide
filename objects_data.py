@@ -23,3 +23,9 @@ class ObjectMaintenance:
 
 class ObjectDestroyMethods:
     burn_it = "burn it"
+
+
+class JohnWinchesterJournal:
+    entry_about_johns_other_son = "entry about John's other son (Adam) - Minnesota January of 1990. " \
+                                  "John was heading there to check out a case. Next two pages are torn out. " \
+                                  "Next entry in September 29th 2004 - One word: Minnesota."
