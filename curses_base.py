@@ -39,6 +39,8 @@ class CursesBase:
                                              episodes={"S02": [11]})
         self.hoodoo_protection_spell.clues = [CursesClues.drawn_quincunx]
 
+        # ---------------------------------------------- ALL EPISODES DONE ---------------------------------------------
+
         # SEASON 3:
 
         self.curse = Curse("Unknown curse", episodes={"S03": [9]})
@@ -46,10 +48,43 @@ class CursesBase:
                             CursesClues.weird_electronics_behavior, CursesClues.people_feeling_weird_or_bad]
         self.curse.disable_methods = [CursesDisableMethods.burn_the_hex, CursesDisableMethods.magic_brew]
 
+        # ---------------------------------------------- ALL EPISODES DONE ---------------------------------------------
 
         # SEASON 4:
 
+        self.yellow_fever = Curse("Yellow fever", description="Sickness that is transferred from a ghost (Buru Buru) "
+                                                              "of a person and then it behaves like any other disease. "
+                                                              "People get anxious, then scared, then more scared "
+                                                              "and at the end, their heart gives up. "
+                                                              "Symptoms also include hallucinations.",
+                                  episodes={"S04": [6]})
+        self.yellow_fever.clues = [CursesClues.
+                                   missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
+                                   CursesClues.people_dead_weirdly, CursesClues.people_acting_weirdly,
+                                   CursesClues.no_hex_bags, CursesClues.emf, CursesClues.no_sulfur,
+                                   CursesClues.people_scared_of_everything, CursesClues.hallucinations]
+        self.yellow_fever.disable_methods = [CursesDisableMethods.disable_the_spirit_that_causes_it]
 
+        self.samhain_summoning_spell = Curse("Samhain summoning spell", description="Spell, that can summon Samhain. "
+                                                                                    "The ritual can only be performed "
+                                                                                    "every 600 years before the 31st "
+                                                                                    "of October.")
+        self.samhain_summoning_spell.clues = [CursesClues.people_dead_weirdly, CursesClues.hex_bag_hidden_somewhere]
+
+        self.babylonian_wishing_curse = Curse("Babylonian wishing curse",
+                                              description="A curse, that grants wishes, then turns them bad. "
+                                                          "Is a part of an object (a coin for example). "
+                                                          "A spell was made by babylonian priests for Tiamat "
+                                                          "(A Babylonian god of primordial chaos).",
+                                              episodes={"S04": [8]})
+        self.babylonian_wishing_curse.clues = [CursesClues.strange_different_things_happening, CursesClues.magical_coin]
+        self.babylonian_wishing_curse.disable_methods = \
+            [CursesDisableMethods.first_person_that_wished_has_to_remove_the_coin, CursesDisableMethods.melt_the_coin]
+
+        self.death_transfer_spell = Curse("Death Transfer Spell", description="Spell, that allows to transfer death "
+                                                                              "from one person to another.",
+                                          episodes={"S04": [12]})
+        self.death_transfer_spell.clues = [CursesClues.people_dead_weirdly, CursesClues.card_found_on_a_victim]
 
         # SEASON 5:
 

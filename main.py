@@ -1,5 +1,7 @@
 import traceback
 import re
+
+from events_base import EventsBase
 from monsters_base import MonsterBase
 from curses_base import CursesBase
 from objects_base import ObjectsBase
@@ -21,6 +23,10 @@ def choose_option():
         print(Colors.MAGENTA + "8" + Colors.ENDC + " - find matching curse")
         print(Colors.MAGENTA + "9" + Colors.ENDC + " - print all objects names")
         print(Colors.MAGENTA + "10" + Colors.ENDC + " - print all objects with their attributes")
+        print(Colors.MAGENTA + "11" + Colors.ENDC + " - print all places names")
+        print(Colors.MAGENTA + "12" + Colors.ENDC + " - print all places with their attributes")
+        print(Colors.MAGENTA + "13" + Colors.ENDC + " - print all events names")
+        print(Colors.MAGENTA + "14" + Colors.ENDC + " - print all events with their attributes")
         print(Colors.MAGENTA + "0" + Colors.ENDC + " - exit")
         chosen_option_str = input()
         chosen_option_str = re.sub('[a-zA-Z,.&^%$#@?|/:;"_=]', '', chosen_option_str)
@@ -58,6 +64,10 @@ def choose_option():
             base_of_places.print_places_names()
         elif chosen_option == 12:
             base_of_places.print_all_places()
+        elif chosen_option == 13:
+            base_of_events.print_events_names()
+        elif chosen_option == 14:
+            base_of_events.print_all_events()
         elif chosen_option == 0:
             print("Thank you for playing with this project!")
         else:
@@ -71,6 +81,7 @@ if __name__ == "__main__":
         base_of_curses = CursesBase()
         base_of_objects = ObjectsBase()
         base_of_places = PlacesBase()
+        base_of_events = EventsBase()
         choose_option()
     except Exception as e:
         print(traceback.format_exc())

@@ -3,3 +3,8 @@ class PlaceClues:
     electrical_storms = "electrical storms"
     dark_place = "dark place"
     people_screaming_in_agony = "people screaming in agony"
+    flashing_lights = "flashing lights"
+    time_runs_faster_there = "time runs faster there (4 months on Earth are 40 years in there)"
+    different_history = "different history"
+    different_memories = "different memories"
+    strange_feeling_that_things_should_be_different = "strange feeling that things should be different"
