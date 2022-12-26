@@ -25,7 +25,7 @@ class EventsBase:
 
     def print_events_names(self):
         sorted_places = sorted([place.name for place in self.events])
-        print(Colors.RED + Colors.BOLD + "All places:" + Colors.ENDC)
+        print(Colors.RED + Colors.BOLD + "All events:" + Colors.ENDC)
         for place in sorted_places:
             print(" *  " + place)
 
