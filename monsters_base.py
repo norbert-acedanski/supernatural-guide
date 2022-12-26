@@ -105,7 +105,7 @@ class MonsterBase:
         self.demon = Monster("Demon", description="In every religion there is information about demonic possessions. "
                                                   "Demons are man that were stuck in hell for a long time.",
                              episodes={"S01": [4, 21, 22], "S02": [1, 14], "S03": [1, 2, 4, 12, 15, 16],
-                                       "S04": [1, 4, 9, 10]})
+                                       "S04": [1, 4, 9, 10, 20]})
         self.demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                             MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                             MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -186,7 +186,7 @@ class MonsterBase:
                                                          "mother on the ceiling. Can get stronger, "
                                                          "when consuming demon blood.",
                                              episodes={"S01": [14], "S02": [5, 10], "S03": [16],
-                                                       "S04": [1, 4, 7, 9, 15, 16, 18]})
+                                                       "S04": [1, 4, 7, 9, 15, 16, 18, 20]})
         self.people_with_abilities.clues = [MonstersClues.people_dead_weirdly, MonstersClues.weird_things_behavior,
                                             MonstersClues.telekinesis, MonstersClues.mind_control,
                                             MonstersClues.able_to_electrocute, MonstersClues.can_see_future,
@@ -494,7 +494,7 @@ class MonsterBase:
                                                   "- energy source for their power. When they disobey, as a punishment "
                                                   "they can become human (they fall). "
                                                   "When dying, they leave wing marks.",
-                             episodes={"S04": [1, 2, 7, 9, 10, 15, 16, 18]})
+                             episodes={"S04": [1, 2, 7, 9, 10, 15, 16, 18, 20]})
         self.angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                             MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion,
                             MonstersClues.leaves_burned_marks, MonstersClues.weird_electronics_behavior,
@@ -504,9 +504,9 @@ class MonsterBase:
                             MonstersClues.immune_to_salt_rounds, MonstersClues.immune_to_devils_trap,
                             MonstersClues.can_contact_a_person_in_a_dream, MonstersClues.can_send_people_to_the_past,
                             MonstersClues.can_appear_out_of_thin_air, MonstersClues.high_strength,
-                            MonstersClues.can_exorcise_certain_demons_with_hand_on_forehead,
+                            MonstersClues.can_exorcise_certain_demons_with_hand_on_forehead, MonstersClues.bright_light,
                             MonstersClues.mimics_human_voice, MonstersClues.can_control_electronics,
-                            MonstersClues.triangle_wound,
+                            MonstersClues.triangle_wound, MonstersClues.amnesia_blackout,
 
                             MonstersClues.travels_as_white_fog]
         self.angel.disable_methods = [MonstersDisableMethods.symbol_made_with_blood,
@@ -592,10 +592,9 @@ class MonsterBase:
                             MonstersClues.holy_water_does_not_affect_it, MonstersClues.silver_does_not_affect_it]
         self.ghoul.kill_methods = [MonstersKillMethods.decapitation]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S04": [19]})
-        self.unknown.clues = [MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
-                              MonstersClues.body_torn_apart, MonstersClues.missing_body, MonstersClues.empty_graves,
-                              MonstersClues.holy_water_does_not_affect_it, MonstersClues.silver_does_not_affect_it]
+        self.unknown = Monster("Unknown", description="", episodes={"S04": [20]})
+        self.unknown.clues = [MonstersClues.true_voice_can_hurt_people, MonstersClues.weird_electronics_behavior,
+                              MonstersClues.amnesia_blackout]
 
         # -------------------------------------------------- SEASON 5 --------------------------------------------------
 
