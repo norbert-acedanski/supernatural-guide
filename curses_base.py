@@ -86,6 +86,8 @@ class CursesBase:
                                           episodes={"S04": [12]})
         self.death_transfer_spell.clues = [CursesClues.people_dead_weirdly, CursesClues.card_found_on_a_victim]
 
+        # ---------------------------------------------- ALL EPISODES DONE ---------------------------------------------
+
         # SEASON 5:
 
 

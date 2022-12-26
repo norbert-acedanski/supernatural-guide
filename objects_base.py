@@ -10,13 +10,15 @@ class ObjectsBase:
         self.maintenance_methods = [method for key, method in list(ObjectMaintenance.__dict__.items())
                                     if not key.startswith("__")]
 
+        # SEASON 1:
+
         # TODO: Watch each episode until S04E18 that contains John's journal
         # List of episodes, that the journal appears in:
         # https://supernatural.fandom.com/wiki/John_Winchester%27s_Journal#Appearances
         self.john_winchesters_journal = Object("John Winchester's Journal",
                                                description="A journal of John Winchester, that contains a lot "
                                                            "information about monster in Supernatural Universe.",
-                                               episodes={"S04": [19]})
+                                               episodes={"S01": [], "S04": [19]})
         self.john_winchesters_journal._information = {"S04E19": JohnWinchesterJournal.entry_about_johns_other_son}
 
         self.colt_of_colt = Object("Colt of Colt", description="Colt made by Samuel Colt in 1835, when Halley's Comet "
@@ -26,10 +28,18 @@ class ObjectsBase:
                                    episodes={"S01": [20, 21, 22], "S02": [1, 22], "S03": [4, 5, 9]})
         self.colt_of_colt.abilities = [ObjectAbilities.can_kill_anything]
 
+        # ---------------------------------------------- ALL EPISODES DONE ---------------------------------------------
+
+        # SEASON 2:
+
         self.charm_against_demons = Object("Charm against demons", description="Fend off possessions. Stops a demon "
                                                                                "from taking a person as a host.",
                                            episodes={"S02": [14], "S03": [12]})
         self.charm_against_demons.abilities = [ObjectAbilities.unables_possessions]
+
+        # ---------------------------------------------- ALL EPISODES DONE ---------------------------------------------
+
+        # SEASON 3:
 
         self.demon_killing_knife = Object("Demon killing knife", description="Can literally kill demons, "
                                                                              "not get them back to hell. "
@@ -53,6 +63,10 @@ class ObjectsBase:
         self.sleep_potion.abilities = [ObjectAbilities.can_make_a_person_sleep_for_days,
                                        ObjectAbilities.brings_back_dreams_for_those_that_dont_have_them,
                                        ObjectAbilities.gives_people_control_over_dreams]
+
+        # ---------------------------------------------- ALL EPISODES DONE ---------------------------------------------
+
+        # SEASON 4:
 
         self.sigint_against_angels = Object("Sigint against angels", description="Sigint made with blood, that can "
                                                                                  "send angels back to heaven. "
@@ -82,6 +96,10 @@ class ObjectsBase:
         self.lucifers_cage = Object("Lucifer's Cage", description="A prison build specifically to contain archangelic "
                                                                   "powers (not seen yet).")
         self.lucifers_cage.abilities = [ObjectAbilities.traps_an_archangel]
+
+        # ---------------------------------------------- ALL EPISODES DONE ---------------------------------------------
+
+        # SEASON 5:
 
         self.objects = [obj for obj in self.__dict__.values() if isinstance(obj, Object)]
 
