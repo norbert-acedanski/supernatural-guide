@@ -499,7 +499,8 @@ class MonsterBase:
                                                   "that use powerful spells to hide themselves. All angels have graces "
                                                   "- energy source for their power. When they disobey, as a punishment "
                                                   "they can become human (they fall). "
-                                                  "When dying, they leave wing marks.",
+                                                  "When dying, they leave wing marks. To possess somebody, "
+                                                  "they need a consent.",
                              episodes={"S04": [1, 2, 7, 9, 10, 15, 16, 18, 20, 21, 22]})
         self.angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                             MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion,
