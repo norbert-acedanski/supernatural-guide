@@ -68,26 +68,25 @@ class ObjectsBase:
 
         # SEASON 4:
 
-        self.sigint_against_angels = Object("Sigint against angels", description="Sigint made with blood, that can "
-                                                                                 "send angels back to heaven. "
-                                                                                 "Can be used to send back a specific "
-                                                                                 "angel type.",
-                                            episodes={"S04": [10, 22]})
-        self.sigint_against_angels.abilities = [ObjectAbilities.can_send_angels_back_to_heaven]
+        self.sigil_against_angels = Object("Sigil against angels", description="Sigil made with blood, that can send "
+                                                                               "angels back to heaven. Can be used to "
+                                                                               "send back a specific angel type.",
+                                           episodes={"S04": [10, 22]})
+        self.sigil_against_angels.abilities = [ObjectAbilities.can_send_angels_back_to_heaven]
 
         self.angel_grace = Object("Angel grace", description="A power source for an angel", episodes={"S04": [10]})
         self.angel_grace.abilities = [ObjectAbilities.can_appear_as_falling_meteor,
                                       ObjectAbilities.the_place_it_hits_is_not_destroyed_but_flourishes,
                                       ObjectAbilities.can_kill_entities_when_reconnecting_with_an_angel]
 
-        self.reaper_imprison_sigint = Object("Reaper imprison sigint", description="Sigint, that can trap a reaper.",
-                                             episodes={"S04": [15]})
-        self.reaper_imprison_sigint.abilities = [ObjectAbilities.traps_a_reaper]
+        self.reaper_imprison_sigil = Object("Reaper imprison sigil", description="Sigil, that can trap a reaper.",
+                                            episodes={"S04": [15]})
+        self.reaper_imprison_sigil.abilities = [ObjectAbilities.traps_a_reaper]
 
-        self.angel_protection_sigint = Object("Angel protection sigint", description="Angels can't get past it when "
-                                                                                     "the place is marked with it.",
-                                              episodes={"S04": [15]})
-        self.angel_protection_sigint.abilities = [ObjectAbilities.angels_cant_get_past_it]
+        self.angel_protection_sigil = Object("Angel protection sigil", description="Angels can't get past it, "
+                                                                                   "when the place is marked with it.",
+                                             episodes={"S04": [15]})
+        self.angel_protection_sigil.abilities = [ObjectAbilities.angels_cant_get_past_it]
 
         self.angel_blade = Object("Angel blade", description="A triangular, silvery blade, that each angel has.",
                                   episodes={"S04": [16]})

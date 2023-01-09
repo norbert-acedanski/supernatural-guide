@@ -178,7 +178,7 @@ class MonsterBase:
                              MonstersClues.can_make_themselves_appear_as_they_like, MonstersClues.people_not_dying,
                              MonstersClues.strange_different_things_happening, MonstersClues.invisible_entity,
                              MonstersClues.electrical_storms]
-        self.reaper.disable_methods = [MonstersDisableMethods.reaper_imprison_sigint]
+        self.reaper.disable_methods = [MonstersDisableMethods.reaper_imprison_sigil]
         self.reaper.kill_methods = [MonstersKillMethods.reaper_blade_combined_with_a_spell]
 
         self.people_with_abilities = Monster("People with abilities",
@@ -739,7 +739,7 @@ class MonsterBase:
                                  MonstersClues.ghost_like_creature, MonstersClues.cold_spots,
                                  MonstersClues.feeling_of_something_bad,
                                  MonstersClues.victims_in_coma_fading_and_dying]
-        self.soul_eater.disable_methods = [MonstersDisableMethods.celtic_sigint_to_trap_monsters]
+        self.soul_eater.disable_methods = [MonstersDisableMethods.celtic_sigil_to_trap_monsters]
         self.soul_eater.kill_methods = [MonstersKillMethods.celtic_sigil]
 
         self.bissan = Monster("Bissan", description="Spirits of the Cicada. "
