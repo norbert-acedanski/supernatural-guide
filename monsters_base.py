@@ -501,7 +501,7 @@ class MonsterBase:
                                                   "they can become human (they fall). "
                                                   "When dying, they leave wing marks. To possess somebody, "
                                                   "they need a consent.",
-                             episodes={"S04": [1, 2, 7, 9, 10, 15, 16, 18, 20, 21, 22], "S05": [1]})
+                             episodes={"S04": [1, 2, 7, 9, 10, 15, 16, 18, 20, 21, 22], "S05": [1, 2]})
         self.angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                             MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion,
                             MonstersClues.leaves_burned_marks, MonstersClues.weird_electronics_behavior,
@@ -614,6 +614,7 @@ class MonsterBase:
                                         MonstersClues.people_seeing_strange_things, MonstersClues.biblical_like_events,
                                         MonstersClues.people_hear_voices, MonstersClues.can_read_peoples_minds,
                                         MonstersClues.can_make_themselves_appear_as_they_like,
+                                        MonstersClues.can_give_hallucinations,
 
                                         MonstersClues.flashing_lights, MonstersClues.travels_as_white_fog,
                                         MonstersClues.people_burned_on_the_ceiling, MonstersClues.telekinesis,
@@ -646,14 +647,23 @@ class MonsterBase:
         self.god = Monster("THE God", description="The light, the beginning of everything. "
                                                   "Brother of the Darkness. A being with almost unlimited power.")
         self.god.clues = [MonstersClues.can_bring_back_dead_angels, MonstersClues.can_teleport_people,
-
-                          MonstersClues.shining_of_magic_neckless]
+                          MonstersClues.shining_of_magic_amulet]
         self.god.kill_methods = [
                                  MonstersKillMethods.the_darkness]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S04": [22]})
-        self.unknown.clues = [MonstersClues.can_teleport_people, MonstersClues.bright_light,
-                              MonstersClues.biblical_like_events]
+        self.horseman_war = Monster("Horseman War", description="One of the four horseman. Can give people "
+                                                                "hallucinations with his ring.", episodes={"S05": [2]})
+        self.horseman_war.clues = [MonstersClues.people_dead_weirdly, MonstersClues.people_acting_weirdly,
+                                   MonstersClues.black_eyes, MonstersClues.salt_does_not_affect_it,
+                                   MonstersClues.people_seeing_strange_things, MonstersClues.immune_to_exorcism,
+                                   MonstersClues.can_take_form_of_other_people, MonstersClues.can_read_peoples_minds,
+                                   MonstersClues.can_give_hallucinations]
+        self.horseman_war.disable_methods = [MonstersDisableMethods.demon_killing_knife]
+
+        self.unknown = Monster("Unknown", description="", episodes={"S05": [2]})
+        self.unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.people_acting_weirdly,
+                              MonstersClues.black_eyes, MonstersClues.salt_does_not_affect_it,
+                              MonstersClues.immune_to_exorcism, MonstersClues.can_give_hallucinations]
 
 
 
