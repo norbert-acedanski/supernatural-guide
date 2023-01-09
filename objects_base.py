@@ -110,6 +110,8 @@ class ObjectsBase:
                                                                    "(archangels included).", episodes={"S05": [1]})
         self.enochian_sigil.abilities = [ObjectAbilities.hides_a_person_from_all_angels]
 
+        self.magic_amulet = Object("Magic Amulet", description="It burns hot in God's presence.")
+
         self.objects = [obj for obj in self.__dict__.values() if isinstance(obj, Object)]
 
     def print_objects_names(self):
