@@ -645,7 +645,7 @@ class MonsterBase:
 
         self.god = Monster("THE God", description="The light, the beginning of everything. "
                                                   "Brother of the Darkness. A being with almost unlimited power.")
-        self.god.clues = [MonstersClues.can_bring_back_dead_angels,
+        self.god.clues = [MonstersClues.can_bring_back_dead_angels, MonstersClues.can_teleport_people,
 
                           MonstersClues.shining_of_magic_neckless]
         self.god.kill_methods = [
