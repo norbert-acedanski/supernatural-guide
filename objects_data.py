@@ -16,6 +16,7 @@ class ObjectAbilities:
     traps_a_reaper = "traps a reaper"
     traps_an_archangel = "traps an archangel"
     angels_cant_get_past_it = "angels can't get past it"
+    hides_a_person_from_all_angels = "hides a person from all angels"
 
 
 class ObjectMaintenance:
