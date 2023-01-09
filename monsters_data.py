@@ -297,7 +297,7 @@ class MonstersDisableMethods:
     all_of_angels_single_blow = "all of angels single blow (release of energy)"
     celtic_imprisonment_spell = "celtic imprisonment spell"
     symbol_made_with_blood_against_angels = "symbol made with blood against angels (for low and high tier)"
-    celtic_sigint_to_trap_monsters = "celtic sigint to trap monsters"
+    celtic_sigil_to_trap_monsters = "celtic sigil to trap monsters"
     stop_it_from_speaking = "stop it from speaking"
     witch_spell_to_get_a_demon_out_of_the_body = "witch spell to get a demon out of the body"
     goofer_dust = "goofer dust"
@@ -318,7 +318,7 @@ class MonstersDisableMethods:
     bury_it_alive = "bury it alive"
     extrusion_by_people_with_abilities = "extrusion by people with abilities"
     demon_killing_knife = "demon killing knife"
-    reaper_imprison_sigint = "reaper_imprison_sigint"
+    reaper_imprison_sigil = "reaper_imprison_sigil"
     reconnection_of_angel_with_its_grace = "reconnection of angel with its grace"
 
 
