@@ -44,7 +44,7 @@ class ObjectsBase:
         self.demon_killing_knife = Object("Demon killing knife", description="Can literally kill demons, "
                                                                              "not get them back to hell. "
                                                                              "Cannot kill certain kinds of demons.",
-                                          episodes={"S03": [1, 9, 16], "S04": [1, 9, 20, 22]})
+                                          episodes={"S03": [1, 9, 16], "S04": [1, 9, 20, 22], "S05": [1]})
         self.demon_killing_knife.abilities = [ObjectAbilities.can_kill_demons, ObjectAbilities.cannot_kill_angels]
 
         self.lucky_rabbits_foot = Object("Lucky rabbits foot",
@@ -90,7 +90,7 @@ class ObjectsBase:
         self.angel_protection_sigint.abilities = [ObjectAbilities.angels_cant_get_past_it]
 
         self.angel_blade = Object("Angel blade", description="A triangular, silvery blade, that each angel has.",
-                                  episodes={"S04": [16]})
+                                  episodes={"S04": [16], "S05": [1]})
         self.angel_blade.abilities = [ObjectAbilities.can_kill_angels]
 
         self.lucifers_cage = Object("Lucifer's Cage", description="A prison build specifically to contain archangelic "
@@ -100,6 +100,12 @@ class ObjectsBase:
         # ---------------------------------------------- ALL EPISODES DONE ---------------------------------------------
 
         # SEASON 5:
+
+        self.sword_of_archangel_michael = Object("Sword of Archangel Michael", description="A vessel, that Archangel "
+                                                                                           "Michael possesses - a very "
+                                                                                           "special person, that can "
+                                                                                           "hold archangels power.",
+                                                 episodes={"S05": [1]})
 
         self.objects = [obj for obj in self.__dict__.values() if isinstance(obj, Object)]
 
