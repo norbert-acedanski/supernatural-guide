@@ -252,7 +252,7 @@ class MonsterBase:
                                                       "Kidnapped people are taken to nests and then "
                                                       "bleeding them for days or weeks. "
                                                       "One can become a vampire, when drinking vampire blood.",
-                               episodes={"S01": [20], "S02": [3], "S03": [7]})
+                               episodes={"S01": [20], "S02": [3], "S03": [7], "S05": [3]})
         self.vampire.clues = [MonstersClues.ripped_throat, MonstersClues.no_blood_in_the_body,
                               MonstersClues.needle_like_teeth, MonstersClues.moving_in_groups_usually,
                               MonstersClues.invulnerable, MonstersClues.high_strength, MonstersClues.bright_eyes,
@@ -501,7 +501,7 @@ class MonsterBase:
                                                   "they can become human (they fall). "
                                                   "When dying, they leave wing marks. To possess somebody, "
                                                   "they need a consent.",
-                             episodes={"S04": [1, 2, 7, 9, 10, 15, 16, 18, 20, 21, 22], "S05": [1, 2]})
+                             episodes={"S04": [1, 2, 7, 9, 10, 15, 16, 18, 20, 21, 22], "S05": [1, 2, 3]})
         self.angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                             MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion,
                             MonstersClues.leaves_burned_marks, MonstersClues.weird_electronics_behavior,
@@ -514,14 +514,13 @@ class MonsterBase:
                             MonstersClues.can_exorcise_certain_demons_with_hand_on_forehead, MonstersClues.bright_light,
                             MonstersClues.mimics_human_voice, MonstersClues.can_control_electronics,
                             MonstersClues.triangle_wound, MonstersClues.amnesia_blackout,
-                            MonstersClues.can_teleport_people,
+                            MonstersClues.can_teleport_people, MonstersClues.can_read_peoples_minds,
 
                             MonstersClues.travels_as_white_fog]
         self.angel.disable_methods = [MonstersDisableMethods.symbol_made_with_blood_against_angels,
-                                      MonstersDisableMethods.exorcism_for_angels]
-        self.angel.kill_methods = [MonstersKillMethods.angel_blade,
+                                      MonstersDisableMethods.exorcism_for_angels, MonstersDisableMethods.holy_oil]
+        self.angel.kill_methods = [MonstersKillMethods.angel_blade, MonstersKillMethods.holy_oil,
 
-                                   MonstersKillMethods.holy_oil,
                                    MonstersKillMethods.will_of_an_archangel, MonstersKillMethods.will_of_prince_of_hell,
                                    MonstersKillMethods.lance_of_archangel_michael]
 
@@ -608,7 +607,7 @@ class MonsterBase:
         self.archangel_lucyfer = Monster("Archangel - Lucyfer",
                                          description="Archangel, that disobeyed God when he requested to bow before "
                                                      "the men. To upset God he twisted one of the people into Lilith.",
-                                         episodes={"S04": [22], "S05": [1]})
+                                         episodes={"S04": [22], "S05": [1, 3]})
         self.archangel_lucyfer.clues = [MonstersClues.weird_things_behavior, MonstersClues.true_voice_can_hurt_people,
                                         MonstersClues.bright_light, MonstersClues.weird_weather, MonstersClues.visions,
                                         MonstersClues.people_seeing_strange_things, MonstersClues.biblical_like_events,
@@ -660,10 +659,13 @@ class MonsterBase:
                                    MonstersClues.can_give_hallucinations]
         self.horseman_war.disable_methods = [MonstersDisableMethods.demon_killing_knife]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S05": [2]})
-        self.unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.people_acting_weirdly,
-                              MonstersClues.black_eyes, MonstersClues.salt_does_not_affect_it,
-                              MonstersClues.immune_to_exorcism, MonstersClues.can_give_hallucinations]
+        self.archangel_raphael = Monster("Archangel Raphael", description="One of the Archangels of God.",
+                                         episodes={"S05": [3]})
+        self.archangel_raphael.clues = [MonstersClues.bright_light, MonstersClues.invulnerable]
+        self.archangel_raphael.disable_methods = [MonstersDisableMethods.holy_oil]
+
+        self.unknown = Monster("Unknown", description="", episodes={"S05": [3]})
+        self.unknown.clues = [MonstersClues.weird_weather, MonstersClues.needle_like_teeth, MonstersClues.bright_light]
 
 
 
