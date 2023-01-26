@@ -229,6 +229,7 @@ class MonstersClues:
     protected_by_an_archangel = "protected by an archangel"
     bright_light = "bright light"
     silver_does_not_affect_it = "silver does not affect it"
+    seeds_in_victims_stomachs = "seeds in victims stomachs"
 
 
 class MonstersKillMethods:
@@ -257,6 +258,7 @@ class MonstersKillMethods:
     copper_coin_placed_under_the_tongue = "copper coin placed under the tongue"
     zanna_killing_knife = "Zanna killing knife"
     cut_throat = "cut throat"
+    chop_a_head_off_with_an_iron_axe = "chop a head off with an iron axe"
     stabbing_the_heart = "stabbing the heart"
     will_of_an_archangel = "will of an archangel"
     will_of_prince_of_hell = "will of Prince of Hell"

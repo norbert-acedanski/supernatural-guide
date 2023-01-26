@@ -665,8 +665,25 @@ class MonsterBase:
         self.archangel_raphael.clues = [MonstersClues.bright_light, MonstersClues.invulnerable]
         self.archangel_raphael.disable_methods = [MonstersDisableMethods.holy_oil]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S05": [4]})
-        self.unknown.clues = []
+        self.pagan_god_leshii = Monster("Pagan god Leshi", description="Guardian of the forest in Balkan legends. "
+                                                                       "He is a mischievous god and can take "
+                                                                       "infinite forms. Can only be pleased with "
+                                                                       "the blood of his worshippers. He would drain "
+                                                                       "them, then stuff their stomachs with seeds.",
+                                        episodes={"S05": [5]})
+        self.pagan_god_leshii.clues = [MonstersClues.cold_spots, MonstersClues.weird_things_behavior,
+                                       MonstersClues.weird_electronics_behavior, MonstersClues.people_dead_weirdly,
+                                       MonstersClues.people_seeing_things_or_figures,
+                                       MonstersClues.seeds_in_victims_stomachs, MonstersClues.can_read_peoples_minds,
+                                       MonstersClues.can_make_themselves_appear_as_they_like]
+        self.pagan_god_leshii.kill_methods = [MonstersKillMethods.chop_a_head_off_with_an_iron_axe]
+
+        self.unknown = Monster("Unknown", description="", episodes={"S05": [5]})
+        self.unknown.clues = [MonstersClues.cold_spots, MonstersClues.weird_things_behavior,
+                              MonstersClues.weird_electronics_behavior, MonstersClues.people_dead_weirdly,
+                              MonstersClues.people_seeing_things_or_figures, MonstersClues.seeds_in_victims_stomachs,
+                              MonstersClues.can_make_themselves_appear_as_they_like,
+                              MonstersClues.can_read_peoples_minds]
 
 
 
