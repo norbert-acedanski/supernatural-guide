@@ -82,7 +82,8 @@ class MonstersClues:
     no_emf = "no Electromagnetic Field"
     yellow_blast = "yellow blast"
     strange_different_things_happening = "strange, different things happening - like aliens, grimm brothers " \
-                                         "fairy tails, werewolfs, vampires, mummies (like in movies), etc."
+                                         "fairy tails, werewolfs, vampires, mummies (like in movies), " \
+                                         "things that are told to children coming true, etc."
     things_disappearing = "things disappearing"
     nothing_on_ultraviolet = "nothing on ultraviolet"
     reacts_to_gods_name_in_latin = "reacts to Gods name in latin"
@@ -146,6 +147,7 @@ class MonstersClues:
     victims_got_better_at_something_up_to_ten_years_earlier = "victims got better at something up to ten years earlier"
     victims_have_meadowsweet_somewhere = "victims have meadowsweet somewhere"
     cold_spots = "cold spots"
+    no_cold_spots = "no cold spots"
     feeling_of_something_bad = "feeling of something bad"
     junkless_creature = "junkless creature"
     mutant_pale_creature = "mutant pale creature"
@@ -198,6 +200,7 @@ class MonstersClues:
     can_exorcise_certain_demons_with_hand_on_forehead = "can exorcise certain demons with hand on forehead"
     can_put_people_into_alternate_timelines = "can put people into alternate timelines"
     can_erase_and_bring_back_memories = "can erase and bring back memories"
+    can_exorcise_demons_with_a_thought = "can exorcise demons with a thought"
     demon_killing_knife_is_ineffective = "demon killing knife is ineffective"
     immortal = "immortal"
     invulnerable = "invulnerable"

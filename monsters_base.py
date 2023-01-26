@@ -105,7 +105,7 @@ class MonsterBase:
         self.demon = Monster("Demon", description="In every religion there is information about demonic possessions. "
                                                   "Demons are man that were stuck in hell for a long time.",
                              episodes={"S01": [4, 21, 22], "S02": [1, 14], "S03": [1, 2, 4, 12, 15, 16],
-                                       "S04": [1, 4, 9, 10, 20, 21, 22], "S05": [1]})
+                                       "S04": [1, 4, 9, 10, 20, 21, 22], "S05": [1, 6]})
         self.demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                             MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                             MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -501,7 +501,7 @@ class MonsterBase:
                                                   "they can become human (they fall). "
                                                   "When dying, they leave wing marks. To possess somebody, "
                                                   "they need a consent.",
-                             episodes={"S04": [1, 2, 7, 9, 10, 15, 16, 18, 20, 21, 22], "S05": [1, 2, 3, 4]})
+                             episodes={"S04": [1, 2, 7, 9, 10, 15, 16, 18, 20, 21, 22], "S05": [1, 2, 3, 4, 5]})
         self.angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                             MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion,
                             MonstersClues.leaves_burned_marks, MonstersClues.weird_electronics_behavior,
@@ -678,12 +678,19 @@ class MonsterBase:
                                        MonstersClues.can_make_themselves_appear_as_they_like]
         self.pagan_god_leshii.kill_methods = [MonstersKillMethods.chop_a_head_off_with_an_iron_axe]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S05": [5]})
-        self.unknown.clues = [MonstersClues.cold_spots, MonstersClues.weird_things_behavior,
-                              MonstersClues.weird_electronics_behavior, MonstersClues.people_dead_weirdly,
-                              MonstersClues.people_seeing_things_or_figures, MonstersClues.seeds_in_victims_stomachs,
-                              MonstersClues.can_make_themselves_appear_as_they_like,
-                              MonstersClues.can_read_peoples_minds]
+        self.antichrist = Monster("Antichrist", description="Also known as Cambion or Katako. Half-demon, half-human, "
+                                                            "but far more powerful than any of them. Can make real, "
+                                                            "whatever comes to his mind.",
+                                  episodes={"S05": [6]})
+        self.antichrist.clues = [MonstersClues.claws, MonstersClues.animal_like_attack, MonstersClues.no_cold_spots,
+                                 MonstersClues.people_dead_weirdly, MonstersClues.strange_different_things_happening,
+                                 MonstersClues.no_sulfur, MonstersClues.can_exorcise_demons_with_a_thought,
+                                 MonstersClues.telekinesis, MonstersClues.can_vanish]
+
+        self.unknown = Monster("Unknown", description="", episodes={"S05": [6]})
+        self.unknown.clues = [MonstersClues.claws, MonstersClues.animal_like_attack, MonstersClues.people_dead_weirdly,
+                              MonstersClues.no_cold_spots, MonstersClues.no_sulfur, MonstersClues.can_vanish,
+                              MonstersClues.strange_different_things_happening]
 
 
 
