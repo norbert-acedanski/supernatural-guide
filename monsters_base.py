@@ -501,7 +501,7 @@ class MonsterBase:
                                                   "they can become human (they fall). "
                                                   "When dying, they leave wing marks. To possess somebody, "
                                                   "they need a consent.",
-                             episodes={"S04": [1, 2, 7, 9, 10, 15, 16, 18, 20, 21, 22], "S05": [1, 2, 3]})
+                             episodes={"S04": [1, 2, 7, 9, 10, 15, 16, 18, 20, 21, 22], "S05": [1, 2, 3, 4]})
         self.angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                             MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion,
                             MonstersClues.leaves_burned_marks, MonstersClues.weird_electronics_behavior,
@@ -578,7 +578,7 @@ class MonsterBase:
         self.siren.kill_methods = [MonstersKillMethods.its_own_venom]
 
         self.angel_zachariah = Monster("Angel Zachariah", description="High Tier Angel",
-                                       episodes={"S04": [17, 18, 22], "S05": [1]})
+                                       episodes={"S04": [17, 18, 22], "S05": [1, 4]})
         self.angel_zachariah.clues = [MonstersClues.can_put_people_into_alternate_timelines, MonstersClues.telekinesis,
                                       MonstersClues.can_erase_and_bring_back_memories, MonstersClues.can_vanish,
                                       MonstersClues.can_give_people_diseases, MonstersClues.can_repair_human_body,
@@ -607,13 +607,14 @@ class MonsterBase:
         self.archangel_lucyfer = Monster("Archangel - Lucyfer",
                                          description="Archangel, that disobeyed God when he requested to bow before "
                                                      "the men. To upset God he twisted one of the people into Lilith.",
-                                         episodes={"S04": [22], "S05": [1, 3]})
+                                         episodes={"S04": [22], "S05": [1, 3, 4]})
         self.archangel_lucyfer.clues = [MonstersClues.weird_things_behavior, MonstersClues.true_voice_can_hurt_people,
                                         MonstersClues.bright_light, MonstersClues.weird_weather, MonstersClues.visions,
                                         MonstersClues.people_seeing_strange_things, MonstersClues.biblical_like_events,
                                         MonstersClues.people_hear_voices, MonstersClues.can_read_peoples_minds,
                                         MonstersClues.can_make_themselves_appear_as_they_like,
-                                        MonstersClues.can_give_hallucinations,
+                                        MonstersClues.can_give_hallucinations, MonstersClues.can_vanish,
+                                        MonstersClues.can_appear_out_of_thin_air,
 
                                         MonstersClues.flashing_lights, MonstersClues.travels_as_white_fog,
                                         MonstersClues.people_burned_on_the_ceiling, MonstersClues.telekinesis,
@@ -664,8 +665,8 @@ class MonsterBase:
         self.archangel_raphael.clues = [MonstersClues.bright_light, MonstersClues.invulnerable]
         self.archangel_raphael.disable_methods = [MonstersDisableMethods.holy_oil]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S05": [3]})
-        self.unknown.clues = [MonstersClues.weird_weather, MonstersClues.needle_like_teeth, MonstersClues.bright_light]
+        self.unknown = Monster("Unknown", description="", episodes={"S05": [4]})
+        self.unknown.clues = []
 
 
 
