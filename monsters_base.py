@@ -437,13 +437,14 @@ class MonsterBase:
         self.witch = Monster("Witch", description="A woman/man, that deals with different kinds of magic (like black, "
                                                   "old world, etc.). Witch has magic powers, can bring demons, "
                                                   "be immortal, teleport etc.",
-                             episodes={"S03": [9], "S04": [7, 12]})
+                             episodes={"S03": [9], "S04": [7, 12], "S05": [7]})
         self.witch.clues = [MonstersClues.people_dead_weirdly, MonstersClues.hex_bag_hidden_somewhere,
                             MonstersClues.weird_electronics_behavior, MonstersClues.telekinesis,
                             MonstersClues.can_vanish, MonstersClues.immortal, MonstersClues.invulnerable,
                             MonstersClues.telekinesis, MonstersClues.card_found_on_a_victim,
-
                             MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
+                            MonstersClues.people_aging_rapidly, MonstersClues.people_getting_younger,
+
                             MonstersClues.missing_heart]
         self.witch.disableMethod = [MonstersDisableMethods.stop_it_from_speaking,
                                     MonstersDisableMethods.witch_catcher]
@@ -687,10 +688,10 @@ class MonsterBase:
                                  MonstersClues.no_sulfur, MonstersClues.can_exorcise_demons_with_a_thought,
                                  MonstersClues.telekinesis, MonstersClues.can_vanish]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S05": [6]})
-        self.unknown.clues = [MonstersClues.claws, MonstersClues.animal_like_attack, MonstersClues.people_dead_weirdly,
-                              MonstersClues.no_cold_spots, MonstersClues.no_sulfur, MonstersClues.can_vanish,
-                              MonstersClues.strange_different_things_happening]
+        self.unknown = Monster("Unknown", description="", episodes={"S05": [7]})
+        self.unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.people_aging_rapidly,
+                              MonstersClues.people_getting_younger,
+                              MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area]
 
 
 
