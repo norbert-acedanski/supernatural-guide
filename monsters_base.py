@@ -343,16 +343,34 @@ class MonsterBase:
 
         self.trickster = Monster("Trickster (Loki, Anansi)", description="Demigod (Loki in Scandinavia, Anansi in "
                                                                          "West Africa). Can create chaos and mischief "
-                                                                         "as easy as breathing. Can control time.",
-                                 episodes={"S02": [15], "S03": [11]})
+                                                                         "as easy as breathing. Not seen, "
+                                                                         "only appeared to be one, but it was "
+                                                                         "Archangel Gabriel.")
         self.trickster.clues = [MonstersClues.people_seeing_things_or_figures, MonstersClues.people_dead_weirdly,
                                 MonstersClues.no_emf, MonstersClues.weird_noises, MonstersClues.people_seeing_aliens,
                                 MonstersClues.strange_different_things_happening, MonstersClues.things_disappearing,
                                 MonstersClues.can_create_things_out_of_thin_air, MonstersClues.immortal,
                                 MonstersClues.can_make_themselves_appear_as_they_like, MonstersClues.loves_sugar,
-                                MonstersClues.telekinesis, MonstersClues.can_put_somebody_in_a_time_loop,
-                                MonstersClues.can_reverse_time]
+                                MonstersClues.telekinesis, MonstersClues.sweets_wrappers, MonstersClues.can_vanish,
+                                MonstersClues.people_seeing_strange_things, MonstersClues.mimics_human_voice,
+                                MonstersClues.high_strength]
         self.trickster.kill_methods = [MonstersKillMethods.aspen_pin]
+
+        self.archangel_gabriel = Monster("Archangel - Gabriel", description="Archangel, that enjoys tricking people "
+                                                                            "and killing them afterwards.",
+                                         episodes={"S02": [15], "S03": [11], "S05": [8]})
+        self.archangel_gabriel.clues = [MonstersClues.people_seeing_things_or_figures, MonstersClues.telekinesis,
+                                        MonstersClues.no_emf, MonstersClues.weird_noises, MonstersClues.loves_sugar,
+                                        MonstersClues.people_seeing_aliens, MonstersClues.things_disappearing,
+                                        MonstersClues.strange_different_things_happening, MonstersClues.immortal,
+                                        MonstersClues.can_create_things_out_of_thin_air, MonstersClues.can_reverse_time,
+                                        MonstersClues.people_dead_weirdly, MonstersClues.people_seeing_strange_things,
+                                        MonstersClues.can_put_people_into_alternate_timelines, MonstersClues.can_vanish,
+                                        MonstersClues.sweets_wrappers, MonstersClues.mimics_human_voice,
+                                        MonstersClues.high_strength, MonstersClues.can_teleport_people,
+                                        MonstersClues.can_make_themselves_appear_as_they_like,
+                                        MonstersClues.can_put_somebody_in_a_time_loop]
+        self.archangel_gabriel.disable_methods = [MonstersDisableMethods.holy_oil]
 
         self.phantom_hitchhiker = Monster("Phantom hitchhiker", description="Not seen. Only mentioned in S01E16")
         self.phantom_hitchhiker.clues = [MonstersClues.missing_or_dead_people_regularly_in_the_same_area]
@@ -502,7 +520,7 @@ class MonsterBase:
                                                   "they can become human (they fall). "
                                                   "When dying, they leave wing marks. To possess somebody, "
                                                   "they need a consent.",
-                             episodes={"S04": [1, 2, 7, 9, 10, 15, 16, 18, 20, 21, 22], "S05": [1, 2, 3, 4, 5]})
+                             episodes={"S04": [1, 2, 7, 9, 10, 15, 16, 18, 20, 21, 22], "S05": [1, 2, 3, 4, 5, 8]})
         self.angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                             MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion,
                             MonstersClues.leaves_burned_marks, MonstersClues.weird_electronics_behavior,
@@ -688,10 +706,11 @@ class MonsterBase:
                                  MonstersClues.no_sulfur, MonstersClues.can_exorcise_demons_with_a_thought,
                                  MonstersClues.telekinesis, MonstersClues.can_vanish]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S05": [7]})
-        self.unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.people_aging_rapidly,
-                              MonstersClues.people_getting_younger,
-                              MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area]
+        self.unknown = Monster("Unknown", description="", episodes={"S05": [8]})
+        self.unknown.clues = [MonstersClues.can_put_people_into_alternate_timelines, MonstersClues.sweets_wrappers,
+                              MonstersClues.people_seeing_strange_things, MonstersClues.people_seeing_things_or_figures,
+                              MonstersClues.mimics_human_voice, MonstersClues.can_vanish,
+                              MonstersClues.can_teleport_people]
 
 
 

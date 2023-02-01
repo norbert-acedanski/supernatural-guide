@@ -208,6 +208,7 @@ class MonstersClues:
     invulnerable = "invulnerable"
     has_wings = "has wings"
     loves_sugar = "loves sugar"
+    sweets_wrappers = "sweets wrappers"
     knows_past = "knows past"
     psychic_abilities = "psychic abilities - knows the past, the future and the present of people or places, " \
                         "senses energies and spirits"
