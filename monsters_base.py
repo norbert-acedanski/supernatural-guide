@@ -51,7 +51,7 @@ class MonsterBase:
                                                    "they were killed by supernatural. Witnesses can be put to rest "
                                                    "by a special spell (has to be cast over an open fire).",
                                        episodes={"S01": [1, 3, 5, 7, 9, 10, 13, 19], "S02": [6, 11, 16, 18, 19],
-                                                 "S03": [5, 6, 13], "S04": [2, 13, 15, 17]})
+                                                 "S03": [5, 6, 13], "S04": [2, 13, 15, 17], "S05": [9]})
         self.vengeful_spirit.clues = [MonstersClues.
                                       missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                                       MonstersClues.people_dead_weirdly, MonstersClues.ghost_like_creature,
@@ -606,7 +606,7 @@ class MonsterBase:
 
         self.prophet = Monster("Prophet of the Lord", description="A person that is gifted with the knowledge "
                                                                   "of the future.",
-                               episodes={"S04": [18, 22], "S05": [1]})
+                               episodes={"S04": [18, 22], "S05": [1, 9]})
         self.prophet.clues = [MonstersClues.can_see_future, MonstersClues.protected_by_an_archangel,
                               MonstersClues.visions]
 
@@ -706,11 +706,8 @@ class MonsterBase:
                                  MonstersClues.no_sulfur, MonstersClues.can_exorcise_demons_with_a_thought,
                                  MonstersClues.telekinesis, MonstersClues.can_vanish]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S05": [8]})
-        self.unknown.clues = [MonstersClues.can_put_people_into_alternate_timelines, MonstersClues.sweets_wrappers,
-                              MonstersClues.people_seeing_strange_things, MonstersClues.people_seeing_things_or_figures,
-                              MonstersClues.mimics_human_voice, MonstersClues.can_vanish,
-                              MonstersClues.can_teleport_people]
+        self.unknown = Monster("Unknown", description="", episodes={"S05": [9]})
+        self.unknown.clues = []
 
 
 
