@@ -60,6 +60,7 @@ class MonstersClues:
     people_cured_miraculously = "people cured miraculously"
     people_acting_weirdly = "people acting weirdly - like not themselves"
     people_burned_on_the_ceiling = "people burned on the ceiling of their house"
+    people_loosing_their_minds = "people loosing their minds"
     dead_people_or_children_regularly_in_different_places = "dead people or children regularly in different places"
     missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area = \
         "people missing/dead weirdly, similarly, randomly across a time(weeks/months/years) in the same area"
@@ -150,6 +151,7 @@ class MonstersClues:
     victims_see_ships = "victims see ships"
     victims_got_better_at_something_up_to_ten_years_earlier = "victims got better at something up to ten years earlier"
     victims_have_meadowsweet_somewhere = "victims have meadowsweet somewhere"
+    victims_brain_devoid_of_water = "victims brain devoid of water"
     cold_spots = "cold spots"
     no_cold_spots = "no cold spots"
     feeling_of_something_bad = "feeling of something bad"
@@ -237,6 +239,7 @@ class MonstersClues:
     lack_of_body_control = "lack of body control"
     protected_by_an_archangel = "protected by an archangel"
     bright_light = "bright light"
+    silver_burns_its_skin = "silver burns its skin"
     silver_does_not_affect_it = "silver does not affect it"
     seeds_in_victims_stomachs = "seeds in victims stomachs"
 

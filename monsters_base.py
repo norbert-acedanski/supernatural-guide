@@ -733,8 +733,26 @@ class MonsterBase:
 
                                           MonstersKillMethods.scythe_of_death]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S05": [10]})
-        self.unknown.clues = []
+        self.wraith = Monster("Wraith", description="Creatures, that crack the head and feed on brain juice. "
+                                                    "Can poison people and drive them crazy.", episodes={"S05": [11]})
+        self.wraith.clues = [MonstersClues.people_dead_weirdly, MonstersClues.no_black_fog, MonstersClues.no_sulfur,
+                             MonstersClues.no_cold_spots, MonstersClues.bite_marks_on_peoples_necks,
+                             MonstersClues.victims_brain_devoid_of_water, MonstersClues.silver_burns_its_skin,
+                             MonstersClues.can_take_form_of_other_people, MonstersClues.people_seeing_things_or_figures,
+                             MonstersClues.people_hear_voices, MonstersClues.people_seeing_strange_things,
+                             MonstersClues.real_appearance_can_be_seen_in_a_reflection, MonstersClues.high_strength,
+                             MonstersClues.people_loosing_their_minds]
+        self.wraith.disable_methods = [MonstersDisableMethods.silver_or_silver_bullets]
+        self.wraith.kill_methods = [MonstersKillMethods.silver_blade]
+
+        self.unknown = Monster("Unknown", description="", episodes={"S05": [11]})
+        self.unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.no_black_fog, MonstersClues.no_sulfur,
+                              MonstersClues.no_cold_spots, MonstersClues.bite_marks_on_peoples_necks,
+                              MonstersClues.victims_brain_devoid_of_water, MonstersClues.can_take_form_of_other_people,
+                              MonstersClues.real_appearance_can_be_seen_in_a_reflection, MonstersClues.high_strength,
+                              MonstersClues.silver_burns_its_skin, MonstersClues.people_seeing_things_or_figures,
+                              MonstersClues.people_hear_voices, MonstersClues.people_seeing_strange_things,
+                              MonstersClues.people_loosing_their_minds]
 
 
 
