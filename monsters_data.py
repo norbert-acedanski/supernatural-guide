@@ -10,6 +10,8 @@ class MonstersClues:
     blue_eyes = "blue eyes"
     white_eyes = "white eyes"
     falling_meteor = "falling meteor"
+    number_of_reapers_appearing = "number of reapers appearing"
+    revelation_omens = "revelation omens"
     weird_weather = "weird weather"
     weird_animal_behavior = "weird animal behavior"
     weird_things_behavior = "weird things behavior"
@@ -231,6 +233,7 @@ class MonstersClues:
     immune_to_extrusion_by_people_with_abilities = "immune to extrusion by people with abilities"
     immune_to_exorcism_of_an_angel = "immune to exorcism of an angel"
     immune_to_exorcism = "immune to exorcism"
+    immune_to_colt_of_colt = "immune to colt of Colt"
     lack_of_body_control = "lack of body control"
     protected_by_an_archangel = "protected by an archangel"
     bright_light = "bright light"
@@ -330,6 +333,7 @@ class MonstersDisableMethods:
     demon_killing_knife = "demon killing knife"
     reaper_imprison_sigil = "reaper_imprison_sigil"
     reconnection_of_angel_with_its_grace = "reconnection of angel with its grace"
+    colt_of_colt_with_magic_bullets = "colt of Colt with magic bullets"
 
 
 class MonstersCureMethods:
