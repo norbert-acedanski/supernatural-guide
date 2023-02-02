@@ -27,6 +27,8 @@ class CursesClues:
     the_last_person_that_got_kissed_dies = "the last person that got kissed dies " \
                                            "(reverse order - first kisses, dies last)"
     slow_loss_of_the_memory = "slow loss of the memory"
+    small_earth_quake = "small earth quake"
+    number_of_reapers_appearing = "number of reapers appearing"
 
 
 class CursesDisableMethods:
