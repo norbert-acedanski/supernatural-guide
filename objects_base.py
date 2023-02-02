@@ -24,8 +24,10 @@ class ObjectsBase:
         self.colt_of_colt = Object("Colt of Colt", description="Colt made by Samuel Colt in 1835, when Halley's Comet "
                                                                "was overhead and the same night those men died "
                                                                "at the Alamo. He made it for a hunter along with "
-                                                               "13 bullets. Bullets can be crafted for this gun.",
-                                   episodes={"S01": [20, 21, 22], "S02": [1, 22], "S03": [4, 5, 9]})
+                                                               "13 bullets. Bullets can be crafted for this gun. "
+                                                               "Can kill everything in all creation except 5 entities: "
+                                                               "Archangel Lucyfer, unknown 4 left.",
+                                   episodes={"S01": [20, 21, 22], "S02": [1, 22], "S03": [4, 5, 9], "S05": [10]})
         self.colt_of_colt.abilities = [ObjectAbilities.can_kill_anything]
 
         # ---------------------------------------------- ALL EPISODES DONE ---------------------------------------------
@@ -44,7 +46,7 @@ class ObjectsBase:
         self.demon_killing_knife = Object("Demon killing knife", description="Can literally kill demons, "
                                                                              "not get them back to hell. "
                                                                              "Cannot kill certain kinds of demons.",
-                                          episodes={"S03": [1, 9, 16], "S04": [1, 9, 20, 22], "S05": [1]})
+                                          episodes={"S03": [1, 9, 16], "S04": [1, 9, 20, 22], "S05": [1, 10]})
         self.demon_killing_knife.abilities = [ObjectAbilities.can_kill_demons, ObjectAbilities.cannot_kill_angels]
 
         self.lucky_rabbits_foot = Object("Lucky rabbits foot",
