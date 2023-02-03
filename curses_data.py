@@ -29,6 +29,7 @@ class CursesClues:
     slow_loss_of_the_memory = "slow loss of the memory"
     small_earth_quake = "small earth quake"
     number_of_reapers_appearing = "number of reapers appearing"
+    can_switch_souls_of_people = "can switch souls of people"
 
 
 class CursesDisableMethods:

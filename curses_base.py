@@ -100,6 +100,10 @@ class CursesBase:
             [CursesClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
              CursesClues.small_earth_quake, CursesClues.number_of_reapers_appearing]
 
+        self.soul_swapping_spell = Curse("Soul swapping spell", description="Allows to switch souls of 2 people.",
+                                         episodes={"S05": [12]})
+        self.soul_swapping_spell.clues = [CursesClues.can_switch_souls_of_people]
+
 
 
         # SEASON 6:
