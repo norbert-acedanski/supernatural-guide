@@ -207,6 +207,7 @@ class MonstersClues:
     can_put_people_into_alternate_timelines = "can put people into alternate timelines"
     can_erase_and_bring_back_memories = "can erase and bring back memories"
     can_exorcise_demons_with_a_thought = "can exorcise demons with a thought"
+    people_with_souls_switched = "people with souls switched"
     demon_killing_knife_is_ineffective = "demon killing knife is ineffective"
     immortal = "immortal"
     invulnerable = "invulnerable"

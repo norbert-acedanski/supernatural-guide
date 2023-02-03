@@ -51,7 +51,7 @@ class MonsterBase:
                                                    "they were killed by supernatural. Witnesses can be put to rest "
                                                    "by a special spell (has to be cast over an open fire).",
                                        episodes={"S01": [1, 3, 5, 7, 9, 10, 13, 19], "S02": [6, 11, 16, 18, 19],
-                                                 "S03": [5, 6, 13], "S04": [2, 13, 15, 17], "S05": [9]})
+                                                 "S03": [5, 6, 13], "S04": [2, 13, 15, 17], "S05": [9, 11]})
         self.vengeful_spirit.clues = [MonstersClues.
                                       missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                                       MonstersClues.people_dead_weirdly, MonstersClues.ghost_like_creature,
@@ -105,7 +105,7 @@ class MonsterBase:
         self.demon = Monster("Demon", description="In every religion there is information about demonic possessions. "
                                                   "Demons are man that were stuck in hell for a long time.",
                              episodes={"S01": [4, 21, 22], "S02": [1, 14], "S03": [1, 2, 4, 12, 15, 16],
-                                       "S04": [1, 4, 9, 10, 20, 21, 22], "S05": [1, 6, 10]})
+                                       "S04": [1, 4, 9, 10, 20, 21, 22], "S05": [1, 6, 10, 12]})
         self.demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                             MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                             MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -458,13 +458,14 @@ class MonsterBase:
         self.witch = Monster("Witch", description="A woman/man, that deals with different kinds of magic (like black, "
                                                   "old world, etc.). Witch has magic powers, can bring demons, "
                                                   "be immortal, teleport etc.",
-                             episodes={"S03": [9], "S04": [7, 12], "S05": [7]})
+                             episodes={"S03": [9], "S04": [7, 12], "S05": [7, 12]})
         self.witch.clues = [MonstersClues.people_dead_weirdly, MonstersClues.hex_bag_hidden_somewhere,
                             MonstersClues.weird_electronics_behavior, MonstersClues.telekinesis,
                             MonstersClues.can_vanish, MonstersClues.immortal, MonstersClues.invulnerable,
                             MonstersClues.telekinesis, MonstersClues.card_found_on_a_victim,
                             MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                             MonstersClues.people_aging_rapidly, MonstersClues.people_getting_younger,
+                            MonstersClues.people_with_souls_switched,
 
                             MonstersClues.missing_heart]
         self.witch.disableMethod = [MonstersDisableMethods.stop_it_from_speaking,
@@ -745,14 +746,8 @@ class MonsterBase:
         self.wraith.disable_methods = [MonstersDisableMethods.silver_or_silver_bullets]
         self.wraith.kill_methods = [MonstersKillMethods.silver_blade]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S05": [11]})
-        self.unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.no_black_fog, MonstersClues.no_sulfur,
-                              MonstersClues.no_cold_spots, MonstersClues.bite_marks_on_peoples_necks,
-                              MonstersClues.victims_brain_devoid_of_water, MonstersClues.can_take_form_of_other_people,
-                              MonstersClues.real_appearance_can_be_seen_in_a_reflection, MonstersClues.high_strength,
-                              MonstersClues.silver_burns_its_skin, MonstersClues.people_seeing_things_or_figures,
-                              MonstersClues.people_hear_voices, MonstersClues.people_seeing_strange_things,
-                              MonstersClues.people_loosing_their_minds]
+        self.unknown = Monster("Unknown", description="", episodes={"S05": [12]})
+        self.unknown.clues = [MonstersClues.people_with_souls_switched]
 
 
 
