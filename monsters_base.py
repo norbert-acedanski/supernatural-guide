@@ -524,7 +524,8 @@ class MonsterBase:
                                                   "they can become human (they fall). "
                                                   "When dying, they leave wing marks. To possess somebody, "
                                                   "they need a consent.",
-                             episodes={"S04": [1, 2, 7, 9, 10, 15, 16, 18, 20, 21, 22], "S05": [1, 2, 3, 4, 5, 8, 10]})
+                             episodes={"S04": [1, 2, 7, 9, 10, 15, 16, 18, 20, 21, 22],
+                                       "S05": [1, 2, 3, 4, 5, 8, 10, 12]})
         self.angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                             MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion,
                             MonstersClues.leaves_burned_marks, MonstersClues.weird_electronics_behavior,
@@ -662,8 +663,14 @@ class MonsterBase:
                                                                             "He was the one, who brought down Lucifer "
                                                                             "to Hell. He did it with his sword "
                                                                             "(Sword of Archangel Michael) - for now, "
-                                                                            "only mentioned in S05E01.")
-        self.archangel_michael.clues = [
+                                                                            "only mentioned in S05E01. "
+                                                                            "Can kill other angels with a touch.",
+                                         episodes={"S05": [13]})
+        self.archangel_michael.clues = [MonstersClues.can_put_a_person_to_sleep,
+                                        MonstersClues.can_erase_and_bring_back_memories,
+                                        MonstersClues.can_send_people_back_to_their_time,
+                                        MonstersClues.can_kill_angels_with_a_touch,
+
                                         MonstersClues.travels_as_white_fog]
         self.archangel_michael.disable_methods = [
                                                   MonstersDisableMethods.cage_of_lucyfer_in_hell,
@@ -672,7 +679,8 @@ class MonsterBase:
                                                MonstersKillMethods.the_darkness]
 
         self.god = Monster("THE God", description="The light, the beginning of everything. "
-                                                  "Brother of the Darkness. A being with almost unlimited power.")
+                                                  "Brother of the Darkness. A being with almost unlimited power. "
+                                                  "Only mentioned for now.")
         self.god.clues = [MonstersClues.can_bring_back_dead_angels, MonstersClues.can_teleport_people,
                           MonstersClues.shining_of_magic_amulet]
         self.god.kill_methods = [
@@ -746,8 +754,8 @@ class MonsterBase:
         self.wraith.disable_methods = [MonstersDisableMethods.silver_or_silver_bullets]
         self.wraith.kill_methods = [MonstersKillMethods.silver_blade]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S05": [12]})
-        self.unknown.clues = [MonstersClues.people_with_souls_switched]
+        self.unknown = Monster("Unknown", description="", episodes={"S05": [13]})
+        self.unknown.clues = []
 
 
 
