@@ -129,6 +129,7 @@ class MonstersClues:
     feeding_on_vulnerable = "feeding on vulnerable"
     feeding_on_life_essence = "feeding on life essence"
     feeds_on_blood = "feeds on blood"
+    feeds_on_human_flesh = "feeds on human flesh"
     attacks_at_night = "attacks at night"
     bite_marks_on_peoples_necks = "bite marks on peoples necks"
     may_leave_marks_on_windows = "may leave marks on windows"
@@ -299,6 +300,7 @@ class MonstersKillMethods:
     death_transfer_spell = "death transfer spell"
     its_own_venom = "its own venom"
     reaper_blade_combined_with_a_spell = "reaper blade combined with a spell"
+    head_shot = "head shot"
 
 
 class MonstersDisableMethods:

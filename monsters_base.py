@@ -738,8 +738,9 @@ class MonsterBase:
         self.reaper_death = Monster("Reaper - Death", description="One of the Horseman, the pale rider. "
                                                                   "Angel of Death. Can be brought to the Earth "
                                                                   "at midnight through a place of awful carnage. "
-                                                                  "Not seen, only summoned in S05E10.")
-        self.reaper_death.clues = [MonstersClues.number_of_reapers_appearing]
+                                                                  "Not seen, only summoned in S05E10 and his actions "
+                                                                  "seen in S05E15.")
+        self.reaper_death.clues = [MonstersClues.number_of_reapers_appearing, MonstersClues.can_bring_back_dead_people]
         self.reaper_death.kill_methods = [
 
                                           MonstersKillMethods.scythe_of_death]
@@ -780,10 +781,17 @@ class MonsterBase:
                                       MonstersClues.immune_to_extrusion_by_people_with_abilities]
         self.horseman_famine.kill_methods = [MonstersKillMethods.will_of_a_person_with_abilities]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S05": [14]})
-        self.unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.people_acting_weirdly,
-                              MonstersClues.no_emf, MonstersClues.no_sulfur, MonstersClues.marks_on_victims_hearts,
-                              MonstersClues.can_vanish, MonstersClues.invulnerable, MonstersClues.naked_man]
+        self.zombie = Monster("Zombie", description="A person brought back from the dead by Horseman Death. "
+                                                    "At first a normal person, after a while turns into "
+                                                    "human flesh-loving monster.",
+                              episodes={"S05": [15]})
+        self.zombie.clues = [MonstersClues.silver_does_not_affect_it, MonstersClues.holy_water_does_not_affect_it,
+                             MonstersClues.salt_does_not_affect_it, MonstersClues.missing_body,
+                             MonstersClues.feeds_on_human_flesh]
+        self.zombie.kill_methods = [MonstersKillMethods.head_shot]
+
+        self.unknown = Monster("Unknown", description="", episodes={"S05": [15]})
+        self.unknown.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.people_dead_weirdly]
 
 
 
