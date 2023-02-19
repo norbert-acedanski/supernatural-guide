@@ -105,7 +105,7 @@ class MonsterBase:
         self.demon = Monster("Demon", description="In every religion there is information about demonic possessions. "
                                                   "Demons are man that were stuck in hell for a long time.",
                              episodes={"S01": [4, 21, 22], "S02": [1, 14], "S03": [1, 2, 4, 12, 15, 16],
-                                       "S04": [1, 4, 9, 10, 20, 21, 22], "S05": [1, 6, 10, 12]})
+                                       "S04": [1, 4, 9, 10, 20, 21, 22], "S05": [1, 6, 10, 12, 14]})
         self.demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                             MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                             MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -189,7 +189,7 @@ class MonsterBase:
                                                          "With enough power, that person's eyes become black "
                                                          "as for a demon.",
                                              episodes={"S01": [14], "S02": [5, 10], "S03": [16],
-                                                       "S04": [1, 4, 7, 9, 15, 16, 18, 20, 21, 22]})
+                                                       "S04": [1, 4, 7, 9, 15, 16, 18, 20, 21, 22], "S05": [14]})
         self.people_with_abilities.clues = [MonstersClues.people_dead_weirdly, MonstersClues.weird_things_behavior,
                                             MonstersClues.telekinesis, MonstersClues.mind_control,
                                             MonstersClues.able_to_electrocute, MonstersClues.can_see_future,
@@ -687,7 +687,9 @@ class MonsterBase:
                                  MonstersKillMethods.the_darkness]
 
         self.horseman_war = Monster("Horseman War", description="One of the four horseman. Can give people "
-                                                                "hallucinations with his ring.", episodes={"S05": [2]})
+                                                                "hallucinations with his ring. "
+                                                                "The ring is a source of his power.",
+                                    episodes={"S05": [2]})
         self.horseman_war.clues = [MonstersClues.people_dead_weirdly, MonstersClues.people_acting_weirdly,
                                    MonstersClues.black_eyes, MonstersClues.salt_does_not_affect_it,
                                    MonstersClues.people_seeing_strange_things, MonstersClues.immune_to_exorcism,
@@ -754,8 +756,34 @@ class MonsterBase:
         self.wraith.disable_methods = [MonstersDisableMethods.silver_or_silver_bullets]
         self.wraith.kill_methods = [MonstersKillMethods.silver_blade]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S05": [13]})
-        self.unknown.clues = []
+        self.cupid = Monster("Cupid", description="A lower tier of an angel - cherub, third class angel. "
+                                                  "Binds people that are supposed to be with each other.",
+                             episodes={"S05": [14]})
+        self.cupid.clues = [MonstersClues.people_dead_weirdly, MonstersClues.people_acting_weirdly,
+                            MonstersClues.no_emf, MonstersClues.no_sulfur, MonstersClues.marks_on_victims_hearts,
+                            MonstersClues.invisible_entity, MonstersClues.can_vanish, MonstersClues.invulnerable,
+                            MonstersClues.naked_man]
+        self.cupid.kill_methods = [
+
+                                   MonstersKillMethods.angel_blade]
+
+        self.horseman_famine = Monster("Horseman Famine", description="Makes people starve for something they lack "
+                                                                      "or they want (sex, attention, food, drugs, "
+                                                                      "love, etc.). Can feed on souls of his victims "
+                                                                      "or souls of demons. When he eats souls "
+                                                                      "of demons, he can be killed by a person "
+                                                                      "with abilities.",
+                                       episodes={"S05": [14]})
+        self.horseman_famine.clues = [MonstersClues.people_dead_weirdly, MonstersClues.people_acting_weirdly,
+                                      MonstersClues.telekinesis, MonstersClues.can_exorcise_demons_with_a_thought,
+                                      MonstersClues.victims_starve_for_something, MonstersClues.can_read_peoples_minds,
+                                      MonstersClues.immune_to_extrusion_by_people_with_abilities]
+        self.horseman_famine.kill_methods = [MonstersKillMethods.will_of_a_person_with_abilities]
+
+        self.unknown = Monster("Unknown", description="", episodes={"S05": [14]})
+        self.unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.people_acting_weirdly,
+                              MonstersClues.no_emf, MonstersClues.no_sulfur, MonstersClues.marks_on_victims_hearts,
+                              MonstersClues.can_vanish, MonstersClues.invulnerable, MonstersClues.naked_man]
 
 
 
@@ -776,9 +804,6 @@ class MonsterBase:
 
 
         # SEASON XX - unknown when:
-
-        self.cupid = Monster("Cupid")
-        self.cupid.kill_methods = [MonstersKillMethods.angel_blade]
 
         self.thule = Monster("Thule", description="Nazi members. Used blood magic to make themselves almost undead.")
         self.thule.clues = [MonstersClues.weird_fire_spontaneous_combustion]

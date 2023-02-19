@@ -132,6 +132,7 @@ class MonstersClues:
     attacks_at_night = "attacks at night"
     bite_marks_on_peoples_necks = "bite marks on peoples necks"
     may_leave_marks_on_windows = "may leave marks on windows"
+    marks_on_victims_hearts = "marks on victims hearts"
     leaves_burned_marks = "leaves burned marks"
     leaves_soulless_people_behind = "leaving soulless people behind"
     leaves_zombie_like_people_with_black_veins_around_neck = "leaves zombie-like people with black veins around neck"
@@ -152,6 +153,7 @@ class MonstersClues:
     victims_got_better_at_something_up_to_ten_years_earlier = "victims got better at something up to ten years earlier"
     victims_have_meadowsweet_somewhere = "victims have meadowsweet somewhere"
     victims_brain_devoid_of_water = "victims brain devoid of water"
+    victims_starve_for_something = "victims starve for something"
     cold_spots = "cold spots"
     no_cold_spots = "no cold spots"
     feeling_of_something_bad = "feeling of something bad"
@@ -245,6 +247,7 @@ class MonstersClues:
     silver_burns_its_skin = "silver burns its skin"
     silver_does_not_affect_it = "silver does not affect it"
     seeds_in_victims_stomachs = "seeds in victims stomachs"
+    naked_man = "naked man"
 
 
 class MonstersKillMethods:
