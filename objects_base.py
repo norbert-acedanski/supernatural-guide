@@ -112,7 +112,9 @@ class ObjectsBase:
                                                                    "(archangels included).", episodes={"S05": [1, 2]})
         self.enochian_sigil.abilities = [ObjectAbilities.hides_a_person_from_all_angels]
 
-        self.magic_amulet = Object("Magic Amulet", description="It burns hot in God's presence.")
+        self.magic_amulet = Object("Magic Amulet", description="It burns hot in God's presence. It is an Amulet, "
+                                                               "that Sam gave Dean, when they were kids.",
+                                   episodes={"S03": [8], "S05": [2, 16]})
 
         self.ring_of_war = Object("Ring of War", description="Can give people hallucinations", episodes={"S05": [2]})
         self.ring_of_war.abilities = [ObjectAbilities.can_give_hallucinations]
