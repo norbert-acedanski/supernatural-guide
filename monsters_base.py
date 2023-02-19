@@ -525,7 +525,7 @@ class MonsterBase:
                                                   "When dying, they leave wing marks. To possess somebody, "
                                                   "they need a consent.",
                              episodes={"S04": [1, 2, 7, 9, 10, 15, 16, 18, 20, 21, 22],
-                                       "S05": [1, 2, 3, 4, 5, 8, 10, 12]})
+                                       "S05": [1, 2, 3, 4, 5, 8, 10, 12, 13, 14, 15]})
         self.angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                             MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion,
                             MonstersClues.leaves_burned_marks, MonstersClues.weird_electronics_behavior,
