@@ -46,7 +46,7 @@ class ObjectsBase:
         self.demon_killing_knife = Object("Demon killing knife", description="Can literally kill demons, "
                                                                              "not get them back to hell. "
                                                                              "Cannot kill certain kinds of demons.",
-                                          episodes={"S03": [1, 9, 16], "S04": [1, 9, 20, 22], "S05": [1, 10]})
+                                          episodes={"S03": [1, 9, 16], "S04": [1, 9, 20, 22], "S05": [1, 10, 14]})
         self.demon_killing_knife.abilities = [ObjectAbilities.can_kill_demons, ObjectAbilities.cannot_kill_angels]
 
         self.lucky_rabbits_foot = Object("Lucky rabbits foot",
@@ -116,6 +116,9 @@ class ObjectsBase:
 
         self.ring_of_war = Object("Ring of War", description="Can give people hallucinations", episodes={"S05": [2]})
         self.ring_of_war.abilities = [ObjectAbilities.can_give_hallucinations]
+
+        self.human_soul = Object("Human soul", description="As an object is very bright. Can be collected of a person.",
+                                 episodes={"S05": [14]})
 
         self.objects = [obj for obj in self.__dict__.values() if isinstance(obj, Object)]
 
