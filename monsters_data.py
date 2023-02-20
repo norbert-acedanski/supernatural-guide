@@ -212,6 +212,7 @@ class MonstersClues:
     can_erase_and_bring_back_memories = "can erase and bring back memories"
     can_exorcise_demons_with_a_thought = "can exorcise demons with a thought"
     can_kill_angels_with_a_touch = "can kill angels with a touch"
+    can_appear_as_an_elephant = "can appear as an elephant"
     people_with_souls_switched = "people with souls switched"
     demon_killing_knife_is_ineffective = "demon killing knife is ineffective"
     immortal = "immortal"
@@ -249,11 +250,14 @@ class MonstersClues:
     silver_does_not_affect_it = "silver does not affect it"
     seeds_in_victims_stomachs = "seeds in victims stomachs"
     naked_man = "naked man"
+    general_sickness = "general sickness"
+    increased_pest_activity = "increased pest activity"
 
 
 class MonstersKillMethods:
     decapitation = "decapitation"
     angel_blade = "angel blade"
+    archangel_blade = "archangel blade"
     first_blade = "first blade"
     gold_blade = "gold blade"
     demon_killing_knife = "demon killing knife"
@@ -302,6 +306,7 @@ class MonstersKillMethods:
     reaper_blade_combined_with_a_spell = "reaper blade combined with a spell"
     head_shot = "head shot"
     stake_made_from_cypress_tree_in_babylon = "stake made from a cypress tree in Babylon"
+    stake_made_from_unknown_wood = "stake made from unknown wood"
 
 
 class MonstersDisableMethods:
