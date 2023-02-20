@@ -95,7 +95,8 @@ class ObjectsBase:
         self.angel_blade.abilities = [ObjectAbilities.can_kill_angels]
 
         self.lucifers_cage = Object("Lucifer's Cage", description="A prison build specifically to contain archangelic "
-                                                                  "powers (not seen yet).")
+                                                                  "powers (not seen yet). Can be opened with all "
+                                                                  "4 rings of the horseman.")
         self.lucifers_cage.abilities = [ObjectAbilities.traps_an_archangel]
 
         # ---------------------------------------------- ALL EPISODES DONE ---------------------------------------------
@@ -121,6 +122,10 @@ class ObjectsBase:
 
         self.human_soul = Object("Human soul", description="As an object is very bright. Can be collected of a person.",
                                  episodes={"S05": [14]})
+
+        self.archangel_blade = Object("Archangel blade", description="A triangular, silvery blade, "
+                                                                     "that each archangel has.", episodes={"S05": [19]})
+        self.archangel_blade.abilities = [ObjectAbilities.can_kill_archangels]
 
         self.objects = [obj for obj in self.__dict__.values() if isinstance(obj, Object)]
 
