@@ -520,13 +520,13 @@ class MonsterBase:
 
         self.angel = Monster("Angel", description="Angel of God (Castiel, Uriel). "
                                                   "They can bring people back from the dead. Cannot track people, "
-                                                  "that use powerful spells to hide themselves. All angels have graces "
-                                                  "- energy source for their power. When they disobey, as a punishment "
-                                                  "they can become human (they fall). "
-                                                  "When dying, they leave wing marks. To possess somebody, "
-                                                  "they need a consent.",
+                                                  "that use powerful spells to hide themselves. "
+                                                  "All angels have graces - energy source for their power. "
+                                                  "When they disobey (fall), as a punishment they can become human. "
+                                                  "When dying, a bright light is produced and they leave wing marks. "
+                                                  "To possess somebody, they need a consent.",
                              episodes={"S04": [1, 2, 7, 9, 10, 15, 16, 18, 20, 21, 22],
-                                       "S05": [1, 2, 3, 4, 5, 8, 10, 12, 13, 14, 15, 16, 17]})
+                                       "S05": [1, 2, 3, 4, 5, 8, 10, 12, 13, 14, 15, 16, 17, 18]})
         self.angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                             MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion,
                             MonstersClues.leaves_burned_marks, MonstersClues.weird_electronics_behavior,
@@ -603,13 +603,14 @@ class MonsterBase:
                             MonstersClues.real_appearance_can_be_seen_in_a_reflection]
         self.siren.kill_methods = [MonstersKillMethods.its_own_venom]
 
-        self.angel_zachariah = Monster("Angel Zachariah", description="High Tier Angel",
-                                       episodes={"S04": [17, 18, 22], "S05": [1, 4, 16]})
+        self.angel_zachariah = Monster("Angel Zachariah", description="High Tier Angel. Died in S05E18.",
+                                       episodes={"S04": [17, 18, 22], "S05": [1, 4, 16, 18]})
         self.angel_zachariah.clues = [MonstersClues.can_put_people_into_alternate_timelines, MonstersClues.telekinesis,
                                       MonstersClues.can_erase_and_bring_back_memories, MonstersClues.can_vanish,
                                       MonstersClues.can_give_people_diseases, MonstersClues.can_repair_human_body,
                                       MonstersClues.can_appear_out_of_thin_air]
         self.angel_zachariah.disable_methods = [MonstersDisableMethods.symbol_made_with_blood_against_angels]
+        self.angel_zachariah.kill_methods = [MonstersKillMethods.angel_blade]
 
         self.prophet = Monster("Prophet of the Lord", description="A person that is gifted with the knowledge "
                                                                   "of the future.",
@@ -667,7 +668,7 @@ class MonsterBase:
                                                                             "(Sword of Archangel Michael) - for now, "
                                                                             "only mentioned in S05E01. "
                                                                             "Can kill other angels with a touch.",
-                                         episodes={"S05": [13]})
+                                         episodes={"S05": [13, 18]})
         self.archangel_michael.clues = [MonstersClues.can_put_a_person_to_sleep,
                                         MonstersClues.can_erase_and_bring_back_memories,
                                         MonstersClues.can_send_people_back_to_their_time,
@@ -809,8 +810,8 @@ class MonsterBase:
                                     MonstersClues.real_appearance_can_be_seen_in_a_reflection]
         self.false_prophet.kill_methods = [MonstersKillMethods.stake_made_from_cypress_tree_in_babylon]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S05": [17]})
-        self.unknown.clues = []
+        self.unknown = Monster("Unknown", description="", episodes={"S05": [18]})
+        self.unknown.clues = [MonstersClues.in_true_form_burns_eyes_of_people]
 
 
 
