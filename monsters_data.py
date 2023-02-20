@@ -301,6 +301,7 @@ class MonstersKillMethods:
     its_own_venom = "its own venom"
     reaper_blade_combined_with_a_spell = "reaper blade combined with a spell"
     head_shot = "head shot"
+    stake_made_from_cypress_tree_in_babylon = "stake made from a cypress tree in Babylon"
 
 
 class MonstersDisableMethods:
@@ -345,6 +346,7 @@ class MonstersDisableMethods:
     reaper_imprison_sigil = "reaper_imprison_sigil"
     reconnection_of_angel_with_its_grace = "reconnection of angel with its grace"
     colt_of_colt_with_magic_bullets = "colt of Colt with magic bullets"
+    enochian_spell = "enochian spell"
 
 
 class MonstersCureMethods:

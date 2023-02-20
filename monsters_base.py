@@ -105,7 +105,7 @@ class MonsterBase:
         self.demon = Monster("Demon", description="In every religion there is information about demonic possessions. "
                                                   "Demons are man that were stuck in hell for a long time.",
                              episodes={"S01": [4, 21, 22], "S02": [1, 14], "S03": [1, 2, 4, 12, 15, 16],
-                                       "S04": [1, 4, 9, 10, 20, 21, 22], "S05": [1, 6, 10, 12, 14]})
+                                       "S04": [1, 4, 9, 10, 20, 21, 22], "S05": [1, 6, 10, 12, 14, 17]})
         self.demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                             MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                             MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -125,7 +125,8 @@ class MonsterBase:
                                       MonstersDisableMethods.witch_spell_to_get_a_demon_out_of_the_body,
                                       MonstersDisableMethods.salt_or_salted_bullets,
                                       MonstersDisableMethods.extrusion_by_people_with_abilities,
-                                      MonstersDisableMethods.demon_killing_knife]
+                                      MonstersDisableMethods.demon_killing_knife,
+                                      MonstersDisableMethods.enochian_exorcism]
 
         self.shapeshifter = Monster("Shapeshifter", description="These creatures can transform themselves into "
                                                                 "other man or animals.",
@@ -525,7 +526,7 @@ class MonsterBase:
                                                   "When dying, they leave wing marks. To possess somebody, "
                                                   "they need a consent.",
                              episodes={"S04": [1, 2, 7, 9, 10, 15, 16, 18, 20, 21, 22],
-                                       "S05": [1, 2, 3, 4, 5, 8, 10, 12, 13, 14, 15, 16]})
+                                       "S05": [1, 2, 3, 4, 5, 8, 10, 12, 13, 14, 15, 16, 17]})
         self.angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                             MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion,
                             MonstersClues.leaves_burned_marks, MonstersClues.weird_electronics_behavior,
@@ -542,7 +543,8 @@ class MonsterBase:
 
                             MonstersClues.travels_as_white_fog]
         self.angel.disable_methods = [MonstersDisableMethods.symbol_made_with_blood_against_angels,
-                                      MonstersDisableMethods.exorcism_for_angels, MonstersDisableMethods.holy_oil]
+                                      MonstersDisableMethods.exorcism_for_angels, MonstersDisableMethods.holy_oil,
+                                      MonstersDisableMethods.enochian_spell]
         self.angel.kill_methods = [MonstersKillMethods.angel_blade, MonstersKillMethods.holy_oil,
 
                                    MonstersKillMethods.will_of_an_archangel, MonstersKillMethods.will_of_prince_of_hell,
@@ -794,7 +796,20 @@ class MonsterBase:
                                                                 "that God talks to.", episodes={"S05": [16]})
         self.angel_joshua.clues = [MonstersClues.can_read_peoples_minds, MonstersClues.can_bring_back_dead_people]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S05": [16]})
+        self.false_prophet = Monster("False Prophet", description="False Prophet rises, when Lucifer walks the Earth. "
+                                                                  "Book of Revelations calls her "
+                                                                  "'The Whore of Babylon'. Her goal is to drag as many "
+                                                                  "souls to Hell as possible. Can only be killed "
+                                                                  "by a true servant of heaven "
+                                                                  "(like a devoted priest).",
+                                     episodes={"S05": [17]})
+        self.false_prophet.clues = [MonstersClues.can_read_peoples_minds, MonstersClues.can_control_demons,
+                                    MonstersClues.can_take_form_of_other_people, MonstersClues.can_see_future,
+                                    MonstersClues.visions, MonstersClues.telekinesis,
+                                    MonstersClues.real_appearance_can_be_seen_in_a_reflection]
+        self.false_prophet.kill_methods = [MonstersKillMethods.stake_made_from_cypress_tree_in_babylon]
+
+        self.unknown = Monster("Unknown", description="", episodes={"S05": [17]})
         self.unknown.clues = []
 
 
