@@ -125,8 +125,7 @@ class MonsterBase:
                                       MonstersDisableMethods.witch_spell_to_get_a_demon_out_of_the_body,
                                       MonstersDisableMethods.salt_or_salted_bullets,
                                       MonstersDisableMethods.extrusion_by_people_with_abilities,
-                                      MonstersDisableMethods.demon_killing_knife,
-                                      MonstersDisableMethods.enochian_exorcism]
+                                      MonstersDisableMethods.demon_killing_knife]
 
         self.shapeshifter = Monster("Shapeshifter", description="These creatures can transform themselves into "
                                                                 "other man or animals.",
