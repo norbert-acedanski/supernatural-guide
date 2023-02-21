@@ -123,6 +123,11 @@ class ObjectsBase:
         self.human_soul = Object("Human soul", description="As an object is very bright. Can be collected of a person.",
                                  episodes={"S05": [14]})
 
+        self.ring_of_famine = Object("Ring of Famine", description="Can give people starving sensation "
+                                                                   "for things they lack/desire.",
+                                     episodes={"S05": [14]})
+        self.ring_of_famine.abilities = [ObjectAbilities.can_give_incredible_starving_sensation_for_something]
+
         self.archangel_blade = Object("Archangel blade", description="A triangular, silvery blade, "
                                                                      "that each archangel has.", episodes={"S05": [19]})
         self.archangel_blade.abilities = [ObjectAbilities.can_kill_archangels]
