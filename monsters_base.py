@@ -105,7 +105,7 @@ class MonsterBase:
         self.demon = Monster("Demon", description="In every religion there is information about demonic possessions. "
                                                   "Demons are man that were stuck in hell for a long time.",
                              episodes={"S01": [4, 21, 22], "S02": [1, 14], "S03": [1, 2, 4, 12, 15, 16],
-                                       "S04": [1, 4, 9, 10, 20, 21, 22], "S05": [1, 6, 10, 12, 14, 17]})
+                                       "S04": [1, 4, 9, 10, 20, 21, 22], "S05": [1, 6, 10, 12, 14, 17, 20]})
         self.demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                             MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                             MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -297,17 +297,17 @@ class MonsterBase:
         self.hell_hound = Monster("Hell Hound", description="Creation of God, but they were too vicious, "
                                                             "so God kept them short. "
                                                             "Now they hunt people that sold their souls.",
-                                  episodes={"S02": [8], "S03": [16], "S05": [10]})
+                                  episodes={"S02": [8], "S03": [16], "S05": [10, 20]})
         self.hell_hound.clues = [MonstersClues.victims_hear_dogs_barking_and_growling, MonstersClues.invisible_dogs,
                                  MonstersClues.victims_see_black_dogs, MonstersClues.people_seeing_strange_things,
                                  MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
                                  MonstersClues.people_dead_weirdly, MonstersClues.animal_like_attack,
                                  MonstersClues.black_blood]
-        self.hell_hound.kill_methods = [MonstersKillMethods.demon_killing_knife, MonstersKillMethods.angel_sword,
-                                        MonstersKillMethods.colt_of_colt_with_magic_bullets]
         self.hell_hound.disable_methods = [MonstersDisableMethods.goofer_dust, MonstersDisableMethods.devils_shoestring,
                                            MonstersDisableMethods.demon_must_call_it_off,
                                            MonstersDisableMethods.salt_or_salted_bullets]
+        self.hell_hound.kill_methods = [MonstersKillMethods.demon_killing_knife, MonstersKillMethods.angel_sword,
+                                        MonstersKillMethods.colt_of_colt_with_magic_bullets]
 
         self.crossroads_demon = Monster("Crossroads demon", description="One can make a deal with that demon. "
                                                                         "Can give anything, but will collect ones soul "
@@ -735,10 +735,12 @@ class MonsterBase:
 
         self.demon_crowley = Monster("Demon - Crowley", description="Crossroads demon in S05. "
                                                                     "King of Hell in further season.",
-                                     episodes={"S05": [10]})
+                                     episodes={"S05": [10, 20]})
         self.demon_crowley.clues = [MonstersClues.can_vanish, MonstersClues.pact_sealed_with_a_kiss,
                                     MonstersClues.summoned_by_placing_box_in_the_crossroads, MonstersClues.telekinesis,
                                     MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
+                                    MonstersClues.can_appear_out_of_thin_air,
+                                    MonstersClues.weird_fire_spontaneous_combustion,
 
                                     MonstersClues.black_blood, MonstersClues.burned_by_holy_water,
                                     MonstersClues.travels_as_red_fog, MonstersClues.red_eyes]
@@ -876,11 +878,8 @@ class MonsterBase:
                                            episodes={"S05": [19]})
         self.horseman_pestilence.clues = [MonstersClues.general_sickness, MonstersClues.increased_pest_activity]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S05": [19]})
-        self.unknown.clues = [MonstersClues.weird_plant_deaths_or_behavior, MonstersClues.weird_things_behavior,
-                              MonstersClues.people_dead_weirdly, MonstersClues.can_appear_out_of_thin_air,
-                              MonstersClues.people_seeing_strange_things, MonstersClues.moves_fast,
-                              MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area]
+        self.unknown = Monster("Unknown", description="", episodes={"S05": [20]})
+        self.unknown.clues = [MonstersClues.general_sickness]
 
 
 
