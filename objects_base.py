@@ -155,6 +155,28 @@ class ObjectsBase:
                                                  episodes={"S05": [22]})
         self.combined_rings_of_horseman.abilities = [ObjectAbilities.can_open_lucifers_cage_with_a_spell]
 
+        # ---------------------------------------------- ALL EPISODES DONE ---------------------------------------------
+
+        # SEASON 6:
+
+        # SEASON 7:
+
+        # SEASON 8:
+
+        # SEASON 9:
+
+        # SEASON 10:
+
+        # SEASON 11:
+
+        # SEASON 12:
+
+        # SEASON 13:
+
+        # SEASON 14:
+
+        # SEASON 15:
+
         self.objects = [obj for obj in self.__dict__.values() if isinstance(obj, Object)]
 
     def print_objects_names(self):
