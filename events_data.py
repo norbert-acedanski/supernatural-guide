@@ -7,6 +7,7 @@ class EventClues:
     fifteen_fishing_man_blind = "15 fishing man blind"
     somebody_killing_66_children = "somebody killing 66 children"
     last_seal = "last seal - killing Lucifer's first (Lilith) at St. Mary's convent. Ilchester, Maryland"
+    biblical_like_events = "biblical-like events (storms, diseases, plagues, power losses)"
 
 
 class EventDisableMethods:

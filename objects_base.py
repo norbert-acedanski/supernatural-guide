@@ -24,8 +24,10 @@ class ObjectsBase:
         self.colt_of_colt = Object("Colt of Colt", description="Colt made by Samuel Colt in 1835, when Halley's Comet "
                                                                "was overhead and the same night those men died "
                                                                "at the Alamo. He made it for a hunter along with "
-                                                               "13 bullets. Bullets can be crafted for this gun.",
-                                   episodes={"S01": [20, 21, 22], "S02": [1, 22], "S03": [4, 5, 9]})
+                                                               "13 bullets. Bullets can be crafted for this gun. "
+                                                               "Can kill everything in all creation except 5 entities: "
+                                                               "Archangel Lucyfer, unknown 4 left.",
+                                   episodes={"S01": [20, 21, 22], "S02": [1, 22], "S03": [4, 5, 9], "S05": [10]})
         self.colt_of_colt.abilities = [ObjectAbilities.can_kill_anything]
 
         # ---------------------------------------------- ALL EPISODES DONE ---------------------------------------------
@@ -44,7 +46,8 @@ class ObjectsBase:
         self.demon_killing_knife = Object("Demon killing knife", description="Can literally kill demons, "
                                                                              "not get them back to hell. "
                                                                              "Cannot kill certain kinds of demons.",
-                                          episodes={"S03": [1, 9, 16], "S04": [1, 9, 20, 22]})
+                                          episodes={"S03": [1, 9, 16], "S04": [1, 9, 20, 22],
+                                                    "S05": [1, 10, 14, 17, 20, 21, 22]})
         self.demon_killing_knife.abilities = [ObjectAbilities.can_kill_demons, ObjectAbilities.cannot_kill_angels]
 
         self.lucky_rabbits_foot = Object("Lucky rabbits foot",
@@ -71,7 +74,7 @@ class ObjectsBase:
         self.sigil_against_angels = Object("Sigil against angels", description="Sigil made with blood, that can send "
                                                                                "angels back to heaven. Can be used to "
                                                                                "send back a specific angel type.",
-                                           episodes={"S04": [10, 22]})
+                                           episodes={"S04": [10, 22], "S05": [13, 18]})
         self.sigil_against_angels.abilities = [ObjectAbilities.can_send_angels_back_to_heaven]
 
         self.angel_grace = Object("Angel grace", description="A power source for an angel", episodes={"S04": [10]})
@@ -89,16 +92,68 @@ class ObjectsBase:
         self.angel_protection_sigil.abilities = [ObjectAbilities.angels_cant_get_past_it]
 
         self.angel_blade = Object("Angel blade", description="A triangular, silvery blade, that each angel has.",
-                                  episodes={"S04": [16]})
+                                  episodes={"S04": [16], "S05": [1, 13, 18]})
         self.angel_blade.abilities = [ObjectAbilities.can_kill_angels]
 
         self.lucifers_cage = Object("Lucifer's Cage", description="A prison build specifically to contain archangelic "
-                                                                  "powers (not seen yet).")
+                                                                  "powers (not seen yet). Can be opened with all "
+                                                                  "4 rings of the horseman.")
         self.lucifers_cage.abilities = [ObjectAbilities.traps_an_archangel]
 
         # ---------------------------------------------- ALL EPISODES DONE ---------------------------------------------
 
         # SEASON 5:
+
+        self.sword_of_archangel_michael = Object("Sword of Archangel Michael", description="A vessel, that Archangel "
+                                                                                           "Michael possesses - a very "
+                                                                                           "special person, that can "
+                                                                                           "hold archangels power.",
+                                                 episodes={"S05": [1]})
+
+        self.enochian_sigil = Object("Enochian Sigil", description="Hides from every angel in creation "
+                                                                   "(archangels included).", episodes={"S05": [1, 2]})
+        self.enochian_sigil.abilities = [ObjectAbilities.hides_a_person_from_all_angels]
+
+        self.magic_amulet = Object("Magic Amulet", description="It burns hot in God's presence. It is an Amulet, "
+                                                               "that Sam gave Dean, when they were kids.",
+                                   episodes={"S03": [8], "S05": [2, 16]})
+
+        self.ring_of_war = Object("Ring of War", description="Can give people hallucinations. One of the four rings "
+                                                             "of the Horseman.", episodes={"S05": [2]})
+        self.ring_of_war.abilities = [ObjectAbilities.can_give_hallucinations]
+
+        self.human_soul = Object("Human soul", description="As an object is very bright. Can be collected of a person.",
+                                 episodes={"S05": [14]})
+
+        self.ring_of_famine = Object("Ring of Famine", description="Can give people starving sensation "
+                                                                   "for things they lack/desire. One of the four rings "
+                                                                   "of the Horseman.",
+                                     episodes={"S05": [14]})
+        self.ring_of_famine.abilities = [ObjectAbilities.can_give_incredible_starving_sensation_for_something]
+
+        self.archangel_blade = Object("Archangel blade", description="A triangular, silvery blade, "
+                                                                     "that each archangel has.", episodes={"S05": [19]})
+        self.archangel_blade.abilities = [ObjectAbilities.can_kill_archangels]
+
+        self.ring_of_pestilence = Object("Ring of Pestilence", description="Can give people diseases of any kind. "
+                                                                           "One of the four rings of the Horseman.",
+                                         episodes={"S05": [19, 21]})
+        self.ring_of_pestilence.abilities = [ObjectAbilities.can_give_incredible_starving_sensation_for_something]
+
+        self.ring_of_death = Object("Ring of Death", description="Can kill anyone. One of the four rings "
+                                                                 "of the Horseman.",
+                                    episodes={"S05": [21]})
+        self.ring_of_death.abilities = [ObjectAbilities.can_give_incredible_starving_sensation_for_something]
+
+        self.scythe_of_death = Object("Scythe of Death", description="A weapon used to kill people, demons, "
+                                                                     "angels, reapers, etc.", episodes={"S05": [21]})
+        self.scythe_of_death.abilities = [ObjectAbilities.can_kill_demons, ObjectAbilities.can_kill_demons,
+                                          ObjectAbilities.can_kill_reapers]
+
+        self.combined_rings_of_horseman = Object("Combined rings of Horseman",
+                                                 description="All four rings combined into a key to Lucifer's cage.",
+                                                 episodes={"S05": [22]})
+        self.combined_rings_of_horseman.abilities = [ObjectAbilities.can_open_lucifers_cage_with_a_spell]
 
         self.objects = [obj for obj in self.__dict__.values() if isinstance(obj, Object)]
 

@@ -8,3 +8,5 @@ class PlaceClues:
     different_history = "different history"
     different_memories = "different memories"
     strange_feeling_that_things_should_be_different = "strange feeling that things should be different"
+    good_memories_relived = "good memories relived"
+    changing_scenery = "changing scenery"

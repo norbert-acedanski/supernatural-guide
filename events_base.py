@@ -12,13 +12,15 @@ class EventsBase:
         self.apocalypse = Event("Apocalypse", description="Apocalypse is an event, that can be brought by breaking any "
                                                           "66 seals of possible 600 of them. When 66 seals are broken, "
                                                           "Lucyfer is released from his cage. The first seal is broken "
-                                                          "when a righteous man sheds blood in Hell. "
-                                                          "The last seal is the first created demon's death.",
-                                episodes={"S04": [2, 7, 9, 15, 16, 21, 22]})
+                                                          "when a righteous man sheds blood in Hell. The last seal "
+                                                          "is the first created demon's death. After Lucifer "
+                                                          "is released, four horseman also come to earth.",
+                                episodes={"S04": [2, 7, 9, 15, 16, 21, 22], "S05": [1, 2, 4]})
         self.apocalypse.clues = [EventClues.first_seal, EventClues.rise_of_the_witnesses,
                                  EventClues.summoning_of_samhain, EventClues.rippers_killed_under_the_solstice_moon,
                                  EventClues.ten_extinct_species_in_one_day, EventClues.fifteen_fishing_man_blind,
-                                 EventClues.somebody_killing_66_children, EventClues.last_seal]
+                                 EventClues.somebody_killing_66_children, EventClues.last_seal,
+                                 EventClues.biblical_like_events]
         self.disable_methods = [EventDisableMethods.prevent_all_seals_from_being_broken]
 
         self.events = [event for event in self.__dict__.values() if isinstance(event, Event)]
