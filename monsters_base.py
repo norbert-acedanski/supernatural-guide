@@ -105,7 +105,7 @@ class MonsterBase:
         self.demon = Monster("Demon", description="In every religion there is information about demonic possessions. "
                                                   "Demons are man that were stuck in hell for a long time.",
                              episodes={"S01": [4, 21, 22], "S02": [1, 14], "S03": [1, 2, 4, 12, 15, 16],
-                                       "S04": [1, 4, 9, 10, 20, 21, 22], "S05": [1, 6, 10, 12, 14, 17, 20]})
+                                       "S04": [1, 4, 9, 10, 20, 21, 22], "S05": [1, 6, 10, 12, 14, 17, 20, 21]})
         self.demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                             MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                             MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -170,7 +170,7 @@ class MonsterBase:
         self.reaper = Monster("Reaper", description="Can give and take life. Can also transfer illnesses of people. "
                                                     "When gone, people are not dying. "
                                                     "When a reaper dies, there are electrical storms.",
-                              episodes={"S01": [12], "S02": [1], "S04": [15], "S05": [10]})
+                              episodes={"S01": [12], "S02": [1], "S04": [15], "S05": [10, 21]})
         self.reaper.clues = [MonstersClues.people_dead_weirdly, MonstersClues.people_cured_miraculously,
                              MonstersClues.weird_things_behavior, MonstersClues.people_seeing_things_or_figures,
                              MonstersClues.seen_as_a_person_in_a_suit, MonstersClues.ghost_like_creature,
@@ -527,7 +527,7 @@ class MonsterBase:
                                                   "When dying, a bright light is produced and they leave wing marks. "
                                                   "To possess somebody, they need a consent.",
                              episodes={"S04": [1, 2, 7, 9, 10, 15, 16, 18, 20, 21, 22],
-                                       "S05": [1, 2, 3, 4, 5, 8, 10, 12, 13, 14, 15, 16, 17, 18]})
+                                       "S05": [1, 2, 3, 4, 5, 8, 10, 12, 13, 14, 15, 16, 17, 18, 21]})
         self.angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                             MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion,
                             MonstersClues.leaves_burned_marks, MonstersClues.weird_electronics_behavior,
@@ -687,7 +687,8 @@ class MonsterBase:
 
         self.god = Monster("THE God", description="The light, the beginning of everything. "
                                                   "Brother of the Darkness. A being with almost unlimited power. "
-                                                  "Only mentioned for now.")
+                                                  "Only mentioned for now. According to Death - he will die too "
+                                                  "some day by Death's hand (S05E21).")
         self.god.clues = [MonstersClues.can_bring_back_dead_angels, MonstersClues.can_teleport_people,
                           MonstersClues.shining_of_magic_amulet]
         self.god.kill_methods = [
@@ -734,7 +735,7 @@ class MonsterBase:
 
         self.demon_crowley = Monster("Demon - Crowley", description="Crossroads demon in S05. "
                                                                     "King of Hell in further season.",
-                                     episodes={"S05": [10, 20]})
+                                     episodes={"S05": [10, 20, 21]})
         self.demon_crowley.clues = [MonstersClues.can_vanish, MonstersClues.pact_sealed_with_a_kiss,
                                     MonstersClues.summoned_by_placing_box_in_the_crossroads, MonstersClues.telekinesis,
                                     MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
@@ -748,9 +749,10 @@ class MonsterBase:
         self.reaper_death = Monster("Reaper - Death", description="One of the Horseman, the pale rider. "
                                                                   "Angel of Death. Can be brought to the Earth "
                                                                   "at midnight through a place of awful carnage. "
-                                                                  "Not seen, only summoned in S05E10 and his actions "
-                                                                  "seen in S05E15.")
-        self.reaper_death.clues = [MonstersClues.number_of_reapers_appearing, MonstersClues.can_bring_back_dead_people]
+                                                                  "Summoned in S05E10 and his actions seen in S05E15.",
+                                    episodes={"S05": [21]})
+        self.reaper_death.clues = [MonstersClues.number_of_reapers_appearing, MonstersClues.can_bring_back_dead_people,
+                                   MonstersClues.can_kill_people_with_a_thought, MonstersClues.people_dead_weirdly]
         self.reaper_death.kill_methods = [
 
                                           MonstersKillMethods.scythe_of_death]
@@ -874,11 +876,12 @@ class MonsterBase:
 
         self.horseman_pestilence = Monster("Horseman Pestilence", description="One of the horseman, "
                                                                               "that brings disease and pests.",
-                                           episodes={"S05": [19]})
-        self.horseman_pestilence.clues = [MonstersClues.general_sickness, MonstersClues.increased_pest_activity]
+                                           episodes={"S05": [19, 21]})
+        self.horseman_pestilence.clues = [MonstersClues.general_sickness, MonstersClues.increased_pest_activity,
+                                          MonstersClues.weird_electronics_behavior]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S05": [20]})
-        self.unknown.clues = [MonstersClues.general_sickness]
+        self.unknown = Monster("Unknown", description="", episodes={"S05": [21]})
+        self.unknown.clues = []
 
 
 

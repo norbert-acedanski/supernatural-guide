@@ -212,6 +212,7 @@ class MonstersClues:
     can_erase_and_bring_back_memories = "can erase and bring back memories"
     can_exorcise_demons_with_a_thought = "can exorcise demons with a thought"
     can_kill_angels_with_a_touch = "can kill angels with a touch"
+    can_kill_people_with_a_thought = "can_kill people with a thought"
     can_appear_as_an_elephant = "can appear as an elephant"
     people_with_souls_switched = "people with souls switched"
     demon_killing_knife_is_ineffective = "demon killing knife is ineffective"
