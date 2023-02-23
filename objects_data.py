@@ -2,6 +2,7 @@ class ObjectAbilities:
     can_kill_anything = "can kill anything"
     unables_possessions = "unables possessions"
     can_kill_demons = "can kill demons"
+    can_kill_reapers = "can kill reapers"
     grants_incredible_luck = "grants incredible luck"
     can_make_a_person_sleep_for_days = "can make a person sleep for days"
     brings_back_dreams_for_those_that_dont_have_them = "brings back dreams for those that dont have them"

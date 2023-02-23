@@ -47,7 +47,7 @@ class ObjectsBase:
                                                                              "not get them back to hell. "
                                                                              "Cannot kill certain kinds of demons.",
                                           episodes={"S03": [1, 9, 16], "S04": [1, 9, 20, 22],
-                                                    "S05": [1, 10, 14, 17, 20]})
+                                                    "S05": [1, 10, 14, 17, 20, 21]})
         self.demon_killing_knife.abilities = [ObjectAbilities.can_kill_demons, ObjectAbilities.cannot_kill_angels]
 
         self.lucky_rabbits_foot = Object("Lucky rabbits foot",
@@ -118,20 +118,37 @@ class ObjectsBase:
                                                                "that Sam gave Dean, when they were kids.",
                                    episodes={"S03": [8], "S05": [2, 16]})
 
-        self.ring_of_war = Object("Ring of War", description="Can give people hallucinations", episodes={"S05": [2]})
+        self.ring_of_war = Object("Ring of War", description="Can give people hallucinations. One of the four rings "
+                                                             "of the Horseman.", episodes={"S05": [2]})
         self.ring_of_war.abilities = [ObjectAbilities.can_give_hallucinations]
 
         self.human_soul = Object("Human soul", description="As an object is very bright. Can be collected of a person.",
                                  episodes={"S05": [14]})
 
         self.ring_of_famine = Object("Ring of Famine", description="Can give people starving sensation "
-                                                                   "for things they lack/desire.",
+                                                                   "for things they lack/desire. One of the four rings "
+                                                                   "of the Horseman.",
                                      episodes={"S05": [14]})
         self.ring_of_famine.abilities = [ObjectAbilities.can_give_incredible_starving_sensation_for_something]
 
         self.archangel_blade = Object("Archangel blade", description="A triangular, silvery blade, "
                                                                      "that each archangel has.", episodes={"S05": [19]})
         self.archangel_blade.abilities = [ObjectAbilities.can_kill_archangels]
+
+        self.ring_of_pestilence = Object("Ring of Pestilence", description="Can give people diseases of any kind. "
+                                                                           "One of the four rings of the Horseman.",
+                                         episodes={"S05": [19, 21]})
+        self.ring_of_pestilence.abilities = [ObjectAbilities.can_give_incredible_starving_sensation_for_something]
+
+        self.ring_of_death = Object("Ring of Death", description="Can kill anyone. One of the four rings "
+                                                                 "of the Horseman.",
+                                    episodes={"S05": [21]})
+        self.ring_of_death.abilities = [ObjectAbilities.can_give_incredible_starving_sensation_for_something]
+
+        self.scythe_of_death = Object("Scythe of Death", description="A weapon used to kill people, demons, "
+                                                                     "angels, reapers, etc.", episodes={"S05": [21]})
+        self.scythe_of_death.abilities = [ObjectAbilities.can_kill_demons, ObjectAbilities.can_kill_demons,
+                                          ObjectAbilities.can_kill_reapers]
 
         self.objects = [obj for obj in self.__dict__.values() if isinstance(obj, Object)]
 
