@@ -21,6 +21,7 @@ class ObjectAbilities:
     hides_a_person_from_all_angels = "hides a person from all angels"
     can_give_hallucinations = "can give hallucinations"
     can_give_incredible_starving_sensation_for_something = "can give incredible starving sensation for something"
+    can_open_lucifers_cage_with_a_spell = "can open Lucifer's cage with a spell"
 
 
 class ObjectMaintenance:

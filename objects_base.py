@@ -47,7 +47,7 @@ class ObjectsBase:
                                                                              "not get them back to hell. "
                                                                              "Cannot kill certain kinds of demons.",
                                           episodes={"S03": [1, 9, 16], "S04": [1, 9, 20, 22],
-                                                    "S05": [1, 10, 14, 17, 20, 21]})
+                                                    "S05": [1, 10, 14, 17, 20, 21, 22]})
         self.demon_killing_knife.abilities = [ObjectAbilities.can_kill_demons, ObjectAbilities.cannot_kill_angels]
 
         self.lucky_rabbits_foot = Object("Lucky rabbits foot",
@@ -149,6 +149,11 @@ class ObjectsBase:
                                                                      "angels, reapers, etc.", episodes={"S05": [21]})
         self.scythe_of_death.abilities = [ObjectAbilities.can_kill_demons, ObjectAbilities.can_kill_demons,
                                           ObjectAbilities.can_kill_reapers]
+
+        self.combined_rings_of_horseman = Object("Combined rings of Horseman",
+                                                 description="All four rings combined into a key to Lucifer's cage.",
+                                                 episodes={"S05": [22]})
+        self.combined_rings_of_horseman.abilities = [ObjectAbilities.can_open_lucifers_cage_with_a_spell]
 
         self.objects = [obj for obj in self.__dict__.values() if isinstance(obj, Object)]
 
