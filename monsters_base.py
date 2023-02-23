@@ -105,7 +105,7 @@ class MonsterBase:
         self.demon = Monster("Demon", description="In every religion there is information about demonic possessions. "
                                                   "Demons are man that were stuck in hell for a long time.",
                              episodes={"S01": [4, 21, 22], "S02": [1, 14], "S03": [1, 2, 4, 12, 15, 16],
-                                       "S04": [1, 4, 9, 10, 20, 21, 22], "S05": [1, 6, 10, 12, 14, 17, 20, 21]})
+                                       "S04": [1, 4, 9, 10, 20, 21, 22], "S05": [1, 6, 10, 12, 14, 17, 20, 21, 22]})
         self.demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                             MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                             MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -189,7 +189,7 @@ class MonsterBase:
                                                          "With enough power, that person's eyes become black "
                                                          "as for a demon.",
                                              episodes={"S01": [14], "S02": [5, 10], "S03": [16],
-                                                       "S04": [1, 4, 7, 9, 15, 16, 18, 20, 21, 22], "S05": [14]})
+                                                       "S04": [1, 4, 7, 9, 15, 16, 18, 20, 21, 22], "S05": [14, 22]})
         self.people_with_abilities.clues = [MonstersClues.people_dead_weirdly, MonstersClues.weird_things_behavior,
                                             MonstersClues.telekinesis, MonstersClues.mind_control,
                                             MonstersClues.able_to_electrocute, MonstersClues.can_see_future,
@@ -527,7 +527,7 @@ class MonsterBase:
                                                   "When dying, a bright light is produced and they leave wing marks. "
                                                   "To possess somebody, they need a consent.",
                              episodes={"S04": [1, 2, 7, 9, 10, 15, 16, 18, 20, 21, 22],
-                                       "S05": [1, 2, 3, 4, 5, 8, 10, 12, 13, 14, 15, 16, 17, 18, 21]})
+                                       "S05": [1, 2, 3, 4, 5, 8, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22]})
         self.angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                             MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion,
                             MonstersClues.leaves_burned_marks, MonstersClues.weird_electronics_behavior,
@@ -615,7 +615,7 @@ class MonsterBase:
 
         self.prophet = Monster("Prophet of the Lord", description="A person that is gifted with the knowledge "
                                                                   "of the future.",
-                               episodes={"S04": [18, 22], "S05": [1, 9]})
+                               episodes={"S04": [18, 22], "S05": [1, 9, 22]})
         self.prophet.clues = [MonstersClues.can_see_future, MonstersClues.protected_by_an_archangel,
                               MonstersClues.visions]
 
@@ -635,18 +635,18 @@ class MonsterBase:
         self.archangel_lucyfer = Monster("Archangel - Lucyfer",
                                          description="Archangel, that disobeyed God when he requested to bow before "
                                                      "the men. To upset God he twisted one of the people into Lilith.",
-                                         episodes={"S04": [22], "S05": [1, 3, 4, 10, 19]})
+                                         episodes={"S04": [22], "S05": [1, 3, 4, 10, 19, 22]})
         self.archangel_lucyfer.clues = [MonstersClues.weird_things_behavior, MonstersClues.true_voice_can_hurt_people,
                                         MonstersClues.bright_light, MonstersClues.weird_weather, MonstersClues.visions,
                                         MonstersClues.people_seeing_strange_things, MonstersClues.biblical_like_events,
                                         MonstersClues.people_hear_voices, MonstersClues.can_read_peoples_minds,
-                                        MonstersClues.can_make_themselves_appear_as_they_like,
+                                        MonstersClues.can_make_themselves_appear_as_they_like, MonstersClues.cold_spots,
                                         MonstersClues.can_give_hallucinations, MonstersClues.can_vanish,
                                         MonstersClues.can_appear_out_of_thin_air, MonstersClues.revelation_omens,
                                         MonstersClues.
                                             missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                                         MonstersClues.immune_to_colt_of_colt, MonstersClues.flashing_lights,
-                                        MonstersClues.telekinesis,
+                                        MonstersClues.telekinesis, MonstersClues.temperature_fluctuations,
 
                                         MonstersClues.travels_as_white_fog,
                                         MonstersClues.people_burned_on_the_ceiling,
@@ -671,15 +671,16 @@ class MonsterBase:
                                                                             "(Sword of Archangel Michael) - for now, "
                                                                             "only mentioned in S05E01. "
                                                                             "Can kill other angels with a touch.",
-                                         episodes={"S05": [13, 18]})
+                                         episodes={"S05": [13, 18, 22]})
         self.archangel_michael.clues = [MonstersClues.can_put_a_person_to_sleep,
                                         MonstersClues.can_erase_and_bring_back_memories,
                                         MonstersClues.can_send_people_back_to_their_time,
                                         MonstersClues.can_kill_angels_with_a_touch,
 
                                         MonstersClues.travels_as_white_fog]
-        self.archangel_michael.disable_methods = [
+        self.archangel_michael.disable_methods = [MonstersDisableMethods.holy_oil,
                                                   MonstersDisableMethods.cage_of_lucyfer_in_hell,
+
                                                   MonstersDisableMethods.symbol_made_with_blood_against_angels]
         self.archangel_michael.kill_methods = [MonstersKillMethods.archangel_blade,
 
@@ -688,9 +689,10 @@ class MonsterBase:
         self.god = Monster("THE God", description="The light, the beginning of everything. "
                                                   "Brother of the Darkness. A being with almost unlimited power. "
                                                   "Only mentioned for now. According to Death - he will die too "
-                                                  "some day by Death's hand (S05E21).")
+                                                  "some day by Death's hand (S05E21). At the end of the S05E22 "
+                                                  "Chuck disappears, hinting he is THE God.")
         self.god.clues = [MonstersClues.can_bring_back_dead_angels, MonstersClues.can_teleport_people,
-                          MonstersClues.shining_of_magic_amulet]
+                          MonstersClues.shining_of_magic_amulet, MonstersClues.can_bring_back_angelic_grace]
         self.god.kill_methods = [
                                  MonstersKillMethods.the_darkness]
 
@@ -880,13 +882,12 @@ class MonsterBase:
         self.horseman_pestilence.clues = [MonstersClues.general_sickness, MonstersClues.increased_pest_activity,
                                           MonstersClues.weird_electronics_behavior]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S05": [21]})
-        self.unknown.clues = []
-
-
+        # ---------------------------------------------- ALL EPISODES DONE ---------------------------------------------
 
         # -------------------------------------------------- SEASON 6 --------------------------------------------------
 
+        self.unknown = Monster("Unknown", description="", episodes={"S05": [22]})
+        self.unknown.clues = []
 
 
         # -------------------------------------------------- SEASON 7 --------------------------------------------------

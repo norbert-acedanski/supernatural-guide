@@ -193,6 +193,7 @@ class MonstersClues:
     can_control_electronics = "can control electronics"
     can_bring_back_dead_people = "can bring back dead people"
     can_bring_back_dead_angels = "can bring back dead angels"
+    can_bring_back_angelic_grace = "can bring back angelic grace"
     can_summon_ghosts = "can summon ghosts"
     can_repair_human_body = "can repair human body"
     can_control_demons = "can control demons"
