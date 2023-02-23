@@ -104,7 +104,7 @@ class CursesBase:
                                          episodes={"S05": [12]})
         self.soul_swapping_spell.clues = [CursesClues.can_switch_souls_of_people]
 
-
+        # ---------------------------------------------- ALL EPISODES DONE ---------------------------------------------
 
         # SEASON 6:
 

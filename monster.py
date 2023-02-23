@@ -14,7 +14,7 @@ class Monster:
         self.cure_methods = None
 
     def print_name(self):
-        print(Colors.GREEN + "\n" + self.name + ":" + Colors.ENDC)
+        print(Colors.GREEN + f"\n{self.name}:" + Colors.ENDC)
 
     def print_description(self):
         if self.description is not None:
