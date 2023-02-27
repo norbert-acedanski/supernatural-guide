@@ -23,7 +23,8 @@ class MonsterBase:
                                       description="The oldest of old demons. One generation after Lilith. "
                                                   "They were turned by Lucyfer himself before the Atlantis drown. "
                                                   "They were trained to be demonic generals in the war against heaven.",
-                                      episodes={"S01": [1, 21, 22], "S02": [1, 21, 22], "S04": [3, 22]})
+                                      episodes={"S01": [1, 21, 22], "S02": [1, 21, 22], "S04": [3, 22], "S06": [1]})
+        # TODO: Check in which episodes does Azazel appear and check in which he dies (probably in S02E22)
         self.prince_of_hell.clues = [MonstersClues.people_burned_on_the_ceiling, MonstersClues.telekinesis,
                                      MonstersClues.weird_things_behavior, MonstersClues.yellow_eyes,
                                      MonstersClues.children_of_victims_that_died_on_the_ceiling_have_abilities,
@@ -394,11 +395,16 @@ class MonsterBase:
 
         self.jinn = Monster("Jinn", description="Mythical creatures, that feed on people. They have godlike power "
                                                 "and can shaper reality as they like. Usually reside in ruins - "
-                                                "the bigger, the better.",
-                            episodes={"S02": [20]})
+                                                "the bigger, the better. They poison people, who see nightmares or "
+                                                "paradise of theirs. The poison is transferred by touch. "
+                                                "It can be cured. Not all Jinn look different than humans, "
+                                                "some look just like regular people.",
+                            episodes={"S02": [20], "S06": [1]})
         self.jinn.clues = [MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                            MonstersClues.blue_eyes, MonstersClues.can_put_a_person_in_wonderland,
-                           MonstersClues.blue_fire_on_its_arms, MonstersClues.feeds_on_blood]
+                           MonstersClues.blue_fire_on_its_arms, MonstersClues.feeds_on_blood,
+                           MonstersClues.poisoned_people, MonstersClues.people_dead_weirdly,
+                           MonstersClues.seen_as_human_when_not_feeding, MonstersClues.people_seeing_strange_things]
         self.jinn.kill_methods = [MonstersKillMethods.silver_knife_dipped_in_lambs_blood]
 
         self.acheri = Monster("Acheri", description="Demon, that disguises itself as a little girl.",
@@ -434,7 +440,7 @@ class MonsterBase:
         self.changeling.clues = [MonstersClues.weird_things_behavior, MonstersClues.babies_or_children_acting_weirdly,
                                  MonstersClues.missing_or_dead_people_regularly_in_the_same_area,
                                  MonstersClues.bite_marks_on_peoples_necks, MonstersClues.people_dead_weirdly,
-                                 MonstersClues.feeding_at_night, MonstersClues.may_leave_marks_on_windows,
+                                 MonstersClues.feeding_at_night, MonstersClues.may_leave_claw_marks,
                                  MonstersClues.real_appearance_can_be_seen_in_a_reflection]
         self.changeling.kill_methods = [MonstersKillMethods.burn_it]
 
@@ -882,12 +888,16 @@ class MonsterBase:
         self.horseman_pestilence.clues = [MonstersClues.general_sickness, MonstersClues.increased_pest_activity,
                                           MonstersClues.weird_electronics_behavior]
 
+        self.soulless_person = Monster("Soulless person", description="A person without a soul - only the 'meatsuit'.",
+                                       episodes={"S05": [21], "S06": [1]})
+        self.soulless_person.clues = [MonstersClues.people_acting_weirdly]
+
         # ---------------------------------------------- ALL EPISODES DONE ---------------------------------------------
 
         # -------------------------------------------------- SEASON 6 --------------------------------------------------
 
-        self.unknown = Monster("Unknown", description="", episodes={"S05": [22]})
-        self.unknown.clues = []
+        self.unknown = Monster("Unknown", description="", episodes={"S06": [1]})
+        self.unknown.clues = [MonstersClues.poisoned_people, MonstersClues.people_seeing_strange_things]
 
 
         # -------------------------------------------------- SEASON 7 --------------------------------------------------
