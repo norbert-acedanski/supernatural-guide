@@ -74,7 +74,7 @@ class ObjectsBase:
         self.sigil_against_angels = Object("Sigil against angels", description="Sigil made with blood, that can send "
                                                                                "angels back to heaven. Can be used to "
                                                                                "send back a specific angel type.",
-                                           episodes={"S04": [10, 22], "S05": [13, 18]})
+                                           episodes={"S04": [10, 22], "S05": [13, 18], "S06": [3]})
         self.sigil_against_angels.abilities = [ObjectAbilities.can_send_angels_back_to_heaven]
 
         self.angel_grace = Object("Angel grace", description="A power source for an angel", episodes={"S04": [10]})
