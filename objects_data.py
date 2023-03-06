@@ -13,6 +13,8 @@ class ObjectAbilities:
     can_give_hallucinations = "can give hallucinations"
     can_give_incredible_starving_sensation_for_something = "can give incredible starving sensation for something"
     can_open_lucifers_cage_with_a_spell = "can open Lucifer's cage with a spell"
+    can_cause_egyptian_plague_like_events = "can cause egyptian plague like events"
+    can_turn_a_person_into_a_pillar_of_salt = "can turn a person into a pillar of salt"
     unables_possessions = "unables possessions"
     grants_incredible_luck = "grants incredible luck"
     brings_back_dreams_for_those_that_dont_have_them = "brings back dreams for those that dont have them"

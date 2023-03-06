@@ -92,7 +92,7 @@ class ObjectsBase:
         self.angel_protection_sigil.abilities = [ObjectAbilities.angels_cant_get_past_it]
 
         self.angel_blade = Object("Angel blade", description="A triangular, silvery blade, that each angel has.",
-                                  episodes={"S04": [16], "S05": [1, 13, 18]})
+                                  episodes={"S04": [16], "S05": [1, 13, 18], "S06": [3]})
         self.angel_blade.abilities = [ObjectAbilities.can_kill_angels]
 
         self.lucifers_cage = Object("Lucifer's Cage", description="A prison build specifically to contain archangelic "
@@ -158,6 +158,15 @@ class ObjectsBase:
         # ---------------------------------------------- ALL EPISODES DONE ---------------------------------------------
 
         # SEASON 6:
+
+        self.staff_of_moses = Object("Staff of Moses", description="Can cause Egyptian plagues", episodes={"S06": [3]})
+        self.staff_of_moses.abilities = [ObjectAbilities.can_cause_egyptian_plague_like_events]
+
+        self.heavens_cristal = Object("Heavens Cristal", description="Crystal, that when used at someone "
+                                                                     "(has to be looked at) will turn that person "
+                                                                     "into a pillar of salt (like what happened to "
+                                                                     "Lot's wife).", episodes={"S06": [3]})
+        self.heavens_cristal.abilities = [ObjectAbilities.can_turn_a_person_into_a_pillar_of_salt]
 
         # SEASON 7:
 
