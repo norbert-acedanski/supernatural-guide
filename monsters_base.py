@@ -129,13 +129,16 @@ class MonsterBase:
                                       MonstersDisableMethods.demon_killing_knife]
 
         self.shapeshifter = Monster("Shapeshifter", description="These creatures can transform themselves into "
-                                                                "other man or animals.",
-                                    episodes={"S01": [6], "S02": [12], "S04": [5]})
+                                                                "other man or animals. Can mate with humans to produce "
+                                                                "Shapeshifter offspring.",
+                                    episodes={"S01": [6], "S02": [12], "S04": [5], "S05": [2]})
         self.shapeshifter.clues = [MonstersClues.can_take_form_of_other_people, MonstersClues.skin_left_behind,
                                    MonstersClues.being_at_two_places_at_once, MonstersClues.bright_eyes,
                                    MonstersClues.weird_animal_behavior, MonstersClues.can_copy_memories_of_other_people,
                                    MonstersClues.people_dead_weirdly, MonstersClues.strange_different_things_happening,
-                                   MonstersClues.can_make_themselves_appear_as_they_like]
+                                   MonstersClues.can_make_themselves_appear_as_they_like, MonstersClues.no_emf,
+                                   MonstersClues.no_sulfur, MonstersClues.silver_burns_its_skin,
+                                   MonstersClues.missing_or_dead_people_regularly_in_the_same_area]
         self.shapeshifter.kill_methods = [MonstersKillMethods.silver_bullet_into_the_heart,
                                           MonstersKillMethods.silver_blade]
 
@@ -889,15 +892,30 @@ class MonsterBase:
                                           MonstersClues.weird_electronics_behavior]
 
         self.soulless_person = Monster("Soulless person", description="A person without a soul - only the 'meatsuit'.",
-                                       episodes={"S05": [21], "S06": [1]})
+                                       episodes={"S05": [21], "S06": [1, 2]})
         self.soulless_person.clues = [MonstersClues.people_acting_weirdly]
 
         # ---------------------------------------------- ALL EPISODES DONE ---------------------------------------------
 
         # -------------------------------------------------- SEASON 6 --------------------------------------------------
 
-        self.unknown = Monster("Unknown", description="", episodes={"S06": [1]})
-        self.unknown.clues = [MonstersClues.poisoned_people, MonstersClues.people_seeing_strange_things]
+        self.alpha_shapeshifter = Monster("Alpha Shapeshifter", description="First of it's kind. Does not shed "
+                                                                            "it's skin to change into other people. "
+                                                                            "There is a connection between it "
+                                                                            "and it's babies. Even an elephant "
+                                                                            "tranquilizes does not affect it "
+                                                                            "long enough.",
+                                          episodes={"S05": [2]})
+        self.alpha_shapeshifter.clues = [MonstersClues.people_dead_weirdly, MonstersClues.no_sulfur,
+                                         MonstersClues.missing_babies, MonstersClues.moves_fast, MonstersClues.no_emf,
+                                         MonstersClues.high_strength, MonstersClues.silver_does_not_affect_it,
+                                         MonstersClues.can_make_themselves_appear_as_they_like,
+                                         MonstersClues.missing_or_dead_people_regularly_in_the_same_area]
+
+        self.unknown = Monster("Unknown", description="", episodes={"S06": [2]})
+        self.unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.no_sulfur, MonstersClues.bright_eyes,
+                              MonstersClues.no_emf, MonstersClues.missing_babies, MonstersClues.silver_burns_its_skin,
+                              MonstersClues.missing_or_dead_people_regularly_in_the_same_area, MonstersClues.moves_fast]
 
 
         # -------------------------------------------------- SEASON 7 --------------------------------------------------

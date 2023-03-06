@@ -70,6 +70,7 @@ class MonstersClues:
     missing_body = "missing body/bodies (sometimes from the cemetery)"
     missing_organs = "missing organs"
     missing_heart = "missing heart"
+    missing_babies = "missing babies"
     no_missing_heart = "no missing heart"
     murders_during_full_moon_week = "murders during full moon week"
     moves_fast = "moves fast"
