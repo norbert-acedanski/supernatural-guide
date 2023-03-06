@@ -108,7 +108,12 @@ class CursesBase:
 
         # SEASON 6:
 
-
+        self.angel_tracking_spell = Curse("Angel tracking spell", description="Spell, that allows to track an angel. "
+                                                                              "Is performed with a myrrh, human blood "
+                                                                              "and a drawn symbol. "
+                                                                              "An enochian spell is then said with "
+                                                                              "holy water put in the bowl.",
+                                          episodes={"S06": [3]})
 
         # SEASON 7:
 
