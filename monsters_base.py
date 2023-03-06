@@ -536,7 +536,7 @@ class MonsterBase:
                                                   "When dying, a bright light is produced and they leave wing marks. "
                                                   "To possess somebody, they need a consent.",
                              episodes={"S04": [1, 2, 7, 9, 10, 15, 16, 18, 20, 21, 22],
-                                       "S05": [1, 2, 3, 4, 5, 8, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22]})
+                                       "S05": [1, 2, 3, 4, 5, 8, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22], "S06": [3]})
         self.angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                             MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion,
                             MonstersClues.leaves_burned_marks, MonstersClues.weird_electronics_behavior,
@@ -717,7 +717,7 @@ class MonsterBase:
         self.horseman_war.disable_methods = [MonstersDisableMethods.demon_killing_knife]
 
         self.archangel_raphael = Monster("Archangel Raphael", description="One of the Archangels of God.",
-                                         episodes={"S05": [3]})
+                                         episodes={"S05": [3], "S06": [3]})
         self.archangel_raphael.clues = [MonstersClues.bright_light, MonstersClues.invulnerable]
         self.archangel_raphael.disable_methods = [MonstersDisableMethods.holy_oil]
         self.archangel_raphael.kill_methods = [MonstersKillMethods.archangel_blade]
@@ -892,8 +892,8 @@ class MonsterBase:
                                           MonstersClues.weird_electronics_behavior]
 
         self.soulless_person = Monster("Soulless person", description="A person without a soul - only the 'meatsuit'.",
-                                       episodes={"S05": [21], "S06": [1, 2]})
-        self.soulless_person.clues = [MonstersClues.people_acting_weirdly]
+                                       episodes={"S05": [21], "S06": [1, 2, 3]})
+        self.soulless_person.clues = [MonstersClues.people_acting_weirdly, MonstersClues.lack_of_empathy]
 
         # ---------------------------------------------- ALL EPISODES DONE ---------------------------------------------
 
@@ -912,10 +912,16 @@ class MonsterBase:
                                          MonstersClues.can_make_themselves_appear_as_they_like,
                                          MonstersClues.missing_or_dead_people_regularly_in_the_same_area]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S06": [2]})
-        self.unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.no_sulfur, MonstersClues.bright_eyes,
-                              MonstersClues.no_emf, MonstersClues.missing_babies, MonstersClues.silver_burns_its_skin,
-                              MonstersClues.missing_or_dead_people_regularly_in_the_same_area, MonstersClues.moves_fast]
+        self.angel_balthazar = Monster("Angel Balthazar", description="Angel, that stole a lot of angel weapons "
+                                                                      "after the Apocalypse was canceled.",
+                                       episodes={"S06": [3]})
+        self.angel_balthazar.clues = [MonstersClues.can_vanish, MonstersClues.can_appear_out_of_thin_air,
+                                      MonstersClues.marks_on_victims_souls]
+        self.angel_balthazar.disable_methods = [MonstersDisableMethods.holy_oil]
+
+        self.unknown = Monster("Unknown", description="", episodes={"S06": [3]})
+        self.unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.no_hex_bags,
+                              MonstersClues.weird_animal_behavior]
 
 
         # -------------------------------------------------- SEASON 7 --------------------------------------------------

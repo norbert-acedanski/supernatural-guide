@@ -135,6 +135,7 @@ class MonstersClues:
     bite_marks_on_peoples_necks = "bite marks on peoples necks"
     may_leave_claw_marks = "may leave claw marks"
     marks_on_victims_hearts = "marks on victims hearts"
+    marks_on_victims_souls = "marks on victims souls"
     leaves_burned_marks = "leaves burned marks"
     leaves_soulless_people_behind = "leaving soulless people behind"
     leaves_zombie_like_people_with_black_veins_around_neck = "leaves zombie-like people with black veins around neck"
@@ -167,6 +168,7 @@ class MonstersClues:
     invisible_dogs = "invisible dogs"
     goat_man = "goat-man"
     hex_bag_hidden_somewhere = "hex bag hidden somewhere"
+    no_hex_bags = "no hex bags"
     with_a_binding_link_exorcism_does_not_work = \
         "with a binding link (used for keeping demon inside a host) exorcism does not work"
     biblical_like_events = "biblical-like events (storms, diseases, plagues, power losses)"
@@ -256,6 +258,7 @@ class MonstersClues:
     naked_man = "naked man"
     general_sickness = "general sickness"
     increased_pest_activity = "increased pest activity"
+    lack_of_empathy = "lack of empathy"
 
 
 class MonstersKillMethods:
