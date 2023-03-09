@@ -52,7 +52,7 @@ class MonsterBase:
                                                    "they were killed by supernatural. Witnesses can be put to rest "
                                                    "by a special spell (has to be cast over an open fire).",
                                        episodes={"S01": [1, 3, 5, 7, 9, 10, 13, 19], "S02": [6, 11, 16, 18, 19],
-                                                 "S03": [5, 6, 13], "S04": [2, 13, 15, 17], "S05": [9, 11]})
+                                                 "S03": [5, 6, 13], "S04": [2, 13, 15, 17], "S05": [9, 11], "S06": [4]})
         self.vengeful_spirit.clues = [MonstersClues.
                                       missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                                       MonstersClues.people_dead_weirdly, MonstersClues.ghost_like_creature,
@@ -300,7 +300,7 @@ class MonsterBase:
         self.hell_hound = Monster("Hell Hound", description="Creation of God, but they were too vicious, "
                                                             "so God kept them short. "
                                                             "Now they hunt people that sold their souls.",
-                                  episodes={"S02": [8], "S03": [16], "S05": [10, 20]})
+                                  episodes={"S02": [8], "S03": [16], "S05": [10, 20], "S06": [4]})
         self.hell_hound.clues = [MonstersClues.victims_hear_dogs_barking_and_growling, MonstersClues.invisible_dogs,
                                  MonstersClues.victims_see_black_dogs, MonstersClues.people_seeing_strange_things,
                                  MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
@@ -317,13 +317,15 @@ class MonsterBase:
                                                                         "after 10 years. One can summon it by placing "
                                                                         "a box with: graveyard dirt, black cat cone, "
                                                                         "ones photo in the center of a crossroad.",
-                                        episodes={"S02": [8, 22], "S04": [9], "S05": [10]})
+                                        episodes={"S02": [8, 22], "S04": [9], "S05": [10], "S06": [4]})
         self.crossroads_demon.clues = [MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
                                        MonstersClues.red_eyes, MonstersClues.summoned_by_placing_box_in_the_crossroads,
                                        MonstersClues.travels_as_black_fog, MonstersClues.pact_sealed_with_a_kiss]
-        self.crossroads_demon.disable_methods = [MonstersDisableMethods.devils_trap]
+        self.crossroads_demon.disable_methods = [MonstersDisableMethods.devils_trap,
+                                                 MonstersDisableMethods.fry_its_remains]
         self.crossroads_demon.kill_methods = [MonstersKillMethods.colt_of_colt_with_magic_bullets,
-                                              MonstersKillMethods.demon_killing_knife]
+                                              MonstersKillMethods.demon_killing_knife,
+                                              MonstersKillMethods.burn_the_remains]
 
         self.demonic_virus = Monster("Demonic virus", description="Probably caused Roanoke colony disappearance. "
                                                                   "Croatoan might be a name of the demon. "
@@ -745,12 +747,15 @@ class MonsterBase:
                                  MonstersClues.telekinesis, MonstersClues.can_vanish]
 
         self.demon_crowley = Monster("Demon - Crowley", description="Crossroads demon in S05. "
-                                                                    "King of Hell in further season.",
-                                     episodes={"S05": [10, 20, 21]})
+                                                                    "King of Hell in further season. "
+                                                                    "According to a crossroads demon, "
+                                                                    "he's real name is Fergus Rodric MacLeod. "
+                                                                    "He was born in Canisbay, Scotland 1661.",
+                                     episodes={"S05": [10, 20, 21], "S06": [4]})
         self.demon_crowley.clues = [MonstersClues.can_vanish, MonstersClues.pact_sealed_with_a_kiss,
                                     MonstersClues.summoned_by_placing_box_in_the_crossroads, MonstersClues.telekinesis,
                                     MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
-                                    MonstersClues.can_appear_out_of_thin_air,
+                                    MonstersClues.can_appear_out_of_thin_air, MonstersClues.can_control_electronics,
                                     MonstersClues.weird_fire_spontaneous_combustion,
 
                                     MonstersClues.black_blood, MonstersClues.burned_by_holy_water,
@@ -892,7 +897,7 @@ class MonsterBase:
                                           MonstersClues.weird_electronics_behavior]
 
         self.soulless_person = Monster("Soulless person", description="A person without a soul - only the 'meatsuit'.",
-                                       episodes={"S05": [21], "S06": [1, 2, 3]})
+                                       episodes={"S05": [21], "S06": [1, 2, 3, 4]})
         self.soulless_person.clues = [MonstersClues.people_acting_weirdly, MonstersClues.lack_of_empathy]
 
         # ---------------------------------------------- ALL EPISODES DONE ---------------------------------------------
@@ -919,9 +924,24 @@ class MonsterBase:
                                       MonstersClues.marks_on_victims_souls]
         self.angel_balthazar.disable_methods = [MonstersDisableMethods.holy_oil]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S06": [3]})
-        self.unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.no_hex_bags,
-                              MonstersClues.weird_animal_behavior]
+        self.lamia = Monster("Lamia", description="Juices hearts, chugs the blood. "
+                                                  "These monsters usually appear in Greece.", episodes={"S06": [4]})
+        self.lamia.clues = [MonstersClues.no_emf, MonstersClues.missing_heart, MonstersClues.claws,
+                            MonstersClues.no_sulfur, MonstersClues.no_hex_bags]
+        self.lamia.kill_methods = [MonstersKillMethods.silver_knife_blessed_by_a_priest,
+                                   MonstersKillMethods.mix_of_salt_and_rosemary_thrown_it_and_burned]
+
+        self.okami = Monster("Okami", description="Monster with fangs like a vampire, but larger and not retractable. "
+                                                  "Usually appear in Japan.",
+                             episodes={"S06": [4]})
+        self.okami.clues = [MonstersClues.people_dead_weirdly, MonstersClues.feeds_on_women_during_their_sleep,
+                            MonstersClues.needle_like_teeth, MonstersClues.high_strength]
+        self.okami.kill_methods = [MonstersKillMethods.stab_it_seven_times_with_bamboo_dagger_blessed_by_shinto_priest,
+                                   MonstersKillMethods.blend_it]
+
+        self.unknown = Monster("Unknown", description="", episodes={"S06": [4]})
+        self.unknown.clues = [MonstersClues.no_emf, MonstersClues.missing_heart, MonstersClues.claws,
+                              MonstersClues.no_sulfur, MonstersClues.no_hex_bags]
 
 
         # -------------------------------------------------- SEASON 7 --------------------------------------------------

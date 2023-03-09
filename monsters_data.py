@@ -131,6 +131,7 @@ class MonstersClues:
     feeding_on_life_essence = "feeding on life essence"
     feeds_on_blood = "feeds on blood"
     feeds_on_human_flesh = "feeds on human flesh"
+    feeds_on_women_during_their_sleep = "feeds on women during their sleep"
     attacks_at_night = "attacks at night"
     bite_marks_on_peoples_necks = "bite marks on peoples necks"
     may_leave_claw_marks = "may leave claw marks"
@@ -276,11 +277,13 @@ class MonstersKillMethods:
     witch_killing_brew = "witch-killing brew"
     scythe_of_death = "scythe of the death"
     burn_salted_corpse = "burn salted corpse/remains"
+    burn_the_remains = "burn the remains"
     destroy_the_object_that_the_ghost_is_bound_to = "destroy the object, that the ghost is bound to"
     burn_it = "burn it"
     silver_bullet_into_the_heart = "silver bullet into the heart"
     silver_blade = "silver blade"
     silver_knife_dipped_in_lambs_blood = "silver knife dipped in lambs blood"
+    silver_knife_blessed_by_a_priest = "silver knife blessed by a priest"
     # bullet_into_the_head = "bullet into the head"  ???
     angelica_root_mixture = "mixture of Angelica root, Van Van oil, dust from the crossroads and other 'odds and ends' " \
                             "put into the corners facing each world side on each floor - it purifies the haunted house"
@@ -314,6 +317,10 @@ class MonstersKillMethods:
     head_shot = "head shot"
     stake_made_from_cypress_tree_in_babylon = "stake made from a cypress tree in Babylon"
     stake_made_from_unknown_wood = "stake made from unknown wood"
+    mix_of_salt_and_rosemary_thrown_it_and_burned = "mix of salt and rosemary thrown it and burned"
+    stab_it_seven_times_with_bamboo_dagger_blessed_by_shinto_priest = \
+        "stab it seven times with bamboo dagger blessed by shinto priest"
+    blend_it = "blend it (e.g. with a woodchipper)"
 
 
 class MonstersDisableMethods:
@@ -345,6 +352,7 @@ class MonstersDisableMethods:
     very_bright_light = "very bright light"
     destroy_the_place_that_the_tulpa_resides = "destroy the place that the tulpa resides"
     devils_trap = "devil's trap - sigil trap for a demon (they can't exit them)"
+    fry_its_remains = "fry its remains"
     enochian_devils_trap = "enochian devil's trap - similar to usual devil's trap, but can disable powerful demons"
     bring_the_spirit_to_its_crime_place = "bring the spirit to its crime place - for other ghosts to kill/take it"
     bring_the_spirit_what_it_wants = "bring the spirit, what it wants (an object of revenge)"
