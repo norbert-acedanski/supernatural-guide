@@ -260,6 +260,8 @@ class MonstersClues:
     general_sickness = "general sickness"
     increased_pest_activity = "increased pest activity"
     lack_of_empathy = "lack of empathy"
+    craving_for_blood = "craving for blood"
+    sociopath_like_behavior = "sociopath-like behavior"
 
 
 class MonstersKillMethods:

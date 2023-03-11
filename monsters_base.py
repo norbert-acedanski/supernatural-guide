@@ -255,13 +255,16 @@ class MonsterBase:
                                                       "Smaller packs are sent out to hunt for food. "
                                                       "Kidnapped people are taken to nests and then "
                                                       "bleeding them for days or weeks. "
-                                                      "One can become a vampire, when drinking vampire blood.",
-                               episodes={"S01": [20], "S02": [3], "S03": [7], "S05": [3]})
+                                                      "One can become a vampire, when drinking vampire blood. "
+                                                      "Upon changing, all senses sharpen.",
+                               episodes={"S01": [20], "S02": [3], "S03": [7], "S05": [3], "S06": [5]})
         self.vampire.clues = [MonstersClues.ripped_throat, MonstersClues.no_blood_in_the_body,
                               MonstersClues.needle_like_teeth, MonstersClues.moving_in_groups_usually,
                               MonstersClues.invulnerable, MonstersClues.high_strength, MonstersClues.bright_eyes,
                               MonstersClues.great_sense_of_smell, MonstersClues.white_skin, MonstersClues.cattle_deaths,
-                              MonstersClues.feeds_on_blood, MonstersClues.bite_marks_on_peoples_necks]
+                              MonstersClues.feeds_on_blood, MonstersClues.bite_marks_on_peoples_necks,
+                              MonstersClues.craving_for_blood, MonstersClues.people_dead_weirdly,
+                              MonstersClues.missing_or_dead_people_regularly_in_the_same_area, MonstersClues.moves_fast]
         self.vampire.kill_methods = [MonstersKillMethods.decapitation, MonstersKillMethods.angel_blade,
                                      MonstersKillMethods.colt_of_colt_with_magic_bullets]
         self.vampire.disable_methods = [MonstersDisableMethods.dead_mans_blood]
@@ -897,8 +900,9 @@ class MonsterBase:
                                           MonstersClues.weird_electronics_behavior]
 
         self.soulless_person = Monster("Soulless person", description="A person without a soul - only the 'meatsuit'.",
-                                       episodes={"S05": [21], "S06": [1, 2, 3, 4]})
-        self.soulless_person.clues = [MonstersClues.people_acting_weirdly, MonstersClues.lack_of_empathy]
+                                       episodes={"S05": [21], "S06": [1, 2, 3, 4, 5]})
+        self.soulless_person.clues = [MonstersClues.people_acting_weirdly, MonstersClues.lack_of_empathy,
+                                      MonstersClues.sociopath_like_behavior]
 
         # ---------------------------------------------- ALL EPISODES DONE ---------------------------------------------
 
@@ -939,9 +943,17 @@ class MonsterBase:
         self.okami.kill_methods = [MonstersKillMethods.stab_it_seven_times_with_bamboo_dagger_blessed_by_shinto_priest,
                                    MonstersKillMethods.blend_it]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S06": [4]})
-        self.unknown.clues = [MonstersClues.no_emf, MonstersClues.missing_heart, MonstersClues.claws,
-                              MonstersClues.no_sulfur, MonstersClues.no_hex_bags]
+        self.vampire_alpha = Monster("Vampire Alpha", description="First Vampire. All Vampires are descendants "
+                                                                  "of the Alpha. Has control over other vampires.",
+                                     episodes={"S06": [5]})
+        self.vampire_alpha.clues = [MonstersClues.can_give_hallucinations, MonstersClues.mind_control,
+                                    MonstersClues.can_put_a_person_to_sleep]
+        self.vampire_alpha.kill_methods = [
+
+                                           MonstersKillMethods.colt_of_colt_with_magic_bullets]
+
+        self.unknown = Monster("Unknown", description="", episodes={"S06": [5]})
+        self.unknown.clues = []
 
 
         # -------------------------------------------------- SEASON 7 --------------------------------------------------
@@ -961,9 +973,6 @@ class MonsterBase:
         self.thule = Monster("Thule", description="Nazi members. Used blood magic to make themselves almost undead.")
         self.thule.clues = [MonstersClues.weird_fire_spontaneous_combustion]
         self.thule.kill_methods = [MonstersKillMethods.burn_it, MonstersClues.people_dead_weirdly]
-
-        self.vampire_alpha = Monster("Vampire Alpha", "First Vampire. All Vampires are descendants of the Alpha.")
-        self.vampire_alpha.kill_methods = [MonstersKillMethods.colt_of_colt_with_magic_bullets]
 
         self.nephilim = Monster("Nephilim", description="Child of human and angel/archangel. "
                                                         "Human with an angelic grace.")
