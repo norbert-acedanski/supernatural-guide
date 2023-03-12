@@ -541,7 +541,8 @@ class MonsterBase:
                                                   "When dying, a bright light is produced and they leave wing marks. "
                                                   "To possess somebody, they need a consent.",
                              episodes={"S04": [1, 2, 7, 9, 10, 15, 16, 18, 20, 21, 22],
-                                       "S05": [1, 2, 3, 4, 5, 8, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22], "S06": [3]})
+                                       "S05": [1, 2, 3, 4, 5, 8, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22],
+                                       "S06": [3, 6]})
         self.angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                             MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion,
                             MonstersClues.leaves_burned_marks, MonstersClues.weird_electronics_behavior,
@@ -900,7 +901,7 @@ class MonsterBase:
                                           MonstersClues.weird_electronics_behavior]
 
         self.soulless_person = Monster("Soulless person", description="A person without a soul - only the 'meatsuit'.",
-                                       episodes={"S05": [21], "S06": [1, 2, 3, 4, 5]})
+                                       episodes={"S05": [21], "S06": [1, 2, 3, 4, 5, 6]})
         self.soulless_person.clues = [MonstersClues.people_acting_weirdly, MonstersClues.lack_of_empathy,
                                       MonstersClues.sociopath_like_behavior]
 
@@ -952,8 +953,20 @@ class MonsterBase:
 
                                            MonstersKillMethods.colt_of_colt_with_magic_bullets]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S06": [5]})
-        self.unknown.clues = []
+        self.veritas = Monster("Veritas", description="Goddess of Truth. Can be summoned with a cat skull, "
+                                                      "grains of paradise seed and devil's shoestring. "
+                                                      "Loves cats, dogs hate her. Can make people tell the truth. "
+                                                      "Died in S06E06.",
+                               episodes={"S06": [6]})
+        self.veritas.clues = [MonstersClues.missing_body, MonstersClues.suicides, MonstersClues.no_emf,
+                              MonstersClues.no_sulfur, MonstersClues.no_hex_bags, MonstersClues.blue_eyes,
+                              MonstersClues.telekinesis, MonstersClues.high_strength,
+                              MonstersClues.people_acting_weirdly]
+        self.veritas.kill_methods = [MonstersKillMethods.silver_knife_dipped_in_dogs_blood]
+
+        self.unknown = Monster("Unknown", description="", episodes={"S06": [6]})
+        self.unknown.clues = [MonstersClues.suicides, MonstersClues.no_emf, MonstersClues.no_sulfur,
+                              MonstersClues.no_hex_bags]
 
 
         # -------------------------------------------------- SEASON 7 --------------------------------------------------

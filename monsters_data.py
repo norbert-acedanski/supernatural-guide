@@ -45,6 +45,7 @@ class MonstersClues:
     temperature_fluctuations = "temperature fluctuations"
     electrical_storms = "electrical storms"
     babies_or_children_acting_weirdly = "babies or children acting weirdly - like not themselves"
+    suicides = "suicides"
     people_aging_rapidly = "people aging rapidly"
     people_getting_younger = "people getting younger"
     people_dead_weirdly = "people dead weirdly"
@@ -286,6 +287,7 @@ class MonstersKillMethods:
     silver_blade = "silver blade"
     silver_knife_dipped_in_lambs_blood = "silver knife dipped in lambs blood"
     silver_knife_blessed_by_a_priest = "silver knife blessed by a priest"
+    silver_knife_dipped_in_dogs_blood = "silver knife dipped in dogs blood"
     # bullet_into_the_head = "bullet into the head"  ???
     angelica_root_mixture = "mixture of Angelica root, Van Van oil, dust from the crossroads and other 'odds and ends' " \
                             "put into the corners facing each world side on each floor - it purifies the haunted house"
