@@ -168,6 +168,9 @@ class ObjectsBase:
                                                                      "Lot's wife).", episodes={"S06": [3]})
         self.heavens_cristal.abilities = [ObjectAbilities.can_turn_a_person_into_a_pillar_of_salt]
 
+        self.gabriels_horn_of_truth = Object("Gabriel's Horn of truth", description="Can make people speak the truth. "
+                                                                                    "Not seen, only mentioned in S06E06.")
+
         # SEASON 7:
 
         # SEASON 8:
