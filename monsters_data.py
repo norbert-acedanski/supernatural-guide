@@ -263,6 +263,7 @@ class MonstersClues:
     lack_of_empathy = "lack of empathy"
     craving_for_blood = "craving for blood"
     sociopath_like_behavior = "sociopath-like behavior"
+    does_not_sleep = "does not sleep"
 
 
 class MonstersKillMethods:
