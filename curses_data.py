@@ -7,12 +7,15 @@ class CursesClues:
     people_feeling_weird_or_bad = "people feeling weird or bad"
     people_scared_of_everything = "people scared of everything"
     people_wishes_come_true = "people wishes come true"
+    people_hear_truth_only = "people hear truth only"
+    suicides = "suicides"
     hallucinations = "hallucinations"
     weird_animal_behavior = "weird animal behavior"
     control_over_a_reaper = "control over a reaper"
     black_altar = "black altar"
     controlled_with_a_spell_and_a_cross = "controlled with a spell and a cross"
     emf = "Electromagnetic Field"
+    no_emf = "no Electromagnetic Field"
     no_sulfur = "no sulfur"
     drawn_quincunx = "drawn quincunx"
     no_hex_bags = "no hex bags"
@@ -30,6 +33,7 @@ class CursesClues:
     small_earth_quake = "small earth quake"
     number_of_reapers_appearing = "number of reapers appearing"
     can_switch_souls_of_people = "can switch souls of people"
+    does_not_work_on_people_without_souls = "does not work on people without souls"
 
 
 class CursesDisableMethods:
@@ -42,3 +46,4 @@ class CursesDisableMethods:
     first_person_that_wished_has_to_remove_the_coin = "first person that wished has to remove the coin"
     melt_the_coin = "melt the coin"
     kill_the_witch_that_cursed_a_person = "kill the Witch that cursed a person"
+    kill_goddess_of_truth_veritas = "kill goddess of truth Veritas"

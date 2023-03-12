@@ -115,6 +115,14 @@ class CursesBase:
                                                                               "holy water put in the bowl.",
                                           episodes={"S06": [3]})
 
+        self.truth_curse = Curse("Truth Curse", description="People wish to hear the truth and it happens - all people "
+                                                            "tell this person only the truth. "
+                                                            "It is caused by goddess Veritas", episodes={"S06": [6]})
+        self.truth_curse.clues = [CursesClues.people_dead_weirdly, CursesClues.suicides, CursesClues.no_emf,
+                                  CursesClues.no_sulfur, CursesClues.no_hex_bags, CursesClues.people_hear_truth_only,
+                                  CursesClues.does_not_work_on_people_without_souls]
+        self.truth_curse.disable_methods = [CursesDisableMethods.kill_goddess_of_truth_veritas]
+
         # SEASON 7:
 
 
