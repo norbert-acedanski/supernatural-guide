@@ -26,6 +26,8 @@ class PlacesBase:
                             episodes={"S05": [16]})
         self.heaven.clues = [PlaceClues.good_memories_relived, PlaceClues.changing_scenery]
 
+        self.purgatory = Place("Purgatory", description="A place, where all monsters go, after they die.")
+
         self.places = [place for place in self.__dict__.values() if isinstance(place, Place)]
 
     def print_places_names(self):
