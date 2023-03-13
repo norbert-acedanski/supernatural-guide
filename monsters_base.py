@@ -94,8 +94,16 @@ class MonsterBase:
         self.wendigo.disable_methods = [MonstersDisableMethods.symbols_of_anasazi]
         self.wendigo.kill_methods = [MonstersKillMethods.burn_it]
 
-        self.skinwalker = Monster("Skinwalker", description="Not seen. Only mentioned in S01E02")
-        self.skinwalker.clues = [MonstersClues.claws, MonstersClues.moves_fast]
+        self.skinwalker = Monster("Skinwalker", description="Can change into an animal anytime. Can infect "
+                                                            "other people with a single bite. Basically a werewolf "
+                                                            "cousin. Mentioned in S01E02.",
+                                  episodes={"S06": [8]})
+        self.skinwalker.clues = [MonstersClues.claws, MonstersClues.moves_fast, MonstersClues.people_dead_weirdly,
+                                 MonstersClues.animal_like_attack, MonstersClues.missing_heart,
+                                 MonstersClues.body_torn_apart, MonstersClues.murders_not_during_full_moon_week,
+                                 MonstersClues.can_change_into_a_dog, MonstersClues.great_sense_of_smell]
+        self.skinwalker.disable_methods = [MonstersDisableMethods.silver_or_silver_bullets]
+        self.skinwalker.kill_methods = [MonstersKillMethods.silver_bullet_into_the_heart]
 
         self.black_dog = Monster("Black Dog", description="Not seen. Only mentioned in S01E02 and S02E08")
         self.black_dog.clues = [MonstersClues.claws, MonstersClues.moves_fast, MonstersClues.victims_see_black_dogs]
@@ -756,13 +764,13 @@ class MonsterBase:
                                                                     "According to a crossroads demon, "
                                                                     "he's real name is Fergus Rodric MacLeod. "
                                                                     "He was born in Canisbay, Scotland 1661.",
-                                     episodes={"S05": [10, 20, 21], "S06": [4, 7]})
+                                     episodes={"S05": [10, 20, 21], "S06": [4, 7, 8]})
         self.demon_crowley.clues = [MonstersClues.can_vanish, MonstersClues.pact_sealed_with_a_kiss,
                                     MonstersClues.summoned_by_placing_box_in_the_crossroads, MonstersClues.telekinesis,
                                     MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
                                     MonstersClues.can_appear_out_of_thin_air, MonstersClues.can_control_electronics,
                                     MonstersClues.weird_fire_spontaneous_combustion,
-                                    MonstersClues.can_bring_back_dead_people,
+                                    MonstersClues.can_bring_back_dead_people, MonstersClues.can_give_people_diseases,
 
                                     MonstersClues.black_blood, MonstersClues.burned_by_holy_water,
                                     MonstersClues.travels_as_red_fog, MonstersClues.red_eyes]
@@ -968,8 +976,10 @@ class MonsterBase:
                               MonstersClues.people_acting_weirdly]
         self.veritas.kill_methods = [MonstersKillMethods.silver_knife_dipped_in_dogs_blood]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S06": [7]})
-        self.unknown.clues = []
+        self.unknown = Monster("Unknown", description="", episodes={"S06": [8]})
+        self.unknown.clues = [MonstersClues.body_torn_apart, MonstersClues.missing_heart,
+                              MonstersClues.murders_not_during_full_moon_week, MonstersClues.animal_like_attack,
+                              MonstersClues.can_change_into_a_dog, MonstersClues.great_sense_of_smell]
 
 
         # -------------------------------------------------- SEASON 7 --------------------------------------------------
