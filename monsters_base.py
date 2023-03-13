@@ -976,10 +976,30 @@ class MonsterBase:
                               MonstersClues.people_acting_weirdly]
         self.veritas.kill_methods = [MonstersKillMethods.silver_knife_dipped_in_dogs_blood]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S06": [8]})
-        self.unknown.clues = [MonstersClues.body_torn_apart, MonstersClues.missing_heart,
-                              MonstersClues.murders_not_during_full_moon_week, MonstersClues.animal_like_attack,
-                              MonstersClues.can_change_into_a_dog, MonstersClues.great_sense_of_smell]
+        self.fairy = Monster("Fairy", description="Little people with or without wings. Can be mistaken with UFO "
+                                                  "encounters. They like in another reality - Avalon. Only people, "
+                                                  "that were in their land and came back can see them. Fairies can be "
+                                                  "summoned and put back into their land by a spell. "
+                                                  "They abduct only first sons. There are different kings of fairies. "
+                                                  "Dark fairies burn, when touched with silver. "
+                                                  "No matter how powerful, the fairy must stop and count each grain, "
+                                                  "when salt or sugar is spilled in front of them. "
+                                                  "If you want to win a fairy's favor, leave a bowl of fresh cream.",
+                             episodes={"S06": [9]})
+        self.fairy.clues = [MonstersClues.strange_different_things_happening, MonstersClues.bright_light,
+                            MonstersClues.people_seeing_strange_things, MonstersClues.flashing_lights,
+                            MonstersClues.missing_or_dead_people_regularly_in_the_same_area, MonstersClues.has_wings,
+                            MonstersClues.small_people, MonstersClues.high_strength, MonstersClues.invisible_entity,
+                            MonstersClues.can_vanish, MonstersClues.can_appear_out_of_thin_air,
+                            MonstersClues.can_sense_peoples_souls]
+        self.fairy.disable_method = [MonstersDisableMethods.iron_or_iron_bullets, MonstersClues.silver_burns_its_skin,
+                                     MonstersDisableMethods.spilled_sugar_or_salt]
+        self.fairy.kill_methods = [MonstersKillMethods.microwave_it, MonstersKillMethods.silver_blade]
+
+        self.unknown = Monster("Unknown", description="", episodes={"S06": [9]})
+        self.unknown.clues = [MonstersClues.strange_different_things_happening, MonstersClues.bright_light,
+                              MonstersClues.people_seeing_strange_things, MonstersClues.flashing_lights,
+                              MonstersClues.missing_or_dead_people_regularly_in_the_same_area]
 
 
         # -------------------------------------------------- SEASON 7 --------------------------------------------------

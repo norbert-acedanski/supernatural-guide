@@ -222,6 +222,7 @@ class MonstersClues:
     can_kill_people_with_a_thought = "can_kill people with a thought"
     can_appear_as_an_elephant = "can appear as an elephant"
     can_change_into_a_dog = "can change into a dog"
+    can_sense_peoples_souls = "can sense people's souls"
     people_with_souls_switched = "people with souls switched"
     poisoned_people = "poisoned people"
     demon_killing_knife_is_ineffective = "demon killing knife is ineffective"
@@ -240,6 +241,7 @@ class MonstersClues:
     one_can_make_a_deal_with_it = "one can make a deal with it"
     cannot_enter_a_home_without_invitation = "cannot enter a home without invitation"
     small_earth_quake = "small earth quake"
+    small_people = "small people"
     contact_from_dead_people = "contact from dead people (calls, messages, etc.)"
     tells_victims_come_to_me = "tells victims come to me"
     unable_to_hurt_people_with_abilities_with_its_yellow_blast = \
@@ -328,6 +330,7 @@ class MonstersKillMethods:
     stab_it_seven_times_with_bamboo_dagger_blessed_by_shinto_priest = \
         "stab it seven times with bamboo dagger blessed by shinto priest"
     blend_it = "blend it (e.g. with a woodchipper)"
+    microwave_it = "microwave it"
 
 
 class MonstersDisableMethods:
@@ -374,6 +377,7 @@ class MonstersDisableMethods:
     reconnection_of_angel_with_its_grace = "reconnection of angel with its grace"
     colt_of_colt_with_magic_bullets = "colt of Colt with magic bullets"
     enochian_spell = "enochian spell"
+    spilled_sugar_or_salt = "spilled sugar or salt"
 
 
 class MonstersCureMethods:
