@@ -115,14 +115,14 @@ class MonsterBase:
                                                   "Demons are man that were stuck in hell for a long time.",
                              episodes={"S01": [4, 21, 22], "S02": [1, 14], "S03": [1, 2, 4, 12, 15, 16],
                                        "S04": [1, 4, 9, 10, 20, 21, 22], "S05": [1, 6, 10, 12, 14, 17, 20, 21, 22],
-                                       "S06": [7]})
+                                       "S06": [7, 10]})
         self.demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                             MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                             MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
                             MonstersClues.people_dead_weirdly, MonstersClues.with_a_binding_link_exorcism_does_not_work,
                             MonstersClues.people_acting_weirdly, MonstersClues.can_appear_out_of_thin_air,
                             MonstersClues.amnesia_blackout, MonstersClues.telekinesis, MonstersClues.can_vanish,
-                            MonstersClues.lack_of_body_control,
+                            MonstersClues.lack_of_body_control, MonstersClues.can_hurt_people_with_a_thought,
 
                             MonstersClues.black_blood]
         self.demon.kill_methods = [MonstersKillMethods.demon_killing_knife, MonstersKillMethods.angel_exorcism,
@@ -312,7 +312,7 @@ class MonsterBase:
         self.hell_hound = Monster("Hell Hound", description="Creation of God, but they were too vicious, "
                                                             "so God kept them short. "
                                                             "Now they hunt people that sold their souls.",
-                                  episodes={"S02": [8], "S03": [16], "S05": [10, 20], "S06": [4]})
+                                  episodes={"S02": [8], "S03": [16], "S05": [10, 20], "S06": [4, 10]})
         self.hell_hound.clues = [MonstersClues.victims_hear_dogs_barking_and_growling, MonstersClues.invisible_dogs,
                                  MonstersClues.victims_see_black_dogs, MonstersClues.people_seeing_strange_things,
                                  MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
@@ -322,7 +322,8 @@ class MonsterBase:
                                            MonstersDisableMethods.demon_must_call_it_off,
                                            MonstersDisableMethods.salt_or_salted_bullets]
         self.hell_hound.kill_methods = [MonstersKillMethods.demon_killing_knife, MonstersKillMethods.angel_sword,
-                                        MonstersKillMethods.colt_of_colt_with_magic_bullets]
+                                        MonstersKillMethods.colt_of_colt_with_magic_bullets,
+                                        MonstersKillMethods.angel_blade]
 
         self.crossroads_demon = Monster("Crossroads demon", description="One can make a deal with that demon. "
                                                                         "Can give anything, but will collect ones soul "
@@ -551,7 +552,7 @@ class MonsterBase:
                                                   "To possess somebody, they need a consent.",
                              episodes={"S04": [1, 2, 7, 9, 10, 15, 16, 18, 20, 21, 22],
                                        "S05": [1, 2, 3, 4, 5, 8, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22],
-                                       "S06": [3, 6, 7]})
+                                       "S06": [3, 6, 7, 10]})
         self.angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                             MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion,
                             MonstersClues.leaves_burned_marks, MonstersClues.weird_electronics_behavior,
@@ -582,7 +583,7 @@ class MonsterBase:
                                                         "of the human flesh, they transform completely and fast. "
                                                         "They feed once, they're a monster forever. "
                                                         "This may be a genetic condition.",
-                                episodes={"S04": [4]})
+                                episodes={"S04": [4], "S06": [10]})
         self.rougarou.clues = [MonstersClues.enormous_appetite, MonstersClues.body_metamorphosis,
                                MonstersClues.high_strength, MonstersClues.bloodshot_eyes, MonstersClues.wormy_skin]
         self.rougarou.kill_methods = [MonstersKillMethods.burn_it]
@@ -650,7 +651,7 @@ class MonsterBase:
         self.ghoul = Monster("Ghoul", description="Ghoul is a creature, that feeds on dead people. "
                                                   "It can take the form of a person that it ate with all memories "
                                                   "and thoughts.",
-                             episodes={"S04": [19]})
+                             episodes={"S04": [19], "S06": [10]})
         self.ghoul.clues = [MonstersClues.empty_graves, MonstersClues.body_torn_apart, MonstersClues.missing_body,
                             MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                             MonstersClues.holy_water_does_not_affect_it, MonstersClues.silver_does_not_affect_it]
@@ -763,8 +764,9 @@ class MonsterBase:
                                                                     "King of Hell in S06. "
                                                                     "According to a crossroads demon, "
                                                                     "he's real name is Fergus Rodric MacLeod. "
-                                                                    "He was born in Canisbay, Scotland 1661.",
-                                     episodes={"S05": [10, 20, 21], "S06": [4, 7, 8]})
+                                                                    "He was born in Canisbay, Scotland 1661. "
+                                                                    "Supposedly died in S06E10.",
+                                     episodes={"S05": [10, 20, 21], "S06": [4, 7, 8, 10]})
         self.demon_crowley.clues = [MonstersClues.can_vanish, MonstersClues.pact_sealed_with_a_kiss,
                                     MonstersClues.summoned_by_placing_box_in_the_crossroads, MonstersClues.telekinesis,
                                     MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
@@ -911,7 +913,7 @@ class MonsterBase:
                                           MonstersClues.weird_electronics_behavior]
 
         self.soulless_person = Monster("Soulless person", description="A person without a soul - only the 'meatsuit'.",
-                                       episodes={"S05": [21], "S06": [1, 2, 3, 4, 5, 6, 7]})
+                                       episodes={"S05": [21], "S06": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]})
         self.soulless_person.clues = [MonstersClues.people_acting_weirdly, MonstersClues.lack_of_empathy,
                                       MonstersClues.sociopath_like_behavior, MonstersClues.does_not_sleep]
 
@@ -924,13 +926,15 @@ class MonsterBase:
                                                                             "There is a connection between it "
                                                                             "and it's babies. Even an elephant "
                                                                             "tranquilizes does not affect it "
-                                                                            "long enough.",
-                                          episodes={"S05": [2]})
+                                                                            "long enough. Killed in S06E10.",
+                                          episodes={"S05": [2, 10]})
         self.alpha_shapeshifter.clues = [MonstersClues.people_dead_weirdly, MonstersClues.no_sulfur,
                                          MonstersClues.missing_babies, MonstersClues.moves_fast, MonstersClues.no_emf,
                                          MonstersClues.high_strength, MonstersClues.silver_does_not_affect_it,
                                          MonstersClues.can_make_themselves_appear_as_they_like,
                                          MonstersClues.missing_or_dead_people_regularly_in_the_same_area]
+        self.alpha_shapeshifter.disable_methods = [MonstersDisableMethods.iridium_or_iridium_blade]
+        self.alpha_shapeshifter.kill_methods = [MonstersKillMethods.iridium_blade_decapitation]
 
         self.angel_balthazar = Monster("Angel Balthazar", description="Angel, that stole a lot of angel weapons "
                                                                       "after the Apocalypse was canceled.",
@@ -996,10 +1000,8 @@ class MonsterBase:
                                      MonstersDisableMethods.spilled_sugar_or_salt]
         self.fairy.kill_methods = [MonstersKillMethods.microwave_it, MonstersKillMethods.silver_blade]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S06": [9]})
-        self.unknown.clues = [MonstersClues.strange_different_things_happening, MonstersClues.bright_light,
-                              MonstersClues.people_seeing_strange_things, MonstersClues.flashing_lights,
-                              MonstersClues.missing_or_dead_people_regularly_in_the_same_area]
+        self.unknown = Monster("Unknown", description="", episodes={"S06": [10]})
+        self.unknown.clues = []
 
 
         # -------------------------------------------------- SEASON 7 --------------------------------------------------
