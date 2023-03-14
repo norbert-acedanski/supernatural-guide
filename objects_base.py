@@ -123,7 +123,7 @@ class ObjectsBase:
         self.ring_of_war.abilities = [ObjectAbilities.can_give_hallucinations]
 
         self.human_soul = Object("Human soul", description="As an object is very bright. Can be collected of a person.",
-                                 episodes={"S05": [14]})
+                                 episodes={"S05": [14], "S06": [11]})
 
         self.ring_of_famine = Object("Ring of Famine", description="Can give people starving sensation "
                                                                    "for things they lack/desire. One of the four rings "
@@ -142,8 +142,9 @@ class ObjectsBase:
 
         self.ring_of_death = Object("Ring of Death", description="Can kill anyone. One of the four rings "
                                                                  "of the Horseman.",
-                                    episodes={"S05": [21]})
-        self.ring_of_death.abilities = [ObjectAbilities.can_give_incredible_starving_sensation_for_something]
+                                    episodes={"S05": [21], "S06": [11]})
+        self.ring_of_death.abilities = [ObjectAbilities.can_give_incredible_starving_sensation_for_something,
+                                        ObjectAbilities.person_with_it_can_teleport]
 
         self.scythe_of_death = Object("Scythe of Death", description="A weapon used to kill people, demons, "
                                                                      "angels, reapers, etc.", episodes={"S05": [21]})
