@@ -224,6 +224,8 @@ class MonstersClues:
     can_change_into_a_dog = "can change into a dog"
     can_sense_peoples_souls = "can sense people's souls"
     can_hurt_people_with_a_thought = "can hurt people with a thought"
+    can_go_to_lucifers_cage_and_back_with_ease = "can go to Lucifer's cage and back with ease"
+    can_put_a_soul_back_to_a_body = "can put a soul back to a body"
     people_with_souls_switched = "people with souls switched"
     poisoned_people = "poisoned people"
     demon_killing_knife_is_ineffective = "demon killing knife is ineffective"

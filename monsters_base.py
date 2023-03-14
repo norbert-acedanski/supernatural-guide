@@ -183,7 +183,7 @@ class MonsterBase:
         self.reaper = Monster("Reaper", description="Can give and take life. Can also transfer illnesses of people. "
                                                     "When gone, people are not dying. "
                                                     "When a reaper dies, there are electrical storms.",
-                              episodes={"S01": [12], "S02": [1], "S04": [15], "S05": [10, 21]})
+                              episodes={"S01": [12], "S02": [1], "S04": [15], "S05": [10, 21], "S06": [11]})
         self.reaper.clues = [MonstersClues.people_dead_weirdly, MonstersClues.people_cured_miraculously,
                              MonstersClues.weird_things_behavior, MonstersClues.people_seeing_things_or_figures,
                              MonstersClues.seen_as_a_person_in_a_suit, MonstersClues.ghost_like_creature,
@@ -782,9 +782,11 @@ class MonsterBase:
                                                                   "Angel of Death. Can be brought to the Earth "
                                                                   "at midnight through a place of awful carnage. "
                                                                   "Summoned in S05E10 and his actions seen in S05E15.",
-                                    episodes={"S05": [21]})
+                                    episodes={"S05": [21], "S06": [11]})
         self.reaper_death.clues = [MonstersClues.number_of_reapers_appearing, MonstersClues.can_bring_back_dead_people,
-                                   MonstersClues.can_kill_people_with_a_thought, MonstersClues.people_dead_weirdly]
+                                   MonstersClues.can_kill_people_with_a_thought, MonstersClues.people_dead_weirdly,
+                                   MonstersClues.can_appear_out_of_thin_air, MonstersClues.can_put_a_soul_back_to_a_body,
+                                   MonstersClues.can_go_to_lucifers_cage_and_back_with_ease]
         self.reaper_death.kill_methods = [
 
                                           MonstersKillMethods.scythe_of_death]
@@ -913,7 +915,7 @@ class MonsterBase:
                                           MonstersClues.weird_electronics_behavior]
 
         self.soulless_person = Monster("Soulless person", description="A person without a soul - only the 'meatsuit'.",
-                                       episodes={"S05": [21], "S06": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]})
+                                       episodes={"S05": [21], "S06": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]})
         self.soulless_person.clues = [MonstersClues.people_acting_weirdly, MonstersClues.lack_of_empathy,
                                       MonstersClues.sociopath_like_behavior, MonstersClues.does_not_sleep]
 
@@ -938,7 +940,7 @@ class MonsterBase:
 
         self.angel_balthazar = Monster("Angel Balthazar", description="Angel, that stole a lot of angel weapons "
                                                                       "after the Apocalypse was canceled.",
-                                       episodes={"S06": [3]})
+                                       episodes={"S06": [3, 11]})
         self.angel_balthazar.clues = [MonstersClues.can_vanish, MonstersClues.can_appear_out_of_thin_air,
                                       MonstersClues.marks_on_victims_souls]
         self.angel_balthazar.disable_methods = [MonstersDisableMethods.holy_oil]
@@ -1000,7 +1002,7 @@ class MonsterBase:
                                      MonstersDisableMethods.spilled_sugar_or_salt]
         self.fairy.kill_methods = [MonstersKillMethods.microwave_it, MonstersKillMethods.silver_blade]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S06": [10]})
+        self.unknown = Monster("Unknown", description="", episodes={"S06": [11]})
         self.unknown.clues = []
 
 
