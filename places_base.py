@@ -26,7 +26,11 @@ class PlacesBase:
                             episodes={"S05": [16]})
         self.heaven.clues = [PlaceClues.good_memories_relived, PlaceClues.changing_scenery]
 
-        self.purgatory = Place("Purgatory", description="A place, where all monsters go, after they die.")
+        self.purgatory = Place("Purgatory", description="A place, where all monsters go, after they die. "
+                                                        "Can be opened with an ancient ritual and let 'Mother' "
+                                                        "to the Earth. In a place, that is the entrance, "
+                                                        "you have to use a proper spell, drop dragon blood down "
+                                                        "and let a virgin fall to the door. Opened in S06E12.")
 
         self.places = [place for place in self.__dict__.values() if isinstance(place, Place)]
 
