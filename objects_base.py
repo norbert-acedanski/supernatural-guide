@@ -98,8 +98,9 @@ class ObjectsBase:
 
         self.lucifers_cage = Object("Lucifer's Cage", description="A prison build specifically to contain archangelic "
                                                                   "powers (not seen yet). Can be opened with all "
-                                                                  "4 rings of the horseman.")
-        self.lucifers_cage.abilities = [ObjectAbilities.traps_an_archangel]
+                                                                  "4 rings of the horseman. There is fire there.",
+                                    episodes={"S06": [13]})
+        self.lucifers_cage.abilities = [ObjectAbilities.traps_an_archangel, ObjectAbilities.traps_a_soul_of_a_person]
 
         # ---------------------------------------------- ALL EPISODES DONE ---------------------------------------------
 

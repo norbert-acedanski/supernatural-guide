@@ -22,6 +22,7 @@ class ObjectAbilities:
     the_place_it_hits_is_not_destroyed_but_flourishes = "the place it hits is not destroyed but flourishes"
     traps_a_reaper = "traps a reaper"
     traps_an_archangel = "traps an archangel"
+    traps_a_soul_of_a_person = "traps a soul of a person"
     angels_cant_get_past_it = "angels can't get past it"
     hides_a_person_from_all_angels = "hides a person from all angels"
     person_with_it_can_teleport = "person with it can teleport"
