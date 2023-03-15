@@ -915,7 +915,7 @@ class MonsterBase:
                                           MonstersClues.weird_electronics_behavior]
 
         self.soulless_person = Monster("Soulless person", description="A person without a soul - only the 'meatsuit'.",
-                                       episodes={"S05": [21], "S06": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]})
+                                       episodes={"S05": [21], "S06": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 13]})
         self.soulless_person.clues = [MonstersClues.people_acting_weirdly, MonstersClues.lack_of_empathy,
                                       MonstersClues.sociopath_like_behavior, MonstersClues.does_not_sleep]
 
@@ -1017,12 +1017,16 @@ class MonsterBase:
                                                                   "until released in S06E12.", episodes={"S06": [12]})
         self.mother_of_all.clues = [MonstersClues.telekinesis]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S06": [12]})
-        self.unknown.clues = [MonstersClues.people_seeing_strange_things, MonstersClues.people_dead_weirdly,
-                              MonstersClues.missing_attacked_virgin_women, MonstersClues.has_wings, MonstersClues.claws,
-                              MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
-                              MonstersClues.likes_gold, MonstersClues.weird_fire_spontaneous_combustion,
-                              MonstersClues.can_create_fire_large_temperatures]
+        self.arachne = Monster("Arachne", description="No one has seen it outside of Crete for 2000 years. "
+                                                      "When in mating time it has a type, that it likes.",
+                               episodes={"S06": [13]})
+        self.arachne.clues = [MonstersClues.missing_or_dead_people_regularly_in_the_same_area,
+                              MonstersClues.left_cobweb, MonstersClues.high_strength, MonstersClues.multiple_pupils,
+                              MonstersClues.fire_does_not_affect_it, MonstersClues.head_shot_does_not_affect_it]
+        self.arachne.kill_methods = [MonstersKillMethods.decapitation]
+
+        self.unknown = Monster("Unknown", description="", episodes={"S06": [13]})
+        self.unknown.clues = [MonstersClues.missing_or_dead_people_regularly_in_the_same_area]
 
 
         # -------------------------------------------------- SEASON 7 --------------------------------------------------

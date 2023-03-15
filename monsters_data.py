@@ -20,6 +20,7 @@ class MonstersClues:
     weird_fire_spontaneous_combustion = "weird fire/spontaneous combustion"
     weird_plant_deaths_or_behavior = "weird plant deaths or behavior"
     blue_fire_on_its_arms = "blue fire on its arms"
+    fire_does_not_affect_it = "fire does not affect it"
     black_blood = "blood - black"
     ectoplasm = "ectoplasm (black goo)"
     pact_sealed_with_a_kiss = "pact sealed with a kiss"
@@ -104,6 +105,7 @@ class MonstersClues:
     skin_left_behind = "skin left behind"
     left_zoroastrian_symbol_made_with_blood = "left zoroastrian symbol made with blood - " \
                                               "Sigil for Daeva (demon of darkness)"
+    left_cobweb = "left cobweb"
     invisible_entity = "invisible entity"
     visible_by_other_ghosts_and_people_close_to_death_only = "visible by other ghosts and people close to death only"
     ozone_smell = "ozone smell"
@@ -240,6 +242,7 @@ class MonstersClues:
     psychic_abilities = "psychic abilities - knows the past, the future and the present of people or places, " \
                         "senses energies and spirits"
     keeps_changing_appearances = "keeps changing appearances"
+    head_shot_does_not_affect_it = "head-shot does not affect it"
     salt_does_not_affect_it = "salt does not affect it"
     holy_water_does_not_affect_it = "holy water does not affect it"
     white_skin = "white skin"
@@ -274,6 +277,7 @@ class MonstersClues:
     sociopath_like_behavior = "sociopath-like behavior"
     does_not_sleep = "does not sleep"
     likes_gold = "likes gold"
+    multiple_pupils = "multiple pupils"
 
 
 class MonstersKillMethods:
