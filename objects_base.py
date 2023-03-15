@@ -18,8 +18,9 @@ class ObjectsBase:
         self.john_winchesters_journal = Object("John Winchester's Journal",
                                                description="A journal of John Winchester, that contains a lot "
                                                            "information about monsters in Supernatural Universe.",
-                                               episodes={"S01": [], "S04": [19], "S06": [1, 8]})
-        self.john_winchesters_journal._information = {"S04E19": JohnWinchesterJournal.entry_about_johns_other_son}
+                                               episodes={"S01": [], "S04": [19], "S06": [1, 8, 12]})
+        self.john_winchesters_journal._information = {"S04E19": JohnWinchesterJournal.entry_about_johns_other_son,
+                                                      "S06E12": JohnWinchesterJournal.entry_about_a_skinwalker}
 
         self.colt_of_colt = Object("Colt of Colt", description="Colt made by Samuel Colt in 1835, when Halley's Comet "
                                                                "was overhead and the same night those men died "
