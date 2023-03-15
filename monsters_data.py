@@ -72,6 +72,7 @@ class MonstersClues:
     missing_organs = "missing organs"
     missing_heart = "missing heart"
     missing_babies = "missing babies"
+    missing_attacked_virgin_women = "missing attacked virgin women"
     no_missing_heart = "no missing heart"
     murders_during_full_moon_week = "murders during full moon week"
     murders_not_during_full_moon_week = "murders not during full moon week"
@@ -226,6 +227,7 @@ class MonstersClues:
     can_hurt_people_with_a_thought = "can hurt people with a thought"
     can_go_to_lucifers_cage_and_back_with_ease = "can go to Lucifer's cage and back with ease"
     can_put_a_soul_back_to_a_body = "can put a soul back to a body"
+    can_create_fire_large_temperatures = "can create fire/large temperatures"
     people_with_souls_switched = "people with souls switched"
     poisoned_people = "poisoned people"
     demon_killing_knife_is_ineffective = "demon killing knife is ineffective"
@@ -271,6 +273,7 @@ class MonstersClues:
     craving_for_blood = "craving for blood"
     sociopath_like_behavior = "sociopath-like behavior"
     does_not_sleep = "does not sleep"
+    likes_gold = "likes gold"
 
 
 class MonstersKillMethods:
@@ -279,6 +282,15 @@ class MonstersKillMethods:
     archangel_blade = "archangel blade"
     first_blade = "first blade"
     gold_blade = "gold blade"
+    blade_forged_with_dragons_blood = "blade forged with dragon's blood (Five or six worldwide for 2010 - " \
+                                      "Sword of St. George, Excalibur, Sword of Bruncvik)"
+    reaper_blade_combined_with_a_spell = "reaper blade combined with a spell"
+    iridium_blade_decapitation = "iridium blade decapitation"
+    silver_blade = "silver blade"
+    silver_knife_dipped_in_lambs_blood = "silver knife dipped in lambs blood"
+    silver_knife_blessed_by_a_priest = "silver knife blessed by a priest"
+    silver_knife_dipped_in_dogs_blood = "silver knife dipped in dogs blood"
+    silver_bullet_into_the_heart = "silver bullet into the heart"
     demon_killing_knife = "demon killing knife"
     holy_oil = "holy oil"
     angel_sword = "angel sword"
@@ -291,12 +303,6 @@ class MonstersKillMethods:
     burn_the_remains = "burn the remains"
     destroy_the_object_that_the_ghost_is_bound_to = "destroy the object, that the ghost is bound to"
     burn_it = "burn it"
-    iridium_blade_decapitation = "iridium blade decapitation"
-    silver_bullet_into_the_heart = "silver bullet into the heart"
-    silver_blade = "silver blade"
-    silver_knife_dipped_in_lambs_blood = "silver knife dipped in lambs blood"
-    silver_knife_blessed_by_a_priest = "silver knife blessed by a priest"
-    silver_knife_dipped_in_dogs_blood = "silver knife dipped in dogs blood"
     # bullet_into_the_head = "bullet into the head"  ???
     angelica_root_mixture = "mixture of Angelica root, Van Van oil, dust from the crossroads and other 'odds and ends' " \
                             "put into the corners facing each world side on each floor - it purifies the haunted house"
@@ -326,7 +332,6 @@ class MonstersKillMethods:
     angel_exorcism = "angel exorcism"
     death_transfer_spell = "death transfer spell"
     its_own_venom = "its own venom"
-    reaper_blade_combined_with_a_spell = "reaper blade combined with a spell"
     head_shot = "head shot"
     stake_made_from_cypress_tree_in_babylon = "stake made from a cypress tree in Babylon"
     stake_made_from_unknown_wood = "stake made from unknown wood"
@@ -346,6 +351,8 @@ class MonstersDisableMethods:
     salt_or_salted_bullets = "salt/salted bullets"
     silver_or_silver_bullets = "silver/silver bullets"
     iridium_or_iridium_blade = "iridium/iridium blade"
+    blade_forged_with_dragons_blood = "blade forged with dragon's blood (Five or six worldwide for 2010 - " \
+                                      "Sword of St. George, Excalibur, Sword of Bruncvik)"
     finish_its_unfinished_business = "finish its unfinished business"
     symbols_of_anasazi = "symbols of anasazi - can't cross it"
     holy_oil = "holy oil - can't cross it"

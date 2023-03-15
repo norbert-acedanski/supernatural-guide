@@ -552,7 +552,7 @@ class MonsterBase:
                                                   "To possess somebody, they need a consent.",
                              episodes={"S04": [1, 2, 7, 9, 10, 15, 16, 18, 20, 21, 22],
                                        "S05": [1, 2, 3, 4, 5, 8, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22],
-                                       "S06": [3, 6, 7, 10]})
+                                       "S06": [3, 6, 7, 10, 12]})
         self.angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                             MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion,
                             MonstersClues.leaves_burned_marks, MonstersClues.weird_electronics_behavior,
@@ -1002,8 +1002,27 @@ class MonsterBase:
                                      MonstersDisableMethods.spilled_sugar_or_salt]
         self.fairy.kill_methods = [MonstersKillMethods.microwave_it, MonstersKillMethods.silver_blade]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S06": [11]})
-        self.unknown.clues = []
+        self.dragon = Monster("Dragon", description="Flying creatures form the legends. They like virgins and gold. "
+                                                    "Live in caves or underground, dark, wet places. They disappeared "
+                                                    "almost 700 years ago (from 2010).", episodes={"S06": [12]})
+        self.dragon.clues = [MonstersClues.people_seeing_strange_things, MonstersClues.people_dead_weirdly,
+                             MonstersClues.missing_attacked_virgin_women, MonstersClues.has_wings, MonstersClues.claws,
+                             MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
+                             MonstersClues.likes_gold, MonstersClues.weird_fire_spontaneous_combustion,
+                             MonstersClues.can_create_fire_large_temperatures, MonstersClues.high_strength]
+        self.dragon.disable_methods = [MonstersDisableMethods.blade_forged_with_dragons_blood]
+        self.dragon.kill_methods = [MonstersKillMethods.blade_forged_with_dragons_blood]
+
+        self.mother_of_all = Monster("Mother of all", description="Mother of all monsters. Was in a Purgatory, "
+                                                                  "until released in S06E12.", episodes={"S06": [12]})
+        self.mother_of_all.clues = [MonstersClues.telekinesis]
+
+        self.unknown = Monster("Unknown", description="", episodes={"S06": [12]})
+        self.unknown.clues = [MonstersClues.people_seeing_strange_things, MonstersClues.people_dead_weirdly,
+                              MonstersClues.missing_attacked_virgin_women, MonstersClues.has_wings, MonstersClues.claws,
+                              MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
+                              MonstersClues.likes_gold, MonstersClues.weird_fire_spontaneous_combustion,
+                              MonstersClues.can_create_fire_large_temperatures]
 
 
         # -------------------------------------------------- SEASON 7 --------------------------------------------------
