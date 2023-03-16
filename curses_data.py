@@ -34,6 +34,9 @@ class CursesClues:
     number_of_reapers_appearing = "number of reapers appearing"
     can_switch_souls_of_people = "can switch souls of people"
     does_not_work_on_people_without_souls = "does not work on people without souls"
+    different_history = "different history"
+    different_memories = "different memories"
+    strange_feeling_that_things_should_be_different = "strange feeling that things should be different"
 
 
 class CursesDisableMethods:
@@ -47,3 +50,4 @@ class CursesDisableMethods:
     melt_the_coin = "melt the coin"
     kill_the_witch_that_cursed_a_person = "kill the Witch that cursed a person"
     kill_goddess_of_truth_veritas = "kill goddess of truth Veritas"
+    wait_for_an_opening_from_the_other_side = "wait for an opening from the other side"

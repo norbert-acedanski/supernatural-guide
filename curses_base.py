@@ -123,6 +123,14 @@ class CursesBase:
                                   CursesClues.does_not_work_on_people_without_souls]
         self.truth_curse.disable_methods = [CursesDisableMethods.kill_goddess_of_truth_veritas]
 
+        self.timeline_change_spell = Curse("Timeline change spell", description="Spell made with salt, blood of a lamb "
+                                                                                "and a bone of a lesser saint. "
+                                                                                "Also a sigil has to be drawn.",
+                                           episodes={"S06": [15]})
+        self.timeline_change_spell.clues = [CursesClues.different_history, CursesClues.different_memories,
+                                            CursesClues.strange_feeling_that_things_should_be_different]
+        self.timeline_change_spell.disable_methods = [CursesDisableMethods.wait_for_an_opening_from_the_other_side]
+
         # SEASON 7:
 
 
