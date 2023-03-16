@@ -52,7 +52,8 @@ class MonsterBase:
                                                    "they were killed by supernatural. Witnesses can be put to rest "
                                                    "by a special spell (has to be cast over an open fire).",
                                        episodes={"S01": [1, 3, 5, 7, 9, 10, 13, 19], "S02": [6, 11, 16, 18, 19],
-                                                 "S03": [5, 6, 13], "S04": [2, 13, 15, 17], "S05": [9, 11], "S06": [4]})
+                                                 "S03": [5, 6, 13], "S04": [2, 13, 15, 17], "S05": [9, 11],
+                                                 "S06": [4, 14]})
         self.vengeful_spirit.clues = [MonstersClues.
                                       missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                                       MonstersClues.people_dead_weirdly, MonstersClues.ghost_like_creature,
@@ -70,7 +71,7 @@ class MonsterBase:
                                       MonstersClues.seen_as_a_drown_man, MonstersClues.flashing_lights,
                                       MonstersClues.strange_different_things_happening, MonstersClues.no_missing_heart,
                                       MonstersClues.body_torn_apart, MonstersClues.no_black_fog,
-                                      MonstersClues.lack_of_body_control]
+                                      MonstersClues.lack_of_body_control, MonstersClues.scars_on_victims]
         self.vengeful_spirit.disable_methods = [MonstersDisableMethods.bring_the_spirit_to_its_crime_place,
                                                 MonstersDisableMethods.bring_the_spirit_what_it_wants,
                                                 MonstersDisableMethods.iron_or_iron_bullets,
@@ -1025,8 +1026,11 @@ class MonsterBase:
                               MonstersClues.fire_does_not_affect_it, MonstersClues.head_shot_does_not_affect_it]
         self.arachne.kill_methods = [MonstersKillMethods.decapitation]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S06": [13]})
-        self.unknown.clues = [MonstersClues.missing_or_dead_people_regularly_in_the_same_area]
+        self.unknown = Monster("Unknown", description="", episodes={"S06": [14]})
+        self.unknown.clues = [MonstersClues.weird_things_behavior, MonstersClues.cold_spots, MonstersClues.emf,
+                              MonstersClues.people_seeing_things_or_figures, MonstersClues.people_dead_weirdly,
+                              MonstersClues.weird_electronics_behavior, MonstersClues.scars_on_victims,
+                              MonstersClues.missing_or_dead_people_regularly_in_different_areas]
 
 
         # -------------------------------------------------- SEASON 7 --------------------------------------------------

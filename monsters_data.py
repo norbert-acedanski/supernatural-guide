@@ -278,6 +278,7 @@ class MonstersClues:
     does_not_sleep = "does not sleep"
     likes_gold = "likes gold"
     multiple_pupils = "multiple pupils"
+    scars_on_victims = "scars on victims"
 
 
 class MonstersKillMethods:
