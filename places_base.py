@@ -14,7 +14,7 @@ class PlacesBase:
 
         self.alternate_timeline = Place("Alternate timeline",
                                         description="A universe, where the history played out differently",
-                                        episodes={"S04": [17], "S05": [4]})
+                                        episodes={"S04": [17], "S05": [4], "S06": [15]})
         self.alternate_timeline.clues = [PlaceClues.different_history, PlaceClues.different_memories,
                                          PlaceClues.strange_feeling_that_things_should_be_different]
 
