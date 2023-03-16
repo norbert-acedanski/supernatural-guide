@@ -553,7 +553,7 @@ class MonsterBase:
                                                   "To possess somebody, they need a consent.",
                              episodes={"S04": [1, 2, 7, 9, 10, 15, 16, 18, 20, 21, 22],
                                        "S05": [1, 2, 3, 4, 5, 8, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22],
-                                       "S06": [3, 6, 7, 10, 12]})
+                                       "S06": [3, 6, 7, 10, 12, 15]})
         self.angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                             MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion,
                             MonstersClues.leaves_burned_marks, MonstersClues.weird_electronics_behavior,
@@ -734,8 +734,10 @@ class MonsterBase:
         self.horseman_war.disable_methods = [MonstersDisableMethods.demon_killing_knife]
 
         self.archangel_raphael = Monster("Archangel Raphael", description="One of the Archangels of God.",
-                                         episodes={"S05": [3], "S06": [3]})
-        self.archangel_raphael.clues = [MonstersClues.bright_light, MonstersClues.invulnerable]
+                                         episodes={"S05": [3], "S06": [3, 15]})
+        self.archangel_raphael.clues = [MonstersClues.bright_light, MonstersClues.invulnerable,
+                                        MonstersClues.telekinesis, MonstersClues.can_vanish,
+                                        MonstersClues.can_hurt_people_with_a_thought]
         self.archangel_raphael.disable_methods = [MonstersDisableMethods.holy_oil]
         self.archangel_raphael.kill_methods = [MonstersKillMethods.archangel_blade]
 
@@ -941,7 +943,7 @@ class MonsterBase:
 
         self.angel_balthazar = Monster("Angel Balthazar", description="Angel, that stole a lot of angel weapons "
                                                                       "after the Apocalypse was canceled.",
-                                       episodes={"S06": [3, 11]})
+                                       episodes={"S06": [3, 11, 15]})
         self.angel_balthazar.clues = [MonstersClues.can_vanish, MonstersClues.can_appear_out_of_thin_air,
                                       MonstersClues.marks_on_victims_souls]
         self.angel_balthazar.disable_methods = [MonstersDisableMethods.holy_oil]
@@ -1026,11 +1028,8 @@ class MonsterBase:
                               MonstersClues.fire_does_not_affect_it, MonstersClues.head_shot_does_not_affect_it]
         self.arachne.kill_methods = [MonstersKillMethods.decapitation]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S06": [14]})
-        self.unknown.clues = [MonstersClues.weird_things_behavior, MonstersClues.cold_spots, MonstersClues.emf,
-                              MonstersClues.people_seeing_things_or_figures, MonstersClues.people_dead_weirdly,
-                              MonstersClues.weird_electronics_behavior, MonstersClues.scars_on_victims,
-                              MonstersClues.missing_or_dead_people_regularly_in_different_areas]
+        self.unknown = Monster("Unknown", description="", episodes={"S06": [15]})
+        self.unknown.clues = []
 
 
         # -------------------------------------------------- SEASON 7 --------------------------------------------------
