@@ -13,7 +13,8 @@ class PlacesBase:
                            PlaceClues.flashing_lights, PlaceClues.time_runs_faster_there]
 
         self.alternate_timeline = Place("Alternate timeline",
-                                        description="A universe, where the history played out differently",
+                                        description="A universe, where the history played out differently. "
+                                                    "Can be accessed via a spell or an angel can put you in one.",
                                         episodes={"S04": [17], "S05": [4], "S06": [15]})
         self.alternate_timeline.clues = [PlaceClues.different_history, PlaceClues.different_memories,
                                          PlaceClues.strange_feeling_that_things_should_be_different]
