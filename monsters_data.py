@@ -145,7 +145,7 @@ class MonstersClues:
     leaves_burned_marks = "leaves burned marks"
     leaves_soulless_people_behind = "leaving soulless people behind"
     leaves_zombie_like_people_with_black_veins_around_neck = "leaves zombie-like people with black veins around neck"
-    real_appearance_can_be_seen_in_a_reflection = "real appearance can be seen in a reflection"
+    real_appearance_can_be_seen_in_a_reflection_or_camera = "real appearance can be seen in a reflection or camera"
     high_strength = "high strength"
     high_oxytocin_levels = "high oxytocin levels"
     kids_imaginary_friend = "kids' imaginary friend"
@@ -279,6 +279,7 @@ class MonstersClues:
     likes_gold = "likes gold"
     multiple_pupils = "multiple pupils"
     scars_on_victims = "scars on victims"
+    worm = "worm"
 
 
 class MonstersKillMethods:
@@ -345,6 +346,7 @@ class MonstersKillMethods:
         "stab it seven times with bamboo dagger blessed by shinto priest"
     blend_it = "blend it (e.g. with a woodchipper)"
     microwave_it = "microwave it"
+    electricity = "electricity"
 
 
 class MonstersDisableMethods:
@@ -395,6 +397,7 @@ class MonstersDisableMethods:
     colt_of_colt_with_magic_bullets = "colt of Colt with magic bullets"
     enochian_spell = "enochian spell"
     spilled_sugar_or_salt = "spilled sugar or salt"
+    electricity = "electricity"
 
 
 class MonstersCureMethods:

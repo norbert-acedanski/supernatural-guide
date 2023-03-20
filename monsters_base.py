@@ -460,7 +460,7 @@ class MonsterBase:
                                  MonstersClues.missing_or_dead_people_regularly_in_the_same_area,
                                  MonstersClues.bite_marks_on_peoples_necks, MonstersClues.people_dead_weirdly,
                                  MonstersClues.feeding_at_night, MonstersClues.may_leave_claw_marks,
-                                 MonstersClues.real_appearance_can_be_seen_in_a_reflection]
+                                 MonstersClues.real_appearance_can_be_seen_in_a_reflection_or_camera]
         self.changeling.kill_methods = [MonstersKillMethods.burn_it]
 
         self.krampus = Monster("Krampus", description="Evil brother of Santa. Comes in many names - Belsnickel, "
@@ -627,7 +627,7 @@ class MonsterBase:
                              episodes={"S04": [14]})
         self.siren.clues = [MonstersClues.people_dead_weirdly, MonstersClues.people_acting_weirdly,
                             MonstersClues.high_oxytocin_levels, MonstersClues.can_read_peoples_minds,
-                            MonstersClues.real_appearance_can_be_seen_in_a_reflection]
+                            MonstersClues.real_appearance_can_be_seen_in_a_reflection_or_camera]
         self.siren.kill_methods = [MonstersKillMethods.its_own_venom]
 
         self.angel_zachariah = Monster("Angel Zachariah", description="High Tier Angel. Died in S05E18.",
@@ -801,7 +801,7 @@ class MonsterBase:
                              MonstersClues.victims_brain_devoid_of_water, MonstersClues.silver_burns_its_skin,
                              MonstersClues.can_take_form_of_other_people, MonstersClues.people_seeing_things_or_figures,
                              MonstersClues.people_hear_voices, MonstersClues.people_seeing_strange_things,
-                             MonstersClues.real_appearance_can_be_seen_in_a_reflection, MonstersClues.high_strength,
+                             MonstersClues.real_appearance_can_be_seen_in_a_reflection_or_camera, MonstersClues.high_strength,
                              MonstersClues.people_loosing_their_minds]
         self.wraith.disable_methods = [MonstersDisableMethods.silver_or_silver_bullets]
         self.wraith.kill_methods = [MonstersKillMethods.silver_blade]
@@ -853,7 +853,7 @@ class MonsterBase:
         self.false_prophet.clues = [MonstersClues.can_read_peoples_minds, MonstersClues.can_control_demons,
                                     MonstersClues.can_take_form_of_other_people, MonstersClues.can_see_future,
                                     MonstersClues.visions, MonstersClues.telekinesis,
-                                    MonstersClues.real_appearance_can_be_seen_in_a_reflection]
+                                    MonstersClues.real_appearance_can_be_seen_in_a_reflection_or_camera]
         self.false_prophet.kill_methods = [MonstersKillMethods.stake_made_from_cypress_tree_in_babylon]
 
         self.god_mercury = Monster("God Mercury", description="Roman god of messengers. Died in S05E19.",
@@ -1017,8 +1017,13 @@ class MonsterBase:
         self.dragon.kill_methods = [MonstersKillMethods.blade_forged_with_dragons_blood]
 
         self.mother_of_all = Monster("Mother of all", description="Mother of all monsters. Was in a Purgatory, "
-                                                                  "until released in S06E12.", episodes={"S06": [12]})
-        self.mother_of_all.clues = [MonstersClues.telekinesis]
+                                                                  "until released in S06E12. Calls herself Eve. "
+                                                                  "She was walking the face of the Earth "
+                                                                  "10 000 years ago. Every monster can be traced "
+                                                                  "back to her.",
+                                     episodes={"S06": [12, 16]})
+        self.mother_of_all.clues = [MonstersClues.telekinesis, MonstersClues.weird_electronics_behavior,
+                                    MonstersClues.real_appearance_can_be_seen_in_a_reflection_or_camera]
 
         self.arachne = Monster("Arachne", description="No one has seen it outside of Crete for 2000 years. "
                                                       "When in mating time it has a type, that it likes.",
@@ -1028,7 +1033,17 @@ class MonsterBase:
                               MonstersClues.fire_does_not_affect_it, MonstersClues.head_shot_does_not_affect_it]
         self.arachne.kill_methods = [MonstersKillMethods.decapitation]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S06": [15]})
+        self.possessing_worm = Monster("Possessing worm", description="Worm, that can possess a person and control "
+                                                                      "their mind. It is spread by the Mother of All.",
+                                       episodes={"S06": [16]})
+        self.possessing_worm.clues = [MonstersClues.amnesia_blackout, MonstersClues.people_acting_weirdly,
+                                      MonstersClues.black_blood, MonstersClues.mind_control, MonstersClues.worm,
+                                      MonstersClues.people_dead_weirdly, MonstersClues.invulnerable,
+                                      MonstersClues.high_strength]
+        self.possessing_worm.disable_methods = [MonstersDisableMethods.electricity]
+        self.possessing_worm.kill_methods = [MonstersKillMethods.electricity]
+
+        self.unknown = Monster("Unknown", description="", episodes={"S06": [16]})
         self.unknown.clues = []
 
 
