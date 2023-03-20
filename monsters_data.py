@@ -106,6 +106,7 @@ class MonstersClues:
     left_zoroastrian_symbol_made_with_blood = "left zoroastrian symbol made with blood - " \
                                               "Sigil for Daeva (demon of darkness)"
     left_cobweb = "left cobweb"
+    left_gold_thread = "left gold thread"
     invisible_entity = "invisible entity"
     visible_by_other_ghosts_and_people_close_to_death_only = "visible by other ghosts and people close to death only"
     ozone_smell = "ozone smell"
@@ -230,6 +231,8 @@ class MonstersClues:
     can_go_to_lucifers_cage_and_back_with_ease = "can go to Lucifer's cage and back with ease"
     can_put_a_soul_back_to_a_body = "can put a soul back to a body"
     can_create_fire_large_temperatures = "can create fire/large temperatures"
+    can_change_the_past = "can change the past"
+    can_stop_time = "can stop time"
     people_with_souls_switched = "people with souls switched"
     poisoned_people = "poisoned people"
     demon_killing_knife_is_ineffective = "demon killing knife is ineffective"
@@ -280,6 +283,7 @@ class MonstersClues:
     multiple_pupils = "multiple pupils"
     scars_on_victims = "scars on victims"
     worm = "worm"
+    bad_luck = "bad luck"
 
 
 class MonstersKillMethods:
