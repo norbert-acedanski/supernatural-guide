@@ -116,7 +116,7 @@ class MonsterBase:
                                                   "Demons are man that were stuck in hell for a long time.",
                              episodes={"S01": [4, 21, 22], "S02": [1, 14], "S03": [1, 2, 4, 12, 15, 16],
                                        "S04": [1, 4, 9, 10, 20, 21, 22], "S05": [1, 6, 10, 12, 14, 17, 20, 21, 22],
-                                       "S06": [7, 10]})
+                                       "S06": [7, 10, 18]})
         self.demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                             MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                             MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -553,7 +553,7 @@ class MonsterBase:
                                                   "To possess somebody, they need a consent.",
                              episodes={"S04": [1, 2, 7, 9, 10, 15, 16, 18, 20, 21, 22],
                                        "S05": [1, 2, 3, 4, 5, 8, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22],
-                                       "S06": [3, 6, 7, 10, 12, 15, 17]})
+                                       "S06": [3, 6, 7, 10, 12, 15, 17, 18]})
         self.angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                             MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion,
                             MonstersClues.leaves_burned_marks, MonstersClues.weird_electronics_behavior,
@@ -571,7 +571,7 @@ class MonsterBase:
                             MonstersClues.travels_as_white_fog]
         self.angel.disable_methods = [MonstersDisableMethods.symbol_made_with_blood_against_angels,
                                       MonstersDisableMethods.exorcism_for_angels, MonstersDisableMethods.holy_oil,
-                                      MonstersDisableMethods.enochian_spell]
+                                      MonstersDisableMethods.enochian_spell, MonstersDisableMethods.angel_blade]
         self.angel.kill_methods = [MonstersKillMethods.angel_blade, MonstersKillMethods.holy_oil,
 
                                    MonstersKillMethods.will_of_an_archangel, MonstersKillMethods.will_of_prince_of_hell,
@@ -1024,6 +1024,7 @@ class MonsterBase:
                                      episodes={"S06": [12, 16]})
         self.mother_of_all.clues = [MonstersClues.telekinesis, MonstersClues.weird_electronics_behavior,
                                     MonstersClues.real_appearance_can_be_seen_in_a_reflection_or_camera]
+        self.mother_of_all.disable_methods = [MonstersDisableMethods.ashes_of_a_phoenix]
 
         self.arachne = Monster("Arachne", description="No one has seen it outside of Crete for 2000 years. "
                                                       "When in mating time it has a type, that it likes.",
@@ -1048,10 +1049,15 @@ class MonsterBase:
         self.fate.clues = [MonstersClues.weird_things_behavior, MonstersClues.people_dead_weirdly, MonstersClues.no_emf,
                            MonstersClues.bad_luck, MonstersClues.left_gold_thread, MonstersClues.can_stop_time]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S06": [17]})
-        self.unknown.clues = [MonstersClues.weird_things_behavior, MonstersClues.people_dead_weirdly,
-                              MonstersClues.bad_luck, MonstersClues.no_emf, MonstersClues.left_gold_thread,
-                              MonstersClues.can_stop_time]
+        self.phoenix = Monster("Phoenix", description="A creature, that can burn people with it's touch. "
+                                                      "Dies in a fire.", episodes={"S06": [18]})
+        self.phoenix.clues = [MonstersClues.weird_fire_spontaneous_combustion, MonstersClues.empty_graves,
+                              MonstersClues.burned_people, MonstersClues.invulnerable]
+        self.phoenix.disable_methods = [MonstersDisableMethods.iron_or_iron_bullets]
+        self.phoenix.kill_methods = [MonstersKillMethods.colt_of_colt_with_magic_bullets]
+
+        self.unknown = Monster("Unknown", description="", episodes={"S06": [18]})
+        self.unknown.clues = [MonstersClues.weird_fire_spontaneous_combustion]
 
 
         # -------------------------------------------------- SEASON 7 --------------------------------------------------

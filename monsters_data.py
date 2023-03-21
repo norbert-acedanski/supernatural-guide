@@ -25,6 +25,7 @@ class MonstersClues:
     ectoplasm = "ectoplasm (black goo)"
     pact_sealed_with_a_kiss = "pact sealed with a kiss"
     burned_by_holy_water = "burned by holy water"
+    burned_people = "burned people"
     sulfur = "sulfur"
     no_sulfur = "no sulfur"
     sulfur_in_the_blood = "sulfur in the blood"
@@ -402,6 +403,8 @@ class MonstersDisableMethods:
     enochian_spell = "enochian spell"
     spilled_sugar_or_salt = "spilled sugar or salt"
     electricity = "electricity"
+    ashes_of_a_phoenix = "ashes of a phoenix"
+    angel_blade = "angel blade"
 
 
 class MonstersCureMethods:
