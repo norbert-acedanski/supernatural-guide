@@ -28,7 +28,8 @@ class ObjectsBase:
                                                                "13 bullets. Bullets can be crafted for this gun. "
                                                                "Can kill everything in all creation except 5 entities: "
                                                                "Archangel Lucyfer, unknown 4 left.",
-                                   episodes={"S01": [20, 21, 22], "S02": [1, 22], "S03": [4, 5, 9], "S05": [10]})
+                                   episodes={"S01": [20, 21, 22], "S02": [1, 22], "S03": [4, 5, 9], "S05": [10],
+                                             "S06": [18]})
         self.colt_of_colt.abilities = [ObjectAbilities.can_kill_anything]
 
         # ---------------------------------------------- ALL EPISODES DONE ---------------------------------------------
@@ -93,7 +94,7 @@ class ObjectsBase:
         self.angel_protection_sigil.abilities = [ObjectAbilities.angels_cant_get_past_it]
 
         self.angel_blade = Object("Angel blade", description="A triangular, silvery blade, that each angel has.",
-                                  episodes={"S04": [16], "S05": [1, 13, 18], "S06": [3, 10, 17]})
+                                  episodes={"S04": [16], "S05": [1, 13, 18], "S06": [3, 10, 17, 18]})
         self.angel_blade.abilities = [ObjectAbilities.can_kill_angels]
 
         self.lucifers_cage = Object("Lucifer's Cage", description="A prison build specifically to contain archangelic "
