@@ -267,7 +267,7 @@ class MonsterBase:
                                                       "bleeding them for days or weeks. "
                                                       "One can become a vampire, when drinking vampire blood. "
                                                       "Upon changing, all senses sharpen.",
-                               episodes={"S01": [20], "S02": [3], "S03": [7], "S05": [3], "S06": [5]})
+                               episodes={"S01": [20], "S02": [3], "S03": [7], "S05": [3], "S06": [5, 19]})
         self.vampire.clues = [MonstersClues.ripped_throat, MonstersClues.no_blood_in_the_body,
                               MonstersClues.needle_like_teeth, MonstersClues.moving_in_groups_usually,
                               MonstersClues.invulnerable, MonstersClues.high_strength, MonstersClues.bright_eyes,
@@ -276,7 +276,8 @@ class MonsterBase:
                               MonstersClues.craving_for_blood, MonstersClues.people_dead_weirdly,
                               MonstersClues.missing_or_dead_people_regularly_in_the_same_area, MonstersClues.moves_fast]
         self.vampire.kill_methods = [MonstersKillMethods.decapitation, MonstersKillMethods.angel_blade,
-                                     MonstersKillMethods.colt_of_colt_with_magic_bullets]
+                                     MonstersKillMethods.colt_of_colt_with_magic_bullets,
+                                     MonstersKillMethods.will_of_an_angel]
         self.vampire.disable_methods = [MonstersDisableMethods.dead_mans_blood]
         self.vampire.cure_methods = [MonstersCureMethods.cocktail_made_of_blood_of_the_vampire_that_bit_the_victim]
 
@@ -553,7 +554,7 @@ class MonsterBase:
                                                   "To possess somebody, they need a consent.",
                              episodes={"S04": [1, 2, 7, 9, 10, 15, 16, 18, 20, 21, 22],
                                        "S05": [1, 2, 3, 4, 5, 8, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22],
-                                       "S06": [3, 6, 7, 10, 12, 15, 17, 18]})
+                                       "S06": [3, 6, 7, 10, 12, 15, 17, 18, 19]})
         self.angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                             MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion,
                             MonstersClues.leaves_burned_marks, MonstersClues.weird_electronics_behavior,
@@ -571,7 +572,8 @@ class MonsterBase:
                             MonstersClues.travels_as_white_fog]
         self.angel.disable_methods = [MonstersDisableMethods.symbol_made_with_blood_against_angels,
                                       MonstersDisableMethods.exorcism_for_angels, MonstersDisableMethods.holy_oil,
-                                      MonstersDisableMethods.enochian_spell, MonstersDisableMethods.angel_blade]
+                                      MonstersDisableMethods.enochian_spell, MonstersDisableMethods.angel_blade,
+                                      MonstersDisableMethods.presence_of_the_mother]
         self.angel.kill_methods = [MonstersKillMethods.angel_blade, MonstersKillMethods.holy_oil,
 
                                    MonstersKillMethods.will_of_an_archangel, MonstersKillMethods.will_of_prince_of_hell,
@@ -768,8 +770,9 @@ class MonsterBase:
                                                                     "According to a crossroads demon, "
                                                                     "he's real name is Fergus Rodric MacLeod. "
                                                                     "He was born in Canisbay, Scotland 1661. "
-                                                                    "Supposedly died in S06E10.",
-                                     episodes={"S05": [10, 20, 21], "S06": [4, 7, 8, 10]})
+                                                                    "Supposedly died in S06E10, but in S06E19 it is "
+                                                                    "revealed he was working with Castiel.",
+                                     episodes={"S05": [10, 20, 21], "S06": [4, 7, 8, 10, 19]})
         self.demon_crowley.clues = [MonstersClues.can_vanish, MonstersClues.pact_sealed_with_a_kiss,
                                     MonstersClues.summoned_by_placing_box_in_the_crossroads, MonstersClues.telekinesis,
                                     MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
@@ -801,8 +804,9 @@ class MonsterBase:
                              MonstersClues.victims_brain_devoid_of_water, MonstersClues.silver_burns_its_skin,
                              MonstersClues.can_take_form_of_other_people, MonstersClues.people_seeing_things_or_figures,
                              MonstersClues.people_hear_voices, MonstersClues.people_seeing_strange_things,
-                             MonstersClues.real_appearance_can_be_seen_in_a_reflection_or_camera, MonstersClues.high_strength,
-                             MonstersClues.people_loosing_their_minds]
+                             MonstersClues.real_appearance_can_be_seen_in_a_reflection_or_camera,
+                             MonstersClues.high_strength, MonstersClues.people_loosing_their_minds,
+                             MonstersClues.long_spike_from_the_arm]
         self.wraith.disable_methods = [MonstersDisableMethods.silver_or_silver_bullets]
         self.wraith.kill_methods = [MonstersKillMethods.silver_blade]
 
@@ -1020,11 +1024,17 @@ class MonsterBase:
                                                                   "until released in S06E12. Calls herself Eve. "
                                                                   "She was walking the face of the Earth "
                                                                   "10 000 years ago. Every monster can be traced "
-                                                                  "back to her.",
+                                                                  "back to her. Can talk to every monster, "
+                                                                  "that is alive. Killed in S06E19.",
                                      episodes={"S06": [12, 16]})
         self.mother_of_all.clues = [MonstersClues.telekinesis, MonstersClues.weird_electronics_behavior,
-                                    MonstersClues.real_appearance_can_be_seen_in_a_reflection_or_camera]
+                                    MonstersClues.real_appearance_can_be_seen_in_a_reflection_or_camera,
+                                    MonstersClues.mind_control, MonstersClues.people_dead_weirdly,
+                                    MonstersClues.people_acting_weirdly, MonstersClues.people_hear_voices,
+                                    MonstersClues.can_turn_people_into_monsters, MonstersClues.can_appear_out_of_thin_air,
+                                    MonstersClues.can_make_themselves_appear_as_they_like, MonstersClues.can_vanish]
         self.mother_of_all.disable_methods = [MonstersDisableMethods.ashes_of_a_phoenix]
+        self.mother_of_all.kill_methods = [MonstersKillMethods.ashes_of_a_phoenix]
 
         self.arachne = Monster("Arachne", description="No one has seen it outside of Crete for 2000 years. "
                                                       "When in mating time it has a type, that it likes.",
@@ -1056,8 +1066,18 @@ class MonsterBase:
         self.phoenix.disable_methods = [MonstersDisableMethods.iron_or_iron_bullets]
         self.phoenix.kill_methods = [MonstersKillMethods.colt_of_colt_with_magic_bullets]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S06": [18]})
-        self.unknown.clues = [MonstersClues.weird_fire_spontaneous_combustion]
+        self.jefferson_starship = Monster("Jefferson Starship", description="A monster, that is a combination of "
+                                                                            "a Vampire and a Wraith created by Eve. "
+                                                                            "Dean named it in S06E19 and all of them "
+                                                                            "died in the same episode.",
+                                          episodes={"S06": [19]})
+        self.jefferson_starship.clues = [MonstersClues.needle_like_teeth, MonstersClues.moving_in_groups_usually,
+                                         MonstersClues.bright_eyes, MonstersClues.long_spike_from_the_arm,
+                                         MonstersClues.feeds_on_blood]
+        self.jefferson_starship.kill_methods = [MonstersKillMethods.decapitation, MonstersKillMethods.will_of_an_angel]
+
+        self.unknown = Monster("Unknown", description="", episodes={"S06": [19]})
+        self.unknown.clues = []
 
 
         # -------------------------------------------------- SEASON 7 --------------------------------------------------

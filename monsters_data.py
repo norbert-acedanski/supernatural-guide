@@ -234,6 +234,7 @@ class MonstersClues:
     can_create_fire_large_temperatures = "can create fire/large temperatures"
     can_change_the_past = "can change the past"
     can_stop_time = "can stop time"
+    can_turn_people_into_monsters = "can turn people into monsters"
     people_with_souls_switched = "people with souls switched"
     poisoned_people = "poisoned people"
     demon_killing_knife_is_ineffective = "demon killing knife is ineffective"
@@ -285,6 +286,7 @@ class MonstersClues:
     scars_on_victims = "scars on victims"
     worm = "worm"
     bad_luck = "bad luck"
+    long_spike_from_the_arm = "long spike from the arm"
 
 
 class MonstersKillMethods:
@@ -327,6 +329,7 @@ class MonstersKillMethods:
     will_of_prince_of_hell = "will of Prince of Hell"
     will_of_a_nephilim = "will of a Nephilim"
     will_of_a_person_with_abilities = "will of a person with abilities"
+    will_of_an_angel = "will of an angel"
     celtic_sigil = "celtic sigil made of blood in the house and in the nest"
     the_darkness = "The Darkness"
     like_any_human = "like any human"
@@ -352,6 +355,7 @@ class MonstersKillMethods:
     blend_it = "blend it (e.g. with a woodchipper)"
     microwave_it = "microwave it"
     electricity = "electricity"
+    ashes_of_a_phoenix = "ashes of a phoenix"
 
 
 class MonstersDisableMethods:
@@ -405,6 +409,7 @@ class MonstersDisableMethods:
     electricity = "electricity"
     ashes_of_a_phoenix = "ashes of a phoenix"
     angel_blade = "angel blade"
+    presence_of_the_mother = "presence of the mother"
 
 
 class MonstersCureMethods:
