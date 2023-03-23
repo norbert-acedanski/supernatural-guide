@@ -116,7 +116,7 @@ class MonsterBase:
                                                   "Demons are man that were stuck in hell for a long time.",
                              episodes={"S01": [4, 21, 22], "S02": [1, 14], "S03": [1, 2, 4, 12, 15, 16],
                                        "S04": [1, 4, 9, 10, 20, 21, 22], "S05": [1, 6, 10, 12, 14, 17, 20, 21, 22],
-                                       "S06": [7, 10, 18]})
+                                       "S06": [7, 10, 18, 20]})
         self.demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                             MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                             MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -551,10 +551,11 @@ class MonsterBase:
                                                   "All angels have graces - energy source for their power. "
                                                   "When they disobey (fall), as a punishment they can become human. "
                                                   "When dying, a bright light is produced and they leave wing marks. "
-                                                  "To possess somebody, they need a consent.",
+                                                  "To possess somebody, they need a consent. Castiel broke the fourth "
+                                                  "wall in S06E20.",
                              episodes={"S04": [1, 2, 7, 9, 10, 15, 16, 18, 20, 21, 22],
                                        "S05": [1, 2, 3, 4, 5, 8, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22],
-                                       "S06": [3, 6, 7, 10, 12, 15, 17, 18, 19]})
+                                       "S06": [3, 6, 7, 10, 12, 15, 17, 18, 19, 20]})
         self.angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                             MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion,
                             MonstersClues.leaves_burned_marks, MonstersClues.weird_electronics_behavior,
@@ -568,6 +569,7 @@ class MonsterBase:
                             MonstersClues.mimics_human_voice, MonstersClues.can_control_electronics,
                             MonstersClues.triangle_wound, MonstersClues.amnesia_blackout,
                             MonstersClues.can_teleport_people, MonstersClues.can_read_peoples_minds,
+                            MonstersClues.can_become_invisible, MonstersClues.can_control_demons,
 
                             MonstersClues.travels_as_white_fog]
         self.angel.disable_methods = [MonstersDisableMethods.symbol_made_with_blood_against_angels,
@@ -736,7 +738,7 @@ class MonsterBase:
         self.horseman_war.disable_methods = [MonstersDisableMethods.demon_killing_knife]
 
         self.archangel_raphael = Monster("Archangel Raphael", description="One of the Archangels of God.",
-                                         episodes={"S05": [3], "S06": [3, 15]})
+                                         episodes={"S05": [3], "S06": [3, 15, 20]})
         self.archangel_raphael.clues = [MonstersClues.bright_light, MonstersClues.invulnerable,
                                         MonstersClues.telekinesis, MonstersClues.can_vanish,
                                         MonstersClues.can_hurt_people_with_a_thought]
@@ -772,12 +774,12 @@ class MonsterBase:
                                                                     "He was born in Canisbay, Scotland 1661. "
                                                                     "Supposedly died in S06E10, but in S06E19 it is "
                                                                     "revealed he was working with Castiel.",
-                                     episodes={"S05": [10, 20, 21], "S06": [4, 7, 8, 10, 19]})
+                                     episodes={"S05": [10, 20, 21], "S06": [4, 7, 8, 10, 19, 20]})
         self.demon_crowley.clues = [MonstersClues.can_vanish, MonstersClues.pact_sealed_with_a_kiss,
                                     MonstersClues.summoned_by_placing_box_in_the_crossroads, MonstersClues.telekinesis,
                                     MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
                                     MonstersClues.can_appear_out_of_thin_air, MonstersClues.can_control_electronics,
-                                    MonstersClues.weird_fire_spontaneous_combustion,
+                                    MonstersClues.weird_fire_spontaneous_combustion, MonstersClues.can_become_invisible,
                                     MonstersClues.can_bring_back_dead_people, MonstersClues.can_give_people_diseases,
 
                                     MonstersClues.black_blood, MonstersClues.burned_by_holy_water,
@@ -1076,7 +1078,7 @@ class MonsterBase:
                                          MonstersClues.feeds_on_blood]
         self.jefferson_starship.kill_methods = [MonstersKillMethods.decapitation, MonstersKillMethods.will_of_an_angel]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S06": [19]})
+        self.unknown = Monster("Unknown", description="", episodes={"S06": [20]})
         self.unknown.clues = []
 
 
