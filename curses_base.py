@@ -131,6 +131,9 @@ class CursesBase:
                                             CursesClues.strange_feeling_that_things_should_be_different]
         self.timeline_change_spell.disable_methods = [CursesDisableMethods.wait_for_an_opening_from_the_other_side]
 
+        self.angel_summoning_spell = Curse("Angel summoning spell", description="Can summon a specific angel.",
+                                           episodes={"S06": [21]})  # TODO: Check where else was this spell used.
+
         # SEASON 7:
 
 
