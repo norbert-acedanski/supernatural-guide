@@ -49,7 +49,7 @@ class ObjectsBase:
                                                                              "not get them back to hell. "
                                                                              "Cannot kill certain kinds of demons.",
                                           episodes={"S03": [1, 9, 16], "S04": [1, 9, 20, 22],
-                                                    "S05": [1, 10, 14, 17, 20, 21, 22], "S06": [10]})
+                                                    "S05": [1, 10, 14, 17, 20, 21, 22], "S06": [10, 20]})
         self.demon_killing_knife.abilities = [ObjectAbilities.can_kill_demons, ObjectAbilities.cannot_kill_angels]
 
         self.lucky_rabbits_foot = Object("Lucky rabbits foot",
