@@ -35,7 +35,7 @@ If you are a fan of Supernatural show, you can play with this project to find ou
 # TODO:
 - finish all seasons and episodes.
 - fill missing appearances of John Winchester's Journal until S04E19.
-- add devil's trap to objects from all episodes until S05E01.
+- add devil's trap to objects from all episodes
 - add disable methods for objects like sigils (that can be disabled by breaking the integrity of the drawing)
 - fill missing information about each monster, curse, spell, object, event, etc.
 - add information about all unique monsters, that died in the series until S05E19.
