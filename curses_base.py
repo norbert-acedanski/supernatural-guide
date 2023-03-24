@@ -108,7 +108,31 @@ class CursesBase:
 
         # SEASON 6:
 
+        self.angel_tracking_spell = Curse("Angel tracking spell", description="Spell, that allows to track an angel. "
+                                                                              "Is performed with a myrrh, human blood "
+                                                                              "and a drawn symbol. "
+                                                                              "An enochian spell is then said with "
+                                                                              "holy water put in the bowl.",
+                                          episodes={"S06": [3]})
 
+        self.truth_curse = Curse("Truth Curse", description="People wish to hear the truth and it happens - all people "
+                                                            "tell this person only the truth. "
+                                                            "It is caused by goddess Veritas", episodes={"S06": [6]})
+        self.truth_curse.clues = [CursesClues.people_dead_weirdly, CursesClues.suicides, CursesClues.no_emf,
+                                  CursesClues.no_sulfur, CursesClues.no_hex_bags, CursesClues.people_hear_truth_only,
+                                  CursesClues.does_not_work_on_people_without_souls]
+        self.truth_curse.disable_methods = [CursesDisableMethods.kill_goddess_of_truth_veritas]
+
+        self.timeline_change_spell = Curse("Timeline change spell", description="Spell made with salt, blood of a lamb "
+                                                                                "and a bone of a lesser saint. "
+                                                                                "Also a sigil has to be drawn.",
+                                           episodes={"S06": [15]})
+        self.timeline_change_spell.clues = [CursesClues.different_history, CursesClues.different_memories,
+                                            CursesClues.strange_feeling_that_things_should_be_different]
+        self.timeline_change_spell.disable_methods = [CursesDisableMethods.wait_for_an_opening_from_the_other_side]
+
+        self.angel_summoning_spell = Curse("Angel summoning spell", description="Can summon a specific angel.",
+                                           episodes={"S06": [21]})  # TODO: Check where else was this spell used.
 
         # SEASON 7:
 

@@ -10,3 +10,4 @@ class PlaceClues:
     strange_feeling_that_things_should_be_different = "strange feeling that things should be different"
     good_memories_relived = "good memories relived"
     changing_scenery = "changing scenery"
+    endless_queue = "endless queue"
