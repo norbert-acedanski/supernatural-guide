@@ -210,6 +210,7 @@ class MonstersClues:
     can_control_demons = "can control demons"
     can_send_demons_back_to_hell_with_power_of_will = "can send demons back to hell with power of will"
     can_kill_demons_with_power_of_will = "can kill demons with power of will (with enough power)"
+    can_kill_archangels_with_finger_snap = "can kill archangels with finger snap"
     can_put_a_person_to_sleep = "can put a person to sleep"
     can_contact_a_person_in_a_dream = "can contact a person in a dream"
     can_send_people_to_the_past = "can send people to the past"
@@ -238,6 +239,7 @@ class MonstersClues:
     people_with_souls_switched = "people with souls switched"
     poisoned_people = "poisoned people"
     demon_killing_knife_is_ineffective = "demon killing knife is ineffective"
+    angel_blade_is_ineffective = "angel blade is ineffective"
     immortal = "immortal"
     invulnerable = "invulnerable"
     has_wings = "has wings"
@@ -253,6 +255,8 @@ class MonstersClues:
     white_skin = "white skin"
     one_can_make_a_deal_with_it = "one can make a deal with it"
     cannot_enter_a_home_without_invitation = "cannot enter a home without invitation"
+    cannot_be_exorcised_by_an_angel_with_hand_on_forehead_when_protected_by_an_archangel = \
+        "cannot be exorcised by an angel with hand on forehead when protected by an archangel"
     small_earth_quake = "small earth quake"
     small_people = "small people"
     contact_from_dead_people = "contact from dead people (calls, messages, etc.)"
@@ -330,6 +334,7 @@ class MonstersKillMethods:
     will_of_a_nephilim = "will of a Nephilim"
     will_of_a_person_with_abilities = "will of a person with abilities"
     will_of_an_angel = "will of an angel"
+    will_of_an_angel_on_soul_juice = "will of an angel on soul juice"
     celtic_sigil = "celtic sigil made of blood in the house and in the nest"
     the_darkness = "The Darkness"
     like_any_human = "like any human"
@@ -356,6 +361,7 @@ class MonstersKillMethods:
     microwave_it = "microwave it"
     electricity = "electricity"
     ashes_of_a_phoenix = "ashes of a phoenix"
+    draining_blood = "draining blood"
 
 
 class MonstersDisableMethods:

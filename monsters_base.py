@@ -116,7 +116,7 @@ class MonsterBase:
                                                   "Demons are man that were stuck in hell for a long time.",
                              episodes={"S01": [4, 21, 22], "S02": [1, 14], "S03": [1, 2, 4, 12, 15, 16],
                                        "S04": [1, 4, 9, 10, 20, 21, 22], "S05": [1, 6, 10, 12, 14, 17, 20, 21, 22],
-                                       "S06": [7, 10, 18, 20, 21]})
+                                       "S06": [7, 10, 18, 20, 21, 22]})
         self.demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                             MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                             MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -555,7 +555,7 @@ class MonsterBase:
                                                   "wall in S06E20.",
                              episodes={"S04": [1, 2, 7, 9, 10, 15, 16, 18, 20, 21, 22],
                                        "S05": [1, 2, 3, 4, 5, 8, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22],
-                                       "S06": [3, 6, 7, 10, 12, 15, 17, 18, 19, 20, 21]})
+                                       "S06": [3, 6, 7, 10, 12, 15, 17, 18, 19, 20, 21, 22]})
         self.angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                             MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion,
                             MonstersClues.leaves_burned_marks, MonstersClues.weird_electronics_behavior,
@@ -738,13 +738,16 @@ class MonsterBase:
                                    MonstersClues.can_give_hallucinations]
         self.horseman_war.disable_methods = [MonstersDisableMethods.demon_killing_knife]
 
-        self.archangel_raphael = Monster("Archangel Raphael", description="One of the Archangels of God.",
-                                         episodes={"S05": [3], "S06": [3, 15, 20]})
+        self.archangel_raphael = Monster("Archangel Raphael", description="One of the Archangels of God. "
+                                                                          "Wanted to bring the Apocalypse."
+                                                                          "Killed by Castiel in S06E22.",
+                                         episodes={"S05": [3], "S06": [3, 15, 20, 22]})
         self.archangel_raphael.clues = [MonstersClues.bright_light, MonstersClues.invulnerable,
                                         MonstersClues.telekinesis, MonstersClues.can_vanish,
                                         MonstersClues.can_hurt_people_with_a_thought]
         self.archangel_raphael.disable_methods = [MonstersDisableMethods.holy_oil]
-        self.archangel_raphael.kill_methods = [MonstersKillMethods.archangel_blade]
+        self.archangel_raphael.kill_methods = [MonstersKillMethods.archangel_blade,
+                                               MonstersKillMethods.will_of_an_angel_on_soul_juice]
 
         self.pagan_god_leshii = Monster("Pagan god Leshi", description="Guardian of the forest in Balkan legends. "
                                                                        "He is a mischievous god and can take "
@@ -775,13 +778,15 @@ class MonsterBase:
                                                                     "He was born in Canisbay, Scotland 1661. "
                                                                     "Supposedly died in S06E10, but in S06E19 it is "
                                                                     "revealed he was working with Castiel.",
-                                     episodes={"S05": [10, 20, 21], "S06": [4, 7, 8, 10, 19, 20, 21]})
+                                     episodes={"S05": [10, 20, 21], "S06": [4, 7, 8, 10, 19, 20, 21, 22]})
         self.demon_crowley.clues = [MonstersClues.can_vanish, MonstersClues.pact_sealed_with_a_kiss,
                                     MonstersClues.summoned_by_placing_box_in_the_crossroads, MonstersClues.telekinesis,
                                     MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
                                     MonstersClues.can_appear_out_of_thin_air, MonstersClues.can_control_electronics,
                                     MonstersClues.weird_fire_spontaneous_combustion, MonstersClues.can_become_invisible,
                                     MonstersClues.can_bring_back_dead_people, MonstersClues.can_give_people_diseases,
+                                    MonstersClues.
+                                        cannot_be_exorcised_by_an_angel_with_hand_on_forehead_when_protected_by_an_archangel,
 
                                     MonstersClues.black_blood, MonstersClues.burned_by_holy_water,
                                     MonstersClues.travels_as_red_fog, MonstersClues.red_eyes]
@@ -949,8 +954,9 @@ class MonsterBase:
         self.alpha_shapeshifter.kill_methods = [MonstersKillMethods.iridium_blade_decapitation]
 
         self.angel_balthazar = Monster("Angel Balthazar", description="Angel, that stole a lot of angel weapons "
-                                                                      "after the Apocalypse was canceled.",
-                                       episodes={"S06": [3, 11, 15, 17, 21]})
+                                                                      "after the Apocalypse was canceled. "
+                                                                      "Killed by Castiel in S06E22.",
+                                       episodes={"S06": [3, 11, 15, 17, 21, 22]})
         self.angel_balthazar.clues = [MonstersClues.can_vanish, MonstersClues.can_appear_out_of_thin_air,
                                       MonstersClues.marks_on_victims_souls, MonstersClues.can_change_the_past]
         self.angel_balthazar.disable_methods = [MonstersDisableMethods.holy_oil]
@@ -1027,10 +1033,11 @@ class MonsterBase:
                                                     description="Monster released from Purgatory during "
                                                                 "H.P. Lovecraft's 1937 night, that he and his "
                                                                 "worshipers opened the door to Purgatory. "
-                                                                "Possessed a body of a woman Ellie.",
-                                                    episodes={"S06": [12, 21]})
+                                                                "Possessed a body of a woman Ellie. Died in S06E22.",
+                                                    episodes={"S06": [12, 21, 22]})
         self.ellie_monster_from_purgatory.clues = [MonstersClues.weird_things_behavior, MonstersClues.immortal,
                                                    MonstersClues.people_dead_weirdly]
+        self.ellie_monster_from_purgatory.kill_methods = [MonstersKillMethods.draining_blood]
 
         self.mother_of_all = Monster("Mother of all", description="Mother of all monsters. Was in a Purgatory, "
                                                                   "until released in S06E12. Calls herself Eve. "
@@ -1088,9 +1095,20 @@ class MonsterBase:
                                          MonstersClues.feeds_on_blood]
         self.jefferson_starship.kill_methods = [MonstersKillMethods.decapitation, MonstersKillMethods.will_of_an_angel]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S06": [21]})
-        self.unknown.clues = [MonstersClues.weird_things_behavior, MonstersClues.people_dead_weirdly]
+        self.angel_on_soul_juice = Monster("Angel on soul juice", description="Angel, that has taken millions of souls "
+                                                                              "(in Castiel case these were "
+                                                                              "Purgatory Souls). Possesses GOD-like "
+                                                                              "powers. Castiel made himself a "
+                                                                              "new GOD in S06E22.",
+                                           episodes={"S06": [22]})
+        self.angel_on_soul_juice.clues = [MonstersClues.can_appear_out_of_thin_air,
+                                          MonstersClues.can_kill_archangels_with_finger_snap,
+                                          MonstersClues.angel_blade_is_ineffective]
 
+        self.unknown = Monster("Unknown", description="", episodes={"S06": [22]})
+        self.unknown.clues = [MonstersClues.red_eyes]
+
+        # ---------------------------------------------- ALL EPISODES DONE ---------------------------------------------
 
         # -------------------------------------------------- SEASON 7 --------------------------------------------------
 
