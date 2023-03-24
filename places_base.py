@@ -31,7 +31,11 @@ class PlacesBase:
                                                         "Can be opened with an ancient ritual and let 'Mother' "
                                                         "to the Earth. In a place, that is the entrance, "
                                                         "you have to use a proper spell, drop dragon blood down "
-                                                        "and let a virgin fall to the door. Opened in S06E12.")
+                                                        "and let a virgin fall to the door. Opened in S06E12. "
+                                                        "Can also be opened in any place, but a proper spell, "
+                                                        "blood of a virgin, blood of a Purgatory native monster and "
+                                                        "it has to be the eclipse. A proper sigil has to be drawn "
+                                                        "on a wall. Opened again in S06E22.")
 
         self.places = [place for place in self.__dict__.values() if isinstance(place, Place)]
 
