@@ -35,7 +35,9 @@ class PlacesBase:
                                                         "Can also be opened in any place, but a proper spell, "
                                                         "blood of a virgin, blood of a Purgatory native monster and "
                                                         "it has to be the eclipse. A proper sigil has to be drawn "
-                                                        "on a wall. Opened again in S06E22.")
+                                                        "on a wall. Opened again in S06E22 to let all creatures "
+                                                        "into Castiel. Opened again in S07E01 to let all creatures "
+                                                        "into Purgatory.")
 
         self.places = [place for place in self.__dict__.values() if isinstance(place, Place)]
 
