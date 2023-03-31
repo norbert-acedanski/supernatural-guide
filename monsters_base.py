@@ -552,7 +552,7 @@ class MonsterBase:
                                                   "When they disobey (fall), as a punishment they can become human. "
                                                   "When dying, a bright light is produced and they leave wing marks. "
                                                   "To possess somebody, they need a consent. Castiel broke the fourth "
-                                                  "wall in S06E20.",
+                                                  "wall in S06E20. Castiel supposedly died in S07E01.",
                              episodes={"S04": [1, 2, 7, 9, 10, 15, 16, 18, 20, 21, 22],
                                        "S05": [1, 2, 3, 4, 5, 8, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22],
                                        "S06": [3, 6, 7, 10, 12, 15, 17, 18, 19, 20, 21, 22], "S07": [1]})
@@ -666,7 +666,7 @@ class MonsterBase:
         self.archangel_lucyfer = Monster("Archangel - Lucyfer",
                                          description="Archangel, that disobeyed God when he requested to bow before "
                                                      "the men. To upset God he twisted one of the people into Lilith.",
-                                         episodes={"S04": [22], "S05": [1, 3, 4, 10, 19, 22]})
+                                         episodes={"S04": [22], "S05": [1, 3, 4, 10, 19, 22], "S07": [1, 2]})
         self.archangel_lucyfer.clues = [MonstersClues.weird_things_behavior, MonstersClues.true_voice_can_hurt_people,
                                         MonstersClues.bright_light, MonstersClues.weird_weather, MonstersClues.visions,
                                         MonstersClues.people_seeing_strange_things, MonstersClues.biblical_like_events,
@@ -1120,15 +1120,19 @@ class MonsterBase:
 
         # -------------------------------------------------- SEASON 7 --------------------------------------------------
 
-        self.unknown = Monster("Unknown", description="", episodes={"S07": [1]})
-        self.unknown.clues = [MonstersClues.red_eyes]
-
         self.leviathan = Monster("Leviathan", description="Long before GOD created Angel and man, he made the first "
                                                           "beasts - the Leviathans. GOD was concerned, that they would "
                                                           "devour all creation, so he locked them away in Purgatory.",
-                                 episodes={"S07": [1]})
+                                 episodes={"S07": [1, 2]})
         self.leviathan.clues = [MonstersClues.high_strength, MonstersClues.can_posses_an_angel,
-                                MonstersClues.black_veins]
+                                MonstersClues.black_veins, MonstersClues.black_blood, MonstersClues.moves_in_water,
+                                MonstersClues.people_dead_weirdly, MonstersClues.animal_like_attack,
+                                MonstersClues.can_read_peoples_minds, MonstersClues.can_take_form_of_other_people,
+                                MonstersClues.silver_does_not_affect_it, MonstersClues.large_mouth_full_of_teeth,
+                                MonstersClues.invulnerable]
+
+        self.unknown = Monster("Unknown", description="", episodes={"S07": [2]})
+        self.unknown.clues = []
 
         # -------------------------------------------------- SEASON 8 --------------------------------------------------
 

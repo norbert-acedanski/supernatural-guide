@@ -80,6 +80,7 @@ class MonstersClues:
     murders_during_full_moon_week = "murders during full moon week"
     murders_not_during_full_moon_week = "murders not during full moon week"
     moves_fast = "moves fast"
+    moves_in_water = "moves in water"
     moving_in_groups_usually = "moving in groups usually"
     great_sense_of_smell = "great sense of smell"
     strange_roar = "strange roar"
@@ -296,6 +297,7 @@ class MonstersClues:
     worm = "worm"
     bad_luck = "bad luck"
     long_spike_from_the_arm = "long spike from the arm"
+    large_mouth_full_of_teeth = "large mouth full of teeth"
 
 
 class MonstersKillMethods:
