@@ -555,7 +555,7 @@ class MonsterBase:
                                                   "wall in S06E20.",
                              episodes={"S04": [1, 2, 7, 9, 10, 15, 16, 18, 20, 21, 22],
                                        "S05": [1, 2, 3, 4, 5, 8, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22],
-                                       "S06": [3, 6, 7, 10, 12, 15, 17, 18, 19, 20, 21, 22]})
+                                       "S06": [3, 6, 7, 10, 12, 15, 17, 18, 19, 20, 21, 22], "S07": [1]})
         self.angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                             MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion,
                             MonstersClues.leaves_burned_marks, MonstersClues.weird_electronics_behavior,
@@ -721,7 +721,8 @@ class MonsterBase:
                                                   "Brother of the Darkness. A being with almost unlimited power. "
                                                   "Only mentioned for now. According to Death - he will die too "
                                                   "some day by Death's hand (S05E21). At the end of the S05E22 "
-                                                  "Chuck disappears, hinting he is THE God.")
+                                                  "Chuck disappears, hinting he is THE God. His voice can be heard "
+                                                  "in S07E01 talking to Castiel.")
         self.god.clues = [MonstersClues.can_bring_back_dead_angels, MonstersClues.can_teleport_people,
                           MonstersClues.shining_of_magic_amulet, MonstersClues.can_bring_back_angelic_grace]
         self.god.kill_methods = [
@@ -778,7 +779,7 @@ class MonsterBase:
                                                                     "He was born in Canisbay, Scotland 1661. "
                                                                     "Supposedly died in S06E10, but in S06E19 it is "
                                                                     "revealed he was working with Castiel.",
-                                     episodes={"S05": [10, 20, 21], "S06": [4, 7, 8, 10, 19, 20, 21, 22]})
+                                     episodes={"S05": [10, 20, 21], "S06": [4, 7, 8, 10, 19, 20, 21, 22], "S07": [1]})
         self.demon_crowley.clues = [MonstersClues.can_vanish, MonstersClues.pact_sealed_with_a_kiss,
                                     MonstersClues.summoned_by_placing_box_in_the_crossroads, MonstersClues.telekinesis,
                                     MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
@@ -796,7 +797,7 @@ class MonsterBase:
                                                                   "Angel of Death. Can be brought to the Earth "
                                                                   "at midnight through a place of awful carnage. "
                                                                   "Summoned in S05E10 and his actions seen in S05E15.",
-                                    episodes={"S05": [21], "S06": [11]})
+                                    episodes={"S05": [21], "S06": [11], "S07": [1]})
         self.reaper_death.clues = [MonstersClues.number_of_reapers_appearing, MonstersClues.can_bring_back_dead_people,
                                    MonstersClues.can_kill_people_with_a_thought, MonstersClues.people_dead_weirdly,
                                    MonstersClues.can_appear_out_of_thin_air, MonstersClues.can_put_a_soul_back_to_a_body,
@@ -930,7 +931,7 @@ class MonsterBase:
                                           MonstersClues.weird_electronics_behavior]
 
         self.soulless_person = Monster("Soulless person", description="A person without a soul - only the 'meatsuit'.",
-                                       episodes={"S05": [21], "S06": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 13]})
+                                       episodes={"S05": [21], "S06": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 13, 22]})
         self.soulless_person.clues = [MonstersClues.people_acting_weirdly, MonstersClues.lack_of_empathy,
                                       MonstersClues.sociopath_like_behavior, MonstersClues.does_not_sleep]
 
@@ -1099,20 +1100,35 @@ class MonsterBase:
                                                                               "(in Castiel case these were "
                                                                               "Purgatory Souls). Possesses GOD-like "
                                                                               "powers. Castiel made himself a "
-                                                                              "new GOD in S06E22.",
-                                           episodes={"S06": [22]})
-        self.angel_on_soul_juice.clues = [MonstersClues.can_appear_out_of_thin_air,
-                                          MonstersClues.can_kill_archangels_with_finger_snap,
-                                          MonstersClues.angel_blade_is_ineffective]
-
-        self.unknown = Monster("Unknown", description="", episodes={"S06": [22]})
-        self.unknown.clues = [MonstersClues.red_eyes]
+                                                                              "new GOD in S06E22. His body will "
+                                                                              "deteriorate from the amount of power "
+                                                                              "he holds in himself. After letting all "
+                                                                              "creatures out, angel returns "
+                                                                              "to his strength.",
+                                           episodes={"S06": [22], "S07": [1]})
+        self.angel_on_soul_juice.clues = [MonstersClues.can_appear_out_of_thin_air, MonstersClues.people_dead_weirdly,
+                                          MonstersClues.can_kill_archangels_with_finger_snap, MonstersClues.telekinesis,
+                                          MonstersClues.angel_blade_is_ineffective, MonstersClues.weird_weather,
+                                          MonstersClues.can_hurt_people_with_a_thought, MonstersClues.can_vanish,
+                                          MonstersClues.missing_or_dead_people_regularly_in_different_areas,
+                                          MonstersClues.sigils_against_angels_are_ineffective,
+                                          MonstersClues.burned_marks_on_its_skin,
+                                          MonstersClues.weird_electronics_behavior,
+                                          MonstersClues.can_remove_death_binding_spell]
 
         # ---------------------------------------------- ALL EPISODES DONE ---------------------------------------------
 
         # -------------------------------------------------- SEASON 7 --------------------------------------------------
 
+        self.unknown = Monster("Unknown", description="", episodes={"S07": [1]})
+        self.unknown.clues = [MonstersClues.red_eyes]
 
+        self.leviathan = Monster("Leviathan", description="Long before GOD created Angel and man, he made the first "
+                                                          "beasts - the Leviathans. GOD was concerned, that they would "
+                                                          "devour all creation, so he locked them away in Purgatory.",
+                                 episodes={"S07": [1]})
+        self.leviathan.clues = [MonstersClues.high_strength, MonstersClues.can_posses_an_angel,
+                                MonstersClues.black_veins]
 
         # -------------------------------------------------- SEASON 8 --------------------------------------------------
 
