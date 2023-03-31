@@ -136,7 +136,14 @@ class CursesBase:
 
         # SEASON 7:
 
-
+        self.death_binding_spell = Curse("Death Binding Spell", description="Spell, that binds Death. To perform it, "
+                                                                            "you need 'An act of God crystallized "
+                                                                            "forever' - crystal made whe lightning "
+                                                                            "structs sand broke into powder, "
+                                                                            "unknown herbs, blood of a person. "
+                                                                            "You mix the ingredients and say a spell.",
+                                         episodes={"S07": [1]})
+        self.death_binding_spell.disable_methods = [CursesDisableMethods.will_of_an_angel_on_soul_juice]
 
         # SEASON 8:
 

@@ -51,3 +51,4 @@ class CursesDisableMethods:
     kill_the_witch_that_cursed_a_person = "kill the Witch that cursed a person"
     kill_goddess_of_truth_veritas = "kill goddess of truth Veritas"
     wait_for_an_opening_from_the_other_side = "wait for an opening from the other side"
+    will_of_an_angel_on_soul_juice = "will of an angel on soul juice"
