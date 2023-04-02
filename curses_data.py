@@ -21,6 +21,7 @@ class CursesClues:
     no_hex_bags = "no hex bags"
     hex_bag_hidden_somewhere = \
         "hex bag hidden somewhere (made with bird bones, rabbit's teeth, something that a person owned)"
+    coin_hidden_somewhere = "coin hidden somewhere"
     weird_electronics_behavior = "weird electronics behavior"
     sealed_with_a_kiss = "sealed with a kiss"
     strange_different_things_happening = "strange, different things happening - like invisible people, Bigfoot, " \
@@ -43,6 +44,7 @@ class CursesDisableMethods:
     surviving_the_curse = "surviving the curse"
     destroy_the_coptic_cross = "destroy the coptic cross"
     destroy_the_black_altar = "destroy the black altar, that was made with bones and human blood"
+    destroy_the_coin = "destroy the coin"
     burn_the_hex = "burn the hex"
     magic_brew = "magic brew"
     disable_the_spirit_that_causes_it = "disable the spirit that causes it"

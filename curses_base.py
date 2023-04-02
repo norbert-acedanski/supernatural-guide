@@ -43,10 +43,13 @@ class CursesBase:
 
         # SEASON 3:
 
-        self.curse = Curse("Unknown curse", episodes={"S03": [9]})
-        self.curse.clues = [CursesClues.hex_bag_hidden_somewhere, CursesClues.people_dead_weirdly,
-                            CursesClues.weird_electronics_behavior, CursesClues.people_feeling_weird_or_bad]
-        self.curse.disable_methods = [CursesDisableMethods.burn_the_hex, CursesDisableMethods.magic_brew]
+        self.killing_curse = Curse("Killing curse", description="Spell, that kills a person in a specific way.",
+                                   episodes={"S03": [9], "S07": [5]})
+        self.killing_curse.clues = [CursesClues.hex_bag_hidden_somewhere, CursesClues.coin_hidden_somewhere,
+                                    CursesClues.people_dead_weirdly, CursesClues.weird_electronics_behavior,
+                                    CursesClues.people_feeling_weird_or_bad]
+        self.killing_curse.disable_methods = [CursesDisableMethods.burn_the_hex, CursesDisableMethods.destroy_the_coin,
+                                              CursesDisableMethods.magic_brew]
 
         # ---------------------------------------------- ALL EPISODES DONE ---------------------------------------------
 
