@@ -486,14 +486,14 @@ class MonsterBase:
         self.witch = Monster("Witch", description="A woman/man, that deals with different kinds of magic (like black, "
                                                   "old world, etc.). Witch has magic powers, can bring demons, "
                                                   "be immortal, teleport etc.",
-                             episodes={"S03": [9], "S04": [7, 12], "S05": [7, 12]})
+                             episodes={"S03": [9], "S04": [7, 12], "S05": [7, 12], "S07": [5]})
         self.witch.clues = [MonstersClues.people_dead_weirdly, MonstersClues.hex_bag_hidden_somewhere,
-                            MonstersClues.weird_electronics_behavior, MonstersClues.telekinesis,
-                            MonstersClues.can_vanish, MonstersClues.immortal, MonstersClues.invulnerable,
-                            MonstersClues.telekinesis, MonstersClues.card_found_on_a_victim,
+                            MonstersClues.coin_hidden_somewhere, MonstersClues.weird_electronics_behavior,
+                            MonstersClues.telekinesis, MonstersClues.can_vanish, MonstersClues.immortal,
+                            MonstersClues.invulnerable, MonstersClues.weird_plant_deaths_or_behavior,
                             MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                             MonstersClues.people_aging_rapidly, MonstersClues.people_getting_younger,
-                            MonstersClues.people_with_souls_switched,
+                            MonstersClues.people_with_souls_switched, MonstersClues.card_found_on_a_victim,
 
                             MonstersClues.missing_heart]
         self.witch.disableMethod = [MonstersDisableMethods.stop_it_from_speaking,
@@ -1123,13 +1123,14 @@ class MonsterBase:
         self.leviathan = Monster("Leviathan", description="Long before GOD created Angel and man, he made the first "
                                                           "beasts - the Leviathans. GOD was concerned, that they would "
                                                           "devour all creation, so he locked them away in Purgatory.",
-                                 episodes={"S07": [1, 2, 3]})
+                                 episodes={"S07": [1, 2, 3, 5]})
         self.leviathan.clues = [MonstersClues.high_strength, MonstersClues.can_posses_an_angel,
                                 MonstersClues.black_veins, MonstersClues.black_blood, MonstersClues.moves_in_water,
                                 MonstersClues.people_dead_weirdly, MonstersClues.animal_like_attack,
                                 MonstersClues.can_read_peoples_minds, MonstersClues.can_take_form_of_other_people,
                                 MonstersClues.silver_does_not_affect_it, MonstersClues.large_mouth_full_of_teeth,
                                 MonstersClues.invulnerable, MonstersClues.double_tongue]
+        self.leviathan.disable_methods = [MonstersDisableMethods.paralyze_spell]
 
         self.kitsune = Monster("Kitsune", description="Tey look human, until they sprout out claws and stab you behind "
                                                       "your ear to get to your brain - according to young Sam. "
@@ -1155,9 +1156,9 @@ class MonsterBase:
                              MonstersClues.can_control_ghosts, MonstersClues.can_hurt_people_with_a_thought]
         self.osiris.disable_methods = [MonstersDisableMethods.stab_with_rams_horn]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S07": [3]})
-        self.unknown.clues = [MonstersClues.cold_spots, MonstersClues.people_dead_weirdly, MonstersClues.emf,
-                              MonstersClues.seen_as_car_or_truck, MonstersClues.animal_like_attack]
+        self.unknown = Monster("Unknown", description="", episodes={"S07": [5]})
+        self.unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.weird_electronics_behavior,
+                              MonstersClues.coin_hidden_somewhere, MonstersClues.weird_plant_deaths_or_behavior]
 
         # -------------------------------------------------- SEASON 8 --------------------------------------------------
 

@@ -183,6 +183,7 @@ class MonstersClues:
     bible_burns_it = "Bible burns it"
     invisible_dogs = "invisible dogs"
     goat_man = "goat-man"
+    coin_hidden_somewhere = "coin hidden somewhere"
     hex_bag_hidden_somewhere = "hex bag hidden somewhere"
     no_hex_bags = "no hex bags"
     with_a_binding_link_exorcism_does_not_work = \
@@ -425,6 +426,7 @@ class MonstersDisableMethods:
     reconnection_of_angel_with_its_grace = "reconnection of angel with its grace"
     colt_of_colt_with_magic_bullets = "colt of Colt with magic bullets"
     enochian_spell = "enochian spell"
+    paralyze_spell = "paralyze spell"
     spilled_sugar_or_salt = "spilled sugar or salt"
     electricity = "electricity"
     ashes_of_a_phoenix = "ashes of a phoenix"
