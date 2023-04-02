@@ -1123,15 +1123,26 @@ class MonsterBase:
         self.leviathan = Monster("Leviathan", description="Long before GOD created Angel and man, he made the first "
                                                           "beasts - the Leviathans. GOD was concerned, that they would "
                                                           "devour all creation, so he locked them away in Purgatory.",
-                                 episodes={"S07": [1, 2]})
+                                 episodes={"S07": [1, 2, 3]})
         self.leviathan.clues = [MonstersClues.high_strength, MonstersClues.can_posses_an_angel,
                                 MonstersClues.black_veins, MonstersClues.black_blood, MonstersClues.moves_in_water,
                                 MonstersClues.people_dead_weirdly, MonstersClues.animal_like_attack,
                                 MonstersClues.can_read_peoples_minds, MonstersClues.can_take_form_of_other_people,
                                 MonstersClues.silver_does_not_affect_it, MonstersClues.large_mouth_full_of_teeth,
-                                MonstersClues.invulnerable]
+                                MonstersClues.invulnerable, MonstersClues.double_tongue]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S07": [2]})
+        self.kitsune = Monster("Kitsune", description="Tey look human, until they sprout out claws and stab you behind "
+                                                      "your ear to get to your brain - according to young Sam. "
+                                                      "They need a steady diet of human pituitary gland.",
+                               episodes={"S07": [3]})
+        self.kitsune.clues = [MonstersClues.missing_part_of_the_brain, MonstersClues.bite_marks_on_peoples_necks,
+                              MonstersClues.people_dead_weirdly, MonstersClues.red_eyes, MonstersClues.claws,
+                              MonstersClues.cat_eyes,
+                              MonstersClues.
+                                  missing_or_dead_people_in_similar_way_randomly_across_time_in_different_areas]
+        self.kitsune.kill_methods = [MonstersKillMethods.stabbing_the_heart]
+
+        self.unknown = Monster("Unknown", description="", episodes={"S07": [3]})
         self.unknown.clues = []
 
         # -------------------------------------------------- SEASON 8 --------------------------------------------------

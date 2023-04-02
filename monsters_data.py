@@ -9,6 +9,7 @@ class MonstersClues:
     bright_eyes = "bright eyes"
     blue_eyes = "blue eyes"
     white_eyes = "white eyes"
+    cat_eyes = "cat_eyes"
     falling_meteor = "falling meteor"
     number_of_reapers_appearing = "number of reapers appearing"
     revelation_omens = "revelation omens"
@@ -66,6 +67,8 @@ class MonstersClues:
     people_burned_on_the_ceiling = "people burned on the ceiling of their house"
     people_loosing_their_minds = "people loosing their minds"
     dead_people_or_children_regularly_in_different_places = "dead people or children regularly in different places"
+    missing_or_dead_people_in_similar_way_randomly_across_time_in_different_areas = \
+        "missing or dead people in similar way randomly across time in different areas"
     missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area = \
         "people missing/dead weirdly, similarly, randomly across a time(weeks/months/years) in the same area"
     missing_or_dead_people_regularly_in_the_same_area = "groups of people missing/dead regularly in the same area"
@@ -75,6 +78,7 @@ class MonstersClues:
     missing_organs = "missing organs"
     missing_heart = "missing heart"
     missing_babies = "missing babies"
+    missing_part_of_the_brain = "missing part of the brain"
     missing_attacked_virgin_women = "missing attacked virgin women"
     no_missing_heart = "no missing heart"
     murders_during_full_moon_week = "murders during full moon week"
@@ -298,6 +302,7 @@ class MonstersClues:
     bad_luck = "bad luck"
     long_spike_from_the_arm = "long spike from the arm"
     large_mouth_full_of_teeth = "large mouth full of teeth"
+    double_tongue = "double tongue"
 
 
 class MonstersKillMethods:
