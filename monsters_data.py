@@ -112,6 +112,7 @@ class MonstersClues:
     skin_left_behind = "skin left behind"
     left_zoroastrian_symbol_made_with_blood = "left zoroastrian symbol made with blood - " \
                                               "Sigil for Daeva (demon of darkness)"
+    left_egyptian_symbols = "left egyptian symbols"
     left_cobweb = "left cobweb"
     left_gold_thread = "left gold thread"
     invisible_entity = "invisible entity"
@@ -129,7 +130,7 @@ class MonstersClues:
     seen_as_a_person_in_a_suit = "seen as a person in a suit"
     seen_as_a_shadow = "seen as a shadow"
     seen_as_a_clown = "seen as a clown"
-    seen_as_black_truck = "seen as black truck"
+    seen_as_car_or_truck = "seen as car or truck"
     seen_as_human_when_not_feeding = "seen as human when not feeding (particularly an old woman)"
     seen_as_a_little_girl = "seen as a little girl"
     seen_as_a_drown_man = "seen as a drown man"
@@ -216,6 +217,7 @@ class MonstersClues:
     can_summon_ghosts = "can summon ghosts"
     can_repair_human_body = "can repair human body"
     can_control_demons = "can control demons"
+    can_control_ghosts = "can control ghosts"
     can_send_demons_back_to_hell_with_power_of_will = "can send demons back to hell with power of will"
     can_kill_demons_with_power_of_will = "can kill demons with power of will (with enough power)"
     can_kill_archangels_with_finger_snap = "can kill archangels with finger snap"
@@ -428,6 +430,7 @@ class MonstersDisableMethods:
     ashes_of_a_phoenix = "ashes of a phoenix"
     angel_blade = "angel blade"
     presence_of_the_mother = "presence of the mother"
+    stab_with_rams_horn = "stab with ram's horn"
 
 
 class MonstersCureMethods:

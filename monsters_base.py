@@ -67,7 +67,7 @@ class MonsterBase:
                                       MonstersClues.missing_or_dead_people_regularly_in_the_same_area,
                                       MonstersClues.ozone_smell, MonstersClues.seen_as_fire, MonstersClues.no_sulfur,
                                       MonstersClues.people_acting_weirdly, MonstersClues.small_earth_quake,
-                                      MonstersClues.seen_as_black_truck, MonstersClues.seen_as_a_little_girl,
+                                      MonstersClues.seen_as_car_or_truck, MonstersClues.seen_as_a_little_girl,
                                       MonstersClues.seen_as_a_drown_man, MonstersClues.flashing_lights,
                                       MonstersClues.strange_different_things_happening, MonstersClues.no_missing_heart,
                                       MonstersClues.body_torn_apart, MonstersClues.no_black_fog,
@@ -1142,8 +1142,22 @@ class MonsterBase:
                                   missing_or_dead_people_in_similar_way_randomly_across_time_in_different_areas]
         self.kitsune.kill_methods = [MonstersKillMethods.stabbing_the_heart]
 
+        self.osiris = Monster("Osiris", description="Egyptian God of death and the great judge of the dead. If he gets "
+                                                    "hold of you, he's judge, jury and executioner. He can see "
+                                                    "directly into the human heart. He weights the guilt and if there "
+                                                    "is more than feather's worth - punishes. Leaves egyptian "
+                                                    "hieroglyphs. Stab with a Ram's horn puts him away for centuries. "
+                                                    "Put back to the Dead in S07E04.",
+                              episodes={"S07": [4]})
+        self.osiris.clues = [MonstersClues.cold_spots, MonstersClues.people_dead_weirdly, MonstersClues.emf,
+                             MonstersClues.seen_as_car_or_truck, MonstersClues.animal_like_attack,
+                             MonstersClues.left_egyptian_symbols, MonstersClues.can_summon_ghosts,
+                             MonstersClues.can_control_ghosts, MonstersClues.can_hurt_people_with_a_thought]
+        self.osiris.disable_methods = [MonstersDisableMethods.stab_with_rams_horn]
+
         self.unknown = Monster("Unknown", description="", episodes={"S07": [3]})
-        self.unknown.clues = []
+        self.unknown.clues = [MonstersClues.cold_spots, MonstersClues.people_dead_weirdly, MonstersClues.emf,
+                              MonstersClues.seen_as_car_or_truck, MonstersClues.animal_like_attack]
 
         # -------------------------------------------------- SEASON 8 --------------------------------------------------
 
