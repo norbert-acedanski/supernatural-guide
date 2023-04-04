@@ -779,7 +779,8 @@ class MonsterBase:
                                                                     "He was born in Canisbay, Scotland 1661. "
                                                                     "Supposedly died in S06E10, but in S06E19 it is "
                                                                     "revealed he was working with Castiel.",
-                                     episodes={"S05": [10, 20, 21], "S06": [4, 7, 8, 10, 19, 20, 21, 22], "S07": [1]})
+                                     episodes={"S05": [10, 20, 21], "S06": [4, 7, 8, 10, 19, 20, 21, 22],
+                                               "S07": [1, 6]})
         self.demon_crowley.clues = [MonstersClues.can_vanish, MonstersClues.pact_sealed_with_a_kiss,
                                     MonstersClues.summoned_by_placing_box_in_the_crossroads, MonstersClues.telekinesis,
                                     MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
@@ -1123,14 +1124,17 @@ class MonsterBase:
         self.leviathan = Monster("Leviathan", description="Long before GOD created Angel and man, he made the first "
                                                           "beasts - the Leviathans. GOD was concerned, that they would "
                                                           "devour all creation, so he locked them away in Purgatory.",
-                                 episodes={"S07": [1, 2, 3, 5]})
+                                 episodes={"S07": [1, 2, 3, 5, 6]})
         self.leviathan.clues = [MonstersClues.high_strength, MonstersClues.can_posses_an_angel,
                                 MonstersClues.black_veins, MonstersClues.black_blood, MonstersClues.moves_in_water,
                                 MonstersClues.people_dead_weirdly, MonstersClues.animal_like_attack,
                                 MonstersClues.can_read_peoples_minds, MonstersClues.can_take_form_of_other_people,
                                 MonstersClues.silver_does_not_affect_it, MonstersClues.large_mouth_full_of_teeth,
-                                MonstersClues.invulnerable, MonstersClues.double_tongue]
-        self.leviathan.disable_methods = [MonstersDisableMethods.paralyze_spell]
+                                MonstersClues.invulnerable, MonstersClues.double_tongue,
+                                MonstersClues.salt_does_not_affect_it, MonstersClues.holy_water_does_not_affect_it,
+                                MonstersClues.being_at_two_places_at_once]
+        self.leviathan.disable_methods = [MonstersDisableMethods.paralyze_spell, MonstersDisableMethods.decapitation,
+                                          MonstersDisableMethods.sodium_borate_burns_it]
 
         self.kitsune = Monster("Kitsune", description="Tey look human, until they sprout out claws and stab you behind "
                                                       "your ear to get to your brain - according to young Sam. "
@@ -1156,9 +1160,8 @@ class MonsterBase:
                              MonstersClues.can_control_ghosts, MonstersClues.can_hurt_people_with_a_thought]
         self.osiris.disable_methods = [MonstersDisableMethods.stab_with_rams_horn]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S07": [5]})
-        self.unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.weird_electronics_behavior,
-                              MonstersClues.coin_hidden_somewhere, MonstersClues.weird_plant_deaths_or_behavior]
+        self.unknown = Monster("Unknown", description="", episodes={"S07": [6]})
+        self.unknown.clues = []
 
         # -------------------------------------------------- SEASON 8 --------------------------------------------------
 

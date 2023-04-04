@@ -433,6 +433,7 @@ class MonstersDisableMethods:
     angel_blade = "angel blade"
     presence_of_the_mother = "presence of the mother"
     stab_with_rams_horn = "stab with ram's horn"
+    sodium_borate_burns_it = "sodium borate (a chemical found in industrial chemicals and soaps) burns it"
 
 
 class MonstersCureMethods:
