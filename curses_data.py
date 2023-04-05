@@ -38,6 +38,7 @@ class CursesClues:
     different_history = "different history"
     different_memories = "different memories"
     strange_feeling_that_things_should_be_different = "strange feeling that things should be different"
+    blinding_love = "blinding love"
 
 
 class CursesDisableMethods:

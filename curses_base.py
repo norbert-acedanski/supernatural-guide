@@ -148,6 +148,10 @@ class CursesBase:
                                          episodes={"S07": [1]})
         self.death_binding_spell.disable_methods = [CursesDisableMethods.will_of_an_angel_on_soul_juice]
 
+        self.love_potion = Curse("Love potion", description="A potion, that allows a person to fall in love "
+                                                            "in another person.", episodes={"S07": [8]})
+        self.love_potion.clues = [CursesClues.blinding_love, CursesClues.people_acting_weirdly]
+
         # SEASON 8:
 
 
