@@ -117,7 +117,7 @@ class MonsterBase:
                                                   "Demons are man that were stuck in hell for a long time.",
                              episodes={"S01": [4, 21, 22], "S02": [1, 14], "S03": [1, 2, 4, 12, 15, 16],
                                        "S04": [1, 4, 9, 10, 20, 21, 22], "S05": [1, 6, 10, 12, 14, 17, 20, 21, 22],
-                                       "S06": [7, 10, 18, 20, 21, 22]})
+                                       "S06": [7, 10, 18, 20, 21, 22], "S07": [8]})
         self.demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                             MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                             MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -333,10 +333,11 @@ class MonsterBase:
                                                                         "after 10 years. One can summon it by placing "
                                                                         "a box with: graveyard dirt, black cat cone, "
                                                                         "ones photo in the center of a crossroad.",
-                                        episodes={"S02": [8, 22], "S04": [9], "S05": [10], "S06": [4]})
+                                        episodes={"S02": [8, 22], "S04": [9], "S05": [10], "S06": [4], "S07": [8]})
         self.crossroads_demon.clues = [MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
                                        MonstersClues.red_eyes, MonstersClues.summoned_by_placing_box_in_the_crossroads,
-                                       MonstersClues.travels_as_black_fog, MonstersClues.pact_sealed_with_a_kiss]
+                                       MonstersClues.travels_as_black_fog, MonstersClues.pact_sealed_with_a_kiss,
+                                       MonstersClues.people_dead_weirdly]
         self.crossroads_demon.disable_methods = [MonstersDisableMethods.devils_trap,
                                                  MonstersDisableMethods.fry_its_remains]
         self.crossroads_demon.kill_methods = [MonstersKillMethods.colt_of_colt_with_magic_bullets,
@@ -781,7 +782,7 @@ class MonsterBase:
                                                                     "Supposedly died in S06E10, but in S06E19 it is "
                                                                     "revealed he was working with Castiel.",
                                      episodes={"S05": [10, 20, 21], "S06": [4, 7, 8, 10, 19, 20, 21, 22],
-                                               "S07": [1, 6]})
+                                               "S07": [1, 6, 8]})
         self.demon_crowley.clues = [MonstersClues.can_vanish, MonstersClues.pact_sealed_with_a_kiss,
                                     MonstersClues.summoned_by_placing_box_in_the_crossroads, MonstersClues.telekinesis,
                                     MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
@@ -1161,12 +1162,8 @@ class MonsterBase:
                              MonstersClues.can_control_ghosts, MonstersClues.can_hurt_people_with_a_thought]
         self.osiris.disable_methods = [MonstersDisableMethods.stab_with_rams_horn]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S07": [6]})
-        self.unknown.clues = [MonstersClues.flashing_lights, MonstersClues.weird_fire_spontaneous_combustion,
-                              MonstersClues.cold_spots, MonstersClues.weird_things_behavior, MonstersClues.emf,
-                              MonstersClues.people_dead_weirdly, MonstersClues.visions,
-                              MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
-                              MonstersClues.weird_electronics_behavior]
+        self.unknown = Monster("Unknown", description="", episodes={"S07": [8]})
+        self.unknown.clues = []
 
         # -------------------------------------------------- SEASON 8 --------------------------------------------------
 
