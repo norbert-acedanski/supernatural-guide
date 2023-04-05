@@ -53,7 +53,7 @@ class MonsterBase:
                                                    "by a special spell (has to be cast over an open fire).",
                                        episodes={"S01": [1, 3, 5, 7, 9, 10, 13, 19], "S02": [6, 11, 16, 18, 19],
                                                  "S03": [5, 6, 13], "S04": [2, 13, 15, 17], "S05": [9, 11],
-                                                 "S06": [4, 14]})
+                                                 "S06": [4, 14], "S07": [7]})
         self.vengeful_spirit.clues = [MonstersClues.
                                       missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                                       MonstersClues.people_dead_weirdly, MonstersClues.ghost_like_creature,
@@ -70,8 +70,9 @@ class MonsterBase:
                                       MonstersClues.seen_as_car_or_truck, MonstersClues.seen_as_a_little_girl,
                                       MonstersClues.seen_as_a_drown_man, MonstersClues.flashing_lights,
                                       MonstersClues.strange_different_things_happening, MonstersClues.no_missing_heart,
-                                      MonstersClues.body_torn_apart, MonstersClues.no_black_fog,
-                                      MonstersClues.lack_of_body_control, MonstersClues.scars_on_victims]
+                                      MonstersClues.body_torn_apart, MonstersClues.no_black_fog, MonstersClues.visions,
+                                      MonstersClues.lack_of_body_control, MonstersClues.scars_on_victims,
+                                      MonstersClues.weird_fire_spontaneous_combustion]
         self.vengeful_spirit.disable_methods = [MonstersDisableMethods.bring_the_spirit_to_its_crime_place,
                                                 MonstersDisableMethods.bring_the_spirit_what_it_wants,
                                                 MonstersDisableMethods.iron_or_iron_bullets,
@@ -1161,7 +1162,11 @@ class MonsterBase:
         self.osiris.disable_methods = [MonstersDisableMethods.stab_with_rams_horn]
 
         self.unknown = Monster("Unknown", description="", episodes={"S07": [6]})
-        self.unknown.clues = []
+        self.unknown.clues = [MonstersClues.flashing_lights, MonstersClues.weird_fire_spontaneous_combustion,
+                              MonstersClues.cold_spots, MonstersClues.weird_things_behavior, MonstersClues.emf,
+                              MonstersClues.people_dead_weirdly, MonstersClues.visions,
+                              MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
+                              MonstersClues.weird_electronics_behavior]
 
         # -------------------------------------------------- SEASON 8 --------------------------------------------------
 
