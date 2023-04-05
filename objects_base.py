@@ -18,7 +18,7 @@ class ObjectsBase:
         self.john_winchesters_journal = Object("John Winchester's Journal",
                                                description="A journal of John Winchester, that contains a lot "
                                                            "information about monsters in Supernatural Universe.",
-                                               episodes={"S01": [], "S04": [19], "S06": [1, 8, 12]})
+                                               episodes={"S01": [], "S04": [19], "S06": [1, 8, 12], "S07": [8]})
         self.john_winchesters_journal._information = {"S04E19": JohnWinchesterJournal.entry_about_johns_other_son,
                                                       "S06E12": JohnWinchesterJournal.entry_about_a_skinwalker}
 
@@ -49,7 +49,8 @@ class ObjectsBase:
                                                                              "not get them back to hell. "
                                                                              "Cannot kill certain kinds of demons.",
                                           episodes={"S03": [1, 9, 16], "S04": [1, 9, 20, 22],
-                                                    "S05": [1, 10, 14, 17, 20, 21, 22], "S06": [10, 20, 21]})
+                                                    "S05": [1, 10, 14, 17, 20, 21, 22], "S06": [10, 20, 21],
+                                                    "S07": [8]})
         self.demon_killing_knife.abilities = [ObjectAbilities.can_kill_demons, ObjectAbilities.cannot_kill_angels]
 
         self.lucky_rabbits_foot = Object("Lucky rabbits foot",
