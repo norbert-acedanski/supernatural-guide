@@ -1126,7 +1126,7 @@ class MonsterBase:
         self.leviathan = Monster("Leviathan", description="Long before GOD created Angel and man, he made the first "
                                                           "beasts - the Leviathans. GOD was concerned, that they would "
                                                           "devour all creation, so he locked them away in Purgatory.",
-                                 episodes={"S07": [1, 2, 3, 5, 6]})
+                                 episodes={"S07": [1, 2, 3, 5, 6, 9]})
         self.leviathan.clues = [MonstersClues.high_strength, MonstersClues.can_posses_an_angel,
                                 MonstersClues.black_veins, MonstersClues.black_blood, MonstersClues.moves_in_water,
                                 MonstersClues.people_dead_weirdly, MonstersClues.animal_like_attack,
@@ -1136,7 +1136,8 @@ class MonsterBase:
                                 MonstersClues.salt_does_not_affect_it, MonstersClues.holy_water_does_not_affect_it,
                                 MonstersClues.being_at_two_places_at_once]
         self.leviathan.disable_methods = [MonstersDisableMethods.paralyze_spell, MonstersDisableMethods.decapitation,
-                                          MonstersDisableMethods.sodium_borate_burns_it]
+                                          MonstersDisableMethods.sodium_borate_burns_it,
+                                          MonstersDisableMethods.head_shot]
 
         self.kitsune = Monster("Kitsune", description="Tey look human, until they sprout out claws and stab you behind "
                                                       "your ear to get to your brain - according to young Sam. "
@@ -1162,8 +1163,28 @@ class MonsterBase:
                              MonstersClues.can_control_ghosts, MonstersClues.can_hurt_people_with_a_thought]
         self.osiris.disable_methods = [MonstersDisableMethods.stab_with_rams_horn]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S07": [8]})
-        self.unknown.clues = []
+        self.black_goo_monster = Monster("Black Goo Monster", description="A monster with overgrown adrenal glands, "
+                                                                          "that increases it's strength drastically. "
+                                                                          "A person can become one by eating grey goo. "
+                                                                          "It was developed by one of the Leviathans. "
+                                                                          "It works on human DNA from the first dose, "
+                                                                          "slowing the metabolism, causing weight gain "
+                                                                          "and dampening their emotional range.",
+                                         episodes={"S07": [9]})
+        self.black_goo_monster.clues = [MonstersClues.body_torn_apart, MonstersClues.people_dead_weirdly,
+                                        MonstersClues.moves_fast, MonstersClues.animal_like_attack,
+                                        MonstersClues.grey_goo, MonstersClues.human_like_creature,
+                                        MonstersClues.no_missing_heart, MonstersClues.high_strength,
+                                        MonstersClues.enormous_appetite, MonstersClues.people_acting_weirdly,
+                                        MonstersClues.missing_or_dead_people_regularly_in_the_same_area]
+        self.black_goo_monster.disable_methods = [MonstersDisableMethods.gun_shot]
+        self.black_goo_monster.kill_methods = [MonstersKillMethods.gun_shots]
+
+        self.unknown = Monster("Unknown", description="", episodes={"S07": [9]})
+        self.unknown.clues = [MonstersClues.body_torn_apart, MonstersClues.people_dead_weirdly, MonstersClues.moves_fast,
+                              MonstersClues.animal_like_attack, MonstersClues.human_like_creature,
+                              MonstersClues.no_missing_heart, MonstersClues.high_strength, MonstersClues.grey_goo,
+                              MonstersClues.missing_or_dead_people_regularly_in_the_same_area]
 
         # -------------------------------------------------- SEASON 8 --------------------------------------------------
 

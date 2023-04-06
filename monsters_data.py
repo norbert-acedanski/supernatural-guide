@@ -25,6 +25,7 @@ class MonstersClues:
     black_blood = "blood - black"
     black_veins = "black veins"
     ectoplasm = "ectoplasm (black goo)"
+    grey_goo = "grey goo"
     pact_sealed_with_a_kiss = "pact sealed with a kiss"
     burned_by_holy_water = "burned by holy water"
     burned_people = "burned people"
@@ -90,6 +91,7 @@ class MonstersClues:
     strange_roar = "strange roar"
     able_to_use_doors = "able to use doors"
     claws = "claws"
+    human_like_creature = "human like creature"
     mimics_human_voice = "mimics human voice"
     enormous_black_fog = "enormous black fog"
     enormous_appetite = "enormous appetite (especially for raw meat)"
@@ -377,6 +379,7 @@ class MonstersKillMethods:
     electricity = "electricity"
     ashes_of_a_phoenix = "ashes of a phoenix"
     draining_blood = "draining blood"
+    gun_shots = "gun shots"
 
 
 class MonstersDisableMethods:
@@ -434,6 +437,8 @@ class MonstersDisableMethods:
     presence_of_the_mother = "presence of the mother"
     stab_with_rams_horn = "stab with ram's horn"
     sodium_borate_burns_it = "sodium borate (a chemical found in industrial chemicals and soaps) burns it"
+    gun_shot = "gun shot"
+    head_shot = "head shot"
 
 
 class MonstersCureMethods:
