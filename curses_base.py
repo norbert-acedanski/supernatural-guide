@@ -24,8 +24,9 @@ class CursesBase:
                                     CursesClues.people_dead_weirdly, CursesClues.weird_animal_behavior]
         self.revenge_curse.kill_methods = [CursesDisableMethods.surviving_the_curse]
 
-        self.reaper_trapping_spell = Curse("Reaper trapping spell", description="Spell, that controls a reaper",
-                                           episodes={"S01": [12]})
+        self.reaper_trapping_spell = Curse("Reaper trapping spell", description="Spell, that controls a reaper "
+                                                                                "or traps it.",
+                                           episodes={"S01": [12], "S07": [10]})
         self.reaper_trapping_spell.clues = [CursesClues.control_over_a_reaper, CursesClues.black_altar,
                                             CursesClues.controlled_with_a_spell_and_a_cross]
         self.reaper_trapping_spell.disable_methods = [CursesDisableMethods.destroy_the_coptic_cross,
