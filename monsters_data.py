@@ -308,6 +308,7 @@ class MonstersClues:
     long_spike_from_the_arm = "long spike from the arm"
     large_mouth_full_of_teeth = "large mouth full of teeth"
     double_tongue = "double tongue"
+    ear_ringing = "ear ringing"
 
 
 class MonstersKillMethods:
@@ -439,6 +440,7 @@ class MonstersDisableMethods:
     sodium_borate_burns_it = "sodium borate (a chemical found in industrial chemicals and soaps) burns it"
     gun_shot = "gun shot"
     head_shot = "head shot"
+    hit_it_hard_in_the_head = "hit it hard in the head"
 
 
 class MonstersCureMethods:

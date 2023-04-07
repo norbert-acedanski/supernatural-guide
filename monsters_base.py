@@ -1181,8 +1181,23 @@ class MonsterBase:
         self.black_goo_monster.disable_methods = [MonstersDisableMethods.gun_shot]
         self.black_goo_monster.kill_methods = [MonstersKillMethods.gun_shots]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S07": [10]})
-        self.unknown.clues = []
+        self.vetala = Monster("Vetala", description="Similar to vampires, they feed on blood, but have cat eyes. "
+                                                    "They're maladjusted loner types and feed slow on people. "
+                                                    "They have a venom, that they inject into victims. "
+                                                    "They hunt in pairs (almost always). You have to twist a blade, "
+                                                    "when stabbed into the heart.",
+                              episodes={"S07": [11]})
+        self.vetala.clues = [MonstersClues.cat_eyes, MonstersClues.blue_eyes, MonstersClues.needle_like_teeth,
+                             MonstersClues.no_blood_in_the_body, MonstersClues.animal_like_attack,
+                             MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
+                             MonstersClues.ear_ringing, MonstersClues.high_strength]
+        self.vetala.disable_methods = [MonstersDisableMethods.hit_it_hard_in_the_head]
+        self.vetala.kill_methods = [MonstersKillMethods.silver_blade]
+
+        self.unknown = Monster("Unknown", description="", episodes={"S07": [11]})
+        self.unknown.clues = [MonstersClues.cat_eyes, MonstersClues.blue_eyes, MonstersClues.needle_like_teeth,
+                              MonstersClues.no_blood_in_the_body, MonstersClues.animal_like_attack,
+                              MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area]
 
         # -------------------------------------------------- SEASON 8 --------------------------------------------------
 
