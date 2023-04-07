@@ -53,7 +53,7 @@ class MonsterBase:
                                                    "by a special spell (has to be cast over an open fire).",
                                        episodes={"S01": [1, 3, 5, 7, 9, 10, 13, 19], "S02": [6, 11, 16, 18, 19],
                                                  "S03": [5, 6, 13], "S04": [2, 13, 15, 17], "S05": [9, 11],
-                                                 "S06": [4, 14], "S07": [7]})
+                                                 "S06": [4, 14], "S07": [7, 10]})
         self.vengeful_spirit.clues = [MonstersClues.
                                       missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                                       MonstersClues.people_dead_weirdly, MonstersClues.ghost_like_creature,
@@ -185,7 +185,8 @@ class MonsterBase:
         self.reaper = Monster("Reaper", description="Can give and take life. Can also transfer illnesses of people. "
                                                     "When gone, people are not dying. "
                                                     "When a reaper dies, there are electrical storms.",
-                              episodes={"S01": [12], "S02": [1], "S04": [15], "S05": [10, 21], "S06": [11]})
+                              episodes={"S01": [12], "S02": [1], "S04": [15], "S05": [10, 21], "S06": [11],
+                                        "S07": [10]})
         self.reaper.clues = [MonstersClues.people_dead_weirdly, MonstersClues.people_cured_miraculously,
                              MonstersClues.weird_things_behavior, MonstersClues.people_seeing_things_or_figures,
                              MonstersClues.seen_as_a_person_in_a_suit, MonstersClues.ghost_like_creature,
@@ -1180,11 +1181,8 @@ class MonsterBase:
         self.black_goo_monster.disable_methods = [MonstersDisableMethods.gun_shot]
         self.black_goo_monster.kill_methods = [MonstersKillMethods.gun_shots]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S07": [9]})
-        self.unknown.clues = [MonstersClues.body_torn_apart, MonstersClues.people_dead_weirdly, MonstersClues.moves_fast,
-                              MonstersClues.animal_like_attack, MonstersClues.human_like_creature,
-                              MonstersClues.no_missing_heart, MonstersClues.high_strength, MonstersClues.grey_goo,
-                              MonstersClues.missing_or_dead_people_regularly_in_the_same_area]
+        self.unknown = Monster("Unknown", description="", episodes={"S07": [10]})
+        self.unknown.clues = []
 
         # -------------------------------------------------- SEASON 8 --------------------------------------------------
 
