@@ -60,7 +60,8 @@ class MonstersClues:
     people_hear_voices = "people hear voices"
     people_seeing_figure_of_light = "people seeing figure of light"
     people_seeing_strange_things = "people seeing strange things"
-    people_seeing_things_or_figures = "people seeing things or figures (ghosts, people, reapers, beings, etc.)"
+    people_seeing_things_or_figures = "people seeing things or figures (ghosts, people, reapers, beings, unicorns, " \
+                                      "giant octopuses, etc.)"
     people_seeing_aliens = "people seeing aliens"
     people_or_children_severely_sick = "people or children severely sick"
     people_kidnapped_weirdly = "people kidnapped weirdly"
