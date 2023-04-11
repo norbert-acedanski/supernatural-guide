@@ -138,6 +138,8 @@ class CursesBase:
         self.angel_summoning_spell = Curse("Angel summoning spell", description="Can summon a specific angel.",
                                            episodes={"S06": [21]})  # TODO: Check where else was this spell used.
 
+        # ---------------------------------------------- ALL EPISODES DONE ---------------------------------------------
+
         # SEASON 7:
 
         self.death_binding_spell = Curse("Death Binding Spell", description="Spell, that binds Death. To perform it, "
