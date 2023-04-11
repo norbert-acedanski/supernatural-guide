@@ -171,6 +171,13 @@ class CursesBase:
                                            CursesClues.people_seeing_strange_things]
         self.fear_realizing_curse.disable_methods = [CursesDisableMethods.kill_the_person_that_causes_it]
 
+        self.demon_summoning_spell = Curse("Demon summoning spell", description="Spell, that allows a person to summon "
+                                                                                "a demon into a person. "
+                                                                                "Requires a blood of an exorcist, "
+                                                                                "that banished the demon in the first "
+                                                                                "place, a part of a dog, abd a spell.",
+                                           episodes={"S07": [15]})
+
         # SEASON 8:
 
 
