@@ -53,7 +53,7 @@ class MonsterBase:
                                                    "by a special spell (has to be cast over an open fire).",
                                        episodes={"S01": [1, 3, 5, 7, 9, 10, 13, 19], "S02": [6, 11, 16, 18, 19],
                                                  "S03": [5, 6, 13], "S04": [2, 13, 15, 17], "S05": [9, 11],
-                                                 "S06": [4, 14], "S07": [7, 10]})
+                                                 "S06": [4, 14], "S07": [7, 10, 13]})
         self.vengeful_spirit.clues = [MonstersClues.
                                       missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                                       MonstersClues.people_dead_weirdly, MonstersClues.ghost_like_creature,
@@ -1195,7 +1195,8 @@ class MonsterBase:
         self.vetala.kill_methods = [MonstersKillMethods.silver_blade]
 
         self.chronos = Monster("Chronos", description="God of time. Can be summoned in order to compel him to tell "
-                                                      "your future with a spell.", episodes={"S07": [12]})
+                                                      "your future with a spell. Killed in S07E12.",
+                               episodes={"S07": [12]})
         self.chronos.clues = [MonstersClues.red_light, MonstersClues.people_dead_weirdly, MonstersClues.mummified_body,
                               MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                               MonstersClues.seen_as_a_person_in_a_suit, MonstersClues.weird_electronics_behavior,
@@ -1203,11 +1204,21 @@ class MonsterBase:
                               MonstersClues.invulnerable]
         self.chronos.kill_methods = [MonstersKillMethods.olive_pin_dipped_in_blood]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S07": [12]})
-        self.unknown.clues = [MonstersClues.red_light, MonstersClues.people_dead_weirdly, MonstersClues.mummified_body,
-                              MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
-                              MonstersClues.seen_as_a_person_in_a_suit, MonstersClues.weird_electronics_behavior,
-                              MonstersClues.immortal, MonstersClues.can_time_travel]
+        self.amazons = Monster("Amazons", description="A tribe of women created by Harmonia and Ares. "
+                                                      "In their culture, there was no use for men, except procreation. "
+                                                      "After impregnation, the child, that is a fully grown person "
+                                                      "after a few days, kills the male, first cutting off "
+                                                      "certain body parts.", episodes={"S07": [13]})
+        self.amazons.clues = [MonstersClues.people_dead_weirdly, MonstersClues.left_greek_symbol_on_chest,
+                              MonstersClues.high_strength, MonstersClues.people_aging_rapidly,
+                              MonstersClues.yellow_eyes, MonstersClues.snake_eyes,
+                              MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_different_areas]
+        self.amazons.kill_methods = [MonstersKillMethods.gun_shots]
+
+        self.unknown = Monster("Unknown", description="", episodes={"S07": [13]})
+        self.unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.left_greek_symbol_on_chest,
+                              MonstersClues.high_strength, MonstersClues.people_aging_rapidly, MonstersClues.snake_eyes,
+                              MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area]
 
         # -------------------------------------------------- SEASON 8 --------------------------------------------------
 

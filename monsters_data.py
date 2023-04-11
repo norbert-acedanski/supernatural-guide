@@ -10,6 +10,7 @@ class MonstersClues:
     blue_eyes = "blue eyes"
     white_eyes = "white eyes"
     cat_eyes = "cat_eyes"
+    snake_eyes = "snake eyes"
     falling_meteor = "falling meteor"
     number_of_reapers_appearing = "number of reapers appearing"
     revelation_omens = "revelation omens"
@@ -116,6 +117,7 @@ class MonstersClues:
     left_zoroastrian_symbol_made_with_blood = "left zoroastrian symbol made with blood - " \
                                               "Sigil for Daeva (demon of darkness)"
     left_egyptian_symbols = "left egyptian symbols"
+    left_greek_symbol_on_chest = "left greek symbol on chest (associated with Pantheon and to goddess Harmonia)"
     left_cobweb = "left cobweb"
     left_gold_thread = "left gold thread"
     invisible_entity = "invisible entity"
