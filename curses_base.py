@@ -153,6 +153,22 @@ class CursesBase:
                                                             "in another person.", episodes={"S07": [8]})
         self.love_potion.clues = [CursesClues.blinding_love, CursesClues.people_acting_weirdly]
 
+        self.fear_realizing_curse = Curse("Fear realizing curse", description="Curse, that allows to bring to life "
+                                                                              "the fear of a person and send it "
+                                                                              "to kill someone. It requires something, "
+                                                                              "that belongs to the person, that is the "
+                                                                              "target, and a drawing of the thing, "
+                                                                              "that should kill that person.",
+                                          episodes={"S07": [14]})
+
+        self.fear_realizing_curse.clues = [CursesClues.seen_as_a_clown, CursesClues.people_dead_weirdly,
+                                           CursesClues.bite_marks_on_peoples_necks, CursesClues.no_cold_spots,
+                                           CursesClues.no_sulfur, CursesClues.people_seeing_things_or_figures,
+                                           CursesClues.strange_different_things_happening,
+                                           CursesClues.people_nightmares_come_true,
+                                           CursesClues.people_seeing_strange_things]
+        self.fear_realizing_curse.disable_methods = [CursesDisableMethods.kill_the_person_that_causes_it]
+
         # SEASON 8:
 
 

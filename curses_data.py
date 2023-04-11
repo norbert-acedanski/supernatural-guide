@@ -8,6 +8,10 @@ class CursesClues:
     people_scared_of_everything = "people scared of everything"
     people_wishes_come_true = "people wishes come true"
     people_hear_truth_only = "people hear truth only"
+    people_seeing_strange_things = "people seeing strange things"
+    people_seeing_things_or_figures = "people seeing things or figures (ghosts, people, reapers, beings, unicorns, " \
+                                      "giant octopuses, etc.)"
+    people_nightmares_come_true = "people nightmares come true"
     suicides = "suicides"
     hallucinations = "hallucinations"
     weird_animal_behavior = "weird animal behavior"
@@ -16,6 +20,7 @@ class CursesClues:
     controlled_with_a_spell_and_a_cross = "controlled with a spell and a cross"
     emf = "Electromagnetic Field"
     no_emf = "no Electromagnetic Field"
+    no_cold_spots = "no cold spots"
     no_sulfur = "no sulfur"
     drawn_quincunx = "drawn quincunx"
     no_hex_bags = "no hex bags"
@@ -39,6 +44,8 @@ class CursesClues:
     different_memories = "different memories"
     strange_feeling_that_things_should_be_different = "strange feeling that things should be different"
     blinding_love = "blinding love"
+    seen_as_a_clown = "seen as a clown"
+    bite_marks_on_peoples_necks = "bite marks on peoples necks"
 
 
 class CursesDisableMethods:
@@ -52,6 +59,7 @@ class CursesDisableMethods:
     first_person_that_wished_has_to_remove_the_coin = "first person that wished has to remove the coin"
     melt_the_coin = "melt the coin"
     kill_the_witch_that_cursed_a_person = "kill the Witch that cursed a person"
+    kill_the_person_that_causes_it = "kill the person that causes it"
     kill_goddess_of_truth_veritas = "kill goddess of truth Veritas"
     wait_for_an_opening_from_the_other_side = "wait for an opening from the other side"
     will_of_an_angel_on_soul_juice = "will of an angel on soul juice"
