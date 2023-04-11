@@ -117,7 +117,7 @@ class MonsterBase:
                                                   "Demons are man that were stuck in hell for a long time.",
                              episodes={"S01": [4, 21, 22], "S02": [1, 14], "S03": [1, 2, 4, 12, 15, 16],
                                        "S04": [1, 4, 9, 10, 20, 21, 22], "S05": [1, 6, 10, 12, 14, 17, 20, 21, 22],
-                                       "S06": [7, 10, 18, 20, 21, 22], "S07": [8]})
+                                       "S06": [7, 10, 18, 20, 21, 22], "S07": [8, 15]})
         self.demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                             MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                             MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -125,6 +125,7 @@ class MonsterBase:
                             MonstersClues.people_acting_weirdly, MonstersClues.can_appear_out_of_thin_air,
                             MonstersClues.amnesia_blackout, MonstersClues.telekinesis, MonstersClues.can_vanish,
                             MonstersClues.lack_of_body_control, MonstersClues.can_hurt_people_with_a_thought,
+                            MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
 
                             MonstersClues.black_blood]
         self.demon.kill_methods = [MonstersKillMethods.demon_killing_knife, MonstersKillMethods.angel_exorcism,
@@ -513,7 +514,7 @@ class MonsterBase:
         self.demon_astaroth.kill_methods = [MonstersKillMethods.demon_killing_knife]
 
         self.first_demon = Monster("First Demon - Lilith", description="First demon created by Lucifer out of a human "
-                                                                       "soul by twisting it.",
+                                                                       "soul by twisting it. Killed in S04E22.",
                                    episodes={"S03": [12, 16], "S04": [18, 22]})
         self.first_demon.clues = [MonstersClues.white_eyes, MonstersClues.yellow_blast, MonstersClues.telekinesis,
                                   MonstersClues.travels_as_black_fog,
@@ -669,7 +670,7 @@ class MonsterBase:
         self.archangel_lucyfer = Monster("Archangel - Lucyfer",
                                          description="Archangel, that disobeyed God when he requested to bow before "
                                                      "the men. To upset God he twisted one of the people into Lilith.",
-                                         episodes={"S04": [22], "S05": [1, 3, 4, 10, 19, 22], "S07": [1, 2]})
+                                         episodes={"S04": [22], "S05": [1, 3, 4, 10, 19, 22], "S07": [1, 2, 15]})
         self.archangel_lucyfer.clues = [MonstersClues.weird_things_behavior, MonstersClues.true_voice_can_hurt_people,
                                         MonstersClues.bright_light, MonstersClues.weird_weather, MonstersClues.visions,
                                         MonstersClues.people_seeing_strange_things, MonstersClues.biblical_like_events,
@@ -681,6 +682,7 @@ class MonsterBase:
                                             missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                                         MonstersClues.immune_to_colt_of_colt, MonstersClues.flashing_lights,
                                         MonstersClues.telekinesis, MonstersClues.temperature_fluctuations,
+                                        MonstersClues.double_tongue,
 
                                         MonstersClues.travels_as_white_fog,
                                         MonstersClues.people_burned_on_the_ceiling,
@@ -1215,10 +1217,8 @@ class MonsterBase:
                               MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_different_areas]
         self.amazons.kill_methods = [MonstersKillMethods.gun_shots]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S07": [13]})
-        self.unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.left_greek_symbol_on_chest,
-                              MonstersClues.high_strength, MonstersClues.people_aging_rapidly, MonstersClues.snake_eyes,
-                              MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area]
+        self.unknown = Monster("Unknown", description="", episodes={"S07": [15]})
+        self.unknown.clues = [MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area]
 
         # -------------------------------------------------- SEASON 8 --------------------------------------------------
 
