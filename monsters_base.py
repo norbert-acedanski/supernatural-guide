@@ -1194,10 +1194,20 @@ class MonsterBase:
         self.vetala.disable_methods = [MonstersDisableMethods.hit_it_hard_in_the_head]
         self.vetala.kill_methods = [MonstersKillMethods.silver_blade]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S07": [11]})
-        self.unknown.clues = [MonstersClues.cat_eyes, MonstersClues.blue_eyes, MonstersClues.needle_like_teeth,
-                              MonstersClues.no_blood_in_the_body, MonstersClues.animal_like_attack,
-                              MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area]
+        self.chronos = Monster("Chronos", description="God of time. Can be summoned in order to compel him to tell "
+                                                      "your future with a spell.", episodes={"S07": [12]})
+        self.chronos.clues = [MonstersClues.red_light, MonstersClues.people_dead_weirdly, MonstersClues.mummified_body,
+                              MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
+                              MonstersClues.seen_as_a_person_in_a_suit, MonstersClues.weird_electronics_behavior,
+                              MonstersClues.immortal, MonstersClues.can_time_travel, MonstersClues.high_strength,
+                              MonstersClues.invulnerable]
+        self.chronos.kill_methods = [MonstersKillMethods.olive_pin_dipped_in_blood]
+
+        self.unknown = Monster("Unknown", description="", episodes={"S07": [12]})
+        self.unknown.clues = [MonstersClues.red_light, MonstersClues.people_dead_weirdly, MonstersClues.mummified_body,
+                              MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
+                              MonstersClues.seen_as_a_person_in_a_suit, MonstersClues.weird_electronics_behavior,
+                              MonstersClues.immortal, MonstersClues.can_time_travel]
 
         # -------------------------------------------------- SEASON 8 --------------------------------------------------
 
