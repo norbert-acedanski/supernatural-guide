@@ -1129,7 +1129,7 @@ class MonsterBase:
         self.leviathan = Monster("Leviathan", description="Long before GOD created Angel and man, he made the first "
                                                           "beasts - the Leviathans. GOD was concerned, that they would "
                                                           "devour all creation, so he locked them away in Purgatory.",
-                                 episodes={"S07": [1, 2, 3, 5, 6, 9]})
+                                 episodes={"S07": [1, 2, 3, 5, 6, 9, 16]})
         self.leviathan.clues = [MonstersClues.high_strength, MonstersClues.can_posses_an_angel,
                                 MonstersClues.black_veins, MonstersClues.black_blood, MonstersClues.moves_in_water,
                                 MonstersClues.people_dead_weirdly, MonstersClues.animal_like_attack,
@@ -1137,7 +1137,8 @@ class MonsterBase:
                                 MonstersClues.silver_does_not_affect_it, MonstersClues.large_mouth_full_of_teeth,
                                 MonstersClues.invulnerable, MonstersClues.double_tongue,
                                 MonstersClues.salt_does_not_affect_it, MonstersClues.holy_water_does_not_affect_it,
-                                MonstersClues.being_at_two_places_at_once]
+                                MonstersClues.being_at_two_places_at_once,
+                                MonstersClues.can_make_themselves_appear_as_they_like]
         self.leviathan.disable_methods = [MonstersDisableMethods.paralyze_spell, MonstersDisableMethods.decapitation,
                                           MonstersDisableMethods.sodium_borate_burns_it,
                                           MonstersDisableMethods.head_shot]
@@ -1217,8 +1218,8 @@ class MonsterBase:
                               MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_different_areas]
         self.amazons.kill_methods = [MonstersKillMethods.gun_shots]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S07": [15]})
-        self.unknown.clues = [MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area]
+        self.unknown = Monster("Unknown", description="", episodes={"S07": [16]})
+        self.unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.can_make_themselves_appear_as_they_like]
 
         # -------------------------------------------------- SEASON 8 --------------------------------------------------
 
