@@ -180,6 +180,27 @@ class ObjectsBase:
 
         # SEASON 7:
 
+        self.cursed_ballet_shoes = Object("Cursed ballet shoes", description="When worn, they deprive the person's "
+                                                                             "will and cause that person to dance "
+                                                                             "without stopping, killing them "
+                                                                             "in a process.", episodes={"S07": [16]})
+        self.cursed_ballet_shoes.abilities = [ObjectAbilities.fit_their_size_to_a_person, ObjectAbilities.can_teleport,
+                                              ObjectAbilities.makes_a_person_dance_until_they_die]
+        self.cursed_ballet_shoes.destroy_methods = [ObjectDestroyMethods.take_them_off_to_disable]
+
+        self.cursed_kettle = Object("Cursed kettle", description="When on fire, makes a person drink boiling water.",
+                                    episodes={"S07": [16]})
+        self.cursed_kettle.abilities = [ObjectAbilities.makes_a_person_drink_boiling_water]
+
+        self.cursed_gramophone = Object("Cursed Gramophone", description="When playing, whispers to people and "
+                                                                         "makes them do horrible things.",
+                                        episodes={"S07": [16]})
+        self.cursed_gramophone.abilities = [ObjectAbilities.can_whisper_to_people,
+                                            ObjectAbilities.makes_a_person_do_horrible_things]
+
+        self.cursed_vintage_gentlemans_magazine = Object("Cursed vintage gentleman's magazine",
+                                                         description="Only mentioned and in the box in S07E16.")
+
         # SEASON 8:
 
         # SEASON 9:
