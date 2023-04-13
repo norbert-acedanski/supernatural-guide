@@ -255,6 +255,7 @@ class MonstersClues:
     can_time_travel = "can time travel"
     can_turn_people_into_monsters = "can turn people into monsters"
     can_remove_death_binding_spell = "can remove death binding spell"
+    can_transfer_mental_diseases = "can transfer mental diseases"
     people_with_souls_switched = "people with souls switched"
     poisoned_people = "poisoned people"
     demon_killing_knife_is_ineffective = "demon killing knife is ineffective"
