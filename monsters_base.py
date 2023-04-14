@@ -53,7 +53,7 @@ class MonsterBase:
                                                    "by a special spell (has to be cast over an open fire).",
                                        episodes={"S01": [1, 3, 5, 7, 9, 10, 13, 19], "S02": [6, 11, 16, 18, 19],
                                                  "S03": [5, 6, 13], "S04": [2, 13, 15, 17], "S05": [9, 11],
-                                                 "S06": [4, 14], "S07": [7, 10, 13]})
+                                                 "S06": [4, 14], "S07": [7, 10, 13, 18]})
         self.vengeful_spirit.clues = [MonstersClues.
                                       missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                                       MonstersClues.people_dead_weirdly, MonstersClues.ghost_like_creature,
@@ -1219,8 +1219,23 @@ class MonsterBase:
                               MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_different_areas]
         self.amazons.kill_methods = [MonstersKillMethods.gun_shots]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S07": [17]})
-        self.unknown.clues = []
+        self.shojo = Monster("Shojo", description="Japanese alcohol spirit. It roams where there's lots of alcohol. "
+                                                  "Lore says, that if you were drunk enough, you could see in skulking "
+                                                  "around breweries in Japan. One can harness the will of a Shojo "
+                                                  "with the right spell box.", episodes={"S07": [18]})
+        self.shojo.clues = [MonstersClues.weird_noises, MonstersClues.people_dead_weirdly, MonstersClues.emf,
+                            MonstersClues.body_torn_apart, MonstersClues.invisible_entity,
+                            MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
+                            MonstersClues.ghost_like_creature, MonstersClues.people_seeing_things_or_figures,
+                            MonstersClues.seen_by_drunk_people, MonstersClues.telekinesis, MonstersClues.high_strength]
+        self.shojo.kill_methods = [MonstersKillMethods.samurai_sword_consecrated_with_shinto_blessing]
+
+        self.unknown = Monster("Unknown", description="", episodes={"S07": [18]})
+        self.unknown.clues = [MonstersClues.weird_noises, MonstersClues.people_dead_weirdly, MonstersClues.emf,
+                              MonstersClues.body_torn_apart, MonstersClues.invisible_entity,
+                              MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
+                              MonstersClues.ghost_like_creature, MonstersClues.people_seeing_things_or_figures,
+                              MonstersClues.seen_by_drunk_people]
 
         # -------------------------------------------------- SEASON 8 --------------------------------------------------
 

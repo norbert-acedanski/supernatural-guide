@@ -316,6 +316,7 @@ class MonstersClues:
     large_mouth_full_of_teeth = "large mouth full of teeth"
     double_tongue = "double tongue"
     ear_ringing = "ear ringing"
+    seen_by_drunk_people = "seen by drunk people"
 
 
 class MonstersKillMethods:
@@ -336,6 +337,7 @@ class MonstersKillMethods:
     demon_killing_knife = "demon killing knife"
     holy_oil = "holy oil"
     angel_sword = "angel sword"
+    samurai_sword_consecrated_with_shinto_blessing = "samurai sword consecrated with shinto blessing"
     colt_of_colt_with_magic_bullets = \
         "colt of Colt with magic bullets (silver bullets covered with holy oil, mirra and sage than use a spell)"
     magic_red_high_heels = "magic red high heels"
