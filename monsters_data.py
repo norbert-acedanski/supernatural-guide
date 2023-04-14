@@ -199,6 +199,7 @@ class MonstersClues:
     local_legend_about_somebody_killed_or_died = "local legend about somebody killed/died in the past"
     silent_area = "silent area - not even crickets are heard"
     intelligent = "intelligent"
+    can_absorb_other_ghost_energy = "can absorb other ghost energy"
     can_become_invisible = "can become invisible"
     can_control_water = "can control water"
     can_posses_a_reaper = "can posses a reaper"

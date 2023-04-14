@@ -53,7 +53,7 @@ class MonsterBase:
                                                    "by a special spell (has to be cast over an open fire).",
                                        episodes={"S01": [1, 3, 5, 7, 9, 10, 13, 19], "S02": [6, 11, 16, 18, 19],
                                                  "S03": [5, 6, 13], "S04": [2, 13, 15, 17], "S05": [9, 11],
-                                                 "S06": [4, 14], "S07": [7, 10, 13, 18]})
+                                                 "S06": [4, 14], "S07": [7, 10, 13, 18, 19]})
         self.vengeful_spirit.clues = [MonstersClues.
                                       missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                                       MonstersClues.people_dead_weirdly, MonstersClues.ghost_like_creature,
@@ -72,7 +72,9 @@ class MonsterBase:
                                       MonstersClues.strange_different_things_happening, MonstersClues.no_missing_heart,
                                       MonstersClues.body_torn_apart, MonstersClues.no_black_fog, MonstersClues.visions,
                                       MonstersClues.lack_of_body_control, MonstersClues.scars_on_victims,
-                                      MonstersClues.weird_fire_spontaneous_combustion]
+                                      MonstersClues.weird_fire_spontaneous_combustion,
+                                      MonstersClues.can_control_electronics,
+                                      MonstersClues.can_absorb_other_ghost_energy]
         self.vengeful_spirit.disable_methods = [MonstersDisableMethods.bring_the_spirit_to_its_crime_place,
                                                 MonstersDisableMethods.bring_the_spirit_what_it_wants,
                                                 MonstersDisableMethods.iron_or_iron_bullets,
@@ -1230,12 +1232,8 @@ class MonsterBase:
                             MonstersClues.seen_by_drunk_people, MonstersClues.telekinesis, MonstersClues.high_strength]
         self.shojo.kill_methods = [MonstersKillMethods.samurai_sword_consecrated_with_shinto_blessing]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S07": [18]})
-        self.unknown.clues = [MonstersClues.weird_noises, MonstersClues.people_dead_weirdly, MonstersClues.emf,
-                              MonstersClues.body_torn_apart, MonstersClues.invisible_entity,
-                              MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
-                              MonstersClues.ghost_like_creature, MonstersClues.people_seeing_things_or_figures,
-                              MonstersClues.seen_by_drunk_people]
+        self.unknown = Monster("Unknown", description="", episodes={"S07": [19]})
+        self.unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.can_control_electronics]
 
         # -------------------------------------------------- SEASON 8 --------------------------------------------------
 
