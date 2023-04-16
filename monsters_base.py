@@ -53,7 +53,7 @@ class MonsterBase:
                                                    "by a special spell (has to be cast over an open fire).",
                                        episodes={"S01": [1, 3, 5, 7, 9, 10, 13, 19], "S02": [6, 11, 16, 18, 19],
                                                  "S03": [5, 6, 13], "S04": [2, 13, 15, 17], "S05": [9, 11],
-                                                 "S06": [4, 14], "S07": [7, 10, 13, 18, 19]})
+                                                 "S06": [4, 14], "S07": [7, 10, 13, 17, 19]})
         self.vengeful_spirit.clues = [MonstersClues.
                                       missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                                       MonstersClues.people_dead_weirdly, MonstersClues.ghost_like_creature,
@@ -1131,8 +1131,10 @@ class MonsterBase:
 
         self.leviathan = Monster("Leviathan", description="Long before GOD created Angel and man, he made the first "
                                                           "beasts - the Leviathans. GOD was concerned, that they would "
-                                                          "devour all creation, so he locked them away in Purgatory.",
-                                 episodes={"S07": [1, 2, 3, 5, 6, 9, 16]})
+                                                          "devour all creation, so he locked them away in Purgatory. "
+                                                          "Leviathan description by Franck Devereaux in S07E20, "
+                                                          "minute 13.",
+                                 episodes={"S07": [1, 2, 3, 5, 6, 9, 16, 20]})
         self.leviathan.clues = [MonstersClues.high_strength, MonstersClues.can_posses_an_angel,
                                 MonstersClues.black_veins, MonstersClues.black_blood, MonstersClues.moves_in_water,
                                 MonstersClues.people_dead_weirdly, MonstersClues.animal_like_attack,
@@ -1232,8 +1234,16 @@ class MonsterBase:
                             MonstersClues.seen_by_drunk_people, MonstersClues.telekinesis, MonstersClues.high_strength]
         self.shojo.kill_methods = [MonstersKillMethods.samurai_sword_consecrated_with_shinto_blessing]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S07": [19]})
-        self.unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.can_control_electronics]
+        self.ghost_bobby = Monster("Ghost Bobby", description="Ghost of Bobby Singer. Bobby died in S07E10.",
+                                   episodes={"S07": [17, 18, 19, 20]})
+        self.ghost_bobby.clues = [MonstersClues.weird_things_behavior, MonstersClues.telekinesis, MonstersClues.emf,
+                                  MonstersClues.invisible_entity, MonstersClues.can_appear_out_of_thin_air,
+                                  MonstersClues.can_vanish, MonstersClues.can_absorb_other_ghost_energy,
+                                  MonstersClues.ghost_like_creature, MonstersClues.high_strength,
+                                  MonstersClues.cold_spots]
+
+        self.unknown = Monster("Unknown", description="", episodes={"S07": [20]})
+        self.unknown.clues = []
 
         # -------------------------------------------------- SEASON 8 --------------------------------------------------
 
