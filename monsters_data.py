@@ -224,6 +224,8 @@ class MonstersClues:
     can_bring_back_angelic_grace = "can bring back angelic grace"
     can_summon_ghosts = "can summon ghosts"
     can_repair_human_body = "can repair human body"
+    can_repair_broken_word_of_god = "can repair broken word of GOD"
+    can_read_word_of_god = "can read word of GOD"
     can_control_demons = "can control demons"
     can_control_ghosts = "can control ghosts"
     can_send_demons_back_to_hell_with_power_of_will = "can send demons back to hell with power of will"
@@ -392,6 +394,9 @@ class MonstersKillMethods:
     ashes_of_a_phoenix = "ashes of a phoenix"
     draining_blood = "draining blood"
     gun_shots = "gun shots"
+    leviathan_black_goo = "leviathan black goo"
+    bone_of_a_righteous_mortal_washed_in_three_bloods_of_the_fallen = \
+        "bone of a righteous mortal washed in three bloods of the fallen angel"
 
 
 class MonstersDisableMethods:

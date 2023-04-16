@@ -119,7 +119,7 @@ class MonsterBase:
                                                   "Demons are man that were stuck in hell for a long time.",
                              episodes={"S01": [4, 21, 22], "S02": [1, 14], "S03": [1, 2, 4, 12, 15, 16],
                                        "S04": [1, 4, 9, 10, 20, 21, 22], "S05": [1, 6, 10, 12, 14, 17, 20, 21, 22],
-                                       "S06": [7, 10, 18, 20, 21, 22], "S07": [8, 15, 17]})
+                                       "S06": [7, 10, 18, 20, 21, 22], "S07": [8, 15, 17, 21]})
         self.demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                             MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                             MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -551,7 +551,7 @@ class MonsterBase:
 
         # -------------------------------------------------- SEASON 4 --------------------------------------------------
 
-        self.angel = Monster("Angel", description="Angel of God (Castiel, Uriel). "
+        self.angel = Monster("Angel", description="Angel of God (Castiel, Uriel, Hester, Inias). "
                                                   "They can bring people back from the dead. Cannot track people, "
                                                   "that use powerful spells to hide themselves. "
                                                   "All angels have graces - energy source for their power. "
@@ -561,7 +561,7 @@ class MonsterBase:
                                                   "wall in S06E20. Castiel supposedly died in S07E01, back in S07E17.",
                              episodes={"S04": [1, 2, 7, 9, 10, 15, 16, 18, 20, 21, 22],
                                        "S05": [1, 2, 3, 4, 5, 8, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22],
-                                       "S06": [3, 6, 7, 10, 12, 15, 17, 18, 19, 20, 21, 22], "S07": [1, 17]})
+                                       "S06": [3, 6, 7, 10, 12, 15, 17, 18, 19, 20, 21, 22], "S07": [1, 17, 20, 21]})
         self.angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                             MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion,
                             MonstersClues.leaves_burned_marks, MonstersClues.weird_electronics_behavior,
@@ -585,6 +585,7 @@ class MonsterBase:
                                       MonstersDisableMethods.enochian_spell, MonstersDisableMethods.angel_blade,
                                       MonstersDisableMethods.presence_of_the_mother]
         self.angel.kill_methods = [MonstersKillMethods.angel_blade, MonstersKillMethods.holy_oil,
+                                   MonstersKillMethods.leviathan_black_goo,
 
                                    MonstersKillMethods.will_of_an_archangel, MonstersKillMethods.will_of_prince_of_hell,
                                    MonstersKillMethods.lance_of_archangel_michael]
@@ -652,10 +653,12 @@ class MonsterBase:
         self.angel_zachariah.kill_methods = [MonstersKillMethods.angel_blade]
 
         self.prophet = Monster("Prophet of the Lord", description="A person that is gifted with the knowledge "
-                                                                  "of the future.",
-                               episodes={"S04": [18, 22], "S05": [1, 9, 22]})
+                                                                  "of the future. Prophets throughout the series: "
+                                                                  "Chuck Shurley, Kevin Tran.",
+                               episodes={"S04": [18, 22], "S05": [1, 9, 22], "S07": [21]})
         self.prophet.clues = [MonstersClues.can_see_future, MonstersClues.protected_by_an_archangel,
-                              MonstersClues.visions]
+                              MonstersClues.visions, MonstersClues.can_repair_broken_word_of_god,
+                              MonstersClues.can_read_word_of_god]
 
         self.archangel = Monster("Archangel", description="They are heaven's most terrifying weapon. "
                                                           "They are fierce and absolute.", episodes={"S04": [18, 22]})
@@ -1133,8 +1136,9 @@ class MonsterBase:
                                                           "beasts - the Leviathans. GOD was concerned, that they would "
                                                           "devour all creation, so he locked them away in Purgatory. "
                                                           "Leviathan description by Franck Devereaux in S07E20, "
-                                                          "minute 13.",
-                                 episodes={"S07": [1, 2, 3, 5, 6, 9, 16, 20]})
+                                                          "minute 13. Kill method revealed in S07E20 in "
+                                                          "the Word of GOD.",
+                                 episodes={"S07": [1, 2, 3, 5, 6, 9, 16, 20, 21]})
         self.leviathan.clues = [MonstersClues.high_strength, MonstersClues.can_posses_an_angel,
                                 MonstersClues.black_veins, MonstersClues.black_blood, MonstersClues.moves_in_water,
                                 MonstersClues.people_dead_weirdly, MonstersClues.animal_like_attack,
@@ -1147,6 +1151,7 @@ class MonsterBase:
         self.leviathan.disable_methods = [MonstersDisableMethods.paralyze_spell, MonstersDisableMethods.decapitation,
                                           MonstersDisableMethods.sodium_borate_burns_it,
                                           MonstersDisableMethods.head_shot]
+        self.leviathan.kill_methods = [MonstersKillMethods.bone_of_a_righteous_mortal_washed_in_three_bloods_of_the_fallen]
 
         self.kitsune = Monster("Kitsune", description="Tey look human, until they sprout out claws and stab you behind "
                                                       "your ear to get to your brain - according to young Sam. "
@@ -1235,15 +1240,15 @@ class MonsterBase:
         self.shojo.kill_methods = [MonstersKillMethods.samurai_sword_consecrated_with_shinto_blessing]
 
         self.ghost_bobby = Monster("Ghost Bobby", description="Ghost of Bobby Singer. Bobby died in S07E10.",
-                                   episodes={"S07": [17, 18, 19, 20]})
+                                   episodes={"S07": [17, 18, 19, 20, 21]})
         self.ghost_bobby.clues = [MonstersClues.weird_things_behavior, MonstersClues.telekinesis, MonstersClues.emf,
                                   MonstersClues.invisible_entity, MonstersClues.can_appear_out_of_thin_air,
                                   MonstersClues.can_vanish, MonstersClues.can_absorb_other_ghost_energy,
                                   MonstersClues.ghost_like_creature, MonstersClues.high_strength,
                                   MonstersClues.cold_spots]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S07": [20]})
-        self.unknown.clues = []
+        self.unknown = Monster("Unknown", description="", episodes={"S07": [21]})
+        self.unknown.clues = [MonstersClues.visions]
 
         # -------------------------------------------------- SEASON 8 --------------------------------------------------
 
