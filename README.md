@@ -12,7 +12,7 @@ Python 3.9.10
 
 ### Working with supernatural-monster-recogniser:
 1. Run the *main.py* file.
-2. Choose from one of eight possible options:
+2. Choose from one of 14 possible options:
     - ***1 - print all monster names*** - prints all monster names currently in a database.
     - ***2 - print all monsters with their attributes*** - prints all monster names, a brief description, episodes, that a monster was seen, possible traces or clues they leave behind, disable, killing and curing methods (if available).
     - ***3 - print all clues for monsters*** - prints the list of all the clues, that are currently in the database, that all monsters leave behind.
