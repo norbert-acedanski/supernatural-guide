@@ -24,8 +24,9 @@ class CursesBase:
                                     CursesClues.people_dead_weirdly, CursesClues.weird_animal_behavior]
         self.revenge_curse.kill_methods = [CursesDisableMethods.surviving_the_curse]
 
-        self.reaper_trapping_spell = Curse("Reaper trapping spell", description="Spell, that controls a reaper",
-                                           episodes={"S01": [12]})
+        self.reaper_trapping_spell = Curse("Reaper trapping spell", description="Spell, that controls a reaper "
+                                                                                "or traps it.",
+                                           episodes={"S01": [12], "S07": [10]})
         self.reaper_trapping_spell.clues = [CursesClues.control_over_a_reaper, CursesClues.black_altar,
                                             CursesClues.controlled_with_a_spell_and_a_cross]
         self.reaper_trapping_spell.disable_methods = [CursesDisableMethods.destroy_the_coptic_cross,
@@ -43,10 +44,13 @@ class CursesBase:
 
         # SEASON 3:
 
-        self.curse = Curse("Unknown curse", episodes={"S03": [9]})
-        self.curse.clues = [CursesClues.hex_bag_hidden_somewhere, CursesClues.people_dead_weirdly,
-                            CursesClues.weird_electronics_behavior, CursesClues.people_feeling_weird_or_bad]
-        self.curse.disable_methods = [CursesDisableMethods.burn_the_hex, CursesDisableMethods.magic_brew]
+        self.killing_curse = Curse("Killing curse", description="Spell, that kills a person in a specific way.",
+                                   episodes={"S03": [9], "S07": [5]})
+        self.killing_curse.clues = [CursesClues.hex_bag_hidden_somewhere, CursesClues.coin_hidden_somewhere,
+                                    CursesClues.people_dead_weirdly, CursesClues.weird_electronics_behavior,
+                                    CursesClues.people_feeling_weird_or_bad]
+        self.killing_curse.disable_methods = [CursesDisableMethods.burn_the_hex, CursesDisableMethods.destroy_the_coin,
+                                              CursesDisableMethods.magic_brew]
 
         # ---------------------------------------------- ALL EPISODES DONE ---------------------------------------------
 
@@ -134,9 +138,47 @@ class CursesBase:
         self.angel_summoning_spell = Curse("Angel summoning spell", description="Can summon a specific angel.",
                                            episodes={"S06": [21]})  # TODO: Check where else was this spell used.
 
+        # ---------------------------------------------- ALL EPISODES DONE ---------------------------------------------
+
         # SEASON 7:
 
+        self.death_binding_spell = Curse("Death Binding Spell", description="Spell, that binds Death. To perform it, "
+                                                                            "you need 'An act of God crystallized "
+                                                                            "forever' - crystal made whe lightning "
+                                                                            "structs sand broke into powder, "
+                                                                            "unknown herbs, blood of a person. "
+                                                                            "You mix the ingredients and say a spell.",
+                                         episodes={"S07": [1]})
+        self.death_binding_spell.disable_methods = [CursesDisableMethods.will_of_an_angel_on_soul_juice]
 
+        self.love_potion = Curse("Love potion", description="A potion, that allows a person to fall in love "
+                                                            "in another person.", episodes={"S07": [8]})
+        self.love_potion.clues = [CursesClues.blinding_love, CursesClues.people_acting_weirdly]
+
+        self.fear_realizing_curse = Curse("Fear realizing curse", description="Curse, that allows to bring to life "
+                                                                              "the fear of a person and send it "
+                                                                              "to kill someone. It requires something, "
+                                                                              "that belongs to the person, that is the "
+                                                                              "target, and a drawing of the thing, "
+                                                                              "that should kill that person.",
+                                          episodes={"S07": [14]})
+
+        self.fear_realizing_curse.clues = [CursesClues.seen_as_a_clown, CursesClues.people_dead_weirdly,
+                                           CursesClues.bite_marks_on_peoples_necks, CursesClues.no_cold_spots,
+                                           CursesClues.no_sulfur, CursesClues.people_seeing_things_or_figures,
+                                           CursesClues.strange_different_things_happening,
+                                           CursesClues.people_nightmares_come_true,
+                                           CursesClues.people_seeing_strange_things]
+        self.fear_realizing_curse.disable_methods = [CursesDisableMethods.kill_the_person_that_causes_it]
+
+        self.demon_summoning_spell = Curse("Demon summoning spell", description="Spell, that allows a person to summon "
+                                                                                "a demon into a person or as is. "
+                                                                                "Requires a blood of an exorcist, "
+                                                                                "that banished the demon in the first "
+                                                                                "place, a part of a dog, abd a spell.",
+                                           episodes={"S07": [15, 23]})
+
+        # ---------------------------------------------- ALL EPISODES DONE ---------------------------------------------
 
         # SEASON 8:
 

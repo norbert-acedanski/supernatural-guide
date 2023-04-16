@@ -18,7 +18,7 @@ class ObjectsBase:
         self.john_winchesters_journal = Object("John Winchester's Journal",
                                                description="A journal of John Winchester, that contains a lot "
                                                            "information about monsters in Supernatural Universe.",
-                                               episodes={"S01": [], "S04": [19], "S06": [1, 8, 12]})
+                                               episodes={"S01": [], "S04": [19], "S06": [1, 8, 12], "S07": [8, 11]})
         self.john_winchesters_journal._information = {"S04E19": JohnWinchesterJournal.entry_about_johns_other_son,
                                                       "S06E12": JohnWinchesterJournal.entry_about_a_skinwalker}
 
@@ -49,7 +49,8 @@ class ObjectsBase:
                                                                              "not get them back to hell. "
                                                                              "Cannot kill certain kinds of demons.",
                                           episodes={"S03": [1, 9, 16], "S04": [1, 9, 20, 22],
-                                                    "S05": [1, 10, 14, 17, 20, 21, 22], "S06": [10, 20, 21]})
+                                                    "S05": [1, 10, 14, 17, 20, 21, 22], "S06": [10, 20, 21],
+                                                    "S07": [8, 15, 17, 21]})
         self.demon_killing_knife.abilities = [ObjectAbilities.can_kill_demons, ObjectAbilities.cannot_kill_angels]
 
         self.lucky_rabbits_foot = Object("Lucky rabbits foot",
@@ -76,7 +77,7 @@ class ObjectsBase:
         self.sigil_against_angels = Object("Sigil against angels", description="Sigil made with blood, that can send "
                                                                                "angels back to heaven. Can be used to "
                                                                                "send back a specific angel type.",
-                                           episodes={"S04": [10, 22], "S05": [13, 18], "S06": [3]})
+                                           episodes={"S04": [10, 22], "S05": [13, 18], "S06": [3], "S07": [21]})
         self.sigil_against_angels.abilities = [ObjectAbilities.can_send_angels_back_to_heaven]
 
         self.angel_grace = Object("Angel grace", description="A power source for an angel", episodes={"S04": [10]})
@@ -94,7 +95,7 @@ class ObjectsBase:
         self.angel_protection_sigil.abilities = [ObjectAbilities.angels_cant_get_past_it]
 
         self.angel_blade = Object("Angel blade", description="A triangular, silvery blade, that each angel has.",
-                                  episodes={"S04": [16], "S05": [1, 13, 18], "S06": [3, 10, 17, 18, 22]})
+                                  episodes={"S04": [16], "S05": [1, 13, 18], "S06": [3, 10, 17, 18, 22], "S07": [21]})
         self.angel_blade.abilities = [ObjectAbilities.can_kill_angels]
 
         self.lucifers_cage = Object("Lucifer's Cage", description="A prison build specifically to contain archangelic "
@@ -178,6 +179,34 @@ class ObjectsBase:
         # ---------------------------------------------- ALL EPISODES DONE ---------------------------------------------
 
         # SEASON 7:
+
+        self.cursed_ballet_shoes = Object("Cursed ballet shoes", description="When worn, they deprive the person's "
+                                                                             "will and cause that person to dance "
+                                                                             "without stopping, killing them "
+                                                                             "in a process.", episodes={"S07": [16]})
+        self.cursed_ballet_shoes.abilities = [ObjectAbilities.fit_their_size_to_a_person, ObjectAbilities.can_teleport,
+                                              ObjectAbilities.makes_a_person_dance_until_they_die]
+        self.cursed_ballet_shoes.destroy_methods = [ObjectDestroyMethods.take_them_off_to_disable]
+
+        self.cursed_kettle = Object("Cursed kettle", description="When on fire, makes a person drink boiling water.",
+                                    episodes={"S07": [16]})
+        self.cursed_kettle.abilities = [ObjectAbilities.makes_a_person_drink_boiling_water]
+
+        self.cursed_gramophone = Object("Cursed Gramophone", description="When playing, whispers to people and "
+                                                                         "makes them do horrible things.",
+                                        episodes={"S07": [16]})
+        self.cursed_gramophone.abilities = [ObjectAbilities.can_whisper_to_people,
+                                            ObjectAbilities.makes_a_person_do_horrible_things]
+
+        self.cursed_vintage_gentlemans_magazine = Object("Cursed vintage gentleman's magazine",
+                                                         description="Only mentioned and in the box in S07E16.")
+
+        self.word_of_god = Object("Word of GOD", description="A stone, that is inscribed with literal Word of God. "
+                                                             "Written by Metatron - his scribe. "
+                                                             "He took down dictation, when creation was being formed. "
+                                                             "There are many words of GOD.", episodes={"S07": [21]})
+        self.word_of_god.abilities = [ObjectAbilities.can_cause_storms, ObjectAbilities.can_cause_women_to_go_to_labour,
+                                      ObjectAbilities.when_opened_causes_a_person_to_become_a_prophet]
 
         # SEASON 8:
 

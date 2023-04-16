@@ -11,3 +11,4 @@ class PlaceClues:
     good_memories_relived = "good memories relived"
     changing_scenery = "changing scenery"
     endless_queue = "endless queue"
+    monsters_nearby = "monsters nearby"
