@@ -14,6 +14,8 @@ class ObjectAbilities:
     can_give_incredible_starving_sensation_for_something = "can give incredible starving sensation for something"
     can_open_lucifers_cage_with_a_spell = "can open Lucifer's cage with a spell"
     can_cause_egyptian_plague_like_events = "can cause egyptian plague like events"
+    can_cause_storms = "can cause storms"
+    can_cause_women_to_go_to_labour = "can cause women to go to labour"
     can_turn_a_person_into_a_pillar_of_salt = "can turn a person into a pillar of salt"
     can_whisper_to_people = "can whisper to people"
     unables_possessions = "unables possessions"
@@ -32,6 +34,7 @@ class ObjectAbilities:
     makes_a_person_dance_until_they_die = "makes a person dance until they die"
     makes_a_person_drink_boiling_water = "makes a person drink boiling water"
     makes_a_person_do_horrible_things = "makes a person do horrible things"
+    when_opened_causes_a_person_to_become_a_prophet = "when opened causes a person to become a prophet"
 
 
 class ObjectMaintenance:
