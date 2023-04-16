@@ -119,7 +119,7 @@ class MonsterBase:
                                                   "Demons are man that were stuck in hell for a long time.",
                              episodes={"S01": [4, 21, 22], "S02": [1, 14], "S03": [1, 2, 4, 12, 15, 16],
                                        "S04": [1, 4, 9, 10, 20, 21, 22], "S05": [1, 6, 10, 12, 14, 17, 20, 21, 22],
-                                       "S06": [7, 10, 18, 20, 21, 22], "S07": [8, 15, 17, 21]})
+                                       "S06": [7, 10, 18, 20, 21, 22], "S07": [8, 15, 17, 21, 23]})
         self.demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                             MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                             MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -561,7 +561,8 @@ class MonsterBase:
                                                   "wall in S06E20. Castiel supposedly died in S07E01, back in S07E17.",
                              episodes={"S04": [1, 2, 7, 9, 10, 15, 16, 18, 20, 21, 22],
                                        "S05": [1, 2, 3, 4, 5, 8, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22],
-                                       "S06": [3, 6, 7, 10, 12, 15, 17, 18, 19, 20, 21, 22], "S07": [1, 17, 20, 21]})
+                                       "S06": [3, 6, 7, 10, 12, 15, 17, 18, 19, 20, 21, 22],
+                                       "S07": [1, 17, 20, 21, 23]})
         self.angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                             MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion,
                             MonstersClues.leaves_burned_marks, MonstersClues.weird_electronics_behavior,
@@ -655,7 +656,7 @@ class MonsterBase:
         self.prophet = Monster("Prophet of the Lord", description="A person that is gifted with the knowledge "
                                                                   "of the future. Prophets throughout the series: "
                                                                   "Chuck Shurley, Kevin Tran.",
-                               episodes={"S04": [18, 22], "S05": [1, 9, 22], "S07": [21]})
+                               episodes={"S04": [18, 22], "S05": [1, 9, 22], "S07": [21, 22, 23]})
         self.prophet.clues = [MonstersClues.can_see_future, MonstersClues.protected_by_an_archangel,
                               MonstersClues.visions, MonstersClues.can_repair_broken_word_of_god,
                               MonstersClues.can_read_word_of_god]
@@ -791,7 +792,7 @@ class MonsterBase:
                                                                     "Supposedly died in S06E10, but in S06E19 it is "
                                                                     "revealed he was working with Castiel.",
                                      episodes={"S05": [10, 20, 21], "S06": [4, 7, 8, 10, 19, 20, 21, 22],
-                                               "S07": [1, 6, 8, 22]})
+                                               "S07": [1, 6, 8, 22, 23]})
         self.demon_crowley.clues = [MonstersClues.can_vanish, MonstersClues.pact_sealed_with_a_kiss,
                                     MonstersClues.summoned_by_placing_box_in_the_crossroads, MonstersClues.telekinesis,
                                     MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
@@ -1139,7 +1140,7 @@ class MonsterBase:
                                                           "Leviathan description by Franck Devereaux in S07E20, "
                                                           "minute 13. Kill method revealed in S07E20 in "
                                                           "the Word of GOD.",
-                                 episodes={"S07": [1, 2, 3, 5, 6, 9, 16, 20, 21, 22]})
+                                 episodes={"S07": [1, 2, 3, 5, 6, 9, 16, 20, 21, 22, 23]})
         self.leviathan.clues = [MonstersClues.high_strength, MonstersClues.can_posses_an_angel,
                                 MonstersClues.black_veins, MonstersClues.black_blood, MonstersClues.moves_in_water,
                                 MonstersClues.people_dead_weirdly, MonstersClues.animal_like_attack,
@@ -1240,16 +1241,20 @@ class MonsterBase:
                             MonstersClues.seen_by_drunk_people, MonstersClues.telekinesis, MonstersClues.high_strength]
         self.shojo.kill_methods = [MonstersKillMethods.samurai_sword_consecrated_with_shinto_blessing]
 
-        self.ghost_bobby = Monster("Ghost Bobby", description="Ghost of Bobby Singer. Bobby died in S07E10.",
-                                   episodes={"S07": [17, 18, 19, 20, 21, 22]})
+        self.ghost_bobby = Monster("Ghost Bobby", description="Ghost of Bobby Singer. Bobby died in S07E10. "
+                                                              "Bobby turns Vengeful in S07E23. His flask is burned "
+                                                              "in the same episode.",
+                                   episodes={"S07": [17, 18, 19, 20, 21, 22, 23]})
         self.ghost_bobby.clues = [MonstersClues.weird_things_behavior, MonstersClues.telekinesis, MonstersClues.emf,
                                   MonstersClues.invisible_entity, MonstersClues.can_appear_out_of_thin_air,
                                   MonstersClues.can_vanish, MonstersClues.can_absorb_other_ghost_energy,
                                   MonstersClues.ghost_like_creature, MonstersClues.high_strength,
                                   MonstersClues.cold_spots, MonstersClues.can_posses_a_person]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S07": [22]})
+        self.unknown = Monster("Unknown", description="", episodes={"S07": [23]})
         self.unknown.clues = []
+
+        # ---------------------------------------------- ALL EPISODES DONE ---------------------------------------------
 
         # -------------------------------------------------- SEASON 8 --------------------------------------------------
 
