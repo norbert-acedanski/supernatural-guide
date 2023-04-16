@@ -37,7 +37,9 @@ class PlacesBase:
                                                         "it has to be the eclipse. A proper sigil has to be drawn "
                                                         "on a wall. Opened again in S06E22 to let all creatures "
                                                         "into Castiel. Opened again in S07E01 to let all creatures "
-                                                        "into Purgatory.")
+                                                        "into Purgatory. One can go to Purgatory, when using Leviathan "
+                                                        "killing weapon in close proximity.", episodes={"S07": [23]})
+        self.purgatory.clues = [PlaceClues.dark_place, PlaceClues.monsters_nearby]
 
         self.places = [place for place in self.__dict__.values() if isinstance(place, Place)]
 
