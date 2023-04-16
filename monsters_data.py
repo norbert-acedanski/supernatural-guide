@@ -204,6 +204,7 @@ class MonstersClues:
     can_control_water = "can control water"
     can_posses_a_reaper = "can posses a reaper"
     can_posses_an_angel = "can posses an angel"
+    can_posses_a_person = "can posses a person"
     can_take_form_of_other_people = "can take form of other people"
     can_copy_memories_of_other_people = "can copy memories of other people"
     can_read_peoples_minds = "can read peoples minds"
@@ -320,6 +321,7 @@ class MonstersClues:
     double_tongue = "double tongue"
     ear_ringing = "ear ringing"
     seen_by_drunk_people = "seen by drunk people"
+    roman_corn_syrup = "roman corn syrup"
 
 
 class MonstersKillMethods:
@@ -396,7 +398,8 @@ class MonstersKillMethods:
     gun_shots = "gun shots"
     leviathan_black_goo = "leviathan black goo"
     bone_of_a_righteous_mortal_washed_in_three_bloods_of_the_fallen = \
-        "bone of a righteous mortal washed in three bloods of the fallen angel"
+        "bone of a righteous mortal washed in three bloods of the fallen " \
+        "(one from an angel, one from ruler of fallen humanity [Crowley] and one from an Alpha)"
 
 
 class MonstersDisableMethods:

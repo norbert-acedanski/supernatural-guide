@@ -272,7 +272,7 @@ class MonsterBase:
                                                       "bleeding them for days or weeks. "
                                                       "One can become a vampire, when drinking vampire blood. "
                                                       "Upon changing, all senses sharpen.",
-                               episodes={"S01": [20], "S02": [3], "S03": [7], "S05": [3], "S06": [5, 19]})
+                               episodes={"S01": [20], "S02": [3], "S03": [7], "S05": [3], "S06": [5, 19], "S07": [22]})
         self.vampire.clues = [MonstersClues.ripped_throat, MonstersClues.no_blood_in_the_body,
                               MonstersClues.needle_like_teeth, MonstersClues.moving_in_groups_usually,
                               MonstersClues.invulnerable, MonstersClues.high_strength, MonstersClues.bright_eyes,
@@ -282,7 +282,7 @@ class MonsterBase:
                               MonstersClues.missing_or_dead_people_regularly_in_the_same_area, MonstersClues.moves_fast]
         self.vampire.kill_methods = [MonstersKillMethods.decapitation, MonstersKillMethods.angel_blade,
                                      MonstersKillMethods.colt_of_colt_with_magic_bullets,
-                                     MonstersKillMethods.will_of_an_angel]
+                                     MonstersKillMethods.will_of_an_angel, MonstersClues.roman_corn_syrup]
         self.vampire.disable_methods = [MonstersDisableMethods.dead_mans_blood]
         self.vampire.cure_methods = [MonstersCureMethods.cocktail_made_of_blood_of_the_vampire_that_bit_the_victim]
 
@@ -791,7 +791,7 @@ class MonsterBase:
                                                                     "Supposedly died in S06E10, but in S06E19 it is "
                                                                     "revealed he was working with Castiel.",
                                      episodes={"S05": [10, 20, 21], "S06": [4, 7, 8, 10, 19, 20, 21, 22],
-                                               "S07": [1, 6, 8]})
+                                               "S07": [1, 6, 8, 22]})
         self.demon_crowley.clues = [MonstersClues.can_vanish, MonstersClues.pact_sealed_with_a_kiss,
                                     MonstersClues.summoned_by_placing_box_in_the_crossroads, MonstersClues.telekinesis,
                                     MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
@@ -990,12 +990,13 @@ class MonsterBase:
                                    MonstersKillMethods.blend_it]
 
         self.vampire_alpha = Monster("Vampire Alpha", description="First Vampire. All Vampires are descendants "
-                                                                  "of the Alpha. Has control over other vampires.",
-                                     episodes={"S06": [5, 7]})
+                                                                  "of the Alpha. Has control over other vampires. "
+                                                                  "He is a son of Eve.",
+                                     episodes={"S06": [5, 7], "S07": [22]})
         self.vampire_alpha.clues = [MonstersClues.can_give_hallucinations, MonstersClues.mind_control,
                                     MonstersClues.can_put_a_person_to_sleep, MonstersClues.invulnerable,
                                     MonstersClues.great_sense_of_smell, MonstersClues.moves_fast,
-                                    MonstersClues.can_appear_out_of_thin_air]
+                                    MonstersClues.can_appear_out_of_thin_air, MonstersClues.needle_like_teeth]
         self.vampire_alpha.kill_methods = [
 
                                            MonstersKillMethods.colt_of_colt_with_magic_bullets]
@@ -1138,7 +1139,7 @@ class MonsterBase:
                                                           "Leviathan description by Franck Devereaux in S07E20, "
                                                           "minute 13. Kill method revealed in S07E20 in "
                                                           "the Word of GOD.",
-                                 episodes={"S07": [1, 2, 3, 5, 6, 9, 16, 20, 21]})
+                                 episodes={"S07": [1, 2, 3, 5, 6, 9, 16, 20, 21, 22]})
         self.leviathan.clues = [MonstersClues.high_strength, MonstersClues.can_posses_an_angel,
                                 MonstersClues.black_veins, MonstersClues.black_blood, MonstersClues.moves_in_water,
                                 MonstersClues.people_dead_weirdly, MonstersClues.animal_like_attack,
@@ -1146,7 +1147,7 @@ class MonsterBase:
                                 MonstersClues.silver_does_not_affect_it, MonstersClues.large_mouth_full_of_teeth,
                                 MonstersClues.invulnerable, MonstersClues.double_tongue,
                                 MonstersClues.salt_does_not_affect_it, MonstersClues.holy_water_does_not_affect_it,
-                                MonstersClues.being_at_two_places_at_once,
+                                MonstersClues.being_at_two_places_at_once, MonstersClues.great_sense_of_smell,
                                 MonstersClues.can_make_themselves_appear_as_they_like]
         self.leviathan.disable_methods = [MonstersDisableMethods.paralyze_spell, MonstersDisableMethods.decapitation,
                                           MonstersDisableMethods.sodium_borate_burns_it,
@@ -1240,15 +1241,15 @@ class MonsterBase:
         self.shojo.kill_methods = [MonstersKillMethods.samurai_sword_consecrated_with_shinto_blessing]
 
         self.ghost_bobby = Monster("Ghost Bobby", description="Ghost of Bobby Singer. Bobby died in S07E10.",
-                                   episodes={"S07": [17, 18, 19, 20, 21]})
+                                   episodes={"S07": [17, 18, 19, 20, 21, 22]})
         self.ghost_bobby.clues = [MonstersClues.weird_things_behavior, MonstersClues.telekinesis, MonstersClues.emf,
                                   MonstersClues.invisible_entity, MonstersClues.can_appear_out_of_thin_air,
                                   MonstersClues.can_vanish, MonstersClues.can_absorb_other_ghost_energy,
                                   MonstersClues.ghost_like_creature, MonstersClues.high_strength,
-                                  MonstersClues.cold_spots]
+                                  MonstersClues.cold_spots, MonstersClues.can_posses_a_person]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S07": [21]})
-        self.unknown.clues = [MonstersClues.visions]
+        self.unknown = Monster("Unknown", description="", episodes={"S07": [22]})
+        self.unknown.clues = []
 
         # -------------------------------------------------- SEASON 8 --------------------------------------------------
 
