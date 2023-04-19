@@ -50,7 +50,7 @@ class ObjectsBase:
                                                                              "Cannot kill certain kinds of demons.",
                                           episodes={"S03": [1, 9, 16], "S04": [1, 9, 20, 22],
                                                     "S05": [1, 10, 14, 17, 20, 21, 22], "S06": [10, 20, 21],
-                                                    "S07": [8, 15, 17, 21]})
+                                                    "S07": [8, 15, 17, 21], "S08": [1]})
         self.demon_killing_knife.abilities = [ObjectAbilities.can_kill_demons, ObjectAbilities.cannot_kill_angels]
 
         self.lucky_rabbits_foot = Object("Lucky rabbits foot",
@@ -204,7 +204,12 @@ class ObjectsBase:
         self.word_of_god = Object("Word of GOD", description="A stone, that is inscribed with literal Word of God. "
                                                              "Written by Metatron - his scribe. "
                                                              "He took down dictation, when creation was being formed. "
-                                                             "There are many words of GOD.", episodes={"S07": [21]})
+                                                             "There are many words of GOD."
+                                                             "First found Word of God has information on Leviathans "
+                                                             "and how to kill them."
+                                                             "Second table has information about Demons, how to kill "
+                                                             "them and how to close the Gates of Hell.",
+                                  episodes={"S07": [21], "S08": [1]})
         self.word_of_god.abilities = [ObjectAbilities.can_cause_storms, ObjectAbilities.can_cause_women_to_go_to_labour,
                                       ObjectAbilities.when_opened_causes_a_person_to_become_a_prophet]
 
