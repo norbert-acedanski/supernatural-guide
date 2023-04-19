@@ -340,6 +340,7 @@ class MonstersKillMethods:
     silver_knife_dipped_in_dogs_blood = "silver knife dipped in dogs blood"
     silver_bullet_into_the_heart = "silver bullet into the heart"
     demon_killing_knife = "demon killing knife"
+    demon_killing_spell = "demon killing spell"
     holy_oil = "holy oil"
     angel_sword = "angel sword"
     samurai_sword_consecrated_with_shinto_blessing = "samurai sword consecrated with shinto blessing"
