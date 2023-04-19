@@ -38,8 +38,11 @@ class PlacesBase:
                                                         "on a wall. Opened again in S06E22 to let all creatures "
                                                         "into Castiel. Opened again in S07E01 to let all creatures "
                                                         "into Purgatory. One can go to Purgatory, when using Leviathan "
-                                                        "killing weapon in close proximity.", episodes={"S07": [23]})
-        self.purgatory.clues = [PlaceClues.dark_place, PlaceClues.monsters_nearby]
+                                                        "killing weapon in close proximity. GOD made a back door for "
+                                                        "humans to escape if one ever got to Purgatory.",
+                               episodes={"S07": [23], "S08": [1]})
+        self.purgatory.clues = [PlaceClues.dark_place, PlaceClues.monsters_nearby,
+                                PlaceClues.when_a_person_comes_back_from_it_a_bright_light_appears]
 
         self.places = [place for place in self.__dict__.values() if isinstance(place, Place)]
 
