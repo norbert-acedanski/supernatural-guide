@@ -12,6 +12,7 @@ class CursesClues:
     people_seeing_things_or_figures = "people seeing things or figures (ghosts, people, reapers, beings, unicorns, " \
                                       "giant octopuses, etc.)"
     people_nightmares_come_true = "people nightmares come true"
+    shadows_of_people_on_the_wall = "shadows of people on the wall"
     suicides = "suicides"
     hallucinations = "hallucinations"
     weird_animal_behavior = "weird animal behavior"
@@ -46,6 +47,7 @@ class CursesClues:
     blinding_love = "blinding love"
     seen_as_a_clown = "seen as a clown"
     bite_marks_on_peoples_necks = "bite marks on peoples necks"
+    red_blood = "red blood"
 
 
 class CursesDisableMethods:

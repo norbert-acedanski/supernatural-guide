@@ -182,7 +182,20 @@ class CursesBase:
 
         # SEASON 8:
 
+        self.bringing_soul_from_purgatory_spell = Curse("Bringing soul from Purgatory spell",
+                                                        description="Can bring back a monster, which soul was taken "
+                                                                    "from purgatory.", episodes={"S08": [1]})
+        self.bringing_soul_from_purgatory_spell.clues = [CursesClues.red_blood]
 
+        self.demon_killing_spell = Curse("Demon killing spell", description="Spell of right ingredients burned by fire "
+                                                                            "kills demons nearby. Written on a Word of "
+                                                                            "GOD about demons.",
+                                         episodes={"S08": [1]})
+        self.demon_killing_spell.clues = [CursesClues.shadows_of_people_on_the_wall]
+
+        self.closing_the_gates_of_hell_spell = Curse("Closing the Gates of Hell spell",
+                                                     description="Spell, that will banish all demons of the face "
+                                                                 "of the Earth and close the Gates of Hell forever.")
 
         # SEASON 9:
 
