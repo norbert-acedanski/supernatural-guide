@@ -197,6 +197,12 @@ class CursesBase:
                                                      description="Spell, that will banish all demons of the face "
                                                                  "of the Earth and close the Gates of Hell forever.")
 
+        self.bringing_demon_back_to_the_body_spell = Curse("Bringing demon back to the body spell",
+                                                           description="Spell, that allows to bring back the demon, "
+                                                                       "that tries to escape a body. It's just a "
+                                                                       "reversed exorcism according to Sam.",
+                                                           episodes={"S08": [2]})
+
         # SEASON 9:
 
 
