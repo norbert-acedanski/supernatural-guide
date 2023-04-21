@@ -401,6 +401,7 @@ class MonstersKillMethods:
     bone_of_a_righteous_mortal_washed_in_three_bloods_of_the_fallen = \
         "bone of a righteous mortal washed in three bloods of the fallen " \
         "(one from an angel, one from ruler of fallen humanity [Crowley] and one from an Alpha)"
+    mjolnir = "mjolnir"
 
 
 class MonstersDisableMethods:
