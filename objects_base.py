@@ -37,8 +37,9 @@ class ObjectsBase:
         # SEASON 2:
 
         self.charm_against_demons = Object("Charm against demons", description="Fend off possessions. Stops a demon "
-                                                                               "from taking a person as a host.",
-                                           episodes={"S02": [14], "S03": [12]})
+                                                                               "from taking a person as a host. "
+                                                                               "Can also be tattooed on a body.",
+                                           episodes={"S02": [14], "S03": [12], "S08": [2]})
         self.charm_against_demons.abilities = [ObjectAbilities.unables_possessions]
 
         # ---------------------------------------------- ALL EPISODES DONE ---------------------------------------------
@@ -50,7 +51,7 @@ class ObjectsBase:
                                                                              "Cannot kill certain kinds of demons.",
                                           episodes={"S03": [1, 9, 16], "S04": [1, 9, 20, 22],
                                                     "S05": [1, 10, 14, 17, 20, 21, 22], "S06": [10, 20, 21],
-                                                    "S07": [8, 15, 17, 21], "S08": [1]})
+                                                    "S07": [8, 15, 17, 21], "S08": [1, 2]})
         self.demon_killing_knife.abilities = [ObjectAbilities.can_kill_demons, ObjectAbilities.cannot_kill_angels]
 
         self.lucky_rabbits_foot = Object("Lucky rabbits foot",
@@ -209,11 +210,14 @@ class ObjectsBase:
                                                              "and how to kill them."
                                                              "Second table has information about Demons, how to kill "
                                                              "them and how to close the Gates of Hell.",
-                                  episodes={"S07": [21], "S08": [1]})
+                                  episodes={"S07": [21], "S08": [1, 2]})
         self.word_of_god.abilities = [ObjectAbilities.can_cause_storms, ObjectAbilities.can_cause_women_to_go_to_labour,
                                       ObjectAbilities.when_opened_causes_a_person_to_become_a_prophet]
 
         # SEASON 8:
+
+        self.mjolnir = Object("Mjolnir", description="The hammer of Thor.", episodes={"S08": [2]})
+        self.mjolnir.abilities = [ObjectAbilities.can_kill_pagan_gods]
 
         # SEASON 9:
 
