@@ -1268,8 +1268,18 @@ class MonsterBase:
         self.mr_vili.clues = [MonstersClues.people_dead_weirdly]
         self.mr_vili.kill_methods = [MonstersKillMethods.mjolnir]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S08": [2]})
-        self.unknown.clues = [MonstersClues.people_dead_weirdly]
+        self.cacao = Monster("Cacao", description="Mayan god of maize and crop. One can arrange a bargain with it "
+                                                  "to get immortality ad be successful in sports as long as he does "
+                                                  "the ritual for Cacao - ripping and eating other peoples hearts "
+                                                  "twice a year. A person can be killed by stabbing their heart.",
+                             episodes={"S08": [3]})
+        self.cacao.clues = [MonstersClues.red_eyes, MonstersClues.missing_heart, MonstersClues.people_dead_weirdly,
+                            MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
+                            MonstersClues.high_strength]
+
+        self.unknown = Monster("Unknown", description="", episodes={"S08": [3]})
+        self.unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.missing_heart, MonstersClues.red_eyes,
+                              MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area]
 
         # -------------------------------------------------- SEASON 9 --------------------------------------------------
 
