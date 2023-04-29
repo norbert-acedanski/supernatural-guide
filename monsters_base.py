@@ -409,14 +409,21 @@ class MonsterBase:
         self.phantom_hitchhiker = Monster("Phantom hitchhiker", description="Not seen. Only mentioned in S01E16")
         self.phantom_hitchhiker.clues = [MonstersClues.missing_or_dead_people_regularly_in_the_same_area]
 
-        self.werewolf = Monster("Werewolf", description="Human by day, animal killing machine by moonlight. "
-                                                        "Killing a werewolf, that bit a person "
-                                                        "does not revert the curse. "
-                                                        "Also mentioned in S01E16", episodes={"S02": [17]})
+        self.werewolf = Monster("Werewolf", description="Human by day, animal killing machine by moonlight. Curse "
+                                                        "spreads through bites. Killing a werewolf, that bit a person "
+                                                        "does not revert the curse. Werewolves that are turned up to "
+                                                        "4 generations from pure blood are less feral and can "
+                                                        "transform before, during and after the lunar cycle. "
+                                                        "Pure bloods don't blackout during the transformation and can "
+                                                        "control themselves. Some have been able to subsist off "
+                                                        "of animal hearts. "
+                                                        "Also mentioned in S01E16", episodes={"S02": [17], "S08": [4]})
         self.werewolf.clues = [MonstersClues.body_torn_apart, MonstersClues.animal_like_attack,
                                MonstersClues.missing_heart, MonstersClues.murders_during_full_moon_week,
                                MonstersClues.claws, MonstersClues.attacks_at_night, MonstersClues.animal_like_noises,
-                               MonstersClues.amnesia_blackout]
+                               MonstersClues.amnesia_blackout, MonstersClues.people_dead_weirdly,
+                               MonstersClues.high_strength, MonstersClues.increased_regeneration,
+                               MonstersClues.moves_fast, MonstersClues.bite_marks]
         self.werewolf.kill_methods = [MonstersKillMethods.silver_bullet_into_the_heart]
         self.werewolf.cure_methods = \
             [MonstersCureMethods.plasma_therapy_with_the_blood_of_the_werewolf_that_bit_the_victim]
@@ -1277,9 +1284,11 @@ class MonsterBase:
                             MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                             MonstersClues.high_strength]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S08": [3]})
-        self.unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.missing_heart, MonstersClues.red_eyes,
-                              MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area]
+        self.unknown = Monster("Unknown", description="", episodes={"S08": [4]})
+        self.unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.animal_like_noises,
+                              MonstersClues.animal_like_attack, MonstersClues.high_strength, MonstersClues.claws,
+                              MonstersClues.increased_regeneration, MonstersClues.bite_marks,
+                              MonstersClues.moves_fast, MonstersClues.missing_heart]
 
         # -------------------------------------------------- SEASON 9 --------------------------------------------------
 
