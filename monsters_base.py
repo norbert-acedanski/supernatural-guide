@@ -274,7 +274,7 @@ class MonsterBase:
                                                       "One can become a vampire, when drinking vampire blood. "
                                                       "Upon changing, all senses sharpen.",
                                episodes={"S01": [20], "S02": [3], "S03": [7], "S05": [3], "S06": [5, 19], "S07": [22],
-                                         "S08": [1, 2]})
+                                         "S08": [1, 2, 5]})
         self.vampire.clues = [MonstersClues.ripped_throat, MonstersClues.no_blood_in_the_body,
                               MonstersClues.needle_like_teeth, MonstersClues.moving_in_groups_usually,
                               MonstersClues.invulnerable, MonstersClues.high_strength, MonstersClues.bright_eyes,
@@ -1151,7 +1151,7 @@ class MonsterBase:
                                                           "Leviathan description by Franck Devereaux in S07E20, "
                                                           "minute 13. Kill method revealed in S07E20 in "
                                                           "the Word of GOD.",
-                                 episodes={"S07": [1, 2, 3, 5, 6, 9, 16, 20, 21, 22, 23]})
+                                 episodes={"S07": [1, 2, 3, 5, 6, 9, 16, 20, 21, 22, 23], "S08": [5]})
         self.leviathan.clues = [MonstersClues.high_strength, MonstersClues.can_posses_an_angel,
                                 MonstersClues.black_veins, MonstersClues.black_blood, MonstersClues.moves_in_water,
                                 MonstersClues.people_dead_weirdly, MonstersClues.animal_like_attack,
@@ -1284,11 +1284,8 @@ class MonsterBase:
                             MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                             MonstersClues.high_strength]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S08": [4]})
-        self.unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.animal_like_noises,
-                              MonstersClues.animal_like_attack, MonstersClues.high_strength, MonstersClues.claws,
-                              MonstersClues.increased_regeneration, MonstersClues.bite_marks,
-                              MonstersClues.moves_fast, MonstersClues.missing_heart]
+        self.unknown = Monster("Unknown", description="", episodes={"S08": [5]})
+        self.unknown.clues = []
 
         # -------------------------------------------------- SEASON 9 --------------------------------------------------
 
