@@ -190,7 +190,7 @@ class CursesBase:
         self.demon_killing_spell = Curse("Demon killing spell", description="Spell of right ingredients burned by fire "
                                                                             "kills demons nearby. Written on a Word of "
                                                                             "GOD about demons.",
-                                         episodes={"S08": [1]})
+                                         episodes={"S08": [1, 7]})
         self.demon_killing_spell.clues = [CursesClues.shadows_of_people_on_the_wall]
 
         self.closing_the_gates_of_hell_spell = Curse("Closing the Gates of Hell spell",
