@@ -18,7 +18,8 @@ class ObjectsBase:
         self.john_winchesters_journal = Object("John Winchester's Journal",
                                                description="A journal of John Winchester, that contains a lot "
                                                            "information about monsters in Supernatural Universe.",
-                                               episodes={"S01": [], "S04": [19], "S06": [1, 8, 12], "S07": [8, 11]})
+                                               episodes={"S01": [], "S04": [19], "S06": [1, 8, 12], "S07": [8, 11],
+                                                         "S08": [8]})
         self.john_winchesters_journal._information = {"S04E19": JohnWinchesterJournal.entry_about_johns_other_son,
                                                       "S06E12": JohnWinchesterJournal.entry_about_a_skinwalker}
 
