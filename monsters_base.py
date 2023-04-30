@@ -572,7 +572,7 @@ class MonsterBase:
                              episodes={"S04": [1, 2, 7, 9, 10, 15, 16, 18, 20, 21, 22],
                                        "S05": [1, 2, 3, 4, 5, 8, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22],
                                        "S06": [3, 6, 7, 10, 12, 15, 17, 18, 19, 20, 21, 22],
-                                       "S07": [1, 17, 20, 21, 23], "S08": [2, 7]})
+                                       "S07": [1, 17, 20, 21, 23], "S08": [2, 7, 8]})
         self.angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                             MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion,
                             MonstersClues.leaves_burned_marks, MonstersClues.weird_electronics_behavior,
@@ -589,6 +589,7 @@ class MonsterBase:
                             MonstersClues.can_become_invisible, MonstersClues.can_control_demons,
                             MonstersClues.can_erase_and_bring_back_memories, MonstersClues.can_transfer_mental_diseases,
                             MonstersClues.can_see_real_appearance_of_entities,
+                            MonstersClues.can_go_and_put_into_a_persons_mind,
 
                             MonstersClues.travels_as_white_fog]
         self.angel.disable_methods = [MonstersDisableMethods.symbol_made_with_blood_against_angels,
@@ -1301,9 +1302,17 @@ class MonsterBase:
                               MonstersClues.people_dead_weirdly, MonstersClues.high_strength]
         self.spectre.kill_methods = [MonstersKillMethods.destroy_the_object_that_the_ghost_is_bound_to]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S08": [7]})
-        self.unknown.clues = [MonstersClues.weird_weather,
-                              MonstersClues.missing_or_dead_people_regularly_in_different_areas]
+        self.psychokinetic_person = Monster("Psychokinetic person", description="An average psychokinetic can move "
+                                                                                "things with his mind, but a powerful "
+                                                                                "psychokinetic can reshape reality.",
+                                            episodes={"S08": [8]})
+        self.psychokinetic_person.clues = [MonstersClues.people_dead_weirdly, MonstersClues.no_hex_bags,
+                                           MonstersClues.strange_different_things_happening, MonstersClues.no_emf]
+        self.psychokinetic_person.disable_methods = [MonstersDisableMethods.angel_procedure, MonstersClues.telekinesis]
+
+        self.unknown = Monster("Unknown", description="", episodes={"S08": [8]})
+        self.unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.strange_different_things_happening,
+                              MonstersClues.no_emf, MonstersClues.no_hex_bags]
 
         # -------------------------------------------------- SEASON 9 --------------------------------------------------
 
