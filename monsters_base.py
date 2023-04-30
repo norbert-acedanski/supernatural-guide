@@ -119,7 +119,7 @@ class MonsterBase:
                                                   "Demons are man that were stuck in hell for a long time.",
                              episodes={"S01": [4, 21, 22], "S02": [1, 14], "S03": [1, 2, 4, 12, 15, 16],
                                        "S04": [1, 4, 9, 10, 20, 21, 22], "S05": [1, 6, 10, 12, 14, 17, 20, 21, 22],
-                                       "S06": [7, 10, 18, 20, 21, 22], "S07": [8, 15, 17, 21, 23], "S08": [1, 2]})
+                                       "S06": [7, 10, 18, 20, 21, 22], "S07": [8, 15, 17, 21, 23], "S08": [1, 2, 7]})
         self.demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                             MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                             MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -274,7 +274,7 @@ class MonsterBase:
                                                       "One can become a vampire, when drinking vampire blood. "
                                                       "Upon changing, all senses sharpen.",
                                episodes={"S01": [20], "S02": [3], "S03": [7], "S05": [3], "S06": [5, 19], "S07": [22],
-                                         "S08": [1, 2, 5]})
+                                         "S08": [1, 2, 5, 7]})
         self.vampire.clues = [MonstersClues.ripped_throat, MonstersClues.no_blood_in_the_body,
                               MonstersClues.needle_like_teeth, MonstersClues.moving_in_groups_usually,
                               MonstersClues.invulnerable, MonstersClues.high_strength, MonstersClues.bright_eyes,
@@ -501,7 +501,7 @@ class MonsterBase:
         self.witch = Monster("Witch", description="A woman/man, that deals with different kinds of magic (like black, "
                                                   "old world, etc.). Witch has magic powers, can bring demons, "
                                                   "be immortal, teleport etc.",
-                             episodes={"S03": [9], "S04": [7, 12], "S05": [7, 12], "S07": [5]})
+                             episodes={"S03": [9], "S04": [7, 12], "S05": [7, 12], "S07": [5], "S08": [7]})
         self.witch.clues = [MonstersClues.people_dead_weirdly, MonstersClues.hex_bag_hidden_somewhere,
                             MonstersClues.coin_hidden_somewhere, MonstersClues.weird_electronics_behavior,
                             MonstersClues.telekinesis, MonstersClues.can_vanish, MonstersClues.immortal,
@@ -563,7 +563,8 @@ class MonsterBase:
         self.angel = Monster("Angel", description="Angel of God (Castiel, Uriel, Hester, Inias, Samandriel). "
                                                   "They can bring people back from the dead. Cannot track people, "
                                                   "that use powerful spells to hide themselves. "
-                                                  "All angels have graces - energy source for their power. "
+                                                  "All angels have graces - energy source for their power. All angels "
+                                                  "instinctively know the names of past, present and future prophets."
                                                   "When they disobey (fall), as a punishment they can become human. "
                                                   "When dying, a bright light is produced and they leave wing marks. "
                                                   "To possess somebody, they need a consent. Castiel broke the fourth "
@@ -571,7 +572,7 @@ class MonsterBase:
                              episodes={"S04": [1, 2, 7, 9, 10, 15, 16, 18, 20, 21, 22],
                                        "S05": [1, 2, 3, 4, 5, 8, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22],
                                        "S06": [3, 6, 7, 10, 12, 15, 17, 18, 19, 20, 21, 22],
-                                       "S07": [1, 17, 20, 21, 23], "S08": [2]})
+                                       "S07": [1, 17, 20, 21, 23], "S08": [2, 7]})
         self.angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                             MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion,
                             MonstersClues.leaves_burned_marks, MonstersClues.weird_electronics_behavior,
@@ -663,12 +664,16 @@ class MonsterBase:
         self.angel_zachariah.kill_methods = [MonstersKillMethods.angel_blade]
 
         self.prophet = Monster("Prophet of the Lord", description="A person that is gifted with the knowledge "
-                                                                  "of the future. Prophets throughout the series: "
+                                                                  "of the future. Only one prophet can exist at "
+                                                                  "a time. There are multiple people in the world, "
+                                                                  "that can become one if needed. "
+                                                                  "Prophets throughout the series: "
                                                                   "Chuck Shurley, Kevin Tran.",
-                               episodes={"S04": [18, 22], "S05": [1, 9, 22], "S07": [21, 22, 23], "S08": [1, 2]})
+                               episodes={"S04": [18, 22], "S05": [1, 9, 22], "S07": [21, 22, 23], "S08": [1, 2, 7]})
         self.prophet.clues = [MonstersClues.can_see_future, MonstersClues.protected_by_an_archangel,
                               MonstersClues.visions, MonstersClues.can_repair_broken_word_of_god,
-                              MonstersClues.can_read_word_of_god]
+                              MonstersClues.can_read_word_of_god, MonstersClues.weird_weather,
+                              MonstersClues.missing_or_dead_people_regularly_in_different_areas]
 
         self.archangel = Monster("Archangel", description="They are heaven's most terrifying weapon. "
                                                           "They are fierce and absolute.", episodes={"S04": [18, 22]})
@@ -801,7 +806,7 @@ class MonsterBase:
                                                                     "Supposedly died in S06E10, but in S06E19 it is "
                                                                     "revealed he was working with Castiel.",
                                      episodes={"S05": [10, 20, 21], "S06": [4, 7, 8, 10, 19, 20, 21, 22],
-                                               "S07": [1, 6, 8, 22, 23], "S08": [1, 2]})
+                                               "S07": [1, 6, 8, 22, 23], "S08": [1, 2, 7]})
         self.demon_crowley.clues = [MonstersClues.can_vanish, MonstersClues.pact_sealed_with_a_kiss,
                                     MonstersClues.summoned_by_placing_box_in_the_crossroads, MonstersClues.telekinesis,
                                     MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
@@ -1151,7 +1156,7 @@ class MonsterBase:
                                                           "Leviathan description by Franck Devereaux in S07E20, "
                                                           "minute 13. Kill method revealed in S07E20 in "
                                                           "the Word of GOD.",
-                                 episodes={"S07": [1, 2, 3, 5, 6, 9, 16, 20, 21, 22, 23], "S08": [5]})
+                                 episodes={"S07": [1, 2, 3, 5, 6, 9, 16, 20, 21, 22, 23], "S08": [5, 7]})
         self.leviathan.clues = [MonstersClues.high_strength, MonstersClues.can_posses_an_angel,
                                 MonstersClues.black_veins, MonstersClues.black_blood, MonstersClues.moves_in_water,
                                 MonstersClues.people_dead_weirdly, MonstersClues.animal_like_attack,
@@ -1296,10 +1301,9 @@ class MonsterBase:
                               MonstersClues.people_dead_weirdly, MonstersClues.high_strength]
         self.spectre.kill_methods = [MonstersKillMethods.destroy_the_object_that_the_ghost_is_bound_to]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S08": [6]})
-        self.unknown.clues = [MonstersClues.green_ectoplasm, MonstersClues.amnesia_blackout,
-                              MonstersClues.weird_electronics_behavior, MonstersClues.people_acting_weirdly,
-                              MonstersClues.people_dead_weirdly]
+        self.unknown = Monster("Unknown", description="", episodes={"S08": [7]})
+        self.unknown.clues = [MonstersClues.weird_weather,
+                              MonstersClues.missing_or_dead_people_regularly_in_different_areas]
 
         # -------------------------------------------------- SEASON 9 --------------------------------------------------
 
