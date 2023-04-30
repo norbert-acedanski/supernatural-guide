@@ -26,6 +26,7 @@ class MonstersClues:
     black_blood = "blood - black"
     black_veins = "black veins"
     ectoplasm = "ectoplasm (black goo)"
+    green_ectoplasm = "green ectoplasm"
     grey_goo = "grey goo"
     pact_sealed_with_a_kiss = "pact sealed with a kiss"
     burned_by_holy_water = "burned by holy water"

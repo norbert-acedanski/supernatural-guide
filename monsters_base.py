@@ -1284,8 +1284,22 @@ class MonsterBase:
                             MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                             MonstersClues.high_strength]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S08": [5]})
-        self.unknown.clues = []
+        self.spectre = Monster("Spectre", description="Ghost-like creature. Spectre is an avenging ghost. "
+                                                      "It possesses a person and finds out whatever betrayals this "
+                                                      "person feels and forces one to act on them. "
+                                                      "The defining characteristic is black-green ectoplasm. "
+                                                      "Rises shortly after someone desecrated a nearby grave. "
+                                                      "Spectre is attached to remains or an object.",
+                               episodes={"S08": [5]})
+        self.spectre.clues = [MonstersClues.green_ectoplasm, MonstersClues.amnesia_blackout, MonstersClues.empty_graves,
+                              MonstersClues.weird_electronics_behavior, MonstersClues.people_acting_weirdly,
+                              MonstersClues.people_dead_weirdly, MonstersClues.high_strength]
+        self.spectre.kill_methods = [MonstersKillMethods.destroy_the_object_that_the_ghost_is_bound_to]
+
+        self.unknown = Monster("Unknown", description="", episodes={"S08": [6]})
+        self.unknown.clues = [MonstersClues.green_ectoplasm, MonstersClues.amnesia_blackout,
+                              MonstersClues.weird_electronics_behavior, MonstersClues.people_acting_weirdly,
+                              MonstersClues.people_dead_weirdly]
 
         # -------------------------------------------------- SEASON 9 --------------------------------------------------
 
