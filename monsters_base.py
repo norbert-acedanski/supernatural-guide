@@ -274,7 +274,7 @@ class MonsterBase:
                                                       "One can become a vampire, when drinking vampire blood. "
                                                       "Upon changing, all senses sharpen.",
                                episodes={"S01": [20], "S02": [3], "S03": [7], "S05": [3], "S06": [5, 19], "S07": [22],
-                                         "S08": [1, 2, 5, 7]})
+                                         "S08": [1, 2, 5, 7, 9]})
         self.vampire.clues = [MonstersClues.ripped_throat, MonstersClues.no_blood_in_the_body,
                               MonstersClues.needle_like_teeth, MonstersClues.moving_in_groups_usually,
                               MonstersClues.invulnerable, MonstersClues.high_strength, MonstersClues.bright_eyes,
@@ -1310,9 +1310,8 @@ class MonsterBase:
                                            MonstersClues.strange_different_things_happening, MonstersClues.no_emf]
         self.psychokinetic_person.disable_methods = [MonstersDisableMethods.angel_procedure, MonstersClues.telekinesis]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S08": [8]})
-        self.unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.strange_different_things_happening,
-                              MonstersClues.no_emf, MonstersClues.no_hex_bags]
+        self.unknown = Monster("Unknown", description="", episodes={"S08": [9]})
+        self.unknown.clues = []
 
         # -------------------------------------------------- SEASON 9 --------------------------------------------------
 
