@@ -52,7 +52,7 @@ class ObjectsBase:
                                                                              "Cannot kill certain kinds of demons.",
                                           episodes={"S03": [1, 9, 16], "S04": [1, 9, 20, 22],
                                                     "S05": [1, 10, 14, 17, 20, 21, 22], "S06": [10, 20, 21],
-                                                    "S07": [8, 15, 17, 21], "S08": [1, 2, 7]})
+                                                    "S07": [8, 15, 17, 21], "S08": [1, 2, 7, 10]})
         self.demon_killing_knife.abilities = [ObjectAbilities.can_kill_demons, ObjectAbilities.cannot_kill_angels]
 
         self.lucky_rabbits_foot = Object("Lucky rabbits foot",
@@ -98,8 +98,8 @@ class ObjectsBase:
 
         self.angel_blade = Object("Angel blade", description="A triangular, silvery blade, that each angel has.",
                                   episodes={"S04": [16], "S05": [1, 13, 18], "S06": [3, 10, 17, 18, 22], "S07": [21],
-                                            "S08": [7]})
-        self.angel_blade.abilities = [ObjectAbilities.can_kill_angels]
+                                            "S08": [7, 10]})
+        self.angel_blade.abilities = [ObjectAbilities.can_kill_angels, ObjectAbilities.can_kill_demons]
 
         self.lucifers_cage = Object("Lucifer's Cage", description="A prison build specifically to contain archangelic "
                                                                   "powers (not seen yet). Can be opened with all "
@@ -208,11 +208,14 @@ class ObjectsBase:
                                                              "Written by Metatron - his scribe. "
                                                              "He took down dictation, when creation was being formed. "
                                                              "There are many words of GOD."
+                                                             "Words of GOD are inscribed in angel cores."
                                                              "First found Word of God has information on Leviathans "
                                                              "and how to kill them."
-                                                             "Second table has information about Demons, how to kill "
-                                                             "them and how to close the Gates of Hell.",
-                                  episodes={"S07": [21], "S08": [1, 2]})
+                                                             "Second tablet has information about Demons, how to kill "
+                                                             "them and how to close the Gates of Hell."
+                                                             "Third tablet (inscribed in angel core) has information "
+                                                             "about Angels and how to make them fall.",
+                                  episodes={"S07": [21], "S08": [1, 2, 10]})
         self.word_of_god.abilities = [ObjectAbilities.can_cause_storms, ObjectAbilities.can_cause_women_to_go_to_labour,
                                       ObjectAbilities.when_opened_causes_a_person_to_become_a_prophet]
 
