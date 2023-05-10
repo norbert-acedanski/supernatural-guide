@@ -1041,14 +1041,19 @@ class MonsterBase:
                                                   "Dark fairies burn, when touched with silver. "
                                                   "No matter how powerful, the fairy must stop and count each grain, "
                                                   "when salt or sugar is spilled in front of them. "
-                                                  "If you want to win a fairy's favor, leave a bowl of fresh cream.",
-                             episodes={"S06": [9]})
+                                                  "If you want to win a fairy's favor, leave a bowl of fresh cream. "
+                                                  "A fairy can be made to do things with a spell. "
+                                                  "To release the Fairy one has to destroy the book of magic, "
+                                                  "that has the power over the fairy.",
+                             episodes={"S06": [9], "S08": [11]})
         self.fairy.clues = [MonstersClues.strange_different_things_happening, MonstersClues.bright_light,
                             MonstersClues.people_seeing_strange_things, MonstersClues.flashing_lights,
                             MonstersClues.missing_or_dead_people_regularly_in_the_same_area, MonstersClues.has_wings,
                             MonstersClues.small_people, MonstersClues.high_strength, MonstersClues.invisible_entity,
-                            MonstersClues.can_vanish, MonstersClues.can_appear_out_of_thin_air,
-                            MonstersClues.can_sense_peoples_souls]
+                            MonstersClues.can_vanish, MonstersClues.can_appear_out_of_thin_air, MonstersClues.no_emf,
+                            MonstersClues.can_sense_peoples_souls, MonstersClues.people_dead_weirdly,
+                            MonstersClues.tree_tatoo, MonstersClues.animal_like_noises, MonstersClues.no_hex_bags,
+                            MonstersClues.no_sulfur]
         self.fairy.disable_method = [MonstersDisableMethods.iron_or_iron_bullets, MonstersClues.silver_burns_its_skin,
                                      MonstersDisableMethods.spilled_sugar_or_salt]
         self.fairy.kill_methods = [MonstersKillMethods.microwave_it, MonstersKillMethods.silver_blade]
@@ -1313,8 +1318,9 @@ class MonsterBase:
                                            MonstersClues.strange_different_things_happening, MonstersClues.no_emf]
         self.psychokinetic_person.disable_methods = [MonstersDisableMethods.angel_procedure, MonstersClues.telekinesis]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S08": [10]})
-        self.unknown.clues = []
+        self.unknown = Monster("Unknown", description="", episodes={"S08": [11]})
+        self.unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.tree_tatoo, MonstersClues.no_emf,
+                              MonstersClues.animal_like_noises, MonstersClues.no_hex_bags, MonstersClues.no_sulfur]
 
         # -------------------------------------------------- SEASON 9 --------------------------------------------------
 
