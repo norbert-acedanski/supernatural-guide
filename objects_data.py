@@ -52,3 +52,5 @@ class JohnWinchesterJournal:
                                   "John was heading there to check out a case. Next two pages are torn out. " \
                                   "Next entry in September 29th 2004 - One word: Minnesota."
     entry_about_a_skinwalker = "entry about a skinwalker - a drawing and not fully visible description"
+    entry_about_torturing_a_demon = "entry about torturing a demon, which said, that he made his bones working with " \
+                                    "Abbadon, who is a knight of Hell."

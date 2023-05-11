@@ -19,9 +19,10 @@ class ObjectsBase:
                                                description="A journal of John Winchester, that contains a lot "
                                                            "information about monsters in Supernatural Universe.",
                                                episodes={"S01": [], "S04": [19], "S06": [1, 8, 12], "S07": [8, 11],
-                                                         "S08": [8]})
+                                                         "S08": [8, 12]})
         self.john_winchesters_journal._information = {"S04E19": JohnWinchesterJournal.entry_about_johns_other_son,
-                                                      "S06E12": JohnWinchesterJournal.entry_about_a_skinwalker}
+                                                      "S06E12": JohnWinchesterJournal.entry_about_a_skinwalker,
+                                                      "S08E12": JohnWinchesterJournal.entry_about_torturing_a_demon}
 
         self.colt_of_colt = Object("Colt of Colt", description="Colt made by Samuel Colt in 1835, when Halley's Comet "
                                                                "was overhead and the same night those men died "
@@ -47,7 +48,9 @@ class ObjectsBase:
 
         # SEASON 3:
 
-        self.demon_killing_knife = Object("Demon killing knife", description="Can literally kill demons, "
+        self.demon_killing_knife = Object("Demon killing knife", description="The knife origins are in the Kurds as "
+                                                                             "stated by Henry Winchester in S08E12. "
+                                                                             "Can literally kill demons, "
                                                                              "not get them back to hell. "
                                                                              "Cannot kill certain kinds of demons.",
                                           episodes={"S03": [1, 9, 16], "S04": [1, 9, 20, 22],
