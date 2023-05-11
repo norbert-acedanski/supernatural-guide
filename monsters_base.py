@@ -1318,9 +1318,26 @@ class MonsterBase:
                                            MonstersClues.strange_different_things_happening, MonstersClues.no_emf]
         self.psychokinetic_person.disable_methods = [MonstersDisableMethods.angel_procedure, MonstersClues.telekinesis]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S08": [11]})
-        self.unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.tree_tatoo, MonstersClues.no_emf,
-                              MonstersClues.animal_like_noises, MonstersClues.no_hex_bags, MonstersClues.no_sulfur]
+        self.knight_of_hell = Monster("Knight of Hell", description="Handpicked by Lucifer himself. They are of the "
+                                                                    "first fallen firstborn demons, thus very pure "
+                                                                    "and strong. Archangels killed almost all of them. "
+                                                                    "One of the survivors is Abaddon.",
+                                      episodes={"S08": [12]})
+        self.knight_of_hell.clues = [MonstersClues.people_dead_weirdly, MonstersClues.bloodshot_eyes,
+                                     MonstersClues.black_eyes, MonstersClues.immune_to_exorcism,
+                                     MonstersClues.telekinesis, MonstersClues.can_read_peoples_minds,
+                                     MonstersClues.demon_killing_knife_is_ineffective,
+                                     MonstersClues.can_posses_a_person, MonstersClues.weird_electronics_behavior]
+        self.knight_of_hell.disable_methods = [MonstersDisableMethods.demon_killing_knife,
+                                               MonstersDisableMethods.devils_trap]
+        self.knight_of_hell.kill_methods = [
+
+                                            MonstersKillMethods.first_blade]
+
+        self.unknown = Monster("Unknown", description="", episodes={"S08": [12]})
+        self.unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.bloodshot_eyes, MonstersClues.black_eyes,
+                              MonstersClues.immune_to_exorcism, MonstersClues.weird_things_behavior,
+                              MonstersClues.telekinesis]
 
         # -------------------------------------------------- SEASON 9 --------------------------------------------------
 
@@ -1341,9 +1358,6 @@ class MonsterBase:
         self.angel_watcher = Monster("Angel Watcher - Grigori")
         self.angel_watcher.clues = [MonstersClues.triangle_wound_with_burns]
         self.angel_watcher.kill_methods = [MonstersKillMethods.angel_sword]
-
-        self.knight_of_hell = Monster("Knight of hell (Abaddon)")
-        self.knight_of_hell.kill_methods = [MonstersKillMethods.first_blade]
 
         self.witch_from_ozz = Monster("Witch from Ozz")
         self.witch_from_ozz.clues = [MonstersClues.travels_as_black_green_fog]
