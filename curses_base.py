@@ -203,6 +203,15 @@ class CursesBase:
                                                                        "reversed exorcism according to Sam.",
                                                            episodes={"S08": [2]})
 
+        self.time_travel_spell = Curse("Time travel spell", description="A spell, that (when combined with a drawing "
+                                                                        "made of human blood, angel feather, tears of "
+                                                                        "a dragon, a pinch of the Sands of Time and "
+                                                                        "a week charge of a soul) "
+                                                                        "can move a person to another time "
+                                                                        "to a specific person or their relatives.",
+                                       episodes={"S08": [12]})
+        self.time_travel_spell.clues = [CursesClues.people_appearing_out_of_nowhere]
+
         # SEASON 9:
 
 

@@ -48,6 +48,7 @@ class CursesClues:
     seen_as_a_clown = "seen as a clown"
     bite_marks_on_peoples_necks = "bite marks on peoples necks"
     red_blood = "red blood"
+    people_appearing_out_of_nowhere = "people appearing out of nowhere"
 
 
 class CursesDisableMethods:
