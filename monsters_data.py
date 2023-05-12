@@ -308,6 +308,7 @@ class MonstersClues:
     silver_does_not_affect_it = "silver does not affect it"
     seeds_in_victims_stomachs = "seeds in victims stomachs"
     naked_man = "naked man"
+    giant_man = "giant man"
     general_sickness = "general sickness"
     increased_pest_activity = "increased pest activity"
     increased_regeneration = "increased regeneration"
@@ -331,6 +332,7 @@ class MonstersClues:
 
 class MonstersKillMethods:
     decapitation = "decapitation"
+    break_the_neck = "break the neck"
     angel_blade = "angel blade"
     archangel_blade = "archangel blade"
     first_blade = "first blade"

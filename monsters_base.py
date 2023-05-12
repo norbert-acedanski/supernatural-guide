@@ -1334,20 +1334,30 @@ class MonsterBase:
 
                                             MonstersKillMethods.first_blade]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S08": [12]})
-        self.unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.bloodshot_eyes, MonstersClues.black_eyes,
-                              MonstersClues.immune_to_exorcism, MonstersClues.weird_things_behavior,
-                              MonstersClues.telekinesis]
+        self.thule = Monster("Thule", description="Members of The Thule Society. Used blood magic to make themselves "
+                                                  "almost undead. To kill it you have to break it's neck or shoot it "
+                                                  "in the head and burn the body within 12h.",
+                             episodes={"S08": [13]})
+        self.thule.clues = [MonstersClues.weird_fire_spontaneous_combustion, MonstersClues.people_dead_weirdly,
+                            MonstersClues.immortal, MonstersClues.invulnerable]
+        self.thule.kill_methods = [MonstersKillMethods.break_the_neck, MonstersKillMethods.head_shot,
+                                   MonstersKillMethods.burn_it]
+
+        self.golem = Monster("Golem", description="Shaped from clay and brought to life by rabbis to protect "
+                                                  "Jewish people. A golem can be commanded with instructions, "
+                                                  "that are in a kind of golem manual. One of the instructions said in "
+                                                  "Hebrew is 'Clay of Adam surrender your bond unto me!'",
+                             episodes={"S08": [13]})
+        self.golem.clues = [MonstersClues.invulnerable, MonstersClues.high_strength, MonstersClues.giant_man]
+
+        self.unknown = Monster("Unknown", description="", episodes={"S08": [13]})
+        self.unknown.clues = [MonstersClues.invulnerable, MonstersClues.high_strength, MonstersClues.giant_man]
 
         # -------------------------------------------------- SEASON 9 --------------------------------------------------
 
 
 
         # SEASON XX - unknown when:
-
-        self.thule = Monster("Thule", description="Nazi members. Used blood magic to make themselves almost undead.")
-        self.thule.clues = [MonstersClues.weird_fire_spontaneous_combustion]
-        self.thule.kill_methods = [MonstersKillMethods.burn_it, MonstersClues.people_dead_weirdly]
 
         self.nephilim = Monster("Nephilim", description="Child of human and angel/archangel. "
                                                         "Human with an angelic grace.")
