@@ -50,6 +50,8 @@ class CursesClues:
     bite_marks_on_peoples_necks = "bite marks on peoples necks"
     red_blood = "red blood"
     people_appearing_out_of_nowhere = "people appearing out of nowhere"
+    killed_hell_hound = "killed Hell hound"
+    blood_cough = "blood cough"
 
 
 class CursesDisableMethods:
