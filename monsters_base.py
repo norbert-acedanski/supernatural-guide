@@ -321,13 +321,16 @@ class MonsterBase:
 
         self.hell_hound = Monster("Hell Hound", description="Creation of God, but they were too vicious, "
                                                             "so God kept them short. "
-                                                            "Now they hunt people that sold their souls.",
-                                  episodes={"S02": [8], "S03": [16], "S05": [10, 20], "S06": [4, 10]})
+                                                            "Now they hunt people that sold their souls. "
+                                                            "According the the Demon Tablet - dire creatures may be "
+                                                            "seen only by the damned or through an object scorched "
+                                                            "with holy fire (burning holy oil).",
+                                  episodes={"S02": [8], "S03": [16], "S05": [10, 20], "S06": [4, 10, 14]})
         self.hell_hound.clues = [MonstersClues.victims_hear_dogs_barking_and_growling, MonstersClues.invisible_dogs,
                                  MonstersClues.victims_see_black_dogs, MonstersClues.people_seeing_strange_things,
                                  MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
                                  MonstersClues.people_dead_weirdly, MonstersClues.animal_like_attack,
-                                 MonstersClues.black_blood]
+                                 MonstersClues.black_blood, MonstersClues.animal_like_noises]
         self.hell_hound.disable_methods = [MonstersDisableMethods.goofer_dust, MonstersDisableMethods.devils_shoestring,
                                            MonstersDisableMethods.demon_must_call_it_off,
                                            MonstersDisableMethods.salt_or_salted_bullets]
@@ -674,7 +677,8 @@ class MonsterBase:
                                                                   "that can become one if needed. "
                                                                   "Prophets throughout the series: "
                                                                   "Chuck Shurley, Kevin Tran.",
-                               episodes={"S04": [18, 22], "S05": [1, 9, 22], "S07": [21, 22, 23], "S08": [1, 2, 7, 10]})
+                               episodes={"S04": [18, 22], "S05": [1, 9, 22], "S07": [21, 22, 23],
+                                         "S08": [1, 2, 7, 10, 14]})
         self.prophet.clues = [MonstersClues.can_see_future, MonstersClues.protected_by_an_archangel,
                               MonstersClues.visions, MonstersClues.can_repair_broken_word_of_god,
                               MonstersClues.can_read_word_of_god, MonstersClues.weird_weather,
@@ -1350,8 +1354,8 @@ class MonsterBase:
                              episodes={"S08": [13]})
         self.golem.clues = [MonstersClues.invulnerable, MonstersClues.high_strength, MonstersClues.giant_man]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S08": [13]})
-        self.unknown.clues = [MonstersClues.invulnerable, MonstersClues.high_strength, MonstersClues.giant_man]
+        self.unknown = Monster("Unknown", description="", episodes={"S08": [14]})
+        self.unknown.clues = []
 
         # -------------------------------------------------- SEASON 9 --------------------------------------------------
 
