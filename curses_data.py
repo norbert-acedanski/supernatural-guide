@@ -43,6 +43,7 @@ class CursesClues:
     does_not_work_on_people_without_souls = "does not work on people without souls"
     different_history = "different history"
     different_memories = "different memories"
+    weird_dreams = "weird dreams"
     strange_feeling_that_things_should_be_different = "strange feeling that things should be different"
     blinding_love = "blinding love"
     seen_as_a_clown = "seen as a clown"

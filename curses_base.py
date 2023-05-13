@@ -218,6 +218,12 @@ class CursesBase:
                                        episodes={"S08": [12]})
         self.time_travel_spell.clues = [CursesClues.people_appearing_out_of_nowhere]
 
+        self.false_memories_spell = Curse("False memories spell", description="It is used to create false memories "
+                                                                              "into another witch's mind.",
+                                          episodes={"S08": [15]})
+        self.false_memories_spell.clues = [CursesClues.people_dead_weirdly, CursesClues.different_memories,
+                                           CursesClues.weird_dreams]
+
         # SEASON 9:
 
 
