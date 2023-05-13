@@ -504,8 +504,10 @@ class MonsterBase:
 
         self.witch = Monster("Witch", description="A woman/man, that deals with different kinds of magic (like black, "
                                                   "old world, etc.). Witch has magic powers, can bring demons, "
-                                                  "be immortal, teleport etc.",
-                             episodes={"S03": [9], "S04": [7, 12], "S05": [7, 12], "S07": [5], "S08": [7]})
+                                                  "be immortal, teleport etc. Some witches have companions "
+                                                  "(called familiars) in the form of a pet. Witches can perform astral "
+                                                  "projections.",
+                             episodes={"S03": [9], "S04": [7, 12], "S05": [7, 12], "S07": [5], "S08": [7, 15]})
         self.witch.clues = [MonstersClues.people_dead_weirdly, MonstersClues.hex_bag_hidden_somewhere,
                             MonstersClues.coin_hidden_somewhere, MonstersClues.weird_electronics_behavior,
                             MonstersClues.telekinesis, MonstersClues.can_vanish, MonstersClues.immortal,
@@ -513,13 +515,16 @@ class MonsterBase:
                             MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                             MonstersClues.people_aging_rapidly, MonstersClues.people_getting_younger,
                             MonstersClues.people_with_souls_switched, MonstersClues.card_found_on_a_victim,
+                            MonstersClues.flashing_lights, MonstersClues.can_read_peoples_minds,
 
                             MonstersClues.missing_heart]
-        self.witch.disableMethod = [MonstersDisableMethods.stop_it_from_speaking,
+        self.witch.disableMethod = [MonstersDisableMethods.stop_it_from_speaking, MonstersDisableMethods.iron_chains,
+
                                     MonstersDisableMethods.witch_catcher]
         self.witch.kill_methods = [MonstersKillMethods.like_any_human, MonstersKillMethods.death_transfer_spell,
-                                   MonstersKillMethods.witch_killing_brew, MonstersKillMethods.cut_throat,
-                                   MonstersClues.red_eyes]
+                                   MonstersKillMethods.witch_killing_brew,
+
+                                   MonstersKillMethods.cut_throat, MonstersClues.red_eyes]
 
         self.demon_astaroth = Monster("Demon Astaroth", description="Collects human souls by changing them into "
                                                                     "witches.",
@@ -1354,7 +1359,13 @@ class MonsterBase:
                              episodes={"S08": [13]})
         self.golem.clues = [MonstersClues.invulnerable, MonstersClues.high_strength, MonstersClues.giant_man]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S08": [14]})
+        self.familiar = Monster("Familiar", description="A companion to some witches. They split their time between "
+                                                        "human and animal form. They can communicate with their "
+                                                        "masters telepathically.", episodes={"S08": [15]})
+        self.familiar.clues = [MonstersClues.can_change_into_a_dog, MonstersClues.can_change_into_an_animal,
+                               MonstersClues.can_read_peoples_minds]
+
+        self.unknown = Monster("Unknown", description="", episodes={"S08": [15]})
         self.unknown.clues = []
 
         # -------------------------------------------------- SEASON 9 --------------------------------------------------
