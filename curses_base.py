@@ -195,7 +195,13 @@ class CursesBase:
 
         self.closing_the_gates_of_hell_spell = Curse("Closing the Gates of Hell spell",
                                                      description="Spell, that will banish all demons of the face "
-                                                                 "of the Earth and close the Gates of Hell forever.")
+                                                                 "of the Earth and close the Gates of Hell forever. "
+                                                                 "The spell consists of 3 trials. First is to kill "
+                                                                 "a Hell hound and bathe in its blood. "
+                                                                 "After that one should say a spell. "
+                                                                 "Other 2 unknown for now. After the trials there is "
+                                                                 "a spell to say and the Gates of Hell will close.",
+                                                     episodes={"S08": [14]})
 
         self.bringing_demon_back_to_the_body_spell = Curse("Bringing demon back to the body spell",
                                                            description="Spell, that allows to bring back the demon, "
