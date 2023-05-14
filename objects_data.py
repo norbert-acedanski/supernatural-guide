@@ -6,6 +6,7 @@ class ObjectAbilities:
     can_kill_pagan_gods = "can kill pagan gods"
     can_kill_archangels = "can kill archangels"
     cannot_kill_angels = "cannot kill angels"
+    cannot_kill_knights_of_hell = "cannot kill Knights ofHell"
     can_kill_entities_when_reconnecting_with_an_angel = \
         "can kill entities (people, demons) when reconnecting with an angel"
     can_send_angels_back_to_heaven = "can send angels back to heaven"
