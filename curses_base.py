@@ -203,7 +203,7 @@ class CursesBase:
                                                                  "a spell to say and the Gates of Hell will close. "
                                                                  "Spell hurts the person, that tries it - starts to "
                                                                  "cough blood.",
-                                                     episodes={"S08": [14, 15]})
+                                                     episodes={"S08": [14, 15, 16]})
         self.closing_the_gates_of_hell_spell.clues = [CursesClues.killed_hell_hound, CursesClues.blood_cough]
 
         self.bringing_demon_back_to_the_body_spell = Curse("Bringing demon back to the body spell",
