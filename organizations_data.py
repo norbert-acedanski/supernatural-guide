@@ -5,3 +5,5 @@ class OrganizationKnowledge:
     knights_of_hell = "Knights of Hell"
     golem_magic = "golem magic"
     immortal_life = "immortal life"
+    drakopoolos_journal = "Drakopoolos' journal"
+    summoning_of_zeus = "summoning of Zeus"

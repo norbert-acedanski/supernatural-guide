@@ -9,10 +9,11 @@ class OrganizationsBase:
                                                                 "According to Henry it stood at the gates of "
                                                                 "Atlantis itself. They have a base in Lebanon, Kansas, "
                                                                 "that contains a library of books about supernatural.",
-                                  episodes={"S18": [12, 13, 14]})
+                                  episodes={"S18": [12, 13, 14, 16]})
     man_of_letters.knowledge = [OrganizationKnowledge.time_travel, OrganizationKnowledge.demon_killing_knife,
                                 OrganizationKnowledge.haitian_symbol_for_speaking_to_the_dead,
-                                OrganizationKnowledge.knights_of_hell]
+                                OrganizationKnowledge.knights_of_hell, OrganizationKnowledge.drakopoolos_journal,
+                                OrganizationKnowledge.summoning_of_zeus]
 
     the_judah_initiative = Organization("The Judah initiative", description="They were active during WW2. A group of "
                                                                             "rabbis that were good saboteurs. "
