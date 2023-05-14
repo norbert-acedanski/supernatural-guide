@@ -70,6 +70,7 @@ class MonstersClues:
     people_acting_weirdly = "people acting weirdly - like not themselves"
     people_burned_on_the_ceiling = "people burned on the ceiling of their house"
     people_loosing_their_minds = "people loosing their minds"
+    comes_back_from_the_dead = "comes back from the dead"
     dead_people_or_children_regularly_in_different_places = "dead people or children regularly in different places"
     missing_or_dead_people_in_similar_way_randomly_across_time_in_different_areas = \
         "missing or dead people in similar way randomly across time in different areas"
@@ -305,6 +306,7 @@ class MonstersClues:
     protected_by_an_archangel = "protected by an archangel"
     bright_light = "bright light"
     red_light = "red light"
+    lightnings = "lightnings"
     silver_burns_its_skin = "silver burns its skin"
     silver_does_not_affect_it = "silver does not affect it"
     seeds_in_victims_stomachs = "seeds in victims stomachs"
@@ -396,6 +398,7 @@ class MonstersKillMethods:
     head_shot = "head shot"
     stake_made_from_cypress_tree_in_babylon = "stake made from a cypress tree in Babylon"
     stake_made_from_unknown_wood = "stake made from unknown wood"
+    stake_made_from_a_tree_struck_by_lightning = "stake made from a tree struck by lightning"
     mix_of_salt_and_rosemary_thrown_it_and_burned = "mix of salt and rosemary thrown it and burned"
     stab_it_seven_times_with_bamboo_dagger_blessed_by_shinto_priest = \
         "stab it seven times with bamboo dagger blessed by shinto priest"
@@ -410,6 +413,7 @@ class MonstersKillMethods:
         "bone of a righteous mortal washed in three bloods of the fallen " \
         "(one from an angel, one from ruler of fallen humanity [Crowley] and one from an Alpha)"
     mjolnir = "mjolnir"
+    the_arrow_of_artemis = "the arrow of Artemis"
 
 
 class MonstersDisableMethods:

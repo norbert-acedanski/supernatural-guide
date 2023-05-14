@@ -1365,8 +1365,34 @@ class MonsterBase:
         self.familiar.clues = [MonstersClues.can_change_into_a_dog, MonstersClues.can_change_into_an_animal,
                                MonstersClues.can_read_peoples_minds]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S08": [15]})
-        self.unknown.clues = []
+        self.prometheus = Monster("Prometheus", description="A Greek proto-god. These gods ruled Greece before Zeus "
+                                                            "and other Olympian gods overthrew them. He stole fire for "
+                                                            "people form Mount Olympus. In return, Zeus decided to "
+                                                            "strap him to the mountain and make him relive death "
+                                                            "every day. Killed in S08E16/", episodes={"S08": [16]})
+        self.prometheus.clues = [MonstersClues.increased_regeneration, MonstersClues.holy_water_does_not_affect_it,
+                                 MonstersClues.amnesia_blackout, MonstersClues.silver_does_not_affect_it,
+                                 MonstersClues.immortal, MonstersClues.comes_back_from_the_dead]
+        self.prometheus.kill_methods = [MonstersKillMethods.the_arrow_of_artemis]
+
+        self.artemis = Monster("Artemis", description="Zeus' daughter. Has great fighting skills. Has daggers, "
+                                                      "that can kill immortals. She fell for Prometheus.",
+                               episodes={"S08": [16]})
+        self.artemis.clues = [MonstersClues.telekinesis, MonstersClues.can_vanish]
+
+        self.zeus = Monster("Zeus", description="Olympian god of lightning. Zeus can be summoned by a spell. "
+                                                "Spell ingredients: frozen energy from the hand of Zeus (fulgurite) "
+                                                "and the bone of a worshipper. Killed in S08E16.",
+                            episodes={"S08": [16]})
+        self.zeus.clues = [MonstersClues.lightnings, MonstersClues.can_hurt_people_with_a_thought]
+        self.zeus.kill_methods = [MonstersKillMethods.stake_made_from_a_tree_struck_by_lightning,
+                                  MonstersKillMethods.the_arrow_of_artemis]
+
+        self.unknown = Monster("Unknown", description="", episodes={"S08": [16]})
+        self.unknown.clues = [MonstersClues.increased_regeneration, MonstersClues.holy_water_does_not_affect_it,
+                              MonstersClues.amnesia_blackout, MonstersClues.comes_back_from_the_dead,
+
+                              MonstersClues.telekinesis, MonstersClues.can_vanish]
 
         # -------------------------------------------------- SEASON 9 --------------------------------------------------
 
