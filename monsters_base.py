@@ -120,7 +120,7 @@ class MonsterBase:
                              episodes={"S01": [4, 21, 22], "S02": [1, 14], "S03": [1, 2, 4, 12, 15, 16],
                                        "S04": [1, 4, 9, 10, 20, 21, 22], "S05": [1, 6, 10, 12, 14, 17, 20, 21, 22],
                                        "S06": [7, 10, 18, 20, 21, 22], "S07": [8, 15, 17, 21, 23],
-                                       "S08": [1, 2, 7, 10]})
+                                       "S08": [1, 2, 7, 10, 17]})
         self.demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                             MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                             MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -583,7 +583,7 @@ class MonsterBase:
                              episodes={"S04": [1, 2, 7, 9, 10, 15, 16, 18, 20, 21, 22],
                                        "S05": [1, 2, 3, 4, 5, 8, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22],
                                        "S06": [3, 6, 7, 10, 12, 15, 17, 18, 19, 20, 21, 22],
-                                       "S07": [1, 17, 20, 21, 23], "S08": [2, 7, 8, 10]})
+                                       "S07": [1, 17, 20, 21, 23], "S08": [2, 7, 8, 10, 17]})
         self.angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                             MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion,
                             MonstersClues.leaves_burned_marks, MonstersClues.weird_electronics_behavior,
@@ -599,8 +599,8 @@ class MonsterBase:
                             MonstersClues.can_teleport_people, MonstersClues.can_read_peoples_minds,
                             MonstersClues.can_become_invisible, MonstersClues.can_control_demons,
                             MonstersClues.can_erase_and_bring_back_memories, MonstersClues.can_transfer_mental_diseases,
-                            MonstersClues.can_see_real_appearance_of_entities,
-                            MonstersClues.can_go_and_put_into_a_persons_mind,
+                            MonstersClues.can_see_real_appearance_of_entities, MonstersClues.burned_eyes,
+                            MonstersClues.can_go_and_put_into_a_persons_mind, MonstersClues.liquefied_organs,
                             MonstersClues.strange_different_things_happening,
 
                             MonstersClues.travels_as_white_fog]
@@ -819,7 +819,7 @@ class MonsterBase:
                                                                     "Supposedly died in S06E10, but in S06E19 it is "
                                                                     "revealed he was working with Castiel.",
                                      episodes={"S05": [10, 20, 21], "S06": [4, 7, 8, 10, 19, 20, 21, 22],
-                                               "S07": [1, 6, 8, 22, 23], "S08": [1, 2, 7, 10]})
+                                               "S07": [1, 6, 8, 22, 23], "S08": [1, 2, 7, 10, 17]})
         self.demon_crowley.clues = [MonstersClues.can_vanish, MonstersClues.pact_sealed_with_a_kiss,
                                     MonstersClues.summoned_by_placing_box_in_the_crossroads, MonstersClues.telekinesis,
                                     MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
@@ -1388,11 +1388,8 @@ class MonsterBase:
         self.zeus.kill_methods = [MonstersKillMethods.stake_made_from_a_tree_struck_by_lightning,
                                   MonstersKillMethods.the_arrow_of_artemis]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S08": [16]})
-        self.unknown.clues = [MonstersClues.increased_regeneration, MonstersClues.holy_water_does_not_affect_it,
-                              MonstersClues.amnesia_blackout, MonstersClues.comes_back_from_the_dead,
-
-                              MonstersClues.telekinesis, MonstersClues.can_vanish]
+        self.unknown = Monster("Unknown", description="", episodes={"S08": [17]})
+        self.unknown.clues = []
 
         # -------------------------------------------------- SEASON 9 --------------------------------------------------
 
