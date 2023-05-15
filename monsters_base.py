@@ -120,7 +120,7 @@ class MonsterBase:
                              episodes={"S01": [4, 21, 22], "S02": [1, 14], "S03": [1, 2, 4, 12, 15, 16],
                                        "S04": [1, 4, 9, 10, 20, 21, 22], "S05": [1, 6, 10, 12, 14, 17, 20, 21, 22],
                                        "S06": [7, 10, 18, 20, 21, 22], "S07": [8, 15, 17, 21, 23],
-                                       "S08": [1, 2, 7, 10, 17]})
+                                       "S08": [1, 2, 7, 10, 17, 19]})
         self.demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                             MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                             MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -188,7 +188,9 @@ class MonsterBase:
         self.rawhead.kill_methods = [MonstersKillMethods.apply_large_voltage]
 
         self.reaper = Monster("Reaper", description="Can give and take life. Can also transfer illnesses of people. "
-                                                    "When gone, people are not dying. "
+                                                    "When gone, people are not dying. Rogue reapers (Ajay for example) "
+                                                    "can smuggle a person across Hell's border, Heaven and the Veil. "
+                                                    "They have secret ways in and out."
                                                     "When a reaper dies, there are electrical storms.",
                               episodes={"S01": [12], "S02": [1], "S04": [15], "S05": [10, 21], "S06": [11],
                                         "S07": [10]})
@@ -198,9 +200,11 @@ class MonsterBase:
                              MonstersClues.visible_by_other_ghosts_and_people_close_to_death_only,
                              MonstersClues.can_make_themselves_appear_as_they_like, MonstersClues.people_not_dying,
                              MonstersClues.strange_different_things_happening, MonstersClues.invisible_entity,
-                             MonstersClues.electrical_storms]
+                             MonstersClues.electrical_storms, MonstersClues.can_vanish,
+                             MonstersClues.can_appear_out_of_thin_air]
         self.reaper.disable_methods = [MonstersDisableMethods.reaper_imprison_sigil]
-        self.reaper.kill_methods = [MonstersKillMethods.reaper_blade_combined_with_a_spell]
+        self.reaper.kill_methods = [MonstersKillMethods.reaper_blade_combined_with_a_spell,
+                                    MonstersKillMethods.angel_blade]
 
         self.people_with_abilities = Monster("People with abilities",
                                              description="People, that were infants, when prince of hell killed their "
@@ -275,7 +279,7 @@ class MonsterBase:
                                                       "One can become a vampire, when drinking vampire blood. "
                                                       "Upon changing, all senses sharpen.",
                                episodes={"S01": [20], "S02": [3], "S03": [7], "S05": [3], "S06": [5, 19], "S07": [22],
-                                         "S08": [1, 2, 5, 7, 9, 10, 18]})
+                                         "S08": [1, 2, 5, 7, 9, 10, 18, 19]})
         self.vampire.clues = [MonstersClues.ripped_throat, MonstersClues.no_blood_in_the_body,
                               MonstersClues.needle_like_teeth, MonstersClues.moving_in_groups_usually,
                               MonstersClues.invulnerable, MonstersClues.high_strength, MonstersClues.bright_eyes,
@@ -343,12 +347,13 @@ class MonsterBase:
                                                                         "after 10 years. One can summon it by placing "
                                                                         "a box with: graveyard dirt, black cat cone, "
                                                                         "ones photo in the center of a crossroad.",
-                                        episodes={"S02": [8, 22], "S04": [9], "S05": [10], "S06": [4], "S07": [8]})
+                                        episodes={"S02": [8, 22], "S04": [9], "S05": [10], "S06": [4], "S07": [8],
+                                                  "S08": [19]})
         self.crossroads_demon.clues = [MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
                                        MonstersClues.red_eyes, MonstersClues.summoned_by_placing_box_in_the_crossroads,
                                        MonstersClues.travels_as_black_fog, MonstersClues.pact_sealed_with_a_kiss,
                                        MonstersClues.people_dead_weirdly]
-        self.crossroads_demon.disable_methods = [MonstersDisableMethods.devils_trap,
+        self.crossroads_demon.disable_methods = [MonstersDisableMethods.devils_trap, MonstersDisableMethods.holy_water,
                                                  MonstersDisableMethods.fry_its_remains]
         self.crossroads_demon.kill_methods = [MonstersKillMethods.colt_of_colt_with_magic_bullets,
                                               MonstersKillMethods.demon_killing_knife,
@@ -583,7 +588,7 @@ class MonsterBase:
                              episodes={"S04": [1, 2, 7, 9, 10, 15, 16, 18, 20, 21, 22],
                                        "S05": [1, 2, 3, 4, 5, 8, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22],
                                        "S06": [3, 6, 7, 10, 12, 15, 17, 18, 19, 20, 21, 22],
-                                       "S07": [1, 17, 20, 21, 23], "S08": [2, 7, 8, 10, 17]})
+                                       "S07": [1, 17, 20, 21, 23], "S08": [2, 7, 8, 10, 17, 19]})
         self.angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                             MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion,
                             MonstersClues.leaves_burned_marks, MonstersClues.weird_electronics_behavior,
@@ -683,7 +688,7 @@ class MonsterBase:
                                                                   "Prophets throughout the series: "
                                                                   "Chuck Shurley, Kevin Tran.",
                                episodes={"S04": [18, 22], "S05": [1, 9, 22], "S07": [21, 22, 23],
-                                         "S08": [1, 2, 7, 10, 14]})
+                                         "S08": [1, 2, 7, 10, 14, 19]})
         self.prophet.clues = [MonstersClues.can_see_future, MonstersClues.protected_by_an_archangel,
                               MonstersClues.visions, MonstersClues.can_repair_broken_word_of_god,
                               MonstersClues.can_read_word_of_god, MonstersClues.weird_weather,
@@ -819,7 +824,7 @@ class MonsterBase:
                                                                     "Supposedly died in S06E10, but in S06E19 it is "
                                                                     "revealed he was working with Castiel.",
                                      episodes={"S05": [10, 20, 21], "S06": [4, 7, 8, 10, 19, 20, 21, 22],
-                                               "S07": [1, 6, 8, 22, 23], "S08": [1, 2, 7, 10, 17]})
+                                               "S07": [1, 6, 8, 22, 23], "S08": [1, 2, 7, 10, 17, 19]})
         self.demon_crowley.clues = [MonstersClues.can_vanish, MonstersClues.pact_sealed_with_a_kiss,
                                     MonstersClues.summoned_by_placing_box_in_the_crossroads, MonstersClues.telekinesis,
                                     MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
@@ -830,7 +835,7 @@ class MonsterBase:
                                         cannot_be_exorcised_by_an_angel_with_hand_on_forehead_when_protected_by_an_archangel,
                                     MonstersClues.small_earth_quake, MonstersClues.can_create_fire_large_temperatures,
                                     MonstersClues.travels_as_red_fog, MonstersClues.red_eyes,
-                                    MonstersClues.burned_by_holy_water,
+                                    MonstersClues.burned_by_holy_water, MonstersClues.can_give_hallucinations,
 
                                     MonstersClues.black_blood]
         self.demon_crowley.disable_methods = [MonstersDisableMethods.devils_trap, MonstersDisableMethods.holy_water]
@@ -1388,7 +1393,7 @@ class MonsterBase:
         self.zeus.kill_methods = [MonstersKillMethods.stake_made_from_a_tree_struck_by_lightning,
                                   MonstersKillMethods.the_arrow_of_artemis]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S08": [18]})
+        self.unknown = Monster("Unknown", description="", episodes={"S08": [19]})
         self.unknown.clues = [MonstersClues.no_blood_in_the_body]
 
         # -------------------------------------------------- SEASON 9 --------------------------------------------------
