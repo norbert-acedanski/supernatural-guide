@@ -24,10 +24,16 @@ class Organization:
                 episodes_str = [str(episode) for episode in episodes]
                 print(f"   {season}: " + ", ".join(episodes_str))
 
-    def print_clues_base(self):
+    def print_knowledge_base(self):
         print(Colors.YELLOW + "Knowledge:" + Colors.ENDC)
         if self.knowledge is not None:
             for knowledge in self.knowledge:
                 print("  »  " + knowledge)
         else:
             print("  »  None found")
+
+    def print_all(self):
+        self.print_name()
+        self.print_description()
+        self.print_episodes()
+        self.print_knowledge_base()
