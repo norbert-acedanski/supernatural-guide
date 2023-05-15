@@ -161,6 +161,8 @@ class MonstersClues:
     marks_on_victims_hearts = "marks on victims hearts"
     marks_on_victims_souls = "marks on victims souls"
     leaves_burned_marks = "leaves burned marks"
+    no_burn_marks = "no burn marks"
+    leaves_blue_handprint = "leaves blue handprint"
     burned_marks_on_its_skin = "burned marks on it's skin"
     burned_eyes = "burned eyes"
     liquefied_organs = "liquefied organs"
@@ -333,6 +335,7 @@ class MonstersClues:
     seen_by_drunk_people = "seen by drunk people"
     roman_corn_syrup = "roman corn syrup"
     tree_tatoo = "tree tatoo (a Celtic magic symbol - the Tree of Pain)"
+    no_black_goo = "no black goo"
 
 
 class MonstersKillMethods:

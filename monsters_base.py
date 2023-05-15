@@ -442,13 +442,17 @@ class MonsterBase:
                                                 "the bigger, the better. They poison people, who see nightmares or "
                                                 "paradise of theirs. The poison is transferred by touch. "
                                                 "It can be cured. Not all Jinn look different than humans, "
-                                                "some look just like regular people.",
-                            episodes={"S02": [20], "S06": [1]})
+                                                "some look just like regular people. There is an offshoot of jinn, "
+                                                "that liquefies the organs of the victims. "
+                                                "It can be killed like a regular jinn.",
+                            episodes={"S02": [20], "S06": [1], "S08": [20]})
         self.jinn.clues = [MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                            MonstersClues.blue_eyes, MonstersClues.can_put_a_person_in_wonderland,
                            MonstersClues.blue_fire_on_its_arms, MonstersClues.feeds_on_blood,
                            MonstersClues.poisoned_people, MonstersClues.people_dead_weirdly,
-                           MonstersClues.seen_as_human_when_not_feeding, MonstersClues.people_seeing_strange_things]
+                           MonstersClues.seen_as_human_when_not_feeding, MonstersClues.people_seeing_strange_things,
+                           MonstersClues.liquefied_organs, MonstersClues.no_black_goo, MonstersClues.no_burn_marks,
+                           MonstersClues.leaves_blue_handprint, MonstersClues.can_appear_out_of_thin_air]
         self.jinn.kill_methods = [MonstersKillMethods.silver_knife_dipped_in_lambs_blood]
 
         self.acheri = Monster("Acheri", description="Demon, that disguises itself as a little girl.",
@@ -1393,8 +1397,10 @@ class MonsterBase:
         self.zeus.kill_methods = [MonstersKillMethods.stake_made_from_a_tree_struck_by_lightning,
                                   MonstersKillMethods.the_arrow_of_artemis]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S08": [19]})
-        self.unknown.clues = [MonstersClues.no_blood_in_the_body]
+        self.unknown = Monster("Unknown", description="", episodes={"S08": [20]})
+        self.unknown.clues = [MonstersClues.liquefied_organs, MonstersClues.people_dead_weirdly,
+                              MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
+                              MonstersClues.no_black_goo, MonstersClues.no_burn_marks]
 
         # -------------------------------------------------- SEASON 9 --------------------------------------------------
 
