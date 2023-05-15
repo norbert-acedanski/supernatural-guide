@@ -199,11 +199,14 @@ class CursesBase:
                                                                  "The spell consists of 3 trials. First is to kill "
                                                                  "a Hell hound and bathe in its blood. "
                                                                  "After that one should say a spell. "
-                                                                 "Other 2 unknown for now. After the trials there is "
-                                                                 "a spell to say and the Gates of Hell will close. "
+                                                                 "Second is to resque an innocent soul from Hell and "
+                                                                 "deliver it to Heaven."
+                                                                 "Third one is unknown. After each trial there is "
+                                                                 "a spell to say. After the last trial is completed "
+                                                                 "and a spell is said, the Gates of Hell will close. "
                                                                  "Spell hurts the person, that tries it - starts to "
                                                                  "cough blood. Even angel healing cannot heal it.",
-                                                     episodes={"S08": [14, 15, 16, 17]})
+                                                     episodes={"S08": [14, 15, 16, 17, 19]})
         self.closing_the_gates_of_hell_spell.clues = [CursesClues.killed_hell_hound, CursesClues.blood_cough]
 
         self.bringing_demon_back_to_the_body_spell = Curse("Bringing demon back to the body spell",
