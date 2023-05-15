@@ -7,3 +7,4 @@ class OrganizationKnowledge:
     immortal_life = "immortal life"
     drakopoolos_journal = "Drakopoolos' journal"
     summoning_of_zeus = "summoning of Zeus"
+    irregular_jinns = "irregular jinns"
