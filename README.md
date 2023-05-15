@@ -4,6 +4,7 @@
 One of the larger projects of mine at the time of developing.  
 I am a big fan of Supernatural show, and I decided, that a library of monsters/curses/beings/gods/objects/places/events would be nice to have in interactive way.  
 So I decided to go through all seasons of Supernatural and collect information needed and store them here in this project.  
+It is inspired by Charlie's application seen in S08E20, where she has created an app to determine what monster is being hunted.
 
 # Built With
 Python 3.9.10
