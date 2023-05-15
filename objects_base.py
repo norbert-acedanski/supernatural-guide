@@ -55,7 +55,7 @@ class ObjectsBase:
                                                                              "Cannot kill certain kinds of demons.",
                                           episodes={"S03": [1, 9, 16], "S04": [1, 9, 20, 22],
                                                     "S05": [1, 10, 14, 17, 20, 21, 22], "S06": [10, 20, 21],
-                                                    "S07": [8, 15, 17, 21], "S08": [1, 2, 7, 10, 14, 17]})
+                                                    "S07": [8, 15, 17, 21], "S08": [1, 2, 7, 10, 14, 17, 19]})
         self.demon_killing_knife.abilities = [ObjectAbilities.can_kill_demons, ObjectAbilities.cannot_kill_angels,
                                               ObjectAbilities.cannot_kill_knights_of_hell]
 
@@ -134,7 +134,7 @@ class ObjectsBase:
         self.ring_of_war.abilities = [ObjectAbilities.can_give_hallucinations]
 
         self.human_soul = Object("Human soul", description="As an object is very bright. Can be collected of a person.",
-                                 episodes={"S05": [14], "S06": [11]})
+                                 episodes={"S05": [14], "S06": [11], "S08": [19]})
 
         self.ring_of_famine = Object("Ring of Famine", description="Can give people starving sensation "
                                                                    "for things they lack/desire. One of the four rings "
