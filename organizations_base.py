@@ -1,3 +1,4 @@
+from colors import Colors
 from organization import Organization
 from organizations_data import OrganizationKnowledge
 
@@ -26,3 +27,17 @@ class OrganizationsBase:
                                                                       "sponsored the early days of the Nazi Party.",
                                      episodes={"S08": [13]})
     the_thule_society.knowledge = [OrganizationKnowledge.immortal_life]
+
+    def __init__(self):
+        self.organizations = [organization for organization in self.__dict__.values() if isinstance(organization,
+                                                                                                    Organization)]
+
+    def print_organizations_names(self):
+        sorted_organizations = sorted([organization.name for organization in self.organizations])
+        print(Colors.RED + Colors.BOLD + "All organizations:" + Colors.ENDC)
+        for organization in sorted_organizations:
+            print(" *  " + organization)
+
+    def print_all_organizations(self):
+        for organization in self.organizations:
+            organization.print_all()
