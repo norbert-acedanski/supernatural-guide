@@ -14,3 +14,4 @@ class PlaceClues:
     endless_queue = "endless queue"
     monsters_nearby = "monsters nearby"
     when_a_person_comes_back_from_it_a_bright_light_appears = "when a person comes back from it a bright light appears"
+    screaming_people = "screaming people"
