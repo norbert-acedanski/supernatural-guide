@@ -71,10 +71,11 @@ class ObjectsBase:
         self.sleep_potion = Object("Sleep Potion", description="Made of African Dream Root. Was use by shaman and "
                                                                "medicine men for centuries. It is used for "
                                                                "dream-walking - entering another person's dreams.",
-                                   episodes={"S03": [10]})
+                                   episodes={"S03": [10], "S08": [20]})
         self.sleep_potion.abilities = [ObjectAbilities.can_make_a_person_sleep_for_days,
                                        ObjectAbilities.brings_back_dreams_for_those_that_dont_have_them,
-                                       ObjectAbilities.gives_people_control_over_dreams]
+                                       ObjectAbilities.gives_people_control_over_dreams,
+                                       ObjectAbilities.allows_to_enter_another_persons_dream]
 
         # ---------------------------------------------- ALL EPISODES DONE ---------------------------------------------
 

@@ -37,6 +37,7 @@ class ObjectAbilities:
     makes_a_person_drink_boiling_water = "makes a person drink boiling water"
     makes_a_person_do_horrible_things = "makes a person do horrible things"
     when_opened_causes_a_person_to_become_a_prophet = "when opened causes a person to become a prophet"
+    allows_to_enter_another_persons_dream = "allows to enter another person's dream"
 
 
 class ObjectMaintenance:
