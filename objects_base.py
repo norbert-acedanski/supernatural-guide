@@ -103,7 +103,7 @@ class ObjectsBase:
 
         self.angel_blade = Object("Angel blade", description="A triangular, silvery blade, that each angel has.",
                                   episodes={"S04": [16], "S05": [1, 13, 18], "S06": [3, 10, 17, 18, 22], "S07": [21],
-                                            "S08": [7, 10, 17]})
+                                            "S08": [7, 10, 17, 21]})
         self.angel_blade.abilities = [ObjectAbilities.can_kill_angels, ObjectAbilities.can_kill_demons]
 
         self.lucifers_cage = Object("Lucifer's Cage", description="A prison build specifically to contain archangelic "
@@ -222,7 +222,7 @@ class ObjectsBase:
                                                              "in stone form by Lucyfer) has information "
                                                              "about Angels and how to make them fall. "
                                                              "Found in Lucyfer crypt in S08E17.",
-                                  episodes={"S07": [21], "S08": [1, 2, 10, 17]})
+                                  episodes={"S07": [21], "S08": [1, 2, 10, 17, 21]})
         self.word_of_god.abilities = [ObjectAbilities.can_cause_storms, ObjectAbilities.can_cause_women_to_go_to_labour,
                                       ObjectAbilities.when_opened_causes_a_person_to_become_a_prophet]
 
