@@ -269,6 +269,7 @@ class MonstersClues:
     can_remove_death_binding_spell = "can remove death binding spell"
     can_transfer_mental_diseases = "can transfer mental diseases"
     can_go_and_put_into_a_persons_mind = "can go and put into a persons mind"
+    can_erase_anti_angel_marks = "can erase anti angel marks"
     people_with_souls_switched = "people with souls switched"
     poisoned_people = "poisoned people"
     demon_killing_knife_is_ineffective = "demon killing knife is ineffective"
