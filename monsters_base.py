@@ -116,11 +116,12 @@ class MonsterBase:
         self.water_wraith.clues = [MonstersClues.can_control_water]
 
         self.demon = Monster("Demon", description="In every religion there is information about demonic possessions. "
-                                                  "Demons are man that were stuck in hell for a long time.",
+                                                  "Demons are man that were stuck in Hell for a long time. "
+                                                  "A demon can be cured by Father Thompson's curing ritual.",
                              episodes={"S01": [4, 21, 22], "S02": [1, 14], "S03": [1, 2, 4, 12, 15, 16],
                                        "S04": [1, 4, 9, 10, 20, 21, 22], "S05": [1, 6, 10, 12, 14, 17, 20, 21, 22],
                                        "S06": [7, 10, 18, 20, 21, 22], "S07": [8, 15, 17, 21, 23],
-                                       "S08": [1, 2, 7, 10, 17, 19, 21]})
+                                       "S08": [1, 2, 7, 10, 17, 19, 21, 22]})
         self.demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                             MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                             MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -592,7 +593,7 @@ class MonsterBase:
                              episodes={"S04": [1, 2, 7, 9, 10, 15, 16, 18, 20, 21, 22],
                                        "S05": [1, 2, 3, 4, 5, 8, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22],
                                        "S06": [3, 6, 7, 10, 12, 15, 17, 18, 19, 20, 21, 22],
-                                       "S07": [1, 17, 20, 21, 23], "S08": [2, 7, 8, 10, 17, 19, 21]})
+                                       "S07": [1, 17, 20, 21, 23], "S08": [2, 7, 8, 10, 17, 19, 21, 22]})
         self.angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                             MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion,
                             MonstersClues.leaves_burned_marks, MonstersClues.weird_electronics_behavior,
@@ -828,7 +829,7 @@ class MonsterBase:
                                                                     "Supposedly died in S06E10, but in S06E19 it is "
                                                                     "revealed he was working with Castiel.",
                                      episodes={"S05": [10, 20, 21], "S06": [4, 7, 8, 10, 19, 20, 21, 22],
-                                               "S07": [1, 6, 8, 22, 23], "S08": [1, 2, 7, 10, 17, 19, 21]})
+                                               "S07": [1, 6, 8, 22, 23], "S08": [1, 2, 7, 10, 17, 19, 21, 22]})
         self.demon_crowley.clues = [MonstersClues.can_vanish, MonstersClues.pact_sealed_with_a_kiss,
                                     MonstersClues.summoned_by_placing_box_in_the_crossroads, MonstersClues.telekinesis,
                                     MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
@@ -1340,7 +1341,7 @@ class MonsterBase:
                                                                     "first fallen firstborn demons, thus very pure "
                                                                     "and strong. Archangels killed almost all of them. "
                                                                     "One of the survivors is Abaddon.",
-                                      episodes={"S08": [12]})
+                                      episodes={"S08": [12, 22]})
         self.knight_of_hell.clues = [MonstersClues.people_dead_weirdly, MonstersClues.bloodshot_eyes,
                                      MonstersClues.black_eyes, MonstersClues.immune_to_exorcism,
                                      MonstersClues.telekinesis, MonstersClues.can_read_peoples_minds,
@@ -1398,23 +1399,26 @@ class MonsterBase:
                                   MonstersKillMethods.the_arrow_of_artemis]
 
         self.angel_metatron = Monster("Angel Metatron", description="Scribe of GOD. One of the angels.",
-                                      episodes={"S08": [21]})
+                                      episodes={"S08": [21, 22]})
         self.angel_metatron.clues = [MonstersClues.immortal, MonstersClues.can_vanish,
                                      MonstersClues.can_teleport_people, MonstersClues.can_erase_anti_angel_marks,
                                      MonstersClues.can_repair_human_body, MonstersClues.can_appear_out_of_thin_air]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S08": [21]})
+        self.nephilim = Monster("Nephilim", description="Child of human and angel/archangel. "
+                                                        "Human with an angelic grace.", episodes={"S08": [22]})
+        self.nephilim.clues = [MonstersClues.can_see_real_appearance_of_entities, MonstersClues.high_strength,
+                               MonstersClues.bright_eyes,
+
+                               MonstersClues.weird_weather, MonstersClues.biblical_like_events]
+        self.nephilim.kill_methods = [MonstersKillMethods.angel_blade]
+
+        self.unknown = Monster("Unknown", description="", episodes={"S08": [22]})
         self.unknown.clues = []
 
         # -------------------------------------------------- SEASON 9 --------------------------------------------------
 
 
 
-        # SEASON XX - unknown when:
-
-        self.nephilim = Monster("Nephilim", description="Child of human and angel/archangel. "
-                                                        "Human with an angelic grace.")
-        self.nephilim.clues = [MonstersClues.weird_weather, MonstersClues.biblical_like_events]
 
         # -------------------------------------------------- SEASON 10 -------------------------------------------------
 
