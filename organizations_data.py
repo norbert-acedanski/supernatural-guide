@@ -8,3 +8,4 @@ class OrganizationKnowledge:
     drakopoolos_journal = "Drakopoolos' journal"
     summoning_of_zeus = "summoning of Zeus"
     irregular_jinns = "irregular jinns"
+    demonic_possessions = "demonic possessions"
