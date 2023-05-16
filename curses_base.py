@@ -201,12 +201,17 @@ class CursesBase:
                                                                  "After that one should say a spell. "
                                                                  "Second is to resque an innocent soul from Hell and "
                                                                  "deliver it to Heaven."
-                                                                 "Third is to cure a demon. After each trial there is "
+                                                                 "Third is to cure a demon - on a sacred land a demon "
+                                                                 "must be injected with 8 doses of purified blood "
+                                                                 "(from a man, that was in a confession). After that, "
+                                                                 "a modified exorcism has to be performed and "
+                                                                 "a blood of a purified person has to be put on "
+                                                                 "a demon face. After each trial there is "
                                                                  "a spell to say. After the last trial is completed "
                                                                  "and a spell is said, the Gates of Hell will close. "
                                                                  "Spell hurts the person, that tries it - starts to "
                                                                  "cough blood. Even angel healing cannot heal it.",
-                                                     episodes={"S08": [14, 15, 16, 17, 19, 21]})
+                                                     episodes={"S08": [14, 15, 16, 17, 19, 21, 22]})
         self.closing_the_gates_of_hell_spell.clues = [CursesClues.killed_hell_hound, CursesClues.blood_cough]
 
         self.bringing_demon_back_to_the_body_spell = Curse("Bringing demon back to the body spell",
@@ -229,6 +234,13 @@ class CursesBase:
                                           episodes={"S08": [15]})
         self.false_memories_spell.clues = [CursesClues.people_dead_weirdly, CursesClues.different_memories,
                                            CursesClues.weird_dreams]
+
+        self.banish_angels_to_earth_spell = Curse("Banish Angels to Earth spell",
+                                                  description="Spell to make every angel fall. Like the spell to close "
+                                                              "the Gates of Hell, it consists of 3 trials."
+                                                              "First trial is to cut the heart of a Nephilim.",
+                                                  episodes={"S08": [22]})
+        self.banish_angels_to_earth_spell.clues = [CursesClues.people_dead_weirdly, CursesClues.missing_heart]
 
         # SEASON 9:
 
