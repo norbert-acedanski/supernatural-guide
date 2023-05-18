@@ -579,7 +579,8 @@ class MonsterBase:
 
         # -------------------------------------------------- SEASON 4 --------------------------------------------------
 
-        self.angel = Monster("Angel", description="Angel of God (Castiel, Uriel, Hester, Inias, Samandriel, Ion). "
+        self.angel = Monster("Angel", description="Angel of God (Castiel, Uriel, Hester, Inias, Samandriel, Ion, "
+                                                  "Nathaniel, Naomi). "
                                                   "They can bring people back from the dead. Cannot track people, "
                                                   "that use powerful spells to hide themselves. "
                                                   "All angels have graces - energy source for their power. All angels "
@@ -593,7 +594,7 @@ class MonsterBase:
                              episodes={"S04": [1, 2, 7, 9, 10, 15, 16, 18, 20, 21, 22],
                                        "S05": [1, 2, 3, 4, 5, 8, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22],
                                        "S06": [3, 6, 7, 10, 12, 15, 17, 18, 19, 20, 21, 22],
-                                       "S07": [1, 17, 20, 21, 23], "S08": [2, 7, 8, 10, 17, 19, 21, 22]})
+                                       "S07": [1, 17, 20, 21, 23], "S08": [2, 7, 8, 10, 17, 19, 21, 22, 23]})
         self.angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                             MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion,
                             MonstersClues.leaves_burned_marks, MonstersClues.weird_electronics_behavior,
@@ -693,7 +694,7 @@ class MonsterBase:
                                                                   "Prophets throughout the series: "
                                                                   "Chuck Shurley, Kevin Tran.",
                                episodes={"S04": [18, 22], "S05": [1, 9, 22], "S07": [21, 22, 23],
-                                         "S08": [1, 2, 7, 10, 14, 19, 21]})
+                                         "S08": [1, 2, 7, 10, 14, 19, 21, 23]})
         self.prophet.clues = [MonstersClues.can_see_future, MonstersClues.protected_by_an_archangel,
                               MonstersClues.visions, MonstersClues.can_repair_broken_word_of_god,
                               MonstersClues.can_read_word_of_god, MonstersClues.weird_weather,
@@ -829,7 +830,7 @@ class MonsterBase:
                                                                     "Supposedly died in S06E10, but in S06E19 it is "
                                                                     "revealed he was working with Castiel.",
                                      episodes={"S05": [10, 20, 21], "S06": [4, 7, 8, 10, 19, 20, 21, 22],
-                                               "S07": [1, 6, 8, 22, 23], "S08": [1, 2, 7, 10, 17, 19, 21, 22]})
+                                               "S07": [1, 6, 8, 22, 23], "S08": [1, 2, 7, 10, 17, 19, 21, 22, 23]})
         self.demon_crowley.clues = [MonstersClues.can_vanish, MonstersClues.pact_sealed_with_a_kiss,
                                     MonstersClues.summoned_by_placing_box_in_the_crossroads, MonstersClues.telekinesis,
                                     MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
@@ -843,7 +844,8 @@ class MonsterBase:
                                     MonstersClues.burned_by_holy_water, MonstersClues.can_give_hallucinations,
 
                                     MonstersClues.black_blood]
-        self.demon_crowley.disable_methods = [MonstersDisableMethods.devils_trap, MonstersDisableMethods.holy_water]
+        self.demon_crowley.disable_methods = [MonstersDisableMethods.devils_trap, MonstersDisableMethods.holy_water,
+                                              MonstersDisableMethods.demonic_handcuffs]
 
         self.reaper_death = Monster("Reaper - Death", description="One of the Horseman, the pale rider. "
                                                                   "Angel of Death. Can be brought to the Earth "
@@ -873,7 +875,7 @@ class MonsterBase:
 
         self.cupid = Monster("Cupid", description="A lower tier of an angel - cherub, third class angel. "
                                                   "Binds people that are supposed to be with each other.",
-                             episodes={"S05": [14]})
+                             episodes={"S05": [14], "S08": [23]})
         self.cupid.clues = [MonstersClues.people_dead_weirdly, MonstersClues.people_acting_weirdly,
                             MonstersClues.no_emf, MonstersClues.no_sulfur, MonstersClues.marks_on_victims_hearts,
                             MonstersClues.invisible_entity, MonstersClues.can_vanish, MonstersClues.invulnerable,
@@ -1341,14 +1343,15 @@ class MonsterBase:
                                                                     "first fallen firstborn demons, thus very pure "
                                                                     "and strong. Archangels killed almost all of them. "
                                                                     "One of the survivors is Abaddon.",
-                                      episodes={"S08": [12, 22]})
+                                      episodes={"S08": [12, 22, 23]})
         self.knight_of_hell.clues = [MonstersClues.people_dead_weirdly, MonstersClues.bloodshot_eyes,
                                      MonstersClues.black_eyes, MonstersClues.immune_to_exorcism,
                                      MonstersClues.telekinesis, MonstersClues.can_read_peoples_minds,
                                      MonstersClues.demon_killing_knife_is_ineffective,
-                                     MonstersClues.can_posses_a_person, MonstersClues.weird_electronics_behavior]
+                                     MonstersClues.can_posses_a_person, MonstersClues.weird_electronics_behavior,
+                                     MonstersClues.travels_as_black_fog]
         self.knight_of_hell.disable_methods = [MonstersDisableMethods.demon_killing_knife,
-                                               MonstersDisableMethods.devils_trap]
+                                               MonstersDisableMethods.devils_trap, MonstersDisableMethods.holy_oil]
         self.knight_of_hell.kill_methods = [
 
                                             MonstersKillMethods.first_blade]
@@ -1399,7 +1402,7 @@ class MonsterBase:
                                   MonstersKillMethods.the_arrow_of_artemis]
 
         self.angel_metatron = Monster("Angel Metatron", description="Scribe of GOD. One of the angels.",
-                                      episodes={"S08": [21, 22]})
+                                      episodes={"S08": [21, 22, 23]})
         self.angel_metatron.clues = [MonstersClues.immortal, MonstersClues.can_vanish,
                                      MonstersClues.can_teleport_people, MonstersClues.can_erase_anti_angel_marks,
                                      MonstersClues.can_repair_human_body, MonstersClues.can_appear_out_of_thin_air]
@@ -1412,8 +1415,10 @@ class MonsterBase:
                                MonstersClues.weird_weather, MonstersClues.biblical_like_events]
         self.nephilim.kill_methods = [MonstersKillMethods.angel_blade]
 
-        self.unknown = Monster("Unknown", description="", episodes={"S08": [22]})
+        self.unknown = Monster("Unknown", description="", episodes={"S08": [23]})
         self.unknown.clues = []
+
+        # ---------------------------------------------- ALL EPISODES DONE ---------------------------------------------
 
         # -------------------------------------------------- SEASON 9 --------------------------------------------------
 

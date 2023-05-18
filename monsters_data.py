@@ -455,6 +455,7 @@ class MonstersDisableMethods:
     very_bright_light = "very bright light"
     destroy_the_place_that_the_tulpa_resides = "destroy the place that the tulpa resides"
     devils_trap = "devil's trap - sigil trap for a demon (they can't exit them)"
+    demonic_handcuffs = "demonic handcuffs"
     fry_its_remains = "fry its remains"
     enochian_devils_trap = "enochian devil's trap - similar to usual devil's trap, but can disable powerful demons"
     bring_the_spirit_to_its_crime_place = "bring the spirit to its crime place - for other ghosts to kill/take it"
