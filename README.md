@@ -13,7 +13,7 @@ Python 3.9.10
 
 ### Working with supernatural-monster-recogniser:
 1. Run the *main.py* file.
-2. Choose from one of 14 possible options:
+2. Choose from one of 16 possible options:
     - ***1 - print all monster names*** - prints all monster names currently in a database.
     - ***2 - print all monsters with their attributes*** - prints all monster names, a brief description, episodes, that a monster was seen, possible traces or clues they leave behind, disable, killing and curing methods (if available).
     - ***3 - print all clues for monsters*** - prints the list of all the clues, that are currently in the database, that all monsters leave behind.
@@ -25,9 +25,11 @@ Python 3.9.10
     - ***9 - print all objects names*** - prints all objects names currently in a database.
     - ***10 - print all objects with their attributes*** - prints all objects names, a brief description, episodes, that an object was seen, abilities of the object, maintenance and destroy methods (if available).
     - ***11 - print all places names*** - prints all places names currently in a database.
-    - ***12 - print all places with their attributes*** - prints all places names, a brief description, episodes, that a place was seen, abilities of the object and clues.
+    - ***12 - print all places with their attributes*** - prints all places names, a brief description, episodes, that a place was seen and clues.
     - ***13 - print all events names*** - prints all events names currently in a database.
-    - ***14 - print all events with their attributes*** - prints all events names, a brief description, episodes, that an event was seen, abilities of the object, clues and disable methods (if available).
+    - ***14 - print all events with their attributes*** - prints all events names, a brief description, episodes, that an event was seen, clues and disable methods (if available).
+    - ***15 - print all organizations names*** - prints all organizations names currently in a database.
+    - ***16 - print all organizations with their attributes*** - prints all organizations names, a brief description, episodes, that an organization was seen, knowledge (if available).
     - ***0 - exit*** - end the program
 
 # Usage
