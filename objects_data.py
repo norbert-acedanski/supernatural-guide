@@ -26,6 +26,7 @@ class ObjectAbilities:
     gives_people_control_over_dreams = "gives people control over dreams"
     the_place_it_hits_is_not_destroyed_but_flourishes = "the place it hits is not destroyed but flourishes"
     traps_a_reaper = "traps a reaper"
+    traps_a_demon = "traps a demon"
     traps_an_archangel = "traps an archangel"
     traps_a_soul_of_a_person = "traps a soul of a person"
     angels_cant_get_past_it = "angels can't get past it"

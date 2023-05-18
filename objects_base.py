@@ -55,7 +55,7 @@ class ObjectsBase:
                                                                              "Cannot kill certain kinds of demons.",
                                           episodes={"S03": [1, 9, 16], "S04": [1, 9, 20, 22],
                                                     "S05": [1, 10, 14, 17, 20, 21, 22], "S06": [10, 20, 21],
-                                                    "S07": [8, 15, 17, 21], "S08": [1, 2, 7, 10, 14, 17, 19]})
+                                                    "S07": [8, 15, 17, 21], "S08": [1, 2, 7, 10, 14, 17, 19, 23]})
         self.demon_killing_knife.abilities = [ObjectAbilities.can_kill_demons, ObjectAbilities.cannot_kill_angels,
                                               ObjectAbilities.cannot_kill_knights_of_hell]
 
@@ -87,7 +87,8 @@ class ObjectsBase:
                                            episodes={"S04": [10, 22], "S05": [13, 18], "S06": [3], "S07": [21]})
         self.sigil_against_angels.abilities = [ObjectAbilities.can_send_angels_back_to_heaven]
 
-        self.angel_grace = Object("Angel grace", description="A power source for an angel", episodes={"S04": [10]})
+        self.angel_grace = Object("Angel grace", description="A power source for an angel", episodes={"S04": [10],
+                                                                                                      "S08": [23]})
         self.angel_grace.abilities = [ObjectAbilities.can_appear_as_falling_meteor,
                                       ObjectAbilities.the_place_it_hits_is_not_destroyed_but_flourishes,
                                       ObjectAbilities.can_kill_entities_when_reconnecting_with_an_angel]
@@ -103,7 +104,7 @@ class ObjectsBase:
 
         self.angel_blade = Object("Angel blade", description="A triangular, silvery blade, that each angel has.",
                                   episodes={"S04": [16], "S05": [1, 13, 18], "S06": [3, 10, 17, 18, 22], "S07": [21],
-                                            "S08": [7, 10, 17, 21, 22]})
+                                            "S08": [7, 10, 17, 21, 22, 23]})
         self.angel_blade.abilities = [ObjectAbilities.can_kill_angels, ObjectAbilities.can_kill_demons]
 
         self.lucifers_cage = Object("Lucifer's Cage", description="A prison build specifically to contain archangelic "
@@ -222,14 +223,23 @@ class ObjectsBase:
                                                              "in stone form by Lucyfer) has information "
                                                              "about Angels and how to make them fall. "
                                                              "Found in Lucyfer crypt in S08E17.",
-                                  episodes={"S07": [21], "S08": [1, 2, 10, 17, 21]})
+                                  episodes={"S07": [21], "S08": [1, 2, 10, 17, 21, 23]})
         self.word_of_god.abilities = [ObjectAbilities.can_cause_storms, ObjectAbilities.can_cause_women_to_go_to_labour,
                                       ObjectAbilities.when_opened_causes_a_person_to_become_a_prophet]
+
+        # ---------------------------------------------- ALL EPISODES DONE ---------------------------------------------
 
         # SEASON 8:
 
         self.mjolnir = Object("Mjolnir", description="The hammer of Thor.", episodes={"S08": [2]})
         self.mjolnir.abilities = [ObjectAbilities.can_kill_pagan_gods]
+
+        self.demonic_handcuffs = Object("Demonic handcuffs", description="When worn by a Demon, it cannot teleport, "
+                                                                         "leave the body or use demon magic.",
+                                        episodes={"S08": [23]})
+        self.demonic_handcuffs.abilities = [ObjectAbilities.traps_a_demon]
+
+        # ---------------------------------------------- ALL EPISODES DONE ---------------------------------------------
 
         # SEASON 9:
 
