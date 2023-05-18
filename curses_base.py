@@ -208,10 +208,12 @@ class CursesBase:
                                                                  "a blood of a purified person has to be put on "
                                                                  "a demon face. After each trial there is "
                                                                  "a spell to say. After the last trial is completed "
-                                                                 "and a spell is said, the Gates of Hell will close. "
+                                                                 "and a spell is said, the Gates of Hell will close, "
+                                                                 "but the person, that does the trials will die. "
+                                                                 "That is what GOD intended - the ultimate sacrifice. "
                                                                  "Spell hurts the person, that tries it - starts to "
                                                                  "cough blood. Even angel healing cannot heal it.",
-                                                     episodes={"S08": [14, 15, 16, 17, 19, 21, 22]})
+                                                     episodes={"S08": [14, 15, 16, 17, 19, 21, 22, 23]})
         self.closing_the_gates_of_hell_spell.clues = [CursesClues.killed_hell_hound, CursesClues.blood_cough]
 
         self.bringing_demon_back_to_the_body_spell = Curse("Bringing demon back to the body spell",
@@ -238,9 +240,15 @@ class CursesBase:
         self.banish_angels_to_earth_spell = Curse("Banish Angels to Earth spell",
                                                   description="Spell to make every angel fall. Like the spell to close "
                                                               "the Gates of Hell, it consists of 3 trials."
-                                                              "First trial is to cut the heart of a Nephilim.",
-                                                  episodes={"S08": [22]})
+                                                              "First thing is to cut the heart of a Nephilim."
+                                                              "Second is to retrieve Cupid's bow."
+                                                              "The third one is an angelic grace "
+                                                              "(cut from Angel's throat). Combined with a spell makes "
+                                                              "each angel fall.",
+                                                  episodes={"S08": [22, 23]})
         self.banish_angels_to_earth_spell.clues = [CursesClues.people_dead_weirdly, CursesClues.missing_heart]
+
+        # ---------------------------------------------- ALL EPISODES DONE ---------------------------------------------
 
         # SEASON 9:
 
