@@ -40,7 +40,6 @@ If you are a fan of Supernatural show, you can play with this project to find ou
 - add disable methods for objects like sigils (that can be disabled by breaking the integrity of the drawing)
 - fill missing information about each monster, curse, spell, object, event, etc.
 - add information about all unique monsters, that died in the series until S05E19.
-- move `__init__` method not to use `self.`
 - add base class not to duplicate methods
 
 # Licence
