@@ -2,6 +2,7 @@ class CursesClues:
     missing_or_dead_people_regularly_in_the_same_area = "groups of people missing/dead regularly in the same area"
     missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area = \
         "missing or dead people in similar way randomly across time in the same area"
+    missing_heart = "missing heart"
     people_dead_weirdly = "people dead weirdly"
     people_acting_weirdly = "people acting weirdly"
     people_feeling_weird_or_bad = "people feeling weird or bad"
@@ -12,6 +13,7 @@ class CursesClues:
     people_seeing_things_or_figures = "people seeing things or figures (ghosts, people, reapers, beings, unicorns, " \
                                       "giant octopuses, etc.)"
     people_nightmares_come_true = "people nightmares come true"
+    shadows_of_people_on_the_wall = "shadows of people on the wall"
     suicides = "suicides"
     hallucinations = "hallucinations"
     weird_animal_behavior = "weird animal behavior"
@@ -42,10 +44,16 @@ class CursesClues:
     does_not_work_on_people_without_souls = "does not work on people without souls"
     different_history = "different history"
     different_memories = "different memories"
+    weird_dreams = "weird dreams"
     strange_feeling_that_things_should_be_different = "strange feeling that things should be different"
     blinding_love = "blinding love"
     seen_as_a_clown = "seen as a clown"
     bite_marks_on_peoples_necks = "bite marks on peoples necks"
+    red_blood = "red blood"
+    people_appearing_out_of_nowhere = "people appearing out of nowhere"
+    killed_hell_hound = "killed Hell hound"
+    blood_cough = "blood cough"
+    meteor_shower_over_earth = 'meteor shower over Earth'
 
 
 class CursesDisableMethods:

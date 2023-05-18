@@ -182,7 +182,74 @@ class CursesBase:
 
         # SEASON 8:
 
+        self.bringing_soul_from_purgatory_spell = Curse("Bringing soul from Purgatory spell",
+                                                        description="Can bring back a monster, which soul was taken "
+                                                                    "from purgatory.", episodes={"S08": [1]})
+        self.bringing_soul_from_purgatory_spell.clues = [CursesClues.red_blood]
 
+        self.demon_killing_spell = Curse("Demon killing spell", description="Spell of right ingredients burned by fire "
+                                                                            "kills demons nearby. Written on a Word of "
+                                                                            "GOD about demons.",
+                                         episodes={"S08": [1, 7, 10]})
+        self.demon_killing_spell.clues = [CursesClues.shadows_of_people_on_the_wall]
+
+        self.closing_the_gates_of_hell_spell = Curse("Closing the Gates of Hell spell",
+                                                     description="Spell, that will banish all demons of the face "
+                                                                 "of the Earth and close the Gates of Hell forever. "
+                                                                 "The spell consists of 3 trials. First is to kill "
+                                                                 "a Hell hound and bathe in its blood. "
+                                                                 "After that one should say a spell. "
+                                                                 "Second is to resque an innocent soul from Hell and "
+                                                                 "deliver it to Heaven."
+                                                                 "Third is to cure a demon - on a sacred land a demon "
+                                                                 "must be injected with 8 doses of purified blood "
+                                                                 "(from a man, that was in a confession). After that, "
+                                                                 "a modified exorcism has to be performed and "
+                                                                 "a blood of a purified person has to be put on "
+                                                                 "a demon face. After each trial there is "
+                                                                 "a spell to say. After the last trial is completed "
+                                                                 "and a spell is said, the Gates of Hell will close, "
+                                                                 "but the person, that does the trials will die. "
+                                                                 "That is what GOD intended - the ultimate sacrifice. "
+                                                                 "Spell hurts the person, that tries it - starts to "
+                                                                 "cough blood. Even angel healing cannot heal it.",
+                                                     episodes={"S08": [14, 15, 16, 17, 19, 21, 22, 23]})
+        self.closing_the_gates_of_hell_spell.clues = [CursesClues.killed_hell_hound, CursesClues.blood_cough]
+
+        self.bringing_demon_back_to_the_body_spell = Curse("Bringing demon back to the body spell",
+                                                           description="Spell, that allows to bring back the demon, "
+                                                                       "that tries to escape a body. It's just a "
+                                                                       "reversed exorcism according to Sam.",
+                                                           episodes={"S08": [2]})
+
+        self.time_travel_spell = Curse("Time travel spell", description="A spell, that (when combined with a drawing "
+                                                                        "made of human blood, angel feather, tears of "
+                                                                        "a dragon, a pinch of the Sands of Time and "
+                                                                        "a week charge of a soul) "
+                                                                        "can move a person to another time "
+                                                                        "to a specific person or their relatives.",
+                                       episodes={"S08": [12]})
+        self.time_travel_spell.clues = [CursesClues.people_appearing_out_of_nowhere]
+
+        self.false_memories_spell = Curse("False memories spell", description="It is used to create false memories "
+                                                                              "into another witch's mind.",
+                                          episodes={"S08": [15]})
+        self.false_memories_spell.clues = [CursesClues.people_dead_weirdly, CursesClues.different_memories,
+                                           CursesClues.weird_dreams]
+
+        self.banish_angels_to_earth_spell = Curse("Banish Angels to Earth spell",
+                                                  description="Spell to make every angel fall. Like the spell to close "
+                                                              "the Gates of Hell, it consists of 3 trials."
+                                                              "First thing is to cut the heart of a Nephilim."
+                                                              "Second is to retrieve Cupid's bow."
+                                                              "The third one is an angelic grace "
+                                                              "(cut from Angel's throat). Combined with a spell makes "
+                                                              "each angel fall.",
+                                                  episodes={"S08": [22, 23]})
+        self.banish_angels_to_earth_spell.clues = [CursesClues.people_dead_weirdly, CursesClues.missing_heart,
+                                                   CursesClues.meteor_shower_over_earth]
+
+        # ---------------------------------------------- ALL EPISODES DONE ---------------------------------------------
 
         # SEASON 9:
 

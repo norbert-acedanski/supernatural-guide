@@ -3,8 +3,10 @@ class ObjectAbilities:
     can_kill_demons = "can kill demons"
     can_kill_reapers = "can kill reapers"
     can_kill_angels = "can kill angels"
+    can_kill_pagan_gods = "can kill pagan gods"
     can_kill_archangels = "can kill archangels"
     cannot_kill_angels = "cannot kill angels"
+    cannot_kill_knights_of_hell = "cannot kill Knights ofHell"
     can_kill_entities_when_reconnecting_with_an_angel = \
         "can kill entities (people, demons) when reconnecting with an angel"
     can_send_angels_back_to_heaven = "can send angels back to heaven"
@@ -24,6 +26,7 @@ class ObjectAbilities:
     gives_people_control_over_dreams = "gives people control over dreams"
     the_place_it_hits_is_not_destroyed_but_flourishes = "the place it hits is not destroyed but flourishes"
     traps_a_reaper = "traps a reaper"
+    traps_a_demon = "traps a demon"
     traps_an_archangel = "traps an archangel"
     traps_a_soul_of_a_person = "traps a soul of a person"
     angels_cant_get_past_it = "angels can't get past it"
@@ -35,6 +38,7 @@ class ObjectAbilities:
     makes_a_person_drink_boiling_water = "makes a person drink boiling water"
     makes_a_person_do_horrible_things = "makes a person do horrible things"
     when_opened_causes_a_person_to_become_a_prophet = "when opened causes a person to become a prophet"
+    allows_to_enter_another_persons_dream = "allows to enter another person's dream"
 
 
 class ObjectMaintenance:
@@ -51,3 +55,5 @@ class JohnWinchesterJournal:
                                   "John was heading there to check out a case. Next two pages are torn out. " \
                                   "Next entry in September 29th 2004 - One word: Minnesota."
     entry_about_a_skinwalker = "entry about a skinwalker - a drawing and not fully visible description"
+    entry_about_torturing_a_demon = "entry about torturing a demon, which said, that he made his bones working with " \
+                                    "Abbadon, who is a knight of Hell."

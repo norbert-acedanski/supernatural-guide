@@ -8,9 +8,10 @@ class PlacesBase:
         self.clues = [clue for key, clue in list(PlaceClues.__dict__.items()) if not key.startswith("__")]
 
         self.hell = Place("Hell", description="Place of eternal torture. People are either tortured, or torture others.",
-                          episodes={"S03": [16], "S04": [1, 8, 10], "S06": [20]})
+                          episodes={"S03": [16], "S04": [1, 8, 10], "S06": [20], "S08": [19]})
         self.hell.clues = [PlaceClues.people_chained_in_a_void, PlaceClues.electrical_storms, PlaceClues.dark_place,
-                           PlaceClues.flashing_lights, PlaceClues.time_runs_faster_there, PlaceClues.endless_queue]
+                           PlaceClues.flashing_lights, PlaceClues.time_runs_faster_there, PlaceClues.endless_queue,
+                           PlaceClues.screaming_people]
 
         self.alternate_timeline = Place("Alternate timeline",
                                         description="A universe, where the history played out differently. "
@@ -24,8 +25,8 @@ class PlacesBase:
                                                   "There is a road, that goes through heaven called Axis Mundi. "
                                                   "It is different for everyone. It can be a literal road, but also "
                                                   "a model, a picture, magazine. Leads to a garden in the center.",
-                            episodes={"S05": [16]})
-        self.heaven.clues = [PlaceClues.good_memories_relived, PlaceClues.changing_scenery]
+                            episodes={"S05": [16], "S08": [7, 10, 17, 23]})
+        self.heaven.clues = [PlaceClues.good_memories_relived, PlaceClues.changing_scenery, PlaceClues.bright_place]
 
         self.purgatory = Place("Purgatory", description="A place, where all monsters go, after they die. "
                                                         "Can be opened with an ancient ritual and let 'Mother' "
@@ -38,8 +39,14 @@ class PlacesBase:
                                                         "on a wall. Opened again in S06E22 to let all creatures "
                                                         "into Castiel. Opened again in S07E01 to let all creatures "
                                                         "into Purgatory. One can go to Purgatory, when using Leviathan "
-                                                        "killing weapon in close proximity.", episodes={"S07": [23]})
-        self.purgatory.clues = [PlaceClues.dark_place, PlaceClues.monsters_nearby]
+                                                        "killing weapon in close proximity. GOD made a back door for "
+                                                        "humans to escape if one ever got to Purgatory. "
+                                                        "It also has a direct connection to Hell through a portal, "
+                                                        "where 3 trees meet 1. A rogue reaper can transfer a person "
+                                                        "into it.",
+                               episodes={"S07": [23], "S08": [1, 19]})
+        self.purgatory.clues = [PlaceClues.dark_place, PlaceClues.monsters_nearby,
+                                PlaceClues.when_a_person_comes_back_from_it_a_bright_light_appears]
 
         self.places = [place for place in self.__dict__.values() if isinstance(place, Place)]
 

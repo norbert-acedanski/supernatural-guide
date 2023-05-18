@@ -2,6 +2,7 @@ class PlaceClues:
     people_chained_in_a_void = "people chained in a void"
     electrical_storms = "electrical storms"
     dark_place = "dark place"
+    bright_place = "bright place"
     people_screaming_in_agony = "people screaming in agony"
     flashing_lights = "flashing lights"
     time_runs_faster_there = "time runs faster there (4 months on Earth are 40 years in there)"
@@ -12,3 +13,5 @@ class PlaceClues:
     changing_scenery = "changing scenery"
     endless_queue = "endless queue"
     monsters_nearby = "monsters nearby"
+    when_a_person_comes_back_from_it_a_bright_light_appears = "when a person comes back from it a bright light appears"
+    screaming_people = "screaming people"

@@ -26,6 +26,7 @@ class MonstersClues:
     black_blood = "blood - black"
     black_veins = "black veins"
     ectoplasm = "ectoplasm (black goo)"
+    green_ectoplasm = "green ectoplasm"
     grey_goo = "grey goo"
     pact_sealed_with_a_kiss = "pact sealed with a kiss"
     burned_by_holy_water = "burned by holy water"
@@ -69,6 +70,7 @@ class MonstersClues:
     people_acting_weirdly = "people acting weirdly - like not themselves"
     people_burned_on_the_ceiling = "people burned on the ceiling of their house"
     people_loosing_their_minds = "people loosing their minds"
+    comes_back_from_the_dead = "comes back from the dead"
     dead_people_or_children_regularly_in_different_places = "dead people or children regularly in different places"
     missing_or_dead_people_in_similar_way_randomly_across_time_in_different_areas = \
         "missing or dead people in similar way randomly across time in different areas"
@@ -154,11 +156,16 @@ class MonstersClues:
     feeds_on_women_during_their_sleep = "feeds on women during their sleep"
     attacks_at_night = "attacks at night"
     bite_marks_on_peoples_necks = "bite marks on peoples necks"
+    bite_marks = "bite marks"
     may_leave_claw_marks = "may leave claw marks"
     marks_on_victims_hearts = "marks on victims hearts"
     marks_on_victims_souls = "marks on victims souls"
     leaves_burned_marks = "leaves burned marks"
+    no_burn_marks = "no burn marks"
+    leaves_blue_handprint = "leaves blue handprint"
     burned_marks_on_its_skin = "burned marks on it's skin"
+    burned_eyes = "burned eyes"
+    liquefied_organs = "liquefied organs"
     leaves_soulless_people_behind = "leaving soulless people behind"
     leaves_zombie_like_people_with_black_veins_around_neck = "leaves zombie-like people with black veins around neck"
     real_appearance_can_be_seen_in_a_reflection_or_camera = "real appearance can be seen in a reflection or camera"
@@ -249,6 +256,7 @@ class MonstersClues:
     can_kill_people_with_a_thought = "can_kill people with a thought"
     can_appear_as_an_elephant = "can appear as an elephant"
     can_change_into_a_dog = "can change into a dog"
+    can_change_into_an_animal = "can change into an animal"
     can_sense_peoples_souls = "can sense people's souls"
     can_hurt_people_with_a_thought = "can hurt people with a thought"
     can_go_to_lucifers_cage_and_back_with_ease = "can go to Lucifer's cage and back with ease"
@@ -260,6 +268,8 @@ class MonstersClues:
     can_turn_people_into_monsters = "can turn people into monsters"
     can_remove_death_binding_spell = "can remove death binding spell"
     can_transfer_mental_diseases = "can transfer mental diseases"
+    can_go_and_put_into_a_persons_mind = "can go and put into a persons mind"
+    can_erase_anti_angel_marks = "can erase anti angel marks"
     people_with_souls_switched = "people with souls switched"
     poisoned_people = "poisoned people"
     demon_killing_knife_is_ineffective = "demon killing knife is ineffective"
@@ -301,12 +311,15 @@ class MonstersClues:
     protected_by_an_archangel = "protected by an archangel"
     bright_light = "bright light"
     red_light = "red light"
+    lightnings = "lightnings"
     silver_burns_its_skin = "silver burns its skin"
     silver_does_not_affect_it = "silver does not affect it"
     seeds_in_victims_stomachs = "seeds in victims stomachs"
     naked_man = "naked man"
+    giant_man = "giant man"
     general_sickness = "general sickness"
     increased_pest_activity = "increased pest activity"
+    increased_regeneration = "increased regeneration"
     lack_of_empathy = "lack of empathy"
     craving_for_blood = "craving for blood"
     sociopath_like_behavior = "sociopath-like behavior"
@@ -322,10 +335,13 @@ class MonstersClues:
     ear_ringing = "ear ringing"
     seen_by_drunk_people = "seen by drunk people"
     roman_corn_syrup = "roman corn syrup"
+    tree_tatoo = "tree tatoo (a Celtic magic symbol - the Tree of Pain)"
+    no_black_goo = "no black goo"
 
 
 class MonstersKillMethods:
     decapitation = "decapitation"
+    break_the_neck = "break the neck"
     angel_blade = "angel blade"
     archangel_blade = "archangel blade"
     first_blade = "first blade"
@@ -340,6 +356,7 @@ class MonstersKillMethods:
     silver_knife_dipped_in_dogs_blood = "silver knife dipped in dogs blood"
     silver_bullet_into_the_heart = "silver bullet into the heart"
     demon_killing_knife = "demon killing knife"
+    demon_killing_spell = "demon killing spell"
     holy_oil = "holy oil"
     angel_sword = "angel sword"
     samurai_sword_consecrated_with_shinto_blessing = "samurai sword consecrated with shinto blessing"
@@ -387,6 +404,7 @@ class MonstersKillMethods:
     head_shot = "head shot"
     stake_made_from_cypress_tree_in_babylon = "stake made from a cypress tree in Babylon"
     stake_made_from_unknown_wood = "stake made from unknown wood"
+    stake_made_from_a_tree_struck_by_lightning = "stake made from a tree struck by lightning"
     mix_of_salt_and_rosemary_thrown_it_and_burned = "mix of salt and rosemary thrown it and burned"
     stab_it_seven_times_with_bamboo_dagger_blessed_by_shinto_priest = \
         "stab it seven times with bamboo dagger blessed by shinto priest"
@@ -400,6 +418,8 @@ class MonstersKillMethods:
     bone_of_a_righteous_mortal_washed_in_three_bloods_of_the_fallen = \
         "bone of a righteous mortal washed in three bloods of the fallen " \
         "(one from an angel, one from ruler of fallen humanity [Crowley] and one from an Alpha)"
+    mjolnir = "mjolnir"
+    the_arrow_of_artemis = "the arrow of Artemis"
 
 
 class MonstersDisableMethods:
@@ -408,6 +428,7 @@ class MonstersDisableMethods:
     exorcism = "exorcism - The Rituale Romanum (sends a demon back to hell)"
     exorcism_for_angels = "exorcism for angels (sends an angel back to Heaven)"
     iron_or_iron_bullets = "iron bullets/iron in general"
+    iron_chains = "iron chains"
     salt_or_salted_bullets = "salt/salted bullets"
     silver_or_silver_bullets = "silver/silver bullets"
     iridium_or_iridium_blade = "iridium/iridium blade"
@@ -434,6 +455,7 @@ class MonstersDisableMethods:
     very_bright_light = "very bright light"
     destroy_the_place_that_the_tulpa_resides = "destroy the place that the tulpa resides"
     devils_trap = "devil's trap - sigil trap for a demon (they can't exit them)"
+    demonic_handcuffs = "demonic handcuffs"
     fry_its_remains = "fry its remains"
     enochian_devils_trap = "enochian devil's trap - similar to usual devil's trap, but can disable powerful demons"
     bring_the_spirit_to_its_crime_place = "bring the spirit to its crime place - for other ghosts to kill/take it"
@@ -460,6 +482,7 @@ class MonstersDisableMethods:
     gun_shot = "gun shot"
     head_shot = "head shot"
     hit_it_hard_in_the_head = "hit it hard in the head"
+    angel_procedure = "angel procedure"
 
 
 class MonstersCureMethods:

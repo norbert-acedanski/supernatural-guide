@@ -4,6 +4,7 @@
 One of the larger projects of mine at the time of developing.  
 I am a big fan of Supernatural show, and I decided, that a library of monsters/curses/beings/gods/objects/places/events would be nice to have in interactive way.  
 So I decided to go through all seasons of Supernatural and collect information needed and store them here in this project.  
+It is inspired by Charlie's application seen in S08E20, where she has created an app to determine what monster is being hunted.
 
 # Built With
 Python 3.9.10
@@ -39,6 +40,8 @@ If you are a fan of Supernatural show, you can play with this project to find ou
 - add disable methods for objects like sigils (that can be disabled by breaking the integrity of the drawing)
 - fill missing information about each monster, curse, spell, object, event, etc.
 - add information about all unique monsters, that died in the series until S05E19.
+- move `__init__` method not to use `self.`
+- add base class not to duplicate methods
 
 # Licence
 Distributed under the MIT License. See LICENSE file for more information.
