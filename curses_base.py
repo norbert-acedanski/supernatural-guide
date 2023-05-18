@@ -246,7 +246,8 @@ class CursesBase:
                                                               "(cut from Angel's throat). Combined with a spell makes "
                                                               "each angel fall.",
                                                   episodes={"S08": [22, 23]})
-        self.banish_angels_to_earth_spell.clues = [CursesClues.people_dead_weirdly, CursesClues.missing_heart]
+        self.banish_angels_to_earth_spell.clues = [CursesClues.people_dead_weirdly, CursesClues.missing_heart,
+                                                   CursesClues.meteor_shower_over_earth]
 
         # ---------------------------------------------- ALL EPISODES DONE ---------------------------------------------
 

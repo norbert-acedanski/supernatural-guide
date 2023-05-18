@@ -53,6 +53,7 @@ class CursesClues:
     people_appearing_out_of_nowhere = "people appearing out of nowhere"
     killed_hell_hound = "killed Hell hound"
     blood_cough = "blood cough"
+    meteor_shower_over_earth = 'meteor shower over Earth'
 
 
 class CursesDisableMethods:
