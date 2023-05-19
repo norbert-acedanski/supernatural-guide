@@ -75,7 +75,8 @@ class ObjectsBase:
     sigil_against_angels = Object("Sigil against angels", description="Sigil made with blood, that can send angels "
                                                                       "back to heaven. Can be used to send back "
                                                                       "a specific angel type.",
-                                  episodes={"S04": [10, 22], "S05": [13, 18], "S06": [3], "S07": [21]})
+                                  # TODO: Check where else is the sigil used
+                                  episodes={"S04": [10, 22], "S05": [13, 18], "S06": [3], "S07": [21], "S09": [1]})
     sigil_against_angels.abilities = [ObjectAbilities.can_send_angels_back_to_heaven]
 
     angel_grace = Object("Angel grace", description="A power source for an angel", episodes={"S04": [10], "S08": [23]})
@@ -88,12 +89,14 @@ class ObjectsBase:
     reaper_imprison_sigil.abilities = [ObjectAbilities.traps_a_reaper]
 
     angel_protection_sigil = Object("Angel protection sigil", description="Angels can't get past it, when the place is "
-                                                                          "marked with it.", episodes={"S04": [15]})
+                                                                          "marked with it.",
+                                    # TODO: Check where else is the sigil used
+                                    episodes={"S04": [15], "S09": [1]})
     angel_protection_sigil.abilities = [ObjectAbilities.angels_cant_get_past_it]
 
     angel_blade = Object("Angel blade", description="A triangular, silvery blade, that each angel has.",
                          episodes={"S04": [16], "S05": [1, 13, 18], "S06": [3, 10, 17, 18, 22], "S07": [21],
-                                   "S08": [7, 10, 17, 21, 22, 23]})
+                                   "S08": [7, 10, 17, 21, 22, 23], "S09": [1]})
     angel_blade.abilities = [ObjectAbilities.can_kill_angels, ObjectAbilities.can_kill_demons]
 
     lucifers_cage = Object("Lucifer's Cage", description="A prison build specifically to contain archangelic powers "
