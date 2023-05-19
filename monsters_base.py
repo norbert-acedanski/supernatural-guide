@@ -514,9 +514,9 @@ class MonsterBase:
                                          "present and future prophets. When they disobey (fall), as a punishment they "
                                          "can become human. When dying, a bright light is produced and they leave wing "
                                          "marks. To possess somebody, they need a consent. When an angel is tortured, "
-                                         "the pain causes a ripple effect and strange things happen nearby. Castiel "
-                                         "broke the fourth wall in S06E20. Castiel supposedly died in S07E01, "
-                                         "back in S07E17.",
+                                         "the pain causes a ripple effect and strange things happen nearby. When an "
+                                         "angel looses it's Grace - it becomes human. Castiel broke the fourth wall "
+                                         "in S06E20. Castiel supposedly died in S07E01, back in S07E17.",
                     episodes={"S04": [1, 2, 7, 9, 10, 15, 16, 18, 20, 21, 22],
                               "S05": [1, 2, 3, 4, 5, 8, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22],
                               "S06": [3, 6, 7, 10, 12, 15, 17, 18, 19, 20, 21, 22], "S07": [1, 17, 20, 21, 23],
@@ -568,11 +568,16 @@ class MonsterBase:
                      MonstersClues.can_bring_back_dead_people, MonstersClues.can_summon_ghosts]
     samhain.disable_methods = [MonstersDisableMethods.extrusion_by_people_with_abilities]
 
-    fallen_angel = Monster("Fallen angel", description="An angel, that disobeyed the orders and fell to Earth.",
-                           episodes={"S04": [9, 10]})
+    fallen_angel = Monster("Fallen angel", description="An angel, that disobeyed the orders or was cursed by "
+                                                       "spell banishing Angels to Earth and fell. After The Fall in "
+                                                       "S08E23 we have the following fallen angels: Hael, Ezekiel",
+                           episodes={"S04": [9, 10], "S08": [23], "S09": [1]})
     fallen_angel.clues = [MonstersClues.people_hear_voices, MonstersClues.can_see_real_appearance_of_entities,
                           MonstersClues.telekinesis, MonstersClues.people_acting_weirdly, MonstersClues.falling_meteor,
-                          MonstersClues.can_hear_angel_radio, MonstersClues.can_hear_demon_radio]
+                          MonstersClues.can_hear_angel_radio, MonstersClues.can_hear_demon_radio,
+                          MonstersClues.can_repair_human_body, MonstersClues.can_posses_a_person]
+    fallen_angel.disable_methods = [MonstersDisableMethods.holy_oil]
+    fallen_angel.kill_methods = [MonstersKillMethods.angel_blade]
 
     demon_alastair = Monster("Demon Alastair", description="A very powerful demon. Tortures souls in Hell. "
                                                            "Killed in S04E16.",
@@ -751,7 +756,7 @@ class MonsterBase:
                                                          "Can be brought to the Earth at midnight through a place of "
                                                          "awful carnage. Summoned in S05E10 and his actions seen "
                                                          "in S05E15.",
-                           episodes={"S05": [21], "S06": [11], "S07": [1]})
+                           episodes={"S05": [21], "S06": [11], "S07": [1], "S09": [1]})
     reaper_death.clues = [MonstersClues.number_of_reapers_appearing, MonstersClues.can_bring_back_dead_people,
                           MonstersClues.can_kill_people_with_a_thought, MonstersClues.people_dead_weirdly,
                           MonstersClues.can_appear_out_of_thin_air, MonstersClues.can_put_a_soul_back_to_a_body,
@@ -1256,12 +1261,12 @@ class MonsterBase:
                       MonstersClues.weird_weather, MonstersClues.biblical_like_events]
     nephilim.kill_methods = [MonstersKillMethods.angel_blade]
 
-    unknown = Monster("Unknown", description="", episodes={"S08": [23]})
-    unknown.clues = []
-
     # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
 
     # ---------------------------------------------------- SEASON 9 ----------------------------------------------------
+
+    unknown = Monster("Unknown", description="", episodes={"S09": [1]})
+    unknown.clues = []
 
     # ---------------------------------------------------- SEASON 10 ---------------------------------------------------
 
