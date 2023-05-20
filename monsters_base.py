@@ -102,7 +102,7 @@ class MonsterBase:
                     episodes={"S01": [4, 21, 22], "S02": [1, 14], "S03": [1, 2, 4, 12, 15, 16],
                               "S04": [1, 4, 9, 10, 20, 21, 22], "S05": [1, 6, 10, 12, 14, 17, 20, 21, 22],
                               "S06": [7, 10, 18, 20, 21, 22], "S07": [8, 15, 17, 21, 23],
-                              "S08": [1, 2, 7, 10, 17, 19, 21, 22]})
+                              "S08": [1, 2, 7, 10, 17, 19, 21, 22], "S09": [2]})
     demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                    MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                    MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -241,7 +241,7 @@ class MonsterBase:
                                              "bleeding them for days or weeks. One can become a vampire, when drinking "
                                              "vampire blood. Upon changing, all senses sharpen.",
                       episodes={"S01": [20], "S02": [3], "S03": [7], "S05": [3], "S06": [5, 19], "S07": [22],
-                                "S08": [1, 2, 5, 7, 9, 10, 18, 19]})
+                                "S08": [1, 2, 5, 7, 9, 10, 18, 19], "S09": [2]})
     vampire.clues = [MonstersClues.ripped_throat, MonstersClues.no_blood_in_the_body, MonstersClues.needle_like_teeth,
                      MonstersClues.moving_in_groups_usually, MonstersClues.invulnerable, MonstersClues.high_strength,
                      MonstersClues.bright_eyes, MonstersClues.great_sense_of_smell, MonstersClues.white_skin,
@@ -302,7 +302,8 @@ class MonsterBase:
                                                                "One can summon it by placing a box with: graveyard "
                                                                "dirt, black cat cone, ones photo in the center of "
                                                                "a crossroad.",
-                               episodes={"S02": [8, 22], "S04": [9], "S05": [10], "S06": [4], "S07": [8], "S08": [19]})
+                               episodes={"S02": [8, 22], "S04": [9], "S05": [10], "S06": [4], "S07": [8], "S08": [19],
+                                         "S09": [2]})
     crossroads_demon.clues = [MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
                               MonstersClues.red_eyes, MonstersClues.summoned_by_placing_box_in_the_crossroads,
                               MonstersClues.travels_as_black_fog, MonstersClues.pact_sealed_with_a_kiss,
@@ -536,6 +537,7 @@ class MonsterBase:
                    MonstersClues.can_become_invisible, MonstersClues.can_control_demons, MonstersClues.liquefied_organs,
                    MonstersClues.can_erase_and_bring_back_memories, MonstersClues.can_transfer_mental_diseases,
                    MonstersClues.can_go_and_put_into_a_persons_mind, MonstersClues.strange_different_things_happening,
+                   MonstersClues.bright_eyes,
 
                    MonstersClues.travels_as_white_fog]
     angel.disable_methods = [MonstersDisableMethods.symbol_made_with_blood_against_angels,
@@ -571,11 +573,12 @@ class MonsterBase:
     fallen_angel = Monster("Fallen angel", description="An angel, that disobeyed the orders or was cursed by "
                                                        "spell banishing Angels to Earth and fell. After The Fall in "
                                                        "S08E23 we have the following fallen angels: Hael, Ezekiel",
-                           episodes={"S04": [9, 10], "S08": [23], "S09": [1]})
+                           episodes={"S04": [9, 10], "S08": [23], "S09": [1, 2]})
     fallen_angel.clues = [MonstersClues.people_hear_voices, MonstersClues.can_see_real_appearance_of_entities,
                           MonstersClues.telekinesis, MonstersClues.people_acting_weirdly, MonstersClues.falling_meteor,
                           MonstersClues.can_hear_angel_radio, MonstersClues.can_hear_demon_radio,
-                          MonstersClues.can_repair_human_body, MonstersClues.can_posses_a_person]
+                          MonstersClues.can_repair_human_body, MonstersClues.can_posses_a_person,
+                          MonstersClues.bright_eyes, MonstersClues.bright_light]
     fallen_angel.disable_methods = [MonstersDisableMethods.holy_oil]
     fallen_angel.kill_methods = [MonstersKillMethods.angel_blade]
 
@@ -615,7 +618,7 @@ class MonsterBase:
                                                          "people in the world, that can become one if needed. Prophets "
                                                          "throughout the series: Chuck Shurley, Kevin Tran.",
                       episodes={"S04": [18, 22], "S05": [1, 9, 22], "S07": [21, 22, 23],
-                                "S08": [1, 2, 7, 10, 14, 19, 21, 23]})
+                                "S08": [1, 2, 7, 10, 14, 19, 21, 23], "S09": [2]})
     prophet.clues = [MonstersClues.can_see_future, MonstersClues.protected_by_an_archangel, MonstersClues.visions,
                      MonstersClues.can_repair_broken_word_of_god, MonstersClues.can_read_word_of_god,
                      MonstersClues.weird_weather, MonstersClues.missing_or_dead_people_regularly_in_different_areas]
@@ -736,7 +739,7 @@ class MonsterBase:
                                                            "Supposedly died in S06E10, but in S06E19 it is revealed he "
                                                            "was working with Castiel.",
                             episodes={"S05": [10, 20, 21], "S06": [4, 7, 8, 10, 19, 20, 21, 22],
-                                      "S07": [1, 6, 8, 22, 23], "S08": [1, 2, 7, 10, 17, 19, 21, 22, 23]})
+                                      "S07": [1, 6, 8, 22, 23], "S08": [1, 2, 7, 10, 17, 19, 21, 22, 23], "S09": [2]})
     demon_crowley.clues = [MonstersClues.can_vanish, MonstersClues.pact_sealed_with_a_kiss, MonstersClues.telekinesis,
                            MonstersClues.summoned_by_placing_box_in_the_crossroads, MonstersClues.small_earth_quake,
                            MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
@@ -1194,14 +1197,15 @@ class MonsterBase:
                                                            "fallen firstborn demons, thus very pure and strong. "
                                                            "Archangels killed almost all of them. "
                                                            "One of the survivors is Abaddon.",
-                             episodes={"S08": [12, 22, 23]})
+                             episodes={"S08": [12, 22, 23], "S09": [2]})
     knight_of_hell.clues = [MonstersClues.people_dead_weirdly, MonstersClues.bloodshot_eyes, MonstersClues.black_eyes,
                             MonstersClues.immune_to_exorcism, MonstersClues.can_read_peoples_minds,
                             MonstersClues.demon_killing_knife_is_ineffective, MonstersClues.telekinesis,
                             MonstersClues.can_posses_a_person, MonstersClues.weird_electronics_behavior,
-                            MonstersClues.travels_as_black_fog]
+                            MonstersClues.travels_as_black_fog, MonstersClues.high_strength, MonstersClues.can_vanish,
+                            MonstersClues.can_exorcise_certain_demons_with_hand_on_forehead]
     knight_of_hell.disable_methods = [MonstersDisableMethods.demon_killing_knife, MonstersDisableMethods.devils_trap,
-                                      MonstersDisableMethods.holy_oil]
+                                      MonstersDisableMethods.holy_oil, MonstersDisableMethods.holy_water]
     knight_of_hell.kill_methods = [
 
                                    MonstersKillMethods.first_blade]
@@ -1265,7 +1269,7 @@ class MonsterBase:
 
     # ---------------------------------------------------- SEASON 9 ----------------------------------------------------
 
-    unknown = Monster("Unknown", description="", episodes={"S09": [1]})
+    unknown = Monster("Unknown", description="", episodes={"S09": [2]})
     unknown.clues = []
 
     # ---------------------------------------------------- SEASON 10 ---------------------------------------------------
