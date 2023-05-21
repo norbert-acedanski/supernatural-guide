@@ -166,6 +166,7 @@ class MonstersClues:
     burned_marks_on_its_skin = "burned marks on it's skin"
     burned_eyes = "burned eyes"
     liquefied_organs = "liquefied organs"
+    vapourised_organs = "vapourised organs"
     leaves_soulless_people_behind = "leaving soulless people behind"
     leaves_zombie_like_people_with_black_veins_around_neck = "leaves zombie-like people with black veins around neck"
     real_appearance_can_be_seen_in_a_reflection_or_camera = "real appearance can be seen in a reflection or camera"

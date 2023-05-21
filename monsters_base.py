@@ -165,15 +165,17 @@ class MonsterBase:
                                            "people are not dying. Rogue reapers (Ajay for example) can smuggle "
                                            "a person across Hell's border, Heaven and the Veil. They have secret ways "
                                            "in and out.When a reaper dies, there are electrical storms.",
-                     episodes={"S01": [12], "S02": [1], "S04": [15], "S05": [10, 21], "S06": [11], "S07": [10]})
+                     episodes={"S01": [12], "S02": [1], "S04": [15], "S05": [10, 21], "S06": [11], "S07": [10],
+                               "S08": [19], "S09": [3]})
     reaper.clues = [MonstersClues.people_dead_weirdly, MonstersClues.people_cured_miraculously,
                     MonstersClues.weird_things_behavior, MonstersClues.people_seeing_things_or_figures,
                     MonstersClues.seen_as_a_person_in_a_suit, MonstersClues.ghost_like_creature,
                     MonstersClues.visible_by_other_ghosts_and_people_close_to_death_only, MonstersClues.can_vanish,
                     MonstersClues.can_make_themselves_appear_as_they_like, MonstersClues.people_not_dying,
                     MonstersClues.strange_different_things_happening, MonstersClues.invisible_entity,
-                    MonstersClues.electrical_storms, MonstersClues.can_appear_out_of_thin_air]
-    reaper.disable_methods = [MonstersDisableMethods.reaper_imprison_sigil]
+                    MonstersClues.electrical_storms, MonstersClues.can_appear_out_of_thin_air,
+                    MonstersClues.bright_light]
+    reaper.disable_methods = [MonstersDisableMethods.reaper_imprison_sigil, MonstersDisableMethods.angel_blade]
     reaper.kill_methods = [MonstersKillMethods.reaper_blade_combined_with_a_spell, MonstersKillMethods.angel_blade]
 
     people_with_abilities = Monster("People with abilities", description="People, that were infants, when prince of "
@@ -514,7 +516,8 @@ class MonsterBase:
                                          "source for their power. All angels instinctively know the names of past, "
                                          "present and future prophets. When they disobey (fall), as a punishment they "
                                          "can become human. When dying, a bright light is produced and they leave wing "
-                                         "marks. To possess somebody, they need a consent. When an angel is tortured, "
+                                         "marks. Also the organs of the vessel, they are possessing are vapourised. "
+                                         "To possess somebody, they need a consent. When an angel is tortured, "
                                          "the pain causes a ripple effect and strange things happen nearby. When an "
                                          "angel looses it's Grace - it becomes human. Castiel broke the fourth wall "
                                          "in S06E20. Castiel supposedly died in S07E01, back in S07E17.",
@@ -537,7 +540,7 @@ class MonsterBase:
                    MonstersClues.can_become_invisible, MonstersClues.can_control_demons, MonstersClues.liquefied_organs,
                    MonstersClues.can_erase_and_bring_back_memories, MonstersClues.can_transfer_mental_diseases,
                    MonstersClues.can_go_and_put_into_a_persons_mind, MonstersClues.strange_different_things_happening,
-                   MonstersClues.bright_eyes,
+                   MonstersClues.bright_eyes, MonstersClues.vapourised_organs,
 
                    MonstersClues.travels_as_white_fog]
     angel.disable_methods = [MonstersDisableMethods.symbol_made_with_blood_against_angels,
@@ -571,14 +574,18 @@ class MonsterBase:
     samhain.disable_methods = [MonstersDisableMethods.extrusion_by_people_with_abilities]
 
     fallen_angel = Monster("Fallen angel", description="An angel, that disobeyed the orders or was cursed by "
-                                                       "spell banishing Angels to Earth and fell. After The Fall in "
-                                                       "S08E23 we have the following fallen angels: Hael, Ezekiel",
-                           episodes={"S04": [9, 10], "S08": [23], "S09": [1, 2]})
+                                                       "spell banishing Angels to Earth and fell. Like Angels - when "
+                                                       "killed, the organs of the vessel are vapourised. "
+                                                       "After The Fall in S08E23 we have the following fallen "
+                                                       "angels: Hael, Ezekiel, Bartholomew.",
+                           episodes={"S04": [9, 10], "S08": [23], "S09": [1, 2, 3]})
     fallen_angel.clues = [MonstersClues.people_hear_voices, MonstersClues.can_see_real_appearance_of_entities,
                           MonstersClues.telekinesis, MonstersClues.people_acting_weirdly, MonstersClues.falling_meteor,
                           MonstersClues.can_hear_angel_radio, MonstersClues.can_hear_demon_radio,
                           MonstersClues.can_repair_human_body, MonstersClues.can_posses_a_person,
-                          MonstersClues.bright_eyes, MonstersClues.bright_light]
+                          MonstersClues.bright_eyes, MonstersClues.bright_light, MonstersClues.people_dead_weirdly,
+                          MonstersClues.burned_eyes, MonstersClues.travels_as_white_fog, MonstersClues.body_torn_apart,
+                          MonstersClues.blue_eyes, MonstersClues.vapourised_organs]
     fallen_angel.disable_methods = [MonstersDisableMethods.holy_oil]
     fallen_angel.kill_methods = [MonstersKillMethods.angel_blade]
 
@@ -1269,7 +1276,7 @@ class MonsterBase:
 
     # ---------------------------------------------------- SEASON 9 ----------------------------------------------------
 
-    unknown = Monster("Unknown", description="", episodes={"S09": [2]})
+    unknown = Monster("Unknown", description="", episodes={"S09": [3]})
     unknown.clues = []
 
     # ---------------------------------------------------- SEASON 10 ---------------------------------------------------
