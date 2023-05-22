@@ -11,3 +11,4 @@ class OrganizationKnowledge:
     demonic_possessions = "demonic possessions"
     monitoring_of_apocalyptic_events = "monitoring of apocalyptic events (like Angels falling from Heaven)"
     oz = "oz"
+    inuit_magic = "inuit magic"
