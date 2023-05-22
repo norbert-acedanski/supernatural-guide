@@ -1122,7 +1122,8 @@ class MonsterBase:
     vetala.clues = [MonstersClues.cat_eyes, MonstersClues.blue_eyes, MonstersClues.needle_like_teeth,
                     MonstersClues.no_blood_in_the_body, MonstersClues.animal_like_attack, MonstersClues.high_strength,
                     MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
-                    MonstersClues.ear_ringing]
+                    MonstersClues.ear_ringing, MonstersClues.people_dead_weirdly, MonstersClues.no_hex_bags,
+                    MonstersClues.bite_marks_on_peoples_necks]
     vetala.disable_methods = [MonstersDisableMethods.hit_it_hard_in_the_head]
     vetala.kill_methods = [MonstersKillMethods.silver_blade]
 
@@ -1295,8 +1296,8 @@ class MonsterBase:
                                     MonstersDisableMethods.bullets_with_poppy_extract]
     wicked_witch.kill_methods = [MonstersKillMethods.magic_red_high_heels]
 
-    unknown = Monster("Unknown", description="", episodes={"S09": [4]})
-    unknown.clues = [MonstersClues.grey_goo]
+    unknown = Monster("Unknown", description="", episodes={"S09": [5]})
+    unknown.clues = []
 
     # ---------------------------------------------------- SEASON 10 ---------------------------------------------------
 
