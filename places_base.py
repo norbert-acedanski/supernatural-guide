@@ -41,6 +41,12 @@ class PlacesBase:
     purgatory.clues = [PlaceClues.dark_place, PlaceClues.monsters_nearby,
                        PlaceClues.when_a_person_comes_back_from_it_a_bright_light_appears]
 
+    oz = Place("Oz", description="A magical land, where Dorothy was as a child. You can enter Oz in different ways, "
+                                 "like tornado, yey of a hurricane, a whirlpool, but there is a key to Oz. Inserted "
+                                 "into any door - it opens a portal to Oz (a golden path). When used with a proper "
+                                 "spell - it can open door to any place in Oz.", episodes={"S09": [4]})
+    oz.clues = [PlaceClues.castle_structure_on_a_hill, PlaceClues.golden_path, PlaceClues.emerald_city]
+
     def __init__(self):
         self.places = [place for place in self.__class__.__dict__.values() if isinstance(place, Place)]
         self.clues = [clue for key, clue in list(PlaceClues.__dict__.items()) if not key.startswith("__")]

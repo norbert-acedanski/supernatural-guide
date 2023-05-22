@@ -15,3 +15,6 @@ class PlaceClues:
     monsters_nearby = "monsters nearby"
     when_a_person_comes_back_from_it_a_bright_light_appears = "when a person comes back from it a bright light appears"
     screaming_people = "screaming people"
+    castle_structure_on_a_hill = "castle structure on a hill"
+    golden_path = "golden path"
+    emerald_city = "emerald city"
