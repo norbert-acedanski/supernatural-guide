@@ -578,14 +578,15 @@ class MonsterBase:
                                                        "killed, the organs of the vessel are vapourised. "
                                                        "After The Fall in S08E23 we have the following fallen "
                                                        "angels: Hael, Ezekiel, Bartholomew.",
-                           episodes={"S04": [9, 10], "S08": [23], "S09": [1, 2, 3]})
+                           episodes={"S04": [9, 10], "S08": [23], "S09": [1, 2, 3, 4]})
     fallen_angel.clues = [MonstersClues.people_hear_voices, MonstersClues.can_see_real_appearance_of_entities,
                           MonstersClues.telekinesis, MonstersClues.people_acting_weirdly, MonstersClues.falling_meteor,
                           MonstersClues.can_hear_angel_radio, MonstersClues.can_hear_demon_radio,
                           MonstersClues.can_repair_human_body, MonstersClues.can_posses_a_person,
                           MonstersClues.bright_eyes, MonstersClues.bright_light, MonstersClues.people_dead_weirdly,
                           MonstersClues.burned_eyes, MonstersClues.travels_as_white_fog, MonstersClues.body_torn_apart,
-                          MonstersClues.blue_eyes, MonstersClues.vapourised_organs]
+                          MonstersClues.vapourised_organs, MonstersClues.can_bring_back_dead_people,
+                          MonstersClues.blue_eyes]
     fallen_angel.disable_methods = [MonstersDisableMethods.holy_oil]
     fallen_angel.kill_methods = [MonstersKillMethods.angel_blade]
 
@@ -746,7 +747,8 @@ class MonsterBase:
                                                            "Supposedly died in S06E10, but in S06E19 it is revealed he "
                                                            "was working with Castiel.",
                             episodes={"S05": [10, 20, 21], "S06": [4, 7, 8, 10, 19, 20, 21, 22],
-                                      "S07": [1, 6, 8, 22, 23], "S08": [1, 2, 7, 10, 17, 19, 21, 22, 23], "S09": [2]})
+                                      "S07": [1, 6, 8, 22, 23], "S08": [1, 2, 7, 10, 17, 19, 21, 22, 23],
+                                      "S09": [2, 4]})
     demon_crowley.clues = [MonstersClues.can_vanish, MonstersClues.pact_sealed_with_a_kiss, MonstersClues.telekinesis,
                            MonstersClues.summoned_by_placing_box_in_the_crossroads, MonstersClues.small_earth_quake,
                            MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
@@ -1276,18 +1278,31 @@ class MonsterBase:
 
     # ---------------------------------------------------- SEASON 9 ----------------------------------------------------
 
-    unknown = Monster("Unknown", description="", episodes={"S09": [3]})
-    unknown.clues = []
+    wicked_witch = Monster("Wicked Witch", description="Wicked witch from Oz. She can control other people by placing "
+                                                       "a hand on their forehead. Then a person's eyes turn intense "
+                                                       "green color for a moment and they talk in very monstrous "
+                                                       "voice. Her eyes can turn green occasionally too. She can kill "
+                                                       "another person with green lightning. One encountered in "
+                                                       "1935/1936 in Man of Letters compound in Lebanon, Kansas. "
+                                                       "Killed in S09E04.",
+                           episodes={"S09": [4]})
+    wicked_witch.clues = [MonstersClues.grey_goo, MonstersClues.holy_water_does_not_affect_it, MonstersClues.green_eyes,
+                          MonstersClues.burning_does_not_affect_it, MonstersClues.decapitation_does_not_affect_it,
+                          MonstersClues.invulnerable, MonstersClues.travels_as_black_green_fog,
+                          MonstersClues.green_blood, MonstersClues.high_strength,
+                          MonstersClues.can_appear_out_of_thin_air, MonstersClues.seen_as_an_old_lady]
+    wicked_witch.disable_methods = [MonstersDisableMethods.devils_trap,
+                                    MonstersDisableMethods.bullets_with_poppy_extract]
+    wicked_witch.kill_methods = [MonstersKillMethods.magic_red_high_heels]
+
+    unknown = Monster("Unknown", description="", episodes={"S09": [4]})
+    unknown.clues = [MonstersClues.grey_goo]
 
     # ---------------------------------------------------- SEASON 10 ---------------------------------------------------
 
     angel_watcher = Monster("Angel Watcher - Grigori")
     angel_watcher.clues = [MonstersClues.triangle_wound_with_burns]
     angel_watcher.kill_methods = [MonstersKillMethods.angel_sword]
-
-    witch_from_ozz = Monster("Witch from Ozz")
-    witch_from_ozz.clues = [MonstersClues.travels_as_black_green_fog]
-    witch_from_ozz.kill_methods = [MonstersKillMethods.magic_red_high_heels]
 
     # -------------------------------------------------- SEASON 11 -------------------------------------------------
 
