@@ -230,7 +230,24 @@ class CursesBase:
 
     # SEASON 9:
 
+    animal_characteristics_copy_spell = Curse("Animal characteristics copy spell",
+                                              description="A spell, that allows a person to gain characteristics of "
+                                                          "animals - like speed, strength, camouflage, etc. In order "
+                                                          "to do that, a part of the animal has to be eaten and "
+                                                          "a proper spell has to be spoken. It wears off depending on "
+                                                          "the combined ingredients.", episodes={"S09": [5]})
+    animal_characteristics_copy_spell.clues = [CursesClues.double_tongue, CursesClues.people_dead_weirdly,
+                                               CursesClues.high_strength, CursesClues.no_hex_bags, CursesClues.claws,
+                                               CursesClues.venom_necrosis, CursesClues.eats_whole_animals,
+                                               CursesClues.no_bite_marks_on_peoples_necks, CursesClues.cat_eyes]
 
+    inuit_animal_speaking_spell = Curse("Inuit animal speaking spell", description="Allows a person to hear animals "
+                                                                                   "speaking and talking to them. "
+                                                                                   "It is combined with a drink, then "
+                                                                                   "there is a spell to say. It wears "
+                                                                                   "off in couple of hours.",
+                                        episodes={"S09": [5]})
+    inuit_animal_speaking_spell.clues = [CursesClues.animal_like_behavior_of_a_person]
 
     # SEASON 10:
 
