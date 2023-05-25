@@ -221,8 +221,9 @@ class CursesBase:
                                                      "First thing is to cut the heart of a Nephilim. "
                                                      "Second is to retrieve Cupid's bow. "
                                                      "The third one is an angelic grace (cut from Angel's throat). "
-                                                     "Combined with a spell makes each angel fall.",
-                                         episodes={"S08": [22, 23]})
+                                                     "Mixed until smoke rises from the ashes making each angel fall. "
+                                                     "It's irreversible.",
+                                         episodes={"S08": [22, 23], "S09": [6]})
     banish_angels_to_earth_spell.clues = [CursesClues.people_dead_weirdly, CursesClues.missing_heart,
                                           CursesClues.meteor_shower_over_earth]
 
