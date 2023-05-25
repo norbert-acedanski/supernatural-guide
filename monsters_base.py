@@ -626,7 +626,7 @@ class MonsterBase:
                                                          "people in the world, that can become one if needed. Prophets "
                                                          "throughout the series: Chuck Shurley, Kevin Tran.",
                       episodes={"S04": [18, 22], "S05": [1, 9, 22], "S07": [21, 22, 23],
-                                "S08": [1, 2, 7, 10, 14, 19, 21, 23], "S09": [2]})
+                                "S08": [1, 2, 7, 10, 14, 19, 21, 23], "S09": [2, 6]})
     prophet.clues = [MonstersClues.can_see_future, MonstersClues.protected_by_an_archangel, MonstersClues.visions,
                      MonstersClues.can_repair_broken_word_of_god, MonstersClues.can_read_word_of_god,
                      MonstersClues.weird_weather, MonstersClues.missing_or_dead_people_regularly_in_different_areas]
@@ -748,7 +748,7 @@ class MonsterBase:
                                                            "was working with Castiel.",
                             episodes={"S05": [10, 20, 21], "S06": [4, 7, 8, 10, 19, 20, 21, 22],
                                       "S07": [1, 6, 8, 22, 23], "S08": [1, 2, 7, 10, 17, 19, 21, 22, 23],
-                                      "S09": [2, 4]})
+                                      "S09": [2, 4, 6]})
     demon_crowley.clues = [MonstersClues.can_vanish, MonstersClues.pact_sealed_with_a_kiss, MonstersClues.telekinesis,
                            MonstersClues.summoned_by_placing_box_in_the_crossroads, MonstersClues.small_earth_quake,
                            MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
@@ -1207,7 +1207,7 @@ class MonsterBase:
                                                            "fallen firstborn demons, thus very pure and strong. "
                                                            "Archangels killed almost all of them. "
                                                            "One of the survivors is Abaddon.",
-                             episodes={"S08": [12, 22, 23], "S09": [2]})
+                             episodes={"S08": [12, 22, 23], "S09": [2, 6]})
     knight_of_hell.clues = [MonstersClues.people_dead_weirdly, MonstersClues.bloodshot_eyes, MonstersClues.black_eyes,
                             MonstersClues.immune_to_exorcism, MonstersClues.can_read_peoples_minds,
                             MonstersClues.demon_killing_knife_is_ineffective, MonstersClues.telekinesis,
@@ -1224,7 +1224,7 @@ class MonsterBase:
                                          "undead. To kill it you have to break it's neck or shoot it in the head and "
                                          "burn the body within 12h.", episodes={"S08": [13]})
     thule.clues = [MonstersClues.weird_fire_spontaneous_combustion, MonstersClues.people_dead_weirdly,
-                   MonstersClues.immortal, MonstersClues.invulnerable]
+                   MonstersClues.immortal, MonstersClues.invulnerable, MonstersClues.burned_people]
     thule.kill_methods = [MonstersKillMethods.break_the_neck, MonstersKillMethods.head_shot,
                           MonstersKillMethods.burn_it]
 
@@ -1296,8 +1296,26 @@ class MonsterBase:
                                     MonstersDisableMethods.bullets_with_poppy_extract]
     wicked_witch.kill_methods = [MonstersKillMethods.magic_red_high_heels]
 
-    unknown = Monster("Unknown", description="", episodes={"S09": [5]})
-    unknown.clues = []
+    rit_zien_angel = Monster("Rit Zien Angel", description="A special class of an angel. Rit Zien in Enochian stands "
+                                                           "for 'Hands pf Mercy'. They function like medics. They "
+                                                           "healed those, who could be healed, but for the mortally "
+                                                           "wounded, their job was to destroy them. Their special "
+                                                           "ability is to completely vapourise an entity quickly and "
+                                                           "totally. They home in on pain. One encountered Rit Zien "
+                                                           "Angel is Ephraim (killed in S09E05)", episodes={"S09": [6]})
+    rit_zien_angel.clues = [MonstersClues.purple_pink_light, MonstersClues.people_dead_weirdly, MonstersClues.no_emf,
+                            MonstersClues.missing_or_dead_people_regularly_in_the_same_area, MonstersClues.no_sulfur,
+                            MonstersClues.no_hex_bags, MonstersClues.vapourised_body, MonstersClues.not_burned_people,
+                            MonstersClues.can_appear_out_of_thin_air, MonstersClues.telekinesis,
+                            MonstersClues.bright_light]
+    rit_zien_angel.disable_methods = [MonstersDisableMethods.symbol_made_with_blood_against_angels]
+    rit_zien_angel.kill_methods = [MonstersKillMethods.angel_blade]
+
+    unknown = Monster("Unknown", description="", episodes={"S09": [6]})
+    unknown.clues = [MonstersClues.purple_pink_light, MonstersClues.people_dead_weirdly, MonstersClues.no_emf,
+                     MonstersClues.missing_or_dead_people_regularly_in_the_same_area, MonstersClues.no_sulfur,
+                     MonstersClues.no_hex_bags, MonstersClues.vapourised_body, MonstersClues.not_burned_people,
+                     MonstersClues.can_appear_out_of_thin_air]
 
     # ---------------------------------------------------- SEASON 10 ---------------------------------------------------
 
