@@ -41,7 +41,7 @@ class MonsterBase:
                                           "by a special spell (has to be cast over an open fire).",
                               episodes={"S01": [1, 3, 5, 7, 9, 10, 13, 19], "S02": [6, 11, 16, 18, 19],
                                         "S03": [5, 6, 13], "S04": [2, 13, 15, 17], "S05": [9, 11], "S06": [4, 14],
-                                        "S07": [7, 10, 13, 17, 19]})
+                                        "S07": [7, 10, 13, 17, 19], "S09": [7]})
     vengeful_spirit.clues = [MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                              MonstersClues.people_dead_weirdly, MonstersClues.ghost_like_creature,
                              MonstersClues.weird_electronics_behavior, MonstersClues.weird_things_behavior,
@@ -1311,11 +1311,10 @@ class MonsterBase:
     rit_zien_angel.disable_methods = [MonstersDisableMethods.symbol_made_with_blood_against_angels]
     rit_zien_angel.kill_methods = [MonstersKillMethods.angel_blade]
 
-    unknown = Monster("Unknown", description="", episodes={"S09": [6]})
-    unknown.clues = [MonstersClues.purple_pink_light, MonstersClues.people_dead_weirdly, MonstersClues.no_emf,
-                     MonstersClues.missing_or_dead_people_regularly_in_the_same_area, MonstersClues.no_sulfur,
-                     MonstersClues.no_hex_bags, MonstersClues.vapourised_body, MonstersClues.not_burned_people,
-                     MonstersClues.can_appear_out_of_thin_air]
+    unknown = Monster("Unknown", description="", episodes={"S09": [7]})
+    unknown.clues = [MonstersClues.cold_spots, MonstersClues.weird_electronics_behavior, MonstersClues.flashing_lights,
+                     MonstersClues.weird_things_behavior, MonstersClues.people_dead_weirdly, MonstersClues.weird_noises,
+                     MonstersClues.emf, MonstersClues.high_strength]
 
     # ---------------------------------------------------- SEASON 10 ---------------------------------------------------
 
