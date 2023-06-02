@@ -1311,10 +1311,23 @@ class MonsterBase:
     rit_zien_angel.disable_methods = [MonstersDisableMethods.symbol_made_with_blood_against_angels]
     rit_zien_angel.kill_methods = [MonstersKillMethods.angel_blade]
 
-    unknown = Monster("Unknown", description="", episodes={"S09": [7]})
-    unknown.clues = [MonstersClues.cold_spots, MonstersClues.weird_electronics_behavior, MonstersClues.flashing_lights,
-                     MonstersClues.weird_things_behavior, MonstersClues.people_dead_weirdly, MonstersClues.weird_noises,
-                     MonstersClues.emf, MonstersClues.high_strength]
+    vesta = Monster("Vesta", description="Roman goddess of the hearth. In ancient Rome, six virgins were dedicated "
+                                         "to here every year. Their main duty was to tend Vesta's hearth. As long as "
+                                         "Vesta's fire was kept lit, Rome received a good harvest. The virgins had to "
+                                         "stay celibate for 30 years. If they broke their vows, they were buried "
+                                         "alive. Vesta was often enveloped in a blue halo of light, which she could "
+                                         "control at will to disorient, to maim or to kill.", episodes={"S09": [8]})
+    vesta.clues = [MonstersClues.high_strength, MonstersClues.can_create_fire_large_temperatures,
+                   MonstersClues.missing_or_dead_people_regularly_in_the_same_area, MonstersClues.bright_light,
+                   MonstersClues.no_white_bright_light, MonstersClues.missing_attacked_broken_virgin_women_or_man,
+                   MonstersClues.can_teleport_people, MonstersClues.can_put_a_person_to_sleep]
+    vesta.kill_methods = [MonstersKillMethods.stake_made_from_oak_stained_in_virgin_blood]
+
+    unknown = Monster("Unknown", description="", episodes={"S09": [8]})
+    unknown.clues = [MonstersClues.high_strength, MonstersClues.can_create_fire_large_temperatures,
+                     MonstersClues.missing_or_dead_people_regularly_in_the_same_area, MonstersClues.bright_light,
+                     MonstersClues.no_white_bright_light, MonstersClues.missing_attacked_broken_virgin_women_or_man,
+                     MonstersClues.can_teleport_people, MonstersClues.can_put_a_person_to_sleep]
 
     # ---------------------------------------------------- SEASON 10 ---------------------------------------------------
 

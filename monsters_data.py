@@ -87,6 +87,7 @@ class MonstersClues:
     missing_babies = "missing babies"
     missing_part_of_the_brain = "missing part of the brain"
     missing_attacked_virgin_women = "missing attacked virgin women"
+    missing_attacked_broken_virgin_women_or_man = "missing attacked broken virgin women or man"
     no_missing_heart = "no missing heart"
     murders_during_full_moon_week = "murders during full moon week"
     murders_not_during_full_moon_week = "murders not during full moon week"
@@ -316,6 +317,7 @@ class MonstersClues:
     lack_of_body_control = "lack of body control"
     protected_by_an_archangel = "protected by an archangel"
     bright_light = "bright light"
+    no_white_bright_light = "no white bright light"
     red_light = "red light"
     purple_pink_light = "purple/pink light"
     lightnings = "lightnings"
@@ -412,6 +414,7 @@ class MonstersKillMethods:
     stake_made_from_cypress_tree_in_babylon = "stake made from a cypress tree in Babylon"
     stake_made_from_unknown_wood = "stake made from unknown wood"
     stake_made_from_a_tree_struck_by_lightning = "stake made from a tree struck by lightning"
+    stake_made_from_oak_stained_in_virgin_blood = "stake made from oak stained in virgin bloodd"
     mix_of_salt_and_rosemary_thrown_it_and_burned = "mix of salt and rosemary thrown it and burned"
     stab_it_seven_times_with_bamboo_dagger_blessed_by_shinto_priest = \
         "stab it seven times with bamboo dagger blessed by shinto priest"
