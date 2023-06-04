@@ -96,7 +96,7 @@ class ObjectsBase:
 
     angel_blade = Object("Angel blade", description="A triangular, silvery blade, that each angel has.",
                          episodes={"S04": [16], "S05": [1, 13, 18], "S06": [3, 10, 17, 18, 22], "S07": [21],
-                                   "S08": [7, 10, 17, 21, 22, 23], "S09": [1, 2, 3, 6]})
+                                   "S08": [7, 10, 17, 21, 22, 23], "S09": [1, 2, 3, 6, 9]})
     angel_blade.abilities = [ObjectAbilities.can_kill_angels, ObjectAbilities.can_kill_demons]
 
     lucifers_cage = Object("Lucifer's Cage", description="A prison build specifically to contain archangelic powers "
@@ -207,7 +207,7 @@ class ObjectsBase:
                                                     "Third tablet (inscribed in angel core and stashed in stone form "
                                                     "by Lucyfer) has information about Angels and how to make "
                                                     "them fall. Found in Lucyfer crypt in S08E17.",
-                         episodes={"S07": [21], "S08": [1, 2, 10, 17, 21, 23]})
+                         episodes={"S07": [21], "S08": [1, 2, 10, 17, 21, 23], "S09": [9]})
     word_of_god.abilities = [ObjectAbilities.can_cause_storms, ObjectAbilities.can_cause_women_to_go_to_labour,
                              ObjectAbilities.when_opened_causes_a_person_to_become_a_prophet]
 
@@ -226,6 +226,13 @@ class ObjectsBase:
     # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
 
     # SEASON 9:
+
+    possessing_angel_weakening_sigil = Object("Possessing Angel weakening sigil",
+                                              description="A Sigil, that allows to temporarily hobble an angel, that "
+                                                          "possesses a human - leaving him no control over the vessel. "
+                                                          "When altered - does not work as it should.",
+                                              episodes={"S09": [9]})
+    possessing_angel_weakening_sigil.abilities = [ObjectAbilities.can_temporarily_weaken_a_possessing_angel]
 
     # SEASON 10:
 
