@@ -219,6 +219,7 @@ class MonstersClues:
     can_posses_a_reaper = "can posses a reaper"
     can_posses_an_angel = "can posses an angel"
     can_posses_a_person = "can posses a person"
+    can_posses_a_person_possessed_by_an_angel = "can posses a person possessed by an angel"
     can_take_form_of_other_people = "can take form of other people"
     can_copy_memories_of_other_people = "can copy memories of other people"
     can_read_peoples_minds = "can read peoples minds"

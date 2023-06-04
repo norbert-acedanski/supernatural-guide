@@ -102,7 +102,7 @@ class MonsterBase:
                     episodes={"S01": [4, 21, 22], "S02": [1, 14], "S03": [1, 2, 4, 12, 15, 16],
                               "S04": [1, 4, 9, 10, 20, 21, 22], "S05": [1, 6, 10, 12, 14, 17, 20, 21, 22],
                               "S06": [7, 10, 18, 20, 21, 22], "S07": [8, 15, 17, 21, 23],
-                              "S08": [1, 2, 7, 10, 17, 19, 21, 22], "S09": [2]})
+                              "S08": [1, 2, 7, 10, 17, 19, 21, 22], "S09": [2, 10]})
     demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                    MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                    MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -511,21 +511,21 @@ class MonsterBase:
     # ---------------------------------------------------- SEASON 4 ----------------------------------------------------
 
     angel = Monster("Angel", description="Angel of God (Castiel, Uriel, Hester, Inias, Samandriel, Ion, Nathaniel, "
-                                         "Naomi). They can bring people back from the dead. Cannot track people, that "
-                                         "use powerful spells to hide themselves. All angels have graces - energy "
-                                         "source for their power. All angels instinctively know the names of past, "
-                                         "present and future prophets. When they disobey (fall), as a punishment they "
-                                         "can become human. When dying, a bright light is produced and they leave wing "
-                                         "marks. Also the organs of the vessel, they are possessing are vapourised. "
-                                         "To possess somebody, they need a consent. When an angel is tortured, "
-                                         "the pain causes a ripple effect and strange things happen nearby. When an "
-                                         "angel looses it's Grace - it becomes human. An Angel without a Grace can "
-                                         "injest another Angel's/Fallen Angel's Grace. Castiel broke the fourth wall "
-                                         "in S06E20. Castiel supposedly died in S07E01, back in S07E17.",
+                                         "Naomi). They can bring people back from the dead. Cannot track "
+                                         "people, that use powerful spells to hide themselves. All angels have graces "
+                                         "- energy source for their power. All angels instinctively know the names of "
+                                         "past, present and future prophets. When they disobey (fall), as a punishment "
+                                         "they can become human. When dying, a bright light is produced and they leave "
+                                         "wing marks. Also the organs of the vessel, they are possessing are "
+                                         "vapourised. To possess somebody, they need a consent. When an angel is "
+                                         "tortured, the pain causes a ripple effect and strange things happen nearby. "
+                                         "When an angel looses it's Grace - it becomes human. An Angel without a Grace "
+                                         "can intake another Angel's/Fallen Angel's Grace. Castiel broke the fourth "
+                                         "wall in S06E20. Castiel supposedly died in S07E01, back in S07E17.",
                     episodes={"S04": [1, 2, 7, 9, 10, 15, 16, 18, 20, 21, 22],
                               "S05": [1, 2, 3, 4, 5, 8, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22],
                               "S06": [3, 6, 7, 10, 12, 15, 17, 18, 19, 20, 21, 22], "S07": [1, 17, 20, 21, 23],
-                              "S08": [2, 7, 8, 10, 17, 19, 21, 22, 23], "S09": [9]})
+                              "S08": [2, 7, 8, 10, 17, 19, 21, 22, 23], "S09": [9, 10]})
     angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                    MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion, MonstersClues.has_wings,
                    MonstersClues.leaves_burned_marks, MonstersClues.weird_electronics_behavior,
@@ -577,8 +577,9 @@ class MonsterBase:
                                                        "killed, the organs of the vessel are vapourised. "
                                                        "After The Fall in S08E23 we have the following fallen "
                                                        "angels: Hael, Ezekiel, Bartholomew, Malachi, Gadreel, Muriel, "
-                                                       "Azrael, Sophia, Theo.",
-                           episodes={"S04": [9, 10], "S08": [23], "S09": [1, 2, 3, 4, 5, 8, 9]})
+                                                       "Azrael, Sophia, Theo, Thaddeus, Abner. Gadreel was the Angel, "
+                                                       "that let Lucifer into the Garden of Eden.",
+                           episodes={"S04": [9, 10], "S08": [23], "S09": [1, 2, 3, 4, 5, 8, 9, 10]})
     fallen_angel.clues = [MonstersClues.people_hear_voices, MonstersClues.can_see_real_appearance_of_entities,
                           MonstersClues.telekinesis, MonstersClues.people_acting_weirdly, MonstersClues.falling_meteor,
                           MonstersClues.can_hear_angel_radio, MonstersClues.can_hear_demon_radio,
@@ -588,7 +589,9 @@ class MonsterBase:
                           MonstersClues.vapourised_organs, MonstersClues.can_bring_back_dead_people,
                           MonstersClues.blue_eyes, MonstersClues.leaves_burned_marks, MonstersClues.triangle_wound,
                           MonstersClues.people_acting_weirdly, MonstersClues.travels_as_white_fog,
-                          MonstersClues.can_kill_humans_with_hand_on_forehead, MonstersClues.burned_eyes]
+                          MonstersClues.can_kill_humans_with_hand_on_forehead, MonstersClues.burned_eyes,
+                          MonstersClues.can_put_a_person_to_sleep, MonstersClues.weird_electronics_behavior,
+                          MonstersClues.flashing_lights, MonstersClues.weird_things_behavior]
     fallen_angel.disable_methods = [MonstersDisableMethods.holy_oil]
     fallen_angel.kill_methods = [MonstersKillMethods.angel_blade]
 
@@ -752,7 +755,7 @@ class MonsterBase:
                                                            "was working with Castiel.",
                             episodes={"S05": [10, 20, 21], "S06": [4, 7, 8, 10, 19, 20, 21, 22],
                                       "S07": [1, 6, 8, 22, 23], "S08": [1, 2, 7, 10, 17, 19, 21, 22, 23],
-                                      "S09": [2, 4, 6]})
+                                      "S09": [2, 4, 6, 10]})
     demon_crowley.clues = [MonstersClues.can_vanish, MonstersClues.pact_sealed_with_a_kiss, MonstersClues.telekinesis,
                            MonstersClues.summoned_by_placing_box_in_the_crossroads, MonstersClues.small_earth_quake,
                            MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
@@ -761,8 +764,8 @@ class MonsterBase:
                            MonstersClues.can_bring_back_dead_people, MonstersClues.can_give_people_diseases,
                            MonstersClues.cannot_be_exorcised_by_an_angel_with_hand_on_forehead_when_protected_by_an_archangel,
                            MonstersClues.can_create_fire_large_temperatures, MonstersClues.travels_as_red_fog,
-                           MonstersClues.red_eyes, MonstersClues.burned_by_holy_water,
-                           MonstersClues.can_give_hallucinations,
+                           MonstersClues.red_eyes, MonstersClues.can_posses_a_person_possessed_by_an_angel,
+                           MonstersClues.can_give_hallucinations, MonstersClues.burned_by_holy_water,
 
                            MonstersClues.black_blood]
     demon_crowley.disable_methods = [MonstersDisableMethods.devils_trap, MonstersDisableMethods.holy_water,
@@ -1211,13 +1214,13 @@ class MonsterBase:
                                                            "fallen firstborn demons, thus very pure and strong. "
                                                            "Archangels killed almost all of them. "
                                                            "One of the survivors is Abaddon.",
-                             episodes={"S08": [12, 22, 23], "S09": [2, 6]})
+                             episodes={"S08": [12, 22, 23], "S09": [2, 6, 10]})
     knight_of_hell.clues = [MonstersClues.people_dead_weirdly, MonstersClues.bloodshot_eyes, MonstersClues.black_eyes,
                             MonstersClues.immune_to_exorcism, MonstersClues.can_read_peoples_minds,
                             MonstersClues.demon_killing_knife_is_ineffective, MonstersClues.telekinesis,
                             MonstersClues.can_posses_a_person, MonstersClues.weird_electronics_behavior,
                             MonstersClues.travels_as_black_fog, MonstersClues.high_strength, MonstersClues.can_vanish,
-                            MonstersClues.can_exorcise_certain_demons_with_hand_on_forehead]
+                            MonstersClues.can_exorcise_certain_demons_with_hand_on_forehead, MonstersClues.immortal]
     knight_of_hell.disable_methods = [MonstersDisableMethods.demon_killing_knife, MonstersDisableMethods.devils_trap,
                                       MonstersDisableMethods.holy_oil, MonstersDisableMethods.holy_water]
     knight_of_hell.kill_methods = [
@@ -1266,7 +1269,7 @@ class MonsterBase:
                          MonstersKillMethods.the_arrow_of_artemis]
 
     angel_metatron = Monster("Angel Metatron", description="Scribe of GOD. One of the angels.",
-                             episodes={"S08": [21, 22, 23], "S09": [9]})
+                             episodes={"S08": [21, 22, 23], "S09": [9, 10]})
     angel_metatron.clues = [MonstersClues.immortal, MonstersClues.can_vanish, MonstersClues.can_teleport_people,
                             MonstersClues.can_erase_anti_angel_marks, MonstersClues.can_appear_out_of_thin_air,
                             MonstersClues.can_repair_human_body]
@@ -1327,7 +1330,7 @@ class MonsterBase:
                    MonstersClues.can_teleport_people, MonstersClues.can_put_a_person_to_sleep]
     vesta.kill_methods = [MonstersKillMethods.stake_made_from_oak_stained_in_virgin_blood]
 
-    unknown = Monster("Unknown", description="", episodes={"S09": [9]})
+    unknown = Monster("Unknown", description="", episodes={"S09": [10]})
     unknown.clues = []
 
     # ---------------------------------------------------- SEASON 10 ---------------------------------------------------
