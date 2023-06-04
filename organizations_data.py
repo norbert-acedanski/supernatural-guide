@@ -13,3 +13,4 @@ class OrganizationKnowledge:
     oz = "oz"
     inuit_magic = "inuit magic"
     extinct_languages = "extinct languages"
+    angel_weakening = "angel weakening"
