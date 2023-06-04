@@ -519,12 +519,13 @@ class MonsterBase:
                                          "marks. Also the organs of the vessel, they are possessing are vapourised. "
                                          "To possess somebody, they need a consent. When an angel is tortured, "
                                          "the pain causes a ripple effect and strange things happen nearby. When an "
-                                         "angel looses it's Grace - it becomes human. Castiel broke the fourth wall "
+                                         "angel looses it's Grace - it becomes human. An Angel without a Grace can "
+                                         "injest another Angel's/Fallen Angel's Grace. Castiel broke the fourth wall "
                                          "in S06E20. Castiel supposedly died in S07E01, back in S07E17.",
                     episodes={"S04": [1, 2, 7, 9, 10, 15, 16, 18, 20, 21, 22],
                               "S05": [1, 2, 3, 4, 5, 8, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22],
                               "S06": [3, 6, 7, 10, 12, 15, 17, 18, 19, 20, 21, 22], "S07": [1, 17, 20, 21, 23],
-                              "S08": [2, 7, 8, 10, 17, 19, 21, 22, 23]})
+                              "S08": [2, 7, 8, 10, 17, 19, 21, 22, 23], "S09": [9]})
     angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                    MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion, MonstersClues.has_wings,
                    MonstersClues.leaves_burned_marks, MonstersClues.weird_electronics_behavior,
@@ -540,9 +541,7 @@ class MonsterBase:
                    MonstersClues.can_become_invisible, MonstersClues.can_control_demons, MonstersClues.liquefied_organs,
                    MonstersClues.can_erase_and_bring_back_memories, MonstersClues.can_transfer_mental_diseases,
                    MonstersClues.can_go_and_put_into_a_persons_mind, MonstersClues.strange_different_things_happening,
-                   MonstersClues.bright_eyes, MonstersClues.vapourised_organs,
-
-                   MonstersClues.travels_as_white_fog]
+                   MonstersClues.bright_eyes, MonstersClues.vapourised_organs, MonstersClues.travels_as_white_fog]
     angel.disable_methods = [MonstersDisableMethods.symbol_made_with_blood_against_angels,
                              MonstersDisableMethods.exorcism_for_angels, MonstersDisableMethods.holy_oil,
                              MonstersDisableMethods.enochian_spell, MonstersDisableMethods.angel_blade,
@@ -573,12 +572,13 @@ class MonsterBase:
                      MonstersClues.can_bring_back_dead_people, MonstersClues.can_summon_ghosts]
     samhain.disable_methods = [MonstersDisableMethods.extrusion_by_people_with_abilities]
 
-    fallen_angel = Monster("Fallen angel", description="An angel, that disobeyed the orders or was cursed by "
+    fallen_angel = Monster("Fallen Angel", description="An angel, that disobeyed the orders or was cursed by "
                                                        "spell banishing Angels to Earth and fell. Like Angels - when "
                                                        "killed, the organs of the vessel are vapourised. "
                                                        "After The Fall in S08E23 we have the following fallen "
-                                                       "angels: Hael, Ezekiel, Bartholomew.",
-                           episodes={"S04": [9, 10], "S08": [23], "S09": [1, 2, 3, 4]})
+                                                       "angels: Hael, Ezekiel, Bartholomew, Malachi, Gadreel, Muriel, "
+                                                       "Azrael, Sophia, Theo.",
+                           episodes={"S04": [9, 10], "S08": [23], "S09": [1, 2, 3, 4, 5, 8, 9]})
     fallen_angel.clues = [MonstersClues.people_hear_voices, MonstersClues.can_see_real_appearance_of_entities,
                           MonstersClues.telekinesis, MonstersClues.people_acting_weirdly, MonstersClues.falling_meteor,
                           MonstersClues.can_hear_angel_radio, MonstersClues.can_hear_demon_radio,
@@ -586,7 +586,9 @@ class MonsterBase:
                           MonstersClues.bright_eyes, MonstersClues.bright_light, MonstersClues.people_dead_weirdly,
                           MonstersClues.burned_eyes, MonstersClues.travels_as_white_fog, MonstersClues.body_torn_apart,
                           MonstersClues.vapourised_organs, MonstersClues.can_bring_back_dead_people,
-                          MonstersClues.blue_eyes]
+                          MonstersClues.blue_eyes, MonstersClues.leaves_burned_marks, MonstersClues.triangle_wound,
+                          MonstersClues.people_acting_weirdly, MonstersClues.travels_as_white_fog,
+                          MonstersClues.can_kill_humans_with_hand_on_forehead, MonstersClues.burned_eyes]
     fallen_angel.disable_methods = [MonstersDisableMethods.holy_oil]
     fallen_angel.kill_methods = [MonstersKillMethods.angel_blade]
 
@@ -624,12 +626,14 @@ class MonsterBase:
     prophet = Monster("Prophet of the Lord", description="A person that is gifted with the knowledge of the future. "
                                                          "Only one prophet can exist at a time. There are multiple "
                                                          "people in the world, that can become one if needed. Prophets "
-                                                         "throughout the series: Chuck Shurley, Kevin Tran.",
+                                                         "throughout the series: Chuck Shurley, Kevin Tran (Killed by "
+                                                         "Gadreel in S09E09).",
                       episodes={"S04": [18, 22], "S05": [1, 9, 22], "S07": [21, 22, 23],
-                                "S08": [1, 2, 7, 10, 14, 19, 21, 23], "S09": [2, 6]})
+                                "S08": [1, 2, 7, 10, 14, 19, 21, 23], "S09": [2, 6, 9]})
     prophet.clues = [MonstersClues.can_see_future, MonstersClues.protected_by_an_archangel, MonstersClues.visions,
                      MonstersClues.can_repair_broken_word_of_god, MonstersClues.can_read_word_of_god,
                      MonstersClues.weird_weather, MonstersClues.missing_or_dead_people_regularly_in_different_areas]
+    prophet.kill_methods = [MonstersKillMethods.will_of_an_angel, MonstersKillMethods.like_any_human]
 
     archangel = Monster("Archangel", description="They are heaven's most terrifying weapon. "
                                                  "They are fierce and absolute.", episodes={"S04": [18, 22]})
@@ -1262,7 +1266,7 @@ class MonsterBase:
                          MonstersKillMethods.the_arrow_of_artemis]
 
     angel_metatron = Monster("Angel Metatron", description="Scribe of GOD. One of the angels.",
-                             episodes={"S08": [21, 22, 23]})
+                             episodes={"S08": [21, 22, 23], "S09": [9]})
     angel_metatron.clues = [MonstersClues.immortal, MonstersClues.can_vanish, MonstersClues.can_teleport_people,
                             MonstersClues.can_erase_anti_angel_marks, MonstersClues.can_appear_out_of_thin_air,
                             MonstersClues.can_repair_human_body]
@@ -1323,11 +1327,8 @@ class MonsterBase:
                    MonstersClues.can_teleport_people, MonstersClues.can_put_a_person_to_sleep]
     vesta.kill_methods = [MonstersKillMethods.stake_made_from_oak_stained_in_virgin_blood]
 
-    unknown = Monster("Unknown", description="", episodes={"S09": [8]})
-    unknown.clues = [MonstersClues.high_strength, MonstersClues.can_create_fire_large_temperatures,
-                     MonstersClues.missing_or_dead_people_regularly_in_the_same_area, MonstersClues.bright_light,
-                     MonstersClues.no_white_bright_light, MonstersClues.missing_attacked_broken_virgin_women_or_man,
-                     MonstersClues.can_teleport_people, MonstersClues.can_put_a_person_to_sleep]
+    unknown = Monster("Unknown", description="", episodes={"S09": [9]})
+    unknown.clues = []
 
     # ---------------------------------------------------- SEASON 10 ---------------------------------------------------
 
