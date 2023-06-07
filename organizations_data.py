@@ -14,3 +14,5 @@ class OrganizationKnowledge:
     inuit_magic = "inuit magic"
     extinct_languages = "extinct languages"
     angel_weakening = "angel weakening"
+    angel_leaving_its_vessel = "angel leaving its vessel"
+    the_inner_workings_of_angels = "the inner workings of Angels"
