@@ -14,10 +14,11 @@ class ObjectsBase:
                                       description="A journal of John Winchester, that contains a lot information about "
                                                   "monsters in Supernatural Universe.",
                                       episodes={"S01": [], "S04": [19], "S06": [1, 8, 12], "S07": [8, 11],
-                                                "S08": [8, 12]})
+                                                "S08": [8, 12], "S09": [11]})
     john_winchesters_journal._information = {"S04E19": JohnWinchesterJournal.entry_about_johns_other_son,
                                              "S06E12": JohnWinchesterJournal.entry_about_a_skinwalker,
-                                             "S08E12": JohnWinchesterJournal.entry_about_torturing_a_demon}
+                                             "S08E12": JohnWinchesterJournal.entry_about_torturing_a_demon,
+                                             "S09E11": JohnWinchesterJournal.entry_about_killing_a_demon_abbadon_and_locker}
 
     colt_of_colt = Object("Colt of Colt", description="Colt made by Samuel Colt in 1835, when Halley's Comet was "
                                                       "overhead and the same night those men died at the Alamo. "
@@ -47,7 +48,7 @@ class ObjectsBase:
                                                                     "certain kinds of demons.",
                                  episodes={"S03": [1, 9, 16], "S04": [1, 9, 20, 22], "S05": [1, 10, 14, 17, 20, 21, 22],
                                            "S06": [10, 20, 21], "S07": [8, 15, 17, 21],
-                                           "S08": [1, 2, 7, 10, 14, 17, 19, 23], "S09": [2, 4]})
+                                           "S08": [1, 2, 7, 10, 14, 17, 19, 23], "S09": [2, 4, 11]})
     demon_killing_knife.abilities = [ObjectAbilities.can_kill_demons, ObjectAbilities.cannot_kill_angels,
                                      ObjectAbilities.cannot_kill_knights_of_hell]
 
@@ -96,7 +97,7 @@ class ObjectsBase:
 
     angel_blade = Object("Angel blade", description="A triangular, silvery blade, that each angel has.",
                          episodes={"S04": [16], "S05": [1, 13, 18], "S06": [3, 10, 17, 18, 22], "S07": [21],
-                                   "S08": [7, 10, 17, 21, 22, 23], "S09": [1, 2, 3, 6, 9, 10]})
+                                   "S08": [7, 10, 17, 21, 22, 23], "S09": [1, 2, 3, 6, 9, 10, 11]})
     angel_blade.abilities = [ObjectAbilities.can_kill_angels, ObjectAbilities.can_kill_demons]
 
     lucifers_cage = Object("Lucifer's Cage", description="A prison build specifically to contain archangelic powers "
@@ -233,6 +234,17 @@ class ObjectsBase:
                                                           "When altered - does not work as it should.",
                                               episodes={"S09": [9]})
     possessing_angel_weakening_sigil.abilities = [ObjectAbilities.can_temporarily_weaken_a_possessing_angel]
+
+    first_blade = Object("First Blade", description="First weapon used to kill the first human victim. Archangels used "
+                                                    "it to kill the Knights of Hell. That is what everyone thinks "
+                                                    "happened. The truth is, Cain killed Knights of Hell with it. "
+                                                    "A spell consisting of 6 elements, one of which is essence of "
+                                                    "Kraken. A mixture of ingredients should be poured out on a map "
+                                                    "and lit with a match. The blade is a part of a jaw of an animal. "
+                                                    "The first blade has to be used with a Mark of Cain. Without the "
+                                                    "mark, the blade is useless.",
+                         episodes={"S09": [11]})
+    first_blade.abilities = [ObjectAbilities.can_kill_knights_of_hell]
 
     # SEASON 10:
 
