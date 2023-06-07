@@ -102,7 +102,7 @@ class MonsterBase:
                     episodes={"S01": [4, 21, 22], "S02": [1, 14], "S03": [1, 2, 4, 12, 15, 16],
                               "S04": [1, 4, 9, 10, 20, 21, 22], "S05": [1, 6, 10, 12, 14, 17, 20, 21, 22],
                               "S06": [7, 10, 18, 20, 21, 22], "S07": [8, 15, 17, 21, 23],
-                              "S08": [1, 2, 7, 10, 17, 19, 21, 22], "S09": [2, 10]})
+                              "S08": [1, 2, 7, 10, 17, 19, 21, 22], "S09": [2, 10, 11]})
     demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                    MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                    MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -520,12 +520,15 @@ class MonsterBase:
                                          "vapourised. To possess somebody, they need a consent. When an angel is "
                                          "tortured, the pain causes a ripple effect and strange things happen nearby. "
                                          "When an angel looses it's Grace - it becomes human. An Angel without a Grace "
-                                         "can intake another Angel's/Fallen Angel's Grace. Castiel broke the fourth "
-                                         "wall in S06E20. Castiel supposedly died in S07E01, back in S07E17.",
+                                         "can intake another Angel's/Fallen Angel's Grace. When an Angel leaves "
+                                         "a vessel - it leaves a part of himself (a part of his Grace) in it - like "
+                                         "a fingerprint. An Angel can be tracked using a part of the Grace, that it "
+                                         "left in his vessel. Castiel broke the fourth wall in S06E20. Castiel "
+                                         "supposedly died in S07E01, back in S07E17.",
                     episodes={"S04": [1, 2, 7, 9, 10, 15, 16, 18, 20, 21, 22],
                               "S05": [1, 2, 3, 4, 5, 8, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22],
                               "S06": [3, 6, 7, 10, 12, 15, 17, 18, 19, 20, 21, 22], "S07": [1, 17, 20, 21, 23],
-                              "S08": [2, 7, 8, 10, 17, 19, 21, 22, 23], "S09": [9, 10]})
+                              "S08": [2, 7, 8, 10, 17, 19, 21, 22, 23], "S09": [9, 10, 11]})
     angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                    MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion, MonstersClues.has_wings,
                    MonstersClues.leaves_burned_marks, MonstersClues.weird_electronics_behavior,
@@ -755,7 +758,7 @@ class MonsterBase:
                                                            "was working with Castiel.",
                             episodes={"S05": [10, 20, 21], "S06": [4, 7, 8, 10, 19, 20, 21, 22],
                                       "S07": [1, 6, 8, 22, 23], "S08": [1, 2, 7, 10, 17, 19, 21, 22, 23],
-                                      "S09": [2, 4, 6, 10]})
+                                      "S09": [2, 4, 6, 10, 11]})
     demon_crowley.clues = [MonstersClues.can_vanish, MonstersClues.pact_sealed_with_a_kiss, MonstersClues.telekinesis,
                            MonstersClues.summoned_by_placing_box_in_the_crossroads, MonstersClues.small_earth_quake,
                            MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
@@ -1214,7 +1217,7 @@ class MonsterBase:
                                                            "fallen firstborn demons, thus very pure and strong. "
                                                            "Archangels killed almost all of them. "
                                                            "One of the survivors is Abaddon.",
-                             episodes={"S08": [12, 22, 23], "S09": [2, 6, 10]})
+                             episodes={"S08": [12, 22, 23], "S09": [2, 6, 10, 11]})
     knight_of_hell.clues = [MonstersClues.people_dead_weirdly, MonstersClues.bloodshot_eyes, MonstersClues.black_eyes,
                             MonstersClues.immune_to_exorcism, MonstersClues.can_read_peoples_minds,
                             MonstersClues.demon_killing_knife_is_ineffective, MonstersClues.telekinesis,
@@ -1223,9 +1226,7 @@ class MonsterBase:
                             MonstersClues.can_exorcise_certain_demons_with_hand_on_forehead, MonstersClues.immortal]
     knight_of_hell.disable_methods = [MonstersDisableMethods.demon_killing_knife, MonstersDisableMethods.devils_trap,
                                       MonstersDisableMethods.holy_oil, MonstersDisableMethods.holy_water]
-    knight_of_hell.kill_methods = [
-
-                                   MonstersKillMethods.first_blade]
+    knight_of_hell.kill_methods = [MonstersKillMethods.first_blade]
 
     thule = Monster("Thule", description="Members of The Thule Society. Used blood magic to make themselves almost "
                                          "undead. To kill it you have to break it's neck or shoot it in the head and "
@@ -1330,8 +1331,20 @@ class MonsterBase:
                    MonstersClues.can_teleport_people, MonstersClues.can_put_a_person_to_sleep]
     vesta.kill_methods = [MonstersKillMethods.stake_made_from_oak_stained_in_virgin_blood]
 
-    unknown = Monster("Unknown", description="", episodes={"S09": [10]})
-    unknown.clues = []
+    cain = Monster("Cain", description="The Father of Murder (according to Crowley from S09E11). After Cain killed "
+                                       "Abel he became the deadliest demon on Earth. Killed thousands. He was the "
+                                       "first Knight of Hell and trained the rest of the Knights. He has influence on "
+                                       "demons. According to Cain, he killed Abel because he made a deal with Lucyfer. "
+                                       "Cain's soul in Hell for Abel's soul in Heaven, but Cain was supposed to be the "
+                                       "one that kills Abel.", episodes={"S09": [11]})
+    cain.clues = [MonstersClues.invulnerable, MonstersClues.red_light, MonstersClues.immortal, MonstersClues.can_vanish,
+                  MonstersClues.can_appear_out_of_thin_air, MonstersClues.can_take_voice_of_a_demon,
+                  MonstersClues.can_exorcise_certain_demons_with_hand_on_forehead, MonstersClues.can_teleport_people,
+                  MonstersClues.demon_killing_knife_is_ineffective]
+
+    unknown = Monster("Unknown", description="", episodes={"S09": [11]})
+    unknown.clues = [MonstersClues.invulnerable, MonstersClues.red_light, MonstersClues.immortal,
+                     MonstersClues.can_exorcise_certain_demons_with_hand_on_forehead]
 
     # ---------------------------------------------------- SEASON 10 ---------------------------------------------------
 
