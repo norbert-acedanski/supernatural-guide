@@ -250,6 +250,18 @@ class CursesBase:
                                         episodes={"S09": [5]})
     inuit_animal_speaking_spell.clues = [CursesClues.animal_like_behavior_of_a_person]
 
+    angel_tracking_spell_with_grace = Curse("Angel tracking spell with a Grace",
+                                            description="Spell, that allows to track an angel. Is performed with "
+                                                        "a part of the Grace of an Angel, that left his vessel after "
+                                                        "extracting it. Ingredients are put in the bowl with Grace as "
+                                                        "last ingredient.", episodes={"S09": [11]})
+
+    mark_of_cain = Curse("Mark of Cain", description="A curse, that Lucyfer himself put on Cain for killing his "
+                                                     "brother. It looks like a mirrored version of the letter 'F' with "
+                                                     "additional horizontal line. A mark can be transferred to "
+                                                     "another person that is worthy of it (a killer).",
+                         episodes={"S09": [11]})
+
     # SEASON 10:
 
 
