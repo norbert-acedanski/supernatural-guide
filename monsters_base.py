@@ -102,7 +102,7 @@ class MonsterBase:
                     episodes={"S01": [4, 21, 22], "S02": [1, 14], "S03": [1, 2, 4, 12, 15, 16],
                               "S04": [1, 4, 9, 10, 20, 21, 22], "S05": [1, 6, 10, 12, 14, 17, 20, 21, 22],
                               "S06": [7, 10, 18, 20, 21, 22], "S07": [8, 15, 17, 21, 23],
-                              "S08": [1, 2, 7, 10, 17, 19, 21, 22], "S09": [2, 10, 11]})
+                              "S08": [1, 2, 7, 10, 17, 19, 21, 22], "S09": [2, 10, 11, 14]})
     demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                    MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                    MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -529,7 +529,7 @@ class MonsterBase:
                     episodes={"S04": [1, 2, 7, 9, 10, 15, 16, 18, 20, 21, 22],
                               "S05": [1, 2, 3, 4, 5, 8, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22],
                               "S06": [3, 6, 7, 10, 12, 15, 17, 18, 19, 20, 21, 22], "S07": [1, 17, 20, 21, 23],
-                              "S08": [2, 7, 8, 10, 17, 19, 21, 22, 23], "S09": [9, 10, 11]})
+                              "S08": [2, 7, 8, 10, 17, 19, 21, 22, 23], "S09": [9, 10, 11, 14]})
     angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                    MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion, MonstersClues.has_wings,
                    MonstersClues.leaves_burned_marks, MonstersClues.weird_electronics_behavior,
@@ -583,7 +583,7 @@ class MonsterBase:
                                                        "angels: Hael, Ezekiel, Bartholomew, Malachi, Gadreel, Muriel, "
                                                        "Azrael, Sophia, Theo, Thaddeus, Abner. Gadreel was the Angel, "
                                                        "that let Lucifer into the Garden of Eden.",
-                           episodes={"S04": [9, 10], "S08": [23], "S09": [1, 2, 3, 4, 5, 8, 9, 10]})
+                           episodes={"S04": [9, 10], "S08": [23], "S09": [1, 2, 3, 4, 5, 8, 9, 10, 14]})
     fallen_angel.clues = [MonstersClues.people_hear_voices, MonstersClues.can_see_real_appearance_of_entities,
                           MonstersClues.telekinesis, MonstersClues.people_acting_weirdly, MonstersClues.falling_meteor,
                           MonstersClues.can_hear_angel_radio, MonstersClues.can_hear_demon_radio,
@@ -1351,9 +1351,17 @@ class MonsterBase:
                       MonstersClues.bite_marks_on_peoples_necks]
     pishtaco.kill_methods = [MonstersKillMethods.cut_its_tongue_out]
 
-    unknown = Monster("Unknown", description="", episodes={"S09": [13]})
-    unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.no_fat_in_the_body, MonstersClues.damaged_organs,
-                     MonstersClues.suction_marks, MonstersClues.suction_tongue, MonstersClues.white_eyes]
+    ghost_kevin = Monster("Ghost Kevin", description="Ghost of prophet Kevin Tran. Kevin was killed in S09E09. Kevin "
+                                                     "is stuck on Earth even though his body was cremated by Dean. "
+                                                     "According to Kevin, every person, that died after the Angels "
+                                                     "fell cannot go to Heaven.",
+                          episodes={"S09": [14]})
+    ghost_kevin.clues = [MonstersClues.weird_things_behavior, MonstersClues.emf, MonstersClues.ghost_like_creature,
+                         MonstersClues.weird_electronics_behavior, MonstersClues.can_appear_out_of_thin_air,
+                         MonstersClues.can_vanish, MonstersClues.invisible_entity]
+
+    unknown = Monster("Unknown", description="", episodes={"S09": [14]})
+    unknown.clues = [MonstersClues.ghost_like_creature]
 
     # ---------------------------------------------------- SEASON 10 ---------------------------------------------------
 
