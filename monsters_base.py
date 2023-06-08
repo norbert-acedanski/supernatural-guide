@@ -375,12 +375,13 @@ class MonsterBase:
                                                "lunar cycle. Pure bloods don't blackout during the transformation and "
                                                "can control themselves. Some have been able to subsist off of "
                                                "animal hearts. Also mentioned in S01E16", episodes={"S02": [17],
-                                                                                                    "S08": [4]})
+                                                                                                    "S08": [4],
+                                                                                                    "S09": [12]})
     werewolf.clues = [MonstersClues.body_torn_apart, MonstersClues.animal_like_attack, MonstersClues.missing_heart,
                       MonstersClues.murders_during_full_moon_week, MonstersClues.claws, MonstersClues.attacks_at_night,
                       MonstersClues.animal_like_noises, MonstersClues.amnesia_blackout, MonstersClues.high_strength,
                       MonstersClues.people_dead_weirdly, MonstersClues.increased_regeneration, MonstersClues.moves_fast,
-                      MonstersClues.bite_marks]
+                      MonstersClues.bite_marks, MonstersClues.missing_organs]
     werewolf.kill_methods = [MonstersKillMethods.silver_bullet_into_the_heart]
     werewolf.cure_methods = [MonstersCureMethods.plasma_therapy_with_the_blood_of_the_werewolf_that_bit_the_victim]
 
@@ -1342,9 +1343,8 @@ class MonsterBase:
                   MonstersClues.can_exorcise_certain_demons_with_hand_on_forehead, MonstersClues.can_teleport_people,
                   MonstersClues.demon_killing_knife_is_ineffective]
 
-    unknown = Monster("Unknown", description="", episodes={"S09": [11]})
-    unknown.clues = [MonstersClues.invulnerable, MonstersClues.red_light, MonstersClues.immortal,
-                     MonstersClues.can_exorcise_certain_demons_with_hand_on_forehead]
+    unknown = Monster("Unknown", description="", episodes={"S09": [12]})
+    unknown.clues = []
 
     # ---------------------------------------------------- SEASON 10 ---------------------------------------------------
 
