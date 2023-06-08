@@ -48,7 +48,7 @@ class ObjectsBase:
                                                                     "certain kinds of demons.",
                                  episodes={"S03": [1, 9, 16], "S04": [1, 9, 20, 22], "S05": [1, 10, 14, 17, 20, 21, 22],
                                            "S06": [10, 20, 21], "S07": [8, 15, 17, 21],
-                                           "S08": [1, 2, 7, 10, 14, 17, 19, 23], "S09": [2, 4, 11]})
+                                           "S08": [1, 2, 7, 10, 14, 17, 19, 23], "S09": [2, 4, 11, 14]})
     demon_killing_knife.abilities = [ObjectAbilities.can_kill_demons, ObjectAbilities.cannot_kill_angels,
                                      ObjectAbilities.cannot_kill_knights_of_hell]
 
@@ -97,7 +97,7 @@ class ObjectsBase:
 
     angel_blade = Object("Angel blade", description="A triangular, silvery blade, that each angel has.",
                          episodes={"S04": [16], "S05": [1, 13, 18], "S06": [3, 10, 17, 18, 22], "S07": [21],
-                                   "S08": [7, 10, 17, 21, 22, 23], "S09": [1, 2, 3, 6, 9, 10, 11]})
+                                   "S08": [7, 10, 17, 21, 22, 23], "S09": [1, 2, 3, 6, 9, 10, 11, 14]})
     angel_blade.abilities = [ObjectAbilities.can_kill_angels, ObjectAbilities.can_kill_demons]
 
     lucifers_cage = Object("Lucifer's Cage", description="A prison build specifically to contain archangelic powers "
@@ -221,7 +221,7 @@ class ObjectsBase:
 
     demonic_handcuffs = Object("Demonic handcuffs", description="When worn by a Demon, it cannot teleport, "
                                                                 "leave the body or use demon magic.",
-                               episodes={"S08": [23], "S09": [10]})
+                               episodes={"S08": [23], "S09": [10, 14]})
     demonic_handcuffs.abilities = [ObjectAbilities.traps_a_demon]
 
     # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
