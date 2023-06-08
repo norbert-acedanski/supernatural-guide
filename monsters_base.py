@@ -1343,8 +1343,17 @@ class MonsterBase:
                   MonstersClues.can_exorcise_certain_demons_with_hand_on_forehead, MonstersClues.can_teleport_people,
                   MonstersClues.demon_killing_knife_is_ineffective]
 
-    unknown = Monster("Unknown", description="", episodes={"S09": [12]})
-    unknown.clues = []
+    pishtaco = Monster("Pishtaco", description="'Peruvian fat sucker' according to Maritza in S09E13. A monster, that "
+                                               "feeds on human fat. They are like parasites. Known Pishtaco are "
+                                               "Maritza and Alonso (dead) - siblings).", episodes={"S09": [13]})
+    pishtaco.clues = [MonstersClues.people_dead_weirdly, MonstersClues.no_fat_in_the_body, MonstersClues.damaged_organs,
+                      MonstersClues.suction_marks, MonstersClues.suction_tongue, MonstersClues.white_eyes,
+                      MonstersClues.bite_marks_on_peoples_necks]
+    pishtaco.kill_methods = [MonstersKillMethods.cut_its_tongue_out]
+
+    unknown = Monster("Unknown", description="", episodes={"S09": [13]})
+    unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.no_fat_in_the_body, MonstersClues.damaged_organs,
+                     MonstersClues.suction_marks, MonstersClues.suction_tongue, MonstersClues.white_eyes]
 
     # ---------------------------------------------------- SEASON 10 ---------------------------------------------------
 
