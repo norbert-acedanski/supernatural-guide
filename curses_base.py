@@ -260,7 +260,7 @@ class CursesBase:
                                                      "brother. It looks like a mirrored version of the letter 'F' with "
                                                      "additional horizontal line. A mark can be transferred to "
                                                      "another person that is worthy of it (a killer).",
-                         episodes={"S09": [11]})
+                         episodes={"S09": [11, 12]})
 
     # SEASON 10:
 
