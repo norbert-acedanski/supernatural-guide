@@ -102,7 +102,7 @@ class MonsterBase:
                     episodes={"S01": [4, 21, 22], "S02": [1, 14], "S03": [1, 2, 4, 12, 15, 16],
                               "S04": [1, 4, 9, 10, 20, 21, 22], "S05": [1, 6, 10, 12, 14, 17, 20, 21, 22],
                               "S06": [7, 10, 18, 20, 21, 22], "S07": [8, 15, 17, 21, 23],
-                              "S08": [1, 2, 7, 10, 17, 19, 21, 22], "S09": [2, 10, 11, 14, 16]})
+                              "S08": [1, 2, 7, 10, 17, 19, 21, 22], "S09": [2, 10, 11, 14, 16, 17]})
     demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                    MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                    MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -764,7 +764,7 @@ class MonsterBase:
                                                            "was working with Castiel.",
                             episodes={"S05": [10, 20, 21], "S06": [4, 7, 8, 10, 19, 20, 21, 22],
                                       "S07": [1, 6, 8, 22, 23], "S08": [1, 2, 7, 10, 17, 19, 21, 22, 23],
-                                      "S09": [2, 4, 6, 10, 11, 16]})
+                                      "S09": [2, 4, 6, 10, 11, 16, 17]})
     demon_crowley.clues = [MonstersClues.can_vanish, MonstersClues.pact_sealed_with_a_kiss, MonstersClues.telekinesis,
                            MonstersClues.summoned_by_placing_box_in_the_crossroads, MonstersClues.small_earth_quake,
                            MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
@@ -898,10 +898,15 @@ class MonsterBase:
     horseman_pestilence.clues = [MonstersClues.general_sickness, MonstersClues.increased_pest_activity,
                                  MonstersClues.weird_electronics_behavior]
 
-    soulless_person = Monster("Soulless person", description="A person without a soul - only the 'meatsuit'.",
-                              episodes={"S05": [21], "S06": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 13, 22]})
-    soulless_person.clues = [MonstersClues.people_acting_weirdly, MonstersClues.lack_of_empathy,
-                             MonstersClues.sociopath_like_behavior, MonstersClues.does_not_sleep]
+    soulless_person = Monster("Soulless person", description="A person without a soul - only the 'meatsuit'. There is "
+                                                             "a way of removing the soul from the body and create "
+                                                             "demons out of it (as stated in S09E17). Released soul of "
+                                                             "a person will find a way back to a body.",
+                              episodes={"S05": [21], "S06": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 13, 22], "S09": [17]})
+    soulless_person.clues = [MonstersClues.people_acting_weirdly, MonstersClues.lack_of_empathy, MonstersClues.suicides,
+                             MonstersClues.no_sulfur, MonstersClues.sociopath_like_behavior, MonstersClues.bright_light,
+                             MonstersClues.does_not_sleep, MonstersClues.no_emf,
+                             MonstersClues.holy_water_does_not_affect_it]
 
     # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
 
@@ -1223,13 +1228,14 @@ class MonsterBase:
                                                            "fallen firstborn demons, thus very pure and strong. "
                                                            "Archangels killed almost all of them. "
                                                            "One of the survivors is Abaddon.",
-                             episodes={"S08": [12, 22, 23], "S09": [2, 6, 10, 11]})
+                             episodes={"S08": [12, 22, 23], "S09": [2, 6, 10, 11, 17]})
     knight_of_hell.clues = [MonstersClues.people_dead_weirdly, MonstersClues.bloodshot_eyes, MonstersClues.black_eyes,
                             MonstersClues.immune_to_exorcism, MonstersClues.can_read_peoples_minds,
                             MonstersClues.demon_killing_knife_is_ineffective, MonstersClues.telekinesis,
                             MonstersClues.can_posses_a_person, MonstersClues.weird_electronics_behavior,
                             MonstersClues.travels_as_black_fog, MonstersClues.high_strength, MonstersClues.can_vanish,
-                            MonstersClues.can_exorcise_certain_demons_with_hand_on_forehead, MonstersClues.immortal]
+                            MonstersClues.can_exorcise_certain_demons_with_hand_on_forehead, MonstersClues.immortal,
+                            MonstersClues.immune_to_exorcism]
     knight_of_hell.disable_methods = [MonstersDisableMethods.demon_killing_knife, MonstersDisableMethods.devils_trap,
                                       MonstersDisableMethods.holy_oil, MonstersDisableMethods.holy_water]
     knight_of_hell.kill_methods = [MonstersKillMethods.first_blade]
@@ -1365,8 +1371,9 @@ class MonsterBase:
                          MonstersClues.weird_electronics_behavior, MonstersClues.can_appear_out_of_thin_air,
                          MonstersClues.can_vanish, MonstersClues.invisible_entity]
 
-    unknown = Monster("Unknown", description="", episodes={"S09": [16]})
-    unknown.clues = []
+    unknown = Monster("Unknown", description="", episodes={"S09": [17]})
+    unknown.clues = [MonstersClues.people_acting_weirdly, MonstersClues.no_sulfur, MonstersClues.suicides,
+                     MonstersClues.no_emf, MonstersClues.bright_light, MonstersClues.holy_water_does_not_affect_it]
 
     # ---------------------------------------------------- SEASON 10 ---------------------------------------------------
 
