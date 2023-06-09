@@ -844,8 +844,8 @@ class MonsterBase:
                                                          "drag as many souls to Hell as possible. Can only be killed "
                                                          "by a true servant of heaven (like a devoted priest).",
                             episodes={"S05": [17]})
-    false_prophet.clues = [MonstersClues.can_read_peoples_minds, MonstersClues.can_see_future, MonstersClues.telekinesis,
-                           MonstersClues.can_take_form_of_other_people, MonstersClues.can_control_demons,
+    false_prophet.clues = [MonstersClues.can_read_peoples_minds, MonstersClues.can_take_form_of_other_people,
+                           MonstersClues.can_see_future, MonstersClues.telekinesis, MonstersClues.can_control_demons,
                            MonstersClues.visions, MonstersClues.real_appearance_can_be_seen_in_a_reflection_or_camera]
     false_prophet.kill_methods = [MonstersKillMethods.stake_made_from_cypress_tree_in_babylon]
 
