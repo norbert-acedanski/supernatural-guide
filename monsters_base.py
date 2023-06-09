@@ -534,7 +534,7 @@ class MonsterBase:
                     episodes={"S04": [1, 2, 7, 9, 10, 15, 16, 18, 20, 21, 22],
                               "S05": [1, 2, 3, 4, 5, 8, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22],
                               "S06": [3, 6, 7, 10, 12, 15, 17, 18, 19, 20, 21, 22], "S07": [1, 17, 20, 21, 23],
-                              "S08": [2, 7, 8, 10, 17, 19, 21, 22, 23], "S09": [9, 10, 11, 14]})
+                              "S08": [2, 7, 8, 10, 17, 19, 21, 22, 23], "S09": [9, 10, 11, 14, 18]})
     angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                    MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion, MonstersClues.has_wings,
                    MonstersClues.leaves_burned_marks, MonstersClues.weird_electronics_behavior,
@@ -586,9 +586,9 @@ class MonsterBase:
                                                        "killed, the organs of the vessel are vapourised. "
                                                        "After The Fall in S08E23 we have the following fallen "
                                                        "angels: Hael, Ezekiel, Bartholomew, Malachi, Gadreel, Muriel, "
-                                                       "Azrael, Sophia, Theo, Thaddeus, Abner. Gadreel was the Angel, "
-                                                       "that let Lucifer into the Garden of Eden.",
-                           episodes={"S04": [9, 10], "S08": [23], "S09": [1, 2, 3, 4, 5, 8, 9, 10, 14]})
+                                                       "Azrael, Sophia, Theo, Thaddeus, Abner, Hannah. Gadreel was the "
+                                                       "Angel, that let Lucifer into the Garden of Eden.",
+                           episodes={"S04": [9, 10], "S08": [23], "S09": [1, 2, 3, 4, 5, 8, 9, 10, 14, 18]})
     fallen_angel.clues = [MonstersClues.people_hear_voices, MonstersClues.can_see_real_appearance_of_entities,
                           MonstersClues.telekinesis, MonstersClues.people_acting_weirdly, MonstersClues.falling_meteor,
                           MonstersClues.can_hear_angel_radio, MonstersClues.can_hear_demon_radio,
@@ -601,7 +601,7 @@ class MonsterBase:
                           MonstersClues.can_kill_humans_with_hand_on_forehead, MonstersClues.burned_eyes,
                           MonstersClues.can_put_a_person_to_sleep, MonstersClues.weird_electronics_behavior,
                           MonstersClues.flashing_lights, MonstersClues.weird_things_behavior]
-    fallen_angel.disable_methods = [MonstersDisableMethods.holy_oil]
+    fallen_angel.disable_methods = [MonstersDisableMethods.holy_oil, MonstersDisableMethods.angel_blade]
     fallen_angel.kill_methods = [MonstersKillMethods.angel_blade]
 
     demon_alastair = Monster("Demon Alastair", description="A very powerful demon. Tortures souls in Hell. "
@@ -1281,11 +1281,13 @@ class MonsterBase:
     zeus.kill_methods = [MonstersKillMethods.stake_made_from_a_tree_struck_by_lightning,
                          MonstersKillMethods.the_arrow_of_artemis]
 
-    angel_metatron = Monster("Angel Metatron", description="Scribe of GOD. One of the angels.",
-                             episodes={"S08": [21, 22, 23], "S09": [9, 10]})
+    angel_metatron = Monster("Angel Metatron", description="Scribe of GOD. One of the angels. Metatron broke the "
+                                                           "fourth wall in S09E18.",
+                             episodes={"S08": [21, 22, 23], "S09": [9, 10, 18]})
     angel_metatron.clues = [MonstersClues.immortal, MonstersClues.can_vanish, MonstersClues.can_teleport_people,
                             MonstersClues.can_erase_anti_angel_marks, MonstersClues.can_appear_out_of_thin_air,
-                            MonstersClues.can_repair_human_body]
+                            MonstersClues.can_repair_human_body, MonstersClues.can_give_hallucinations,
+                            MonstersClues.telekinesis, MonstersClues.can_put_down_holy_fire]
 
     nephilim = Monster("Nephilim", description="Child of human and angel/archangel. Human with an angelic grace.",
                        episodes={"S08": [22]})
@@ -1371,9 +1373,8 @@ class MonsterBase:
                          MonstersClues.weird_electronics_behavior, MonstersClues.can_appear_out_of_thin_air,
                          MonstersClues.can_vanish, MonstersClues.invisible_entity]
 
-    unknown = Monster("Unknown", description="", episodes={"S09": [17]})
-    unknown.clues = [MonstersClues.people_acting_weirdly, MonstersClues.no_sulfur, MonstersClues.suicides,
-                     MonstersClues.no_emf, MonstersClues.bright_light, MonstersClues.holy_water_does_not_affect_it]
+    unknown = Monster("Unknown", description="", episodes={"S09": [18]})
+    unknown.clues = []
 
     # ---------------------------------------------------- SEASON 10 ---------------------------------------------------
 
