@@ -92,12 +92,12 @@ class ObjectsBase:
     angel_protection_sigil = Object("Angel protection sigil", description="Angels can't get past it, when the place is "
                                                                           "marked with it.",
                                     # TODO: Check where else is the sigil used
-                                    episodes={"S04": [15], "S09": [1]})
+                                    episodes={"S04": [15], "S09": [1, 18]})
     angel_protection_sigil.abilities = [ObjectAbilities.angels_cant_get_past_it]
 
     angel_blade = Object("Angel blade", description="A triangular, silvery blade, that each angel has.",
                          episodes={"S04": [16], "S05": [1, 13, 18], "S06": [3, 10, 17, 18, 22], "S07": [21],
-                                   "S08": [7, 10, 17, 21, 22, 23], "S09": [1, 2, 3, 6, 9, 10, 11, 14, 16]})
+                                   "S08": [7, 10, 17, 21, 22, 23], "S09": [1, 2, 3, 6, 9, 10, 11, 14, 16, 18]})
     angel_blade.abilities = [ObjectAbilities.can_kill_angels, ObjectAbilities.can_kill_demons]
 
     lucifers_cage = Object("Lucifer's Cage", description="A prison build specifically to contain archangelic powers "
@@ -171,8 +171,12 @@ class ObjectsBase:
                                                             "happened to Lot's wife).", episodes={"S06": [3]})
     heavens_cristal.abilities = [ObjectAbilities.can_turn_a_person_into_a_pillar_of_salt]
 
-    gabriels_horn_of_truth = Object("Gabriel's Horn of truth", description="Can make people speak the truth. "
-                                                                           "Not seen, only mentioned in S06E06.")
+    gabriels_horn_of_truth = Object("Gabriel's Horn of truth",
+                                    description="Can make people speak the truth. Mentioned in S06E06. It can be used "
+                                                "to attract Angels with help of a spell. Ingredients are a drawn "
+                                                "symbol, Griffin feathers and bones of a Fairy (no matter what realm "
+                                                "they're from - according to Gadreel).", episodes={"S09": [18]})
+    gabriels_horn_of_truth.abilities = [ObjectAbilities.can_attract_angels]
 
     # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
 
