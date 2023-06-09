@@ -261,7 +261,7 @@ class CursesBase:
                                                      "additional horizontal line. A mark can be transferred to "
                                                      "another person that is worthy of it (a killer). When a man with "
                                                      "the Mark of Cain holds the blade, the mark starts to shine red.",
-                         episodes={"S09": [11, 12, 16, 17]})
+                         episodes={"S09": [11, 12, 16, 17, 18]})
     mark_of_cain.clues = [CursesClues.people_acting_weirdly]
 
     willpower_removing_spell = Curse("Willpower removing spell", description="Spell, that lowers or removes the power "
@@ -269,6 +269,11 @@ class CursesBase:
                                      episodes={"S09": [16]})
     willpower_removing_spell.clues = [CursesClues.people_acting_weirdly, CursesClues.people_doing_what_they_are_told]
     willpower_removing_spell.disable_methods = [CursesDisableMethods.wait_for_if_to_pass]
+
+    angel_siren_spell = Curse("Angel Siren spell", description="Spell used to attract Angels. Made of a symbol "
+                                                               "combined with Griffin feathers, bones of a Fairy and "
+                                                               "most importantly - Gabriel's horn.")
+    angel_siren_spell.clues = [CursesClues.people_dead_weirdly]
 
     # SEASON 10:
 
