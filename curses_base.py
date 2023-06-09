@@ -261,7 +261,7 @@ class CursesBase:
                                                      "additional horizontal line. A mark can be transferred to "
                                                      "another person that is worthy of it (a killer). When a man with "
                                                      "the Mark of Cain holds the blade, the mark starts to shine red.",
-                         episodes={"S09": [11, 12, 16]})
+                         episodes={"S09": [11, 12, 16, 17]})
     mark_of_cain.clues = [CursesClues.people_acting_weirdly]
 
     willpower_removing_spell = Curse("Willpower removing spell", description="Spell, that lowers or removes the power "
