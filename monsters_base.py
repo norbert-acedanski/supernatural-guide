@@ -102,7 +102,7 @@ class MonsterBase:
                     episodes={"S01": [4, 21, 22], "S02": [1, 14], "S03": [1, 2, 4, 12, 15, 16],
                               "S04": [1, 4, 9, 10, 20, 21, 22], "S05": [1, 6, 10, 12, 14, 17, 20, 21, 22],
                               "S06": [7, 10, 18, 20, 21, 22], "S07": [8, 15, 17, 21, 23],
-                              "S08": [1, 2, 7, 10, 17, 19, 21, 22], "S09": [2, 10, 11, 14]})
+                              "S08": [1, 2, 7, 10, 17, 19, 21, 22], "S09": [2, 10, 11, 14, 16]})
     demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                    MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                    MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -127,7 +127,7 @@ class MonsterBase:
     shapeshifter = Monster("Shapeshifter", description="These creatures can transform themselves into other man or "
                                                        "animals. Can mate with humans to produce Shapeshifter "
                                                        "offspring.",
-                           episodes={"S01": [6], "S02": [12], "S04": [5], "S05": [2]})
+                           episodes={"S01": [6], "S02": [12], "S04": [5], "S05": [2], "S09": [16]})
     shapeshifter.clues = [MonstersClues.can_take_form_of_other_people, MonstersClues.skin_left_behind,
                           MonstersClues.being_at_two_places_at_once, MonstersClues.bright_eyes, MonstersClues.no_sulfur,
                           MonstersClues.weird_animal_behavior, MonstersClues.can_copy_memories_of_other_people,
@@ -248,7 +248,7 @@ class MonsterBase:
                                              "bleeding them for days or weeks. One can become a vampire, when drinking "
                                              "vampire blood. Upon changing, all senses sharpen.",
                       episodes={"S01": [20], "S02": [3], "S03": [7], "S05": [3], "S06": [5, 19], "S07": [22],
-                                "S08": [1, 2, 5, 7, 9, 10, 18, 19], "S09": [2]})
+                                "S08": [1, 2, 5, 7, 9, 10, 18, 19], "S09": [2, 16]})
     vampire.clues = [MonstersClues.ripped_throat, MonstersClues.no_blood_in_the_body, MonstersClues.needle_like_teeth,
                      MonstersClues.moving_in_groups_usually, MonstersClues.invulnerable, MonstersClues.high_strength,
                      MonstersClues.bright_eyes, MonstersClues.great_sense_of_smell, MonstersClues.white_skin,
@@ -310,7 +310,7 @@ class MonsterBase:
                                                                "dirt, black cat cone, ones photo in the center of "
                                                                "a crossroad.",
                                episodes={"S02": [8, 22], "S04": [9], "S05": [10], "S06": [4], "S07": [8], "S08": [19],
-                                         "S09": [2]})
+                                         "S09": [2, 16]})
     crossroads_demon.clues = [MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
                               MonstersClues.red_eyes, MonstersClues.summoned_by_placing_box_in_the_crossroads,
                               MonstersClues.travels_as_black_fog, MonstersClues.pact_sealed_with_a_kiss,
@@ -764,7 +764,7 @@ class MonsterBase:
                                                            "was working with Castiel.",
                             episodes={"S05": [10, 20, 21], "S06": [4, 7, 8, 10, 19, 20, 21, 22],
                                       "S07": [1, 6, 8, 22, 23], "S08": [1, 2, 7, 10, 17, 19, 21, 22, 23],
-                                      "S09": [2, 4, 6, 10, 11]})
+                                      "S09": [2, 4, 6, 10, 11, 16]})
     demon_crowley.clues = [MonstersClues.can_vanish, MonstersClues.pact_sealed_with_a_kiss, MonstersClues.telekinesis,
                            MonstersClues.summoned_by_placing_box_in_the_crossroads, MonstersClues.small_earth_quake,
                            MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
@@ -1365,12 +1365,8 @@ class MonsterBase:
                          MonstersClues.weird_electronics_behavior, MonstersClues.can_appear_out_of_thin_air,
                          MonstersClues.can_vanish, MonstersClues.invisible_entity]
 
-    unknown = Monster("Unknown", description="", episodes={"S09": [15]})
-    unknown.clues = [MonstersClues.people_seeing_things_or_figures, MonstersClues.people_dead_weirdly,
-                     MonstersClues.no_cold_spots, MonstersClues.can_appear_out_of_thin_air, MonstersClues.can_vanish,
-                     MonstersClues.no_flashing_lights, MonstersClues.ghost_like_creature, MonstersClues.weird_noises,
-                     MonstersClues.slender_like_creature,
-                     MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area]
+    unknown = Monster("Unknown", description="", episodes={"S09": [16]})
+    unknown.clues = []
 
     # ---------------------------------------------------- SEASON 10 ---------------------------------------------------
 
