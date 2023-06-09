@@ -245,10 +245,11 @@ class MonsterBase:
                                              "A coss will not repel them, sunlight will not kill them. Neither will a "
                                              "stake to the heart. Vampires nest in groups 8 to 10. Smaller packs are "
                                              "sent out to hunt for food. Kidnapped people are taken to nests and then "
-                                             "bleeding them for days or weeks. One can become a vampire, when drinking "
-                                             "vampire blood. Upon changing, all senses sharpen.",
+                                             "bleeding them for days or weeks. Sometimes nests keep humans alive for "
+                                             "years as blood slaves. One can become a vampire, when drinking vampire "
+                                             "blood. Upon changing, all senses sharpen.",
                       episodes={"S01": [20], "S02": [3], "S03": [7], "S05": [3], "S06": [5, 19], "S07": [22],
-                                "S08": [1, 2, 5, 7, 9, 10, 18, 19], "S09": [2, 16]})
+                                "S08": [1, 2, 5, 7, 9, 10, 18, 19], "S09": [2, 16, 19]})
     vampire.clues = [MonstersClues.ripped_throat, MonstersClues.no_blood_in_the_body, MonstersClues.needle_like_teeth,
                      MonstersClues.moving_in_groups_usually, MonstersClues.invulnerable, MonstersClues.high_strength,
                      MonstersClues.bright_eyes, MonstersClues.great_sense_of_smell, MonstersClues.white_skin,
@@ -1373,7 +1374,7 @@ class MonsterBase:
                          MonstersClues.weird_electronics_behavior, MonstersClues.can_appear_out_of_thin_air,
                          MonstersClues.can_vanish, MonstersClues.invisible_entity]
 
-    unknown = Monster("Unknown", description="", episodes={"S09": [18]})
+    unknown = Monster("Unknown", description="", episodes={"S09": [19]})
     unknown.clues = []
 
     # ---------------------------------------------------- SEASON 10 ---------------------------------------------------
