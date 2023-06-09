@@ -13,6 +13,7 @@ class CursesClues:
     people_seeing_things_or_figures = "people seeing things or figures (ghosts, people, reapers, beings, unicorns, " \
                                       "giant octopuses, etc.)"
     people_nightmares_come_true = "people nightmares come true"
+    people_doing_what_they_are_told = "people doing what they are told"
     shadows_of_people_on_the_wall = "shadows of people on the wall"
     suicides = "suicides"
     hallucinations = "hallucinations"
@@ -78,4 +79,5 @@ class CursesDisableMethods:
     kill_the_person_that_causes_it = "kill the person that causes it"
     kill_goddess_of_truth_veritas = "kill goddess of truth Veritas"
     wait_for_an_opening_from_the_other_side = "wait for an opening from the other side"
+    wait_for_if_to_pass = "wait for if to pass"
     will_of_an_angel_on_soul_juice = "will of an angel on soul juice"

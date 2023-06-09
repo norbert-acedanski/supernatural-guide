@@ -259,8 +259,16 @@ class CursesBase:
     mark_of_cain = Curse("Mark of Cain", description="A curse, that Lucyfer himself put on Cain for killing his "
                                                      "brother. It looks like a mirrored version of the letter 'F' with "
                                                      "additional horizontal line. A mark can be transferred to "
-                                                     "another person that is worthy of it (a killer).",
-                         episodes={"S09": [11, 12]})
+                                                     "another person that is worthy of it (a killer). When a man with "
+                                                     "the Mark of Cain holds the blade, the mark starts to shine red.",
+                         episodes={"S09": [11, 12, 16]})
+    mark_of_cain.clues = [CursesClues.people_acting_weirdly]
+
+    willpower_removing_spell = Curse("Willpower removing spell", description="Spell, that lowers or removes the power "
+                                                                             "of will of a person. Used by Magnus.",
+                                     episodes={"S09": [16]})
+    willpower_removing_spell.clues = [CursesClues.people_acting_weirdly, CursesClues.people_doing_what_they_are_told]
+    willpower_removing_spell.disable_methods = [CursesDisableMethods.wait_for_if_to_pass]
 
     # SEASON 10:
 
