@@ -198,12 +198,17 @@ class MonsterBase:
     people_with_abilities.kill_methods = [MonstersKillMethods.like_any_human]
 
     crazy_humans = Monster("Crazy humans", description="Ordinary humans, that are mad or crazy. "
-                                                       "Sometimes can be mistaken for ghosts or vampires.",
-                           episodes={"S01": [15], "S04": [11]})
+                                                       "Sometimes can be mistaken for ghosts or vampires. Thinman is "
+                                                       "an example of two people working together to bring to life "
+                                                       "a Thinman monster.",
+                           episodes={"S01": [15], "S04": [11], "S09": [15]})
     crazy_humans.clues = [MonstersClues.people_kidnapped_weirdly, MonstersClues.weird_electronics_behavior,
                           MonstersClues.flashing_lights, MonstersClues.people_seeing_things_or_figures,
                           MonstersClues.people_dead_weirdly, MonstersClues.weird_things_behavior,
-                          MonstersClues.body_torn_apart, MonstersClues.weird_noises]
+                          MonstersClues.body_torn_apart, MonstersClues.weird_noises, MonstersClues.no_cold_spots,
+                          MonstersClues.can_appear_out_of_thin_air, MonstersClues.slender_like_creature,
+                          MonstersClues.can_vanish, MonstersClues.no_flashing_lights, MonstersClues.ghost_like_creature,
+                          MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area]
     crazy_humans.kill_methods = [MonstersKillMethods.like_any_human]
 
     spring_heeled_jacks = Monster("Sprint Heeled Jacks", description="Not seen. Only mentioned in S01E15")
@@ -1360,8 +1365,12 @@ class MonsterBase:
                          MonstersClues.weird_electronics_behavior, MonstersClues.can_appear_out_of_thin_air,
                          MonstersClues.can_vanish, MonstersClues.invisible_entity]
 
-    unknown = Monster("Unknown", description="", episodes={"S09": [14]})
-    unknown.clues = [MonstersClues.ghost_like_creature]
+    unknown = Monster("Unknown", description="", episodes={"S09": [15]})
+    unknown.clues = [MonstersClues.people_seeing_things_or_figures, MonstersClues.people_dead_weirdly,
+                     MonstersClues.no_cold_spots, MonstersClues.can_appear_out_of_thin_air, MonstersClues.can_vanish,
+                     MonstersClues.no_flashing_lights, MonstersClues.ghost_like_creature, MonstersClues.weird_noises,
+                     MonstersClues.slender_like_creature,
+                     MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area]
 
     # ---------------------------------------------------- SEASON 10 ---------------------------------------------------
 
