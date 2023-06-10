@@ -100,6 +100,7 @@ class MonstersClues:
     claws = "claws"
     human_like_creature = "human like creature"
     mimics_human_voice = "mimics human voice"
+    deep_voice = "deep voice"
     enormous_black_fog = "enormous black fog"
     enormous_appetite = "enormous appetite (especially for raw meat)"
     body_metamorphosis = "body metamorphosis (may be painful)"

@@ -125,16 +125,18 @@ class MonsterBase:
                              MonstersDisableMethods.extrusion_by_people_with_abilities]
 
     shapeshifter = Monster("Shapeshifter", description="These creatures can transform themselves into other man or "
-                                                       "animals. Can mate with humans to produce Shapeshifter "
-                                                       "offspring.",
-                           episodes={"S01": [6], "S02": [12], "S04": [5], "S05": [2], "S09": [16]})
+                                                       "animals. Can mate with humans (and other Shapeshifters) to "
+                                                       "produce Shapeshifter offspring.",
+                           episodes={"S01": [6], "S02": [12], "S04": [5], "S05": [2], "S09": [16, 20]})
     shapeshifter.clues = [MonstersClues.can_take_form_of_other_people, MonstersClues.skin_left_behind,
                           MonstersClues.being_at_two_places_at_once, MonstersClues.bright_eyes, MonstersClues.no_sulfur,
                           MonstersClues.weird_animal_behavior, MonstersClues.can_copy_memories_of_other_people,
                           MonstersClues.people_dead_weirdly, MonstersClues.strange_different_things_happening,
                           MonstersClues.can_make_themselves_appear_as_they_like, MonstersClues.silver_burns_its_skin,
-                          MonstersClues.no_emf, MonstersClues.missing_or_dead_people_regularly_in_the_same_area]
+                          MonstersClues.no_emf, MonstersClues.missing_or_dead_people_regularly_in_the_same_area,
+                          MonstersClues.high_strength]
     shapeshifter.kill_methods = [MonstersKillMethods.silver_bullet_into_the_heart, MonstersKillMethods.silver_blade]
+    shapeshifter.disable_methods = [MonstersDisableMethods.silver_or_silver_bullets]
 
     psychic = Monster("Psychic", description="A person, that can read minds, knows past, present and future of people "
                                              "or in general. Senses energies and spirits also.", episodes={"S01": [9]})
@@ -201,14 +203,15 @@ class MonsterBase:
                                                        "Sometimes can be mistaken for ghosts or vampires. Thinman is "
                                                        "an example of two people working together to bring to life "
                                                        "a Thinman monster.",
-                           episodes={"S01": [15], "S04": [11], "S09": [15]})
+                           episodes={"S01": [15], "S04": [11], "S09": [15, 20]})
     crazy_humans.clues = [MonstersClues.people_kidnapped_weirdly, MonstersClues.weird_electronics_behavior,
                           MonstersClues.flashing_lights, MonstersClues.people_seeing_things_or_figures,
                           MonstersClues.people_dead_weirdly, MonstersClues.weird_things_behavior,
                           MonstersClues.body_torn_apart, MonstersClues.weird_noises, MonstersClues.no_cold_spots,
                           MonstersClues.can_appear_out_of_thin_air, MonstersClues.slender_like_creature,
                           MonstersClues.can_vanish, MonstersClues.no_flashing_lights, MonstersClues.ghost_like_creature,
-                          MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area]
+                          MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
+                          MonstersClues.claws]
     crazy_humans.kill_methods = [MonstersKillMethods.like_any_human]
 
     spring_heeled_jacks = Monster("Sprint Heeled Jacks", description="Not seen. Only mentioned in S01E15")
@@ -249,7 +252,7 @@ class MonsterBase:
                                              "years as blood slaves. One can become a vampire, when drinking vampire "
                                              "blood. Upon changing, all senses sharpen.",
                       episodes={"S01": [20], "S02": [3], "S03": [7], "S05": [3], "S06": [5, 19], "S07": [22],
-                                "S08": [1, 2, 5, 7, 9, 10, 18, 19], "S09": [2, 16, 19]})
+                                "S08": [1, 2, 5, 7, 9, 10, 18, 19], "S09": [2, 16, 19, 20]})
     vampire.clues = [MonstersClues.ripped_throat, MonstersClues.no_blood_in_the_body, MonstersClues.needle_like_teeth,
                      MonstersClues.moving_in_groups_usually, MonstersClues.invulnerable, MonstersClues.high_strength,
                      MonstersClues.bright_eyes, MonstersClues.great_sense_of_smell, MonstersClues.white_skin,
@@ -382,13 +385,14 @@ class MonsterBase:
                                                "can control themselves. Some have been able to subsist off of "
                                                "animal hearts. Also mentioned in S01E16", episodes={"S02": [17],
                                                                                                     "S08": [4],
-                                                                                                    "S09": [12]})
+                                                                                                    "S09": [12, 20]})
     werewolf.clues = [MonstersClues.body_torn_apart, MonstersClues.animal_like_attack, MonstersClues.missing_heart,
                       MonstersClues.murders_during_full_moon_week, MonstersClues.claws, MonstersClues.attacks_at_night,
                       MonstersClues.animal_like_noises, MonstersClues.amnesia_blackout, MonstersClues.high_strength,
                       MonstersClues.people_dead_weirdly, MonstersClues.increased_regeneration, MonstersClues.moves_fast,
                       MonstersClues.bite_marks, MonstersClues.missing_organs]
     werewolf.kill_methods = [MonstersKillMethods.silver_bullet_into_the_heart]
+    werewolf.disable_methods = [MonstersDisableMethods.silver_or_silver_bullets]
     werewolf.cure_methods = [MonstersCureMethods.plasma_therapy_with_the_blood_of_the_werewolf_that_bit_the_victim]
 
     jinn = Monster("Jinn", description="Mythical creatures, that feed on people. They have godlike power and can "
@@ -398,13 +402,13 @@ class MonsterBase:
                                        "humans, some look just like regular people. There is an offshoot of jinn, "
                                        "that liquefies the organs of the victims. "
                                        "It can be killed like a regular jinn.",
-                   episodes={"S02": [20], "S06": [1], "S08": [20]})
+                   episodes={"S02": [20], "S06": [1], "S08": [20], "S09": [20]})
     jinn.clues = [MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                   MonstersClues.blue_eyes, MonstersClues.can_put_a_person_in_wonderland, MonstersClues.feeds_on_blood,
                   MonstersClues.blue_fire_on_its_arms, MonstersClues.poisoned_people, MonstersClues.people_dead_weirdly,
                   MonstersClues.seen_as_human_when_not_feeding, MonstersClues.people_seeing_strange_things,
-                  MonstersClues.liquefied_organs, MonstersClues.no_black_goo, MonstersClues.no_burn_marks,
-                  MonstersClues.leaves_blue_handprint, MonstersClues.can_appear_out_of_thin_air]
+                  MonstersClues.liquefied_organs, MonstersClues.no_black_goo, MonstersClues.can_appear_out_of_thin_air,
+                  MonstersClues.leaves_blue_handprint, MonstersClues.no_burn_marks, MonstersClues.deep_voice]
     jinn.kill_methods = [MonstersKillMethods.silver_knife_dipped_in_lambs_blood]
 
     acheri = Monster("Acheri", description="Demon, that disguises itself as a little girl.", episodes={"S02": [21]})
@@ -795,7 +799,8 @@ class MonsterBase:
                                  MonstersKillMethods.scythe_of_death]
 
     wraith = Monster("Wraith", description="Creatures, that crack the head and feed on brain juice. "
-                                           "Can poison people and drive them crazy.", episodes={"S05": [11]})
+                                           "Can poison people and drive them crazy.", episodes={"S05": [11],
+                                                                                                "S09": [20]})
     wraith.clues = [MonstersClues.people_dead_weirdly, MonstersClues.no_black_fog, MonstersClues.no_cold_spots,
                     MonstersClues.bite_marks_on_peoples_necks, MonstersClues.people_seeing_strange_things,
                     MonstersClues.victims_brain_devoid_of_water, MonstersClues.silver_burns_its_skin,
@@ -1374,8 +1379,8 @@ class MonsterBase:
                          MonstersClues.weird_electronics_behavior, MonstersClues.can_appear_out_of_thin_air,
                          MonstersClues.can_vanish, MonstersClues.invisible_entity]
 
-    unknown = Monster("Unknown", description="", episodes={"S09": [19]})
-    unknown.clues = []
+    unknown = Monster("Unknown", description="", episodes={"S09": [20]})
+    unknown.clues = [MonstersClues.claws]
 
     # ---------------------------------------------------- SEASON 10 ---------------------------------------------------
 
