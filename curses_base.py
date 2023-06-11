@@ -207,7 +207,7 @@ class CursesBase:
                                                                "a pinch of the Sands of Time and a week charge of "
                                                                "a soul) can move a person to another time "
                                                                "to a specific person or their relatives.",
-                              episodes={"S08": [12]})
+                              episodes={"S08": [12], "S09": [21]})
     time_travel_spell.clues = [CursesClues.people_appearing_out_of_nowhere]
 
     false_memories_spell = Curse("False memories spell", description="It is used to create false memories into another "
@@ -260,9 +260,13 @@ class CursesBase:
                                                      "brother. It looks like a mirrored version of the letter 'F' with "
                                                      "additional horizontal line. A mark can be transferred to "
                                                      "another person that is worthy of it (a killer). When a man with "
-                                                     "the Mark of Cain holds the blade, the mark starts to shine red.",
-                         episodes={"S09": [11, 12, 16, 17, 18]})
-    mark_of_cain.clues = [CursesClues.people_acting_weirdly]
+                                                     "the Mark of Cain holds the blade, the mark starts to shine red. "
+                                                     "A person with the Mark of Cain (holding the First Blade) can "
+                                                     "counteract telekinetic abilities of a Knights of Hell. That "
+                                                     "person can also telekinetically bring the blade to himself.",
+                         episodes={"S09": [11, 12, 16, 17, 18, 21]})
+    mark_of_cain.clues = [CursesClues.people_acting_weirdly, CursesClues.less_affected_by_telekinesis_of_knight_of_hell,
+                          CursesClues.people_acting_weirdly]
 
     willpower_removing_spell = Curse("Willpower removing spell", description="Spell, that lowers or removes the power "
                                                                              "of will of a person. Used by Magnus.",

@@ -63,6 +63,7 @@ class CursesClues:
     killed_hell_hound = "killed Hell hound"
     blood_cough = "blood cough"
     meteor_shower_over_earth = 'meteor shower over Earth'
+    less_affected_by_telekinesis_of_knight_of_hell = "less affected by telekinesis of Knight of Hell"
 
 
 class CursesDisableMethods:
