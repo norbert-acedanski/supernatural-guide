@@ -23,6 +23,7 @@ class ObjectAbilities:
     can_whisper_to_people = "can whisper to people"
     can_temporarily_weaken_a_possessing_angel = "can temporarily weaken a possessing angel"
     can_attract_angels = "can attract Angels"
+    can_focus_energy = "can focus energy"
     unables_possessions = "unables possessions"
     grants_incredible_luck = "grants incredible luck"
     brings_back_dreams_for_those_that_dont_have_them = "brings back dreams for those that dont have them"
