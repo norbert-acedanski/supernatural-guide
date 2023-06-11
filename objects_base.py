@@ -97,7 +97,7 @@ class ObjectsBase:
 
     angel_blade = Object("Angel blade", description="A triangular, silvery blade, that each angel has.",
                          episodes={"S04": [16], "S05": [1, 13, 18], "S06": [3, 10, 17, 18, 22], "S07": [21],
-                                   "S08": [7, 10, 17, 21, 22, 23], "S09": [1, 2, 3, 6, 9, 10, 11, 14, 16, 18, 21, 22]})
+                                   "S08": [7, 10, 17, 21, 22, 23], "S09": [1, 2, 3, 6, 9, 10, 11, 14, 16, 18, 21, 22, 23]})
     angel_blade.abilities = [ObjectAbilities.can_kill_angels, ObjectAbilities.can_kill_demons]
 
     lucifers_cage = Object("Lucifer's Cage", description="A prison build specifically to contain archangelic powers "
@@ -213,7 +213,7 @@ class ObjectsBase:
                                                     "Third tablet (inscribed in angel core and stashed in stone form "
                                                     "by Lucyfer) has information about Angels and how to make "
                                                     "them fall. Found in Lucyfer crypt in S08E17.",
-                         episodes={"S07": [21], "S08": [1, 2, 10, 17, 21, 23], "S09": [9, 10]})
+                         episodes={"S07": [21], "S08": [1, 2, 10, 17, 21, 23], "S09": [9, 10, 23]})
     word_of_god.abilities = [ObjectAbilities.can_cause_storms, ObjectAbilities.can_cause_women_to_go_to_labour,
                              ObjectAbilities.when_opened_causes_a_person_to_become_a_prophet]
 
@@ -250,15 +250,17 @@ class ObjectsBase:
                                                     "mark, the blade is useless. When a man with the Mark of Cain "
                                                     "holds the blade, the mark starts to shine red. A person with Mark "
                                                     "of Cain can telekinetically bring the blade to himself.",
-                         episodes={"S09": [11, 16, 21, 22]})
+                         episodes={"S09": [11, 16, 21, 22, 23]})
     first_blade.abilities = [ObjectAbilities.can_kill_knights_of_hell, ObjectAbilities.can_kill_reapers,
                              ObjectAbilities.can_kill_angels]
 
     energy_focusing_sigil = Object("Energy Focusing Sigil", description="A spell, that allows to focus energy (for "
                                                                         "example killed angel can focus the energy to "
                                                                         "kill people and other angels.",
-                                   episodes={"S09": [22]})
+                                   episodes={"S09": [22, 23]})
     energy_focusing_sigil.abilities = [ObjectAbilities.can_focus_energy]
+
+    # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
 
     # SEASON 10:
 
