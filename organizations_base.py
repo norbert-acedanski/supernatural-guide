@@ -9,14 +9,22 @@ class OrganizationsBase:
                                                                 "The Aquarian Star. It represents great magical power. "
                                                                 "According to Henry it stood at the gates of "
                                                                 "Atlantis itself. They have a base in Lebanon, Kansas, "
-                                                                "that contains a library of books about supernatural.",
-                                  episodes={"S18": [12, 13, 14, 16, 20, 22, 23]})
+                                                                "that contains a library of books about supernatural. "
+                                                                "One of the members was L. Franck Baum, the writer. "
+                                                                "He wrote books about his daughter in Ozz. Charlie "
+                                                                "broke the fourth wall in their compound in S09E04.",
+                                  episodes={"S08": [12, 13, 14, 16, 20, 22, 23],
+                                            "S09": [4, 5, 6, 7, 9, 11, 14, 16, 17]})
     man_of_letters.knowledge = [OrganizationKnowledge.time_travel, OrganizationKnowledge.demon_killing_knife,
                                 OrganizationKnowledge.haitian_symbol_for_speaking_to_the_dead,
                                 OrganizationKnowledge.knights_of_hell, OrganizationKnowledge.drakopoolos_journal,
                                 OrganizationKnowledge.summoning_of_zeus, OrganizationKnowledge.irregular_jinns,
-                                OrganizationKnowledge.demonic_possessions,
-                                OrganizationKnowledge.monitoring_of_apocalyptic_events]
+                                OrganizationKnowledge.demonic_possessions, OrganizationKnowledge.oz,
+                                OrganizationKnowledge.monitoring_of_apocalyptic_events,
+                                OrganizationKnowledge.inuit_magic, OrganizationKnowledge.extinct_languages,
+                                OrganizationKnowledge.angel_weakening, OrganizationKnowledge.angel_leaving_its_vessel,
+                                OrganizationKnowledge.the_inner_workings_of_angels,
+                                OrganizationKnowledge.dishonored_and_forgotten]
 
     the_judah_initiative = Organization("The Judah initiative", description="They were active during WW2. A group of "
                                                                             "rabbis that were good saboteurs. "

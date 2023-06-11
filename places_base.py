@@ -21,8 +21,11 @@ class PlacesBase:
                                          "collection of all of the peoples personal heavens. There is a road, that "
                                          "goes through heaven called Axis Mundi. It is different for everyone. "
                                          "It can be a literal road, but also a model, a picture, magazine. "
-                                         "Leads to a garden in the center.",
-                   episodes={"S05": [16], "S08": [7, 10, 17, 23]})
+                                         "Leads to a garden in the center. After the Fall of Angels, the Heaven is "
+                                         "sealed by Metatron with a spell. There is a portal from Heaven to Earth "
+                                         "created by Metatron, for Angels to travel between those two places. Angels "
+                                         "can't sense it because it changes its location. Heaven has it's own prison.",
+                   episodes={"S05": [16], "S08": [7, 10, 17, 23], "S09": [18, 22, 23]})
     heaven.clues = [PlaceClues.good_memories_relived, PlaceClues.changing_scenery, PlaceClues.bright_place]
 
     purgatory = Place("Purgatory", description="A place, where all monsters go, after they die. Can be opened with an "
@@ -40,6 +43,12 @@ class PlacesBase:
                                                "a person into it.", episodes={"S07": [23], "S08": [1, 19]})
     purgatory.clues = [PlaceClues.dark_place, PlaceClues.monsters_nearby,
                        PlaceClues.when_a_person_comes_back_from_it_a_bright_light_appears]
+
+    oz = Place("Oz", description="A magical land, where Dorothy was as a child. You can enter Oz in different ways, "
+                                 "like tornado, yey of a hurricane, a whirlpool, but there is a key to Oz. Inserted "
+                                 "into any door - it opens a portal to Oz (a golden path). When used with a proper "
+                                 "spell - it can open door to any place in Oz.", episodes={"S09": [4]})
+    oz.clues = [PlaceClues.castle_structure_on_a_hill, PlaceClues.golden_path, PlaceClues.emerald_city]
 
     def __init__(self):
         self.places = [place for place in self.__class__.__dict__.values() if isinstance(place, Place)]

@@ -14,10 +14,11 @@ class ObjectsBase:
                                       description="A journal of John Winchester, that contains a lot information about "
                                                   "monsters in Supernatural Universe.",
                                       episodes={"S01": [], "S04": [19], "S06": [1, 8, 12], "S07": [8, 11],
-                                                "S08": [8, 12]})
+                                                "S08": [8, 12], "S09": [11]})
     john_winchesters_journal._information = {"S04E19": JohnWinchesterJournal.entry_about_johns_other_son,
                                              "S06E12": JohnWinchesterJournal.entry_about_a_skinwalker,
-                                             "S08E12": JohnWinchesterJournal.entry_about_torturing_a_demon}
+                                             "S08E12": JohnWinchesterJournal.entry_about_torturing_a_demon,
+                                             "S09E11": JohnWinchesterJournal.entry_about_killing_a_demon_abaddon_and_locker}
 
     colt_of_colt = Object("Colt of Colt", description="Colt made by Samuel Colt in 1835, when Halley's Comet was "
                                                       "overhead and the same night those men died at the Alamo. "
@@ -47,7 +48,7 @@ class ObjectsBase:
                                                                     "certain kinds of demons.",
                                  episodes={"S03": [1, 9, 16], "S04": [1, 9, 20, 22], "S05": [1, 10, 14, 17, 20, 21, 22],
                                            "S06": [10, 20, 21], "S07": [8, 15, 17, 21],
-                                           "S08": [1, 2, 7, 10, 14, 17, 19, 23]})
+                                           "S08": [1, 2, 7, 10, 14, 17, 19, 23], "S09": [2, 4, 11, 14, 16, 17]})
     demon_killing_knife.abilities = [ObjectAbilities.can_kill_demons, ObjectAbilities.cannot_kill_angels,
                                      ObjectAbilities.cannot_kill_knights_of_hell]
 
@@ -75,7 +76,8 @@ class ObjectsBase:
     sigil_against_angels = Object("Sigil against angels", description="Sigil made with blood, that can send angels "
                                                                       "back to heaven. Can be used to send back "
                                                                       "a specific angel type.",
-                                  episodes={"S04": [10, 22], "S05": [13, 18], "S06": [3], "S07": [21]})
+                                  # TODO: Check where else is the sigil used
+                                  episodes={"S04": [10, 22], "S05": [13, 18], "S06": [3], "S07": [21], "S09": [1]})
     sigil_against_angels.abilities = [ObjectAbilities.can_send_angels_back_to_heaven]
 
     angel_grace = Object("Angel grace", description="A power source for an angel", episodes={"S04": [10], "S08": [23]})
@@ -88,12 +90,14 @@ class ObjectsBase:
     reaper_imprison_sigil.abilities = [ObjectAbilities.traps_a_reaper]
 
     angel_protection_sigil = Object("Angel protection sigil", description="Angels can't get past it, when the place is "
-                                                                          "marked with it.", episodes={"S04": [15]})
+                                                                          "marked with it.",
+                                    # TODO: Check where else is the sigil used
+                                    episodes={"S04": [15], "S09": [1, 18]})
     angel_protection_sigil.abilities = [ObjectAbilities.angels_cant_get_past_it]
 
     angel_blade = Object("Angel blade", description="A triangular, silvery blade, that each angel has.",
                          episodes={"S04": [16], "S05": [1, 13, 18], "S06": [3, 10, 17, 18, 22], "S07": [21],
-                                   "S08": [7, 10, 17, 21, 22, 23]})
+                                   "S08": [7, 10, 17, 21, 22, 23], "S09": [1, 2, 3, 6, 9, 10, 11, 14, 16, 18, 21, 22, 23]})
     angel_blade.abilities = [ObjectAbilities.can_kill_angels, ObjectAbilities.can_kill_demons]
 
     lucifers_cage = Object("Lucifer's Cage", description="A prison build specifically to contain archangelic powers "
@@ -122,8 +126,9 @@ class ObjectsBase:
                                                     "the Horseman.", episodes={"S05": [2]})
     ring_of_war.abilities = [ObjectAbilities.can_give_hallucinations]
 
-    human_soul = Object("Human soul", description="As an object is very bright. Can be collected of a person.",
-                        episodes={"S05": [14], "S06": [11], "S08": [19]})
+    human_soul = Object("Human soul", description="As an object is very bright. Can be collected of a person. Released "
+                                                  "soul of a person will find a way back to a body.",
+                        episodes={"S05": [14], "S06": [11], "S08": [19], "S09": [17]})
 
     ring_of_famine = Object("Ring of Famine", description="Can give people starving sensation for things they "
                                                           "lack/desire. One of the four rings of the Horseman.",
@@ -166,8 +171,12 @@ class ObjectsBase:
                                                             "happened to Lot's wife).", episodes={"S06": [3]})
     heavens_cristal.abilities = [ObjectAbilities.can_turn_a_person_into_a_pillar_of_salt]
 
-    gabriels_horn_of_truth = Object("Gabriel's Horn of truth", description="Can make people speak the truth. "
-                                                                           "Not seen, only mentioned in S06E06.")
+    gabriels_horn_of_truth = Object("Gabriel's Horn of truth",
+                                    description="Can make people speak the truth. Mentioned in S06E06. It can be used "
+                                                "to attract Angels with help of a spell. Ingredients are a drawn "
+                                                "symbol, Griffin feathers and bones of a Fairy (no matter what realm "
+                                                "they're from - according to Gadreel).", episodes={"S09": [18]})
+    gabriels_horn_of_truth.abilities = [ObjectAbilities.can_attract_angels]
 
     # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
 
@@ -204,7 +213,7 @@ class ObjectsBase:
                                                     "Third tablet (inscribed in angel core and stashed in stone form "
                                                     "by Lucyfer) has information about Angels and how to make "
                                                     "them fall. Found in Lucyfer crypt in S08E17.",
-                         episodes={"S07": [21], "S08": [1, 2, 10, 17, 21, 23]})
+                         episodes={"S07": [21], "S08": [1, 2, 10, 17, 21, 23], "S09": [9, 10, 23]})
     word_of_god.abilities = [ObjectAbilities.can_cause_storms, ObjectAbilities.can_cause_women_to_go_to_labour,
                              ObjectAbilities.when_opened_causes_a_person_to_become_a_prophet]
 
@@ -217,12 +226,41 @@ class ObjectsBase:
 
     demonic_handcuffs = Object("Demonic handcuffs", description="When worn by a Demon, it cannot teleport, "
                                                                 "leave the body or use demon magic.",
-                               episodes={"S08": [23]})
+                               episodes={"S08": [23], "S09": [10, 14, 16]})
     demonic_handcuffs.abilities = [ObjectAbilities.traps_a_demon]
 
     # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
 
     # SEASON 9:
+
+    possessing_angel_weakening_sigil = Object("Possessing Angel weakening sigil",
+                                              description="A Sigil, that allows to temporarily hobble an angel, that "
+                                                          "possesses a human - leaving him no control over the vessel. "
+                                                          "When altered - does not work as it should.",
+                                              episodes={"S09": [9]})
+    possessing_angel_weakening_sigil.abilities = [ObjectAbilities.can_temporarily_weaken_a_possessing_angel]
+
+    first_blade = Object("First Blade", description="First weapon used to kill the first human victim. Archangels used "
+                                                    "it to kill the Knights of Hell. That is what everyone thinks "
+                                                    "happened. The truth is, Cain killed Knights of Hell with it. "
+                                                    "A spell consisting of 6 elements, one of which is essence of "
+                                                    "Kraken. A mixture of ingredients should be poured out on a map "
+                                                    "and lit with a match. The blade is a part of a jaw of an animal. "
+                                                    "The first blade has to be used with a Mark of Cain. Without the "
+                                                    "mark, the blade is useless. When a man with the Mark of Cain "
+                                                    "holds the blade, the mark starts to shine red. A person with Mark "
+                                                    "of Cain can telekinetically bring the blade to himself.",
+                         episodes={"S09": [11, 16, 21, 22, 23]})
+    first_blade.abilities = [ObjectAbilities.can_kill_knights_of_hell, ObjectAbilities.can_kill_reapers,
+                             ObjectAbilities.can_kill_angels]
+
+    energy_focusing_sigil = Object("Energy Focusing Sigil", description="A spell, that allows to focus energy (for "
+                                                                        "example killed angel can focus the energy to "
+                                                                        "kill people and other angels.",
+                                   episodes={"S09": [22, 23]})
+    energy_focusing_sigil.abilities = [ObjectAbilities.can_focus_energy]
+
+    # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
 
     # SEASON 10:
 

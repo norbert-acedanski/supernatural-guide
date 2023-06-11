@@ -1,4 +1,5 @@
 class CursesClues:
+    black_eyes = "eyes - black"
     missing_or_dead_people_regularly_in_the_same_area = "groups of people missing/dead regularly in the same area"
     missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area = \
         "missing or dead people in similar way randomly across time in the same area"
@@ -13,10 +14,18 @@ class CursesClues:
     people_seeing_things_or_figures = "people seeing things or figures (ghosts, people, reapers, beings, unicorns, " \
                                       "giant octopuses, etc.)"
     people_nightmares_come_true = "people nightmares come true"
+    people_doing_what_they_are_told = "people doing what they are told"
     shadows_of_people_on_the_wall = "shadows of people on the wall"
     suicides = "suicides"
     hallucinations = "hallucinations"
     weird_animal_behavior = "weird animal behavior"
+    animal_like_behavior_of_a_person = "animal like behavior of a person"
+    double_tongue = "double tongue"
+    cat_eyes = "cat eyes"
+    claws = "claws"
+    venom_necrosis = "venom necrosis"
+    high_strength = "high strength"
+    eats_whole_animals = "eats whole animals"
     control_over_a_reaper = "control over a reaper"
     black_altar = "black altar"
     controlled_with_a_spell_and_a_cross = "controlled with a spell and a cross"
@@ -49,11 +58,13 @@ class CursesClues:
     blinding_love = "blinding love"
     seen_as_a_clown = "seen as a clown"
     bite_marks_on_peoples_necks = "bite marks on peoples necks"
+    no_bite_marks_on_peoples_necks = "no bite marks on peoples necks"
     red_blood = "red blood"
     people_appearing_out_of_nowhere = "people appearing out of nowhere"
     killed_hell_hound = "killed Hell hound"
     blood_cough = "blood cough"
     meteor_shower_over_earth = 'meteor shower over Earth'
+    less_affected_by_telekinesis_of_knight_of_hell = "less affected by telekinesis of Knight of Hell"
 
 
 class CursesDisableMethods:
@@ -70,4 +81,5 @@ class CursesDisableMethods:
     kill_the_person_that_causes_it = "kill the person that causes it"
     kill_goddess_of_truth_veritas = "kill goddess of truth Veritas"
     wait_for_an_opening_from_the_other_side = "wait for an opening from the other side"
+    wait_for_if_to_pass = "wait for if to pass"
     will_of_an_angel_on_soul_juice = "will of an angel on soul juice"

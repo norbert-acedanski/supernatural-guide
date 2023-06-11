@@ -41,7 +41,7 @@ class MonsterBase:
                                           "by a special spell (has to be cast over an open fire).",
                               episodes={"S01": [1, 3, 5, 7, 9, 10, 13, 19], "S02": [6, 11, 16, 18, 19],
                                         "S03": [5, 6, 13], "S04": [2, 13, 15, 17], "S05": [9, 11], "S06": [4, 14],
-                                        "S07": [7, 10, 13, 17, 19]})
+                                        "S07": [7, 10, 13, 17, 19], "S09": [7]})
     vengeful_spirit.clues = [MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                              MonstersClues.people_dead_weirdly, MonstersClues.ghost_like_creature,
                              MonstersClues.weird_electronics_behavior, MonstersClues.weird_things_behavior,
@@ -102,7 +102,7 @@ class MonsterBase:
                     episodes={"S01": [4, 21, 22], "S02": [1, 14], "S03": [1, 2, 4, 12, 15, 16],
                               "S04": [1, 4, 9, 10, 20, 21, 22], "S05": [1, 6, 10, 12, 14, 17, 20, 21, 22],
                               "S06": [7, 10, 18, 20, 21, 22], "S07": [8, 15, 17, 21, 23],
-                              "S08": [1, 2, 7, 10, 17, 19, 21, 22]})
+                              "S08": [1, 2, 7, 10, 17, 19, 21, 22], "S09": [2, 10, 11, 14, 16, 17, 21, 23]})
     demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                    MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                    MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -115,7 +115,7 @@ class MonsterBase:
                    MonstersClues.black_blood]
     demon.kill_methods = [MonstersKillMethods.demon_killing_knife, MonstersKillMethods.angel_exorcism,
                           MonstersKillMethods.colt_of_colt_with_magic_bullets, MonstersKillMethods.demon_killing_spell,
-                          MonstersKillMethods.angel_blade,
+                          MonstersKillMethods.angel_blade, MonstersKillMethods.first_blade,
 
                           MonstersKillMethods.will_of_an_archangel, MonstersKillMethods.lance_of_archangel_michael]
     demon.disable_methods = [MonstersDisableMethods.holy_water, MonstersDisableMethods.holy_wood,
@@ -125,16 +125,18 @@ class MonsterBase:
                              MonstersDisableMethods.extrusion_by_people_with_abilities]
 
     shapeshifter = Monster("Shapeshifter", description="These creatures can transform themselves into other man or "
-                                                       "animals. Can mate with humans to produce Shapeshifter "
-                                                       "offspring.",
-                           episodes={"S01": [6], "S02": [12], "S04": [5], "S05": [2]})
+                                                       "animals. Can mate with humans (and other Shapeshifters) to "
+                                                       "produce Shapeshifter offspring.",
+                           episodes={"S01": [6], "S02": [12], "S04": [5], "S05": [2], "S09": [16, 20]})
     shapeshifter.clues = [MonstersClues.can_take_form_of_other_people, MonstersClues.skin_left_behind,
                           MonstersClues.being_at_two_places_at_once, MonstersClues.bright_eyes, MonstersClues.no_sulfur,
                           MonstersClues.weird_animal_behavior, MonstersClues.can_copy_memories_of_other_people,
                           MonstersClues.people_dead_weirdly, MonstersClues.strange_different_things_happening,
                           MonstersClues.can_make_themselves_appear_as_they_like, MonstersClues.silver_burns_its_skin,
-                          MonstersClues.no_emf, MonstersClues.missing_or_dead_people_regularly_in_the_same_area]
+                          MonstersClues.no_emf, MonstersClues.missing_or_dead_people_regularly_in_the_same_area,
+                          MonstersClues.high_strength]
     shapeshifter.kill_methods = [MonstersKillMethods.silver_bullet_into_the_heart, MonstersKillMethods.silver_blade]
+    shapeshifter.disable_methods = [MonstersDisableMethods.silver_or_silver_bullets]
 
     psychic = Monster("Psychic", description="A person, that can read minds, knows past, present and future of people "
                                              "or in general. Senses energies and spirits also.", episodes={"S01": [9]})
@@ -164,17 +166,21 @@ class MonsterBase:
     reaper = Monster("Reaper", description="Can give and take life. Can also transfer illnesses of people. When gone, "
                                            "people are not dying. Rogue reapers (Ajay for example) can smuggle "
                                            "a person across Hell's border, Heaven and the Veil. They have secret ways "
-                                           "in and out.When a reaper dies, there are electrical storms.",
-                     episodes={"S01": [12], "S02": [1], "S04": [15], "S05": [10, 21], "S06": [11], "S07": [10]})
+                                           "in and out.When a reaper dies, there are electrical storms. One of the "
+                                           "Reapers is Tesa (killed by Dean in S09E22).",
+                     episodes={"S01": [12], "S02": [1], "S04": [15], "S05": [10, 21], "S06": [11], "S07": [10],
+                               "S08": [19], "S09": [3, 22]})
     reaper.clues = [MonstersClues.people_dead_weirdly, MonstersClues.people_cured_miraculously,
                     MonstersClues.weird_things_behavior, MonstersClues.people_seeing_things_or_figures,
                     MonstersClues.seen_as_a_person_in_a_suit, MonstersClues.ghost_like_creature,
                     MonstersClues.visible_by_other_ghosts_and_people_close_to_death_only, MonstersClues.can_vanish,
                     MonstersClues.can_make_themselves_appear_as_they_like, MonstersClues.people_not_dying,
                     MonstersClues.strange_different_things_happening, MonstersClues.invisible_entity,
-                    MonstersClues.electrical_storms, MonstersClues.can_appear_out_of_thin_air]
-    reaper.disable_methods = [MonstersDisableMethods.reaper_imprison_sigil]
-    reaper.kill_methods = [MonstersKillMethods.reaper_blade_combined_with_a_spell, MonstersKillMethods.angel_blade]
+                    MonstersClues.electrical_storms, MonstersClues.can_appear_out_of_thin_air,
+                    MonstersClues.bright_light]
+    reaper.disable_methods = [MonstersDisableMethods.reaper_imprison_sigil, MonstersDisableMethods.angel_blade]
+    reaper.kill_methods = [MonstersKillMethods.reaper_blade_combined_with_a_spell, MonstersKillMethods.angel_blade,
+                           MonstersKillMethods.first_blade]
 
     people_with_abilities = Monster("People with abilities", description="People, that were infants, when prince of "
                                                                          "Hell killed their mother on the ceiling. "
@@ -196,12 +202,18 @@ class MonsterBase:
     people_with_abilities.kill_methods = [MonstersKillMethods.like_any_human]
 
     crazy_humans = Monster("Crazy humans", description="Ordinary humans, that are mad or crazy. "
-                                                       "Sometimes can be mistaken for ghosts or vampires.",
-                           episodes={"S01": [15], "S04": [11]})
+                                                       "Sometimes can be mistaken for ghosts or vampires. Thinman is "
+                                                       "an example of two people working together to bring to life "
+                                                       "a Thinman monster.",
+                           episodes={"S01": [15], "S04": [11], "S09": [15, 20]})
     crazy_humans.clues = [MonstersClues.people_kidnapped_weirdly, MonstersClues.weird_electronics_behavior,
                           MonstersClues.flashing_lights, MonstersClues.people_seeing_things_or_figures,
                           MonstersClues.people_dead_weirdly, MonstersClues.weird_things_behavior,
-                          MonstersClues.body_torn_apart, MonstersClues.weird_noises]
+                          MonstersClues.body_torn_apart, MonstersClues.weird_noises, MonstersClues.no_cold_spots,
+                          MonstersClues.can_appear_out_of_thin_air, MonstersClues.slender_like_creature,
+                          MonstersClues.can_vanish, MonstersClues.no_flashing_lights, MonstersClues.ghost_like_creature,
+                          MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
+                          MonstersClues.claws]
     crazy_humans.kill_methods = [MonstersKillMethods.like_any_human]
 
     spring_heeled_jacks = Monster("Sprint Heeled Jacks", description="Not seen. Only mentioned in S01E15")
@@ -238,10 +250,11 @@ class MonsterBase:
                                              "A coss will not repel them, sunlight will not kill them. Neither will a "
                                              "stake to the heart. Vampires nest in groups 8 to 10. Smaller packs are "
                                              "sent out to hunt for food. Kidnapped people are taken to nests and then "
-                                             "bleeding them for days or weeks. One can become a vampire, when drinking "
-                                             "vampire blood. Upon changing, all senses sharpen.",
+                                             "bleeding them for days or weeks. Sometimes nests keep humans alive for "
+                                             "years as blood slaves. One can become a vampire, when drinking vampire "
+                                             "blood. Upon changing, all senses sharpen.",
                       episodes={"S01": [20], "S02": [3], "S03": [7], "S05": [3], "S06": [5, 19], "S07": [22],
-                                "S08": [1, 2, 5, 7, 9, 10, 18, 19]})
+                                "S08": [1, 2, 5, 7, 9, 10, 18, 19], "S09": [2, 16, 19, 20]})
     vampire.clues = [MonstersClues.ripped_throat, MonstersClues.no_blood_in_the_body, MonstersClues.needle_like_teeth,
                      MonstersClues.moving_in_groups_usually, MonstersClues.invulnerable, MonstersClues.high_strength,
                      MonstersClues.bright_eyes, MonstersClues.great_sense_of_smell, MonstersClues.white_skin,
@@ -285,7 +298,8 @@ class MonsterBase:
                                                    "short. Now they hunt people that sold their souls. According the "
                                                    "the Demon Tablet - dire creatures may be seen only by the damned "
                                                    "or through an object scorched with holy fire (burning holy oil).",
-                         episodes={"S02": [8], "S03": [16], "S05": [10, 20], "S06": [4, 10, 14]})
+                         episodes={"S02": [8], "S03": [16], "S05": [10, 20], "S06": [4, 10, 14], "S08": [14],
+                                   "S09": [21]})
     hell_hound.clues = [MonstersClues.victims_hear_dogs_barking_and_growling, MonstersClues.invisible_dogs,
                         MonstersClues.victims_see_black_dogs, MonstersClues.people_seeing_strange_things,
                         MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
@@ -302,7 +316,8 @@ class MonsterBase:
                                                                "One can summon it by placing a box with: graveyard "
                                                                "dirt, black cat cone, ones photo in the center of "
                                                                "a crossroad.",
-                               episodes={"S02": [8, 22], "S04": [9], "S05": [10], "S06": [4], "S07": [8], "S08": [19]})
+                               episodes={"S02": [8, 22], "S04": [9], "S05": [10], "S06": [4], "S07": [8], "S08": [19],
+                                         "S09": [2, 16]})
     crossroads_demon.clues = [MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
                               MonstersClues.red_eyes, MonstersClues.summoned_by_placing_box_in_the_crossroads,
                               MonstersClues.travels_as_black_fog, MonstersClues.pact_sealed_with_a_kiss,
@@ -372,13 +387,15 @@ class MonsterBase:
                                                "lunar cycle. Pure bloods don't blackout during the transformation and "
                                                "can control themselves. Some have been able to subsist off of "
                                                "animal hearts. Also mentioned in S01E16", episodes={"S02": [17],
-                                                                                                    "S08": [4]})
+                                                                                                    "S08": [4],
+                                                                                                    "S09": [12, 20]})
     werewolf.clues = [MonstersClues.body_torn_apart, MonstersClues.animal_like_attack, MonstersClues.missing_heart,
                       MonstersClues.murders_during_full_moon_week, MonstersClues.claws, MonstersClues.attacks_at_night,
                       MonstersClues.animal_like_noises, MonstersClues.amnesia_blackout, MonstersClues.high_strength,
                       MonstersClues.people_dead_weirdly, MonstersClues.increased_regeneration, MonstersClues.moves_fast,
-                      MonstersClues.bite_marks]
+                      MonstersClues.bite_marks, MonstersClues.missing_organs]
     werewolf.kill_methods = [MonstersKillMethods.silver_bullet_into_the_heart]
+    werewolf.disable_methods = [MonstersDisableMethods.silver_or_silver_bullets]
     werewolf.cure_methods = [MonstersCureMethods.plasma_therapy_with_the_blood_of_the_werewolf_that_bit_the_victim]
 
     jinn = Monster("Jinn", description="Mythical creatures, that feed on people. They have godlike power and can "
@@ -388,13 +405,13 @@ class MonsterBase:
                                        "humans, some look just like regular people. There is an offshoot of jinn, "
                                        "that liquefies the organs of the victims. "
                                        "It can be killed like a regular jinn.",
-                   episodes={"S02": [20], "S06": [1], "S08": [20]})
+                   episodes={"S02": [20], "S06": [1], "S08": [20], "S09": [20]})
     jinn.clues = [MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                   MonstersClues.blue_eyes, MonstersClues.can_put_a_person_in_wonderland, MonstersClues.feeds_on_blood,
                   MonstersClues.blue_fire_on_its_arms, MonstersClues.poisoned_people, MonstersClues.people_dead_weirdly,
                   MonstersClues.seen_as_human_when_not_feeding, MonstersClues.people_seeing_strange_things,
-                  MonstersClues.liquefied_organs, MonstersClues.no_black_goo, MonstersClues.no_burn_marks,
-                  MonstersClues.leaves_blue_handprint, MonstersClues.can_appear_out_of_thin_air]
+                  MonstersClues.liquefied_organs, MonstersClues.no_black_goo, MonstersClues.can_appear_out_of_thin_air,
+                  MonstersClues.leaves_blue_handprint, MonstersClues.no_burn_marks, MonstersClues.deep_voice]
     jinn.kill_methods = [MonstersKillMethods.silver_knife_dipped_in_lambs_blood]
 
     acheri = Monster("Acheri", description="Demon, that disguises itself as a little girl.", episodes={"S02": [21]})
@@ -508,19 +525,24 @@ class MonsterBase:
     # ---------------------------------------------------- SEASON 4 ----------------------------------------------------
 
     angel = Monster("Angel", description="Angel of God (Castiel, Uriel, Hester, Inias, Samandriel, Ion, Nathaniel, "
-                                         "Naomi). They can bring people back from the dead. Cannot track people, that "
-                                         "use powerful spells to hide themselves. All angels have graces - energy "
-                                         "source for their power. All angels instinctively know the names of past, "
-                                         "present and future prophets. When they disobey (fall), as a punishment they "
-                                         "can become human. When dying, a bright light is produced and they leave wing "
-                                         "marks. To possess somebody, they need a consent. When an angel is tortured, "
-                                         "the pain causes a ripple effect and strange things happen nearby. Castiel "
-                                         "broke the fourth wall in S06E20. Castiel supposedly died in S07E01, "
-                                         "back in S07E17.",
+                                         "Naomi). They can bring people back from the dead. Cannot track "
+                                         "people, that use powerful spells to hide themselves. All angels have graces "
+                                         "- energy source for their power. All angels instinctively know the names of "
+                                         "past, present and future prophets. When they disobey (fall), as a punishment "
+                                         "they can become human. When dying, a bright light is produced and they leave "
+                                         "wing marks. Also the organs of the vessel, they are possessing are "
+                                         "vapourised. To possess somebody, they need a consent. When an angel is "
+                                         "tortured, the pain causes a ripple effect and strange things happen nearby. "
+                                         "When an angel looses it's Grace - it becomes human. An Angel without a Grace "
+                                         "can intake another Angel's/Fallen Angel's Grace. When an Angel leaves "
+                                         "a vessel - it leaves a part of himself (a part of his Grace) in it - like "
+                                         "a fingerprint. An Angel can be tracked using a part of the Grace, that it "
+                                         "left in his vessel. Castiel broke the fourth wall in S06E20. Castiel "
+                                         "supposedly died in S07E01, back in S07E17.",
                     episodes={"S04": [1, 2, 7, 9, 10, 15, 16, 18, 20, 21, 22],
                               "S05": [1, 2, 3, 4, 5, 8, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22],
                               "S06": [3, 6, 7, 10, 12, 15, 17, 18, 19, 20, 21, 22], "S07": [1, 17, 20, 21, 23],
-                              "S08": [2, 7, 8, 10, 17, 19, 21, 22, 23]})
+                              "S08": [2, 7, 8, 10, 17, 19, 21, 22, 23], "S09": [9, 10, 11, 14, 18, 21, 22, 23]})
     angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                    MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion, MonstersClues.has_wings,
                    MonstersClues.leaves_burned_marks, MonstersClues.weird_electronics_behavior,
@@ -536,8 +558,7 @@ class MonsterBase:
                    MonstersClues.can_become_invisible, MonstersClues.can_control_demons, MonstersClues.liquefied_organs,
                    MonstersClues.can_erase_and_bring_back_memories, MonstersClues.can_transfer_mental_diseases,
                    MonstersClues.can_go_and_put_into_a_persons_mind, MonstersClues.strange_different_things_happening,
-
-                   MonstersClues.travels_as_white_fog]
+                   MonstersClues.bright_eyes, MonstersClues.vapourised_organs, MonstersClues.travels_as_white_fog]
     angel.disable_methods = [MonstersDisableMethods.symbol_made_with_blood_against_angels,
                              MonstersDisableMethods.exorcism_for_angels, MonstersDisableMethods.holy_oil,
                              MonstersDisableMethods.enochian_spell, MonstersDisableMethods.angel_blade,
@@ -568,11 +589,30 @@ class MonsterBase:
                      MonstersClues.can_bring_back_dead_people, MonstersClues.can_summon_ghosts]
     samhain.disable_methods = [MonstersDisableMethods.extrusion_by_people_with_abilities]
 
-    fallen_angel = Monster("Fallen angel", description="An angel, that disobeyed the orders and fell to Earth.",
-                           episodes={"S04": [9, 10]})
+    fallen_angel = Monster("Fallen Angel", description="An angel, that disobeyed the orders or was cursed by "
+                                                       "spell banishing Angels to Earth and fell. Like Angels - when "
+                                                       "killed, the organs of the vessel are vapourised. "
+                                                       "After The Fall in S08E23 we have the following fallen "
+                                                       "angels: Hael, Ezekiel, Bartholomew, Malachi, Gadreel "
+                                                       "(committed suicide in S0923), Muriel, Azrael, Sophia, Theo, "
+                                                       "Thaddeus, Abner, Hannah, Ezra, Esther, Asariel, Purah. Gadreel "
+                                                       "was the Angel, that let Lucifer into the Garden of Eden.",
+                           episodes={"S04": [9, 10], "S08": [23], "S09": [1, 2, 3, 4, 5, 8, 9, 10, 14, 18, 21, 22, 23]})
     fallen_angel.clues = [MonstersClues.people_hear_voices, MonstersClues.can_see_real_appearance_of_entities,
                           MonstersClues.telekinesis, MonstersClues.people_acting_weirdly, MonstersClues.falling_meteor,
-                          MonstersClues.can_hear_angel_radio, MonstersClues.can_hear_demon_radio]
+                          MonstersClues.can_hear_angel_radio, MonstersClues.can_hear_demon_radio,
+                          MonstersClues.can_repair_human_body, MonstersClues.can_posses_a_person,
+                          MonstersClues.bright_eyes, MonstersClues.bright_light, MonstersClues.people_dead_weirdly,
+                          MonstersClues.burned_eyes, MonstersClues.travels_as_white_fog, MonstersClues.body_torn_apart,
+                          MonstersClues.vapourised_organs, MonstersClues.can_bring_back_dead_people,
+                          MonstersClues.blue_eyes, MonstersClues.leaves_burned_marks, MonstersClues.triangle_wound,
+                          MonstersClues.people_acting_weirdly, MonstersClues.travels_as_white_fog,
+                          MonstersClues.can_kill_humans_with_hand_on_forehead, MonstersClues.burned_eyes,
+                          MonstersClues.can_put_a_person_to_sleep, MonstersClues.weird_electronics_behavior,
+                          MonstersClues.flashing_lights, MonstersClues.weird_things_behavior]
+    fallen_angel.disable_methods = [MonstersDisableMethods.holy_oil, MonstersDisableMethods.angel_blade,
+                                    MonstersDisableMethods.first_blade]
+    fallen_angel.kill_methods = [MonstersKillMethods.angel_blade, MonstersKillMethods.first_blade]
 
     demon_alastair = Monster("Demon Alastair", description="A very powerful demon. Tortures souls in Hell. "
                                                            "Killed in S04E16.",
@@ -608,12 +648,14 @@ class MonsterBase:
     prophet = Monster("Prophet of the Lord", description="A person that is gifted with the knowledge of the future. "
                                                          "Only one prophet can exist at a time. There are multiple "
                                                          "people in the world, that can become one if needed. Prophets "
-                                                         "throughout the series: Chuck Shurley, Kevin Tran.",
+                                                         "throughout the series: Chuck Shurley, Kevin Tran (Killed by "
+                                                         "Gadreel in S09E09).",
                       episodes={"S04": [18, 22], "S05": [1, 9, 22], "S07": [21, 22, 23],
-                                "S08": [1, 2, 7, 10, 14, 19, 21, 23]})
+                                "S08": [1, 2, 7, 10, 14, 19, 21, 23], "S09": [2, 6, 9]})
     prophet.clues = [MonstersClues.can_see_future, MonstersClues.protected_by_an_archangel, MonstersClues.visions,
                      MonstersClues.can_repair_broken_word_of_god, MonstersClues.can_read_word_of_god,
                      MonstersClues.weird_weather, MonstersClues.missing_or_dead_people_regularly_in_different_areas]
+    prophet.kill_methods = [MonstersKillMethods.will_of_an_angel, MonstersKillMethods.like_any_human]
 
     archangel = Monster("Archangel", description="They are heaven's most terrifying weapon. "
                                                  "They are fierce and absolute.", episodes={"S04": [18, 22]})
@@ -731,7 +773,8 @@ class MonsterBase:
                                                            "Supposedly died in S06E10, but in S06E19 it is revealed he "
                                                            "was working with Castiel.",
                             episodes={"S05": [10, 20, 21], "S06": [4, 7, 8, 10, 19, 20, 21, 22],
-                                      "S07": [1, 6, 8, 22, 23], "S08": [1, 2, 7, 10, 17, 19, 21, 22, 23]})
+                                      "S07": [1, 6, 8, 22, 23], "S08": [1, 2, 7, 10, 17, 19, 21, 22, 23],
+                                      "S09": [2, 4, 6, 10, 11, 16, 17, 21, 23]})
     demon_crowley.clues = [MonstersClues.can_vanish, MonstersClues.pact_sealed_with_a_kiss, MonstersClues.telekinesis,
                            MonstersClues.summoned_by_placing_box_in_the_crossroads, MonstersClues.small_earth_quake,
                            MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
@@ -740,8 +783,9 @@ class MonsterBase:
                            MonstersClues.can_bring_back_dead_people, MonstersClues.can_give_people_diseases,
                            MonstersClues.cannot_be_exorcised_by_an_angel_with_hand_on_forehead_when_protected_by_an_archangel,
                            MonstersClues.can_create_fire_large_temperatures, MonstersClues.travels_as_red_fog,
-                           MonstersClues.red_eyes, MonstersClues.burned_by_holy_water,
-                           MonstersClues.can_give_hallucinations,
+                           MonstersClues.red_eyes, MonstersClues.can_posses_a_person_possessed_by_an_angel,
+                           MonstersClues.can_give_hallucinations, MonstersClues.burned_by_holy_water,
+                           MonstersClues.can_give_others_knowledge,
 
                            MonstersClues.black_blood]
     demon_crowley.disable_methods = [MonstersDisableMethods.devils_trap, MonstersDisableMethods.holy_water,
@@ -751,7 +795,7 @@ class MonsterBase:
                                                          "Can be brought to the Earth at midnight through a place of "
                                                          "awful carnage. Summoned in S05E10 and his actions seen "
                                                          "in S05E15.",
-                           episodes={"S05": [21], "S06": [11], "S07": [1]})
+                           episodes={"S05": [21], "S06": [11], "S07": [1], "S09": [1]})
     reaper_death.clues = [MonstersClues.number_of_reapers_appearing, MonstersClues.can_bring_back_dead_people,
                           MonstersClues.can_kill_people_with_a_thought, MonstersClues.people_dead_weirdly,
                           MonstersClues.can_appear_out_of_thin_air, MonstersClues.can_put_a_soul_back_to_a_body,
@@ -761,7 +805,8 @@ class MonsterBase:
                                  MonstersKillMethods.scythe_of_death]
 
     wraith = Monster("Wraith", description="Creatures, that crack the head and feed on brain juice. "
-                                           "Can poison people and drive them crazy.", episodes={"S05": [11]})
+                                           "Can poison people and drive them crazy.", episodes={"S05": [11],
+                                                                                                "S09": [20]})
     wraith.clues = [MonstersClues.people_dead_weirdly, MonstersClues.no_black_fog, MonstersClues.no_cold_spots,
                     MonstersClues.bite_marks_on_peoples_necks, MonstersClues.people_seeing_strange_things,
                     MonstersClues.victims_brain_devoid_of_water, MonstersClues.silver_burns_its_skin,
@@ -811,8 +856,8 @@ class MonsterBase:
                                                          "drag as many souls to Hell as possible. Can only be killed "
                                                          "by a true servant of heaven (like a devoted priest).",
                             episodes={"S05": [17]})
-    false_prophet.clues = [MonstersClues.can_read_peoples_minds, MonstersClues.can_see_future, MonstersClues.telekinesis,
-                           MonstersClues.can_take_form_of_other_people, MonstersClues.can_control_demons,
+    false_prophet.clues = [MonstersClues.can_read_peoples_minds, MonstersClues.can_take_form_of_other_people,
+                           MonstersClues.can_see_future, MonstersClues.telekinesis, MonstersClues.can_control_demons,
                            MonstersClues.visions, MonstersClues.real_appearance_can_be_seen_in_a_reflection_or_camera]
     false_prophet.kill_methods = [MonstersKillMethods.stake_made_from_cypress_tree_in_babylon]
 
@@ -865,10 +910,15 @@ class MonsterBase:
     horseman_pestilence.clues = [MonstersClues.general_sickness, MonstersClues.increased_pest_activity,
                                  MonstersClues.weird_electronics_behavior]
 
-    soulless_person = Monster("Soulless person", description="A person without a soul - only the 'meatsuit'.",
-                              episodes={"S05": [21], "S06": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 13, 22]})
-    soulless_person.clues = [MonstersClues.people_acting_weirdly, MonstersClues.lack_of_empathy,
-                             MonstersClues.sociopath_like_behavior, MonstersClues.does_not_sleep]
+    soulless_person = Monster("Soulless person", description="A person without a soul - only the 'meatsuit'. There is "
+                                                             "a way of removing the soul from the body and create "
+                                                             "demons out of it (as stated in S09E17). Released soul of "
+                                                             "a person will find a way back to a body.",
+                              episodes={"S05": [21], "S06": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 13, 22], "S09": [17]})
+    soulless_person.clues = [MonstersClues.people_acting_weirdly, MonstersClues.lack_of_empathy, MonstersClues.suicides,
+                             MonstersClues.no_sulfur, MonstersClues.sociopath_like_behavior, MonstersClues.bright_light,
+                             MonstersClues.does_not_sleep, MonstersClues.no_emf,
+                             MonstersClues.holy_water_does_not_affect_it]
 
     # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
 
@@ -1105,7 +1155,8 @@ class MonsterBase:
     vetala.clues = [MonstersClues.cat_eyes, MonstersClues.blue_eyes, MonstersClues.needle_like_teeth,
                     MonstersClues.no_blood_in_the_body, MonstersClues.animal_like_attack, MonstersClues.high_strength,
                     MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
-                    MonstersClues.ear_ringing]
+                    MonstersClues.ear_ringing, MonstersClues.people_dead_weirdly, MonstersClues.no_hex_bags,
+                    MonstersClues.bite_marks_on_peoples_necks]
     vetala.disable_methods = [MonstersDisableMethods.hit_it_hard_in_the_head]
     vetala.kill_methods = [MonstersKillMethods.silver_blade]
 
@@ -1188,24 +1239,25 @@ class MonsterBase:
     knight_of_hell = Monster("Knight of Hell", description="Handpicked by Lucifer himself. They are of the first "
                                                            "fallen firstborn demons, thus very pure and strong. "
                                                            "Archangels killed almost all of them. "
-                                                           "One of the survivors is Abaddon.",
-                             episodes={"S08": [12, 22, 23]})
+                                                           "One of the survivors is Abaddon. Abaddon is killed in "
+                                                           "S09E21 by Dean.",
+                             episodes={"S08": [12, 22, 23], "S09": [2, 6, 10, 11, 17, 21]})
     knight_of_hell.clues = [MonstersClues.people_dead_weirdly, MonstersClues.bloodshot_eyes, MonstersClues.black_eyes,
                             MonstersClues.immune_to_exorcism, MonstersClues.can_read_peoples_minds,
                             MonstersClues.demon_killing_knife_is_ineffective, MonstersClues.telekinesis,
                             MonstersClues.can_posses_a_person, MonstersClues.weird_electronics_behavior,
-                            MonstersClues.travels_as_black_fog]
+                            MonstersClues.travels_as_black_fog, MonstersClues.high_strength, MonstersClues.can_vanish,
+                            MonstersClues.can_exorcise_certain_demons_with_hand_on_forehead, MonstersClues.immortal,
+                            MonstersClues.immune_to_exorcism]
     knight_of_hell.disable_methods = [MonstersDisableMethods.demon_killing_knife, MonstersDisableMethods.devils_trap,
-                                      MonstersDisableMethods.holy_oil]
-    knight_of_hell.kill_methods = [
-
-                                   MonstersKillMethods.first_blade]
+                                      MonstersDisableMethods.holy_oil, MonstersDisableMethods.holy_water]
+    knight_of_hell.kill_methods = [MonstersKillMethods.first_blade]
 
     thule = Monster("Thule", description="Members of The Thule Society. Used blood magic to make themselves almost "
                                          "undead. To kill it you have to break it's neck or shoot it in the head and "
                                          "burn the body within 12h.", episodes={"S08": [13]})
     thule.clues = [MonstersClues.weird_fire_spontaneous_combustion, MonstersClues.people_dead_weirdly,
-                   MonstersClues.immortal, MonstersClues.invulnerable]
+                   MonstersClues.immortal, MonstersClues.invulnerable, MonstersClues.burned_people]
     thule.kill_methods = [MonstersKillMethods.break_the_neck, MonstersKillMethods.head_shot,
                           MonstersKillMethods.burn_it]
 
@@ -1242,11 +1294,14 @@ class MonsterBase:
     zeus.kill_methods = [MonstersKillMethods.stake_made_from_a_tree_struck_by_lightning,
                          MonstersKillMethods.the_arrow_of_artemis]
 
-    angel_metatron = Monster("Angel Metatron", description="Scribe of GOD. One of the angels.",
-                             episodes={"S08": [21, 22, 23]})
-    angel_metatron.clues = [MonstersClues.immortal, MonstersClues.can_vanish, MonstersClues.can_teleport_people,
+    angel_metatron = Monster("Angel Metatron", description="Scribe of GOD. One of the angels. Metatron broke the "
+                                                           "fourth wall in S09E18.",
+                             episodes={"S08": [21, 22, 23], "S09": [9, 10, 18, 22, 23]})
+    angel_metatron.clues = [MonstersClues.immortal, MonstersClues.can_vanish, MonstersClues.can_give_hallucinations,
                             MonstersClues.can_erase_anti_angel_marks, MonstersClues.can_appear_out_of_thin_air,
-                            MonstersClues.can_repair_human_body]
+                            MonstersClues.can_repair_human_body, MonstersClues.can_put_down_holy_fire,
+                            MonstersClues.telekinesis, MonstersClues.can_teleport_people, MonstersClues.high_strength,
+                            MonstersClues.can_give_others_knowledge]
 
     nephilim = Monster("Nephilim", description="Child of human and angel/archangel. Human with an angelic grace.",
                        episodes={"S08": [22]})
@@ -1256,22 +1311,92 @@ class MonsterBase:
                       MonstersClues.weird_weather, MonstersClues.biblical_like_events]
     nephilim.kill_methods = [MonstersKillMethods.angel_blade]
 
-    unknown = Monster("Unknown", description="", episodes={"S08": [23]})
-    unknown.clues = []
-
     # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
 
     # ---------------------------------------------------- SEASON 9 ----------------------------------------------------
+
+    wicked_witch = Monster("Wicked Witch", description="Wicked witch from Oz. She can control other people by placing "
+                                                       "a hand on their forehead. Then a person's eyes turn intense "
+                                                       "green color for a moment and they talk in very monstrous "
+                                                       "voice. Her eyes can turn green occasionally too. She can kill "
+                                                       "another person with green lightning. One encountered in "
+                                                       "1935/1936 in Man of Letters compound in Lebanon, Kansas. "
+                                                       "Killed in S09E04.",
+                           episodes={"S09": [4]})
+    wicked_witch.clues = [MonstersClues.grey_goo, MonstersClues.holy_water_does_not_affect_it, MonstersClues.green_eyes,
+                          MonstersClues.burning_does_not_affect_it, MonstersClues.decapitation_does_not_affect_it,
+                          MonstersClues.invulnerable, MonstersClues.travels_as_black_green_fog,
+                          MonstersClues.green_blood, MonstersClues.high_strength,
+                          MonstersClues.can_appear_out_of_thin_air, MonstersClues.seen_as_an_old_lady]
+    wicked_witch.disable_methods = [MonstersDisableMethods.devils_trap,
+                                    MonstersDisableMethods.bullets_with_poppy_extract]
+    wicked_witch.kill_methods = [MonstersKillMethods.magic_red_high_heels]
+
+    rit_zien_angel = Monster("Rit Zien Angel", description="A special class of an angel. Rit Zien in Enochian stands "
+                                                           "for 'Hands pf Mercy'. They function like medics. They "
+                                                           "healed those, who could be healed, but for the mortally "
+                                                           "wounded, their job was to destroy them. Their special "
+                                                           "ability is to completely vapourise an entity quickly and "
+                                                           "totally. They home in on pain. One encountered Rit Zien "
+                                                           "Angel is Ephraim (killed in S09E05)", episodes={"S09": [6]})
+    rit_zien_angel.clues = [MonstersClues.purple_pink_light, MonstersClues.people_dead_weirdly, MonstersClues.no_emf,
+                            MonstersClues.missing_or_dead_people_regularly_in_the_same_area, MonstersClues.no_sulfur,
+                            MonstersClues.no_hex_bags, MonstersClues.vapourised_body, MonstersClues.not_burned_people,
+                            MonstersClues.can_appear_out_of_thin_air, MonstersClues.telekinesis,
+                            MonstersClues.bright_light]
+    rit_zien_angel.disable_methods = [MonstersDisableMethods.symbol_made_with_blood_against_angels]
+    rit_zien_angel.kill_methods = [MonstersKillMethods.angel_blade]
+
+    vesta = Monster("Vesta", description="Roman goddess of the hearth. In ancient Rome, six virgins were dedicated "
+                                         "to here every year. Their main duty was to tend Vesta's hearth. As long as "
+                                         "Vesta's fire was kept lit, Rome received a good harvest. The virgins had to "
+                                         "stay celibate for 30 years. If they broke their vows, they were buried "
+                                         "alive. Vesta was often enveloped in a blue halo of light, which she could "
+                                         "control at will to disorient, to maim or to kill.", episodes={"S09": [8]})
+    vesta.clues = [MonstersClues.high_strength, MonstersClues.can_create_fire_large_temperatures,
+                   MonstersClues.missing_or_dead_people_regularly_in_the_same_area, MonstersClues.bright_light,
+                   MonstersClues.no_white_bright_light, MonstersClues.missing_attacked_broken_virgin_women_or_man,
+                   MonstersClues.can_teleport_people, MonstersClues.can_put_a_person_to_sleep]
+    vesta.kill_methods = [MonstersKillMethods.stake_made_from_oak_stained_in_virgin_blood]
+
+    cain = Monster("Cain", description="The Father of Murder (according to Crowley from S09E11). After Cain killed "
+                                       "Abel he became the deadliest demon on Earth. Killed thousands. He was the "
+                                       "first Knight of Hell and trained the rest of the Knights. He has influence on "
+                                       "demons. According to Cain, he killed Abel because he made a deal with Lucyfer. "
+                                       "Cain's soul in Hell for Abel's soul in Heaven, but Cain was supposed to be the "
+                                       "one that kills Abel.", episodes={"S09": [11]})
+    cain.clues = [MonstersClues.invulnerable, MonstersClues.red_light, MonstersClues.immortal, MonstersClues.can_vanish,
+                  MonstersClues.can_appear_out_of_thin_air, MonstersClues.can_take_voice_of_a_demon,
+                  MonstersClues.can_exorcise_certain_demons_with_hand_on_forehead, MonstersClues.can_teleport_people,
+                  MonstersClues.demon_killing_knife_is_ineffective]
+
+    pishtaco = Monster("Pishtaco", description="'Peruvian fat sucker' according to Maritza in S09E13. A monster, that "
+                                               "feeds on human fat. They are like parasites. Known Pishtaco are "
+                                               "Maritza and Alonso (dead) - siblings).", episodes={"S09": [13]})
+    pishtaco.clues = [MonstersClues.people_dead_weirdly, MonstersClues.no_fat_in_the_body, MonstersClues.damaged_organs,
+                      MonstersClues.suction_marks, MonstersClues.suction_tongue, MonstersClues.white_eyes,
+                      MonstersClues.bite_marks_on_peoples_necks]
+    pishtaco.kill_methods = [MonstersKillMethods.cut_its_tongue_out]
+
+    ghost_kevin = Monster("Ghost Kevin", description="Ghost of prophet Kevin Tran. Kevin was killed in S09E09. Kevin "
+                                                     "is stuck on Earth even though his body was cremated by Dean. "
+                                                     "According to Kevin, every person, that died after the Angels "
+                                                     "fell cannot go to Heaven.",
+                          episodes={"S09": [14]})
+    ghost_kevin.clues = [MonstersClues.weird_things_behavior, MonstersClues.emf, MonstersClues.ghost_like_creature,
+                         MonstersClues.weird_electronics_behavior, MonstersClues.can_appear_out_of_thin_air,
+                         MonstersClues.can_vanish, MonstersClues.invisible_entity]
+
+    # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
+
+    unknown = Monster("Unknown", description="", episodes={"S09": [23]})
+    unknown.clues = []
 
     # ---------------------------------------------------- SEASON 10 ---------------------------------------------------
 
     angel_watcher = Monster("Angel Watcher - Grigori")
     angel_watcher.clues = [MonstersClues.triangle_wound_with_burns]
     angel_watcher.kill_methods = [MonstersKillMethods.angel_sword]
-
-    witch_from_ozz = Monster("Witch from Ozz")
-    witch_from_ozz.clues = [MonstersClues.travels_as_black_green_fog]
-    witch_from_ozz.kill_methods = [MonstersKillMethods.magic_red_high_heels]
 
     # -------------------------------------------------- SEASON 11 -------------------------------------------------
 

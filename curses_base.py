@@ -207,7 +207,7 @@ class CursesBase:
                                                                "a pinch of the Sands of Time and a week charge of "
                                                                "a soul) can move a person to another time "
                                                                "to a specific person or their relatives.",
-                              episodes={"S08": [12]})
+                              episodes={"S08": [12], "S09": [21]})
     time_travel_spell.clues = [CursesClues.people_appearing_out_of_nowhere]
 
     false_memories_spell = Curse("False memories spell", description="It is used to create false memories into another "
@@ -221,8 +221,9 @@ class CursesBase:
                                                      "First thing is to cut the heart of a Nephilim. "
                                                      "Second is to retrieve Cupid's bow. "
                                                      "The third one is an angelic grace (cut from Angel's throat). "
-                                                     "Combined with a spell makes each angel fall.",
-                                         episodes={"S08": [22, 23]})
+                                                     "Mixed until smoke rises from the ashes making each angel fall. "
+                                                     "It's irreversible.",
+                                         episodes={"S08": [22, 23], "S09": [6]})
     banish_angels_to_earth_spell.clues = [CursesClues.people_dead_weirdly, CursesClues.missing_heart,
                                           CursesClues.meteor_shower_over_earth]
 
@@ -230,7 +231,57 @@ class CursesBase:
 
     # SEASON 9:
 
+    animal_characteristics_copy_spell = Curse("Animal characteristics copy spell",
+                                              description="A spell, that allows a person to gain characteristics of "
+                                                          "animals - like speed, strength, camouflage, etc. In order "
+                                                          "to do that, a part of the animal has to be eaten and "
+                                                          "a proper spell has to be spoken. It wears off depending on "
+                                                          "the combined ingredients.", episodes={"S09": [5]})
+    animal_characteristics_copy_spell.clues = [CursesClues.double_tongue, CursesClues.people_dead_weirdly,
+                                               CursesClues.high_strength, CursesClues.no_hex_bags, CursesClues.claws,
+                                               CursesClues.venom_necrosis, CursesClues.eats_whole_animals,
+                                               CursesClues.no_bite_marks_on_peoples_necks, CursesClues.cat_eyes]
 
+    inuit_animal_speaking_spell = Curse("Inuit animal speaking spell", description="Allows a person to hear animals "
+                                                                                   "speaking and talking to them. "
+                                                                                   "It is combined with a drink, then "
+                                                                                   "there is a spell to say. It wears "
+                                                                                   "off in couple of hours.",
+                                        episodes={"S09": [5]})
+    inuit_animal_speaking_spell.clues = [CursesClues.animal_like_behavior_of_a_person]
+
+    angel_tracking_spell_with_grace = Curse("Angel tracking spell with a Grace",
+                                            description="Spell, that allows to track an angel. Is performed with "
+                                                        "a part of the Grace of an Angel, that left his vessel after "
+                                                        "extracting it. Ingredients are put in the bowl with Grace as "
+                                                        "last ingredient.", episodes={"S09": [11]})
+
+    mark_of_cain = Curse("Mark of Cain", description="A curse, that Lucyfer himself put on Cain for killing his "
+                                                     "brother. It looks like a mirrored version of the letter 'F' with "
+                                                     "additional horizontal line. A mark can be transferred to "
+                                                     "another person that is worthy of it (a killer). When a man with "
+                                                     "the Mark of Cain holds the blade, the mark starts to shine red. "
+                                                     "A person with the Mark of Cain (holding the First Blade) can "
+                                                     "counteract telekinetic abilities of a Knights of Hell. That "
+                                                     "person can also telekinetically bring the blade to himself. If a "
+                                                     "person with the Mark of Cain is killed - he becomes a demon "
+                                                     "(according to the ending of S09E23).",
+                         episodes={"S09": [11, 12, 16, 17, 18, 21]})
+    mark_of_cain.clues = [CursesClues.people_acting_weirdly, CursesClues.less_affected_by_telekinesis_of_knight_of_hell,
+                          CursesClues.high_strength, CursesClues.black_eyes]
+
+    willpower_removing_spell = Curse("Willpower removing spell", description="Spell, that lowers or removes the power "
+                                                                             "of will of a person. Used by Magnus.",
+                                     episodes={"S09": [16]})
+    willpower_removing_spell.clues = [CursesClues.people_acting_weirdly, CursesClues.people_doing_what_they_are_told]
+    willpower_removing_spell.disable_methods = [CursesDisableMethods.wait_for_if_to_pass]
+
+    angel_siren_spell = Curse("Angel Siren spell", description="Spell used to attract Angels. Made of a symbol "
+                                                               "combined with Griffin feathers, bones of a Fairy and "
+                                                               "most importantly - Gabriel's horn.")
+    angel_siren_spell.clues = [CursesClues.people_dead_weirdly]
+
+    # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
 
     # SEASON 10:
 

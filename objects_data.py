@@ -6,7 +6,8 @@ class ObjectAbilities:
     can_kill_pagan_gods = "can kill pagan gods"
     can_kill_archangels = "can kill archangels"
     cannot_kill_angels = "cannot kill angels"
-    cannot_kill_knights_of_hell = "cannot kill Knights ofHell"
+    can_kill_knights_of_hell = "can kill Knights of Hell"
+    cannot_kill_knights_of_hell = "cannot kill Knights of Hell"
     can_kill_entities_when_reconnecting_with_an_angel = \
         "can kill entities (people, demons) when reconnecting with an angel"
     can_send_angels_back_to_heaven = "can send angels back to heaven"
@@ -20,6 +21,9 @@ class ObjectAbilities:
     can_cause_women_to_go_to_labour = "can cause women to go to labour"
     can_turn_a_person_into_a_pillar_of_salt = "can turn a person into a pillar of salt"
     can_whisper_to_people = "can whisper to people"
+    can_temporarily_weaken_a_possessing_angel = "can temporarily weaken a possessing angel"
+    can_attract_angels = "can attract Angels"
+    can_focus_energy = "can focus energy"
     unables_possessions = "unables possessions"
     grants_incredible_luck = "grants incredible luck"
     brings_back_dreams_for_those_that_dont_have_them = "brings back dreams for those that dont have them"
@@ -56,4 +60,6 @@ class JohnWinchesterJournal:
                                   "Next entry in September 29th 2004 - One word: Minnesota."
     entry_about_a_skinwalker = "entry about a skinwalker - a drawing and not fully visible description"
     entry_about_torturing_a_demon = "entry about torturing a demon, which said, that he made his bones working with " \
-                                    "Abbadon, who is a Knight of Hell."
+                                    "Abaddon, who is a Knight of Hell."
+    entry_about_killing_a_demon_abaddon_and_locker = "entry about killing a demon, Abaddon and locker " \
+                                                     "(080379 with 'T' for Tara under the code)"
