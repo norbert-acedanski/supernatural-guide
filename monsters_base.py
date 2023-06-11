@@ -168,7 +168,7 @@ class MonsterBase:
                                            "a person across Hell's border, Heaven and the Veil. They have secret ways "
                                            "in and out.When a reaper dies, there are electrical storms.",
                      episodes={"S01": [12], "S02": [1], "S04": [15], "S05": [10, 21], "S06": [11], "S07": [10],
-                               "S08": [19], "S09": [3]})
+                               "S08": [19], "S09": [3, 22]})
     reaper.clues = [MonstersClues.people_dead_weirdly, MonstersClues.people_cured_miraculously,
                     MonstersClues.weird_things_behavior, MonstersClues.people_seeing_things_or_figures,
                     MonstersClues.seen_as_a_person_in_a_suit, MonstersClues.ghost_like_creature,
@@ -178,7 +178,8 @@ class MonsterBase:
                     MonstersClues.electrical_storms, MonstersClues.can_appear_out_of_thin_air,
                     MonstersClues.bright_light]
     reaper.disable_methods = [MonstersDisableMethods.reaper_imprison_sigil, MonstersDisableMethods.angel_blade]
-    reaper.kill_methods = [MonstersKillMethods.reaper_blade_combined_with_a_spell, MonstersKillMethods.angel_blade]
+    reaper.kill_methods = [MonstersKillMethods.reaper_blade_combined_with_a_spell, MonstersKillMethods.angel_blade,
+                           MonstersKillMethods.first_blade]
 
     people_with_abilities = Monster("People with abilities", description="People, that were infants, when prince of "
                                                                          "Hell killed their mother on the ceiling. "
@@ -540,7 +541,7 @@ class MonsterBase:
                     episodes={"S04": [1, 2, 7, 9, 10, 15, 16, 18, 20, 21, 22],
                               "S05": [1, 2, 3, 4, 5, 8, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22],
                               "S06": [3, 6, 7, 10, 12, 15, 17, 18, 19, 20, 21, 22], "S07": [1, 17, 20, 21, 23],
-                              "S08": [2, 7, 8, 10, 17, 19, 21, 22, 23], "S09": [9, 10, 11, 14, 18, 21]})
+                              "S08": [2, 7, 8, 10, 17, 19, 21, 22, 23], "S09": [9, 10, 11, 14, 18, 21, 22]})
     angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                    MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion, MonstersClues.has_wings,
                    MonstersClues.leaves_burned_marks, MonstersClues.weird_electronics_behavior,
@@ -592,9 +593,10 @@ class MonsterBase:
                                                        "killed, the organs of the vessel are vapourised. "
                                                        "After The Fall in S08E23 we have the following fallen "
                                                        "angels: Hael, Ezekiel, Bartholomew, Malachi, Gadreel, Muriel, "
-                                                       "Azrael, Sophia, Theo, Thaddeus, Abner, Hannah, Ezra. Gadreel "
-                                                       "was the Angel, that let Lucifer into the Garden of Eden.",
-                           episodes={"S04": [9, 10], "S08": [23], "S09": [1, 2, 3, 4, 5, 8, 9, 10, 14, 18, 21]})
+                                                       "Azrael, Sophia, Theo, Thaddeus, Abner, Hannah, Ezra, Esther. "
+                                                       "Gadreel was the Angel, that let Lucifer into the Garden of "
+                                                       "Eden.",
+                           episodes={"S04": [9, 10], "S08": [23], "S09": [1, 2, 3, 4, 5, 8, 9, 10, 14, 18, 21, 22]})
     fallen_angel.clues = [MonstersClues.people_hear_voices, MonstersClues.can_see_real_appearance_of_entities,
                           MonstersClues.telekinesis, MonstersClues.people_acting_weirdly, MonstersClues.falling_meteor,
                           MonstersClues.can_hear_angel_radio, MonstersClues.can_hear_demon_radio,
@@ -607,8 +609,9 @@ class MonsterBase:
                           MonstersClues.can_kill_humans_with_hand_on_forehead, MonstersClues.burned_eyes,
                           MonstersClues.can_put_a_person_to_sleep, MonstersClues.weird_electronics_behavior,
                           MonstersClues.flashing_lights, MonstersClues.weird_things_behavior]
-    fallen_angel.disable_methods = [MonstersDisableMethods.holy_oil, MonstersDisableMethods.angel_blade]
-    fallen_angel.kill_methods = [MonstersKillMethods.angel_blade]
+    fallen_angel.disable_methods = [MonstersDisableMethods.holy_oil, MonstersDisableMethods.angel_blade,
+                                    MonstersDisableMethods.first_blade]
+    fallen_angel.kill_methods = [MonstersKillMethods.angel_blade, MonstersKillMethods.first_blade]
 
     demon_alastair = Monster("Demon Alastair", description="A very powerful demon. Tortures souls in Hell. "
                                                            "Killed in S04E16.",
@@ -1292,7 +1295,7 @@ class MonsterBase:
 
     angel_metatron = Monster("Angel Metatron", description="Scribe of GOD. One of the angels. Metatron broke the "
                                                            "fourth wall in S09E18.",
-                             episodes={"S08": [21, 22, 23], "S09": [9, 10, 18]})
+                             episodes={"S08": [21, 22, 23], "S09": [9, 10, 18, 22]})
     angel_metatron.clues = [MonstersClues.immortal, MonstersClues.can_vanish, MonstersClues.can_teleport_people,
                             MonstersClues.can_erase_anti_angel_marks, MonstersClues.can_appear_out_of_thin_air,
                             MonstersClues.can_repair_human_body, MonstersClues.can_give_hallucinations,
@@ -1383,7 +1386,7 @@ class MonsterBase:
                          MonstersClues.weird_electronics_behavior, MonstersClues.can_appear_out_of_thin_air,
                          MonstersClues.can_vanish, MonstersClues.invisible_entity]
 
-    unknown = Monster("Unknown", description="", episodes={"S09": [21]})
+    unknown = Monster("Unknown", description="", episodes={"S09": [22]})
     unknown.clues = []
 
     # ---------------------------------------------------- SEASON 10 ---------------------------------------------------

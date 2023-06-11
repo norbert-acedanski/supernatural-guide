@@ -500,6 +500,7 @@ class MonstersDisableMethods:
     electricity = "electricity"
     ashes_of_a_phoenix = "ashes of a phoenix"
     angel_blade = "angel blade"
+    first_blade = "first blade"
     presence_of_the_mother = "presence of the mother"
     stab_with_rams_horn = "stab with ram's horn"
     sodium_borate_burns_it = "sodium borate (a chemical found in industrial chemicals and soaps) burns it"
