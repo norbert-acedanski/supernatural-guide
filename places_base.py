@@ -21,8 +21,11 @@ class PlacesBase:
                                          "collection of all of the peoples personal heavens. There is a road, that "
                                          "goes through heaven called Axis Mundi. It is different for everyone. "
                                          "It can be a literal road, but also a model, a picture, magazine. "
-                                         "Leads to a garden in the center.",
-                   episodes={"S05": [16], "S08": [7, 10, 17, 23]})
+                                         "Leads to a garden in the center. After the Fall of Angels, the Heaven is "
+                                         "sealed by Metatron with a spell. There is a portal from Heaven to Earth "
+                                         "created by Metatron, for Angels to travel between those two places. Angels "
+                                         "can't sense it because it changes its location.",
+                   episodes={"S05": [16], "S08": [7, 10, 17, 23], "S09": [18]})
     heaven.clues = [PlaceClues.good_memories_relived, PlaceClues.changing_scenery, PlaceClues.bright_place]
 
     purgatory = Place("Purgatory", description="A place, where all monsters go, after they die. Can be opened with an "
