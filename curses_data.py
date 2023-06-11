@@ -1,4 +1,5 @@
 class CursesClues:
+    black_eyes = "eyes - black"
     missing_or_dead_people_regularly_in_the_same_area = "groups of people missing/dead regularly in the same area"
     missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area = \
         "missing or dead people in similar way randomly across time in the same area"
