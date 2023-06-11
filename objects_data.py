@@ -59,6 +59,6 @@ class JohnWinchesterJournal:
                                   "Next entry in September 29th 2004 - One word: Minnesota."
     entry_about_a_skinwalker = "entry about a skinwalker - a drawing and not fully visible description"
     entry_about_torturing_a_demon = "entry about torturing a demon, which said, that he made his bones working with " \
-                                    "Abbadon, who is a Knight of Hell."
-    entry_about_killing_a_demon_abbadon_and_locker = "entry about killing a demon, Abbadon and locker " \
+                                    "Abaddon, who is a Knight of Hell."
+    entry_about_killing_a_demon_abaddon_and_locker = "entry about killing a demon, Abaddon and locker " \
                                                      "(080379 with 'T' for Tara under the code)"
