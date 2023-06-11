@@ -287,6 +287,7 @@ class MonstersClues:
     can_erase_anti_angel_marks = "can erase anti-angel marks"
     can_take_voice_of_a_demon = "can take voice of a demon"
     can_put_down_holy_fire = "can put down holy fire"
+    can_give_others_knowledge = "can give others knowledge"
     people_with_souls_switched = "people with souls switched"
     poisoned_people = "poisoned people"
     demon_killing_knife_is_ineffective = "demon killing knife is ineffective"
