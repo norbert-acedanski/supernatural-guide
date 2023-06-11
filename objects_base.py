@@ -248,8 +248,9 @@ class ObjectsBase:
                                                     "and lit with a match. The blade is a part of a jaw of an animal. "
                                                     "The first blade has to be used with a Mark of Cain. Without the "
                                                     "mark, the blade is useless. When a man with the Mark of Cain "
-                                                    "holds the blade, the mark starts to shine red.",
-                         episodes={"S09": [11, 16]})
+                                                    "holds the blade, the mark starts to shine red. A person with Mark "
+                                                    "of Cain can telekinetically bring the blade to himself.",
+                         episodes={"S09": [11, 16, 21]})
     first_blade.abilities = [ObjectAbilities.can_kill_knights_of_hell]
 
     # SEASON 10:
