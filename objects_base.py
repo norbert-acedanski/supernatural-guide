@@ -97,7 +97,8 @@ class ObjectsBase:
 
     angel_blade = Object("Angel blade", description="A triangular, silvery blade, that each angel has.",
                          episodes={"S04": [16], "S05": [1, 13, 18], "S06": [3, 10, 17, 18, 22], "S07": [21],
-                                   "S08": [7, 10, 17, 21, 22, 23], "S09": [1, 2, 3, 6, 9, 10, 11, 14, 16, 18, 21, 22, 23]})
+                                   "S08": [7, 10, 17, 21, 22, 23], "S09": [1, 2, 3, 6, 9, 10, 11, 14, 16, 18, 21, 22, 23],
+                                   "S10": [1]})
     angel_blade.abilities = [ObjectAbilities.can_kill_angels, ObjectAbilities.can_kill_demons]
 
     lucifers_cage = Object("Lucifer's Cage", description="A prison build specifically to contain archangelic powers "
@@ -250,7 +251,7 @@ class ObjectsBase:
                                                     "mark, the blade is useless. When a man with the Mark of Cain "
                                                     "holds the blade, the mark starts to shine red. A person with Mark "
                                                     "of Cain can telekinetically bring the blade to himself.",
-                         episodes={"S09": [11, 16, 21, 22, 23]})
+                         episodes={"S09": [11, 16, 21, 22, 23], "S10": [1]})
     first_blade.abilities = [ObjectAbilities.can_kill_knights_of_hell, ObjectAbilities.can_kill_reapers,
                              ObjectAbilities.can_kill_angels]
 
