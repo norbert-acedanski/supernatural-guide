@@ -103,7 +103,7 @@ class MonsterBase:
                               "S04": [1, 4, 9, 10, 20, 21, 22], "S05": [1, 6, 10, 12, 14, 17, 20, 21, 22],
                               "S06": [7, 10, 18, 20, 21, 22], "S07": [8, 15, 17, 21, 23],
                               "S08": [1, 2, 7, 10, 17, 19, 21, 22], "S09": [2, 10, 11, 14, 16, 17, 21, 23],
-                              "S10": [1, 2]})
+                              "S10": [1, 2, 3]})
     demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                    MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                    MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -116,7 +116,7 @@ class MonsterBase:
                    MonstersClues.black_blood]
     demon.kill_methods = [MonstersKillMethods.demon_killing_knife, MonstersKillMethods.angel_exorcism,
                           MonstersKillMethods.colt_of_colt_with_magic_bullets, MonstersKillMethods.demon_killing_spell,
-                          MonstersKillMethods.angel_blade, MonstersKillMethods.first_blade,
+                          MonstersKillMethods.angel_blade, MonstersKillMethods.first_blade, MonstersKillMethods.holy_oil,
 
                           MonstersKillMethods.will_of_an_archangel, MonstersKillMethods.lance_of_archangel_michael]
     demon.disable_methods = [MonstersDisableMethods.holy_water, MonstersDisableMethods.holy_wood,
@@ -318,7 +318,7 @@ class MonsterBase:
                                                                "dirt, black cat cone, ones photo in the center of "
                                                                "a crossroad.",
                                episodes={"S02": [8, 22], "S04": [9], "S05": [10], "S06": [4], "S07": [8], "S08": [19],
-                                         "S09": [2, 16]})
+                                         "S09": [2, 16], "S10": [1, 3]})
     crossroads_demon.clues = [MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
                               MonstersClues.red_eyes, MonstersClues.summoned_by_placing_box_in_the_crossroads,
                               MonstersClues.travels_as_black_fog, MonstersClues.pact_sealed_with_a_kiss,
@@ -544,7 +544,7 @@ class MonsterBase:
                               "S05": [1, 2, 3, 4, 5, 8, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22],
                               "S06": [3, 6, 7, 10, 12, 15, 17, 18, 19, 20, 21, 22], "S07": [1, 17, 20, 21, 23],
                               "S08": [2, 7, 8, 10, 17, 19, 21, 22, 23], "S09": [9, 10, 11, 14, 18, 21, 22, 23],
-                              "S10": [1, 2]})
+                              "S10": [1, 2, 3]})
     angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                    MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion, MonstersClues.has_wings,
                    MonstersClues.leaves_burned_marks, MonstersClues.weird_electronics_behavior,
@@ -560,7 +560,8 @@ class MonsterBase:
                    MonstersClues.can_become_invisible, MonstersClues.can_control_demons, MonstersClues.liquefied_organs,
                    MonstersClues.can_erase_and_bring_back_memories, MonstersClues.can_transfer_mental_diseases,
                    MonstersClues.can_go_and_put_into_a_persons_mind, MonstersClues.strange_different_things_happening,
-                   MonstersClues.bright_eyes, MonstersClues.vapourised_organs, MonstersClues.travels_as_white_fog]
+                   MonstersClues.bright_eyes, MonstersClues.vapourised_organs, MonstersClues.travels_as_white_fog,
+                   MonstersClues.blue_eyes]
     angel.disable_methods = [MonstersDisableMethods.symbol_made_with_blood_against_angels,
                              MonstersDisableMethods.exorcism_for_angels, MonstersDisableMethods.holy_oil,
                              MonstersDisableMethods.enochian_spell, MonstersDisableMethods.angel_blade,
@@ -776,7 +777,7 @@ class MonsterBase:
                                                            "was working with Castiel.",
                             episodes={"S05": [10, 20, 21], "S06": [4, 7, 8, 10, 19, 20, 21, 22],
                                       "S07": [1, 6, 8, 22, 23], "S08": [1, 2, 7, 10, 17, 19, 21, 22, 23],
-                                      "S09": [2, 4, 6, 10, 11, 16, 17, 21, 23], "S10": [1, 2]})
+                                      "S09": [2, 4, 6, 10, 11, 16, 17, 21, 23], "S10": [1, 2, 3]})
     demon_crowley.clues = [MonstersClues.can_vanish, MonstersClues.pact_sealed_with_a_kiss, MonstersClues.telekinesis,
                            MonstersClues.summoned_by_placing_box_in_the_crossroads, MonstersClues.small_earth_quake,
                            MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
@@ -1389,20 +1390,23 @@ class MonsterBase:
                          MonstersClues.weird_electronics_behavior, MonstersClues.can_appear_out_of_thin_air,
                          MonstersClues.can_vanish, MonstersClues.invisible_entity]
 
-    person_with_mark_of_cain = Monster("Person with Mark of Cain", description="A person, that was cursed with a Mark "
-                                                                               "of Cain and became a demon.",
-                                       episodes={"S09": [23], "S10": [1, 2]})
-    person_with_mark_of_cain.clues = [MonstersClues.people_acting_weirdly, MonstersClues.high_strength,
-                                      MonstersClues.black_eyes, MonstersClues.increased_regeneration,
+    person_with_mark_of_cain = Monster("Person with Mark of Cain",
+                                       description="A person, that was cursed with a Mark of Cain and became a demon. "
+                                                   "The Demon part of that person can be cured by Father Thompson's "
+                                                   "ritual of curing a Demon.",
+                                       episodes={"S09": [23], "S10": [1, 2, 3]})
+    person_with_mark_of_cain.clues = [MonstersClues.people_acting_weirdly, MonstersClues.increased_regeneration,
+                                      MonstersClues.black_eyes, MonstersClues.high_strength, MonstersClues.deep_voice,
                                       MonstersClues.less_affected_by_telekinesis_of_knight_of_hell]
     person_with_mark_of_cain.disable_methods = [MonstersDisableMethods.holy_water,
                                                 MonstersDisableMethods.demonic_handcuffs]
+    person_with_mark_of_cain.cure_methods = [MonstersCureMethods.demon_curing_ritual]
 
     # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
 
     # ---------------------------------------------------- SEASON 10 ---------------------------------------------------
 
-    unknown = Monster("Unknown", description="", episodes={"S10": [2]})
+    unknown = Monster("Unknown", description="", episodes={"S10": [3]})
     unknown.clues = []
 
     angel_watcher = Monster("Angel Watcher - Grigori")

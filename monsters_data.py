@@ -516,3 +516,4 @@ class MonstersCureMethods:
         "cocktail made of blood of the vampire that bit the victim"
     plasma_therapy_with_the_blood_of_the_werewolf_that_bit_the_victim = \
         "plasma therapy with the blood of the werewolf that bit the victim"
+    demon_curing_ritual = "Demon-curing ritual of Father Thompson"
