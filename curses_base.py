@@ -266,9 +266,9 @@ class CursesBase:
                                                      "person can also telekinetically bring the blade to himself. If a "
                                                      "person with the Mark of Cain is killed - he becomes a demon "
                                                      "(according to the ending of S09E23).",
-                         episodes={"S09": [11, 12, 16, 17, 18, 21], "S10": [1]})
+                         episodes={"S09": [11, 12, 16, 17, 18, 21], "S10": [1, 2]})
     mark_of_cain.clues = [CursesClues.people_acting_weirdly, CursesClues.less_affected_by_telekinesis_of_knight_of_hell,
-                          CursesClues.high_strength, CursesClues.black_eyes]
+                          CursesClues.high_strength, CursesClues.black_eyes, CursesClues.increased_regeneration]
 
     willpower_removing_spell = Curse("Willpower removing spell", description="Spell, that lowers or removes the power "
                                                                              "of will of a person. Used by Magnus.",
