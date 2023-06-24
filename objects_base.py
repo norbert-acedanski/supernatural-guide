@@ -49,7 +49,7 @@ class ObjectsBase:
                                  episodes={"S03": [1, 9, 16], "S04": [1, 9, 20, 22], "S05": [1, 10, 14, 17, 20, 21, 22],
                                            "S06": [10, 20, 21], "S07": [8, 15, 17, 21],
                                            "S08": [1, 2, 7, 10, 14, 17, 19, 23], "S09": [2, 4, 11, 14, 16, 17],
-                                           "S10": [2]})
+                                           "S10": [2, 3]})
     demon_killing_knife.abilities = [ObjectAbilities.can_kill_demons, ObjectAbilities.cannot_kill_angels,
                                      ObjectAbilities.cannot_kill_knights_of_hell]
 
@@ -81,7 +81,10 @@ class ObjectsBase:
                                   episodes={"S04": [10, 22], "S05": [13, 18], "S06": [3], "S07": [21], "S09": [1]})
     sigil_against_angels.abilities = [ObjectAbilities.can_send_angels_back_to_heaven]
 
-    angel_grace = Object("Angel grace", description="A power source for an angel", episodes={"S04": [10], "S08": [23]})
+    angel_grace = Object("Angel grace", description="A power source for an angel. Another Angel can take the Grace to "
+                                                    "power itself, but it does not last forever. When it burns up it "
+                                                    "has to be refilled.", episodes={"S04": [10], "S08": [23],
+                                                                                     "S10": [3]})
     angel_grace.abilities = [ObjectAbilities.can_appear_as_falling_meteor,
                              ObjectAbilities.the_place_it_hits_is_not_destroyed_but_flourishes,
                              ObjectAbilities.can_kill_entities_when_reconnecting_with_an_angel]
@@ -99,7 +102,7 @@ class ObjectsBase:
     angel_blade = Object("Angel blade", description="A triangular, silvery blade, that each angel has.",
                          episodes={"S04": [16], "S05": [1, 13, 18], "S06": [3, 10, 17, 18, 22], "S07": [21],
                                    "S08": [7, 10, 17, 21, 22, 23], "S09": [1, 2, 3, 6, 9, 10, 11, 14, 16, 18, 21, 22, 23],
-                                   "S10": [1]})
+                                   "S10": [1, 3]})
     angel_blade.abilities = [ObjectAbilities.can_kill_angels, ObjectAbilities.can_kill_demons]
 
     lucifers_cage = Object("Lucifer's Cage", description="A prison build specifically to contain archangelic powers "
