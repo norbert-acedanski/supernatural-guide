@@ -35,6 +35,9 @@ Python 3.9.10
 # Usage
 If you are a fan of Supernatural show, you can play with this project to find out what are the clues, that a particular entity/curse/event/object/place leaves behind and try to determine that like Sam and Dean would ;)  
 
+# Fun Facts:
+- Deans Blood type is 0 based on S10E03
+
 # TODO:
 - finish all seasons and episodes.
 - fill missing appearances of John Winchester's Journal until S04E19.
