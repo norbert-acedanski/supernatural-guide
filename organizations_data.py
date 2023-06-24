@@ -8,7 +8,7 @@ class OrganizationKnowledge:
     drakopoolos_journal = "Drakopoolos' journal"
     summoning_of_zeus = "summoning of Zeus"
     irregular_jinns = "irregular jinns"
-    demonic_possessions = "demonic possessions"
+    demonic_possessions = "demonic possessions (includes curing demons)"
     monitoring_of_apocalyptic_events = "monitoring of apocalyptic events (like Angels falling from Heaven)"
     oz = "oz"
     inuit_magic = "inuit magic"
