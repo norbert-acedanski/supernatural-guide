@@ -5,7 +5,7 @@ from places_data import PlaceClues
 
 class PlacesBase:
     hell = Place("Hell", description="Place of eternal torture. People are either tortured, or torture others.",
-                 episodes={"S03": [16], "S04": [1, 8, 10], "S06": [20], "S08": [19]})
+                 episodes={"S03": [16], "S04": [1, 8, 10], "S06": [20], "S08": [19], "S10": [3]})
     hell.clues = [PlaceClues.people_chained_in_a_void, PlaceClues.electrical_storms, PlaceClues.dark_place,
                   PlaceClues.flashing_lights, PlaceClues.time_runs_faster_there, PlaceClues.endless_queue,
                   PlaceClues.screaming_people]
@@ -25,7 +25,7 @@ class PlacesBase:
                                          "sealed by Metatron with a spell. There is a portal from Heaven to Earth "
                                          "created by Metatron, for Angels to travel between those two places. Angels "
                                          "can't sense it because it changes its location. Heaven has it's own prison.",
-                   episodes={"S05": [16], "S08": [7, 10, 17, 23], "S09": [18, 22, 23]})
+                   episodes={"S05": [16], "S08": [7, 10, 17, 23], "S09": [18, 22, 23], "S10": [2]})
     heaven.clues = [PlaceClues.good_memories_relived, PlaceClues.changing_scenery, PlaceClues.bright_place]
 
     purgatory = Place("Purgatory", description="A place, where all monsters go, after they die. Can be opened with an "
