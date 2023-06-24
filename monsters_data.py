@@ -130,6 +130,7 @@ class MonstersClues:
     invisible_entity = "invisible entity"
     visible_by_other_ghosts_and_people_close_to_death_only = "visible by other ghosts and people close to death only"
     ozone_smell = "ozone smell"
+    less_affected_by_telekinesis_of_knight_of_hell = "less affected by telekinesis of Knight of Hell"
     telekinesis = "telekinesis"
     mind_control = "mind control"
     amnesia_blackout = "amnesia/blackout"
