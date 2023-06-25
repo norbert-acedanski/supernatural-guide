@@ -429,7 +429,7 @@ class MonstersKillMethods:
     stake_made_from_cypress_tree_in_babylon = "stake made from a cypress tree in Babylon"
     stake_made_from_unknown_wood = "stake made from unknown wood"
     stake_made_from_a_tree_struck_by_lightning = "stake made from a tree struck by lightning"
-    stake_made_from_oak_stained_in_virgin_blood = "stake made from oak stained in virgin bloodd"
+    stake_made_from_oak_stained_in_virgin_blood = "stake made from oak stained in virgin blood"
     mix_of_salt_and_rosemary_thrown_it_and_burned = "mix of salt and rosemary thrown it and burned"
     stab_it_seven_times_with_bamboo_dagger_blessed_by_shinto_priest = \
         "stab it seven times with bamboo dagger blessed by shinto priest"
