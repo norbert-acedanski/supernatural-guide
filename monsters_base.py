@@ -654,9 +654,9 @@ class MonsterBase:
                                                          "Only one prophet can exist at a time. There are multiple "
                                                          "people in the world, that can become one if needed. Prophets "
                                                          "throughout the series: Chuck Shurley, Kevin Tran (Killed by "
-                                                         "Gadreel in S09E09).",
+                                                         "Gadreel in S09E09). Chuck came back in S10E05.",
                       episodes={"S04": [18, 22], "S05": [1, 9, 22], "S07": [21, 22, 23],
-                                "S08": [1, 2, 7, 10, 14, 19, 21, 23], "S09": [2, 6, 9]})
+                                "S08": [1, 2, 7, 10, 14, 19, 21, 23], "S09": [2, 6, 9], "S10": [5]})
     prophet.clues = [MonstersClues.can_see_future, MonstersClues.protected_by_an_archangel, MonstersClues.visions,
                      MonstersClues.can_repair_broken_word_of_god, MonstersClues.can_read_word_of_god,
                      MonstersClues.weird_weather, MonstersClues.missing_or_dead_people_regularly_in_different_areas]
@@ -1404,14 +1404,23 @@ class MonsterBase:
                                                 MonstersDisableMethods.demonic_handcuffs]
     person_with_mark_of_cain.cure_methods = [MonstersCureMethods.demon_curing_ritual]
 
+    calliope = Monster("Calliope", description="The Goddess of epic poetry (she is a muse). She is associated with "
+                                               "Borage (Starflower). She manifests creatures from the stories she has "
+                                               "tuned into. She uses these manifestations to inspire the author and "
+                                               "protect them until their vision is realized. After that she eats the "
+                                               "author. She is killed by Sam in S10E05.", episodes={"S10": [5]})
+    calliope.clues = [MonstersClues.missing_or_dead_people_regularly_in_the_same_area, MonstersClues.telekinesis,
+                      MonstersClues.seen_as_a_scarecrow, MonstersClues.left_star_flower_after_kidnapping,
+                      MonstersClues.can_teleport_people]
+    calliope.kill_methods = [MonstersKillMethods.blessed_wooden_stake]
+
     # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
 
     # ---------------------------------------------------- SEASON 10 ---------------------------------------------------
 
-    unknown = Monster("Unknown", description="", episodes={"S10": [4]})
-    unknown.clues = [MonstersClues.claws, MonstersClues.people_dead_weirdly, MonstersClues.ripped_throat,
-                     MonstersClues.missing_or_dead_people_regularly_in_the_same_area, MonstersClues.missing_heart,
-                     MonstersClues.moves_fast]
+    unknown = Monster("Unknown", description="", episodes={"S10": [5]})
+    unknown.clues = [MonstersClues.missing_or_dead_people_regularly_in_the_same_area, MonstersClues.seen_as_a_scarecrow,
+                     MonstersClues.left_star_flower_after_kidnapping]
 
     angel_watcher = Monster("Angel Watcher - Grigori")
     angel_watcher.clues = [MonstersClues.triangle_wound_with_burns]

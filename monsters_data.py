@@ -128,6 +128,7 @@ class MonstersClues:
     left_greek_symbol_on_chest = "left greek symbol on chest (associated with Pantheon and to goddess Harmonia)"
     left_cobweb = "left cobweb"
     left_gold_thread = "left gold thread"
+    left_star_flower_after_kidnapping = "left star flower after kidnapping"
     invisible_entity = "invisible entity"
     visible_by_other_ghosts_and_people_close_to_death_only = "visible by other ghosts and people close to death only"
     ozone_smell = "ozone smell"
@@ -430,6 +431,7 @@ class MonstersKillMethods:
     stake_made_from_unknown_wood = "stake made from unknown wood"
     stake_made_from_a_tree_struck_by_lightning = "stake made from a tree struck by lightning"
     stake_made_from_oak_stained_in_virgin_blood = "stake made from oak stained in virgin blood"
+    blessed_wooden_stake = "blessed wooden stake"
     mix_of_salt_and_rosemary_thrown_it_and_burned = "mix of salt and rosemary thrown it and burned"
     stab_it_seven_times_with_bamboo_dagger_blessed_by_shinto_priest = \
         "stab it seven times with bamboo dagger blessed by shinto priest"
