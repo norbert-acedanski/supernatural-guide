@@ -231,12 +231,12 @@ class MonsterBase:
     daeva.kill_methods = [MonstersKillMethods.very_bright_light]
     daeva.disable_methods = [MonstersDisableMethods.very_bright_light]
 
-    tupla = Monster("Tulpa", description="A Tibetan thought-form. To summon one there needs to be a tibetan spirit "
-                                         "sigil drawn.", episodes={"S01": [17]})
-    tupla.clues = [MonstersClues.ghost_like_creature, MonstersClues.high_strength,
+    tulpa = Monster("Tulpa", description="A Tibetan thought-form. To summon one there needs to be a tibetan spirit "
+                                         "sigil drawn, but they draw a lot of psychic energy.", episodes={"S01": [17]})
+    tulpa.clues = [MonstersClues.ghost_like_creature, MonstersClues.high_strength,
                    MonstersClues.keeps_changing_appearances, MonstersClues.salt_does_not_affect_it]
-    tupla.kill_methods = [MonstersKillMethods.make_a_story_that_it_will_unite_with_and_weaken]
-    tupla.disable_methods = [MonstersDisableMethods.destroy_the_place_that_the_tulpa_resides]
+    tulpa.kill_methods = [MonstersKillMethods.make_a_story_that_it_will_unite_with_and_weaken]
+    tulpa.disable_methods = [MonstersDisableMethods.destroy_the_place_that_the_tulpa_resides]
 
     shtriga = Monster("Shtriga", description="Witch-like entity from Albanian folklore. Feeds on life energy, "
                                              "but particularly on children (also siblings)", episodes={"S01": [18]})
