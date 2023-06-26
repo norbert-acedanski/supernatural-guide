@@ -202,6 +202,8 @@ class MonstersClues:
     victims_have_meadowsweet_somewhere = "victims have meadowsweet somewhere"
     victims_brain_devoid_of_water = "victims brain devoid of water"
     victims_starve_for_something = "victims starve for something"
+    boiled_brain = "boiled brain"
+    red_faces_of_victims = "red faces of victims"
     cold_spots = "cold spots"
     no_cold_spots = "no cold spots"
     feeling_of_something_bad = "feeling of something bad"
@@ -360,6 +362,7 @@ class MonstersClues:
     seen_by_drunk_people = "seen by drunk people"
     roman_corn_syrup = "roman corn syrup"
     tree_tatoo = "tree tatoo (a Celtic magic symbol - the Tree of Pain)"
+    black_goo = "black goo"
     no_black_goo = "no black goo"
 
 
@@ -381,6 +384,7 @@ class MonstersKillMethods:
     silver_bullet_into_the_heart = "silver bullet into the heart"
     demon_killing_knife = "demon killing knife"
     demon_killing_spell = "demon killing spell"
+    defigere_et_depurgare_spell = "defigere et depurgare spell (to bind and purge spell)"
     holy_oil = "holy oil"
     angel_sword = "angel sword"
     samurai_sword_consecrated_with_shinto_blessing = "samurai sword consecrated with shinto blessing"

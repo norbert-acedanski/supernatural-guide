@@ -103,7 +103,7 @@ class MonsterBase:
                               "S04": [1, 4, 9, 10, 20, 21, 22], "S05": [1, 6, 10, 12, 14, 17, 20, 21, 22],
                               "S06": [7, 10, 18, 20, 21, 22], "S07": [8, 15, 17, 21, 23],
                               "S08": [1, 2, 7, 10, 17, 19, 21, 22], "S09": [2, 10, 11, 14, 16, 17, 21, 23],
-                              "S10": [1, 2, 3]})
+                              "S10": [1, 2, 3, 7]})
     demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                    MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                    MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -112,11 +112,13 @@ class MonsterBase:
                    MonstersClues.amnesia_blackout, MonstersClues.telekinesis, MonstersClues.can_vanish,
                    MonstersClues.lack_of_body_control, MonstersClues.can_hurt_people_with_a_thought,
                    MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
+                   MonstersClues.animals_dead_weirdly,
 
                    MonstersClues.black_blood]
     demon.kill_methods = [MonstersKillMethods.demon_killing_knife, MonstersKillMethods.angel_exorcism,
                           MonstersKillMethods.colt_of_colt_with_magic_bullets, MonstersKillMethods.demon_killing_spell,
                           MonstersKillMethods.angel_blade, MonstersKillMethods.first_blade, MonstersKillMethods.holy_oil,
+                          MonstersKillMethods.defigere_et_depurgare_spell,
 
                           MonstersKillMethods.will_of_an_archangel, MonstersKillMethods.lance_of_archangel_michael]
     demon.disable_methods = [MonstersDisableMethods.holy_water, MonstersDisableMethods.holy_wood,
@@ -468,15 +470,25 @@ class MonsterBase:
     witch = Monster("Witch", description="A woman/man, that deals with different kinds of magic (like black, "
                                          "old world, etc.). Witch has magic powers, can bring demons, be immortal, "
                                          "teleport etc. Some witches have companions (called familiars) in the form of "
-                                         "a pet. Witches can perform astral projections.",
-                    episodes={"S03": [9], "S04": [7, 12], "S05": [7, 12], "S07": [5], "S08": [7, 15]})
+                                         "a pet. Witches can perform astral projections. One of the more powerful "
+                                         "witches is Rowena introduced in S10E03. According to her, grand coven there "
+                                         "are three recognized kinds of witch in the world. Most common are the "
+                                         "borrowers - those who harness the power of a demon in order to practice the "
+                                         "art. Second one (and rarest) are the naturals - the ones born with a gift. "
+                                         "The last group are the students - those with no natural ability who, with "
+                                         "enough practice and training and a grand coven-approved mentor to show them "
+                                         "the path, can eke out a modicum of witchly power. Rowena is a natural and is "
+                                         "also a mother of Crowley.",
+                    episodes={"S03": [9], "S04": [7, 12], "S05": [7, 12], "S07": [5], "S08": [7, 15], "S10": [3, 7]})
     witch.clues = [MonstersClues.people_dead_weirdly, MonstersClues.hex_bag_hidden_somewhere, MonstersClues.immortal,
                    MonstersClues.coin_hidden_somewhere, MonstersClues.weird_electronics_behavior,
                    MonstersClues.telekinesis, MonstersClues.can_vanish, MonstersClues.weird_plant_deaths_or_behavior,
                    MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                    MonstersClues.people_aging_rapidly, MonstersClues.people_getting_younger, MonstersClues.invulnerable,
-                   MonstersClues.people_with_souls_switched, MonstersClues.card_found_on_a_victim,
-                   MonstersClues.flashing_lights, MonstersClues.can_read_peoples_minds,
+                   MonstersClues.people_with_souls_switched, MonstersClues.black_goo, MonstersClues.flashing_lights,
+                   MonstersClues.card_found_on_a_victim, MonstersClues.can_read_peoples_minds,
+                   MonstersClues.people_acting_weirdly, MonstersClues.boiled_brain, MonstersClues.red_faces_of_victims,
+                   MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_different_areas,
 
                    MonstersClues.missing_heart]
     witch.disableMethod = [MonstersDisableMethods.stop_it_from_speaking, MonstersDisableMethods.iron_chains,
@@ -546,7 +558,7 @@ class MonsterBase:
                               "S05": [1, 2, 3, 4, 5, 8, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22],
                               "S06": [3, 6, 7, 10, 12, 15, 17, 18, 19, 20, 21, 22], "S07": [1, 17, 20, 21, 23],
                               "S08": [2, 7, 8, 10, 17, 19, 21, 22, 23], "S09": [9, 10, 11, 14, 18, 21, 22, 23],
-                              "S10": [1, 2, 3]})
+                              "S10": [1, 2, 3, 7]})
     angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                    MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion, MonstersClues.has_wings,
                    MonstersClues.leaves_burned_marks, MonstersClues.weird_electronics_behavior,
@@ -602,19 +614,20 @@ class MonsterBase:
                                                        "(committed suicide in S0923), Muriel, Azrael, Sophia, Theo, "
                                                        "Thaddeus, Abner, Hannah, Ezra, Esther, Asariel, Purah. Gadreel "
                                                        "was the Angel, that let Lucifer into the Garden of Eden.",
-                           episodes={"S04": [9, 10], "S08": [23], "S09": [1, 2, 3, 4, 5, 8, 9, 10, 14, 18, 21, 22, 23]})
+                           episodes={"S04": [9, 10], "S08": [23], "S09": [1, 2, 3, 4, 5, 8, 9, 10, 14, 18, 21, 22, 23],
+                                     "S10": [1, 2, 3, 7]})
     fallen_angel.clues = [MonstersClues.people_hear_voices, MonstersClues.can_see_real_appearance_of_entities,
                           MonstersClues.telekinesis, MonstersClues.people_acting_weirdly, MonstersClues.falling_meteor,
-                          MonstersClues.can_hear_angel_radio, MonstersClues.can_hear_demon_radio,
+                          MonstersClues.can_hear_angel_radio, MonstersClues.can_erase_and_bring_back_memories,
                           MonstersClues.can_repair_human_body, MonstersClues.can_posses_a_person,
-                          MonstersClues.bright_eyes, MonstersClues.bright_light, MonstersClues.people_dead_weirdly,
+                          MonstersClues.bright_eyes, MonstersClues.can_hear_demon_radio, MonstersClues.bright_light,
                           MonstersClues.burned_eyes, MonstersClues.travels_as_white_fog, MonstersClues.body_torn_apart,
                           MonstersClues.vapourised_organs, MonstersClues.can_bring_back_dead_people,
                           MonstersClues.blue_eyes, MonstersClues.leaves_burned_marks, MonstersClues.triangle_wound,
                           MonstersClues.people_acting_weirdly, MonstersClues.travels_as_white_fog,
-                          MonstersClues.can_kill_humans_with_hand_on_forehead, MonstersClues.burned_eyes,
+                          MonstersClues.can_kill_humans_with_hand_on_forehead, MonstersClues.weird_things_behavior,
                           MonstersClues.can_put_a_person_to_sleep, MonstersClues.weird_electronics_behavior,
-                          MonstersClues.flashing_lights, MonstersClues.weird_things_behavior]
+                          MonstersClues.flashing_lights, MonstersClues.burned_eyes, MonstersClues.people_dead_weirdly]
     fallen_angel.disable_methods = [MonstersDisableMethods.holy_oil, MonstersDisableMethods.angel_blade,
                                     MonstersDisableMethods.first_blade]
     fallen_angel.kill_methods = [MonstersKillMethods.angel_blade, MonstersKillMethods.first_blade]
@@ -779,7 +792,7 @@ class MonsterBase:
                                                            "was working with Castiel.",
                             episodes={"S05": [10, 20, 21], "S06": [4, 7, 8, 10, 19, 20, 21, 22],
                                       "S07": [1, 6, 8, 22, 23], "S08": [1, 2, 7, 10, 17, 19, 21, 22, 23],
-                                      "S09": [2, 4, 6, 10, 11, 16, 17, 21, 23], "S10": [1, 2, 3]})
+                                      "S09": [2, 4, 6, 10, 11, 16, 17, 21, 23], "S10": [1, 2, 3, 7]})
     demon_crowley.clues = [MonstersClues.can_vanish, MonstersClues.pact_sealed_with_a_kiss, MonstersClues.telekinesis,
                            MonstersClues.summoned_by_placing_box_in_the_crossroads, MonstersClues.small_earth_quake,
                            MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
@@ -1418,8 +1431,8 @@ class MonsterBase:
 
     # ---------------------------------------------------- SEASON 10 ---------------------------------------------------
 
-    unknown = Monster("Unknown", description="", episodes={"S10": [6]})
-    unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.high_strength, MonstersClues.skin_left_behind]
+    unknown = Monster("Unknown", description="", episodes={"S10": [7]})
+    unknown.clues = []
 
     angel_watcher = Monster("Angel Watcher - Grigori")
     angel_watcher.clues = [MonstersClues.triangle_wound_with_burns]
