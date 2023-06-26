@@ -291,7 +291,14 @@ class CursesBase:
 
     # SEASON 10:
 
+    defigere_et_depurgare_spell = Curse("Defigere et depurgare spell", description="'To bind and purge' spell. Used to "
+                                                                                   "kill demons.",
+                                        episodes={"S10": [7]})
+    defigere_et_depurgare_spell.clues = [CursesClues.people_dead_weirdly, CursesClues.black_goo]
 
+    attack_dog_spell = Curse("Attack-dog spell", description="Used on a human to turn him into an attack dog.",
+                             episodes={"S10": [7]})
+    attack_dog_spell.clues = [CursesClues.people_acting_weirdly, CursesClues.high_strength, CursesClues.red_eyes]
 
     # SEASON 11:
 
