@@ -128,7 +128,7 @@ class MonsterBase:
     shapeshifter = Monster("Shapeshifter", description="These creatures can transform themselves into other man or "
                                                        "animals. Can mate with humans (and other Shapeshifters) to "
                                                        "produce Shapeshifter offspring.",
-                           episodes={"S01": [6], "S02": [12], "S04": [5], "S05": [2], "S09": [16, 20]})
+                           episodes={"S01": [6], "S02": [12], "S04": [5], "S05": [2], "S09": [16, 20], "S10": [6]})
     shapeshifter.clues = [MonstersClues.can_take_form_of_other_people, MonstersClues.skin_left_behind,
                           MonstersClues.being_at_two_places_at_once, MonstersClues.bright_eyes, MonstersClues.no_sulfur,
                           MonstersClues.weird_animal_behavior, MonstersClues.can_copy_memories_of_other_people,
@@ -1418,9 +1418,8 @@ class MonsterBase:
 
     # ---------------------------------------------------- SEASON 10 ---------------------------------------------------
 
-    unknown = Monster("Unknown", description="", episodes={"S10": [5]})
-    unknown.clues = [MonstersClues.missing_or_dead_people_regularly_in_the_same_area, MonstersClues.seen_as_a_scarecrow,
-                     MonstersClues.left_star_flower_after_kidnapping]
+    unknown = Monster("Unknown", description="", episodes={"S10": [6]})
+    unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.high_strength, MonstersClues.skin_left_behind]
 
     angel_watcher = Monster("Angel Watcher - Grigori")
     angel_watcher.clues = [MonstersClues.triangle_wound_with_burns]
