@@ -14,7 +14,7 @@ class OrganizationsBase:
                                                                 "He wrote books about his daughter in Ozz. Charlie "
                                                                 "broke the fourth wall in their compound in S09E04.",
                                   episodes={"S08": [12, 13, 14, 16, 20, 22, 23],
-                                            "S09": [4, 5, 6, 7, 9, 11, 14, 16, 17], "S10": [3]})
+                                            "S09": [4, 5, 6, 7, 9, 11, 14, 16, 17], "S10": [3, 8]})
     man_of_letters.knowledge = [OrganizationKnowledge.time_travel, OrganizationKnowledge.demon_killing_knife,
                                 OrganizationKnowledge.haitian_symbol_for_speaking_to_the_dead,
                                 OrganizationKnowledge.knights_of_hell, OrganizationKnowledge.drakopoolos_journal,
@@ -24,7 +24,8 @@ class OrganizationsBase:
                                 OrganizationKnowledge.inuit_magic, OrganizationKnowledge.extinct_languages,
                                 OrganizationKnowledge.angel_weakening, OrganizationKnowledge.angel_leaving_its_vessel,
                                 OrganizationKnowledge.the_inner_workings_of_angels,
-                                OrganizationKnowledge.dishonored_and_forgotten]
+                                OrganizationKnowledge.dishonored_and_forgotten,
+                                OrganizationKnowledge.werewolf_transgenderism]
 
     the_judah_initiative = Organization("The Judah initiative", description="They were active during WW2. A group of "
                                                                             "rabbis that were good saboteurs. "
