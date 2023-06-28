@@ -272,7 +272,7 @@ class CursesBase:
                                                      "person can also telekinetically bring the blade to himself. If a "
                                                      "person with the Mark of Cain is killed - he becomes a demon "
                                                      "(according to the ending of S09E23).",
-                         episodes={"S09": [11, 12, 16, 17, 18, 21], "S10": [1, 2, 3, 9]})
+                         episodes={"S09": [11, 12, 16, 17, 18, 21], "S10": [1, 2, 3, 9, 10]})
     mark_of_cain.clues = [CursesClues.people_acting_weirdly, CursesClues.less_affected_by_telekinesis_of_knight_of_hell,
                           CursesClues.high_strength, CursesClues.black_eyes, CursesClues.increased_regeneration,
                           CursesClues.weird_dreams]
@@ -300,6 +300,12 @@ class CursesBase:
     attack_dog_spell = Curse("Attack-dog spell", description="Used on a human to turn him into an attack dog.",
                              episodes={"S10": [7]})
     attack_dog_spell.clues = [CursesClues.people_acting_weirdly, CursesClues.high_strength, CursesClues.red_eyes]
+
+    spirit_leaving_body_spell = Curse("Spirit leaving body spell",
+                                      description="Spell, that allows ones spirit to leave the body and go to another "
+                                                  "person. One needs another persons belonging to cast the spell.",
+                                      episodes={"S10": [10]})
+    spirit_leaving_body_spell.clues = [CursesClues.white_eyes]
 
     # SEASON 11:
 
