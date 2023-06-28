@@ -364,6 +364,7 @@ class MonstersClues:
     tree_tatoo = "tree tatoo (a Celtic magic symbol - the Tree of Pain)"
     black_goo = "black goo"
     no_black_goo = "no black goo"
+    only_bones_left = "only bones left"
 
 
 class MonstersKillMethods:

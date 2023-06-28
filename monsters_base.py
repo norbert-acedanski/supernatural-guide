@@ -257,13 +257,14 @@ class MonsterBase:
                                              "years as blood slaves. One can become a vampire, when drinking vampire "
                                              "blood. Upon changing, all senses sharpen.",
                       episodes={"S01": [20], "S02": [3], "S03": [7], "S05": [3], "S06": [5, 19], "S07": [22],
-                                "S08": [1, 2, 5, 7, 9, 10, 18, 19], "S09": [2, 16, 19, 20]})
+                                "S08": [1, 2, 5, 7, 9, 10, 18, 19], "S09": [2, 16, 19, 20], "S10": [8]})
     vampire.clues = [MonstersClues.ripped_throat, MonstersClues.no_blood_in_the_body, MonstersClues.needle_like_teeth,
                      MonstersClues.moving_in_groups_usually, MonstersClues.invulnerable, MonstersClues.high_strength,
                      MonstersClues.bright_eyes, MonstersClues.great_sense_of_smell, MonstersClues.white_skin,
                      MonstersClues.cattle_deaths, MonstersClues.feeds_on_blood, MonstersClues.people_dead_weirdly,
                      MonstersClues.bite_marks_on_peoples_necks, MonstersClues.craving_for_blood,
-                     MonstersClues.missing_or_dead_people_regularly_in_the_same_area, MonstersClues.moves_fast]
+                     MonstersClues.missing_or_dead_people_regularly_in_the_same_area, MonstersClues.moves_fast,
+                     MonstersClues.weird_noises, MonstersClues.only_bones_left, MonstersClues.animal_like_attack]
     vampire.kill_methods = [MonstersKillMethods.decapitation, MonstersKillMethods.angel_blade,
                             MonstersKillMethods.colt_of_colt_with_magic_bullets, MonstersKillMethods.will_of_an_angel,
                             MonstersClues.roman_corn_syrup]
@@ -1431,8 +1432,9 @@ class MonsterBase:
 
     # ---------------------------------------------------- SEASON 10 ---------------------------------------------------
 
-    unknown = Monster("Unknown", description="", episodes={"S10": [7]})
-    unknown.clues = []
+    unknown = Monster("Unknown", description="", episodes={"S10": [8]})
+    unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.only_bones_left, MonstersClues.weird_noises,
+                     MonstersClues.high_strength, MonstersClues.animal_like_attack]
 
     angel_watcher = Monster("Angel Watcher - Grigori")
     angel_watcher.clues = [MonstersClues.triangle_wound_with_burns]
