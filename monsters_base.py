@@ -103,7 +103,7 @@ class MonsterBase:
                               "S04": [1, 4, 9, 10, 20, 21, 22], "S05": [1, 6, 10, 12, 14, 17, 20, 21, 22],
                               "S06": [7, 10, 18, 20, 21, 22], "S07": [8, 15, 17, 21, 23],
                               "S08": [1, 2, 7, 10, 17, 19, 21, 22], "S09": [2, 10, 11, 14, 16, 17, 21, 23],
-                              "S10": [1, 2, 3, 7, 9]})
+                              "S10": [1, 2, 3, 7, 9, 10]})
     demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                    MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                    MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -321,7 +321,7 @@ class MonsterBase:
                                                                "dirt, black cat cone, ones photo in the center of "
                                                                "a crossroad.",
                                episodes={"S02": [8, 22], "S04": [9], "S05": [10], "S06": [4], "S07": [8], "S08": [19],
-                                         "S09": [2, 16], "S10": [1, 3]})
+                                         "S09": [2, 16], "S10": [1, 3, 10]})
     crossroads_demon.clues = [MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
                               MonstersClues.red_eyes, MonstersClues.summoned_by_placing_box_in_the_crossroads,
                               MonstersClues.travels_as_black_fog, MonstersClues.pact_sealed_with_a_kiss,
@@ -329,7 +329,8 @@ class MonsterBase:
     crossroads_demon.disable_methods = [MonstersDisableMethods.devils_trap, MonstersDisableMethods.holy_water,
                                         MonstersDisableMethods.fry_its_remains]
     crossroads_demon.kill_methods = [MonstersKillMethods.colt_of_colt_with_magic_bullets,
-                                     MonstersKillMethods.demon_killing_knife, MonstersKillMethods.burn_the_remains]
+                                     MonstersKillMethods.demon_killing_knife, MonstersKillMethods.burn_the_remains,
+                                     MonstersKillMethods.angel_blade]
 
     demonic_virus = Monster("Demonic virus", description="Probably caused Roanoke colony disappearance. Croatoan might "
                                                          "be a name of the demon. Names also include Dever and "
@@ -480,7 +481,8 @@ class MonsterBase:
                                          "enough practice and training and a grand coven-approved mentor to show them "
                                          "the path, can eke out a modicum of witchly power. Rowena is a natural and is "
                                          "also a mother of Crowley.",
-                    episodes={"S03": [9], "S04": [7, 12], "S05": [7, 12], "S07": [5], "S08": [7, 15], "S10": [3, 7, 9]})
+                    episodes={"S03": [9], "S04": [7, 12], "S05": [7, 12], "S07": [5], "S08": [7, 15],
+                              "S10": [3, 7, 9, 10]})
     witch.clues = [MonstersClues.people_dead_weirdly, MonstersClues.hex_bag_hidden_somewhere, MonstersClues.immortal,
                    MonstersClues.coin_hidden_somewhere, MonstersClues.weird_electronics_behavior,
                    MonstersClues.telekinesis, MonstersClues.can_vanish, MonstersClues.weird_plant_deaths_or_behavior,
@@ -559,7 +561,7 @@ class MonsterBase:
                               "S05": [1, 2, 3, 4, 5, 8, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22],
                               "S06": [3, 6, 7, 10, 12, 15, 17, 18, 19, 20, 21, 22], "S07": [1, 17, 20, 21, 23],
                               "S08": [2, 7, 8, 10, 17, 19, 21, 22, 23], "S09": [9, 10, 11, 14, 18, 21, 22, 23],
-                              "S10": [1, 2, 3, 7, 9]})
+                              "S10": [1, 2, 3, 7, 9, 10]})
     angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                    MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion, MonstersClues.has_wings,
                    MonstersClues.leaves_burned_marks, MonstersClues.weird_electronics_behavior,
@@ -616,7 +618,7 @@ class MonsterBase:
                                                        "Thaddeus, Abner, Hannah, Ezra, Esther, Asariel, Purah. Gadreel "
                                                        "was the Angel, that let Lucifer into the Garden of Eden.",
                            episodes={"S04": [9, 10], "S08": [23], "S09": [1, 2, 3, 4, 5, 8, 9, 10, 14, 18, 21, 22, 23],
-                                     "S10": [1, 2, 3, 7]})
+                                     "S10": [1, 2, 3, 7, 10]})
     fallen_angel.clues = [MonstersClues.people_hear_voices, MonstersClues.can_see_real_appearance_of_entities,
                           MonstersClues.telekinesis, MonstersClues.people_acting_weirdly, MonstersClues.falling_meteor,
                           MonstersClues.can_hear_angel_radio, MonstersClues.can_erase_and_bring_back_memories,
@@ -793,7 +795,7 @@ class MonsterBase:
                                                            "was working with Castiel.",
                             episodes={"S05": [10, 20, 21], "S06": [4, 7, 8, 10, 19, 20, 21, 22],
                                       "S07": [1, 6, 8, 22, 23], "S08": [1, 2, 7, 10, 17, 19, 21, 22, 23],
-                                      "S09": [2, 4, 6, 10, 11, 16, 17, 21, 23], "S10": [1, 2, 3, 7, 9]})
+                                      "S09": [2, 4, 6, 10, 11, 16, 17, 21, 23], "S10": [1, 2, 3, 7, 9, 10]})
     demon_crowley.clues = [MonstersClues.can_vanish, MonstersClues.pact_sealed_with_a_kiss, MonstersClues.telekinesis,
                            MonstersClues.summoned_by_placing_box_in_the_crossroads, MonstersClues.small_earth_quake,
                            MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
@@ -1315,7 +1317,7 @@ class MonsterBase:
 
     angel_metatron = Monster("Angel Metatron", description="Scribe of GOD. One of the angels. Metatron broke the "
                                                            "fourth wall in S09E18.",
-                             episodes={"S08": [21, 22, 23], "S09": [9, 10, 18, 22, 23], "S10": [2]})
+                             episodes={"S08": [21, 22, 23], "S09": [9, 10, 18, 22, 23], "S10": [2, 10]})
     angel_metatron.clues = [MonstersClues.immortal, MonstersClues.can_vanish, MonstersClues.can_give_hallucinations,
                             MonstersClues.can_erase_anti_angel_marks, MonstersClues.can_appear_out_of_thin_air,
                             MonstersClues.can_repair_human_body, MonstersClues.can_put_down_holy_fire,
@@ -1432,7 +1434,7 @@ class MonsterBase:
 
     # ---------------------------------------------------- SEASON 10 ---------------------------------------------------
 
-    unknown = Monster("Unknown", description="", episodes={"S10": [9]})
+    unknown = Monster("Unknown", description="", episodes={"S10": [10]})
     unknown.clues = []
 
     angel_watcher = Monster("Angel Watcher - Grigori")
