@@ -1434,8 +1434,27 @@ class MonsterBase:
 
     # ---------------------------------------------------- SEASON 10 ---------------------------------------------------
 
-    unknown = Monster("Unknown", description="", episodes={"S10": [10]})
-    unknown.clues = []
+    soul_versions_people = Monster("Soul versions people",
+                                   description="Two people, that are created out of a good and dark part of the "
+                                               "original person's soul. Can be created by Inner key of Ozz. Good and "
+                                               "Bad versions of a person are connected physically - if one gets hurt, "
+                                               "the other one gets hurt.", episodes={"S10": [11]})
+    soul_versions_people.clues = [MonstersClues.being_at_two_places_at_once, MonstersClues.people_acting_weirdly,
+                                  MonstersClues.no_sulfur, MonstersClues.no_weird_noises]
+    soul_versions_people.disable_methods = [MonstersDisableMethods.use_inner_key_of_ozz_on_them]
+    soul_versions_people.kill_methods = [MonstersKillMethods.like_any_human, MonstersKillMethods.kill_the_other_version]
+
+    wizard_of_ozz = Monster("Wizard of Ozz", description="A dark version of one of the Man of Letters members - Clive "
+                                                         "Dillon. He was kidnapped by coven of witches in Ozz and they "
+                                                         "used the inner key on him. The dark version killed all the "
+                                                         "witches and went into a tantrum and became the wizard of "
+                                                         "Ozz. Killed in S10E11.", episodes={"S10": [11]})
+    wizard_of_ozz.clues = [MonstersClues.telekinesis, MonstersClues.magic_abilities]
+    wizard_of_ozz.kill_methods = [MonstersKillMethods.kill_the_other_version]
+
+    unknown = Monster("Unknown", description="", episodes={"S10": [11]})
+    unknown.clues = [MonstersClues.being_at_two_places_at_once, MonstersClues.people_acting_weirdly,
+                     MonstersClues.no_sulfur, MonstersClues.no_weird_noises]
 
     angel_watcher = Monster("Angel Watcher - Grigori")
     angel_watcher.clues = [MonstersClues.triangle_wound_with_burns]

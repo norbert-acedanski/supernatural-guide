@@ -19,6 +19,7 @@ class MonstersClues:
     weird_things_behavior = "weird things behavior"
     weird_electronics_behavior = "weird electronics behavior"
     weird_noises = "weird noises"
+    no_weird_noises = "no weird noises"
     weird_fire_spontaneous_combustion = "weird fire/spontaneous combustion"
     weird_plant_deaths_or_behavior = "weird plant deaths or behavior"
     blue_fire_on_its_arms = "blue fire on its arms"
@@ -304,6 +305,7 @@ class MonstersClues:
     loves_sugar = "loves sugar"
     sweets_wrappers = "sweets wrappers"
     knows_past = "knows past"
+    magic_abilities = "magic abilities"
     psychic_abilities = "psychic abilities - knows the past, the future and the present of people or places, " \
                         "senses energies and spirits"
     keeps_changing_appearances = "keeps changing appearances"
@@ -452,6 +454,7 @@ class MonstersKillMethods:
         "(one from an angel, one from ruler of fallen humanity [Crowley] and one from an Alpha)"
     mjolnir = "mjolnir"
     the_arrow_of_artemis = "the arrow of Artemis"
+    kill_the_other_version = "kill the other version"
 
 
 class MonstersDisableMethods:
@@ -517,6 +520,7 @@ class MonstersDisableMethods:
     head_shot = "head shot"
     hit_it_hard_in_the_head = "hit it hard in the head"
     angel_procedure = "angel procedure"
+    use_inner_key_of_ozz_on_them = "use Inner Key of Ozz on them"
 
 
 class MonstersCureMethods:
