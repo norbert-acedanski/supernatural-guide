@@ -238,6 +238,12 @@ class ObjectsBase:
 
     # SEASON 9:
 
+    key_to_ozz = Object("Key to Ozz", description="Inserted into any door, opens a portal to Ozz (a golden path). "
+                                                  "There were 6 keys forged from Ozz steel and can only be repaired in "
+                                                  "that magical realm (according to Clive Dillon).",
+                        episodes={"S09": [4], "S10": [11]})
+    key_to_ozz.abilities = [ObjectAbilities.can_open_portal_to_ozz]
+
     possessing_angel_weakening_sigil = Object("Possessing Angel weakening sigil",
                                               description="A Sigil, that allows to temporarily hobble an angel, that "
                                                           "possesses a human - leaving him no control over the vessel. "
@@ -268,6 +274,12 @@ class ObjectsBase:
     # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
 
     # SEASON 10:
+    inner_key_of_ozz = Object("Inner Key of Ozz", description="Object, that can enter a soul of a person and unleash "
+                                                              "his/her darkness (Create good and bad people out of one "
+                                                              "soul). Can also be used to bind two halves back "
+                                                              "together.")
+    inner_key_of_ozz.abilities = [ObjectAbilities.can_split_soul_into_good_and_bad_parts,
+                                  ObjectAbilities.can_bind_split_soul_back_together]
 
     # SEASON 11:
 
