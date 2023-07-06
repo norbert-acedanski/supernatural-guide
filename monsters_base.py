@@ -494,7 +494,7 @@ class MonsterBase:
                    MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_different_areas,
 
                    MonstersClues.missing_heart]
-    witch.disableMethod = [MonstersDisableMethods.stop_it_from_speaking, MonstersDisableMethods.iron_chains,
+    witch.disable_methods = [MonstersDisableMethods.stop_it_from_speaking, MonstersDisableMethods.iron_chains,
 
                            MonstersDisableMethods.witch_catcher]
     witch.kill_methods = [MonstersKillMethods.like_any_human, MonstersKillMethods.death_transfer_spell,
@@ -1448,7 +1448,7 @@ class MonsterBase:
     darkness.clues = [MonstersClues.people_dead_weirdly, MonstersClues.leaves_soulless_people_behind,
                       MonstersClues.leaves_zombie_like_people_with_black_veins_around_neck,
                       MonstersClues.telekinesis, MonstersClues.weird_weather, MonstersClues.enormous_black_fog]
-    darkness.disableMethod = [MonstersDisableMethods.all_of_angels_single_blow]
+    darkness.disable_methods = [MonstersDisableMethods.all_of_angels_single_blow]
 
     whisper = Monster("Whisper")
     whisper.clues = [MonstersClues.body_torn_apart, MonstersClues.no_blood_in_the_body,
