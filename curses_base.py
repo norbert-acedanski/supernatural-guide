@@ -272,10 +272,11 @@ class CursesBase:
                                                      "person can also telekinetically bring the blade to himself. If a "
                                                      "person with the Mark of Cain is killed - he becomes a demon "
                                                      "(according to the ending of S09E23).",
-                         episodes={"S09": [11, 12, 16, 17, 18, 21], "S10": [1, 2, 3, 9, 10, 11]})
+                         episodes={"S09": [11, 12, 16, 17, 18, 21], "S10": [1, 2, 3, 9, 10, 11, 12]})
     mark_of_cain.clues = [CursesClues.people_acting_weirdly, CursesClues.less_affected_by_telekinesis_of_knight_of_hell,
                           CursesClues.high_strength, CursesClues.black_eyes, CursesClues.increased_regeneration,
                           CursesClues.weird_dreams]
+    mark_of_cain.disable_methods = [CursesDisableMethods.age_changing_spell]
 
     willpower_removing_spell = Curse("Willpower removing spell", description="Spell, that lowers or removes the power "
                                                                              "of will of a person. Used by Magnus.",
@@ -306,6 +307,13 @@ class CursesBase:
                                                   "person. One needs another persons belonging to cast the spell.",
                                       episodes={"S10": [10]})
     spirit_leaving_body_spell.clues = [CursesClues.white_eyes]
+
+    age_changing_spell = Curse("Age changing spell", description="Spell, that allows to change a persons age (to a "
+                                                                 "previous one - so make people younger), by "
+                                                                 "physically making their bodies as they were in that "
+                                                                 "age.", episodes={"S10": [12]})
+    age_changing_spell.clues = [CursesClues.can_make_people_younger, CursesClues.hex_bag_hidden_somewhere]
+    age_changing_spell.disable_methods = [CursesDisableMethods.squeeze_the_hex]
 
     # SEASON 11:
 
