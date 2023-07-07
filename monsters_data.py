@@ -130,9 +130,11 @@ class MonstersClues:
     left_cobweb = "left cobweb"
     left_gold_thread = "left gold thread"
     left_star_flower_after_kidnapping = "left star flower after kidnapping"
+    left_clothes = "left clothes"
     invisible_entity = "invisible entity"
     visible_by_other_ghosts_and_people_close_to_death_only = "visible by other ghosts and people close to death only"
     ozone_smell = "ozone smell"
+    flower_smell = "flower smell (yarrow)"
     less_affected_by_telekinesis_of_knight_of_hell = "less affected by telekinesis of Knight of Hell"
     telekinesis = "telekinesis"
     mind_control = "mind control"
@@ -294,6 +296,8 @@ class MonstersClues:
     can_take_voice_of_a_demon = "can take voice of a demon"
     can_put_down_holy_fire = "can put down holy fire"
     can_give_others_knowledge = "can give others knowledge"
+    can_make_people_younger = "can make people younger"
+    can_make_people_immortal = "can make people immortal"
     people_with_souls_switched = "people with souls switched"
     poisoned_people = "poisoned people"
     demon_killing_knife_is_ineffective = "demon killing knife is ineffective"
@@ -367,6 +371,7 @@ class MonstersClues:
     black_goo = "black goo"
     no_black_goo = "no black goo"
     only_bones_left = "only bones left"
+    sweets_given_to_eat = "sweets given to eat"
 
 
 class MonstersKillMethods:

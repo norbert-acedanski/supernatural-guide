@@ -1452,9 +1452,26 @@ class MonsterBase:
     wizard_of_ozz.clues = [MonstersClues.telekinesis, MonstersClues.magic_abilities]
     wizard_of_ozz.kill_methods = [MonstersKillMethods.kill_the_other_version]
 
-    unknown = Monster("Unknown", description="", episodes={"S10": [11]})
-    unknown.clues = [MonstersClues.being_at_two_places_at_once, MonstersClues.people_acting_weirdly,
-                     MonstersClues.no_sulfur, MonstersClues.no_weird_noises]
+    witch_katja = Monster("Witch Katja", description="Witch from Hanzel & Gretel story. Hanzel became her accomplice "
+                                                     "and ate Gretel's heart. She belonged to the same coven as Rowena "
+                                                     "and knows her. Killed by Dean in S10E12.", episodes={"S10": [12]})
+    witch_katja.clues = [MonstersClues.bright_light, MonstersClues.can_appear_out_of_thin_air, MonstersClues.no_sulfur,
+                         MonstersClues.people_seeing_things_or_figures, MonstersClues.people_seeing_strange_things,
+                         MonstersClues.strange_different_things_happening, MonstersClues.can_teleport_people,
+                         MonstersClues.flower_smell, MonstersClues.left_clothes, MonstersClues.can_make_people_younger,
+                         MonstersClues.magic_abilities, MonstersClues.no_cold_spots, MonstersClues.sweets_given_to_eat,
+                         MonstersClues.can_make_people_immortal, MonstersClues.seen_as_an_old_lady,
+                         MonstersClues.telekinesis]
+    witch_katja.kill_methods = [MonstersKillMethods.burn_it]
+
+    unknown = Monster("Unknown", description="", episodes={"S10": [12]})
+    unknown.clues = [MonstersClues.bright_light, MonstersClues.can_appear_out_of_thin_air, MonstersClues.no_sulfur,
+                     MonstersClues.people_seeing_things_or_figures, MonstersClues.people_seeing_strange_things,
+                     MonstersClues.strange_different_things_happening, MonstersClues.can_teleport_people,
+                     MonstersClues.flower_smell, MonstersClues.left_clothes, MonstersClues.can_make_people_younger,
+                     MonstersClues.magic_abilities, MonstersClues.no_cold_spots, MonstersClues.sweets_given_to_eat,
+                     MonstersClues.can_make_people_immortal, MonstersClues.seen_as_an_old_lady,
+                     MonstersClues.telekinesis]
 
     angel_watcher = Monster("Angel Watcher - Grigori")
     angel_watcher.clues = [MonstersClues.triangle_wound_with_burns]
