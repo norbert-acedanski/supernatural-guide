@@ -18,3 +18,4 @@ class OrganizationKnowledge:
     the_inner_workings_of_angels = "the inner workings of Angels"
     dishonored_and_forgotten = "dishonored and forgotten - members, that were kicked out of Man of Letters"
     werewolf_transgenderism = "werewolf transgenderism (volume 1 has 600 pages)"
+    symbology = "symbology"
