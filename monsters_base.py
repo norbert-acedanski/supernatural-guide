@@ -38,10 +38,11 @@ class MonsterBase:
                                           "in the coma. Ghosts can be forced to rise and keep risen. "
                                           "If it is done with very powerful spell, then a Mark of Witness remains on "
                                           "them if they were killed by supernatural. Witnesses can be put to rest "
-                                          "by a special spell (has to be cast over an open fire).",
+                                          "by a special spell (has to be cast over an open fire). A Ghost can be bound "
+                                          "to an object, place or even electrical signals (like Wi-Fi).",
                               episodes={"S01": [1, 3, 5, 7, 9, 10, 13, 19], "S02": [6, 11, 16, 18, 19],
                                         "S03": [5, 6, 13], "S04": [2, 13, 15, 17], "S05": [9, 11], "S06": [4, 14],
-                                        "S07": [7, 10, 13, 17, 19], "S09": [7]})
+                                        "S07": [7, 10, 13, 17, 19], "S09": [7], "S10": [13]})
     vengeful_spirit.clues = [MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                              MonstersClues.people_dead_weirdly, MonstersClues.ghost_like_creature,
                              MonstersClues.weird_electronics_behavior, MonstersClues.weird_things_behavior,
@@ -59,7 +60,7 @@ class MonsterBase:
                              MonstersClues.no_missing_heart, MonstersClues.body_torn_apart, MonstersClues.no_black_fog,
                              MonstersClues.visions, MonstersClues.lack_of_body_control, MonstersClues.scars_on_victims,
                              MonstersClues.weird_fire_spontaneous_combustion, MonstersClues.can_control_electronics,
-                             MonstersClues.can_absorb_other_ghost_energy]
+                             MonstersClues.can_absorb_other_ghost_energy, MonstersClues.victims_hear_voices]
     vengeful_spirit.disable_methods = [MonstersDisableMethods.bring_the_spirit_to_its_crime_place,
                                        MonstersDisableMethods.bring_the_spirit_what_it_wants,
                                        MonstersDisableMethods.iron_or_iron_bullets,
@@ -1464,14 +1465,9 @@ class MonsterBase:
                          MonstersClues.telekinesis]
     witch_katja.kill_methods = [MonstersKillMethods.burn_it]
 
-    unknown = Monster("Unknown", description="", episodes={"S10": [12]})
-    unknown.clues = [MonstersClues.bright_light, MonstersClues.can_appear_out_of_thin_air, MonstersClues.no_sulfur,
-                     MonstersClues.people_seeing_things_or_figures, MonstersClues.people_seeing_strange_things,
-                     MonstersClues.strange_different_things_happening, MonstersClues.can_teleport_people,
-                     MonstersClues.flower_smell, MonstersClues.left_clothes, MonstersClues.can_make_people_younger,
-                     MonstersClues.magic_abilities, MonstersClues.no_cold_spots, MonstersClues.sweets_given_to_eat,
-                     MonstersClues.can_make_people_immortal, MonstersClues.seen_as_an_old_lady,
-                     MonstersClues.telekinesis]
+    unknown = Monster("Unknown", description="", episodes={"S10": [13]})
+    unknown.clues = [MonstersClues.weird_electronics_behavior, MonstersClues.victims_hear_voices, MonstersClues.emf,
+                     MonstersClues.weird_things_behavior, MonstersClues.cold_spots, MonstersClues.people_dead_weirdly]
 
     angel_watcher = Monster("Angel Watcher - Grigori")
     angel_watcher.clues = [MonstersClues.triangle_wound_with_burns]
