@@ -598,7 +598,8 @@ class MonsterBase:
                                                "This may be a genetic condition.",
                        episodes={"S04": [4], "S06": [10], "S08": [2]})
     rougarou.clues = [MonstersClues.enormous_appetite, MonstersClues.body_metamorphosis, MonstersClues.high_strength,
-                      MonstersClues.bloodshot_eyes, MonstersClues.wormy_skin]
+                      MonstersClues.bloodshot_eyes, MonstersClues.wormy_skin, MonstersClues.no_bone_marrow_in_bones,
+                      MonstersClues.drained_organs, MonstersClues.people_dead_weirdly, MonstersClues.bite_marks]
     rougarou.kill_methods = [MonstersKillMethods.burn_it, MonstersKillMethods.demon_killing_knife]
 
     samhain = Monster("Samhain", description="A demon that is the origin of Halloween. Celts believed, that the 31st "
@@ -1468,8 +1469,23 @@ class MonsterBase:
                          MonstersClues.telekinesis]
     witch_katja.kill_methods = [MonstersKillMethods.burn_it]
 
-    unknown = Monster("Unknown", description="", episodes={"S10": [14]})
-    unknown.clues = [MonstersClues.flashing_lights, MonstersClues.weird_electronics_behavior]
+    khan_worm = Monster("Khan worm", description="Similar to Possessing worm. Transmits via mouth to mouth worm "
+                                                 "transmission. Dehydration causes it to come out of its host.",
+                        episodes={"S10": [15]})
+    khan_worm.clues = [MonstersClues.drained_organs, MonstersClues.no_bone_marrow_in_bones, MonstersClues.no_bite_marks,
+                       MonstersClues.people_dead_weirdly, MonstersClues.no_sulfur, MonstersClues.enormous_thirst,
+                       MonstersClues.dry_skin, MonstersClues.people_acting_weirdly, MonstersClues.craving_for_blood,
+                       MonstersClues.no_cattle_deaths, MonstersClues.no_weird_weather, MonstersClues.worm,
+                       MonstersClues.electricity_does_not_affect_it, MonstersClues.high_strength]
+    khan_worm.disable_methods = [MonstersDisableMethods.extreme_dehydration]
+    khan_worm.kill_methods = [MonstersKillMethods.stamp_on_it]
+
+    unknown = Monster("Unknown", description="", episodes={"S10": [15]})
+    unknown.clues = [MonstersClues.drained_organs, MonstersClues.no_bone_marrow_in_bones, MonstersClues.no_bite_marks,
+                     MonstersClues.people_dead_weirdly, MonstersClues.no_sulfur, MonstersClues.enormous_thirst,
+                     MonstersClues.dry_skin, MonstersClues.people_acting_weirdly, MonstersClues.craving_for_blood,
+                     MonstersClues.no_cattle_deaths, MonstersClues.no_weird_weather, MonstersClues.worm,
+                     MonstersClues.electricity_does_not_affect_it]
 
     angel_watcher = Monster("Angel Watcher - Grigori")
     angel_watcher.clues = [MonstersClues.triangle_wound_with_burns]

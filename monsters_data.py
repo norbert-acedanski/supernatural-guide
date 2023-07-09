@@ -15,6 +15,7 @@ class MonstersClues:
     number_of_reapers_appearing = "number of reapers appearing"
     revelation_omens = "revelation omens"
     weird_weather = "weird weather"
+    no_weird_weather = "no weird weather"
     weird_animal_behavior = "weird animal behavior"
     weird_things_behavior = "weird things behavior"
     weird_electronics_behavior = "weird electronics behavior"
@@ -52,6 +53,7 @@ class MonstersClues:
         "their mother was burned on the ceiling when they were infants"
     mothers_burned_when_children_are_6_months_old = "mothers burned when children are 6 months old"
     cattle_deaths = "cattle deaths"
+    no_cattle_deaths = "no cattle deaths"
     temperature_fluctuations = "temperature fluctuations"
     electrical_storms = "electrical storms"
     babies_or_children_acting_weirdly = "babies or children acting weirdly - like not themselves"
@@ -105,10 +107,12 @@ class MonstersClues:
     deep_voice = "deep voice"
     enormous_black_fog = "enormous black fog"
     enormous_appetite = "enormous appetite (especially for raw meat)"
+    enormous_thirst = "enormous thirst"
     body_metamorphosis = "body metamorphosis (may be painful)"
     mummified_body = "mummified body"
     bloodshot_eyes = "bloodshot eyes"
     wormy_skin = "wormy skin"
+    dry_skin = "dry skin"
     emf = "Electromagnetic Field"
     no_emf = "no Electromagnetic Field"
     yellow_blast = "yellow blast"
@@ -170,6 +174,7 @@ class MonstersClues:
     attacks_at_night = "attacks at night"
     bite_marks_on_peoples_necks = "bite marks on peoples necks"
     bite_marks = "bite marks"
+    no_bite_marks = "no bite marks"
     suction_marks = "suction marks"
     may_leave_claw_marks = "may leave claw marks"
     marks_on_victims_hearts = "marks on victims hearts"
@@ -183,6 +188,7 @@ class MonstersClues:
     liquefied_organs = "liquefied organs"
     vapourised_organs = "vapourised organs"
     damaged_organs = "damaged organs"
+    drained_organs = "drained organs"
     vapourised_body = "vapourised body"
     leaves_soulless_people_behind = "leaving soulless people behind"
     leaves_zombie_like_people_with_black_veins_around_neck = "leaves zombie-like people with black veins around neck"
@@ -372,6 +378,8 @@ class MonstersClues:
     no_black_goo = "no black goo"
     only_bones_left = "only bones left"
     sweets_given_to_eat = "sweets given to eat"
+    no_bone_marrow_in_bones = "no bone marrow in bones"
+    electricity_does_not_affect_it = "electricity does not affect it"
 
 
 class MonstersKillMethods:
@@ -460,6 +468,7 @@ class MonstersKillMethods:
     mjolnir = "mjolnir"
     the_arrow_of_artemis = "the arrow of Artemis"
     kill_the_other_version = "kill the other version"
+    stamp_on_it = "stamp on it"
 
 
 class MonstersDisableMethods:
@@ -526,6 +535,7 @@ class MonstersDisableMethods:
     hit_it_hard_in_the_head = "hit it hard in the head"
     angel_procedure = "angel procedure"
     use_inner_key_of_ozz_on_them = "use Inner Key of Ozz on them"
+    extreme_dehydration = "extreme dehydration"
 
 
 class MonstersCureMethods:
