@@ -489,7 +489,7 @@ class MonsterBase:
                                          "the path, can eke out a modicum of witchly power. Rowena is a natural and is "
                                          "also a mother of Crowley.",
                     episodes={"S03": [9], "S04": [7, 12], "S05": [7, 12], "S07": [5], "S08": [7, 15],
-                              "S10": [3, 7, 9, 10, 13, 16, 17]})
+                              "S10": [3, 7, 9, 10, 13, 16, 17, 18]})
     witch.clues = [MonstersClues.people_dead_weirdly, MonstersClues.hex_bag_hidden_somewhere, MonstersClues.immortal,
                    MonstersClues.coin_hidden_somewhere, MonstersClues.weird_electronics_behavior,
                    MonstersClues.telekinesis, MonstersClues.can_vanish, MonstersClues.weird_plant_deaths_or_behavior,
@@ -568,7 +568,7 @@ class MonsterBase:
                               "S05": [1, 2, 3, 4, 5, 8, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22],
                               "S06": [3, 6, 7, 10, 12, 15, 17, 18, 19, 20, 21, 22], "S07": [1, 17, 20, 21, 23],
                               "S08": [2, 7, 8, 10, 17, 19, 21, 22, 23], "S09": [9, 10, 11, 14, 18, 21, 22, 23],
-                              "S10": [1, 2, 3, 7, 9, 10, 13, 17]})
+                              "S10": [1, 2, 3, 7, 9, 10, 13, 17, 18]})
     angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                    MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion, MonstersClues.has_wings,
                    MonstersClues.leaves_burned_marks, MonstersClues.weird_electronics_behavior,
@@ -848,13 +848,11 @@ class MonsterBase:
 
     cupid = Monster("Cupid", description="A lower tier of an angel - cherub, third class angel. "
                                          "Binds people that are supposed to be with each other.",
-                    episodes={"S05": [14], "S08": [23]})
+                    episodes={"S05": [14], "S08": [23], "S10": [18]})
     cupid.clues = [MonstersClues.people_dead_weirdly, MonstersClues.people_acting_weirdly, MonstersClues.no_emf,
                    MonstersClues.no_sulfur, MonstersClues.marks_on_victims_hearts, MonstersClues.invisible_entity,
                    MonstersClues.can_vanish, MonstersClues.invulnerable, MonstersClues.naked_man]
-    cupid.kill_methods = [
-
-                          MonstersKillMethods.angel_blade]
+    cupid.kill_methods = [MonstersKillMethods.angel_blade]
 
     horseman_famine = Monster("Horseman Famine", description="Makes people starve for something they lack or they want "
                                                              "(sex, attention, food, drugs, love, etc.). Can feed on "
@@ -1326,7 +1324,7 @@ class MonsterBase:
 
     angel_metatron = Monster("Angel Metatron", description="Scribe of GOD. One of the angels. Metatron broke the "
                                                            "fourth wall in S09E18.",
-                             episodes={"S08": [21, 22, 23], "S09": [9, 10, 18, 22, 23], "S10": [2, 10, 17]})
+                             episodes={"S08": [21, 22, 23], "S09": [9, 10, 18, 22, 23], "S10": [2, 10, 17, 18]})
     angel_metatron.clues = [MonstersClues.immortal, MonstersClues.can_vanish, MonstersClues.can_give_hallucinations,
                             MonstersClues.can_erase_anti_angel_marks, MonstersClues.can_appear_out_of_thin_air,
                             MonstersClues.can_repair_human_body, MonstersClues.can_put_down_holy_fire,
@@ -1488,7 +1486,7 @@ class MonsterBase:
     khan_worm.disable_methods = [MonstersDisableMethods.extreme_dehydration]
     khan_worm.kill_methods = [MonstersKillMethods.stamp_on_it]
 
-    unknown = Monster("Unknown", description="", episodes={"S10": [17]})
+    unknown = Monster("Unknown", description="", episodes={"S10": [18]})
     unknown.clues = []
 
     angel_watcher = Monster("Angel Watcher - Grigori")
