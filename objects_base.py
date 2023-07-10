@@ -102,7 +102,7 @@ class ObjectsBase:
     angel_blade = Object("Angel blade", description="A triangular, silvery blade, that each angel has.",
                          episodes={"S04": [16], "S05": [1, 13, 18], "S06": [3, 10, 17, 18, 22], "S07": [21],
                                    "S08": [7, 10, 17, 21, 22, 23], "S09": [1, 2, 3, 6, 9, 10, 11, 14, 16, 18, 21, 22, 23],
-                                   "S10": [1, 3, 7, 9, 10, 13, 17]})
+                                   "S10": [1, 3, 7, 9, 10, 13, 17, 18]})
     angel_blade.abilities = [ObjectAbilities.can_kill_angels, ObjectAbilities.can_kill_demons]
 
     lucifers_cage = Object("Lucifer's Cage", description="A prison build specifically to contain archangelic powers "
@@ -218,7 +218,7 @@ class ObjectsBase:
                                                     "Third tablet (inscribed in angel core and stashed in stone form "
                                                     "by Lucyfer) has information about Angels and how to make "
                                                     "them fall. Found in Lucyfer crypt in S08E17.",
-                         episodes={"S07": [21], "S08": [1, 2, 10, 17, 21, 23], "S09": [9, 10, 23]})
+                         episodes={"S07": [21], "S08": [1, 2, 10, 17, 21, 23], "S09": [9, 10, 23], "S10": [18]})
     word_of_god.abilities = [ObjectAbilities.can_cause_storms, ObjectAbilities.can_cause_women_to_go_to_labour,
                              ObjectAbilities.when_opened_causes_a_person_to_become_a_prophet]
 
@@ -280,6 +280,18 @@ class ObjectsBase:
                                                               "together.")
     inner_key_of_ozz.abilities = [ObjectAbilities.can_split_soul_into_good_and_bad_parts,
                                   ObjectAbilities.can_bind_split_soul_back_together]
+
+    book_of_the_damned = Object("Book of the Damned",
+                                description="It is a spell book for creating or undoing any kind of damnation there "
+                                            "is. About 700 years ago, a nun locked herself away after having visions "
+                                            "of darkness. After a few decades she emerged with the book. Each page is "
+                                            "made out of slices of her own skin, written in her blood. It has been "
+                                            "used by cults, covens, event the Vatican had it for a while. Whe book is "
+                                            "used, there is a (biblical) negative reaction. The book calls to the "
+                                            "person, that has the Mark of Cain. It is written in obscure Sumerian "
+                                            "dialect. It can be tracked by a magic compas.", episodes={"S10": [18]})
+    book_of_the_damned.abilities = [ObjectAbilities.creation_and_undoing_of_any_damnation,
+                                    ObjectAbilities.calls_to_a_person_with_mark_of_cain]
 
     # SEASON 11:
 

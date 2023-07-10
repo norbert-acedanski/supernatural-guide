@@ -46,6 +46,8 @@ class ObjectAbilities:
     makes_a_person_do_horrible_things = "makes a person do horrible things"
     when_opened_causes_a_person_to_become_a_prophet = "when opened causes a person to become a prophet"
     allows_to_enter_another_persons_dream = "allows to enter another person's dream"
+    creation_and_undoing_of_any_damnation = "creation and undoing of any damnation"
+    calls_to_a_person_with_mark_of_cain = "calls to a person with the Mark of Cain"
 
 
 class ObjectMaintenance:
