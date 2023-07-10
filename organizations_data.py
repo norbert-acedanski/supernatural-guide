@@ -19,3 +19,7 @@ class OrganizationKnowledge:
     dishonored_and_forgotten = "dishonored and forgotten - members, that were kicked out of Man of Letters"
     werewolf_transgenderism = "werewolf transgenderism (volume 1 has 600 pages)"
     symbology = "symbology"
+    anti_tracking_box_and_symbols = "anti-tracking box and symbols"
+    occult_families = "occult families"
+    styne_family = "The Styne family - dating back to the early 1800s - they used spells to create disease, " \
+                   "destabilize markets and even helped the Nazis before they came into power"
