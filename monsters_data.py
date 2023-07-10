@@ -47,6 +47,7 @@ class MonstersClues:
     travels_as_white_fog = "travels as a white fog"
     travels_as_red_fog = "travels as a red fog"
     travels_as_black_green_fog = "travels as a black - green fog"
+    travels_as_grey_fog = "travels as grey fog"
     children_of_victims_that_died_on_the_ceiling_have_abilities = \
         "children of victims that died on the ceiling have abilities"
     their_mother_was_burned_on_the_ceiling_when_they_were_infants = \

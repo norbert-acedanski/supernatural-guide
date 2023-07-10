@@ -42,7 +42,7 @@ class MonsterBase:
                                           "to an object, place or even electrical signals (like Wi-Fi).",
                               episodes={"S01": [1, 3, 5, 7, 9, 10, 13, 19], "S02": [6, 11, 16, 18, 19],
                                         "S03": [5, 6, 13], "S04": [2, 13, 15, 17], "S05": [9, 11], "S06": [4, 14],
-                                        "S07": [7, 10, 13, 17, 19], "S09": [7], "S10": [13]})
+                                        "S07": [7, 10, 13, 17, 19], "S09": [7], "S10": [13, 16]})
     vengeful_spirit.clues = [MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                              MonstersClues.people_dead_weirdly, MonstersClues.ghost_like_creature,
                              MonstersClues.weird_electronics_behavior, MonstersClues.weird_things_behavior,
@@ -51,16 +51,18 @@ class MonsterBase:
                              MonstersClues.missing_body, MonstersClues.high_strength, MonstersClues.cold_spots,
                              MonstersClues.can_control_water, MonstersClues.people_seeing_things_or_figures,
                              MonstersClues.summoned_by_saying_bloody_marry_in_front_of_the_mirror,
-                             MonstersClues.objects_seen_in_night_vision, MonstersClues.weird_noises,
+                             MonstersClues.objects_seen_in_night_vision, MonstersClues.can_posses_a_person,
                              MonstersClues.missing_or_dead_people_regularly_in_the_same_area, MonstersClues.ozone_smell,
                              MonstersClues.seen_as_fire, MonstersClues.no_sulfur, MonstersClues.people_acting_weirdly,
                              MonstersClues.small_earth_quake, MonstersClues.seen_as_car_or_truck,
-                             MonstersClues.flashing_lights, MonstersClues.seen_as_a_little_girl,
+                             MonstersClues.flashing_lights, MonstersClues.seen_as_a_little_girl, MonstersClues.suicides,
                              MonstersClues.seen_as_a_drown_man, MonstersClues.strange_different_things_happening,
                              MonstersClues.no_missing_heart, MonstersClues.body_torn_apart, MonstersClues.no_black_fog,
                              MonstersClues.visions, MonstersClues.lack_of_body_control, MonstersClues.scars_on_victims,
                              MonstersClues.weird_fire_spontaneous_combustion, MonstersClues.can_control_electronics,
-                             MonstersClues.can_absorb_other_ghost_energy, MonstersClues.victims_hear_voices]
+                             MonstersClues.can_absorb_other_ghost_energy, MonstersClues.victims_hear_voices,
+                             MonstersClues.no_hex_bags, MonstersClues.travels_as_grey_fog, MonstersClues.weird_noises,
+                             MonstersClues.amnesia_blackout]
     vengeful_spirit.disable_methods = [MonstersDisableMethods.bring_the_spirit_to_its_crime_place,
                                        MonstersDisableMethods.bring_the_spirit_what_it_wants,
                                        MonstersDisableMethods.iron_or_iron_bullets,
@@ -104,7 +106,7 @@ class MonsterBase:
                               "S04": [1, 4, 9, 10, 20, 21, 22], "S05": [1, 6, 10, 12, 14, 17, 20, 21, 22],
                               "S06": [7, 10, 18, 20, 21, 22], "S07": [8, 15, 17, 21, 23],
                               "S08": [1, 2, 7, 10, 17, 19, 21, 22], "S09": [2, 10, 11, 14, 16, 17, 21, 23],
-                              "S10": [1, 2, 3, 7, 9, 10, 13]})
+                              "S10": [1, 2, 3, 7, 9, 10, 13, 16]})
     demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                    MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                    MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -483,7 +485,7 @@ class MonsterBase:
                                          "the path, can eke out a modicum of witchly power. Rowena is a natural and is "
                                          "also a mother of Crowley.",
                     episodes={"S03": [9], "S04": [7, 12], "S05": [7, 12], "S07": [5], "S08": [7, 15],
-                              "S10": [3, 7, 9, 10, 13]})
+                              "S10": [3, 7, 9, 10, 13, 16]})
     witch.clues = [MonstersClues.people_dead_weirdly, MonstersClues.hex_bag_hidden_somewhere, MonstersClues.immortal,
                    MonstersClues.coin_hidden_somewhere, MonstersClues.weird_electronics_behavior,
                    MonstersClues.telekinesis, MonstersClues.can_vanish, MonstersClues.weird_plant_deaths_or_behavior,
@@ -797,7 +799,7 @@ class MonsterBase:
                                                            "was working with Castiel.",
                             episodes={"S05": [10, 20, 21], "S06": [4, 7, 8, 10, 19, 20, 21, 22],
                                       "S07": [1, 6, 8, 22, 23], "S08": [1, 2, 7, 10, 17, 19, 21, 22, 23],
-                                      "S09": [2, 4, 6, 10, 11, 16, 17, 21, 23], "S10": [1, 2, 3, 7, 9, 10, 13]})
+                                      "S09": [2, 4, 6, 10, 11, 16, 17, 21, 23], "S10": [1, 2, 3, 7, 9, 10, 13, 16]})
     demon_crowley.clues = [MonstersClues.can_vanish, MonstersClues.pact_sealed_with_a_kiss, MonstersClues.telekinesis,
                            MonstersClues.summoned_by_placing_box_in_the_crossroads, MonstersClues.small_earth_quake,
                            MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
@@ -1480,12 +1482,11 @@ class MonsterBase:
     khan_worm.disable_methods = [MonstersDisableMethods.extreme_dehydration]
     khan_worm.kill_methods = [MonstersKillMethods.stamp_on_it]
 
-    unknown = Monster("Unknown", description="", episodes={"S10": [15]})
-    unknown.clues = [MonstersClues.drained_organs, MonstersClues.no_bone_marrow_in_bones, MonstersClues.no_bite_marks,
-                     MonstersClues.people_dead_weirdly, MonstersClues.no_sulfur, MonstersClues.enormous_thirst,
-                     MonstersClues.dry_skin, MonstersClues.people_acting_weirdly, MonstersClues.craving_for_blood,
-                     MonstersClues.no_cattle_deaths, MonstersClues.no_weird_weather, MonstersClues.worm,
-                     MonstersClues.electricity_does_not_affect_it]
+    unknown = Monster("Unknown", description="", episodes={"S10": [16]})
+    unknown.clues = [MonstersClues.people_acting_weirdly, MonstersClues.people_dead_weirdly, MonstersClues.suicides,
+                     MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
+                     MonstersClues.no_hex_bags, MonstersClues.travels_as_grey_fog, MonstersClues.amnesia_blackout,
+                     MonstersClues.emf, MonstersClues.can_posses_a_person]
 
     angel_watcher = Monster("Angel Watcher - Grigori")
     angel_watcher.clues = [MonstersClues.triangle_wound_with_burns]
