@@ -24,8 +24,10 @@ class PlacesBase:
                                          "Leads to a garden in the center. After the Fall of Angels, the Heaven is "
                                          "sealed by Metatron with a spell. There is a portal from Heaven to Earth "
                                          "created by Metatron, for Angels to travel between those two places. Angels "
-                                         "can't sense it because it changes its location. Heaven has it's own prison.",
-                   episodes={"S05": [16], "S08": [7, 10, 17, 23], "S09": [18, 22, 23], "S10": [2]})
+                                         "can't sense it because it changes its location. Heaven has it's own prison. "
+                                         "A Human can escape his/her heaven by finding a thing, that does not belong "
+                                         "in the place, they are in and following it.",
+                   episodes={"S05": [16], "S08": [7, 10, 17, 23], "S09": [18, 22, 23], "S10": [2, 17]})
     heaven.clues = [PlaceClues.good_memories_relived, PlaceClues.changing_scenery, PlaceClues.bright_place]
 
     purgatory = Place("Purgatory", description="A place, where all monsters go, after they die. Can be opened with an "
