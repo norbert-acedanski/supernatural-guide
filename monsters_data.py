@@ -537,6 +537,7 @@ class MonstersDisableMethods:
     angel_procedure = "angel procedure"
     use_inner_key_of_ozz_on_them = "use Inner Key of Ozz on them"
     extreme_dehydration = "extreme dehydration"
+    grace_removal = "grace removal"
 
 
 class MonstersCureMethods:

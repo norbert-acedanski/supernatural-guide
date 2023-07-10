@@ -106,7 +106,7 @@ class MonsterBase:
                               "S04": [1, 4, 9, 10, 20, 21, 22], "S05": [1, 6, 10, 12, 14, 17, 20, 21, 22],
                               "S06": [7, 10, 18, 20, 21, 22], "S07": [8, 15, 17, 21, 23],
                               "S08": [1, 2, 7, 10, 17, 19, 21, 22], "S09": [2, 10, 11, 14, 16, 17, 21, 23],
-                              "S10": [1, 2, 3, 7, 9, 10, 13, 16]})
+                              "S10": [1, 2, 3, 7, 9, 10, 13, 16, 17]})
     demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                    MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                    MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -145,7 +145,11 @@ class MonsterBase:
     shapeshifter.disable_methods = [MonstersDisableMethods.silver_or_silver_bullets]
 
     psychic = Monster("Psychic", description="A person, that can read minds, knows past, present and future of people "
-                                             "or in general. Senses energies and spirits also.", episodes={"S01": [9]})
+                                             "or in general. Senses energies and spirits and can contact dead people "
+                                             "(not only spirits, but also the ones in Heaven). Missouri Mosley was "
+                                             "a friend of John Winchester. One of the psychics is Oliver Pryce. "
+                                             "Man of Letters were teaching him how to control his powers.",
+                      episodes={"S01": [9], "S10": [17]})
     psychic.clues = [MonstersClues.psychic_abilities,
 
                      MonstersClues.people_dead_weirdly]
@@ -485,7 +489,7 @@ class MonsterBase:
                                          "the path, can eke out a modicum of witchly power. Rowena is a natural and is "
                                          "also a mother of Crowley.",
                     episodes={"S03": [9], "S04": [7, 12], "S05": [7, 12], "S07": [5], "S08": [7, 15],
-                              "S10": [3, 7, 9, 10, 13, 16]})
+                              "S10": [3, 7, 9, 10, 13, 16, 17]})
     witch.clues = [MonstersClues.people_dead_weirdly, MonstersClues.hex_bag_hidden_somewhere, MonstersClues.immortal,
                    MonstersClues.coin_hidden_somewhere, MonstersClues.weird_electronics_behavior,
                    MonstersClues.telekinesis, MonstersClues.can_vanish, MonstersClues.weird_plant_deaths_or_behavior,
@@ -564,7 +568,7 @@ class MonsterBase:
                               "S05": [1, 2, 3, 4, 5, 8, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22],
                               "S06": [3, 6, 7, 10, 12, 15, 17, 18, 19, 20, 21, 22], "S07": [1, 17, 20, 21, 23],
                               "S08": [2, 7, 8, 10, 17, 19, 21, 22, 23], "S09": [9, 10, 11, 14, 18, 21, 22, 23],
-                              "S10": [1, 2, 3, 7, 9, 10, 13]})
+                              "S10": [1, 2, 3, 7, 9, 10, 13, 17]})
     angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                    MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion, MonstersClues.has_wings,
                    MonstersClues.leaves_burned_marks, MonstersClues.weird_electronics_behavior,
@@ -585,7 +589,7 @@ class MonsterBase:
     angel.disable_methods = [MonstersDisableMethods.symbol_made_with_blood_against_angels,
                              MonstersDisableMethods.exorcism_for_angels, MonstersDisableMethods.holy_oil,
                              MonstersDisableMethods.enochian_spell, MonstersDisableMethods.angel_blade,
-                             MonstersDisableMethods.presence_of_the_mother]
+                             MonstersDisableMethods.presence_of_the_mother, MonstersDisableMethods.grace_removal]
     angel.kill_methods = [MonstersKillMethods.angel_blade, MonstersKillMethods.holy_oil,
                           MonstersKillMethods.leviathan_black_goo, MonstersKillMethods.will_of_an_archangel,
 
@@ -622,7 +626,7 @@ class MonsterBase:
                                                        "Thaddeus, Abner, Hannah, Ezra, Esther, Asariel, Purah. Gadreel "
                                                        "was the Angel, that let Lucifer into the Garden of Eden.",
                            episodes={"S04": [9, 10], "S08": [23], "S09": [1, 2, 3, 4, 5, 8, 9, 10, 14, 18, 21, 22, 23],
-                                     "S10": [1, 2, 3, 7, 10]})
+                                     "S10": [1, 2, 3, 7, 10, 17]})
     fallen_angel.clues = [MonstersClues.people_hear_voices, MonstersClues.can_see_real_appearance_of_entities,
                           MonstersClues.telekinesis, MonstersClues.people_acting_weirdly, MonstersClues.falling_meteor,
                           MonstersClues.can_hear_angel_radio, MonstersClues.can_erase_and_bring_back_memories,
@@ -799,7 +803,7 @@ class MonsterBase:
                                                            "was working with Castiel.",
                             episodes={"S05": [10, 20, 21], "S06": [4, 7, 8, 10, 19, 20, 21, 22],
                                       "S07": [1, 6, 8, 22, 23], "S08": [1, 2, 7, 10, 17, 19, 21, 22, 23],
-                                      "S09": [2, 4, 6, 10, 11, 16, 17, 21, 23], "S10": [1, 2, 3, 7, 9, 10, 13, 16]})
+                                      "S09": [2, 4, 6, 10, 11, 16, 17, 21, 23], "S10": [1, 2, 3, 7, 9, 10, 13, 16, 17]})
     demon_crowley.clues = [MonstersClues.can_vanish, MonstersClues.pact_sealed_with_a_kiss, MonstersClues.telekinesis,
                            MonstersClues.summoned_by_placing_box_in_the_crossroads, MonstersClues.small_earth_quake,
                            MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
@@ -1216,8 +1220,9 @@ class MonsterBase:
     shojo.kill_methods = [MonstersKillMethods.samurai_sword_consecrated_with_shinto_blessing]
 
     ghost_bobby = Monster("Ghost Bobby", description="Ghost of Bobby Singer. Bobby died in S07E10. Bobby turns "
-                                                     "Vengeful in S07E23. His flask is burned in the same episode.",
-                          episodes={"S07": [17, 18, 19, 20, 21, 22, 23]})
+                                                     "Vengeful in S07E23. His flask is burned in the same episode. "
+                                                     "Bobby is now in his own personal Heaven.",
+                          episodes={"S07": [17, 18, 19, 20, 21, 22, 23], "S10": [17]})
     ghost_bobby.clues = [MonstersClues.weird_things_behavior, MonstersClues.telekinesis, MonstersClues.emf,
                          MonstersClues.can_absorb_other_ghost_energy, MonstersClues.can_appear_out_of_thin_air,
                          MonstersClues.can_vanish, MonstersClues.invisible_entity, MonstersClues.ghost_like_creature,
@@ -1321,12 +1326,13 @@ class MonsterBase:
 
     angel_metatron = Monster("Angel Metatron", description="Scribe of GOD. One of the angels. Metatron broke the "
                                                            "fourth wall in S09E18.",
-                             episodes={"S08": [21, 22, 23], "S09": [9, 10, 18, 22, 23], "S10": [2, 10]})
+                             episodes={"S08": [21, 22, 23], "S09": [9, 10, 18, 22, 23], "S10": [2, 10, 17]})
     angel_metatron.clues = [MonstersClues.immortal, MonstersClues.can_vanish, MonstersClues.can_give_hallucinations,
                             MonstersClues.can_erase_anti_angel_marks, MonstersClues.can_appear_out_of_thin_air,
                             MonstersClues.can_repair_human_body, MonstersClues.can_put_down_holy_fire,
                             MonstersClues.telekinesis, MonstersClues.can_teleport_people, MonstersClues.high_strength,
                             MonstersClues.can_give_others_knowledge]
+    angel_metatron.disable_methods = [MonstersDisableMethods.grace_removal]
 
     nephilim = Monster("Nephilim", description="Child of human and angel/archangel. Human with an angelic grace.",
                        episodes={"S08": [22]})
@@ -1482,11 +1488,8 @@ class MonsterBase:
     khan_worm.disable_methods = [MonstersDisableMethods.extreme_dehydration]
     khan_worm.kill_methods = [MonstersKillMethods.stamp_on_it]
 
-    unknown = Monster("Unknown", description="", episodes={"S10": [16]})
-    unknown.clues = [MonstersClues.people_acting_weirdly, MonstersClues.people_dead_weirdly, MonstersClues.suicides,
-                     MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
-                     MonstersClues.no_hex_bags, MonstersClues.travels_as_grey_fog, MonstersClues.amnesia_blackout,
-                     MonstersClues.emf, MonstersClues.can_posses_a_person]
+    unknown = Monster("Unknown", description="", episodes={"S10": [17]})
+    unknown.clues = []
 
     angel_watcher = Monster("Angel Watcher - Grigori")
     angel_watcher.clues = [MonstersClues.triangle_wound_with_burns]
