@@ -289,9 +289,17 @@ class ObjectsBase:
                                             "used by cults, covens, event the Vatican had it for a while. Whe book is "
                                             "used, there is a (biblical) negative reaction. The book calls to the "
                                             "person, that has the Mark of Cain. It is written in obscure Sumerian "
-                                            "dialect. It can be tracked by a magic compas.", episodes={"S10": [18]})
+                                            "dialect. It can be tracked by a magic compas.", episodes={"S10": [18, 19]})
     book_of_the_damned.abilities = [ObjectAbilities.creation_and_undoing_of_any_damnation,
                                     ObjectAbilities.calls_to_a_person_with_mark_of_cain]
+
+    werther_box = Object("Werther Box", description="A wording spell so potent it achieves a theoretical rate of 98% "
+                                                    "lethality. Created by Cuthbert Sinclair. When opened a "
+                                                    "yellow-black smoke appears and possesses people, that are in "
+                                                    "close proximity, but not the person, that opened the box. Those "
+                                                    "people start seeing things, that try to get them to commit "
+                                                    "suicide. To open the box and deactivate its wording a Men of "
+                                                    "Letters blood has to be poured into it.", episodes={"S10": [19]})
 
     # SEASON 11:
 
