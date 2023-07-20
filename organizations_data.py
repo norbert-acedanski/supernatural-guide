@@ -23,3 +23,4 @@ class OrganizationKnowledge:
     occult_families = "occult families"
     styne_family = "The Styne family - dating back to the early 1800s - they used spells to create disease, " \
                    "destabilize markets and even helped the Nazis before they came into power"
+    werther_project = "Werther project"

@@ -28,7 +28,8 @@ class OrganizationsBase:
                                 OrganizationKnowledge.dishonored_and_forgotten,
                                 OrganizationKnowledge.werewolf_transgenderism, OrganizationKnowledge.symbology,
                                 OrganizationKnowledge.anti_tracking_box_and_symbols,
-                                OrganizationKnowledge.occult_families, OrganizationKnowledge.styne_family]
+                                OrganizationKnowledge.occult_families, OrganizationKnowledge.styne_family,
+                                OrganizationKnowledge.werther_project]
 
     the_judah_initiative = Organization("The Judah initiative", description="They were active during WW2. A group of "
                                                                             "rabbis that were good saboteurs. "
