@@ -264,7 +264,7 @@ class MonsterBase:
                                              "years as blood slaves. One can become a vampire, when drinking vampire "
                                              "blood. Upon changing, all senses sharpen.",
                       episodes={"S01": [20], "S02": [3], "S03": [7], "S05": [3], "S06": [5, 19], "S07": [22],
-                                "S08": [1, 2, 5, 7, 9, 10, 18, 19], "S09": [2, 16, 19, 20], "S10": [8]})
+                                "S08": [1, 2, 5, 7, 9, 10, 18, 19], "S09": [2, 16, 19, 20], "S10": [8, 19]})
     vampire.clues = [MonstersClues.ripped_throat, MonstersClues.no_blood_in_the_body, MonstersClues.needle_like_teeth,
                      MonstersClues.moving_in_groups_usually, MonstersClues.invulnerable, MonstersClues.high_strength,
                      MonstersClues.bright_eyes, MonstersClues.great_sense_of_smell, MonstersClues.white_skin,
@@ -489,7 +489,7 @@ class MonsterBase:
                                          "the path, can eke out a modicum of witchly power. Rowena is a natural and is "
                                          "also a mother of Crowley.",
                     episodes={"S03": [9], "S04": [7, 12], "S05": [7, 12], "S07": [5], "S08": [7, 15],
-                              "S10": [3, 7, 9, 10, 13, 16, 17, 18]})
+                              "S10": [3, 7, 9, 10, 13, 16, 17, 18, 19]})
     witch.clues = [MonstersClues.people_dead_weirdly, MonstersClues.hex_bag_hidden_somewhere, MonstersClues.immortal,
                    MonstersClues.coin_hidden_somewhere, MonstersClues.weird_electronics_behavior,
                    MonstersClues.telekinesis, MonstersClues.can_vanish, MonstersClues.weird_plant_deaths_or_behavior,
@@ -1126,7 +1126,7 @@ class MonsterBase:
                                                  "creation, so he locked them away in Purgatory. Leviathan description "
                                                  "by Franck Devereaux in S07E20, minute 13. "
                                                  "Kill method revealed in S07E20 in the Word of GOD.",
-                        episodes={"S07": [1, 2, 3, 5, 6, 9, 16, 20, 21, 22, 23], "S08": [5, 7]})
+                        episodes={"S07": [1, 2, 3, 5, 6, 9, 16, 20, 21, 22, 23], "S08": [5, 7], "S10": [19]})
     leviathan.clues = [MonstersClues.high_strength, MonstersClues.can_posses_an_angel, MonstersClues.black_veins,
                        MonstersClues.black_blood, MonstersClues.moves_in_water, MonstersClues.people_dead_weirdly,
                        MonstersClues.animal_like_attack, MonstersClues.being_at_two_places_at_once,
@@ -1486,7 +1486,7 @@ class MonsterBase:
     khan_worm.disable_methods = [MonstersDisableMethods.extreme_dehydration]
     khan_worm.kill_methods = [MonstersKillMethods.stamp_on_it]
 
-    unknown = Monster("Unknown", description="", episodes={"S10": [18]})
+    unknown = Monster("Unknown", description="", episodes={"S10": [19]})
     unknown.clues = []
 
     angel_watcher = Monster("Angel Watcher - Grigori")
