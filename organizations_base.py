@@ -42,6 +42,16 @@ class OrganizationsBase:
                                      episodes={"S08": [13]})
     the_thule_society.knowledge = [OrganizationKnowledge.immortal_life]
 
+    the_styne_family = Organization("The Styne family", description="A family of multi-generational, centuries-old "
+                                                                    "wrong. They used spells to create disease, "
+                                                                    "destabilize markets ad even helped the Nazis "
+                                                                    "before they came into power, profited from all of "
+                                                                    "them. All of the spells came from the book of "
+                                                                    "unspeakable evil - Book of the Damned. They lost "
+                                                                    "it about 100 years ago. Members of the family are "
+                                                                    "stronger, more resistant to everything.",
+                                    episodes={"S10": [18]})
+
     def __init__(self):
         self.organizations = [organization for organization in self.__dict__.values() if isinstance(organization,
                                                                                                     Organization)]
