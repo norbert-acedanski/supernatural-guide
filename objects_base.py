@@ -102,7 +102,7 @@ class ObjectsBase:
     angel_blade = Object("Angel blade", description="A triangular, silvery blade, that each angel has.",
                          episodes={"S04": [16], "S05": [1, 13, 18], "S06": [3, 10, 17, 18, 22], "S07": [21],
                                    "S08": [7, 10, 17, 21, 22, 23], "S09": [1, 2, 3, 6, 9, 10, 11, 14, 16, 18, 21, 22, 23],
-                                   "S10": [1, 3, 7, 9, 10, 13, 17, 18]})
+                                   "S10": [1, 3, 7, 9, 10, 13, 17, 18, 20]})
     angel_blade.abilities = [ObjectAbilities.can_kill_angels, ObjectAbilities.can_kill_demons]
 
     lucifers_cage = Object("Lucifer's Cage", description="A prison build specifically to contain archangelic powers "
@@ -300,6 +300,12 @@ class ObjectsBase:
                                                     "people start seeing things, that try to get them to commit "
                                                     "suicide. To open the box and deactivate its wording a Men of "
                                                     "Letters blood has to be poured into it.", episodes={"S10": [19]})
+
+    angel_sword = Object("Angel Sword", description="Similar to Angel Blade, but bigger and has hilt on it (when "
+                                                    "somebody is killed with it, it leaves burned triangular wound). "
+                                                    "Each Grigori (Watcher Angel) name is inscribe into their Swords.",
+                         episodes={"S10": [20]})
+    angel_sword.abilities = [ObjectAbilities.can_kill_watcher_angels]
 
     # SEASON 11:
 

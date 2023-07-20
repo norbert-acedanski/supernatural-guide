@@ -3,6 +3,7 @@ class ObjectAbilities:
     can_kill_demons = "can kill demons"
     can_kill_reapers = "can kill reapers"
     can_kill_angels = "can kill angels"
+    can_kill_watcher_angels = "can kill Watcher Angels"
     can_kill_pagan_gods = "can kill pagan gods"
     can_kill_archangels = "can kill archangels"
     cannot_kill_angels = "cannot kill angels"
