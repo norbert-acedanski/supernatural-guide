@@ -568,7 +568,7 @@ class MonsterBase:
                               "S05": [1, 2, 3, 4, 5, 8, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22],
                               "S06": [3, 6, 7, 10, 12, 15, 17, 18, 19, 20, 21, 22], "S07": [1, 17, 20, 21, 23],
                               "S08": [2, 7, 8, 10, 17, 19, 21, 22, 23], "S09": [9, 10, 11, 14, 18, 21, 22, 23],
-                              "S10": [1, 2, 3, 7, 9, 10, 13, 17, 18]})
+                              "S10": [1, 2, 3, 7, 9, 10, 13, 17, 18, 20]})
     angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                    MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion, MonstersClues.has_wings,
                    MonstersClues.leaves_burned_marks, MonstersClues.weird_electronics_behavior,
@@ -1486,12 +1486,22 @@ class MonsterBase:
     khan_worm.disable_methods = [MonstersDisableMethods.extreme_dehydration]
     khan_worm.kill_methods = [MonstersKillMethods.stamp_on_it]
 
-    unknown = Monster("Unknown", description="", episodes={"S10": [19]})
-    unknown.clues = []
+    watcher_angel = Monster("Watcher Angel - Grigori", description="Some lore says, that it feeds on people, some, "
+                                                                   "that it helps them. It feeds on a person by "
+                                                                   "cutting them and inhaling parts of their souls. "
+                                                                   "Once there were hundreds of them. One squad was "
+                                                                   "send a long time ago to Earth and went rogue. It "
+                                                                   "was believed to be executed, but one of them "
+                                                                   "remained - Tamiel (killed in S10E20 by Claire - "
+                                                                   "Jimmy Novac's daughter).", episodes={"S10": [20]})
+    watcher_angel.clues = [MonstersClues.can_put_a_person_to_sleep, MonstersClues.can_put_a_person_in_wonderland,
+                           MonstersClues.can_repair_human_body, MonstersClues.triangle_wound_with_burns,
+                           MonstersClues.invulnerable]
+    watcher_angel.kill_methods = [MonstersKillMethods.angel_sword]
 
-    angel_watcher = Monster("Angel Watcher - Grigori")
-    angel_watcher.clues = [MonstersClues.triangle_wound_with_burns]
-    angel_watcher.kill_methods = [MonstersKillMethods.angel_sword]
+    unknown = Monster("Unknown", description="", episodes={"S10": [20]})
+    unknown.clues = [MonstersClues.can_put_a_person_to_sleep, MonstersClues.can_put_a_person_in_wonderland,
+                     MonstersClues.can_repair_human_body, MonstersClues.triangle_wound_with_burns]
 
     # -------------------------------------------------- SEASON 11 -------------------------------------------------
 
