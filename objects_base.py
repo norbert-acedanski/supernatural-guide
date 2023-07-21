@@ -155,7 +155,7 @@ class ObjectsBase:
                                ObjectAbilities.person_with_it_can_teleport]
 
     scythe_of_death = Object("Scythe of Death", description="A weapon used to kill people, demons, angels, reapers, "
-                                                            "etc.", episodes={"S05": [21]})
+                                                            "etc.", episodes={"S05": [21], "S10": [23]})
     scythe_of_death.abilities = [ObjectAbilities.can_kill_demons, ObjectAbilities.can_kill_demons,
                                  ObjectAbilities.can_kill_reapers]
 
@@ -307,6 +307,8 @@ class ObjectsBase:
                                                     "Each Grigori (Watcher Angel) name is inscribe into their Swords.",
                          episodes={"S10": [20]})
     angel_sword.abilities = [ObjectAbilities.can_kill_watcher_angels]
+
+    # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
 
     # SEASON 11:
 
