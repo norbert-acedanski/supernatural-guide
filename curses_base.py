@@ -274,7 +274,8 @@ class CursesBase:
                                                      "(according to the ending of S09E23). According to Metatron it is "
                                                      "God-level (or Lucyfer-level) magic. The book of the Damned is "
                                                      "calling to the person with the Mark of Cain.",
-                         episodes={"S09": [11, 12, 16, 17, 18, 21], "S10": [1, 2, 3, 9, 10, 11, 12, 13, 17, 18, 21]})
+                         episodes={"S09": [11, 12, 16, 17, 18, 21],
+                                   "S10": [1, 2, 3, 9, 10, 11, 12, 13, 17, 18, 21, 22]})
     mark_of_cain.clues = [CursesClues.people_acting_weirdly, CursesClues.less_affected_by_telekinesis_of_knight_of_hell,
                           CursesClues.high_strength, CursesClues.black_eyes, CursesClues.increased_regeneration,
                           CursesClues.weird_dreams]
