@@ -375,6 +375,7 @@ class MonstersClues:
     seen_by_drunk_people = "seen by drunk people"
     roman_corn_syrup = "roman corn syrup"
     tree_tatoo = "tree tatoo (a Celtic magic symbol - the Tree of Pain)"
+    eagle_tatoo = "eagle tatoo (Styne family tatoo)"
     black_goo = "black goo"
     no_black_goo = "no black goo"
     only_bones_left = "only bones left"
