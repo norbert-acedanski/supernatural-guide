@@ -264,7 +264,7 @@ class MonsterBase:
                                              "years as blood slaves. One can become a vampire, when drinking vampire "
                                              "blood. Upon changing, all senses sharpen.",
                       episodes={"S01": [20], "S02": [3], "S03": [7], "S05": [3], "S06": [5, 19], "S07": [22],
-                                "S08": [1, 2, 5, 7, 9, 10, 18, 19], "S09": [2, 16, 19, 20], "S10": [8, 19]})
+                                "S08": [1, 2, 5, 7, 9, 10, 18, 19], "S09": [2, 16, 19, 20], "S10": [8, 19, 23]})
     vampire.clues = [MonstersClues.ripped_throat, MonstersClues.no_blood_in_the_body, MonstersClues.needle_like_teeth,
                      MonstersClues.moving_in_groups_usually, MonstersClues.invulnerable, MonstersClues.high_strength,
                      MonstersClues.bright_eyes, MonstersClues.great_sense_of_smell, MonstersClues.white_skin,
@@ -489,7 +489,7 @@ class MonsterBase:
                                          "the path, can eke out a modicum of witchly power. Rowena is a natural and is "
                                          "also a mother of Crowley.",
                     episodes={"S03": [9], "S04": [7, 12], "S05": [7, 12], "S07": [5], "S08": [7, 15],
-                              "S10": [3, 7, 9, 10, 13, 16, 17, 18, 19, 21, 22]})
+                              "S10": [3, 7, 9, 10, 13, 16, 17, 18, 19, 21, 22, 23]})
     witch.clues = [MonstersClues.people_dead_weirdly, MonstersClues.hex_bag_hidden_somewhere, MonstersClues.immortal,
                    MonstersClues.coin_hidden_somewhere, MonstersClues.weird_electronics_behavior,
                    MonstersClues.telekinesis, MonstersClues.can_vanish, MonstersClues.weird_plant_deaths_or_behavior,
@@ -568,7 +568,7 @@ class MonsterBase:
                               "S05": [1, 2, 3, 4, 5, 8, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22],
                               "S06": [3, 6, 7, 10, 12, 15, 17, 18, 19, 20, 21, 22], "S07": [1, 17, 20, 21, 23],
                               "S08": [2, 7, 8, 10, 17, 19, 21, 22, 23], "S09": [9, 10, 11, 14, 18, 21, 22, 23],
-                              "S10": [1, 2, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22]})
+                              "S10": [1, 2, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22, 23]})
     angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                    MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion, MonstersClues.has_wings,
                    MonstersClues.leaves_burned_marks, MonstersClues.weird_electronics_behavior,
@@ -804,7 +804,7 @@ class MonsterBase:
                             episodes={"S05": [10, 20, 21], "S06": [4, 7, 8, 10, 19, 20, 21, 22],
                                       "S07": [1, 6, 8, 22, 23], "S08": [1, 2, 7, 10, 17, 19, 21, 22, 23],
                                       "S09": [2, 4, 6, 10, 11, 16, 17, 21, 23],
-                                      "S10": [1, 2, 3, 7, 9, 10, 13, 16, 17, 21, 22]})
+                                      "S10": [1, 2, 3, 7, 9, 10, 13, 16, 17, 21, 22, 23]})
     demon_crowley.clues = [MonstersClues.can_vanish, MonstersClues.pact_sealed_with_a_kiss, MonstersClues.telekinesis,
                            MonstersClues.summoned_by_placing_box_in_the_crossroads, MonstersClues.small_earth_quake,
                            MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
@@ -825,14 +825,12 @@ class MonsterBase:
                                                          "Can be brought to the Earth at midnight through a place of "
                                                          "awful carnage. Summoned in S05E10 and his actions seen "
                                                          "in S05E15.",
-                           episodes={"S05": [21], "S06": [11], "S07": [1], "S09": [1]})
+                           episodes={"S05": [21], "S06": [11], "S07": [1], "S09": [1], "S10": [23]})
     reaper_death.clues = [MonstersClues.number_of_reapers_appearing, MonstersClues.can_bring_back_dead_people,
                           MonstersClues.can_kill_people_with_a_thought, MonstersClues.people_dead_weirdly,
                           MonstersClues.can_appear_out_of_thin_air, MonstersClues.can_put_a_soul_back_to_a_body,
                           MonstersClues.can_go_to_lucifers_cage_and_back_with_ease]
-    reaper_death.kill_methods = [
-
-                                 MonstersKillMethods.scythe_of_death]
+    reaper_death.kill_methods = [MonstersKillMethods.scythe_of_death]
 
     wraith = Monster("Wraith", description="Creatures, that crack the head and feed on brain juice. "
                                            "Can poison people and drive them crazy.", episodes={"S05": [11],
@@ -1508,17 +1506,29 @@ class MonsterBase:
                            MonstersClues.invulnerable]
     watcher_angel.kill_methods = [MonstersKillMethods.angel_sword]
 
-    unknown = Monster("Unknown", description="", episodes={"S10": [22]})
-    unknown.clues = []
+    darkness = Monster("Darkness", description="Before there was light, before there was GOD and the archangels, there "
+                                               "wasn't nothing. There was the Darkness - horribly destructive, amoral "
+                                               "force, that was beaten back by GOD and his archangels in a terrible "
+                                               "war. GOD locked the Darkness away where it could do no harm. The Mark "
+                                               "of Cain serves as both lock and key for the Darkness. It is released "
+                                               "in S10E23 after the Mark was removed from Dean's arm. "
+                                               "Sister of God. He was the light, she is the dark. A being with almost "
+                                               "unlimited power.", episodes={"S10": [23]})
+    darkness.clues = [MonstersClues.enormous_black_fog,
 
-    # -------------------------------------------------- SEASON 11 -------------------------------------------------
-
-    darkness = Monster("Darkness", description="Sister of God. He was the light, she is the dark. A being with almost "
-                                               "unlimited power.")
-    darkness.clues = [MonstersClues.people_dead_weirdly, MonstersClues.leaves_soulless_people_behind,
+                      MonstersClues.people_dead_weirdly, MonstersClues.leaves_soulless_people_behind,
                       MonstersClues.leaves_zombie_like_people_with_black_veins_around_neck,
                       MonstersClues.telekinesis, MonstersClues.weird_weather, MonstersClues.enormous_black_fog]
-    darkness.disable_methods = [MonstersDisableMethods.all_of_angels_single_blow]
+    darkness.disable_methods = [
+
+                                MonstersDisableMethods.all_of_angels_single_blow]
+
+    unknown = Monster("Unknown", description="", episodes={"S10": [23]})
+    unknown.clues = []
+
+    # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
+
+    # ---------------------------------------------------- SEASON 11 ---------------------------------------------------
 
     whisper = Monster("Whisper")
     whisper.clues = [MonstersClues.body_torn_apart, MonstersClues.no_blood_in_the_body,
