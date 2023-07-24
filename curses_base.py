@@ -330,6 +330,9 @@ class CursesBase:
                                                     "'Something you love' - kill the thing you love the most and "
                                                     "a genetic material of the person, that has the Mark.",
                                         episodes={"S10": [23]})
+    rowenas_immobilization_spell = Curse("Rowena's immobilization spell",
+                                         description="Spell, that allows to immobilize entities such as Demons and "
+                                                     "Angels.", episodes={"S10": [23]})
 
     # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
 
