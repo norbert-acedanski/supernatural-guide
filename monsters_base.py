@@ -106,7 +106,7 @@ class MonsterBase:
                               "S04": [1, 4, 9, 10, 20, 21, 22], "S05": [1, 6, 10, 12, 14, 17, 20, 21, 22],
                               "S06": [7, 10, 18, 20, 21, 22], "S07": [8, 15, 17, 21, 23],
                               "S08": [1, 2, 7, 10, 17, 19, 21, 22], "S09": [2, 10, 11, 14, 16, 17, 21, 23],
-                              "S10": [1, 2, 3, 7, 9, 10, 13, 16, 17, 21]})
+                              "S10": [1, 2, 3, 7, 9, 10, 13, 16, 17, 21], "S11": [1]})
     demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                    MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                    MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -568,7 +568,7 @@ class MonsterBase:
                               "S05": [1, 2, 3, 4, 5, 8, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22],
                               "S06": [3, 6, 7, 10, 12, 15, 17, 18, 19, 20, 21, 22], "S07": [1, 17, 20, 21, 23],
                               "S08": [2, 7, 8, 10, 17, 19, 21, 22, 23], "S09": [9, 10, 11, 14, 18, 21, 22, 23],
-                              "S10": [1, 2, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22, 23]})
+                              "S10": [1, 2, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22, 23], "S11": [1]})
     angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                    MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion, MonstersClues.has_wings,
                    MonstersClues.leaves_burned_marks, MonstersClues.weird_electronics_behavior,
@@ -588,8 +588,9 @@ class MonsterBase:
                    MonstersClues.blue_eyes]
     angel.disable_methods = [MonstersDisableMethods.symbol_made_with_blood_against_angels,
                              MonstersDisableMethods.exorcism_for_angels, MonstersDisableMethods.holy_oil,
-                             MonstersDisableMethods.enochian_spell, MonstersDisableMethods.angel_blade,
-                             MonstersDisableMethods.presence_of_the_mother, MonstersDisableMethods.grace_removal]
+                             MonstersDisableMethods.enochian_spell, MonstersDisableMethods.rowenas_immobilization_spell,
+                             MonstersDisableMethods.presence_of_the_mother, MonstersDisableMethods.grace_removal,
+                             MonstersDisableMethods.attack_dog_spell, MonstersDisableMethods.angel_blade]
     angel.kill_methods = [MonstersKillMethods.angel_blade, MonstersKillMethods.holy_oil,
                           MonstersKillMethods.leviathan_black_goo, MonstersKillMethods.will_of_an_archangel,
 
@@ -626,7 +627,7 @@ class MonsterBase:
                                                        "Thaddeus, Abner, Hannah, Ezra, Esther, Asariel, Purah. Gadreel "
                                                        "was the Angel, that let Lucifer into the Garden of Eden.",
                            episodes={"S04": [9, 10], "S08": [23], "S09": [1, 2, 3, 4, 5, 8, 9, 10, 14, 18, 21, 22, 23],
-                                     "S10": [1, 2, 3, 7, 10, 17]})
+                                     "S10": [1, 2, 3, 7, 10, 17], "S11": [1]})
     fallen_angel.clues = [MonstersClues.people_hear_voices, MonstersClues.can_see_real_appearance_of_entities,
                           MonstersClues.telekinesis, MonstersClues.people_acting_weirdly, MonstersClues.falling_meteor,
                           MonstersClues.can_hear_angel_radio, MonstersClues.can_erase_and_bring_back_memories,
@@ -804,7 +805,7 @@ class MonsterBase:
                             episodes={"S05": [10, 20, 21], "S06": [4, 7, 8, 10, 19, 20, 21, 22],
                                       "S07": [1, 6, 8, 22, 23], "S08": [1, 2, 7, 10, 17, 19, 21, 22, 23],
                                       "S09": [2, 4, 6, 10, 11, 16, 17, 21, 23],
-                                      "S10": [1, 2, 3, 7, 9, 10, 13, 16, 17, 21, 22, 23]})
+                                      "S10": [1, 2, 3, 7, 9, 10, 13, 16, 17, 21, 22, 23], "S11": [1]})
     demon_crowley.clues = [MonstersClues.can_vanish, MonstersClues.pact_sealed_with_a_kiss, MonstersClues.telekinesis,
                            MonstersClues.summoned_by_placing_box_in_the_crossroads, MonstersClues.small_earth_quake,
                            MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
@@ -819,7 +820,8 @@ class MonsterBase:
 
                            MonstersClues.black_blood]
     demon_crowley.disable_methods = [MonstersDisableMethods.devils_trap, MonstersDisableMethods.holy_water,
-                                     MonstersDisableMethods.demonic_handcuffs]
+                                     MonstersDisableMethods.demonic_handcuffs,
+                                     MonstersDisableMethods.rowenas_immobilization_spell]
 
     reaper_death = Monster("Reaper - Death", description="One of the Horseman, the pale rider. Angel of Death. "
                                                          "Can be brought to the Earth at midnight through a place of "
@@ -1513,22 +1515,33 @@ class MonsterBase:
                                                "of Cain serves as both lock and key for the Darkness. It is released "
                                                "in S10E23 after the Mark was removed from Dean's arm. "
                                                "Sister of God. He was the light, she is the dark. A being with almost "
-                                               "unlimited power.", episodes={"S10": [23]})
-    darkness.clues = [MonstersClues.enormous_black_fog,
+                                               "unlimited power. After she was released, the Mark of Cain becomes one "
+                                               "with her. She is connected to the person, that had the Mark.",
+                       episodes={"S10": [23], "S11": [1]})
+    darkness.clues = [MonstersClues.enormous_black_fog, MonstersClues.can_teleport_people, MonstersClues.visions,
+                      MonstersClues.seen_as_a_woman, MonstersClues.people_dead_weirdly, MonstersClues.black_veins,
+                      MonstersClues.leaves_zombie_like_people_with_black_veins_around_neck,
 
                       MonstersClues.people_dead_weirdly, MonstersClues.leaves_soulless_people_behind,
-                      MonstersClues.leaves_zombie_like_people_with_black_veins_around_neck,
-                      MonstersClues.telekinesis, MonstersClues.weird_weather, MonstersClues.enormous_black_fog]
+                      MonstersClues.telekinesis, MonstersClues.weird_weather]
     darkness.disable_methods = [
 
                                 MonstersDisableMethods.all_of_angels_single_blow]
 
-    unknown = Monster("Unknown", description="", episodes={"S10": [23]})
-    unknown.clues = []
-
     # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
 
     # ---------------------------------------------------- SEASON 11 ---------------------------------------------------
+
+    rabid = Monster("Rabid", description="Created by The Darkness. The disease can be passed by bleeding on another "
+                                         "person. After 4 hours, a person becomes one of them. After a while, a Rabid "
+                                         "dies.", episodes={"S11": [1]})
+    rabid.clues = [MonstersClues.black_veins, MonstersClues.people_acting_weirdly, MonstersClues.aggression,
+                   MonstersClues.intelligent]
+    rabid.kill_methods = [MonstersKillMethods.stabbing_the_heart, MonstersKillMethods.shooting_the_heart,
+                          MonstersKillMethods.wait_for_it_to_die]
+
+    unknown = Monster("Unknown", description="", episodes={"S11": [1]})
+    unknown.clues = []
 
     whisper = Monster("Whisper")
     whisper.clues = [MonstersClues.body_torn_apart, MonstersClues.no_blood_in_the_body,

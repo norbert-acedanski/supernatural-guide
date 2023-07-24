@@ -77,6 +77,7 @@ class MonstersClues:
     people_acting_weirdly = "people acting weirdly - like not themselves"
     people_burned_on_the_ceiling = "people burned on the ceiling of their house"
     people_loosing_their_minds = "people loosing their minds"
+    aggression = "aggression"
     comes_back_from_the_dead = "comes back from the dead"
     dead_people_or_children_regularly_in_different_places = "dead people or children regularly in different places"
     missing_or_dead_people_in_similar_way_randomly_across_time_in_different_areas = \
@@ -160,6 +161,7 @@ class MonstersClues:
     seen_as_a_drown_man = "seen as a drown man"
     seen_as_a_santa_like_figure = "seen as a santa like figure"
     seen_as_an_old_lady = "seen as an old lady"
+    seen_as_a_woman = "seen as a woman"
     body_torn_apart = "body torn apart"
     no_blood_in_the_body = "no blood in the body"
     no_fat_in_the_body = "no fat in the body"
@@ -425,6 +427,7 @@ class MonstersKillMethods:
     cut_its_tongue_out = "cut its tongue out"
     chop_a_head_off_with_an_iron_axe = "chop a head off with an iron axe"
     stabbing_the_heart = "stabbing the heart"
+    shooting_the_heart = "shooting the heart"
     will_of_an_archangel = "will of an archangel"
     will_of_prince_of_hell = "will of Prince of Hell"
     will_of_a_nephilim = "will of a Nephilim"
@@ -471,6 +474,7 @@ class MonstersKillMethods:
     the_arrow_of_artemis = "the arrow of Artemis"
     kill_the_other_version = "kill the other version"
     stamp_on_it = "stamp on it"
+    wait_for_it_to_die = "wait for it to die"
 
 
 class MonstersDisableMethods:
@@ -539,6 +543,8 @@ class MonstersDisableMethods:
     use_inner_key_of_ozz_on_them = "use Inner Key of Ozz on them"
     extreme_dehydration = "extreme dehydration"
     grace_removal = "grace removal"
+    attack_dog_spell = "attack dog spell"
+    rowenas_immobilization_spell = "Rowena's immobilization spell"
 
 
 class MonstersCureMethods:
