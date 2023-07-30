@@ -179,7 +179,7 @@ class MonsterBase:
                                            "in and out.When a reaper dies, there are electrical storms. One of the "
                                            "Reapers is Tesa (killed by Dean in S09E22).",
                      episodes={"S01": [12], "S02": [1], "S04": [15], "S05": [10, 21], "S06": [11], "S07": [10],
-                               "S08": [19], "S09": [3, 22]})
+                               "S08": [19], "S09": [3, 22], "S11": [2]})
     reaper.clues = [MonstersClues.people_dead_weirdly, MonstersClues.people_cured_miraculously,
                     MonstersClues.weird_things_behavior, MonstersClues.people_seeing_things_or_figures,
                     MonstersClues.seen_as_a_person_in_a_suit, MonstersClues.ghost_like_creature,
@@ -568,7 +568,7 @@ class MonsterBase:
                               "S05": [1, 2, 3, 4, 5, 8, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22],
                               "S06": [3, 6, 7, 10, 12, 15, 17, 18, 19, 20, 21, 22], "S07": [1, 17, 20, 21, 23],
                               "S08": [2, 7, 8, 10, 17, 19, 21, 22, 23], "S09": [9, 10, 11, 14, 18, 21, 22, 23],
-                              "S10": [1, 2, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22, 23], "S11": [1]})
+                              "S10": [1, 2, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22, 23], "S11": [1, 2]})
     angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                    MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion, MonstersClues.has_wings,
                    MonstersClues.leaves_burned_marks, MonstersClues.weird_electronics_behavior,
@@ -627,7 +627,7 @@ class MonsterBase:
                                                        "Thaddeus, Abner, Hannah, Ezra, Esther, Asariel, Purah. Gadreel "
                                                        "was the Angel, that let Lucifer into the Garden of Eden.",
                            episodes={"S04": [9, 10], "S08": [23], "S09": [1, 2, 3, 4, 5, 8, 9, 10, 14, 18, 21, 22, 23],
-                                     "S10": [1, 2, 3, 7, 10, 17], "S11": [1]})
+                                     "S10": [1, 2, 3, 7, 10, 17], "S11": [1, 2]})
     fallen_angel.clues = [MonstersClues.people_hear_voices, MonstersClues.can_see_real_appearance_of_entities,
                           MonstersClues.telekinesis, MonstersClues.people_acting_weirdly, MonstersClues.falling_meteor,
                           MonstersClues.can_hear_angel_radio, MonstersClues.can_erase_and_bring_back_memories,
@@ -805,7 +805,7 @@ class MonsterBase:
                             episodes={"S05": [10, 20, 21], "S06": [4, 7, 8, 10, 19, 20, 21, 22],
                                       "S07": [1, 6, 8, 22, 23], "S08": [1, 2, 7, 10, 17, 19, 21, 22, 23],
                                       "S09": [2, 4, 6, 10, 11, 16, 17, 21, 23],
-                                      "S10": [1, 2, 3, 7, 9, 10, 13, 16, 17, 21, 22, 23], "S11": [1]})
+                                      "S10": [1, 2, 3, 7, 9, 10, 13, 16, 17, 21, 22, 23], "S11": [1, 2]})
     demon_crowley.clues = [MonstersClues.can_vanish, MonstersClues.pact_sealed_with_a_kiss, MonstersClues.telekinesis,
                            MonstersClues.summoned_by_placing_box_in_the_crossroads, MonstersClues.small_earth_quake,
                            MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
@@ -1427,7 +1427,8 @@ class MonsterBase:
                                        episodes={"S09": [23], "S10": [1, 2, 3]})
     person_with_mark_of_cain.clues = [MonstersClues.people_acting_weirdly, MonstersClues.increased_regeneration,
                                       MonstersClues.black_eyes, MonstersClues.high_strength, MonstersClues.deep_voice,
-                                      MonstersClues.less_affected_by_telekinesis_of_knight_of_hell]
+                                      MonstersClues.less_affected_by_telekinesis_of_knight_of_hell,
+                                      MonstersClues.comes_back_from_the_dead]
     person_with_mark_of_cain.disable_methods = [MonstersDisableMethods.holy_water,
                                                 MonstersDisableMethods.demonic_handcuffs]
     person_with_mark_of_cain.cure_methods = [MonstersCureMethods.demon_curing_ritual]
@@ -1517,13 +1518,12 @@ class MonsterBase:
                                                "Sister of God. He was the light, she is the dark. A being with almost "
                                                "unlimited power. After she was released, the Mark of Cain becomes one "
                                                "with her. She is connected to the person, that had the Mark.",
-                       episodes={"S10": [23], "S11": [1]})
+                       episodes={"S10": [23], "S11": [1, 2]})
     darkness.clues = [MonstersClues.enormous_black_fog, MonstersClues.can_teleport_people, MonstersClues.visions,
                       MonstersClues.seen_as_a_woman, MonstersClues.people_dead_weirdly, MonstersClues.black_veins,
-                      MonstersClues.leaves_zombie_like_people_with_black_veins_around_neck,
-
-                      MonstersClues.people_dead_weirdly, MonstersClues.leaves_soulless_people_behind,
-                      MonstersClues.telekinesis, MonstersClues.weird_weather]
+                      MonstersClues.leaves_zombie_like_people_with_black_veins_around_neck, MonstersClues.telekinesis,
+                      MonstersClues.weird_weather, MonstersClues.leaves_soulless_people_behind,
+                      MonstersClues.eats_souls, MonstersClues.can_vanish]
     darkness.disable_methods = [
 
                                 MonstersDisableMethods.all_of_angels_single_blow]
@@ -1533,14 +1533,18 @@ class MonsterBase:
     # ---------------------------------------------------- SEASON 11 ---------------------------------------------------
 
     rabid = Monster("Rabid", description="Created by The Darkness. The disease can be passed by bleeding on another "
-                                         "person. After 4 hours, a person becomes one of them. After a while, a Rabid "
-                                         "dies.", episodes={"S11": [1]})
+                                         "person. After some time (it is different for every person, it can be "
+                                         "4 hours, it can be a day) a person becomes one of them. After a while, "
+                                         "a Rabid dies.", episodes={"S11": [1, 2]})
     rabid.clues = [MonstersClues.black_veins, MonstersClues.people_acting_weirdly, MonstersClues.aggression,
-                   MonstersClues.intelligent]
+                   MonstersClues.intelligent, MonstersClues.infected_with_blood_to_blood_contact,
+                   MonstersClues.people_loosing_their_minds]
+    rabid.disable_methods = [MonstersDisableMethods.electricity]
     rabid.kill_methods = [MonstersKillMethods.stabbing_the_heart, MonstersKillMethods.shooting_the_heart,
                           MonstersKillMethods.wait_for_it_to_die]
+    rabid.cure_methods = [MonstersCureMethods.burning_holy_oil]
 
-    unknown = Monster("Unknown", description="", episodes={"S11": [1]})
+    unknown = Monster("Unknown", description="", episodes={"S11": [2]})
     unknown.clues = []
 
     whisper = Monster("Whisper")

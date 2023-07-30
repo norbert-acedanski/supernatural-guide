@@ -193,6 +193,7 @@ class MonstersClues:
     damaged_organs = "damaged organs"
     drained_organs = "drained organs"
     vapourised_body = "vapourised body"
+    eats_souls = "eats souls"
     leaves_soulless_people_behind = "leaving soulless people behind"
     leaves_zombie_like_people_with_black_veins_around_neck = "leaves zombie-like people with black veins around neck"
     real_appearance_can_be_seen_in_a_reflection_or_camera = "real appearance can be seen in a reflection or camera"
@@ -553,3 +554,4 @@ class MonstersCureMethods:
     plasma_therapy_with_the_blood_of_the_werewolf_that_bit_the_victim = \
         "plasma therapy with the blood of the werewolf that bit the victim"
     demon_curing_ritual = "Demon-curing ritual of Father Thompson"
+    burning_holy_oil = "burning holy oil (either put close to the skin or a victim enclosed in burning circle)"
