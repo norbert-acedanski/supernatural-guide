@@ -752,8 +752,8 @@ class MonsterBase:
                                          "with almost unlimited power. Only mentioned for now. According to Death - he "
                                          "will die too some day by Death's hand (S05E21). At the end of the S05E22 "
                                          "Chuck disappears, hinting he is THE God. His voice can be heard "
-                                         "in S07E01 talking to Castiel.")
-    god.clues = [MonstersClues.can_bring_back_dead_angels, MonstersClues.can_teleport_people,
+                                         "in S07E01 talking to Castiel.", episodes={"S11": [4]})
+    god.clues = [MonstersClues.can_bring_back_dead_angels, MonstersClues.can_teleport_people, MonstersClues.visions,
                  MonstersClues.shining_of_magic_amulet, MonstersClues.can_bring_back_angelic_grace]
     god.kill_methods = [
 
@@ -1545,19 +1545,34 @@ class MonsterBase:
                           MonstersKillMethods.wait_for_it_to_die]
     rabid.cure_methods = [MonstersCureMethods.burning_holy_oil]
 
-    unknown = Monster("Unknown", description="", episodes={"S11": [3]})
-    unknown.clues = []
+    whisper = Monster("Whisper", description="A mix of a Werewolf and a Vampire (Were-pire as called by Dean in "
+                                             "S11E04). They were once believed to be in the bloodline of werewolves, "
+                                             "but in fact, they are more similar to demons. Their names comes from the "
+                                             "fact, that their attacks are very stealthy. Some of them were hunted in "
+                                             "the Salem. Feeds only during the solar eclipse. Not seen, only mentioned "
+                                             "in S11E04.")
+    whisper.clues = [MonstersClues.missing_heart, MonstersClues.body_torn_apart, MonstersClues.no_blood_in_the_body,
+                     MonstersClues.animal_like_attack, MonstersClues.feeding_during_solar_eclipse,
+                     MonstersClues.needle_like_teeth]
+    whisper.kill_methods = [MonstersKillMethods.silver_blade, MonstersKillMethods.decapitation]
 
-    whisper = Monster("Whisper")
-    whisper.clues = [MonstersClues.body_torn_apart, MonstersClues.no_blood_in_the_body,
-                     MonstersClues.animal_like_attack, MonstersClues.feeding_during_solar_eclipse]
-    whisper.kill_methods = [MonstersKillMethods.decapitation, MonstersKillMethods.silver_bullet_into_the_heart]
-
-    nachzehrer = Monster("Nachzehrer (Ghul & Vampire) aka Ghulpire")
+    nachzehrer = Monster("Nachzehrer", description="A mix of a Ghul and a Vampire (aka Ghulpire/Were-pire - nickname "
+                                                   "by Dean from S11E04). Some feed on the flesh of the dead, some "
+                                                   "feed on the blood and hearts of the living. They run in small "
+                                                   "packs, but usually keep an extremely low profile. According to "
+                                                   "lore, if you kill the pack's Alpha Nachzehrer, the rest is "
+                                                   "reverted back to the human form. A human can become a Nachzehrer "
+                                                   "after a bite.", episodes={"S11": [4]})
     nachzehrer.clues = [MonstersClues.bright_eyes, MonstersClues.weird_animal_behavior, MonstersClues.skin_left_behind,
-                        MonstersClues.ozone_smell]
+                        MonstersClues.ozone_smell, MonstersClues.missing_heart, MonstersClues.animal_like_attack,
+                        MonstersClues.no_blood_in_the_body, MonstersClues.body_torn_apart, MonstersClues.high_strength,
+                        MonstersClues.silver_does_not_affect_it, MonstersClues.decapitation_does_not_affect_it,
+                        MonstersClues.invulnerable]
     nachzehrer.disable_methods = [MonstersDisableMethods.silver_or_silver_bullets, MonstersDisableMethods.decapitation]
     nachzehrer.kill_methods = [MonstersKillMethods.copper_coin_placed_under_the_tongue]
+
+    unknown = Monster("Unknown", description="", episodes={"S11": [4]})
+    unknown.clues = []
 
     zanna = Monster("Zanna", description="Invisible entities that help children when they are young. "
                                          "When a child no longer needs leeding Zanna leaves a child.")

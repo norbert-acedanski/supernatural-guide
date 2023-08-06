@@ -422,7 +422,7 @@ class MonstersKillMethods:
     angelica_root_mixture = "mixture of Angelica root, Van Van oil, dust from the crossroads and other 'odds and ends' " \
                             "put into the corners facing each world side on each floor - it purifies the haunted house"
     burn_the_sacred_tree = "burn the sacred tree"
-    copper_coin_placed_under_the_tongue = "copper coin placed under the tongue"
+    copper_coin_placed_under_the_tongue = "Charon's obol (copper coin) placed under the tongue"
     zanna_killing_knife = "Zanna killing knife"
     cut_throat = "cut throat"
     cut_its_tongue_out = "cut its tongue out"
