@@ -102,7 +102,7 @@ class ObjectsBase:
     angel_blade = Object("Angel blade", description="A triangular, silvery blade, that each angel has.",
                          episodes={"S04": [16], "S05": [1, 13, 18], "S06": [3, 10, 17, 18, 22], "S07": [21],
                                    "S08": [7, 10, 17, 21, 22, 23], "S09": [1, 2, 3, 6, 9, 10, 11, 14, 16, 18, 21, 22, 23],
-                                   "S10": [1, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22], "S11": [1, 2]})
+                                   "S10": [1, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22], "S11": [1, 2, 3]})
     angel_blade.abilities = [ObjectAbilities.can_kill_angels, ObjectAbilities.can_kill_demons]
 
     lucifers_cage = Object("Lucifer's Cage", description="A prison build specifically to contain archangelic powers "
@@ -290,7 +290,8 @@ class ObjectsBase:
                                             "used, there is a (biblical) negative reaction. The book calls to the "
                                             "person, that has the Mark of Cain. It is written in obscure Sumerian "
                                             "dialect. It can be tracked by a magic compas. The book is protected by "
-                                            "a spell and cannot be destroyed.", episodes={"S10": [18, 19, 21]})
+                                            "a spell and cannot be destroyed.", episodes={"S10": [18, 19, 21, 23],
+                                                                                          "S11": [3]})
     book_of_the_damned.abilities = [ObjectAbilities.creation_and_undoing_of_any_damnation,
                                     ObjectAbilities.calls_to_a_person_with_mark_of_cain]
 
