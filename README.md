@@ -40,6 +40,7 @@ If you are a fan of Supernatural show, you can play with this project to find ou
 - Metatron broke the fourth wall in S09E18
 - Deans Blood type is 0 based on S10E03
 - Dean broke the fourth wall in S10E05
+- Impala of Sam and Dean was produced in April 24th, 1967 (from S11E04)
 
 # TODO:
 - finish all seasons and episodes.
