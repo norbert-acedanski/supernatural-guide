@@ -90,3 +90,4 @@ class CursesDisableMethods:
     wait_for_if_to_pass = "wait for if to pass"
     will_of_an_angel_on_soul_juice = "will of an angel on soul juice"
     age_changing_spell = "Age changing spell"
+    rowenas_attack_dog_disable_spell = "Rowena's Attack dog disable spell"

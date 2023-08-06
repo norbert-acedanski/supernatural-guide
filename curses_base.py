@@ -305,9 +305,12 @@ class CursesBase:
                                         episodes={"S10": [7]})
     defigere_et_depurgare_spell.clues = [CursesClues.people_dead_weirdly, CursesClues.black_goo]
 
-    attack_dog_spell = Curse("Attack-dog spell", description="Used on a human/angel to turn him into an attack dog.",
-                             episodes={"S10": [7, 23]})
+    attack_dog_spell = Curse("Attack-dog spell", description="Used on a human/angel to turn him into an attack dog. "
+                                                             "Human after a while will die because of it, an angel can "
+                                                             "withstand the power.",
+                             episodes={"S10": [7, 23], "S11": [1, 2, 3]})
     attack_dog_spell.clues = [CursesClues.people_acting_weirdly, CursesClues.high_strength, CursesClues.red_eyes]
+    attack_dog_spell.disable_methods = [CursesDisableMethods.rowenas_attack_dog_disable_spell]
 
     spirit_leaving_body_spell = Curse("Spirit leaving body spell",
                                       description="Spell, that allows ones spirit to leave the body and go to another "
