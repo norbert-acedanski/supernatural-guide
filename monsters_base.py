@@ -106,7 +106,7 @@ class MonsterBase:
                               "S04": [1, 4, 9, 10, 20, 21, 22], "S05": [1, 6, 10, 12, 14, 17, 20, 21, 22],
                               "S06": [7, 10, 18, 20, 21, 22], "S07": [8, 15, 17, 21, 23],
                               "S08": [1, 2, 7, 10, 17, 19, 21, 22], "S09": [2, 10, 11, 14, 16, 17, 21, 23],
-                              "S10": [1, 2, 3, 7, 9, 10, 13, 16, 17, 21], "S11": [1]})
+                              "S10": [1, 2, 3, 7, 9, 10, 13, 16, 17, 21], "S11": [1, 3]})
     demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                    MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                    MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -489,7 +489,7 @@ class MonsterBase:
                                          "the path, can eke out a modicum of witchly power. Rowena is a natural and is "
                                          "also a mother of Crowley.",
                     episodes={"S03": [9], "S04": [7, 12], "S05": [7, 12], "S07": [5], "S08": [7, 15],
-                              "S10": [3, 7, 9, 10, 13, 16, 17, 18, 19, 21, 22, 23]})
+                              "S10": [3, 7, 9, 10, 13, 16, 17, 18, 19, 21, 22, 23], "S11": [3]})
     witch.clues = [MonstersClues.people_dead_weirdly, MonstersClues.hex_bag_hidden_somewhere, MonstersClues.immortal,
                    MonstersClues.coin_hidden_somewhere, MonstersClues.weird_electronics_behavior,
                    MonstersClues.telekinesis, MonstersClues.can_vanish, MonstersClues.weird_plant_deaths_or_behavior,
@@ -499,6 +499,7 @@ class MonsterBase:
                    MonstersClues.card_found_on_a_victim, MonstersClues.can_read_peoples_minds,
                    MonstersClues.people_acting_weirdly, MonstersClues.boiled_brain, MonstersClues.red_faces_of_victims,
                    MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_different_areas,
+                   MonstersClues.strange_different_things_happening,
 
                    MonstersClues.missing_heart]
     witch.disable_methods = [MonstersDisableMethods.stop_it_from_speaking, MonstersDisableMethods.iron_chains,
@@ -568,7 +569,7 @@ class MonsterBase:
                               "S05": [1, 2, 3, 4, 5, 8, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22],
                               "S06": [3, 6, 7, 10, 12, 15, 17, 18, 19, 20, 21, 22], "S07": [1, 17, 20, 21, 23],
                               "S08": [2, 7, 8, 10, 17, 19, 21, 22, 23], "S09": [9, 10, 11, 14, 18, 21, 22, 23],
-                              "S10": [1, 2, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22, 23], "S11": [1, 2]})
+                              "S10": [1, 2, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22, 23], "S11": [1, 2, 3]})
     angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                    MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion, MonstersClues.has_wings,
                    MonstersClues.leaves_burned_marks, MonstersClues.weird_electronics_behavior,
@@ -627,7 +628,7 @@ class MonsterBase:
                                                        "Thaddeus, Abner, Hannah, Ezra, Esther, Asariel, Purah. Gadreel "
                                                        "was the Angel, that let Lucifer into the Garden of Eden.",
                            episodes={"S04": [9, 10], "S08": [23], "S09": [1, 2, 3, 4, 5, 8, 9, 10, 14, 18, 21, 22, 23],
-                                     "S10": [1, 2, 3, 7, 10, 17], "S11": [1, 2]})
+                                     "S10": [1, 2, 3, 7, 10, 17], "S11": [1, 2, 3]})
     fallen_angel.clues = [MonstersClues.people_hear_voices, MonstersClues.can_see_real_appearance_of_entities,
                           MonstersClues.telekinesis, MonstersClues.people_acting_weirdly, MonstersClues.falling_meteor,
                           MonstersClues.can_hear_angel_radio, MonstersClues.can_erase_and_bring_back_memories,
@@ -1518,7 +1519,7 @@ class MonsterBase:
                                                "Sister of God. He was the light, she is the dark. A being with almost "
                                                "unlimited power. After she was released, the Mark of Cain becomes one "
                                                "with her. She is connected to the person, that had the Mark.",
-                       episodes={"S10": [23], "S11": [1, 2]})
+                       episodes={"S10": [23], "S11": [1, 2, 3]})
     darkness.clues = [MonstersClues.enormous_black_fog, MonstersClues.can_teleport_people, MonstersClues.visions,
                       MonstersClues.seen_as_a_woman, MonstersClues.people_dead_weirdly, MonstersClues.black_veins,
                       MonstersClues.leaves_zombie_like_people_with_black_veins_around_neck, MonstersClues.telekinesis,
@@ -1544,7 +1545,7 @@ class MonsterBase:
                           MonstersKillMethods.wait_for_it_to_die]
     rabid.cure_methods = [MonstersCureMethods.burning_holy_oil]
 
-    unknown = Monster("Unknown", description="", episodes={"S11": [2]})
+    unknown = Monster("Unknown", description="", episodes={"S11": [3]})
     unknown.clues = []
 
     whisper = Monster("Whisper")
