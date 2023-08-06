@@ -25,3 +25,5 @@ class OrganizationKnowledge:
                    "destabilize markets and even helped the Nazis before they came into power"
     werther_project = "Werther project"
     exorcisms = "exorcisms"
+    whispers = "Whispers"
+    nachzehrers = "Nachzehrers"
