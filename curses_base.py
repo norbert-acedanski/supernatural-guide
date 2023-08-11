@@ -279,7 +279,7 @@ class CursesBase:
                                                      "and began to corrupt. Lucyfer became jealous of Man and GOD "
                                                      "banished him to Hell. Mark of Cain is removed in S10E23.",
                          episodes={"S09": [11, 12, 16, 17, 18, 21],
-                                   "S10": [1, 2, 3, 9, 10, 11, 12, 13, 17, 18, 21, 22, 23], "S11": [1, 2, 5]})
+                                   "S10": [1, 2, 3, 9, 10, 11, 12, 13, 17, 18, 21, 22, 23], "S11": [1, 2, 5, 6]})
     mark_of_cain.clues = [CursesClues.people_acting_weirdly, CursesClues.less_affected_by_telekinesis_of_knight_of_hell,
                           CursesClues.high_strength, CursesClues.black_eyes, CursesClues.increased_regeneration,
                           CursesClues.weird_dreams]
