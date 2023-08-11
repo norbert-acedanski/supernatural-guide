@@ -12,9 +12,11 @@ class OrganizationsBase:
                                                                 "that contains a library of books about supernatural. "
                                                                 "One of the members was L. Franck Baum, the writer. "
                                                                 "He wrote books about his daughter in Ozz. Charlie "
-                                                                "broke the fourth wall in their compound in S09E04.",
+                                                                "broke the fourth wall in their compound in S09E04. "
+                                                                "They have more power than the Coven of Witches.",
                                   episodes={"S08": [12, 13, 14, 16, 20, 22, 23],
-                                            "S09": [4, 5, 6, 7, 9, 11, 14, 16, 17]})
+                                            "S09": [4, 5, 6, 7, 9, 11, 14, 16, 17],
+                                            "S10": [3, 8, 11, 12, 17, 18, 21, 22]})
     man_of_letters.knowledge = [OrganizationKnowledge.time_travel, OrganizationKnowledge.demon_killing_knife,
                                 OrganizationKnowledge.haitian_symbol_for_speaking_to_the_dead,
                                 OrganizationKnowledge.knights_of_hell, OrganizationKnowledge.drakopoolos_journal,
@@ -24,7 +26,11 @@ class OrganizationsBase:
                                 OrganizationKnowledge.inuit_magic, OrganizationKnowledge.extinct_languages,
                                 OrganizationKnowledge.angel_weakening, OrganizationKnowledge.angel_leaving_its_vessel,
                                 OrganizationKnowledge.the_inner_workings_of_angels,
-                                OrganizationKnowledge.dishonored_and_forgotten]
+                                OrganizationKnowledge.dishonored_and_forgotten,
+                                OrganizationKnowledge.werewolf_transgenderism, OrganizationKnowledge.symbology,
+                                OrganizationKnowledge.anti_tracking_box_and_symbols,
+                                OrganizationKnowledge.occult_families, OrganizationKnowledge.styne_family,
+                                OrganizationKnowledge.werther_project, OrganizationKnowledge.exorcisms]
 
     the_judah_initiative = Organization("The Judah initiative", description="They were active during WW2. A group of "
                                                                             "rabbis that were good saboteurs. "
@@ -37,6 +43,20 @@ class OrganizationsBase:
                                                                       "sponsored the early days of the Nazi Party.",
                                      episodes={"S08": [13]})
     the_thule_society.knowledge = [OrganizationKnowledge.immortal_life]
+
+    the_styne_family = Organization("The Styne family",
+                                    description="A family of multi-generational, centuries-old wrong. They used spells "
+                                                "to create disease, destabilize markets ad even helped the Nazis "
+                                                "before they came into power, profited from all of them. They made "
+                                                "a ton mopping up the Black Plague, started the Hundred Years War. "
+                                                "All of the spells came from the book of unspeakable evil - Book of "
+                                                "the Damned. They lost it about 100 years ago. Members of the family "
+                                                "are stronger, more resistant to everything. Styne family specializes "
+                                                "in bioengineering and body enhancements. The name of the original "
+                                                "family was altered out of necessity. Before the change it was called "
+                                                "Frankenstein. The family is over 1000 years old. Dean killed a lot of "
+                                                "them in S10E22.",
+                                    episodes={"S10": [18, 21, 22]})
 
     def __init__(self):
         self.organizations = [organization for organization in self.__dict__.values() if isinstance(organization,

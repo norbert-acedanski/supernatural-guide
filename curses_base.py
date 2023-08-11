@@ -83,13 +83,11 @@ class CursesBase:
 
     # SEASON 5:
 
-    reaper_death_summoning_spell = Curse("Reaper Death summoning spell", description="Can summon Angel of Death from "
-                                                                                     "its prison. Requires a place, "
-                                                                                     "where an awful carnage has "
-                                                                                     "happened. It ha to be performed "
-                                                                                     "at midnight. Requires sacrifice "
-                                                                                     "of a lot of people and demons.",
-                                         episodes={"S05": [10]})
+    reaper_death_summoning_spell = Curse("Reaper Death summoning spell",
+                                         description="Can summon Angel of Death from its prison. Requires a place, "
+                                                     "where an awful carnage has happened. It ha to be performed at "
+                                                     "midnight. Requires sacrifice of a lot of people and demons.",
+                                         episodes={"S05": [10], "S10": [23]})
     reaper_death_summoning_spell.clues = \
         [CursesClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
          CursesClues.small_earth_quake, CursesClues.number_of_reapers_appearing]
@@ -227,6 +225,12 @@ class CursesBase:
     banish_angels_to_earth_spell.clues = [CursesClues.people_dead_weirdly, CursesClues.missing_heart,
                                           CursesClues.meteor_shower_over_earth]
 
+    demon_curing_spell = Curse("Demon-curing spell", description="Spell used by Father Thompson to cure a demon. One "
+                                                                 "has to inject 8 doses of purified blood (from a man, "
+                                                                 "that was in a confession, but blood consecrated by "
+                                                                 "a priest will do) into a demon separated by one hour "
+                                                                 "breaks.", episodes={"S09": [23], "S10": [3]})
+
     # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
 
     # SEASON 9:
@@ -265,10 +269,21 @@ class CursesBase:
                                                      "counteract telekinetic abilities of a Knights of Hell. That "
                                                      "person can also telekinetically bring the blade to himself. If a "
                                                      "person with the Mark of Cain is killed - he becomes a demon "
-                                                     "(according to the ending of S09E23).",
-                         episodes={"S09": [11, 12, 16, 17, 18, 21]})
+                                                     "(according to the ending of S09E23). According to Metatron it is "
+                                                     "God-level (or Lucyfer-level) magic. The book of the Damned is "
+                                                     "calling to the person with the Mark of Cain. According to Reaper "
+                                                     "Death, nothing can kill a person, that has the Mark. GOD created "
+                                                     "the Mark, that would serve as both lock and key, which he "
+                                                     "entrusted to his most valued lieutenant - Lucifer, but the Mark "
+                                                     "began to assert its own will, revealed itself as the First Curse "
+                                                     "and began to corrupt. Lucyfer became jealous of Man and GOD "
+                                                     "banished him to Hell. Mark of Cain is removed in S10E23.",
+                         episodes={"S09": [11, 12, 16, 17, 18, 21],
+                                   "S10": [1, 2, 3, 9, 10, 11, 12, 13, 17, 18, 21, 22, 23]})
     mark_of_cain.clues = [CursesClues.people_acting_weirdly, CursesClues.less_affected_by_telekinesis_of_knight_of_hell,
-                          CursesClues.high_strength, CursesClues.black_eyes]
+                          CursesClues.high_strength, CursesClues.black_eyes, CursesClues.increased_regeneration,
+                          CursesClues.weird_dreams]
+    mark_of_cain.disable_methods = [CursesDisableMethods.age_changing_spell]
 
     willpower_removing_spell = Curse("Willpower removing spell", description="Spell, that lowers or removes the power "
                                                                              "of will of a person. Used by Magnus.",
@@ -285,7 +300,38 @@ class CursesBase:
 
     # SEASON 10:
 
+    defigere_et_depurgare_spell = Curse("Defigere et depurgare spell", description="'To bind and purge' spell. Used to "
+                                                                                   "kill demons.",
+                                        episodes={"S10": [7]})
+    defigere_et_depurgare_spell.clues = [CursesClues.people_dead_weirdly, CursesClues.black_goo]
 
+    attack_dog_spell = Curse("Attack-dog spell", description="Used on a human/angel to turn him into an attack dog.",
+                             episodes={"S10": [7, 23]})
+    attack_dog_spell.clues = [CursesClues.people_acting_weirdly, CursesClues.high_strength, CursesClues.red_eyes]
+
+    spirit_leaving_body_spell = Curse("Spirit leaving body spell",
+                                      description="Spell, that allows ones spirit to leave the body and go to another "
+                                                  "person. One needs another persons belonging to cast the spell.",
+                                      episodes={"S10": [10]})
+    spirit_leaving_body_spell.clues = [CursesClues.white_eyes]
+
+    age_changing_spell = Curse("Age changing spell", description="Spell, that allows to change a persons age (to a "
+                                                                 "previous one - so make people younger), by "
+                                                                 "physically making their bodies as they were in that "
+                                                                 "age.", episodes={"S10": [12]})
+    age_changing_spell.clues = [CursesClues.can_make_people_younger, CursesClues.hex_bag_hidden_somewhere]
+    age_changing_spell.disable_methods = [CursesDisableMethods.squeeze_the_hex]
+
+    mark_of_cain_removing_spell = Curse("Mark of Cain removing spell",
+                                        description="Spell, that allows to remove the Mark of Cain completely out of "
+                                                    "a person. There are a few ingredients required: 'Something made "
+                                                    "by GOD, but forbidden to man' - The Forbidden Fruit (Quince), "
+                                                    "'Something made by man, but forbidden by GOD' - The Golden Calf, "
+                                                    "'Something you love' - kill the thing you love the most and "
+                                                    "a genetic material of the person, that has the Mark.",
+                                        episodes={"S10": [23]})
+
+    # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
 
     # SEASON 11:
 

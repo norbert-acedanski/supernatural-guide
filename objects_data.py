@@ -3,6 +3,7 @@ class ObjectAbilities:
     can_kill_demons = "can kill demons"
     can_kill_reapers = "can kill reapers"
     can_kill_angels = "can kill angels"
+    can_kill_watcher_angels = "can kill Watcher Angels"
     can_kill_pagan_gods = "can kill pagan gods"
     can_kill_archangels = "can kill archangels"
     cannot_kill_angels = "cannot kill angels"
@@ -24,6 +25,9 @@ class ObjectAbilities:
     can_temporarily_weaken_a_possessing_angel = "can temporarily weaken a possessing angel"
     can_attract_angels = "can attract Angels"
     can_focus_energy = "can focus energy"
+    can_open_portal_to_ozz = "can open portal to Ozz"
+    can_split_soul_into_good_and_bad_parts = "can split soul into good and_bad parts"
+    can_bind_split_soul_back_together = "can bind split soul back together"
     unables_possessions = "unables possessions"
     grants_incredible_luck = "grants incredible luck"
     brings_back_dreams_for_those_that_dont_have_them = "brings back dreams for those that dont have them"
@@ -43,6 +47,8 @@ class ObjectAbilities:
     makes_a_person_do_horrible_things = "makes a person do horrible things"
     when_opened_causes_a_person_to_become_a_prophet = "when opened causes a person to become a prophet"
     allows_to_enter_another_persons_dream = "allows to enter another person's dream"
+    creation_and_undoing_of_any_damnation = "creation and undoing of any damnation"
+    calls_to_a_person_with_mark_of_cain = "calls to a person with the Mark of Cain"
 
 
 class ObjectMaintenance:

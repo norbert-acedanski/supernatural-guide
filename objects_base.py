@@ -48,7 +48,8 @@ class ObjectsBase:
                                                                     "certain kinds of demons.",
                                  episodes={"S03": [1, 9, 16], "S04": [1, 9, 20, 22], "S05": [1, 10, 14, 17, 20, 21, 22],
                                            "S06": [10, 20, 21], "S07": [8, 15, 17, 21],
-                                           "S08": [1, 2, 7, 10, 14, 17, 19, 23], "S09": [2, 4, 11, 14, 16, 17]})
+                                           "S08": [1, 2, 7, 10, 14, 17, 19, 23], "S09": [2, 4, 11, 14, 16, 17],
+                                           "S10": [2, 3, 7, 22]})
     demon_killing_knife.abilities = [ObjectAbilities.can_kill_demons, ObjectAbilities.cannot_kill_angels,
                                      ObjectAbilities.cannot_kill_knights_of_hell]
 
@@ -80,7 +81,10 @@ class ObjectsBase:
                                   episodes={"S04": [10, 22], "S05": [13, 18], "S06": [3], "S07": [21], "S09": [1]})
     sigil_against_angels.abilities = [ObjectAbilities.can_send_angels_back_to_heaven]
 
-    angel_grace = Object("Angel grace", description="A power source for an angel", episodes={"S04": [10], "S08": [23]})
+    angel_grace = Object("Angel grace", description="A power source for an angel. Another Angel can take the Grace to "
+                                                    "power itself, but it does not last forever. When it burns up it "
+                                                    "has to be refilled.", episodes={"S04": [10], "S08": [23],
+                                                                                     "S10": [3]})
     angel_grace.abilities = [ObjectAbilities.can_appear_as_falling_meteor,
                              ObjectAbilities.the_place_it_hits_is_not_destroyed_but_flourishes,
                              ObjectAbilities.can_kill_entities_when_reconnecting_with_an_angel]
@@ -97,7 +101,8 @@ class ObjectsBase:
 
     angel_blade = Object("Angel blade", description="A triangular, silvery blade, that each angel has.",
                          episodes={"S04": [16], "S05": [1, 13, 18], "S06": [3, 10, 17, 18, 22], "S07": [21],
-                                   "S08": [7, 10, 17, 21, 22, 23], "S09": [1, 2, 3, 6, 9, 10, 11, 14, 16, 18, 21, 22, 23]})
+                                   "S08": [7, 10, 17, 21, 22, 23], "S09": [1, 2, 3, 6, 9, 10, 11, 14, 16, 18, 21, 22, 23],
+                                   "S10": [1, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22]})
     angel_blade.abilities = [ObjectAbilities.can_kill_angels, ObjectAbilities.can_kill_demons]
 
     lucifers_cage = Object("Lucifer's Cage", description="A prison build specifically to contain archangelic powers "
@@ -150,7 +155,7 @@ class ObjectsBase:
                                ObjectAbilities.person_with_it_can_teleport]
 
     scythe_of_death = Object("Scythe of Death", description="A weapon used to kill people, demons, angels, reapers, "
-                                                            "etc.", episodes={"S05": [21]})
+                                                            "etc.", episodes={"S05": [21], "S10": [23]})
     scythe_of_death.abilities = [ObjectAbilities.can_kill_demons, ObjectAbilities.can_kill_demons,
                                  ObjectAbilities.can_kill_reapers]
 
@@ -213,7 +218,7 @@ class ObjectsBase:
                                                     "Third tablet (inscribed in angel core and stashed in stone form "
                                                     "by Lucyfer) has information about Angels and how to make "
                                                     "them fall. Found in Lucyfer crypt in S08E17.",
-                         episodes={"S07": [21], "S08": [1, 2, 10, 17, 21, 23], "S09": [9, 10, 23]})
+                         episodes={"S07": [21], "S08": [1, 2, 10, 17, 21, 23], "S09": [9, 10, 23], "S10": [18]})
     word_of_god.abilities = [ObjectAbilities.can_cause_storms, ObjectAbilities.can_cause_women_to_go_to_labour,
                              ObjectAbilities.when_opened_causes_a_person_to_become_a_prophet]
 
@@ -226,12 +231,18 @@ class ObjectsBase:
 
     demonic_handcuffs = Object("Demonic handcuffs", description="When worn by a Demon, it cannot teleport, "
                                                                 "leave the body or use demon magic.",
-                               episodes={"S08": [23], "S09": [10, 14, 16]})
+                               episodes={"S08": [23], "S09": [10, 14, 16], "S10": [2]})
     demonic_handcuffs.abilities = [ObjectAbilities.traps_a_demon]
 
     # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
 
     # SEASON 9:
+
+    key_to_ozz = Object("Key to Ozz", description="Inserted into any door, opens a portal to Ozz (a golden path). "
+                                                  "There were 6 keys forged from Ozz steel and can only be repaired in "
+                                                  "that magical realm (according to Clive Dillon).",
+                        episodes={"S09": [4], "S10": [11]})
+    key_to_ozz.abilities = [ObjectAbilities.can_open_portal_to_ozz]
 
     possessing_angel_weakening_sigil = Object("Possessing Angel weakening sigil",
                                               description="A Sigil, that allows to temporarily hobble an angel, that "
@@ -250,7 +261,7 @@ class ObjectsBase:
                                                     "mark, the blade is useless. When a man with the Mark of Cain "
                                                     "holds the blade, the mark starts to shine red. A person with Mark "
                                                     "of Cain can telekinetically bring the blade to himself.",
-                         episodes={"S09": [11, 16, 21, 22, 23]})
+                         episodes={"S09": [11, 16, 21, 22, 23], "S10": [1, 2, 10, 13]})
     first_blade.abilities = [ObjectAbilities.can_kill_knights_of_hell, ObjectAbilities.can_kill_reapers,
                              ObjectAbilities.can_kill_angels]
 
@@ -263,6 +274,41 @@ class ObjectsBase:
     # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
 
     # SEASON 10:
+    inner_key_of_ozz = Object("Inner Key of Ozz", description="Object, that can enter a soul of a person and unleash "
+                                                              "his/her darkness (Create good and bad people out of one "
+                                                              "soul). Can also be used to bind two halves back "
+                                                              "together.")
+    inner_key_of_ozz.abilities = [ObjectAbilities.can_split_soul_into_good_and_bad_parts,
+                                  ObjectAbilities.can_bind_split_soul_back_together]
+
+    book_of_the_damned = Object("Book of the Damned",
+                                description="It is a spell book for creating or undoing any kind of damnation there "
+                                            "is. About 700 years ago, a nun locked herself away after having visions "
+                                            "of darkness. After a few decades she emerged with the book. Each page is "
+                                            "made out of slices of her own skin, written in her blood. It has been "
+                                            "used by cults, covens, event the Vatican had it for a while. Whe book is "
+                                            "used, there is a (biblical) negative reaction. The book calls to the "
+                                            "person, that has the Mark of Cain. It is written in obscure Sumerian "
+                                            "dialect. It can be tracked by a magic compas. The book is protected by "
+                                            "a spell and cannot be destroyed.", episodes={"S10": [18, 19, 21]})
+    book_of_the_damned.abilities = [ObjectAbilities.creation_and_undoing_of_any_damnation,
+                                    ObjectAbilities.calls_to_a_person_with_mark_of_cain]
+
+    werther_box = Object("Werther Box", description="A wording spell so potent it achieves a theoretical rate of 98% "
+                                                    "lethality. Created by Cuthbert Sinclair. When opened a "
+                                                    "yellow-black smoke appears and possesses people, that are in "
+                                                    "close proximity, but not the person, that opened the box. Those "
+                                                    "people start seeing things, that try to get them to commit "
+                                                    "suicide. To open the box and deactivate its wording a Men of "
+                                                    "Letters blood has to be poured into it.", episodes={"S10": [19]})
+
+    angel_sword = Object("Angel Sword", description="Similar to Angel Blade, but bigger and has hilt on it (when "
+                                                    "somebody is killed with it, it leaves burned triangular wound). "
+                                                    "Each Grigori (Watcher Angel) name is inscribe into their Swords.",
+                         episodes={"S10": [20]})
+    angel_sword.abilities = [ObjectAbilities.can_kill_watcher_angels]
+
+    # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
 
     # SEASON 11:
 
