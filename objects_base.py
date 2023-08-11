@@ -133,7 +133,7 @@ class ObjectsBase:
 
     human_soul = Object("Human soul", description="As an object is very bright. Can be collected of a person. Released "
                                                   "soul of a person will find a way back to a body.",
-                        episodes={"S05": [14], "S06": [11], "S08": [19], "S09": [17]})
+                        episodes={"S05": [14], "S06": [11], "S08": [19], "S09": [17], "S11": [5]})
 
     ring_of_famine = Object("Ring of Famine", description="Can give people starving sensation for things they "
                                                           "lack/desire. One of the four rings of the Horseman.",
