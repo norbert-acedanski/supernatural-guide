@@ -106,7 +106,7 @@ class MonsterBase:
                               "S04": [1, 4, 9, 10, 20, 21, 22], "S05": [1, 6, 10, 12, 14, 17, 20, 21, 22],
                               "S06": [7, 10, 18, 20, 21, 22], "S07": [8, 15, 17, 21, 23],
                               "S08": [1, 2, 7, 10, 17, 19, 21, 22], "S09": [2, 10, 11, 14, 16, 17, 21, 23],
-                              "S10": [1, 2, 3, 7, 9, 10, 13, 16, 17, 21], "S11": [1, 3]})
+                              "S10": [1, 2, 3, 7, 9, 10, 13, 16, 17, 21], "S11": [1, 3, 6]})
     demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                    MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                    MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -569,7 +569,7 @@ class MonsterBase:
                               "S05": [1, 2, 3, 4, 5, 8, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22],
                               "S06": [3, 6, 7, 10, 12, 15, 17, 18, 19, 20, 21, 22], "S07": [1, 17, 20, 21, 23],
                               "S08": [2, 7, 8, 10, 17, 19, 21, 22, 23], "S09": [9, 10, 11, 14, 18, 21, 22, 23],
-                              "S10": [1, 2, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22, 23], "S11": [1, 2, 3]})
+                              "S10": [1, 2, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22, 23], "S11": [1, 2, 3, 6]})
     angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                    MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion, MonstersClues.has_wings,
                    MonstersClues.leaves_burned_marks, MonstersClues.weird_electronics_behavior,
@@ -806,7 +806,7 @@ class MonsterBase:
                             episodes={"S05": [10, 20, 21], "S06": [4, 7, 8, 10, 19, 20, 21, 22],
                                       "S07": [1, 6, 8, 22, 23], "S08": [1, 2, 7, 10, 17, 19, 21, 22, 23],
                                       "S09": [2, 4, 6, 10, 11, 16, 17, 21, 23],
-                                      "S10": [1, 2, 3, 7, 9, 10, 13, 16, 17, 21, 22, 23], "S11": [1, 2]})
+                                      "S10": [1, 2, 3, 7, 9, 10, 13, 16, 17, 21, 22, 23], "S11": [1, 2, 3, 6]})
     demon_crowley.clues = [MonstersClues.can_vanish, MonstersClues.pact_sealed_with_a_kiss, MonstersClues.telekinesis,
                            MonstersClues.summoned_by_placing_box_in_the_crossroads, MonstersClues.small_earth_quake,
                            MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
@@ -821,7 +821,7 @@ class MonsterBase:
 
                            MonstersClues.black_blood]
     demon_crowley.disable_methods = [MonstersDisableMethods.devils_trap, MonstersDisableMethods.holy_water,
-                                     MonstersDisableMethods.demonic_handcuffs,
+                                     MonstersDisableMethods.demonic_handcuffs, MonstersDisableMethods.darkness_powers,
                                      MonstersDisableMethods.rowenas_immobilization_spell]
 
     reaper_death = Monster("Reaper - Death", description="One of the Horseman, the pale rider. Angel of Death. "
@@ -944,7 +944,7 @@ class MonsterBase:
                                                              "demons out of it (as stated in S09E17). Released soul of "
                                                              "a person will find a way back to a body.",
                               episodes={"S05": [21], "S06": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 13, 22], "S09": [17],
-                                        "S11": [2, 5]})
+                                        "S11": [2, 5, 6]})
     soulless_person.clues = [MonstersClues.people_acting_weirdly, MonstersClues.lack_of_empathy, MonstersClues.suicides,
                              MonstersClues.no_sulfur, MonstersClues.sociopath_like_behavior, MonstersClues.bright_light,
                              MonstersClues.does_not_sleep, MonstersClues.no_emf, MonstersClues.people_dead_weirdly,
@@ -1327,7 +1327,8 @@ class MonsterBase:
 
     angel_metatron = Monster("Angel Metatron", description="Scribe of GOD. One of the angels. Metatron broke the "
                                                            "fourth wall in S09E18.",
-                             episodes={"S08": [21, 22, 23], "S09": [9, 10, 18, 22, 23], "S10": [2, 10, 17, 18]})
+                             episodes={"S08": [21, 22, 23], "S09": [9, 10, 18, 22, 23], "S10": [2, 10, 17, 18],
+                                       "S11": [6]})
     angel_metatron.clues = [MonstersClues.immortal, MonstersClues.can_vanish, MonstersClues.can_give_hallucinations,
                             MonstersClues.can_erase_anti_angel_marks, MonstersClues.can_appear_out_of_thin_air,
                             MonstersClues.can_repair_human_body, MonstersClues.can_put_down_holy_fire,
@@ -1516,16 +1517,19 @@ class MonsterBase:
                                                "force, that was beaten back by GOD and his archangels in a terrible "
                                                "war. GOD locked the Darkness away where it could do no harm. The Mark "
                                                "of Cain serves as both lock and key for the Darkness. It is released "
-                                               "in S10E23 after the Mark was removed from Dean's arm. "
-                                               "Sister of God. He was the light, she is the dark. A being with almost "
-                                               "unlimited power. After she was released, the Mark of Cain becomes one "
-                                               "with her. She is connected to the person, that had the Mark.",
-                       episodes={"S10": [23], "S11": [1, 2, 3, 5]})
+                                               "in S10E23 after the Mark was removed from Dean's arm. Sister of God. "
+                                               "He was the light, she is the dark. According to Metatron (S11E06) in "
+                                               "order for GOD to be able to make Creation, he had to betray her. "
+                                               "A being with almost unlimited power. After she was released, the Mark "
+                                               "of Cain becomes one with her. She is connected to the person, "
+                                               "that had the Mark.",
+                       episodes={"S10": [23], "S11": [1, 2, 3, 5, 6]})
     darkness.clues = [MonstersClues.enormous_black_fog, MonstersClues.can_teleport_people, MonstersClues.can_vanish,
                       MonstersClues.seen_as_a_woman, MonstersClues.people_dead_weirdly, MonstersClues.black_veins,
                       MonstersClues.leaves_zombie_like_people_with_black_veins_around_neck, MonstersClues.telekinesis,
                       MonstersClues.weird_weather, MonstersClues.leaves_soulless_people_behind, MonstersClues.visions,
-                      MonstersClues.people_feel_spiritual_ecstasy, MonstersClues.grows_fast, MonstersClues.eats_souls]
+                      MonstersClues.people_feel_spiritual_ecstasy, MonstersClues.grows_fast, MonstersClues.eats_souls,
+                      MonstersClues.can_give_hallucinations]
     darkness.disable_methods = [
 
                                 MonstersDisableMethods.all_of_angels_single_blow]
@@ -1572,10 +1576,8 @@ class MonsterBase:
     nachzehrer.disable_methods = [MonstersDisableMethods.silver_or_silver_bullets, MonstersDisableMethods.decapitation]
     nachzehrer.kill_methods = [MonstersKillMethods.copper_coin_placed_under_the_tongue]
 
-    unknown = Monster("Unknown", description="", episodes={"S11": [5]})
-    unknown.clues = [MonstersClues.flashing_lights, MonstersClues.weird_things_behavior, MonstersClues.emf,
-                     MonstersClues.people_dead_weirdly, MonstersClues.people_seeing_things_or_figures,
-                     MonstersClues.fraud_ghost_stuff]
+    unknown = Monster("Unknown", description="", episodes={"S11": [6]})
+    unknown.clues = []
 
     zanna = Monster("Zanna", description="Invisible entities that help children when they are young. "
                                          "When a child no longer needs leeding Zanna leaves a child.")

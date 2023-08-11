@@ -549,6 +549,7 @@ class MonstersDisableMethods:
     grace_removal = "grace removal"
     attack_dog_spell = "attack dog spell"
     rowenas_immobilization_spell = "Rowena's immobilization spell"
+    darkness_powers = "Darkness' powers"
 
 
 class MonstersCureMethods:
