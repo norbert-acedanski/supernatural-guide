@@ -49,7 +49,7 @@ class ObjectsBase:
                                  episodes={"S03": [1, 9, 16], "S04": [1, 9, 20, 22], "S05": [1, 10, 14, 17, 20, 21, 22],
                                            "S06": [10, 20, 21], "S07": [8, 15, 17, 21],
                                            "S08": [1, 2, 7, 10, 14, 17, 19, 23], "S09": [2, 4, 11, 14, 16, 17],
-                                           "S10": [2, 3, 7, 22], "S11": [2]})
+                                           "S10": [2, 3, 7, 22], "S11": [2, 6]})
     demon_killing_knife.abilities = [ObjectAbilities.can_kill_demons, ObjectAbilities.cannot_kill_angels,
                                      ObjectAbilities.cannot_kill_knights_of_hell]
 
@@ -102,12 +102,13 @@ class ObjectsBase:
     angel_blade = Object("Angel blade", description="A triangular, silvery blade, that each angel has.",
                          episodes={"S04": [16], "S05": [1, 13, 18], "S06": [3, 10, 17, 18, 22], "S07": [21],
                                    "S08": [7, 10, 17, 21, 22, 23], "S09": [1, 2, 3, 6, 9, 10, 11, 14, 16, 18, 21, 22, 23],
-                                   "S10": [1, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22], "S11": [1, 2, 3]})
+                                   "S10": [1, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22], "S11": [1, 2, 3, 6]})
     angel_blade.abilities = [ObjectAbilities.can_kill_angels, ObjectAbilities.can_kill_demons]
 
     lucifers_cage = Object("Lucifer's Cage", description="A prison build specifically to contain archangelic powers "
                                                          "(not seen yet). Can be opened with all 4 rings of "
-                                                         "the horseman. There is fire there.", episodes={"S06": [13]})
+                                                         "the horseman. There is fire there.", episodes={"S06": [13],
+                                                                                                         "S11": [6]})
     lucifers_cage.abilities = [ObjectAbilities.traps_an_archangel, ObjectAbilities.traps_a_soul_of_a_person]
 
     # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
@@ -133,7 +134,7 @@ class ObjectsBase:
 
     human_soul = Object("Human soul", description="As an object is very bright. Can be collected of a person. Released "
                                                   "soul of a person will find a way back to a body.",
-                        episodes={"S05": [14], "S06": [11], "S08": [19], "S09": [17], "S11": [5]})
+                        episodes={"S05": [14], "S06": [11], "S08": [19], "S09": [17], "S11": [5, 6]})
 
     ring_of_famine = Object("Ring of Famine", description="Can give people starving sensation for things they "
                                                           "lack/desire. One of the four rings of the Horseman.",
@@ -218,7 +219,8 @@ class ObjectsBase:
                                                     "Third tablet (inscribed in angel core and stashed in stone form "
                                                     "by Lucyfer) has information about Angels and how to make "
                                                     "them fall. Found in Lucyfer crypt in S08E17.",
-                         episodes={"S07": [21], "S08": [1, 2, 10, 17, 21, 23], "S09": [9, 10, 23], "S10": [18]})
+                         episodes={"S07": [21], "S08": [1, 2, 10, 17, 21, 23], "S09": [9, 10, 23], "S10": [18],
+                                   "S11": [6]})
     word_of_god.abilities = [ObjectAbilities.can_cause_storms, ObjectAbilities.can_cause_women_to_go_to_labour,
                              ObjectAbilities.when_opened_causes_a_person_to_become_a_prophet]
 
@@ -231,7 +233,7 @@ class ObjectsBase:
 
     demonic_handcuffs = Object("Demonic handcuffs", description="When worn by a Demon, it cannot teleport, "
                                                                 "leave the body or use demon magic.",
-                               episodes={"S08": [23], "S09": [10, 14, 16], "S10": [2]})
+                               episodes={"S08": [23], "S09": [10, 14, 16], "S10": [2], "S11": [6]})
     demonic_handcuffs.abilities = [ObjectAbilities.traps_a_demon]
 
     # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
