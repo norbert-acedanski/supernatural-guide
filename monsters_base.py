@@ -943,11 +943,12 @@ class MonsterBase:
                                                              "a way of removing the soul from the body and create "
                                                              "demons out of it (as stated in S09E17). Released soul of "
                                                              "a person will find a way back to a body.",
-                              episodes={"S05": [21], "S06": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 13, 22], "S09": [17]})
+                              episodes={"S05": [21], "S06": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 13, 22], "S09": [17],
+                                        "S11": [2, 5]})
     soulless_person.clues = [MonstersClues.people_acting_weirdly, MonstersClues.lack_of_empathy, MonstersClues.suicides,
                              MonstersClues.no_sulfur, MonstersClues.sociopath_like_behavior, MonstersClues.bright_light,
-                             MonstersClues.does_not_sleep, MonstersClues.no_emf,
-                             MonstersClues.holy_water_does_not_affect_it]
+                             MonstersClues.does_not_sleep, MonstersClues.no_emf, MonstersClues.people_dead_weirdly,
+                             MonstersClues.people_seeing_things_or_figures, MonstersClues.holy_water_does_not_affect_it]
 
     # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
 
@@ -1519,12 +1520,12 @@ class MonsterBase:
                                                "Sister of God. He was the light, she is the dark. A being with almost "
                                                "unlimited power. After she was released, the Mark of Cain becomes one "
                                                "with her. She is connected to the person, that had the Mark.",
-                       episodes={"S10": [23], "S11": [1, 2, 3]})
-    darkness.clues = [MonstersClues.enormous_black_fog, MonstersClues.can_teleport_people, MonstersClues.visions,
+                       episodes={"S10": [23], "S11": [1, 2, 3, 5]})
+    darkness.clues = [MonstersClues.enormous_black_fog, MonstersClues.can_teleport_people, MonstersClues.can_vanish,
                       MonstersClues.seen_as_a_woman, MonstersClues.people_dead_weirdly, MonstersClues.black_veins,
                       MonstersClues.leaves_zombie_like_people_with_black_veins_around_neck, MonstersClues.telekinesis,
-                      MonstersClues.weird_weather, MonstersClues.leaves_soulless_people_behind,
-                      MonstersClues.eats_souls, MonstersClues.can_vanish]
+                      MonstersClues.weird_weather, MonstersClues.leaves_soulless_people_behind, MonstersClues.visions,
+                      MonstersClues.people_feel_spiritual_ecstasy, MonstersClues.grows_fast, MonstersClues.eats_souls]
     darkness.disable_methods = [
 
                                 MonstersDisableMethods.all_of_angels_single_blow]
@@ -1571,8 +1572,10 @@ class MonsterBase:
     nachzehrer.disable_methods = [MonstersDisableMethods.silver_or_silver_bullets, MonstersDisableMethods.decapitation]
     nachzehrer.kill_methods = [MonstersKillMethods.copper_coin_placed_under_the_tongue]
 
-    unknown = Monster("Unknown", description="", episodes={"S11": [4]})
-    unknown.clues = []
+    unknown = Monster("Unknown", description="", episodes={"S11": [5]})
+    unknown.clues = [MonstersClues.flashing_lights, MonstersClues.weird_things_behavior, MonstersClues.emf,
+                     MonstersClues.people_dead_weirdly, MonstersClues.people_seeing_things_or_figures,
+                     MonstersClues.fraud_ghost_stuff]
 
     zanna = Monster("Zanna", description="Invisible entities that help children when they are young. "
                                          "When a child no longer needs leeding Zanna leaves a child.")

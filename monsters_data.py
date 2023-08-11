@@ -385,6 +385,9 @@ class MonstersClues:
     sweets_given_to_eat = "sweets given to eat"
     no_bone_marrow_in_bones = "no bone marrow in bones"
     electricity_does_not_affect_it = "electricity does not affect it"
+    grows_fast = "grows fast"
+    fraud_ghost_stuff = "fraud ghost stuff (EMF generator, speakers with recorded screams, whispers, etc., " \
+                        "devices for lights flickering)"
 
 
 class MonstersKillMethods:
