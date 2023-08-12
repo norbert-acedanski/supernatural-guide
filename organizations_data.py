@@ -27,3 +27,4 @@ class OrganizationKnowledge:
     exorcisms = "exorcisms"
     whispers = "Whispers"
     nachzehrers = "Nachzehrers"
+    pre_biblical_lore = "pre-biblical lore"
