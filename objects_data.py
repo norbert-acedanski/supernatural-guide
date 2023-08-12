@@ -11,6 +11,7 @@ class ObjectAbilities:
     cannot_kill_knights_of_hell = "cannot kill Knights of Hell"
     can_kill_entities_when_reconnecting_with_an_angel = \
         "can kill entities (people, demons) when reconnecting with an angel"
+    can_kill_zanna = 'can kill Zanna'
     can_send_angels_back_to_heaven = "can send angels back to heaven"
     can_appear_as_falling_meteor = "can appear as falling meteor"
     can_make_a_person_sleep_for_days = "can make a person sleep for days"

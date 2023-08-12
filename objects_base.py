@@ -315,6 +315,9 @@ class ObjectsBase:
 
     # SEASON 11:
 
+    zanna_killing_knife = Object("Zanna-killing Knife", description="Knife, that can kill Zanna.", episodes={"S11": [8]})
+    zanna_killing_knife.abilities = [ObjectAbilities.can_kill_zanna]
+
     # SEASON 12:
 
     # SEASON 13:
