@@ -388,6 +388,7 @@ class MonstersClues:
     grows_fast = "grows fast"
     fraud_ghost_stuff = "fraud ghost stuff (EMF generator, speakers with recorded screams, whispers, etc., " \
                         "devices for lights flickering)"
+    attached_to_a_specific_object = "attached to a specific object or set of objects"
 
 
 class MonstersKillMethods:

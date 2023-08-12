@@ -42,7 +42,7 @@ class MonsterBase:
                                           "to an object, place or even electrical signals (like Wi-Fi).",
                               episodes={"S01": [1, 3, 5, 7, 9, 10, 13, 19], "S02": [6, 11, 16, 18, 19],
                                         "S03": [5, 6, 13], "S04": [2, 13, 15, 17], "S05": [9, 11], "S06": [4, 14],
-                                        "S07": [7, 10, 13, 17, 19], "S09": [7], "S10": [13, 16]})
+                                        "S07": [7, 10, 13, 17, 19], "S09": [7], "S10": [13, 16], "S11": [7]})
     vengeful_spirit.clues = [MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                              MonstersClues.people_dead_weirdly, MonstersClues.ghost_like_creature,
                              MonstersClues.weird_electronics_behavior, MonstersClues.weird_things_behavior,
@@ -62,7 +62,8 @@ class MonsterBase:
                              MonstersClues.weird_fire_spontaneous_combustion, MonstersClues.can_control_electronics,
                              MonstersClues.can_absorb_other_ghost_energy, MonstersClues.victims_hear_voices,
                              MonstersClues.no_hex_bags, MonstersClues.travels_as_grey_fog, MonstersClues.weird_noises,
-                             MonstersClues.amnesia_blackout]
+                             MonstersClues.amnesia_blackout, MonstersClues.holy_water_does_not_affect_it,
+                             MonstersClues.attached_to_a_specific_object]
     vengeful_spirit.disable_methods = [MonstersDisableMethods.bring_the_spirit_to_its_crime_place,
                                        MonstersDisableMethods.bring_the_spirit_what_it_wants,
                                        MonstersDisableMethods.iron_or_iron_bullets,
@@ -1576,8 +1577,11 @@ class MonsterBase:
     nachzehrer.disable_methods = [MonstersDisableMethods.silver_or_silver_bullets, MonstersDisableMethods.decapitation]
     nachzehrer.kill_methods = [MonstersKillMethods.copper_coin_placed_under_the_tongue]
 
-    unknown = Monster("Unknown", description="", episodes={"S11": [6]})
-    unknown.clues = []
+    unknown = Monster("Unknown", description="", episodes={"S11": [7]})
+    unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.people_seeing_things_or_figures,
+                     MonstersClues.high_strength, MonstersClues.people_acting_weirdly,
+                     MonstersClues.strange_different_things_happening, MonstersClues.weird_things_behavior,
+                     MonstersClues.holy_water_does_not_affect_it, MonstersClues.amnesia_blackout]
 
     zanna = Monster("Zanna", description="Invisible entities that help children when they are young. "
                                          "When a child no longer needs leeding Zanna leaves a child.")
