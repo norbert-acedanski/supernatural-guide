@@ -36,6 +36,7 @@ Python 3.9.10
 If you are a fan of Supernatural show, you can play with this project to find out what are the clues, that a particular entity/curse/event/object/place leaves behind and try to determine that like Sam and Dean would ;)  
 
 # Fun Facts:
+- Sam has a chronic fear of clowns
 - Castiel broke the Fourth wall in S06E20
 - Metatron broke the fourth wall in S09E18
 - Deans Blood type is 0 based on S10E03
