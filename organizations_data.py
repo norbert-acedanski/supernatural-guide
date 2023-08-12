@@ -28,3 +28,4 @@ class OrganizationKnowledge:
     whispers = "Whispers"
     nachzehrers = "Nachzehrers"
     pre_biblical_lore = "pre-biblical lore"
+    zanna_lore = "Zanna lore"
