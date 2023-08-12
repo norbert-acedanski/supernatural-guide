@@ -27,6 +27,7 @@ class MonstersClues:
     fire_does_not_affect_it = "fire does not affect it"
     black_blood = "blood - black"
     green_blood = "blood - green"
+    glittery_blood = "blood - glittery"
     black_veins = "black veins"
     ectoplasm = "ectoplasm (black goo)"
     green_ectoplasm = "green ectoplasm"
@@ -48,6 +49,7 @@ class MonstersClues:
     travels_as_red_fog = "travels as a red fog"
     travels_as_black_green_fog = "travels as a black - green fog"
     travels_as_grey_fog = "travels as grey fog"
+    children_seeing_things_or_figures = "children seeing things or figures"
     children_of_victims_that_died_on_the_ceiling_have_abilities = \
         "children of victims that died on the ceiling have abilities"
     their_mother_was_burned_on_the_ceiling_when_they_were_infants = \
@@ -186,6 +188,7 @@ class MonstersClues:
     no_burn_marks = "no burn marks"
     leaves_blue_handprint = "leaves blue handprint"
     burned_marks_on_its_skin = "burned marks on it's skin"
+    knife_mark = "knife mark"
     burned_eyes = "burned eyes"
     burning_does_not_affect_it = "burning does not affect it"
     liquefied_organs = "liquefied organs"

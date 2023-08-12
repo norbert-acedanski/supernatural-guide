@@ -1577,16 +1577,21 @@ class MonsterBase:
     nachzehrer.disable_methods = [MonstersDisableMethods.silver_or_silver_bullets, MonstersDisableMethods.decapitation]
     nachzehrer.kill_methods = [MonstersKillMethods.copper_coin_placed_under_the_tongue]
 
-    unknown = Monster("Unknown", description="", episodes={"S11": [7]})
-    unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.people_seeing_things_or_figures,
-                     MonstersClues.high_strength, MonstersClues.people_acting_weirdly,
-                     MonstersClues.strange_different_things_happening, MonstersClues.weird_things_behavior,
-                     MonstersClues.holy_water_does_not_affect_it, MonstersClues.amnesia_blackout]
-
-    zanna = Monster("Zanna", description="Invisible entities that help children when they are young. "
-                                         "When a child no longer needs leeding Zanna leaves a child.")
-    zanna.clues = [MonstersClues.kids_imaginary_friend]
+    zanna = Monster("Zanna", description="Invisible entities that help children when they are young. In Romanian lore "
+                                         "they guide and protect lost children. Zanna intentionally appear as figments "
+                                         "of the child's imagination, allowing the child to move on with confidence "
+                                         "once guidance is no longer necessary. Zanna can see another Zanna, but "
+                                         "people see Zanna only, when it allows them to see. Zanna can grant other "
+                                         "people the ability to see everything, that Zanna see. Zanna share a "
+                                         "telepathic link. Zanna can be seen after a proper spell is used.",
+                    episodes={"S11": [8]})
+    zanna.clues = [MonstersClues.babies_or_children_acting_weirdly, MonstersClues.children_seeing_things_or_figures,
+                   MonstersClues.invisible_entity, MonstersClues.kids_imaginary_friend, MonstersClues.glittery_blood,
+                   MonstersClues.knife_mark, MonstersClues.can_appear_out_of_thin_air, MonstersClues.can_vanish]
     zanna.kill_methods = [MonstersKillMethods.zanna_killing_knife]
+
+    unknown = Monster("Unknown", description="", episodes={"S11": [8]})
+    unknown.clues = [MonstersClues.invisible_entity]
 
     banshee = Monster("Banshee")
     banshee.clues = [MonstersClues.feeding_at_night, MonstersClues.flashing_lights, MonstersClues.feeding_on_vulnerable,
