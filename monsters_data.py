@@ -438,6 +438,7 @@ class MonstersKillMethods:
     shooting_the_heart = "shooting the heart"
     will_of_an_archangel = "will of an archangel"
     will_of_prince_of_hell = "will of Prince of Hell"
+    will_of_the_darkness = "will of the Darkness"
     will_of_a_nephilim = "will of a Nephilim"
     will_of_a_person_with_abilities = "will of a person with abilities"
     will_of_an_angel = "will of an angel"
