@@ -279,7 +279,7 @@ class CursesBase:
                                                      "and began to corrupt. Lucyfer became jealous of Man and GOD "
                                                      "banished him to Hell. Mark of Cain is removed in S10E23.",
                          episodes={"S09": [11, 12, 16, 17, 18, 21],
-                                   "S10": [1, 2, 3, 9, 10, 11, 12, 13, 17, 18, 21, 22, 23], "S11": [1, 2, 5, 6]})
+                                   "S10": [1, 2, 3, 9, 10, 11, 12, 13, 17, 18, 21, 22, 23], "S11": [1, 2, 5, 6, 9]})
     mark_of_cain.clues = [CursesClues.people_acting_weirdly, CursesClues.less_affected_by_telekinesis_of_knight_of_hell,
                           CursesClues.high_strength, CursesClues.black_eyes, CursesClues.increased_regeneration,
                           CursesClues.weird_dreams]
@@ -340,6 +340,12 @@ class CursesBase:
     # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
 
     # SEASON 11:
+
+    talking_to_being_in_lucifers_cage_spell = Curse("Talking to being in Lucifer's Cage spell",
+                                                    description="Spell, that allows to communicate with a being, that "
+                                                                "is in Lucifer's cage. It is found in the Book of the "
+                                                                "Damned by Rowena in S11E09.", episodes={"S11": [9]})
+    talking_to_being_in_lucifers_cage_spell.disable_methods = [CursesDisableMethods.will_of_lucifer]
 
     kiss_of_death = Curse("Kiss of death (Aramaic curse)")
     kiss_of_death.clues = [CursesClues.sealed_with_a_kiss, CursesClues.the_last_person_that_got_kissed_dies]
