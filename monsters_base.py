@@ -107,7 +107,7 @@ class MonsterBase:
                               "S04": [1, 4, 9, 10, 20, 21, 22], "S05": [1, 6, 10, 12, 14, 17, 20, 21, 22],
                               "S06": [7, 10, 18, 20, 21, 22], "S07": [8, 15, 17, 21, 23],
                               "S08": [1, 2, 7, 10, 17, 19, 21, 22], "S09": [2, 10, 11, 14, 16, 17, 21, 23],
-                              "S10": [1, 2, 3, 7, 9, 10, 13, 16, 17, 21], "S11": [1, 3, 6, 9]})
+                              "S10": [1, 2, 3, 7, 9, 10, 13, 16, 17, 21], "S11": [1, 3, 6, 9, 10]})
     demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                    MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                    MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -180,7 +180,7 @@ class MonsterBase:
                                            "in and out.When a reaper dies, there are electrical storms. One of the "
                                            "Reapers is Tesa (killed by Dean in S09E22).",
                      episodes={"S01": [12], "S02": [1], "S04": [15], "S05": [10, 21], "S06": [11], "S07": [10],
-                               "S08": [19], "S09": [3, 22], "S11": [2]})
+                               "S08": [19], "S09": [3, 22], "S11": [2, 10]})
     reaper.clues = [MonstersClues.people_dead_weirdly, MonstersClues.people_cured_miraculously,
                     MonstersClues.weird_things_behavior, MonstersClues.people_seeing_things_or_figures,
                     MonstersClues.seen_as_a_person_in_a_suit, MonstersClues.ghost_like_creature,
@@ -488,9 +488,9 @@ class MonsterBase:
                                          "The last group are the students - those with no natural ability who, with "
                                          "enough practice and training and a grand coven-approved mentor to show them "
                                          "the path, can eke out a modicum of witchly power. Rowena is a natural and is "
-                                         "also a mother of Crowley.",
+                                         "also a mother of Crowley. Rowena was killed by Lucifer in S11E10.",
                     episodes={"S03": [9], "S04": [7, 12], "S05": [7, 12], "S07": [5], "S08": [7, 15],
-                              "S10": [3, 7, 9, 10, 13, 16, 17, 18, 19, 21, 22, 23], "S11": [3, 9]})
+                              "S10": [3, 7, 9, 10, 13, 16, 17, 18, 19, 21, 22, 23], "S11": [3, 9, 10]})
     witch.clues = [MonstersClues.people_dead_weirdly, MonstersClues.hex_bag_hidden_somewhere, MonstersClues.immortal,
                    MonstersClues.coin_hidden_somewhere, MonstersClues.weird_electronics_behavior,
                    MonstersClues.telekinesis, MonstersClues.can_vanish, MonstersClues.weird_plant_deaths_or_behavior,
@@ -504,10 +504,9 @@ class MonsterBase:
 
                    MonstersClues.missing_heart]
     witch.disable_methods = [MonstersDisableMethods.stop_it_from_speaking, MonstersDisableMethods.iron_chains,
-
-                           MonstersDisableMethods.witch_catcher]
+                             MonstersDisableMethods.witch_catcher]
     witch.kill_methods = [MonstersKillMethods.like_any_human, MonstersKillMethods.death_transfer_spell,
-                          MonstersKillMethods.witch_killing_brew,
+                          MonstersKillMethods.witch_killing_brew, MonstersKillMethods.will_of_an_archangel,
 
                           MonstersKillMethods.cut_throat, MonstersClues.red_eyes]
 
@@ -564,13 +563,18 @@ class MonsterBase:
                                          "can intake another Angel's/Fallen Angel's Grace. When an Angel leaves "
                                          "a vessel - it leaves a part of himself (a part of his Grace) in it - like "
                                          "a fingerprint. An Angel can be tracked using a part of the Grace, that it "
-                                         "left in his vessel. Castiel broke the fourth wall in S06E20. Castiel "
-                                         "supposedly died in S07E01, back in S07E17.",
+                                         "left in his vessel. All Angels can unify in order to produce a single "
+                                         "angelic blow of power. When that happens, a fallout is produced and the "
+                                         "closer you get to the ground zero, the worse it becomes. According to "
+                                         "Castiel, the last time it happened, Lot's wife was turned to salt. The "
+                                         "fallout does not affect Angels. An Angel can be possessed by an Archangel. "
+                                         "Castiel broke the fourth wall in S06E20. Castiel supposedly died in S07E01, "
+                                         "back in S07E17.",
                     episodes={"S04": [1, 2, 7, 9, 10, 15, 16, 18, 20, 21, 22],
                               "S05": [1, 2, 3, 4, 5, 8, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22],
                               "S06": [3, 6, 7, 10, 12, 15, 17, 18, 19, 20, 21, 22], "S07": [1, 17, 20, 21, 23],
                               "S08": [2, 7, 8, 10, 17, 19, 21, 22, 23], "S09": [9, 10, 11, 14, 18, 21, 22, 23],
-                              "S10": [1, 2, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22, 23], "S11": [1, 2, 3, 6, 9]})
+                              "S10": [1, 2, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22, 23], "S11": [1, 2, 3, 6, 9, 10]})
     angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                    MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion, MonstersClues.has_wings,
                    MonstersClues.leaves_burned_marks, MonstersClues.weird_electronics_behavior,
@@ -705,18 +709,21 @@ class MonsterBase:
     archangel_lucyfer = Monster("Archangel - Lucyfer", description="Archangel, that disobeyed God when he requested to "
                                                                    "bow before the men. To upset God he twisted one of "
                                                                    "the people into Lilith.",
-                                episodes={"S04": [22], "S05": [1, 3, 4, 10, 19, 22], "S07": [1, 2, 15, 17], "S11": [9]})
+                                episodes={"S04": [22], "S05": [1, 3, 4, 10, 19, 22], "S07": [1, 2, 15, 17],
+                                          "S11": [9, 10]})
     archangel_lucyfer.clues = [MonstersClues.weird_things_behavior, MonstersClues.true_voice_can_hurt_people,
                                MonstersClues.bright_light, MonstersClues.weird_weather, MonstersClues.visions,
                                MonstersClues.people_seeing_strange_things, MonstersClues.biblical_like_events,
                                MonstersClues.people_hear_voices, MonstersClues.can_read_peoples_minds,
                                MonstersClues.can_make_themselves_appear_as_they_like, MonstersClues.cold_spots,
                                MonstersClues.can_give_hallucinations, MonstersClues.can_vanish, MonstersClues.red_eyes,
-                               MonstersClues.can_appear_out_of_thin_air, MonstersClues.revelation_omens,
+                               MonstersClues.can_appear_out_of_thin_air, MonstersClues.can_contact_a_person_in_a_dream,
                                MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                                MonstersClues.immune_to_colt_of_colt, MonstersClues.temperature_fluctuations,
                                MonstersClues.flashing_lights, MonstersClues.telekinesis, MonstersClues.double_tongue,
-                               MonstersClues.weird_fire_spontaneous_combustion,
+                               MonstersClues.weird_fire_spontaneous_combustion, MonstersClues.revelation_omens,
+                               MonstersClues.can_go_and_put_into_a_persons_mind, MonstersClues.can_posses_an_angel,
+                               MonstersClues.high_strength, MonstersClues.invulnerable,
 
                                MonstersClues.travels_as_white_fog, MonstersClues.people_burned_on_the_ceiling,
                                MonstersClues.in_true_form_burns_eyes_of_people, MonstersClues.bible_burns_it]
@@ -809,7 +816,7 @@ class MonsterBase:
                             episodes={"S05": [10, 20, 21], "S06": [4, 7, 8, 10, 19, 20, 21, 22],
                                       "S07": [1, 6, 8, 22, 23], "S08": [1, 2, 7, 10, 17, 19, 21, 22, 23],
                                       "S09": [2, 4, 6, 10, 11, 16, 17, 21, 23],
-                                      "S10": [1, 2, 3, 7, 9, 10, 13, 16, 17, 21, 22, 23], "S11": [1, 2, 3, 6, 9]})
+                                      "S10": [1, 2, 3, 7, 9, 10, 13, 16, 17, 21, 22, 23], "S11": [1, 2, 3, 6, 9, 10]})
     demon_crowley.clues = [MonstersClues.can_vanish, MonstersClues.pact_sealed_with_a_kiss, MonstersClues.telekinesis,
                            MonstersClues.summoned_by_placing_box_in_the_crossroads, MonstersClues.small_earth_quake,
                            MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
@@ -823,9 +830,10 @@ class MonsterBase:
                            MonstersClues.can_give_others_knowledge,
 
                            MonstersClues.black_blood]
-    demon_crowley.disable_methods = [MonstersDisableMethods.devils_trap, MonstersDisableMethods.holy_water,
+    demon_crowley.disable_methods = [MonstersDisableMethods.devils_trap, MonstersDisableMethods.will_of_an_archangel,
                                      MonstersDisableMethods.demonic_handcuffs, MonstersDisableMethods.darkness_powers,
-                                     MonstersDisableMethods.rowenas_immobilization_spell]
+                                     MonstersDisableMethods.rowenas_immobilization_spell,
+                                     MonstersDisableMethods.holy_water]
 
     reaper_death = Monster("Reaper - Death", description="One of the Horseman, the pale rider. Angel of Death. "
                                                          "Can be brought to the Earth at midnight through a place of "
@@ -1525,15 +1533,20 @@ class MonsterBase:
                                                "order for GOD to be able to make Creation, he had to betray her. "
                                                "A being with almost unlimited power. After she was released, the Mark "
                                                "of Cain becomes one with her. She is connected to the person, "
-                                               "that had the Mark.",
-                       episodes={"S10": [23], "S11": [1, 2, 3, 5, 6, 9]})
+                                               "that had the Mark. In order to grow, she needs to consume Souls (from "
+                                               "humans) or Soul energy (like Demons, Angels). She can be knocked out "
+                                               "by all of the Angels single blow for a while. If that happens, a lot "
+                                               "of darkness is released to the neighbourhood. When she wakes up, she "
+                                               "can take in the darkness back, but is hurt by the blow.",
+                       episodes={"S10": [23], "S11": [1, 2, 3, 5, 6, 9, 10]})
     darkness.clues = [MonstersClues.enormous_black_fog, MonstersClues.can_teleport_people, MonstersClues.can_vanish,
                       MonstersClues.seen_as_a_woman, MonstersClues.people_dead_weirdly, MonstersClues.black_veins,
                       MonstersClues.leaves_zombie_like_people_with_black_veins_around_neck, MonstersClues.telekinesis,
                       MonstersClues.weird_weather, MonstersClues.leaves_soulless_people_behind, MonstersClues.visions,
                       MonstersClues.people_feel_spiritual_ecstasy, MonstersClues.grows_fast, MonstersClues.eats_souls,
                       MonstersClues.can_give_hallucinations, MonstersClues.burned_people, MonstersClues.invulnerable,
-                      MonstersClues.weird_things_behavior]
+                      MonstersClues.weird_things_behavior, MonstersClues.can_kill_angels_with_power_of_will,
+                      MonstersClues.can_teleport_angels]
     darkness.disable_methods = [MonstersDisableMethods.all_of_angels_single_blow]
 
     # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
@@ -1591,7 +1604,7 @@ class MonsterBase:
                    MonstersClues.knife_mark, MonstersClues.can_appear_out_of_thin_air, MonstersClues.can_vanish]
     zanna.kill_methods = [MonstersKillMethods.zanna_killing_knife]
 
-    unknown = Monster("Unknown", description="", episodes={"S11": [9]})
+    unknown = Monster("Unknown", description="", episodes={"S11": [10]})
     unknown.clues = []
 
     banshee = Monster("Banshee")

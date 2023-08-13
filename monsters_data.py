@@ -273,12 +273,14 @@ class MonstersClues:
     can_control_ghosts = "can control ghosts"
     can_send_demons_back_to_hell_with_power_of_will = "can send demons back to hell with power of will"
     can_kill_demons_with_power_of_will = "can kill demons with power of will (with enough power)"
+    can_kill_angels_with_power_of_will = "can kill Angels with power of will"
     can_kill_archangels_with_finger_snap = "can kill archangels with finger snap"
     can_put_a_person_to_sleep = "can put a person to sleep"
     can_contact_a_person_in_a_dream = "can contact a person in a dream"
     can_send_people_to_the_past = "can send people to the past"
     can_send_people_back_to_their_time = "can send people back to their time"
     can_teleport_people = "can teleport people"
+    can_teleport_angels = "can teleport Angels"
     can_give_people_diseases = "can give people diseases"
     can_give_hallucinations = "can give hallucinations"
     can_hear_angel_radio = "can hear angel radio"
@@ -504,7 +506,7 @@ class MonstersDisableMethods:
     dead_mans_blood = "dead mans blood"
     decapitation = "decapitation"
     cage_of_lucyfer_in_hell = "cage of Lucyfer in hell"
-    witch_catcher = "witch-catcher"
+    witch_catcher = "witch catcher (used during the Inquisition)"
     all_of_angels_single_blow = "all of angels single blow (release of energy)"
     celtic_imprisonment_spell = "celtic imprisonment spell"
     symbol_made_with_blood_against_angels = "symbol made with blood against angels (for low and high tier)"
@@ -555,6 +557,7 @@ class MonstersDisableMethods:
     attack_dog_spell = "attack dog spell"
     rowenas_immobilization_spell = "Rowena's immobilization spell"
     darkness_powers = "Darkness' powers"
+    will_of_an_archangel = "will of an Archangel"
 
 
 class MonstersCureMethods:
