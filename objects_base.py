@@ -102,13 +102,13 @@ class ObjectsBase:
     angel_blade = Object("Angel blade", description="A triangular, silvery blade, that each angel has.",
                          episodes={"S04": [16], "S05": [1, 13, 18], "S06": [3, 10, 17, 18, 22], "S07": [21],
                                    "S08": [7, 10, 17, 21, 22, 23], "S09": [1, 2, 3, 6, 9, 10, 11, 14, 16, 18, 21, 22, 23],
-                                   "S10": [1, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22], "S11": [1, 2, 3, 6, 9]})
+                                   "S10": [1, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22], "S11": [1, 2, 3, 6, 9, 10]})
     angel_blade.abilities = [ObjectAbilities.can_kill_angels, ObjectAbilities.can_kill_demons]
 
     lucifers_cage = Object("Lucifer's Cage", description="A prison build specifically to contain archangelic powers "
                                                          "(not seen yet). Can be opened with all 4 rings of "
-                                                         "the horseman. There is fire there.", episodes={"S06": [13],
-                                                                                                         "S11": [6, 9]})
+                                                         "the horseman. There is fire there.",
+                           episodes={"S06": [13], "S11": [6, 9, 10]})
     lucifers_cage.abilities = [ObjectAbilities.traps_an_archangel, ObjectAbilities.traps_a_soul_of_a_person]
 
     # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
@@ -317,6 +317,12 @@ class ObjectsBase:
 
     zanna_killing_knife = Object("Zanna-killing Knife", description="Knife, that can kill Zanna.", episodes={"S11": [8]})
     zanna_killing_knife.abilities = [ObjectAbilities.can_kill_zanna]
+
+    witch_catcher = Object("Witch catcher", description="A kind of collar, that can be used to trap a Witch. It was "
+                                                        "used during the Inquisition and most of them were destroyed. "
+                                                        "When worn, a Witch must obey the orders of the others.",
+                           episodes={"S11": [10]})
+    witch_catcher.abilities = [ObjectAbilities.can_trap_a_witch]
 
     # SEASON 12:
 

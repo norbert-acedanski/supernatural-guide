@@ -29,6 +29,7 @@ class ObjectAbilities:
     can_open_portal_to_ozz = "can open portal to Ozz"
     can_split_soul_into_good_and_bad_parts = "can split soul into good and_bad parts"
     can_bind_split_soul_back_together = "can bind split soul back together"
+    can_trap_a_witch = "can trap a Witch"
     unables_possessions = "unables possessions"
     grants_incredible_luck = "grants incredible luck"
     brings_back_dreams_for_those_that_dont_have_them = "brings back dreams for those that dont have them"
