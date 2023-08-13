@@ -43,6 +43,8 @@ If you are a fan of Supernatural show, you can play with this project to find ou
 - Dean broke the fourth wall in S10E05
 - Impala of Sam and Dean was produced in April 24th, 1967 (from S11E04)
 - Sam had a Zanna friend, named Sully when he was young (from S11E08)
+- Lucifer mentions "Lucifer" TV series about Lucifer solving crimes in S11E10
+- Castiel is possessed by Lucifer in S11E10
 
 # TODO:
 - finish all seasons and episodes.
