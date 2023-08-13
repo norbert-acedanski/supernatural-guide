@@ -5,10 +5,10 @@ from places_data import PlaceClues
 
 class PlacesBase:
     hell = Place("Hell", description="Place of eternal torture. People are either tortured, or torture others.",
-                 episodes={"S03": [16], "S04": [1, 8, 10], "S06": [20], "S08": [19], "S10": [3]})
+                 episodes={"S03": [16], "S04": [1, 8, 10], "S06": [20], "S08": [19], "S10": [3], "S11": [9]})
     hell.clues = [PlaceClues.people_chained_in_a_void, PlaceClues.electrical_storms, PlaceClues.dark_place,
                   PlaceClues.flashing_lights, PlaceClues.time_runs_faster_there, PlaceClues.endless_queue,
-                  PlaceClues.screaming_people]
+                  PlaceClues.screaming_people, PlaceClues.skeletons_on_the_ground, PlaceClues.cells_with_people_inside]
 
     alternate_timeline = Place("Alternate timeline", description="A universe, where the history played out "
                                                                  "differently. Can be accessed via a spell or an Angel "
