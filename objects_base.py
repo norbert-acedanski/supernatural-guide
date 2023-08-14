@@ -102,7 +102,7 @@ class ObjectsBase:
     angel_blade = Object("Angel blade", description="A triangular, silvery blade, that each angel has.",
                          episodes={"S04": [16], "S05": [1, 13, 18], "S06": [3, 10, 17, 18, 22], "S07": [21],
                                    "S08": [7, 10, 17, 21, 22, 23], "S09": [1, 2, 3, 6, 9, 10, 11, 14, 16, 18, 21, 22, 23],
-                                   "S10": [1, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22], "S11": [1, 2, 3, 6, 9, 10]})
+                                   "S10": [1, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22], "S11": [1, 2, 3, 6, 9, 10, 11]})
     angel_blade.abilities = [ObjectAbilities.can_kill_angels, ObjectAbilities.can_kill_demons]
 
     lucifers_cage = Object("Lucifer's Cage", description="A prison build specifically to contain archangelic powers "
@@ -323,6 +323,13 @@ class ObjectsBase:
                                                         "When worn, a Witch must obey the orders of the others.",
                            episodes={"S11": [10]})
     witch_catcher.abilities = [ObjectAbilities.can_trap_a_witch]
+
+    celtic_imprisonment_sigil = Object("Celtic imprisonment sigil",
+                                       description="Sigil, that when used, attracts a person/monster to it. There "
+                                                   "needs to be two copies of the symbol drawn. To use it one of them "
+                                                   "has to be touched with blood.", episodes={"S11": [11]})
+    celtic_imprisonment_sigil.abilities = [ObjectAbilities.traps_a_person, ObjectAbilities.traps_a_banshee]
+    celtic_imprisonment_sigil.destroy_methods = [ObjectDestroyMethods.break_the_sigil]
 
     # SEASON 12:
 

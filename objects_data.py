@@ -39,6 +39,8 @@ class ObjectAbilities:
     traps_a_demon = "traps a demon"
     traps_an_archangel = "traps an archangel"
     traps_a_soul_of_a_person = "traps a soul of a person"
+    traps_a_person = "traps a person"
+    traps_a_banshee = "traps a banshee"
     angels_cant_get_past_it = "angels can't get past it"
     hides_a_person_from_all_angels = "hides a person from all angels"
     person_with_it_can_teleport = "person with it can teleport"
@@ -60,6 +62,7 @@ class ObjectMaintenance:
 class ObjectDestroyMethods:
     burn_it = "burn it"
     take_them_off_to_disable = "take them off to disable"
+    break_the_sigil = "break the sigil"
 
 
 class JohnWinchesterJournal:
