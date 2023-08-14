@@ -634,7 +634,7 @@ class MonsterBase:
                                                        "Thaddeus, Abner, Hannah, Ezra, Esther, Asariel, Purah. Gadreel "
                                                        "was the Angel, that let Lucifer into the Garden of Eden.",
                            episodes={"S04": [9, 10], "S08": [23], "S09": [1, 2, 3, 4, 5, 8, 9, 10, 14, 18, 21, 22, 23],
-                                     "S10": [1, 2, 3, 7, 10, 17], "S11": [1, 2, 3]})
+                                     "S10": [1, 2, 3, 7, 10, 17], "S11": [1, 2, 3, 11]})
     fallen_angel.clues = [MonstersClues.people_hear_voices, MonstersClues.can_see_real_appearance_of_entities,
                           MonstersClues.telekinesis, MonstersClues.people_acting_weirdly, MonstersClues.falling_meteor,
                           MonstersClues.can_hear_angel_radio, MonstersClues.can_erase_and_bring_back_memories,
@@ -649,7 +649,8 @@ class MonsterBase:
                           MonstersClues.flashing_lights, MonstersClues.burned_eyes, MonstersClues.people_dead_weirdly]
     fallen_angel.disable_methods = [MonstersDisableMethods.holy_oil, MonstersDisableMethods.angel_blade,
                                     MonstersDisableMethods.first_blade]
-    fallen_angel.kill_methods = [MonstersKillMethods.angel_blade, MonstersKillMethods.first_blade]
+    fallen_angel.kill_methods = [MonstersKillMethods.angel_blade, MonstersKillMethods.first_blade,
+                                 MonstersKillMethods.will_of_an_archangel]
 
     demon_alastair = Monster("Demon Alastair", description="A very powerful demon. Tortures souls in Hell. "
                                                            "Killed in S04E16.",
@@ -710,7 +711,7 @@ class MonsterBase:
                                                                    "bow before the men. To upset God he twisted one of "
                                                                    "the people into Lilith.",
                                 episodes={"S04": [22], "S05": [1, 3, 4, 10, 19, 22], "S07": [1, 2, 15, 17],
-                                          "S11": [9, 10]})
+                                          "S11": [9, 10, 11]})
     archangel_lucyfer.clues = [MonstersClues.weird_things_behavior, MonstersClues.true_voice_can_hurt_people,
                                MonstersClues.bright_light, MonstersClues.weird_weather, MonstersClues.visions,
                                MonstersClues.people_seeing_strange_things, MonstersClues.biblical_like_events,
@@ -1604,14 +1605,28 @@ class MonsterBase:
                    MonstersClues.knife_mark, MonstersClues.can_appear_out_of_thin_air, MonstersClues.can_vanish]
     zanna.kill_methods = [MonstersKillMethods.zanna_killing_knife]
 
-    unknown = Monster("Unknown", description="", episodes={"S11": [10]})
-    unknown.clues = []
-
-    banshee = Monster("Banshee")
+    banshee = Monster("Banshee", description="There are two types of Banshees. Good ones are connected to Fairy lore. "
+                                             "They cry out as a warning to a victim's impending death. The other ones "
+                                             "are malevolent and feed on vulnerable. They use their piercing scream to "
+                                             "drive their prey crazy, forcing their victims to crack out their heads, "
+                                             "so that they could feed on them. They hunt the same place, until it is "
+                                             "picked clean and only hunt at night. "
+                                             "They is usually seen as a floating lady with long, flowing hair, "
+                                             "blood-red robes and sunken eyes. The only people, that can hear Banshee "
+                                             "are the victims. Victims lack their frontal lobes.",
+                      episodes={"S11": [11]})
     banshee.clues = [MonstersClues.feeding_at_night, MonstersClues.flashing_lights, MonstersClues.feeding_on_vulnerable,
-                     MonstersClues.emf, MonstersClues.ghost_like_creature, MonstersClues.victims_hear_screams]
-    banshee.disable_methods = [MonstersDisableMethods.celtic_imprisonment_spell]
+                     MonstersClues.emf, MonstersClues.ghost_like_creature, MonstersClues.missing_part_of_the_brain,
+                     MonstersClues.people_dead_weirdly, MonstersClues.telekinesis, MonstersClues.victims_hear_screams,
+                     MonstersClues.seen_as_a_floating_woman, MonstersClues.black_eyes, MonstersClues.immortal,
+                     MonstersClues.long_tongue, MonstersClues.can_vanish, MonstersClues.can_appear_out_of_thin_air,
+                     MonstersClues.bright_eyes]
+    banshee.disable_methods = [MonstersDisableMethods.celtic_imprisonment_sigil,
+                               MonstersDisableMethods.gold_or_golden_blade]
     banshee.kill_methods = [MonstersKillMethods.gold_blade]
+
+    unknown = Monster("Unknown", description="", episodes={"S11": [11]})
+    unknown.clues = []
 
     quareen = Monster("Quareen", description="Slave creature with bodily form. When curse is layed on a person, "
                                              "Quareen seduces this person as a form of deepest, darkest desire and "
