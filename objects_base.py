@@ -308,7 +308,7 @@ class ObjectsBase:
     angel_sword = Object("Angel Sword", description="Similar to Angel Blade, but bigger and has hilt on it (when "
                                                     "somebody is killed with it, it leaves burned triangular wound). "
                                                     "Each Grigori (Watcher Angel) name is inscribe into their Swords.",
-                         episodes={"S10": [20]})
+                         episodes={"S10": [20], "S11": [12]})
     angel_sword.abilities = [ObjectAbilities.can_kill_watcher_angels]
 
     # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
