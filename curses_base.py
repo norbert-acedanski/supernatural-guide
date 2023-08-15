@@ -347,7 +347,10 @@ class CursesBase:
                                                                 "Damned by Rowena in S11E09.", episodes={"S11": [9]})
     talking_to_being_in_lucifers_cage_spell.disable_methods = [CursesDisableMethods.will_of_lucifer]
 
-    kiss_of_death = Curse("Kiss of death (Aramaic curse)")
+    kiss_of_death = Curse("Kiss of death", description="Aramaic curse. It is transmittable, the last person, that got "
+                                                       "kissed - dies. To make yourself safe, you have to kiss another "
+                                                       "person, but if that person dies, the curse comes back for you.",
+                          episodes={"S11": [13]})
     kiss_of_death.clues = [CursesClues.sealed_with_a_kiss, CursesClues.the_last_person_that_got_kissed_dies]
     kiss_of_death.disable_methods = [CursesDisableMethods.kill_the_witch_that_cursed_a_person]
 
