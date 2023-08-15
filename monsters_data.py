@@ -424,6 +424,7 @@ class MonstersKillMethods:
         "colt of Colt with magic bullets (silver bullets covered with holy oil, mirra and sage than use a spell)"
     magic_red_high_heels = "magic red high heels"
     witch_killing_brew = "witch-killing brew"
+    witch_killing_bullets = "witch-killing bullets"
     scythe_of_death = "scythe of the death"
     burn_salted_corpse = "burn salted corpse/remains"
     burn_the_remains = "burn the remains"

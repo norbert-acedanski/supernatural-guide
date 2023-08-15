@@ -492,7 +492,7 @@ class MonsterBase:
                                          "the path, can eke out a modicum of witchly power. Rowena is a natural and is "
                                          "also a mother of Crowley. Rowena was killed by Lucifer in S11E10.",
                     episodes={"S03": [9], "S04": [7, 12], "S05": [7, 12], "S07": [5], "S08": [7, 15],
-                              "S10": [3, 7, 9, 10, 13, 16, 17, 18, 19, 21, 22, 23], "S11": [3, 9, 10]})
+                              "S10": [3, 7, 9, 10, 13, 16, 17, 18, 19, 21, 22, 23], "S11": [3, 9, 10, 13]})
     witch.clues = [MonstersClues.people_dead_weirdly, MonstersClues.hex_bag_hidden_somewhere, MonstersClues.immortal,
                    MonstersClues.coin_hidden_somewhere, MonstersClues.weird_electronics_behavior,
                    MonstersClues.telekinesis, MonstersClues.can_vanish, MonstersClues.weird_plant_deaths_or_behavior,
@@ -509,6 +509,7 @@ class MonsterBase:
                              MonstersDisableMethods.witch_catcher]
     witch.kill_methods = [MonstersKillMethods.like_any_human, MonstersKillMethods.death_transfer_spell,
                           MonstersKillMethods.witch_killing_brew, MonstersKillMethods.will_of_an_archangel,
+                          MonstersKillMethods.witch_killing_bullets,
 
                           MonstersKillMethods.cut_throat, MonstersClues.red_eyes]
 
@@ -1627,16 +1628,19 @@ class MonsterBase:
                                MonstersDisableMethods.gold_or_golden_blade]
     banshee.kill_methods = [MonstersKillMethods.gold_blade]
 
-    unknown = Monster("Unknown", description="", episodes={"S11": [12]})
-    unknown.clues = [MonstersClues.missing_or_dead_people_regularly_in_the_same_area, MonstersClues.people_dead_weirdly,
-                     MonstersClues.no_weird_noises, MonstersClues.no_sulfur, MonstersClues.no_emf,
-                     MonstersClues.no_hex_bags]
-
-    quareen = Monster("Quareen", description="Slave creature with bodily form. When curse is layed on a person, "
-                                             "Quareen seduces this person as a form of deepest, darkest desire and "
-                                             "kills one. The person that possesses a Quareens heart, commands it.")
-    quareen.clues = [MonstersClues.people_dead_weirdly, MonstersClues.missing_heart]
+    quareen = Monster("Quareen", description="Slave creature with corporeal form. When Kiss of Death curse is layed on "
+                                             "a person, Quareen seduces this person as a form of deepest, darkest "
+                                             "desire, then kills. The person that possesses a Quareens heart, "
+                                             "commands it.", episodes={"S11": [13]})
+    quareen.clues = [MonstersClues.people_dead_weirdly, MonstersClues.missing_heart, MonstersClues.animal_like_attack,
+                     MonstersClues.high_strength, MonstersClues.being_at_two_places_at_once, MonstersClues.bright_eyes,
+                     MonstersClues.keeps_changing_appearances]
     quareen.kill_methods = [MonstersKillMethods.stabbing_the_heart]
+
+    unknown = Monster("Unknown", description="", episodes={"S11": [13]})
+    unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.missing_heart, MonstersClues.animal_like_attack,
+                     MonstersClues.high_strength, MonstersClues.being_at_two_places_at_once, MonstersClues.bright_eyes,
+                     MonstersClues.keeps_changing_appearances]
 
     soul_eater = Monster("Soul Eater", description="Ghost-like creature existing between worlds. Soul eater moves into "
                                                    "a house and makes a nest, which exists outside time and space. "
