@@ -49,7 +49,7 @@ class ObjectsBase:
                                  episodes={"S03": [1, 9, 16], "S04": [1, 9, 20, 22], "S05": [1, 10, 14, 17, 20, 21, 22],
                                            "S06": [10, 20, 21], "S07": [8, 15, 17, 21],
                                            "S08": [1, 2, 7, 10, 14, 17, 19, 23], "S09": [2, 4, 11, 14, 16, 17],
-                                           "S10": [2, 3, 7, 22], "S11": [2, 6]})
+                                           "S10": [2, 3, 7, 22], "S11": [2, 6, 15]})
     demon_killing_knife.abilities = [ObjectAbilities.can_kill_demons, ObjectAbilities.cannot_kill_angels,
                                      ObjectAbilities.cannot_kill_knights_of_hell]
 
@@ -103,7 +103,7 @@ class ObjectsBase:
     angel_blade = Object("Angel blade", description="A triangular, silvery blade, that each angel has.",
                          episodes={"S04": [16], "S05": [1, 13, 18], "S06": [3, 10, 17, 18, 22], "S07": [21],
                                    "S08": [7, 10, 17, 21, 22, 23], "S09": [1, 2, 3, 6, 9, 10, 11, 14, 16, 18, 21, 22, 23],
-                                   "S10": [1, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22], "S11": [1, 2, 3, 6, 9, 10, 11]})
+                                   "S10": [1, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22], "S11": [1, 2, 3, 6, 9, 10, 11, 15]})
     angel_blade.abilities = [ObjectAbilities.can_kill_angels, ObjectAbilities.can_kill_demons]
 
     lucifers_cage = Object("Lucifer's Cage", description="A prison build specifically to contain archangelic powers "
@@ -338,8 +338,8 @@ class ObjectsBase:
                                                     "It should not be touched by hand by a person. It's powers are "
                                                     "unstable and no person can withstand the direct contact for long. "
                                                     "In order to use it, a person has to touch it. These are one time "
-                                                    "use only objects.", episodes={"S11": [14]})
-    hand_of_god.abilities = [ObjectAbilities.grants_incredible_power]
+                                                    "use only objects.", episodes={"S11": [14, 15]})
+    hand_of_god.abilities = [ObjectAbilities.grants_incredible_power, ObjectAbilities.can_kill_demons]
 
     sigil_against_celestial_beings = Object("Sigil against celestial beings",
                                             description="Sigil, that protects against Angels and Archangels.",
@@ -348,6 +348,11 @@ class ObjectsBase:
                                                 ObjectAbilities.archangels_cant_get_past_it]
     sigil_against_celestial_beings.destroy_methods = [ObjectDestroyMethods.break_the_sigil,
                                                       ObjectDestroyMethods.kill_the_person_with_the_sigil]
+
+    rod_of_aaron = Object("Rod of Aaron", description="Created by GOD on the sixth day and given to Aaron, brother of "
+                                                      "Moses. It is a Hand of GOD. Used by Crowley in S11E15.",
+                          episodes={"S11": [15]})
+    hand_of_god.abilities = [ObjectAbilities.grants_incredible_power, ObjectAbilities.can_kill_demons]
 
     # SEASON 12:
 
