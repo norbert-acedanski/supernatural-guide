@@ -78,7 +78,8 @@ class ObjectsBase:
                                                                       "back to heaven. Can be used to send back "
                                                                       "a specific angel type.",
                                   # TODO: Check where else is the sigil used
-                                  episodes={"S04": [10, 22], "S05": [13, 18], "S06": [3], "S07": [21], "S09": [1]})
+                                  episodes={"S04": [10, 22], "S05": [13, 18], "S06": [3], "S07": [21], "S09": [1],
+                                            "S11": [14]})
     sigil_against_angels.abilities = [ObjectAbilities.can_send_angels_back_to_heaven]
 
     angel_grace = Object("Angel grace", description="A power source for an angel. Another Angel can take the Grace to "
@@ -330,6 +331,23 @@ class ObjectsBase:
                                                    "has to be touched with blood.", episodes={"S11": [11]})
     celtic_imprisonment_sigil.abilities = [ObjectAbilities.traps_a_person, ObjectAbilities.traps_a_banshee]
     celtic_imprisonment_sigil.destroy_methods = [ObjectDestroyMethods.break_the_sigil]
+
+    hand_of_god = Object("Hand of GOD", description="An object, that was touched by GOD himself on Earth, that "
+                                                    "contains traces of his power. One such example is the Ark of the "
+                                                    "Covenant. It was destroyed, but at least one fragment remained. "
+                                                    "It should not be touched by hand by a person. It's powers are "
+                                                    "unstable and no person can withstand the direct contact for long. "
+                                                    "In order to use it, a person has to touch it. These are one time "
+                                                    "use only objects.", episodes={"S11": [14]})
+    hand_of_god.abilities = [ObjectAbilities.grants_incredible_power]
+
+    sigil_against_celestial_beings = Object("Sigil against celestial beings",
+                                            description="Sigil, that protects against Angels and Archangels.",
+                                            episodes={"S11": [14]})
+    sigil_against_celestial_beings.abilities = [ObjectAbilities.angels_cant_get_past_it,
+                                                ObjectAbilities.archangels_cant_get_past_it]
+    sigil_against_celestial_beings.destroy_methods = [ObjectDestroyMethods.break_the_sigil,
+                                                      ObjectDestroyMethods.kill_the_person_with_the_sigil]
 
     # SEASON 12:
 

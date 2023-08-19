@@ -32,6 +32,7 @@ class ObjectAbilities:
     can_trap_a_witch = "can trap a Witch"
     unables_possessions = "unables possessions"
     grants_incredible_luck = "grants incredible luck"
+    grants_incredible_power = "grants incredible power"
     brings_back_dreams_for_those_that_dont_have_them = "brings back dreams for those that dont have them"
     gives_people_control_over_dreams = "gives people control over dreams"
     the_place_it_hits_is_not_destroyed_but_flourishes = "the place it hits is not destroyed but flourishes"
@@ -42,6 +43,7 @@ class ObjectAbilities:
     traps_a_person = "traps a person"
     traps_a_banshee = "traps a banshee"
     angels_cant_get_past_it = "angels can't get past it"
+    archangels_cant_get_past_it = "archangels cant get past it"
     hides_a_person_from_all_angels = "hides a person from all angels"
     person_with_it_can_teleport = "person with it can teleport"
     can_teleport = "can teleport"
@@ -63,6 +65,7 @@ class ObjectDestroyMethods:
     burn_it = "burn it"
     take_them_off_to_disable = "take them off to disable"
     break_the_sigil = "break the sigil"
+    kill_the_person_with_the_sigil = "kill the person with the sigil"
 
 
 class JohnWinchesterJournal:
