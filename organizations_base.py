@@ -18,7 +18,7 @@ class OrganizationsBase:
                                                                 "Letters members (according to S11E11).",
                                   episodes={"S08": [12, 13, 14, 16, 20, 22, 23],
                                             "S09": [4, 5, 6, 7, 9, 11, 14, 16, 17],
-                                            "S10": [3, 8, 11, 12, 17, 18, 21, 22], "S11": [4, 7, 8, 11]})
+                                            "S10": [3, 8, 11, 12, 17, 18, 21, 22], "S11": [4, 7, 8, 11, 14]})
     man_of_letters.knowledge = [OrganizationKnowledge.time_travel, OrganizationKnowledge.demon_killing_knife,
                                 OrganizationKnowledge.haitian_symbol_for_speaking_to_the_dead,
                                 OrganizationKnowledge.knights_of_hell, OrganizationKnowledge.drakopoolos_journal,
@@ -34,7 +34,8 @@ class OrganizationsBase:
                                 OrganizationKnowledge.occult_families, OrganizationKnowledge.styne_family,
                                 OrganizationKnowledge.werther_project, OrganizationKnowledge.exorcisms,
                                 OrganizationKnowledge.whispers, OrganizationKnowledge.nachzehrers,
-                                OrganizationKnowledge.pre_biblical_lore, OrganizationKnowledge.zanna_lore]
+                                OrganizationKnowledge.pre_biblical_lore, OrganizationKnowledge.zanna_lore,
+                                OrganizationKnowledge.hand_of_god]
 
     the_judah_initiative = Organization("The Judah initiative", description="They were active during WW2. A group of "
                                                                             "rabbis that were good saboteurs. "
@@ -45,7 +46,7 @@ class OrganizationsBase:
 
     the_thule_society = Organization("The Thule Society", description="Nazi necromancers. A secret fraternity, that "
                                                                       "sponsored the early days of the Nazi Party.",
-                                     episodes={"S08": [13]})
+                                     episodes={"S08": [13], "S11": [14]})
     the_thule_society.knowledge = [OrganizationKnowledge.immortal_life]
 
     the_styne_family = Organization("The Styne family",
