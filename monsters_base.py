@@ -107,7 +107,7 @@ class MonsterBase:
                               "S04": [1, 4, 9, 10, 20, 21, 22], "S05": [1, 6, 10, 12, 14, 17, 20, 21, 22],
                               "S06": [7, 10, 18, 20, 21, 22], "S07": [8, 15, 17, 21, 23],
                               "S08": [1, 2, 7, 10, 17, 19, 21, 22], "S09": [2, 10, 11, 14, 16, 17, 21, 23],
-                              "S10": [1, 2, 3, 7, 9, 10, 13, 16, 17, 21], "S11": [1, 3, 6, 9, 10, 14]})
+                              "S10": [1, 2, 3, 7, 9, 10, 13, 16, 17, 21], "S11": [1, 3, 6, 9, 10, 14, 15]})
     demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                    MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                    MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -313,7 +313,7 @@ class MonsterBase:
                                                    "the Demon Tablet - dire creatures may be seen only by the damned "
                                                    "or through an object scorched with holy fire (burning holy oil).",
                          episodes={"S02": [8], "S03": [16], "S05": [10, 20], "S06": [4, 10, 14], "S08": [14],
-                                   "S09": [21]})
+                                   "S09": [21], "S11": [15]})
     hell_hound.clues = [MonstersClues.victims_hear_dogs_barking_and_growling, MonstersClues.invisible_dogs,
                         MonstersClues.victims_see_black_dogs, MonstersClues.people_seeing_strange_things,
                         MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
@@ -331,11 +331,11 @@ class MonsterBase:
                                                                "dirt, black cat cone, ones photo in the center of "
                                                                "a crossroad.",
                                episodes={"S02": [8, 22], "S04": [9], "S05": [10], "S06": [4], "S07": [8], "S08": [19],
-                                         "S09": [2, 16], "S10": [1, 3, 10, 13]})
+                                         "S09": [2, 16], "S10": [1, 3, 10, 13], "S11": [15]})
     crossroads_demon.clues = [MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
                               MonstersClues.red_eyes, MonstersClues.summoned_by_placing_box_in_the_crossroads,
                               MonstersClues.travels_as_black_fog, MonstersClues.pact_sealed_with_a_kiss,
-                              MonstersClues.people_dead_weirdly]
+                              MonstersClues.people_dead_weirdly, MonstersClues.telekinesis]
     crossroads_demon.disable_methods = [MonstersDisableMethods.devils_trap, MonstersDisableMethods.holy_water,
                                         MonstersDisableMethods.fry_its_remains]
     crossroads_demon.kill_methods = [MonstersKillMethods.colt_of_colt_with_magic_bullets,
@@ -714,7 +714,7 @@ class MonsterBase:
                                                                    "bow before the men. To upset God he twisted one of "
                                                                    "the people into Lilith.",
                                 episodes={"S04": [22], "S05": [1, 3, 4, 10, 19, 22], "S07": [1, 2, 15, 17],
-                                          "S11": [9, 10, 11, 14]})
+                                          "S11": [9, 10, 11, 14, 15]})
     archangel_lucyfer.clues = [MonstersClues.weird_things_behavior, MonstersClues.true_voice_can_hurt_people,
                                MonstersClues.bright_light, MonstersClues.weird_weather, MonstersClues.visions,
                                MonstersClues.people_seeing_strange_things, MonstersClues.biblical_like_events,
@@ -734,8 +734,9 @@ class MonsterBase:
                                MonstersClues.in_true_form_burns_eyes_of_people, MonstersClues.bible_burns_it]
     archangel_lucyfer.disable_methods = [MonstersDisableMethods.cage_of_lucyfer_in_hell,
                                          MonstersDisableMethods.colt_of_colt_with_magic_bullets,
-
                                          MonstersDisableMethods.symbol_made_with_blood_against_angels,
+                                         MonstersDisableMethods.hand_of_god,
+
                                          MonstersDisableMethods.holy_oil, MonstersDisableMethods.angel_knuckle_duster]
     archangel_lucyfer.kill_methods = [MonstersKillMethods.archangel_blade,
 
@@ -822,7 +823,7 @@ class MonsterBase:
                                       "S07": [1, 6, 8, 22, 23], "S08": [1, 2, 7, 10, 17, 19, 21, 22, 23],
                                       "S09": [2, 4, 6, 10, 11, 16, 17, 21, 23],
                                       "S10": [1, 2, 3, 7, 9, 10, 13, 16, 17, 21, 22, 23],
-                                      "S11": [1, 2, 3, 6, 9, 10, 14]})
+                                      "S11": [1, 2, 3, 6, 9, 10, 14, 15]})
     demon_crowley.clues = [MonstersClues.can_vanish, MonstersClues.pact_sealed_with_a_kiss, MonstersClues.telekinesis,
                            MonstersClues.summoned_by_placing_box_in_the_crossroads, MonstersClues.small_earth_quake,
                            MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
@@ -1639,8 +1640,9 @@ class MonsterBase:
                      MonstersClues.keeps_changing_appearances]
     quareen.kill_methods = [MonstersKillMethods.stabbing_the_heart]
 
-    unknown = Monster("Unknown", description="", episodes={"S11": [14]})
-    unknown.clues = []
+    unknown = Monster("Unknown", description="", episodes={"S11": [15]})
+    unknown.clues = [MonstersClues.weird_electronics_behavior, MonstersClues.flashing_lights,
+                     MonstersClues.weird_things_behavior, MonstersClues.people_dead_weirdly]
 
     soul_eater = Monster("Soul Eater", description="Ghost-like creature existing between worlds. Soul eater moves into "
                                                    "a house and makes a nest, which exists outside time and space. "

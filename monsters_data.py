@@ -562,6 +562,7 @@ class MonstersDisableMethods:
     rowenas_immobilization_spell = "Rowena's immobilization spell"
     darkness_powers = "Darkness' powers"
     will_of_an_archangel = "will of an Archangel"
+    hand_of_god = "hand of GOD"
 
 
 class MonstersCureMethods:
