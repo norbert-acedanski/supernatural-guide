@@ -107,7 +107,7 @@ class MonsterBase:
                               "S04": [1, 4, 9, 10, 20, 21, 22], "S05": [1, 6, 10, 12, 14, 17, 20, 21, 22],
                               "S06": [7, 10, 18, 20, 21, 22], "S07": [8, 15, 17, 21, 23],
                               "S08": [1, 2, 7, 10, 17, 19, 21, 22], "S09": [2, 10, 11, 14, 16, 17, 21, 23],
-                              "S10": [1, 2, 3, 7, 9, 10, 13, 16, 17, 21], "S11": [1, 3, 6, 9, 10]})
+                              "S10": [1, 2, 3, 7, 9, 10, 13, 16, 17, 21], "S11": [1, 3, 6, 9, 10, 14]})
     demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                    MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                    MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -577,7 +577,7 @@ class MonsterBase:
                               "S05": [1, 2, 3, 4, 5, 8, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22],
                               "S06": [3, 6, 7, 10, 12, 15, 17, 18, 19, 20, 21, 22], "S07": [1, 17, 20, 21, 23],
                               "S08": [2, 7, 8, 10, 17, 19, 21, 22, 23], "S09": [9, 10, 11, 14, 18, 21, 22, 23],
-                              "S10": [1, 2, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22, 23], "S11": [1, 2, 3, 6, 9, 10]})
+                              "S10": [1, 2, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22, 23], "S11": [1, 2, 3, 6, 9, 10, 14]})
     angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                    MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion, MonstersClues.has_wings,
                    MonstersClues.leaves_burned_marks, MonstersClues.weird_electronics_behavior,
@@ -714,7 +714,7 @@ class MonsterBase:
                                                                    "bow before the men. To upset God he twisted one of "
                                                                    "the people into Lilith.",
                                 episodes={"S04": [22], "S05": [1, 3, 4, 10, 19, 22], "S07": [1, 2, 15, 17],
-                                          "S11": [9, 10, 11]})
+                                          "S11": [9, 10, 11, 14]})
     archangel_lucyfer.clues = [MonstersClues.weird_things_behavior, MonstersClues.true_voice_can_hurt_people,
                                MonstersClues.bright_light, MonstersClues.weird_weather, MonstersClues.visions,
                                MonstersClues.people_seeing_strange_things, MonstersClues.biblical_like_events,
@@ -727,7 +727,8 @@ class MonsterBase:
                                MonstersClues.flashing_lights, MonstersClues.telekinesis, MonstersClues.double_tongue,
                                MonstersClues.weird_fire_spontaneous_combustion, MonstersClues.revelation_omens,
                                MonstersClues.can_go_and_put_into_a_persons_mind, MonstersClues.can_posses_an_angel,
-                               MonstersClues.high_strength, MonstersClues.invulnerable,
+                               MonstersClues.high_strength, MonstersClues.invulnerable, MonstersClues.can_time_travel,
+                               MonstersClues.can_send_people_to_the_past,
 
                                MonstersClues.travels_as_white_fog, MonstersClues.people_burned_on_the_ceiling,
                                MonstersClues.in_true_form_burns_eyes_of_people, MonstersClues.bible_burns_it]
@@ -820,7 +821,8 @@ class MonsterBase:
                             episodes={"S05": [10, 20, 21], "S06": [4, 7, 8, 10, 19, 20, 21, 22],
                                       "S07": [1, 6, 8, 22, 23], "S08": [1, 2, 7, 10, 17, 19, 21, 22, 23],
                                       "S09": [2, 4, 6, 10, 11, 16, 17, 21, 23],
-                                      "S10": [1, 2, 3, 7, 9, 10, 13, 16, 17, 21, 22, 23], "S11": [1, 2, 3, 6, 9, 10]})
+                                      "S10": [1, 2, 3, 7, 9, 10, 13, 16, 17, 21, 22, 23],
+                                      "S11": [1, 2, 3, 6, 9, 10, 14]})
     demon_crowley.clues = [MonstersClues.can_vanish, MonstersClues.pact_sealed_with_a_kiss, MonstersClues.telekinesis,
                            MonstersClues.summoned_by_placing_box_in_the_crossroads, MonstersClues.small_earth_quake,
                            MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
@@ -1637,10 +1639,8 @@ class MonsterBase:
                      MonstersClues.keeps_changing_appearances]
     quareen.kill_methods = [MonstersKillMethods.stabbing_the_heart]
 
-    unknown = Monster("Unknown", description="", episodes={"S11": [13]})
-    unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.missing_heart, MonstersClues.animal_like_attack,
-                     MonstersClues.high_strength, MonstersClues.being_at_two_places_at_once, MonstersClues.bright_eyes,
-                     MonstersClues.keeps_changing_appearances]
+    unknown = Monster("Unknown", description="", episodes={"S11": [14]})
+    unknown.clues = []
 
     soul_eater = Monster("Soul Eater", description="Ghost-like creature existing between worlds. Soul eater moves into "
                                                    "a house and makes a nest, which exists outside time and space. "
