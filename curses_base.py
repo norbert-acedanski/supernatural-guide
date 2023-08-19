@@ -354,6 +354,12 @@ class CursesBase:
     kiss_of_death.clues = [CursesClues.sealed_with_a_kiss, CursesClues.the_last_person_that_got_kissed_dies]
     kiss_of_death.disable_methods = [CursesDisableMethods.kill_the_witch_that_cursed_a_person]
 
+    spell_of_gathering = Curse("Spell of Gathering", description="It's an incantation used to 'focus power of "
+                                                                 "celestial beings against all drawn forms of "
+                                                                 "evasion.' The spell was designed to clear all "
+                                                                 "mystical or occult blockages. It requires a power of "
+                                                                 "an archangel.", episodes={"S11": [14]})
+
     # SEASON 12:
 
     memory_curse = Curse("Memory curse")
