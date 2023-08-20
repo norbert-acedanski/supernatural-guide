@@ -248,6 +248,7 @@ class MonstersClues:
     can_control_water = "can control water"
     can_posses_a_reaper = "can posses a reaper"
     can_posses_an_angel = "can posses an angel"
+    can_posses_an_archangel = "can posses an archangel"
     can_posses_a_person = "can posses a person"
     can_posses_a_person_possessed_by_an_angel = "can posses a person possessed by an angel"
     can_take_form_of_other_people = "can take form of other people"
@@ -284,6 +285,7 @@ class MonstersClues:
     can_send_people_back_to_their_time = "can send people back to their time"
     can_teleport_people = "can teleport people"
     can_teleport_angels = "can teleport Angels"
+    can_teleport_archangels = "can teleport Archangels"
     can_give_people_diseases = "can give people diseases"
     can_give_hallucinations = "can give hallucinations"
     can_hear_angel_radio = "can hear angel radio"
@@ -316,6 +318,7 @@ class MonstersClues:
     can_give_others_knowledge = "can give others knowledge"
     can_make_people_younger = "can make people younger"
     can_make_people_immortal = "can make people immortal"
+    can_shake_heaven = "can shake heaven"
     people_with_souls_switched = "people with souls switched"
     poisoned_people = "poisoned people"
     demon_killing_knife_is_ineffective = "demon killing knife is ineffective"
@@ -398,6 +401,7 @@ class MonstersClues:
     fraud_ghost_stuff = "fraud ghost stuff (EMF generator, speakers with recorded screams, whispers, etc., " \
                         "devices for lights flickering)"
     attached_to_a_specific_object = "attached to a specific object or set of objects"
+    hand_of_god_does_not_affect_it = "Hand of GOD does not affect it"
 
 
 class MonstersKillMethods:
