@@ -180,7 +180,7 @@ class MonsterBase:
                                            "in and out.When a reaper dies, there are electrical storms. One of the "
                                            "Reapers is Tesa (killed by Dean in S09E22).",
                      episodes={"S01": [12], "S02": [1], "S04": [15], "S05": [10, 21], "S06": [11], "S07": [10],
-                               "S08": [19], "S09": [3, 22], "S11": [2, 10]})
+                               "S08": [19], "S09": [3, 22], "S11": [2, 10, 17]})
     reaper.clues = [MonstersClues.people_dead_weirdly, MonstersClues.people_cured_miraculously,
                     MonstersClues.weird_things_behavior, MonstersClues.people_seeing_things_or_figures,
                     MonstersClues.seen_as_a_person_in_a_suit, MonstersClues.ghost_like_creature,
@@ -402,7 +402,7 @@ class MonsterBase:
                                                "lunar cycle. Pure bloods don't blackout during the transformation and "
                                                "can control themselves. Some have been able to subsist off of "
                                                "animal hearts. Also mentioned in S01E16.",
-                       episodes={"S02": [17], "S08": [4], "S09": [12, 20], "S10": [4]})
+                       episodes={"S02": [17], "S08": [4], "S09": [12, 20], "S10": [4], "S11": [17]})
     werewolf.clues = [MonstersClues.body_torn_apart, MonstersClues.animal_like_attack, MonstersClues.missing_heart,
                       MonstersClues.murders_during_full_moon_week, MonstersClues.claws, MonstersClues.attacks_at_night,
                       MonstersClues.animal_like_noises, MonstersClues.amnesia_blackout, MonstersClues.high_strength,
@@ -1668,11 +1668,8 @@ class MonsterBase:
     soul_eater.disable_methods = [MonstersDisableMethods.celtic_sigil_to_trap_monsters]
     soul_eater.kill_methods = [MonstersKillMethods.celtic_sigil]
 
-    unknown = Monster("Unknown", description="", episodes={"S11": [16]})
-    unknown.clues = [MonstersClues.cold_spots, MonstersClues.weird_noises, MonstersClues.flashing_lights,
-                     MonstersClues.weird_electronics_behavior, MonstersClues.children_seeing_things_or_figures,
-                     MonstersClues.emf,
-                     MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area]
+    unknown = Monster("Unknown", description="", episodes={"S11": [17]})
+    unknown.clues = []
 
     bissan = Monster("Bissan", description="Spirits of the Cicada. Every 27 years they come out and have orgies. "
                                            "They can't multiply on their own due to a lack of junk, so they 'posses' "
