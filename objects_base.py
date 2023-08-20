@@ -103,7 +103,8 @@ class ObjectsBase:
     angel_blade = Object("Angel blade", description="A triangular, silvery blade, that each angel has.",
                          episodes={"S04": [16], "S05": [1, 13, 18], "S06": [3, 10, 17, 18, 22], "S07": [21],
                                    "S08": [7, 10, 17, 21, 22, 23], "S09": [1, 2, 3, 6, 9, 10, 11, 14, 16, 18, 21, 22, 23],
-                                   "S10": [1, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22], "S11": [1, 2, 3, 6, 9, 10, 11, 15]})
+                                   "S10": [1, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22],
+                                   "S11": [1, 2, 3, 6, 9, 10, 11, 15, 18]})
     angel_blade.abilities = [ObjectAbilities.can_kill_angels, ObjectAbilities.can_kill_demons]
 
     lucifers_cage = Object("Lucifer's Cage", description="A prison build specifically to contain archangelic powers "
@@ -338,7 +339,7 @@ class ObjectsBase:
                                                     "It should not be touched by hand by a person. It's powers are "
                                                     "unstable and no person can withstand the direct contact for long. "
                                                     "In order to use it, a person has to touch it. These are one time "
-                                                    "use only objects.", episodes={"S11": [14, 15]})
+                                                    "use only objects.", episodes={"S11": [14, 15, 18]})
     hand_of_god.abilities = [ObjectAbilities.grants_incredible_power, ObjectAbilities.can_kill_demons]
 
     sigil_against_celestial_beings = Object("Sigil against celestial beings",
@@ -352,7 +353,11 @@ class ObjectsBase:
     rod_of_aaron = Object("Rod of Aaron", description="Created by GOD on the sixth day and given to Aaron, brother of "
                                                       "Moses. It is a Hand of GOD. Used by Crowley in S11E15.",
                           episodes={"S11": [15]})
-    hand_of_god.abilities = [ObjectAbilities.grants_incredible_power, ObjectAbilities.can_kill_demons]
+    rod_of_aaron.abilities = [ObjectAbilities.grants_incredible_power, ObjectAbilities.can_kill_demons]
+
+    horn_of_joshua = Object("Horn of Joshua", description="A shofar. Object touched by the hand of GOD.",
+                            episodes={"S11": [18]})
+    horn_of_joshua.abilities = [ObjectAbilities.grants_incredible_power]
 
     # SEASON 12:
 
