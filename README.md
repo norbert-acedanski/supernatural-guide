@@ -45,6 +45,7 @@ If you are a fan of Supernatural show, you can play with this project to find ou
 - Sam had a Zanna friend, named Sully when he was young (from S11E08)
 - Lucifer mentions "Lucifer" TV series about Lucifer solving crimes in S11E10
 - Castiel is possessed by Lucifer in S11E10
+- Sam went into death shock in S11E17
 
 # TODO:
 - finish all seasons and episodes.
