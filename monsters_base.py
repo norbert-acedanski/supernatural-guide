@@ -1640,18 +1640,39 @@ class MonsterBase:
                      MonstersClues.keeps_changing_appearances]
     quareen.kill_methods = [MonstersKillMethods.stabbing_the_heart]
 
-    unknown = Monster("Unknown", description="", episodes={"S11": [15]})
-    unknown.clues = [MonstersClues.weird_electronics_behavior, MonstersClues.flashing_lights,
-                     MonstersClues.weird_things_behavior, MonstersClues.people_dead_weirdly]
+    baku = Monster("Baku", description="Japanese monster, that Bobby and Rufus hunted together in Alaska. Not seen, "
+                                       "only mentioned in S11E16.")
+    baku.clues = [MonstersClues.emf, MonstersClues.weird_noises, MonstersClues.ghost_like_creature,
+                  MonstersClues.cold_spots, MonstersClues.flashing_lights, MonstersClues.leaves_burned_marks]
 
-    soul_eater = Monster("Soul Eater", description="Ghost-like creature existing between worlds. Soul eater moves into "
-                                                   "a house and makes a nest, which exists outside time and space. "
-                                                   "The nest feels like a house that a soul eater is in.")
+    soul_eater = Monster("Soul Eater", description="Undead ghost-like creature that feeds on souls and existing "
+                                                   "between worlds. Soul eater moves into a house and makes a nest, "
+                                                   "which exists outside time and space. The nest feels like a house "
+                                                   "that a soul eater is in. They aren't really here or there, but can "
+                                                   "muster enough strength to bring their victims' souls out of this "
+                                                   "world and into their nest. As soon as the victims are in the nest, "
+                                                   "they're outside of our space and time. The nest messes with "
+                                                   "victims' heads. Shows them things they love, parts of their soul, "
+                                                   "in distress. It keeps souls vulnerable. In order to kill the Soul "
+                                                   "Eater a proper sigil has to be drawn inside the house and in the "
+                                                   "nest. A soul eater can possess a body of a person, that is already "
+                                                   "in the nest.", episodes={"S11": [16]})
     soul_eater.clues = [MonstersClues.emf, MonstersClues.victims_in_coma_fading_and_dying, MonstersClues.weird_noises,
-                        MonstersClues.ghost_like_creature, MonstersClues.cold_spots, MonstersClues.flashing_lights,
-                        MonstersClues.feeling_of_something_bad]
+                        MonstersClues.ghost_like_creature, MonstersClues.cold_spots, MonstersClues.leaves_burned_marks,
+                        MonstersClues.feeling_of_something_bad, MonstersClues.weird_electronics_behavior,
+                        MonstersClues.children_seeing_things_or_figures, MonstersClues.salt_does_not_affect_it,
+                        MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
+                        MonstersClues.burning_remains_does_not_affect_it, MonstersClues.victims_dream_about_their_house,
+                        MonstersClues.white_eyes, MonstersClues.people_acting_weirdly, MonstersClues.flashing_lights,
+                        MonstersClues.can_posses_a_person]
     soul_eater.disable_methods = [MonstersDisableMethods.celtic_sigil_to_trap_monsters]
     soul_eater.kill_methods = [MonstersKillMethods.celtic_sigil]
+
+    unknown = Monster("Unknown", description="", episodes={"S11": [16]})
+    unknown.clues = [MonstersClues.cold_spots, MonstersClues.weird_noises, MonstersClues.flashing_lights,
+                     MonstersClues.weird_electronics_behavior, MonstersClues.children_seeing_things_or_figures,
+                     MonstersClues.emf,
+                     MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area]
 
     bissan = Monster("Bissan", description="Spirits of the Cicada. Every 27 years they come out and have orgies. "
                                            "They can't multiply on their own due to a lack of junk, so they 'posses' "
