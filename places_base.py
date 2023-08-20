@@ -53,6 +53,9 @@ class PlacesBase:
                                  "spell - it can open door to any place in Oz.", episodes={"S09": [4]})
     oz.clues = [PlaceClues.castle_structure_on_a_hill, PlaceClues.golden_path, PlaceClues.emerald_city]
 
+    empty = Place("Empty", description="Place, where a Reaper want's Sam and Dean to go when they die. Mentioned in "
+                                       "S11E17.")
+
     def __init__(self):
         self.places = [place for place in self.__class__.__dict__.values() if isinstance(place, Place)]
         self.clues = [clue for key, clue in list(PlaceClues.__dict__.items()) if not key.startswith("__")]
