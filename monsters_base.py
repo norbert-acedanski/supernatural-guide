@@ -1673,16 +1673,23 @@ class MonsterBase:
     soul_eater.disable_methods = [MonstersDisableMethods.celtic_sigil_to_trap_monsters]
     soul_eater.kill_methods = [MonstersKillMethods.celtic_sigil]
 
-    unknown = Monster("Unknown", description="", episodes={"S11": [18]})
-    unknown.clues = []
-
-    bissan = Monster("Bissan", description="Spirits of the Cicada. Every 27 years they come out and have orgies. "
+    bisaan = Monster("Bisaan", description="Cicada-like spirits. Every 27 years they come out and have orgies. They "
+                                           "make a specific buzzing/chittering sound when they start to emerge. They "
+                                           "are rare in North America. They probably originated in Malaysia's forests. "
                                            "They can't multiply on their own due to a lack of junk, so they 'posses' "
-                                           "people to do it.")
-    bissan.clues = [MonstersClues.junkless_creature, MonstersClues.mutant_pale_creature, MonstersClues.green_eyes,
+                                           "people to do it. The sound they make is a mating call.",
+                     episodes={"S11": [19]})
+    bisaan.clues = [MonstersClues.junkless_creature, MonstersClues.mutant_pale_creature, MonstersClues.green_eyes,
                     MonstersClues.weird_noises, MonstersClues.missing_or_dead_people_regularly_in_the_same_area,
-                    MonstersClues.needle_like_teeth]
-    bissan.kill_methods = [MonstersKillMethods.decapitation]
+                    MonstersClues.needle_like_teeth, MonstersClues.people_seeing_things_or_figures,
+                    MonstersClues.people_seeing_strange_things]
+    bisaan.kill_methods = [MonstersKillMethods.decapitation]
+
+    unknown = Monster("Unknown", description="", episodes={"S11": [19]})
+    unknown.clues = [MonstersClues.weird_noises, MonstersClues.people_seeing_strange_things, MonstersClues.green_eyes,
+                     MonstersClues.junkless_creature, MonstersClues.missing_or_dead_people_regularly_in_the_same_area,
+                     MonstersClues.needle_like_teeth, MonstersClues.mutant_pale_creature,
+                     MonstersClues.people_seeing_things_or_figures]
 
     # ---------------------------------------------------- SEASON 12 ---------------------------------------------------
 
