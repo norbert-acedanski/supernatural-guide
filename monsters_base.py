@@ -693,9 +693,11 @@ class MonsterBase:
                                                          "Only one prophet can exist at a time. There are multiple "
                                                          "people in the world, that can become one if needed. Prophets "
                                                          "throughout the series: Chuck Shurley, Kevin Tran (Killed by "
-                                                         "Gadreel in S09E09). Chuck came back in S10E05.",
+                                                         "Gadreel in S09E09). Chuck came back in S10E05. Next Prophet, "
+                                                         "that Winchesters encounter in S11E21 is professor Donatello "
+                                                         "Redfield.",
                       episodes={"S04": [18, 22], "S05": [1, 9, 22], "S07": [21, 22, 23],
-                                "S08": [1, 2, 7, 10, 14, 19, 21, 23], "S09": [2, 6, 9], "S10": [5]})
+                                "S08": [1, 2, 7, 10, 14, 19, 21, 23], "S09": [2, 6, 9], "S10": [5], "S11": [21]})
     prophet.clues = [MonstersClues.can_see_future, MonstersClues.protected_by_an_archangel, MonstersClues.visions,
                      MonstersClues.can_repair_broken_word_of_god, MonstersClues.can_read_word_of_god,
                      MonstersClues.weird_weather, MonstersClues.missing_or_dead_people_regularly_in_different_areas]
@@ -717,7 +719,7 @@ class MonsterBase:
                                                                    "bow before the men. To upset God he twisted one of "
                                                                    "the people into Lilith.",
                                 episodes={"S04": [22], "S05": [1, 3, 4, 10, 19, 22], "S07": [1, 2, 15, 17],
-                                          "S11": [9, 10, 11, 14, 15, 18]})
+                                          "S11": [9, 10, 11, 14, 15, 18, 21]})
     archangel_lucyfer.clues = [MonstersClues.weird_things_behavior, MonstersClues.true_voice_can_hurt_people,
                                MonstersClues.bright_light, MonstersClues.weird_weather, MonstersClues.visions,
                                MonstersClues.people_seeing_strange_things, MonstersClues.biblical_like_events,
@@ -774,12 +776,14 @@ class MonsterBase:
                                          "in S07E01 talking to Castiel. In S11E20 it is revealed, that Chuck Shurley "
                                          "is GOD. According to GOD, he is being, Amara is nothingness. HE created "
                                          "life, because he was lonely. Whenever he created a new world, Amara would "
-                                         "destroy it.", episodes={"S11": [4, 20]})
+                                         "destroy it.", episodes={"S11": [4, 20, 21]})
     god.clues = [MonstersClues.can_bring_back_dead_angels, MonstersClues.can_teleport_people, MonstersClues.can_vanish,
                  MonstersClues.shining_of_magic_amulet, MonstersClues.visions, MonstersClues.can_appear_out_of_thin_air,
                  MonstersClues.can_bring_back_angelic_grace, MonstersClues.knows_past, MonstersClues.telekinesis,
                  MonstersClues.can_make_themselves_appear_as_they_like, MonstersClues.weird_electronics_behavior,
-                 MonstersClues.can_give_others_knowledge, MonstersClues.people_cured_miraculously]
+                 MonstersClues.can_give_others_knowledge, MonstersClues.people_cured_miraculously,
+                 MonstersClues.weird_things_behavior, MonstersClues.things_disappearing,
+                 MonstersClues.can_repair_an_archangel]
     god.kill_methods = [
 
                         MonstersKillMethods.the_darkness]
@@ -1353,9 +1357,10 @@ class MonsterBase:
                          MonstersKillMethods.the_arrow_of_artemis]
 
     angel_metatron = Monster("Angel Metatron", description="Scribe of GOD. One of the angels. Metatron broke the "
-                                                           "fourth wall in S09E18.",
+                                                           "fourth wall in S09E18. His grace was removed in S10E17. "
+                                                           "He was killed in S11E21 by Amara.",
                              episodes={"S08": [21, 22, 23], "S09": [9, 10, 18, 22, 23], "S10": [2, 10, 17, 18],
-                                       "S11": [6, 20]})
+                                       "S11": [6, 20, 21]})
     angel_metatron.clues = [MonstersClues.immortal, MonstersClues.can_vanish, MonstersClues.can_give_hallucinations,
                             MonstersClues.can_erase_anti_angel_marks, MonstersClues.can_appear_out_of_thin_air,
                             MonstersClues.can_repair_human_body, MonstersClues.can_put_down_holy_fire,
@@ -1444,8 +1449,9 @@ class MonsterBase:
     ghost_kevin = Monster("Ghost Kevin", description="Ghost of prophet Kevin Tran. Kevin was killed in S09E09. Kevin "
                                                      "is stuck on Earth even though his body was cremated by Dean. "
                                                      "According to Kevin, every person, that died after the Angels "
-                                                     "fell cannot go to Heaven.",
-                          episodes={"S09": [14]})
+                                                     "fell cannot go to Heaven. It is revealed by GOD, that he was in "
+                                                     "the Veil the whole time. GOD moved him to Heaven in S11E21.",
+                          episodes={"S09": [14], "S11": [21]})
     ghost_kevin.clues = [MonstersClues.weird_things_behavior, MonstersClues.emf, MonstersClues.ghost_like_creature,
                          MonstersClues.weird_electronics_behavior, MonstersClues.can_appear_out_of_thin_air,
                          MonstersClues.can_vanish, MonstersClues.invisible_entity]
@@ -1554,7 +1560,7 @@ class MonsterBase:
                                                "by all of the Angels single blow for a while. If that happens, a lot "
                                                "of darkness is released to the neighbourhood. When she wakes up, she "
                                                "can take in the darkness back, but is hurt by the blow.",
-                       episodes={"S10": [23], "S11": [1, 2, 3, 5, 6, 9, 10, 18]})
+                       episodes={"S10": [23], "S11": [1, 2, 3, 5, 6, 9, 10, 18, 21]})
     darkness.clues = [MonstersClues.enormous_black_fog, MonstersClues.can_teleport_people, MonstersClues.can_vanish,
                       MonstersClues.seen_as_a_woman, MonstersClues.people_dead_weirdly, MonstersClues.black_veins,
                       MonstersClues.leaves_zombie_like_people_with_black_veins_around_neck, MonstersClues.telekinesis,
@@ -1574,7 +1580,7 @@ class MonsterBase:
     rabid = Monster("Rabid", description="Created by The Darkness. The disease can be passed by bleeding on another "
                                          "person. After some time (it is different for every person, it can be "
                                          "4 hours, it can be a day) a person becomes one of them. After a while, "
-                                         "a Rabid dies.", episodes={"S11": [1, 2, 20]})
+                                         "a Rabid dies.", episodes={"S11": [1, 2, 20, 21]})
     rabid.clues = [MonstersClues.black_veins, MonstersClues.people_acting_weirdly, MonstersClues.aggression,
                    MonstersClues.intelligent, MonstersClues.infected_with_blood_to_blood_contact,
                    MonstersClues.people_loosing_their_minds, MonstersClues.white_fog]
@@ -1691,7 +1697,7 @@ class MonsterBase:
                     MonstersClues.people_seeing_strange_things]
     bisaan.kill_methods = [MonstersKillMethods.decapitation]
 
-    unknown = Monster("Unknown", description="", episodes={"S11": [20]})
+    unknown = Monster("Unknown", description="", episodes={"S11": [21]})
     unknown.clues = []
 
     # ---------------------------------------------------- SEASON 12 ---------------------------------------------------

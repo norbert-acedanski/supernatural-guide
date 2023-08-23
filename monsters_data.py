@@ -272,6 +272,7 @@ class MonstersClues:
     can_bring_back_angelic_grace = "can bring back angelic grace"
     can_summon_ghosts = "can summon ghosts"
     can_repair_human_body = "can repair human body"
+    can_repair_an_archangel = "can repair an Archangel"
     can_repair_broken_word_of_god = "can repair broken word of GOD"
     can_read_word_of_god = "can read word of GOD"
     can_control_demons = "can control demons"
