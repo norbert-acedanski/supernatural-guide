@@ -46,6 +46,8 @@ If you are a fan of Supernatural show, you can play with this project to find ou
 - Lucifer mentions "Lucifer" TV series about Lucifer solving crimes in S11E10
 - Castiel is possessed by Lucifer in S11E10
 - Sam went into death shock in S11E17
+- Winchesters recognize Chuck Shurley as GOD in S11E20
+- GOD performs "Fare Thee Well" in S11E20 on guitar
 
 # TODO:
 - finish all seasons and episodes.
