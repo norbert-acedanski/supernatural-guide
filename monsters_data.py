@@ -312,6 +312,7 @@ class MonstersClues:
     can_time_travel = "can time travel"
     can_turn_people_into_monsters = "can turn people into monsters"
     can_remove_death_binding_spell = "can remove death binding spell"
+    can_remove_protection_sigils = "can remove protection sigils"
     can_transfer_mental_diseases = "can transfer mental diseases"
     can_go_and_put_into_a_persons_mind = "can go and put into a persons mind"
     can_erase_anti_angel_marks = "can erase anti-angel marks"
@@ -520,6 +521,7 @@ class MonstersDisableMethods:
     cage_of_lucyfer_in_hell = "cage of Lucyfer in hell"
     witch_catcher = "witch catcher (used during the Inquisition)"
     all_of_angels_single_blow = "all of angels single blow (release of energy)"
+    a_few_witches_power = "a few witches power (combined purple power of 5 witches)"
     celtic_imprisonment_sigil = "celtic imprisonment sigil"
     symbol_made_with_blood_against_angels = "symbol made with blood against angels (for low and high tier)"
     celtic_sigil_to_trap_monsters = "celtic sigil to trap monsters"
@@ -571,6 +573,7 @@ class MonstersDisableMethods:
     darkness_powers = "Darkness' powers"
     will_of_an_archangel = "will of an Archangel"
     hand_of_god = "hand of GOD"
+    lucifers_spear = "Lucifer's spear"
 
 
 class MonstersCureMethods:

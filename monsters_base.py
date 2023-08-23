@@ -107,7 +107,7 @@ class MonsterBase:
                               "S04": [1, 4, 9, 10, 20, 21, 22], "S05": [1, 6, 10, 12, 14, 17, 20, 21, 22],
                               "S06": [7, 10, 18, 20, 21, 22], "S07": [8, 15, 17, 21, 23],
                               "S08": [1, 2, 7, 10, 17, 19, 21, 22], "S09": [2, 10, 11, 14, 16, 17, 21, 23],
-                              "S10": [1, 2, 3, 7, 9, 10, 13, 16, 17, 21], "S11": [1, 3, 6, 9, 10, 14, 15, 18]})
+                              "S10": [1, 2, 3, 7, 9, 10, 13, 16, 17, 21], "S11": [1, 3, 6, 9, 10, 14, 15, 18, 22]})
     demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                    MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                    MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -494,7 +494,7 @@ class MonsterBase:
                                          "Back in S11E18. It is revealed, that she was prepared for her death - when a "
                                          "spell sensed her death, it revived her.",
                     episodes={"S03": [9], "S04": [7, 12], "S05": [7, 12], "S07": [5], "S08": [7, 15],
-                              "S10": [3, 7, 9, 10, 13, 16, 17, 18, 19, 21, 22, 23], "S11": [3, 9, 10, 13, 18]})
+                              "S10": [3, 7, 9, 10, 13, 16, 17, 18, 19, 21, 22, 23], "S11": [3, 9, 10, 13, 18, 22]})
     witch.clues = [MonstersClues.people_dead_weirdly, MonstersClues.hex_bag_hidden_somewhere, MonstersClues.immortal,
                    MonstersClues.coin_hidden_somewhere, MonstersClues.weird_electronics_behavior,
                    MonstersClues.telekinesis, MonstersClues.can_vanish, MonstersClues.weird_plant_deaths_or_behavior,
@@ -580,7 +580,7 @@ class MonsterBase:
                               "S06": [3, 6, 7, 10, 12, 15, 17, 18, 19, 20, 21, 22], "S07": [1, 17, 20, 21, 23],
                               "S08": [2, 7, 8, 10, 17, 19, 21, 22, 23], "S09": [9, 10, 11, 14, 18, 21, 22, 23],
                               "S10": [1, 2, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22, 23],
-                              "S11": [1, 2, 3, 6, 9, 10, 14, 18]})
+                              "S11": [1, 2, 3, 6, 9, 10, 14, 18, 22]})
     angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                    MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion, MonstersClues.has_wings,
                    MonstersClues.leaves_burned_marks, MonstersClues.weird_electronics_behavior,
@@ -640,7 +640,7 @@ class MonsterBase:
                                                        "Thaddeus, Abner, Hannah, Ezra, Esther, Asariel, Purah. Gadreel "
                                                        "was the Angel, that let Lucifer into the Garden of Eden.",
                            episodes={"S04": [9, 10], "S08": [23], "S09": [1, 2, 3, 4, 5, 8, 9, 10, 14, 18, 21, 22, 23],
-                                     "S10": [1, 2, 3, 7, 10, 17], "S11": [1, 2, 3, 11, 18]})
+                                     "S10": [1, 2, 3, 7, 10, 17], "S11": [1, 2, 3, 11, 1, 228]})
     fallen_angel.clues = [MonstersClues.people_hear_voices, MonstersClues.can_see_real_appearance_of_entities,
                           MonstersClues.telekinesis, MonstersClues.people_acting_weirdly, MonstersClues.falling_meteor,
                           MonstersClues.can_hear_angel_radio, MonstersClues.can_erase_and_bring_back_memories,
@@ -697,7 +697,7 @@ class MonsterBase:
                                                          "that Winchesters encounter in S11E21 is professor Donatello "
                                                          "Redfield.",
                       episodes={"S04": [18, 22], "S05": [1, 9, 22], "S07": [21, 22, 23],
-                                "S08": [1, 2, 7, 10, 14, 19, 21, 23], "S09": [2, 6, 9], "S10": [5], "S11": [21]})
+                                "S08": [1, 2, 7, 10, 14, 19, 21, 23], "S09": [2, 6, 9], "S10": [5], "S11": [21, 22]})
     prophet.clues = [MonstersClues.can_see_future, MonstersClues.protected_by_an_archangel, MonstersClues.visions,
                      MonstersClues.can_repair_broken_word_of_god, MonstersClues.can_read_word_of_god,
                      MonstersClues.weird_weather, MonstersClues.missing_or_dead_people_regularly_in_different_areas]
@@ -719,7 +719,7 @@ class MonsterBase:
                                                                    "bow before the men. To upset God he twisted one of "
                                                                    "the people into Lilith.",
                                 episodes={"S04": [22], "S05": [1, 3, 4, 10, 19, 22], "S07": [1, 2, 15, 17],
-                                          "S11": [9, 10, 11, 14, 15, 18, 21]})
+                                          "S11": [9, 10, 11, 14, 15, 18, 21, 22]})
     archangel_lucyfer.clues = [MonstersClues.weird_things_behavior, MonstersClues.true_voice_can_hurt_people,
                                MonstersClues.bright_light, MonstersClues.weird_weather, MonstersClues.visions,
                                MonstersClues.people_seeing_strange_things, MonstersClues.biblical_like_events,
@@ -776,7 +776,8 @@ class MonsterBase:
                                          "in S07E01 talking to Castiel. In S11E20 it is revealed, that Chuck Shurley "
                                          "is GOD. According to GOD, he is being, Amara is nothingness. HE created "
                                          "life, because he was lonely. Whenever he created a new world, Amara would "
-                                         "destroy it.", episodes={"S11": [4, 20, 21]})
+                                         "destroy it. GOD is heavily weakened by the Darkness in S11E22.",
+                  episodes={"S11": [4, 20, 21, 22]})
     god.clues = [MonstersClues.can_bring_back_dead_angels, MonstersClues.can_teleport_people, MonstersClues.can_vanish,
                  MonstersClues.shining_of_magic_amulet, MonstersClues.visions, MonstersClues.can_appear_out_of_thin_air,
                  MonstersClues.can_bring_back_angelic_grace, MonstersClues.knows_past, MonstersClues.telekinesis,
@@ -784,6 +785,7 @@ class MonsterBase:
                  MonstersClues.can_give_others_knowledge, MonstersClues.people_cured_miraculously,
                  MonstersClues.weird_things_behavior, MonstersClues.things_disappearing,
                  MonstersClues.can_repair_an_archangel]
+    god.disable_methods = [MonstersDisableMethods.darkness_powers]
     god.kill_methods = [
 
                         MonstersKillMethods.the_darkness]
@@ -836,7 +838,7 @@ class MonsterBase:
                                       "S07": [1, 6, 8, 22, 23], "S08": [1, 2, 7, 10, 17, 19, 21, 22, 23],
                                       "S09": [2, 4, 6, 10, 11, 16, 17, 21, 23],
                                       "S10": [1, 2, 3, 7, 9, 10, 13, 16, 17, 21, 22, 23],
-                                      "S11": [1, 2, 3, 6, 9, 10, 14, 15, 18]})
+                                      "S11": [1, 2, 3, 6, 9, 10, 14, 15, 18, 22]})
     demon_crowley.clues = [MonstersClues.can_vanish, MonstersClues.pact_sealed_with_a_kiss, MonstersClues.telekinesis,
                            MonstersClues.summoned_by_placing_box_in_the_crossroads, MonstersClues.small_earth_quake,
                            MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
@@ -1560,7 +1562,7 @@ class MonsterBase:
                                                "by all of the Angels single blow for a while. If that happens, a lot "
                                                "of darkness is released to the neighbourhood. When she wakes up, she "
                                                "can take in the darkness back, but is hurt by the blow.",
-                       episodes={"S10": [23], "S11": [1, 2, 3, 5, 6, 9, 10, 18, 21]})
+                       episodes={"S10": [23], "S11": [1, 2, 3, 5, 6, 9, 10, 18, 21, 22]})
     darkness.clues = [MonstersClues.enormous_black_fog, MonstersClues.can_teleport_people, MonstersClues.can_vanish,
                       MonstersClues.seen_as_a_woman, MonstersClues.people_dead_weirdly, MonstersClues.black_veins,
                       MonstersClues.leaves_zombie_like_people_with_black_veins_around_neck, MonstersClues.telekinesis,
@@ -1570,8 +1572,9 @@ class MonsterBase:
                       MonstersClues.weird_things_behavior, MonstersClues.can_kill_angels_with_power_of_will,
                       MonstersClues.can_teleport_angels, MonstersClues.can_teleport_archangels,
                       MonstersClues.electrical_storms, MonstersClues.can_shake_heaven, MonstersClues.small_earth_quake,
-                      MonstersClues.hand_of_god_does_not_affect_it]
-    darkness.disable_methods = [MonstersDisableMethods.all_of_angels_single_blow]
+                      MonstersClues.hand_of_god_does_not_affect_it, MonstersClues.can_remove_protection_sigils]
+    darkness.disable_methods = [MonstersDisableMethods.all_of_angels_single_blow,
+                                MonstersDisableMethods.a_few_witches_power, MonstersDisableMethods.lucifers_spear]
 
     # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
 
@@ -1697,7 +1700,7 @@ class MonsterBase:
                     MonstersClues.people_seeing_strange_things]
     bisaan.kill_methods = [MonstersKillMethods.decapitation]
 
-    unknown = Monster("Unknown", description="", episodes={"S11": [21]})
+    unknown = Monster("Unknown", description="", episodes={"S11": [22]})
     unknown.clues = []
 
     # ---------------------------------------------------- SEASON 12 ---------------------------------------------------
