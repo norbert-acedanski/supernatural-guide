@@ -48,6 +48,7 @@ If you are a fan of Supernatural show, you can play with this project to find ou
 - Sam went into death shock in S11E17
 - Winchesters recognize Chuck Shurley as GOD in S11E20
 - GOD performs "Fare Thee Well" in S11E20 on guitar
+- GOD apologizes Lucifer in S11E22
 
 # TODO:
 - finish all seasons and episodes.
