@@ -767,13 +767,19 @@ class MonsterBase:
 
                                       MonstersKillMethods.the_darkness]
 
-    god = Monster("THE God", description="The light, the beginning of everything. Brother of the Darkness. A being "
+    god = Monster("THE GOD", description="The light, the beginning of everything. Brother of the Darkness. A being "
                                          "with almost unlimited power. Only mentioned for now. According to Death - he "
                                          "will die too some day by Death's hand (S05E21). At the end of the S05E22 "
                                          "Chuck disappears, hinting he is THE God. His voice can be heard "
-                                         "in S07E01 talking to Castiel.", episodes={"S11": [4]})
-    god.clues = [MonstersClues.can_bring_back_dead_angels, MonstersClues.can_teleport_people, MonstersClues.visions,
-                 MonstersClues.shining_of_magic_amulet, MonstersClues.can_bring_back_angelic_grace]
+                                         "in S07E01 talking to Castiel. In S11E20 it is revealed, that Chuck Shurley "
+                                         "is GOD. According to GOD, he is being, Amara is nothingness. HE created "
+                                         "life, because he was lonely. Whenever he created a new world, Amara would "
+                                         "destroy it.", episodes={"S11": [4, 20]})
+    god.clues = [MonstersClues.can_bring_back_dead_angels, MonstersClues.can_teleport_people, MonstersClues.can_vanish,
+                 MonstersClues.shining_of_magic_amulet, MonstersClues.visions, MonstersClues.can_appear_out_of_thin_air,
+                 MonstersClues.can_bring_back_angelic_grace, MonstersClues.knows_past, MonstersClues.telekinesis,
+                 MonstersClues.can_make_themselves_appear_as_they_like, MonstersClues.weird_electronics_behavior,
+                 MonstersClues.can_give_others_knowledge, MonstersClues.people_cured_miraculously]
     god.kill_methods = [
 
                         MonstersKillMethods.the_darkness]
@@ -1349,7 +1355,7 @@ class MonsterBase:
     angel_metatron = Monster("Angel Metatron", description="Scribe of GOD. One of the angels. Metatron broke the "
                                                            "fourth wall in S09E18.",
                              episodes={"S08": [21, 22, 23], "S09": [9, 10, 18, 22, 23], "S10": [2, 10, 17, 18],
-                                       "S11": [6]})
+                                       "S11": [6, 20]})
     angel_metatron.clues = [MonstersClues.immortal, MonstersClues.can_vanish, MonstersClues.can_give_hallucinations,
                             MonstersClues.can_erase_anti_angel_marks, MonstersClues.can_appear_out_of_thin_air,
                             MonstersClues.can_repair_human_body, MonstersClues.can_put_down_holy_fire,
@@ -1568,10 +1574,10 @@ class MonsterBase:
     rabid = Monster("Rabid", description="Created by The Darkness. The disease can be passed by bleeding on another "
                                          "person. After some time (it is different for every person, it can be "
                                          "4 hours, it can be a day) a person becomes one of them. After a while, "
-                                         "a Rabid dies.", episodes={"S11": [1, 2]})
+                                         "a Rabid dies.", episodes={"S11": [1, 2, 20]})
     rabid.clues = [MonstersClues.black_veins, MonstersClues.people_acting_weirdly, MonstersClues.aggression,
                    MonstersClues.intelligent, MonstersClues.infected_with_blood_to_blood_contact,
-                   MonstersClues.people_loosing_their_minds]
+                   MonstersClues.people_loosing_their_minds, MonstersClues.white_fog]
     rabid.disable_methods = [MonstersDisableMethods.electricity]
     rabid.kill_methods = [MonstersKillMethods.stabbing_the_heart, MonstersKillMethods.shooting_the_heart,
                           MonstersKillMethods.wait_for_it_to_die]
@@ -1685,11 +1691,8 @@ class MonsterBase:
                     MonstersClues.people_seeing_strange_things]
     bisaan.kill_methods = [MonstersKillMethods.decapitation]
 
-    unknown = Monster("Unknown", description="", episodes={"S11": [19]})
-    unknown.clues = [MonstersClues.weird_noises, MonstersClues.people_seeing_strange_things, MonstersClues.green_eyes,
-                     MonstersClues.junkless_creature, MonstersClues.missing_or_dead_people_regularly_in_the_same_area,
-                     MonstersClues.needle_like_teeth, MonstersClues.mutant_pale_creature,
-                     MonstersClues.people_seeing_things_or_figures]
+    unknown = Monster("Unknown", description="", episodes={"S11": [20]})
+    unknown.clues = []
 
     # ---------------------------------------------------- SEASON 12 ---------------------------------------------------
 
