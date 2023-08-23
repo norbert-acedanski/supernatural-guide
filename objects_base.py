@@ -104,7 +104,7 @@ class ObjectsBase:
                          episodes={"S04": [16], "S05": [1, 13, 18], "S06": [3, 10, 17, 18, 22], "S07": [21],
                                    "S08": [7, 10, 17, 21, 22, 23], "S09": [1, 2, 3, 6, 9, 10, 11, 14, 16, 18, 21, 22, 23],
                                    "S10": [1, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22],
-                                   "S11": [1, 2, 3, 6, 9, 10, 11, 15, 18]})
+                                   "S11": [1, 2, 3, 6, 9, 10, 11, 15, 18, 22]})
     angel_blade.abilities = [ObjectAbilities.can_kill_angels, ObjectAbilities.can_kill_demons]
 
     lucifers_cage = Object("Lucifer's Cage", description="A prison build specifically to contain archangelic powers "
@@ -139,7 +139,7 @@ class ObjectsBase:
 
     human_soul = Object("Human soul", description="As an object is very bright. Can be collected of a person. Released "
                                                   "soul of a person will find a way back to a body.",
-                        episodes={"S05": [14], "S06": [11], "S08": [19], "S09": [17], "S11": [5, 6, 9, 21]})
+                        episodes={"S05": [14], "S06": [11], "S08": [19], "S09": [17], "S11": [5, 6, 9, 21, 22]})
 
     ring_of_famine = Object("Ring of Famine", description="Can give people starving sensation for things they "
                                                           "lack/desire. One of the four rings of the Horseman.",
