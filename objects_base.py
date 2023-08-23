@@ -130,7 +130,7 @@ class ObjectsBase:
                                                       "Dean, when they were kids. It is switched off until GOD turns "
                                                       "it on in S11E20. This is the episode, that the Winchesters "
                                                       "recognize Chuck Shurley as GOD.",
-                          episodes={"S03": [8], "S05": [2, 16], "S11": [20]})
+                          episodes={"S03": [8], "S05": [2, 16], "S11": [20, 21]})
     magic_amulet.abilities = [ObjectAbilities.shines_in_the_presence_of_god]
 
     ring_of_war = Object("Ring of War", description="Can give people hallucinations. One of the four rings of "
@@ -139,7 +139,7 @@ class ObjectsBase:
 
     human_soul = Object("Human soul", description="As an object is very bright. Can be collected of a person. Released "
                                                   "soul of a person will find a way back to a body.",
-                        episodes={"S05": [14], "S06": [11], "S08": [19], "S09": [17], "S11": [5, 6, 9]})
+                        episodes={"S05": [14], "S06": [11], "S08": [19], "S09": [17], "S11": [5, 6, 9, 21]})
 
     ring_of_famine = Object("Ring of Famine", description="Can give people starving sensation for things they "
                                                           "lack/desire. One of the four rings of the Horseman.",
