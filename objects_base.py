@@ -127,8 +127,11 @@ class ObjectsBase:
     enochian_sigil.abilities = [ObjectAbilities.hides_a_person_from_all_angels]
 
     magic_amulet = Object("Magic Amulet", description="It burns hot in God's presence. It is an Amulet, that Sam gave "
-                                                      "Dean, when they were kids.",
-                          episodes={"S03": [8], "S05": [2, 16]})
+                                                      "Dean, when they were kids. It is switched off until GOD turns "
+                                                      "it on in S11E20. This is the episode, that the Winchesters "
+                                                      "recognize Chuck Shurley as GOD.",
+                          episodes={"S03": [8], "S05": [2, 16], "S11": [20]})
+    magic_amulet.abilities = [ObjectAbilities.shines_in_the_presence_of_god]
 
     ring_of_war = Object("Ring of War", description="Can give people hallucinations. One of the four rings of "
                                                     "the Horseman.", episodes={"S05": [2]})
