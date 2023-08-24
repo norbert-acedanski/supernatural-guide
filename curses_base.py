@@ -360,6 +360,8 @@ class CursesBase:
                                                                  "mystical or occult blockages. It requires a power of "
                                                                  "an archangel.", episodes={"S11": [14]})
 
+    # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
+
     # SEASON 12:
 
     memory_curse = Curse("Memory curse")
