@@ -273,6 +273,7 @@ class MonstersClues:
     can_summon_ghosts = "can summon ghosts"
     can_repair_human_body = "can repair human body"
     can_repair_an_archangel = "can repair an Archangel"
+    can_repair_god = "can repair GOD"
     can_repair_broken_word_of_god = "can repair broken word of GOD"
     can_read_word_of_god = "can read word of GOD"
     can_control_demons = "can control demons"
@@ -297,6 +298,7 @@ class MonstersClues:
     can_put_people_into_alternate_timelines = "can put people into alternate timelines"
     can_erase_and_bring_back_memories = "can erase and bring back memories"
     can_exorcise_demons_with_a_thought = "can exorcise demons with a thought"
+    can_exorcise_archangels = "can exorcise Archangels"
     can_kill_angels_with_a_touch = "can kill angels with a touch"
     can_kill_people_with_a_thought = "can_kill people with a thought"
     can_appear_as_an_elephant = "can appear as an elephant"
@@ -306,6 +308,7 @@ class MonstersClues:
     can_hurt_people_with_a_thought = "can hurt people with a thought"
     can_go_to_lucifers_cage_and_back_with_ease = "can go to Lucifer's cage and back with ease"
     can_put_a_soul_back_to_a_body = "can put a soul back to a body"
+    can_collect_souls_of_the_dead = "can collect souls of the dead"
     can_create_fire_large_temperatures = "can create fire/large temperatures"
     can_change_the_past = "can change the past"
     can_stop_time = "can stop time"
@@ -405,6 +408,7 @@ class MonstersClues:
                         "devices for lights flickering)"
     attached_to_a_specific_object = "attached to a specific object or set of objects"
     hand_of_god_does_not_affect_it = "Hand of GOD does not affect it"
+    red_sun = "red sun"
 
 
 class MonstersKillMethods:
