@@ -104,7 +104,7 @@ class ObjectsBase:
                          episodes={"S04": [16], "S05": [1, 13, 18], "S06": [3, 10, 17, 18, 22], "S07": [21],
                                    "S08": [7, 10, 17, 21, 22, 23], "S09": [1, 2, 3, 6, 9, 10, 11, 14, 16, 18, 21, 22, 23],
                                    "S10": [1, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22],
-                                   "S11": [1, 2, 3, 6, 9, 10, 11, 15, 18, 22]})
+                                   "S11": [1, 2, 3, 6, 9, 10, 11, 15, 18, 22, 23]})
     angel_blade.abilities = [ObjectAbilities.can_kill_angels, ObjectAbilities.can_kill_demons]
 
     lucifers_cage = Object("Lucifer's Cage", description="A prison build specifically to contain archangelic powers "
@@ -137,9 +137,11 @@ class ObjectsBase:
                                                     "the Horseman.", episodes={"S05": [2]})
     ring_of_war.abilities = [ObjectAbilities.can_give_hallucinations]
 
-    human_soul = Object("Human soul", description="As an object is very bright. Can be collected of a person. Released "
-                                                  "soul of a person will find a way back to a body.",
-                        episodes={"S05": [14], "S06": [11], "S08": [19], "S09": [17], "S11": [5, 6, 9, 21, 22]})
+    human_soul = Object("Human soul", description="Objects of enourmous energy. As an object is very bright. Can be "
+                                                  "collected of a person. Released soul of a person will find a way "
+                                                  "back to a body. According to Castiel, one Human Soul contains as "
+                                                  "much energy as around 100 suns.",
+                        episodes={"S05": [14], "S06": [11], "S08": [19], "S09": [17], "S11": [5, 6, 9, 21, 22, 23]})
 
     ring_of_famine = Object("Ring of Famine", description="Can give people starving sensation for things they "
                                                           "lack/desire. One of the four rings of the Horseman.",
@@ -361,6 +363,12 @@ class ObjectsBase:
     horn_of_joshua = Object("Horn of Joshua", description="A shofar. Object touched by the hand of GOD.",
                             episodes={"S11": [18]})
     horn_of_joshua.abilities = [ObjectAbilities.grants_incredible_power]
+
+    soul_cristal = Object("Soul crystal", description="Crystal prepared by Rowena in S11E23 to capture souls of Ghosts",
+                          episodes={"S11": [23]})
+    soul_cristal.abilities = [ObjectAbilities.can_trap_souls]
+
+    # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
 
     # SEASON 12:
 

@@ -30,6 +30,7 @@ class ObjectAbilities:
     can_split_soul_into_good_and_bad_parts = "can split soul into good and_bad parts"
     can_bind_split_soul_back_together = "can bind split soul back together"
     can_trap_a_witch = "can trap a Witch"
+    can_trap_souls = "can trap souls"
     unables_possessions = "unables possessions"
     grants_incredible_luck = "grants incredible luck"
     grants_incredible_power = "grants incredible power"
