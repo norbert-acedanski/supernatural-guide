@@ -36,10 +36,21 @@ Python 3.9.10
 If you are a fan of Supernatural show, you can play with this project to find out what are the clues, that a particular entity/curse/event/object/place leaves behind and try to determine that like Sam and Dean would ;)  
 
 # Fun Facts:
+- Sam has a chronic fear of clowns
 - Castiel broke the Fourth wall in S06E20
 - Metatron broke the fourth wall in S09E18
 - Deans Blood type is 0 based on S10E03
 - Dean broke the fourth wall in S10E05
+- Impala of Sam and Dean was produced in April 24th, 1967 (from S11E04)
+- Sam had a Zanna friend, named Sully when he was young (from S11E08)
+- Lucifer mentions "Lucifer" TV series about Lucifer solving crimes in S11E10
+- Castiel is possessed by Lucifer in S11E10
+- Sam went into death shock in S11E17
+- Winchesters recognize Chuck Shurley as GOD in S11E20
+- GOD performs "Fare Thee Well" in S11E20 on guitar
+- GOD apologizes Lucifer in S11E22
+- Dean is mocking Rowena in S11E23
+- Sam and Dean's mom is revived in S11E23 by th Darkness
 
 # TODO:
 - finish all seasons and episodes.

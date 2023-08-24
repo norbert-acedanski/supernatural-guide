@@ -279,7 +279,7 @@ class CursesBase:
                                                      "and began to corrupt. Lucyfer became jealous of Man and GOD "
                                                      "banished him to Hell. Mark of Cain is removed in S10E23.",
                          episodes={"S09": [11, 12, 16, 17, 18, 21],
-                                   "S10": [1, 2, 3, 9, 10, 11, 12, 13, 17, 18, 21, 22, 23]})
+                                   "S10": [1, 2, 3, 9, 10, 11, 12, 13, 17, 18, 21, 22, 23], "S11": [1, 2, 5, 6, 9]})
     mark_of_cain.clues = [CursesClues.people_acting_weirdly, CursesClues.less_affected_by_telekinesis_of_knight_of_hell,
                           CursesClues.high_strength, CursesClues.black_eyes, CursesClues.increased_regeneration,
                           CursesClues.weird_dreams]
@@ -305,9 +305,12 @@ class CursesBase:
                                         episodes={"S10": [7]})
     defigere_et_depurgare_spell.clues = [CursesClues.people_dead_weirdly, CursesClues.black_goo]
 
-    attack_dog_spell = Curse("Attack-dog spell", description="Used on a human/angel to turn him into an attack dog.",
-                             episodes={"S10": [7, 23]})
+    attack_dog_spell = Curse("Attack-dog spell", description="Used on a human/angel to turn him into an attack dog. "
+                                                             "Human after a while will die because of it, an angel can "
+                                                             "withstand the power.",
+                             episodes={"S10": [7, 23], "S11": [1, 2, 3]})
     attack_dog_spell.clues = [CursesClues.people_acting_weirdly, CursesClues.high_strength, CursesClues.red_eyes]
+    attack_dog_spell.disable_methods = [CursesDisableMethods.rowenas_attack_dog_disable_spell]
 
     spirit_leaving_body_spell = Curse("Spirit leaving body spell",
                                       description="Spell, that allows ones spirit to leave the body and go to another "
@@ -330,14 +333,34 @@ class CursesBase:
                                                     "'Something you love' - kill the thing you love the most and "
                                                     "a genetic material of the person, that has the Mark.",
                                         episodes={"S10": [23]})
+    rowenas_immobilization_spell = Curse("Rowena's immobilization spell",
+                                         description="Spell, that allows to immobilize entities such as Demons and "
+                                                     "Angels.", episodes={"S10": [23]})
 
     # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
 
     # SEASON 11:
 
-    kiss_of_death = Curse("Kiss of death (Aramaic curse)")
+    talking_to_being_in_lucifers_cage_spell = Curse("Talking to being in Lucifer's Cage spell",
+                                                    description="Spell, that allows to communicate with a being, that "
+                                                                "is in Lucifer's cage. It is found in the Book of the "
+                                                                "Damned by Rowena in S11E09.", episodes={"S11": [9]})
+    talking_to_being_in_lucifers_cage_spell.disable_methods = [CursesDisableMethods.will_of_lucifer]
+
+    kiss_of_death = Curse("Kiss of death", description="Aramaic curse. It is transmittable, the last person, that got "
+                                                       "kissed - dies. To make yourself safe, you have to kiss another "
+                                                       "person, but if that person dies, the curse comes back for you.",
+                          episodes={"S11": [13]})
     kiss_of_death.clues = [CursesClues.sealed_with_a_kiss, CursesClues.the_last_person_that_got_kissed_dies]
     kiss_of_death.disable_methods = [CursesDisableMethods.kill_the_witch_that_cursed_a_person]
+
+    spell_of_gathering = Curse("Spell of Gathering", description="It's an incantation used to 'focus power of "
+                                                                 "celestial beings against all drawn forms of "
+                                                                 "evasion.' The spell was designed to clear all "
+                                                                 "mystical or occult blockages. It requires a power of "
+                                                                 "an archangel.", episodes={"S11": [14]})
+
+    # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
 
     # SEASON 12:
 

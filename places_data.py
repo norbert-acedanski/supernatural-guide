@@ -18,3 +18,5 @@ class PlaceClues:
     castle_structure_on_a_hill = "castle structure on a hill"
     golden_path = "golden path"
     emerald_city = "emerald city"
+    skeletons_on_the_ground = "skeletons on the ground"
+    cells_with_people_inside = "cells with people inside"

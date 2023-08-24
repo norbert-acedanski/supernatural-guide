@@ -49,7 +49,7 @@ class ObjectsBase:
                                  episodes={"S03": [1, 9, 16], "S04": [1, 9, 20, 22], "S05": [1, 10, 14, 17, 20, 21, 22],
                                            "S06": [10, 20, 21], "S07": [8, 15, 17, 21],
                                            "S08": [1, 2, 7, 10, 14, 17, 19, 23], "S09": [2, 4, 11, 14, 16, 17],
-                                           "S10": [2, 3, 7, 22]})
+                                           "S10": [2, 3, 7, 22], "S11": [2, 6, 15]})
     demon_killing_knife.abilities = [ObjectAbilities.can_kill_demons, ObjectAbilities.cannot_kill_angels,
                                      ObjectAbilities.cannot_kill_knights_of_hell]
 
@@ -78,7 +78,8 @@ class ObjectsBase:
                                                                       "back to heaven. Can be used to send back "
                                                                       "a specific angel type.",
                                   # TODO: Check where else is the sigil used
-                                  episodes={"S04": [10, 22], "S05": [13, 18], "S06": [3], "S07": [21], "S09": [1]})
+                                  episodes={"S04": [10, 22], "S05": [13, 18], "S06": [3], "S07": [21], "S09": [1],
+                                            "S11": [14]})
     sigil_against_angels.abilities = [ObjectAbilities.can_send_angels_back_to_heaven]
 
     angel_grace = Object("Angel grace", description="A power source for an angel. Another Angel can take the Grace to "
@@ -102,12 +103,14 @@ class ObjectsBase:
     angel_blade = Object("Angel blade", description="A triangular, silvery blade, that each angel has.",
                          episodes={"S04": [16], "S05": [1, 13, 18], "S06": [3, 10, 17, 18, 22], "S07": [21],
                                    "S08": [7, 10, 17, 21, 22, 23], "S09": [1, 2, 3, 6, 9, 10, 11, 14, 16, 18, 21, 22, 23],
-                                   "S10": [1, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22]})
+                                   "S10": [1, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22],
+                                   "S11": [1, 2, 3, 6, 9, 10, 11, 15, 18, 22, 23]})
     angel_blade.abilities = [ObjectAbilities.can_kill_angels, ObjectAbilities.can_kill_demons]
 
     lucifers_cage = Object("Lucifer's Cage", description="A prison build specifically to contain archangelic powers "
                                                          "(not seen yet). Can be opened with all 4 rings of "
-                                                         "the horseman. There is fire there.", episodes={"S06": [13]})
+                                                         "the horseman. There is fire there.",
+                           episodes={"S06": [13], "S11": [6, 9, 10]})
     lucifers_cage.abilities = [ObjectAbilities.traps_an_archangel, ObjectAbilities.traps_a_soul_of_a_person]
 
     # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
@@ -124,16 +127,21 @@ class ObjectsBase:
     enochian_sigil.abilities = [ObjectAbilities.hides_a_person_from_all_angels]
 
     magic_amulet = Object("Magic Amulet", description="It burns hot in God's presence. It is an Amulet, that Sam gave "
-                                                      "Dean, when they were kids.",
-                          episodes={"S03": [8], "S05": [2, 16]})
+                                                      "Dean, when they were kids. It is switched off until GOD turns "
+                                                      "it on in S11E20. This is the episode, that the Winchesters "
+                                                      "recognize Chuck Shurley as GOD.",
+                          episodes={"S03": [8], "S05": [2, 16], "S11": [20, 21]})
+    magic_amulet.abilities = [ObjectAbilities.shines_in_the_presence_of_god]
 
     ring_of_war = Object("Ring of War", description="Can give people hallucinations. One of the four rings of "
                                                     "the Horseman.", episodes={"S05": [2]})
     ring_of_war.abilities = [ObjectAbilities.can_give_hallucinations]
 
-    human_soul = Object("Human soul", description="As an object is very bright. Can be collected of a person. Released "
-                                                  "soul of a person will find a way back to a body.",
-                        episodes={"S05": [14], "S06": [11], "S08": [19], "S09": [17]})
+    human_soul = Object("Human soul", description="Objects of enourmous energy. As an object is very bright. Can be "
+                                                  "collected of a person. Released soul of a person will find a way "
+                                                  "back to a body. According to Castiel, one Human Soul contains as "
+                                                  "much energy as around 100 suns.",
+                        episodes={"S05": [14], "S06": [11], "S08": [19], "S09": [17], "S11": [5, 6, 9, 21, 22, 23]})
 
     ring_of_famine = Object("Ring of Famine", description="Can give people starving sensation for things they "
                                                           "lack/desire. One of the four rings of the Horseman.",
@@ -218,7 +226,8 @@ class ObjectsBase:
                                                     "Third tablet (inscribed in angel core and stashed in stone form "
                                                     "by Lucyfer) has information about Angels and how to make "
                                                     "them fall. Found in Lucyfer crypt in S08E17.",
-                         episodes={"S07": [21], "S08": [1, 2, 10, 17, 21, 23], "S09": [9, 10, 23], "S10": [18]})
+                         episodes={"S07": [21], "S08": [1, 2, 10, 17, 21, 23], "S09": [9, 10, 23], "S10": [18],
+                                   "S11": [6]})
     word_of_god.abilities = [ObjectAbilities.can_cause_storms, ObjectAbilities.can_cause_women_to_go_to_labour,
                              ObjectAbilities.when_opened_causes_a_person_to_become_a_prophet]
 
@@ -231,7 +240,7 @@ class ObjectsBase:
 
     demonic_handcuffs = Object("Demonic handcuffs", description="When worn by a Demon, it cannot teleport, "
                                                                 "leave the body or use demon magic.",
-                               episodes={"S08": [23], "S09": [10, 14, 16], "S10": [2]})
+                               episodes={"S08": [23], "S09": [10, 14, 16], "S10": [2], "S11": [6]})
     demonic_handcuffs.abilities = [ObjectAbilities.traps_a_demon]
 
     # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
@@ -290,7 +299,8 @@ class ObjectsBase:
                                             "used, there is a (biblical) negative reaction. The book calls to the "
                                             "person, that has the Mark of Cain. It is written in obscure Sumerian "
                                             "dialect. It can be tracked by a magic compas. The book is protected by "
-                                            "a spell and cannot be destroyed.", episodes={"S10": [18, 19, 21]})
+                                            "a spell and cannot be destroyed.", episodes={"S10": [18, 19, 21, 23],
+                                                                                          "S11": [3, 9]})
     book_of_the_damned.abilities = [ObjectAbilities.creation_and_undoing_of_any_damnation,
                                     ObjectAbilities.calls_to_a_person_with_mark_of_cain]
 
@@ -305,12 +315,60 @@ class ObjectsBase:
     angel_sword = Object("Angel Sword", description="Similar to Angel Blade, but bigger and has hilt on it (when "
                                                     "somebody is killed with it, it leaves burned triangular wound). "
                                                     "Each Grigori (Watcher Angel) name is inscribe into their Swords.",
-                         episodes={"S10": [20]})
+                         episodes={"S10": [20], "S11": [12]})
     angel_sword.abilities = [ObjectAbilities.can_kill_watcher_angels]
 
     # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
 
     # SEASON 11:
+
+    zanna_killing_knife = Object("Zanna-killing Knife", description="Knife, that can kill Zanna.", episodes={"S11": [8]})
+    zanna_killing_knife.abilities = [ObjectAbilities.can_kill_zanna]
+
+    witch_catcher = Object("Witch catcher", description="A kind of collar, that can be used to trap a Witch. It was "
+                                                        "used during the Inquisition and most of them were destroyed. "
+                                                        "When worn, a Witch must obey the orders of the others.",
+                           episodes={"S11": [10]})
+    witch_catcher.abilities = [ObjectAbilities.can_trap_a_witch]
+
+    celtic_imprisonment_sigil = Object("Celtic imprisonment sigil",
+                                       description="Sigil, that when used, attracts a person/monster to it. There "
+                                                   "needs to be two copies of the symbol drawn. To use it one of them "
+                                                   "has to be touched with blood.", episodes={"S11": [11]})
+    celtic_imprisonment_sigil.abilities = [ObjectAbilities.traps_a_person, ObjectAbilities.traps_a_banshee]
+    celtic_imprisonment_sigil.destroy_methods = [ObjectDestroyMethods.break_the_sigil]
+
+    hand_of_god = Object("Hand of GOD", description="An object, that was touched by GOD himself on Earth, that "
+                                                    "contains traces of his power. One such example is the Ark of the "
+                                                    "Covenant. It was destroyed, but at least one fragment remained. "
+                                                    "It should not be touched by hand by a person. It's powers are "
+                                                    "unstable and no person can withstand the direct contact for long. "
+                                                    "In order to use it, a person has to touch it. These are one time "
+                                                    "use only objects.", episodes={"S11": [14, 15, 18]})
+    hand_of_god.abilities = [ObjectAbilities.grants_incredible_power, ObjectAbilities.can_kill_demons]
+
+    sigil_against_celestial_beings = Object("Sigil against celestial beings",
+                                            description="Sigil, that protects against Angels and Archangels.",
+                                            episodes={"S11": [14]})
+    sigil_against_celestial_beings.abilities = [ObjectAbilities.angels_cant_get_past_it,
+                                                ObjectAbilities.archangels_cant_get_past_it]
+    sigil_against_celestial_beings.destroy_methods = [ObjectDestroyMethods.break_the_sigil,
+                                                      ObjectDestroyMethods.kill_the_person_with_the_sigil]
+
+    rod_of_aaron = Object("Rod of Aaron", description="Created by GOD on the sixth day and given to Aaron, brother of "
+                                                      "Moses. It is a Hand of GOD. Used by Crowley in S11E15.",
+                          episodes={"S11": [15]})
+    rod_of_aaron.abilities = [ObjectAbilities.grants_incredible_power, ObjectAbilities.can_kill_demons]
+
+    horn_of_joshua = Object("Horn of Joshua", description="A shofar. Object touched by the hand of GOD.",
+                            episodes={"S11": [18]})
+    horn_of_joshua.abilities = [ObjectAbilities.grants_incredible_power]
+
+    soul_cristal = Object("Soul crystal", description="Crystal prepared by Rowena in S11E23 to capture souls of Ghosts",
+                          episodes={"S11": [23]})
+    soul_cristal.abilities = [ObjectAbilities.can_trap_souls]
+
+    # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
 
     # SEASON 12:
 

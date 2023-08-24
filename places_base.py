@@ -4,11 +4,12 @@ from places_data import PlaceClues
 
 
 class PlacesBase:
-    hell = Place("Hell", description="Place of eternal torture. People are either tortured, or torture others.",
-                 episodes={"S03": [16], "S04": [1, 8, 10], "S06": [20], "S08": [19], "S10": [3]})
+    hell = Place("Hell", description="Place of eternal torture. People are either tortured, or torture others. Hell "
+                                     "can be accessed via a Portal guarded by a Reaper in S11E10.",
+                 episodes={"S03": [16], "S04": [1, 8, 10], "S06": [20], "S08": [19], "S10": [3], "S11": [9, 10]})
     hell.clues = [PlaceClues.people_chained_in_a_void, PlaceClues.electrical_storms, PlaceClues.dark_place,
                   PlaceClues.flashing_lights, PlaceClues.time_runs_faster_there, PlaceClues.endless_queue,
-                  PlaceClues.screaming_people]
+                  PlaceClues.screaming_people, PlaceClues.skeletons_on_the_ground, PlaceClues.cells_with_people_inside]
 
     alternate_timeline = Place("Alternate timeline", description="A universe, where the history played out "
                                                                  "differently. Can be accessed via a spell or an Angel "
@@ -27,7 +28,7 @@ class PlacesBase:
                                          "can't sense it because it changes its location. Heaven has it's own prison. "
                                          "A Human can escape his/her heaven by finding a thing, that does not belong "
                                          "in the place, they are in and following it.",
-                   episodes={"S05": [16], "S08": [7, 10, 17, 23], "S09": [18, 22, 23], "S10": [2, 17]})
+                   episodes={"S05": [16], "S08": [7, 10, 17, 23], "S09": [18, 22, 23], "S10": [2, 17], "S11": [18, 22]})
     heaven.clues = [PlaceClues.good_memories_relived, PlaceClues.changing_scenery, PlaceClues.bright_place]
 
     purgatory = Place("Purgatory", description="A place, where all monsters go, after they die. Can be opened with an "
@@ -51,6 +52,9 @@ class PlacesBase:
                                  "into any door - it opens a portal to Oz (a golden path). When used with a proper "
                                  "spell - it can open door to any place in Oz.", episodes={"S09": [4]})
     oz.clues = [PlaceClues.castle_structure_on_a_hill, PlaceClues.golden_path, PlaceClues.emerald_city]
+
+    empty = Place("Empty", description="Place, where a Reaper want's Sam and Dean to go when they die. Mentioned in "
+                                       "S11E17.")
 
     def __init__(self):
         self.places = [place for place in self.__class__.__dict__.values() if isinstance(place, Place)]
