@@ -49,6 +49,8 @@ If you are a fan of Supernatural show, you can play with this project to find ou
 - Winchesters recognize Chuck Shurley as GOD in S11E20
 - GOD performs "Fare Thee Well" in S11E20 on guitar
 - GOD apologizes Lucifer in S11E22
+- Dean is mocking Rowena in S11E23
+- Sam and Dean's mom is revived in S11E23 by th Darkness
 
 # TODO:
 - finish all seasons and episodes.
