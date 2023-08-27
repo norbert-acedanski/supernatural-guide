@@ -107,7 +107,8 @@ class MonsterBase:
                               "S04": [1, 4, 9, 10, 20, 21, 22], "S05": [1, 6, 10, 12, 14, 17, 20, 21, 22],
                               "S06": [7, 10, 18, 20, 21, 22], "S07": [8, 15, 17, 21, 23],
                               "S08": [1, 2, 7, 10, 17, 19, 21, 22], "S09": [2, 10, 11, 14, 16, 17, 21, 23],
-                              "S10": [1, 2, 3, 7, 9, 10, 13, 16, 17, 21], "S11": [1, 3, 6, 9, 10, 14, 15, 18, 22]})
+                              "S10": [1, 2, 3, 7, 9, 10, 13, 16, 17, 21], "S11": [1, 3, 6, 9, 10, 14, 15, 18, 22],
+                              "S12": [1]})
     demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                    MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                    MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -266,7 +267,7 @@ class MonsterBase:
                                              "blood. Upon changing, all senses sharpen.",
                       episodes={"S01": [20], "S02": [3], "S03": [7], "S05": [3], "S06": [5, 19], "S07": [22],
                                 "S08": [1, 2, 5, 7, 9, 10, 18, 19], "S09": [2, 16, 19, 20], "S10": [8, 19, 23],
-                                "S11": [12]})
+                                "S11": [12], "S12": [1]})
     vampire.clues = [MonstersClues.ripped_throat, MonstersClues.no_blood_in_the_body, MonstersClues.needle_like_teeth,
                      MonstersClues.moving_in_groups_usually, MonstersClues.invulnerable, MonstersClues.high_strength,
                      MonstersClues.bright_eyes, MonstersClues.great_sense_of_smell, MonstersClues.white_skin,
@@ -580,7 +581,7 @@ class MonsterBase:
                               "S06": [3, 6, 7, 10, 12, 15, 17, 18, 19, 20, 21, 22], "S07": [1, 17, 20, 21, 23],
                               "S08": [2, 7, 8, 10, 17, 19, 21, 22, 23], "S09": [9, 10, 11, 14, 18, 21, 22, 23],
                               "S10": [1, 2, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22, 23],
-                              "S11": [1, 2, 3, 6, 9, 10, 14, 18, 22, 23]})
+                              "S11": [1, 2, 3, 6, 9, 10, 14, 18, 22, 23], "S12": [1]})
     angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                    MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion, MonstersClues.has_wings,
                    MonstersClues.leaves_burned_marks, MonstersClues.weird_electronics_behavior,
@@ -602,7 +603,8 @@ class MonsterBase:
                              MonstersDisableMethods.exorcism_for_angels, MonstersDisableMethods.holy_oil,
                              MonstersDisableMethods.enochian_spell, MonstersDisableMethods.rowenas_immobilization_spell,
                              MonstersDisableMethods.presence_of_the_mother, MonstersDisableMethods.grace_removal,
-                             MonstersDisableMethods.attack_dog_spell, MonstersDisableMethods.angel_blade]
+                             MonstersDisableMethods.attack_dog_spell, MonstersDisableMethods.angel_blade,
+                             MonstersDisableMethods.angel_knuckle_duster]
     angel.kill_methods = [MonstersKillMethods.angel_blade, MonstersKillMethods.holy_oil,
                           MonstersKillMethods.leviathan_black_goo, MonstersKillMethods.will_of_an_archangel,
                           MonstersKillMethods.will_of_the_darkness,
@@ -733,7 +735,8 @@ class MonsterBase:
                                MonstersClues.weird_fire_spontaneous_combustion, MonstersClues.revelation_omens,
                                MonstersClues.can_go_and_put_into_a_persons_mind, MonstersClues.can_posses_an_angel,
                                MonstersClues.high_strength, MonstersClues.invulnerable, MonstersClues.can_time_travel,
-                               MonstersClues.can_send_people_to_the_past,
+                               MonstersClues.can_send_people_to_the_past, MonstersClues.people_dead_weirdly,
+                               MonstersClues.burned_eyes,
 
                                MonstersClues.travels_as_white_fog, MonstersClues.people_burned_on_the_ceiling,
                                MonstersClues.in_true_form_burns_eyes_of_people, MonstersClues.bible_burns_it]
@@ -836,7 +839,7 @@ class MonsterBase:
                                       "S07": [1, 6, 8, 22, 23], "S08": [1, 2, 7, 10, 17, 19, 21, 22, 23],
                                       "S09": [2, 4, 6, 10, 11, 16, 17, 21, 23],
                                       "S10": [1, 2, 3, 7, 9, 10, 13, 16, 17, 21, 22, 23],
-                                      "S11": [1, 2, 3, 6, 9, 10, 14, 15, 18, 22, 23]})
+                                      "S11": [1, 2, 3, 6, 9, 10, 14, 15, 18, 22, 23], "S12": [1]})
     demon_crowley.clues = [MonstersClues.can_vanish, MonstersClues.pact_sealed_with_a_kiss, MonstersClues.telekinesis,
                            MonstersClues.summoned_by_placing_box_in_the_crossroads, MonstersClues.small_earth_quake,
                            MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
@@ -1571,8 +1574,8 @@ class MonsterBase:
                       MonstersClues.can_teleport_angels, MonstersClues.can_teleport_archangels, MonstersClues.red_sun,
                       MonstersClues.electrical_storms, MonstersClues.can_shake_heaven, MonstersClues.small_earth_quake,
                       MonstersClues.hand_of_god_does_not_affect_it, MonstersClues.can_remove_protection_sigils,
-                      MonstersClues.can_exorcise_archangels, MonstersClues.can_repair_god,
-                      MonstersClues.travels_as_black_fog, MonstersClues.burned_eyes]
+                      MonstersClues.can_exorcise_archangels, MonstersClues.can_bring_back_dead_people,
+                      MonstersClues.travels_as_black_fog, MonstersClues.burned_eyes, MonstersClues.can_repair_god]
     darkness.disable_methods = [MonstersDisableMethods.all_of_angels_single_blow,
                                 MonstersDisableMethods.a_few_witches_power, MonstersDisableMethods.lucifers_spear]
 
@@ -1700,12 +1703,12 @@ class MonsterBase:
                     MonstersClues.people_seeing_strange_things]
     bisaan.kill_methods = [MonstersKillMethods.decapitation]
 
-    unknown = Monster("Unknown", description="", episodes={"S11": [23]})
-    unknown.clues = []
-
     # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
 
     # ---------------------------------------------------- SEASON 12 ---------------------------------------------------
+
+    unknown = Monster("Unknown", description="", episodes={"S12": [1]})
+    unknown.clues = [MonstersClues.weird_electronics_behavior, MonstersClues.falling_meteor]
 
     myling = Monster("Myling", description="Scandinavian children ghost. They try to bring adults and kill them.")
     myling.clues = [MonstersClues.victims_hear_children_cry, MonstersClues.people_dead_weirdly]
