@@ -14,7 +14,7 @@ class ObjectsBase:
                                       description="A journal of John Winchester, that contains a lot information about "
                                                   "monsters in Supernatural Universe.",
                                       episodes={"S01": [], "S04": [19], "S06": [1, 8, 12], "S07": [8, 11],
-                                                "S08": [8, 12], "S09": [11]})
+                                                "S08": [8, 12], "S09": [11], "S12": [2]})
     john_winchesters_journal._information = {"S04E19": JohnWinchesterJournal.entry_about_johns_other_son,
                                              "S06E12": JohnWinchesterJournal.entry_about_a_skinwalker,
                                              "S08E12": JohnWinchesterJournal.entry_about_torturing_a_demon,
@@ -373,7 +373,7 @@ class ObjectsBase:
     # SEASON 12:
 
     angel_knuckle_duster = Object("Angel Knuckle Duster", description="Allows to hurt angels in a direct fight.",
-                                  episodes={"S12": [1]})
+                                  episodes={"S12": [1, 2]})
     angel_knuckle_duster.abilities = [ObjectAbilities.can_hurt_angels]
 
     # SEASON 13:
