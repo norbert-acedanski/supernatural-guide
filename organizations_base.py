@@ -15,10 +15,15 @@ class OrganizationsBase:
                                                                 "broke the fourth wall in their compound in S09E04. "
                                                                 "They have more power than the Coven of Witches. "
                                                                 "Eileen Leahy is a granddaughter of one of the Man of "
-                                                                "Letters members (according to S11E11).",
+                                                                "Letters members (according to S11E11). England also "
+                                                                "has Man of Letters branch, that acts to prevent "
+                                                                "monster kills in UK. Since 1965 there was no "
+                                                                "monster-related death in UK, because each monster "
+                                                                "entering in 20 minutes is located and in 40 - dead.",
                                   episodes={"S08": [12, 13, 14, 16, 20, 22, 23],
                                             "S09": [4, 5, 6, 7, 9, 11, 14, 16, 17],
-                                            "S10": [3, 8, 11, 12, 17, 18, 21, 22], "S11": [4, 7, 8, 11, 14, 16]})
+                                            "S10": [3, 8, 11, 12, 17, 18, 21, 22], "S11": [4, 7, 8, 11, 14, 16],
+                                            "S12": [1]})
     man_of_letters.knowledge = [OrganizationKnowledge.time_travel, OrganizationKnowledge.demon_killing_knife,
                                 OrganizationKnowledge.haitian_symbol_for_speaking_to_the_dead,
                                 OrganizationKnowledge.knights_of_hell, OrganizationKnowledge.drakopoolos_journal,
@@ -35,7 +40,8 @@ class OrganizationsBase:
                                 OrganizationKnowledge.werther_project, OrganizationKnowledge.exorcisms,
                                 OrganizationKnowledge.whispers, OrganizationKnowledge.nachzehrers,
                                 OrganizationKnowledge.pre_biblical_lore, OrganizationKnowledge.zanna_lore,
-                                OrganizationKnowledge.hand_of_god, OrganizationKnowledge.soul_eaters]
+                                OrganizationKnowledge.hand_of_god, OrganizationKnowledge.soul_eaters,
+                                OrganizationKnowledge.beacon_sigils_for_monsters]
 
     the_judah_initiative = Organization("The Judah initiative", description="They were active during WW2. A group of "
                                                                             "rabbis that were good saboteurs. "
