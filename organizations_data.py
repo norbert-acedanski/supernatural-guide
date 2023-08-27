@@ -32,3 +32,4 @@ class OrganizationKnowledge:
     hand_of_god = "Hand of GOD - objects, that were touched by GOD on Earth (believed to possess a bit of his powers)"
     soul_eaters = "Soul Eaters"
     beacon_sigils_for_monsters = "beacon sigils for monsters (signal, when monster is nearby)"
+    spells = "spells"
