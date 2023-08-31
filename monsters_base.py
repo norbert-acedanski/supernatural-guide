@@ -42,7 +42,8 @@ class MonsterBase:
                                           "to an object, place or even electrical signals (like Wi-Fi).",
                               episodes={"S01": [1, 3, 5, 7, 9, 10, 13, 19], "S02": [6, 11, 16, 18, 19],
                                         "S03": [5, 6, 13], "S04": [2, 13, 15, 17], "S05": [9, 11], "S06": [4, 14],
-                                        "S07": [7, 10, 13, 17, 19], "S09": [7], "S10": [13, 16], "S11": [7, 23]})
+                                        "S07": [7, 10, 13, 17, 19], "S09": [7], "S10": [13, 16], "S11": [7, 23],
+                                        "S12": [3]})
     vengeful_spirit.clues = [MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                              MonstersClues.people_dead_weirdly, MonstersClues.ghost_like_creature,
                              MonstersClues.weird_electronics_behavior, MonstersClues.weird_things_behavior,
@@ -63,7 +64,8 @@ class MonsterBase:
                              MonstersClues.can_absorb_other_ghost_energy, MonstersClues.victims_hear_voices,
                              MonstersClues.no_hex_bags, MonstersClues.travels_as_grey_fog, MonstersClues.weird_noises,
                              MonstersClues.amnesia_blackout, MonstersClues.holy_water_does_not_affect_it,
-                             MonstersClues.attached_to_a_specific_object]
+                             MonstersClues.attached_to_a_specific_object, MonstersClues.victims_hear_children_cry,
+                             MonstersClues.leaves_frozen_marks, MonstersClues.frozen_heart]
     vengeful_spirit.disable_methods = [MonstersDisableMethods.bring_the_spirit_to_its_crime_place,
                                        MonstersDisableMethods.bring_the_spirit_what_it_wants,
                                        MonstersDisableMethods.iron_or_iron_bullets,
@@ -496,7 +498,7 @@ class MonsterBase:
                                          "spell sensed her death, it revived her.",
                     episodes={"S03": [9], "S04": [7, 12], "S05": [7, 12], "S07": [5], "S08": [7, 15],
                               "S10": [3, 7, 9, 10, 13, 16, 17, 18, 19, 21, 22, 23], "S11": [3, 9, 10, 13, 18, 22, 23],
-                              "S12": [2]})
+                              "S12": [2, 3]})
     witch.clues = [MonstersClues.people_dead_weirdly, MonstersClues.hex_bag_hidden_somewhere, MonstersClues.immortal,
                    MonstersClues.coin_hidden_somewhere, MonstersClues.weird_electronics_behavior,
                    MonstersClues.telekinesis, MonstersClues.can_vanish, MonstersClues.weird_plant_deaths_or_behavior,
@@ -582,10 +584,10 @@ class MonsterBase:
                               "S06": [3, 6, 7, 10, 12, 15, 17, 18, 19, 20, 21, 22], "S07": [1, 17, 20, 21, 23],
                               "S08": [2, 7, 8, 10, 17, 19, 21, 22, 23], "S09": [9, 10, 11, 14, 18, 21, 22, 23],
                               "S10": [1, 2, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22, 23],
-                              "S11": [1, 2, 3, 6, 9, 10, 14, 18, 22, 23], "S12": [1, 2]})
+                              "S11": [1, 2, 3, 6, 9, 10, 14, 18, 22, 23], "S12": [1, 2, 3]})
     angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                    MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion, MonstersClues.has_wings,
-                   MonstersClues.leaves_burned_marks, MonstersClues.weird_electronics_behavior,
+                   MonstersClues.leaves_burned_marks, MonstersClues.can_tell_if_somebody_was_recently_healed,
                    MonstersClues.can_repair_human_body, MonstersClues.telekinesis, MonstersClues.invulnerable,
                    MonstersClues.can_put_a_person_to_sleep, MonstersClues.demon_killing_knife_is_ineffective,
                    MonstersClues.true_voice_can_hurt_people, MonstersClues.can_vanish, MonstersClues.high_strength,
@@ -599,7 +601,7 @@ class MonsterBase:
                    MonstersClues.can_erase_and_bring_back_memories, MonstersClues.can_transfer_mental_diseases,
                    MonstersClues.can_go_and_put_into_a_persons_mind, MonstersClues.strange_different_things_happening,
                    MonstersClues.bright_eyes, MonstersClues.vapourised_organs, MonstersClues.travels_as_white_fog,
-                   MonstersClues.blue_eyes, MonstersClues.falling_meteor]
+                   MonstersClues.blue_eyes, MonstersClues.falling_meteor, MonstersClues.weird_electronics_behavior]
     angel.disable_methods = [MonstersDisableMethods.symbol_made_with_blood_against_angels,
                              MonstersDisableMethods.exorcism_for_angels, MonstersDisableMethods.holy_oil,
                              MonstersDisableMethods.enochian_spell, MonstersDisableMethods.rowenas_immobilization_spell,
@@ -722,7 +724,7 @@ class MonsterBase:
                                                                    "bow before the men. To upset God he twisted one of "
                                                                    "the people into Lilith.",
                                 episodes={"S04": [22], "S05": [1, 3, 4, 10, 19, 22], "S07": [1, 2, 15, 17],
-                                          "S11": [9, 10, 11, 14, 15, 18, 21, 22], "S12": [2]})
+                                          "S11": [9, 10, 11, 14, 15, 18, 21, 22], "S12": [2, 3]})
     archangel_lucyfer.clues = [MonstersClues.weird_things_behavior, MonstersClues.true_voice_can_hurt_people,
                                MonstersClues.bright_light, MonstersClues.weird_weather, MonstersClues.visions,
                                MonstersClues.people_seeing_strange_things, MonstersClues.biblical_like_events,
@@ -841,7 +843,7 @@ class MonsterBase:
                                       "S07": [1, 6, 8, 22, 23], "S08": [1, 2, 7, 10, 17, 19, 21, 22, 23],
                                       "S09": [2, 4, 6, 10, 11, 16, 17, 21, 23],
                                       "S10": [1, 2, 3, 7, 9, 10, 13, 16, 17, 21, 22, 23],
-                                      "S11": [1, 2, 3, 6, 9, 10, 14, 15, 18, 22, 23], "S12": [1, 2]})
+                                      "S11": [1, 2, 3, 6, 9, 10, 14, 15, 18, 22, 23], "S12": [1, 2, 3]})
     demon_crowley.clues = [MonstersClues.can_vanish, MonstersClues.pact_sealed_with_a_kiss, MonstersClues.telekinesis,
                            MonstersClues.summoned_by_placing_box_in_the_crossroads, MonstersClues.small_earth_quake,
                            MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
@@ -1709,13 +1711,19 @@ class MonsterBase:
 
     # ---------------------------------------------------- SEASON 12 ---------------------------------------------------
 
-    unknown = Monster("Unknown", description="", episodes={"S12": [2]})
-    unknown.clues = []
-
-    myling = Monster("Myling", description="Scandinavian children ghost. They try to bring adults and kill them.")
-    myling.clues = [MonstersClues.victims_hear_children_cry, MonstersClues.people_dead_weirdly]
+    myling = Monster("Myling", description="Scandinavian vengeful child ghost. They try to lure adults and kill them "
+                                           "with their cry. Not seen, only mentioned and suspected in S12E03.")
+    myling.clues = [MonstersClues.victims_hear_children_cry, MonstersClues.people_dead_weirdly, MonstersClues.emf,
+                    MonstersClues.weird_things_behavior, MonstersClues.leaves_frozen_marks, MonstersClues.frozen_heart,
+                    MonstersClues.flashing_lights, MonstersClues.cold_spots]
+    myling.disable_methods = [MonstersDisableMethods.iron_or_iron_bullets]
     myling.kill_methods = [MonstersKillMethods.burn_salted_corpse,
                            MonstersKillMethods.destroy_the_object_that_the_ghost_is_bound_to]
+
+    unknown = Monster("Unknown", description="", episodes={"S12": [3]})
+    unknown.clues = [MonstersClues.victims_hear_children_cry, MonstersClues.weird_things_behavior, MonstersClues.emf,
+                     MonstersClues.people_dead_weirdly, MonstersClues.leaves_frozen_marks, MonstersClues.frozen_heart,
+                     MonstersClues.flashing_lights, MonstersClues.cold_spots]
 
     satyr = Monster("Satyr", description="Half man half goat creature from greek mythology. They lead people to the "
                                          "woods to grand orgies. When orgy is over satyr feeds on the victim.")
