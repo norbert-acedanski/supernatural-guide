@@ -14,7 +14,7 @@ class ObjectsBase:
                                       description="A journal of John Winchester, that contains a lot information about "
                                                   "monsters in Supernatural Universe.",
                                       episodes={"S01": [], "S04": [19], "S06": [1, 8, 12], "S07": [8, 11],
-                                                "S08": [8, 12], "S09": [11], "S12": [2]})
+                                                "S08": [8, 12], "S09": [11], "S12": [2, 3]})
     john_winchesters_journal._information = {"S04E19": JohnWinchesterJournal.entry_about_johns_other_son,
                                              "S06E12": JohnWinchesterJournal.entry_about_a_skinwalker,
                                              "S08E12": JohnWinchesterJournal.entry_about_torturing_a_demon,
@@ -104,7 +104,7 @@ class ObjectsBase:
                          episodes={"S04": [16], "S05": [1, 13, 18], "S06": [3, 10, 17, 18, 22], "S07": [21],
                                    "S08": [7, 10, 17, 21, 22, 23], "S09": [1, 2, 3, 6, 9, 10, 11, 14, 16, 18, 21, 22, 23],
                                    "S10": [1, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22],
-                                   "S11": [1, 2, 3, 6, 9, 10, 11, 15, 18, 22, 23], "S12": [1]})
+                                   "S11": [1, 2, 3, 6, 9, 10, 11, 15, 18, 22, 23], "S12": [1, 3]})
     angel_blade.abilities = [ObjectAbilities.can_kill_angels, ObjectAbilities.can_kill_demons]
 
     lucifers_cage = Object("Lucifer's Cage", description="A prison build specifically to contain archangelic powers "
@@ -141,7 +141,8 @@ class ObjectsBase:
                                                   "collected of a person. Released soul of a person will find a way "
                                                   "back to a body. According to Castiel, one Human Soul contains as "
                                                   "much energy as around 100 suns.",
-                        episodes={"S05": [14], "S06": [11], "S08": [19], "S09": [17], "S11": [5, 6, 9, 21, 22, 23]})
+                        episodes={"S05": [14], "S06": [11], "S08": [19], "S09": [17], "S11": [5, 6, 9, 21, 22, 23],
+                                  "S12": [3]})
 
     ring_of_famine = Object("Ring of Famine", description="Can give people starving sensation for things they "
                                                           "lack/desire. One of the four rings of the Horseman.",
