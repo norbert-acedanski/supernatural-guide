@@ -51,6 +51,7 @@ If you are a fan of Supernatural show, you can play with this project to find ou
 - GOD apologizes Lucifer in S11E22
 - Dean is mocking Rowena in S11E23
 - Sam and Dean's mom is revived in S11E23 by th Darkness
+- Dean killed Hitler in S12E05
 
 # TODO:
 - finish all seasons and episodes.
