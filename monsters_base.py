@@ -153,10 +153,12 @@ class MonsterBase:
                                              "(not only spirits, but also the ones in Heaven). Missouri Mosley was "
                                              "a friend of John Winchester. One of the psychics is Oliver Pryce. "
                                              "Man of Letters were teaching him how to control his powers.",
-                      episodes={"S01": [9], "S10": [17]})
-    psychic.clues = [MonstersClues.psychic_abilities,
-
-                     MonstersClues.people_dead_weirdly]
+                      episodes={"S01": [9], "S10": [17], "S12": [4]})
+    psychic.clues = [MonstersClues.psychic_abilities, MonstersClues.people_acting_weirdly, MonstersClues.telekinesis,
+                     MonstersClues.people_dead_weirdly, MonstersClues.can_read_peoples_minds, MonstersClues.no_sulfur,
+                     MonstersClues.people_speaking_languages, MonstersClues.headaches, MonstersClues.no_black_fog,
+                     MonstersClues.head_filled_with_goopy_mush, MonstersClues.marks_on_victims_bodies,
+                     MonstersClues.lack_of_body_control]
     psychic.kill_methods = [MonstersKillMethods.like_any_human]
 
     poltergeist = Monster("Poltergeist", episodes={"S01": [9]})
@@ -1720,10 +1722,11 @@ class MonsterBase:
     myling.kill_methods = [MonstersKillMethods.burn_salted_corpse,
                            MonstersKillMethods.destroy_the_object_that_the_ghost_is_bound_to]
 
-    unknown = Monster("Unknown", description="", episodes={"S12": [3]})
-    unknown.clues = [MonstersClues.victims_hear_children_cry, MonstersClues.weird_things_behavior, MonstersClues.emf,
-                     MonstersClues.people_dead_weirdly, MonstersClues.leaves_frozen_marks, MonstersClues.frozen_heart,
-                     MonstersClues.flashing_lights, MonstersClues.cold_spots]
+    unknown = Monster("Unknown", description="", episodes={"S12": [4]})
+    unknown.clues = [MonstersClues.people_acting_weirdly, MonstersClues.lack_of_body_control, MonstersClues.telekinesis,
+                     MonstersClues.people_dead_weirdly, MonstersClues.can_read_peoples_minds, MonstersClues.no_sulfur,
+                     MonstersClues.people_speaking_languages, MonstersClues.marks_on_victims_bodies,
+                     MonstersClues.head_filled_with_goopy_mush, MonstersClues.headaches, MonstersClues.no_black_fog]
 
     satyr = Monster("Satyr", description="Half man half goat creature from greek mythology. They lead people to the "
                                          "woods to grand orgies. When orgy is over satyr feeds on the victim.")
