@@ -51,9 +51,10 @@ class OrganizationsBase:
     the_judah_initiative.knowledge = [OrganizationKnowledge.golem_magic]
 
     the_thule_society = Organization("The Thule Society", description="Nazi necromancers. A secret fraternity, that "
-                                                                      "sponsored the early days of the Nazi Party.",
-                                     episodes={"S08": [13], "S11": [14]})
-    the_thule_society.knowledge = [OrganizationKnowledge.immortal_life]
+                                                                      "sponsored the early days of the Nazi Party. "
+                                                                      "Thule keep track of all of Hitler's descendants.",
+                                     episodes={"S08": [13], "S11": [14], "S12": [5]})
+    the_thule_society.knowledge = [OrganizationKnowledge.immortal_life, OrganizationKnowledge.resurrections]
 
     the_styne_family = Organization("The Styne family",
                                     description="A family of multi-generational, centuries-old wrong. They used spells "

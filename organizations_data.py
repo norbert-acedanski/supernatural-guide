@@ -33,3 +33,4 @@ class OrganizationKnowledge:
     soul_eaters = "Soul Eaters"
     beacon_sigils_for_monsters = "beacon sigils for monsters (signal, when monster is nearby)"
     spells = "spells"
+    resurrections = "resurrections"
