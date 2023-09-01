@@ -1326,9 +1326,10 @@ class MonsterBase:
 
     thule = Monster("Thule", description="Members of The Thule Society. Used blood magic to make themselves almost "
                                          "undead. To kill it you have to break it's neck or shoot it in the head and "
-                                         "burn the body within 12h.", episodes={"S08": [13]})
+                                         "burn the body within 12h.", episodes={"S08": [13], "S11": [14], "S12": [5]})
     thule.clues = [MonstersClues.weird_fire_spontaneous_combustion, MonstersClues.people_dead_weirdly,
-                   MonstersClues.immortal, MonstersClues.invulnerable, MonstersClues.burned_people]
+                   MonstersClues.immortal, MonstersClues.invulnerable, MonstersClues.burned_people,
+                   MonstersClues.no_sulfur, MonstersClues.no_emf]
     thule.kill_methods = [MonstersKillMethods.break_the_neck, MonstersKillMethods.head_shot,
                           MonstersKillMethods.burn_it]
 
@@ -1722,11 +1723,13 @@ class MonsterBase:
     myling.kill_methods = [MonstersKillMethods.burn_salted_corpse,
                            MonstersKillMethods.destroy_the_object_that_the_ghost_is_bound_to]
 
-    unknown = Monster("Unknown", description="", episodes={"S12": [4]})
-    unknown.clues = [MonstersClues.people_acting_weirdly, MonstersClues.lack_of_body_control, MonstersClues.telekinesis,
-                     MonstersClues.people_dead_weirdly, MonstersClues.can_read_peoples_minds, MonstersClues.no_sulfur,
-                     MonstersClues.people_speaking_languages, MonstersClues.marks_on_victims_bodies,
-                     MonstersClues.head_filled_with_goopy_mush, MonstersClues.headaches, MonstersClues.no_black_fog]
+    hitler = Monster("Hitler", description="THE Hitler. Resurrected by Nauhaus in S12E05. Killed by Dean in S12E05.",
+                     episodes={"S12": [5]})
+    hitler.kill_methods = [MonstersKillMethods.head_shot, MonstersKillMethods.burn_it]
+
+    unknown = Monster("Unknown", description="", episodes={"S12": [5]})
+    unknown.clues = [MonstersClues.weird_fire_spontaneous_combustion, MonstersClues.people_dead_weirdly,
+                     MonstersClues.no_sulfur, MonstersClues.no_emf]
 
     satyr = Monster("Satyr", description="Half man half goat creature from greek mythology. They lead people to the "
                                          "woods to grand orgies. When orgy is over satyr feeds on the victim.")
