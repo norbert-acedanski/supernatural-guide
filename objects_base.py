@@ -377,6 +377,18 @@ class ObjectsBase:
                                   episodes={"S12": [1, 2]})
     angel_knuckle_duster.abilities = [ObjectAbilities.can_hurt_angels]
 
+    watch_with_hitlers_soul = Object("Watch with Hitler's soul",
+                                     description="Watch, that contains soul of Hitler. It's hike a horcrux. In the "
+                                                 "bunker, where Hitler supposedly committed suicide, Commandant "
+                                                 "Nauhaus offered a different solution. Store Hitler's soul in a watch "
+                                                 "to resurrect him. After the bunker, the Thule agents, that were "
+                                                 "smuggling Hitler's soul got captured by Soviets and the watch ended "
+                                                 "up with some Russian family. Then Thule tracked it to China, then "
+                                                 "Peru and then in the Antique shop in US. THe Soul of Hitler can "
+                                                 "possess only a body, that has his blood (a relative or any other "
+                                                 "person, that has his relative blood inside his/her body).",
+                                     episodes={"S12": [5]})
+
     # SEASON 13:
 
     # SEASON 14:
