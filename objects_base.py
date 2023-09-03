@@ -394,6 +394,13 @@ class ObjectsBase:
                                 episodes={"S12": [7]})  # TODO: Check in which episode earlier Castiel is held in them
     enochian_handcuffs.abilities = [ObjectAbilities.traps_an_angel]
 
+    hyperbolic_pulse_generator = Object("Hyperbolic Pulse Generator",
+                                        description="It emits a force, which drives the possessing being from the "
+                                                    "vessel. In order to use it, a spell has to be spoken.",
+                                        episodes={"S12": [8]})
+    hyperbolic_pulse_generator.abilities = [ObjectAbilities.removes_demon_from_its_vessel,
+                                            ObjectAbilities.removes_archangel_from_its_vessel]
+
     # SEASON 13:
 
     # SEASON 14:

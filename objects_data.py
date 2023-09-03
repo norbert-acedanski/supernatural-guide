@@ -59,6 +59,8 @@ class ObjectAbilities:
     creation_and_undoing_of_any_damnation = "creation and undoing of any damnation"
     calls_to_a_person_with_mark_of_cain = "calls to a person with the Mark of Cain"
     shines_in_the_presence_of_god = "shines in the presence of GOD"
+    removes_demon_from_its_vessel = "removes Demon from its vessel"
+    removes_archangel_from_its_vessel = "removes Archangel from its vessel"
 
 
 class ObjectMaintenance:
