@@ -501,7 +501,7 @@ class MonsterBase:
                                          "spell sensed her death, it revived her.",
                     episodes={"S03": [9], "S04": [7, 12], "S05": [7, 12], "S07": [5], "S08": [7, 15],
                               "S10": [3, 7, 9, 10, 13, 16, 17, 18, 19, 21, 22, 23], "S11": [3, 9, 10, 13, 18, 22, 23],
-                              "S12": [2, 3]})
+                              "S12": [2, 3, 8]})
     witch.clues = [MonstersClues.people_dead_weirdly, MonstersClues.hex_bag_hidden_somewhere, MonstersClues.immortal,
                    MonstersClues.coin_hidden_somewhere, MonstersClues.weird_electronics_behavior,
                    MonstersClues.telekinesis, MonstersClues.can_vanish, MonstersClues.weird_plant_deaths_or_behavior,
@@ -587,7 +587,7 @@ class MonsterBase:
                               "S06": [3, 6, 7, 10, 12, 15, 17, 18, 19, 20, 21, 22], "S07": [1, 17, 20, 21, 23],
                               "S08": [2, 7, 8, 10, 17, 19, 21, 22, 23], "S09": [9, 10, 11, 14, 18, 21, 22, 23],
                               "S10": [1, 2, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22, 23],
-                              "S11": [1, 2, 3, 6, 9, 10, 14, 18, 22, 23], "S12": [1, 2, 3, 7]})
+                              "S11": [1, 2, 3, 6, 9, 10, 14, 18, 22, 23], "S12": [1, 2, 3, 7, 8]})
     angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                    MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion, MonstersClues.has_wings,
                    MonstersClues.leaves_burned_marks, MonstersClues.can_tell_if_somebody_was_recently_healed,
@@ -725,9 +725,11 @@ class MonsterBase:
 
     archangel_lucyfer = Monster("Archangel - Lucyfer", description="Archangel, that disobeyed God when he requested to "
                                                                    "bow before the men. To upset God he twisted one of "
-                                                                   "the people into Lilith.",
+                                                                   "the people into Lilith. Lucyfer is released from "
+                                                                   "his Cage in S11 and is send back to his cage in "
+                                                                   "S12E08.",
                                 episodes={"S04": [22], "S05": [1, 3, 4, 10, 19, 22], "S07": [1, 2, 15, 17],
-                                          "S11": [9, 10, 11, 14, 15, 18, 21, 22], "S12": [2, 3, 7]})
+                                          "S11": [9, 10, 11, 14, 15, 18, 21, 22], "S12": [2, 3, 7, 8]})
     archangel_lucyfer.clues = [MonstersClues.weird_things_behavior, MonstersClues.true_voice_can_hurt_people,
                                MonstersClues.bright_light, MonstersClues.weird_weather, MonstersClues.visions,
                                MonstersClues.people_seeing_strange_things, MonstersClues.biblical_like_events,
@@ -742,12 +744,12 @@ class MonsterBase:
                                MonstersClues.can_go_and_put_into_a_persons_mind, MonstersClues.can_posses_an_angel,
                                MonstersClues.high_strength, MonstersClues.invulnerable, MonstersClues.can_time_travel,
                                MonstersClues.can_send_people_to_the_past, MonstersClues.people_dead_weirdly,
-                               MonstersClues.travels_as_white_fog,MonstersClues.weird_electronics_behavior,
-                               MonstersClues.can_repair_human_body, MonstersClues.has_wings,
-                               MonstersClues.burned_eyes,
+                               MonstersClues.travels_as_white_fog, MonstersClues.weird_electronics_behavior,
+                               MonstersClues.can_repair_human_body, MonstersClues.has_wings, MonstersClues.burned_eyes,
+                               MonstersClues.bible_burns_it,
 
                                MonstersClues.people_burned_on_the_ceiling,
-                               MonstersClues.in_true_form_burns_eyes_of_people, MonstersClues.bible_burns_it]
+                               MonstersClues.in_true_form_burns_eyes_of_people]
     archangel_lucyfer.disable_methods = [MonstersDisableMethods.cage_of_lucyfer_in_hell,
                                          MonstersDisableMethods.colt_of_colt_with_magic_bullets,
                                          MonstersDisableMethods.symbol_made_with_blood_against_angels,
@@ -847,7 +849,7 @@ class MonsterBase:
                                       "S07": [1, 6, 8, 22, 23], "S08": [1, 2, 7, 10, 17, 19, 21, 22, 23],
                                       "S09": [2, 4, 6, 10, 11, 16, 17, 21, 23],
                                       "S10": [1, 2, 3, 7, 9, 10, 13, 16, 17, 21, 22, 23],
-                                      "S11": [1, 2, 3, 6, 9, 10, 14, 15, 18, 22, 23], "S12": [1, 2, 3, 7]})
+                                      "S11": [1, 2, 3, 6, 9, 10, 14, 15, 18, 22, 23], "S12": [1, 2, 3, 7, 8]})
     demon_crowley.clues = [MonstersClues.can_vanish, MonstersClues.pact_sealed_with_a_kiss, MonstersClues.telekinesis,
                            MonstersClues.summoned_by_placing_box_in_the_crossroads, MonstersClues.small_earth_quake,
                            MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
@@ -859,6 +861,7 @@ class MonsterBase:
                            MonstersClues.red_eyes, MonstersClues.can_posses_a_person_possessed_by_an_angel,
                            MonstersClues.can_give_hallucinations, MonstersClues.burned_by_holy_water,
                            MonstersClues.can_give_others_knowledge, MonstersClues.can_posses_an_archangel,
+                           MonstersClues.can_teleport_people,
 
                            MonstersClues.black_blood]
     demon_crowley.disable_methods = [MonstersDisableMethods.devils_trap, MonstersDisableMethods.will_of_an_archangel,
@@ -1380,10 +1383,14 @@ class MonsterBase:
                             MonstersClues.can_give_others_knowledge]
     angel_metatron.disable_methods = [MonstersDisableMethods.grace_removal]
 
-    nephilim = Monster("Nephilim", description="Child of human and angel/archangel. Human with an angelic grace.",
+    nephilim = Monster("Nephilim", description="Child of human and Angel/Archangel. Human with an angelic grace. When "
+                                               "a Nephilim is conceived, there is a massive surge in celestial energy. "
+                                               "Depending on the type of celestial being (Angel/Archangel), the surge "
+                                               "differs in power. If Nephilim comes from Lucyfer and the mother "
+                                               "touches the Bible - it burns.",
                        episodes={"S08": [22]})
     nephilim.clues = [MonstersClues.can_see_real_appearance_of_entities, MonstersClues.high_strength,
-                      MonstersClues.bright_eyes,
+                      MonstersClues.bright_eyes, MonstersClues.bible_burns_it,
 
                       MonstersClues.weird_weather, MonstersClues.biblical_like_events]
     nephilim.kill_methods = [MonstersKillMethods.angel_blade]
@@ -1729,7 +1736,7 @@ class MonsterBase:
                      episodes={"S12": [5]})
     hitler.kill_methods = [MonstersKillMethods.head_shot, MonstersKillMethods.burn_it]
 
-    unknown = Monster("Unknown", description="", episodes={"S12": [7]})
+    unknown = Monster("Unknown", description="", episodes={"S12": [8]})
     unknown.clues = []
 
     satyr = Monster("Satyr", description="Half man half goat creature from greek mythology. They lead people to the "
