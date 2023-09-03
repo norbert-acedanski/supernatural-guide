@@ -587,7 +587,7 @@ class MonsterBase:
                               "S06": [3, 6, 7, 10, 12, 15, 17, 18, 19, 20, 21, 22], "S07": [1, 17, 20, 21, 23],
                               "S08": [2, 7, 8, 10, 17, 19, 21, 22, 23], "S09": [9, 10, 11, 14, 18, 21, 22, 23],
                               "S10": [1, 2, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22, 23],
-                              "S11": [1, 2, 3, 6, 9, 10, 14, 18, 22, 23], "S12": [1, 2, 3]})
+                              "S11": [1, 2, 3, 6, 9, 10, 14, 18, 22, 23], "S12": [1, 2, 3, 7]})
     angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                    MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion, MonstersClues.has_wings,
                    MonstersClues.leaves_burned_marks, MonstersClues.can_tell_if_somebody_was_recently_healed,
@@ -610,7 +610,7 @@ class MonsterBase:
                              MonstersDisableMethods.enochian_spell, MonstersDisableMethods.rowenas_immobilization_spell,
                              MonstersDisableMethods.presence_of_the_mother, MonstersDisableMethods.grace_removal,
                              MonstersDisableMethods.attack_dog_spell, MonstersDisableMethods.angel_blade,
-                             MonstersDisableMethods.angel_knuckle_duster]
+                             MonstersDisableMethods.angel_knuckle_duster, MonstersDisableMethods.enochian_handcuffs]
     angel.kill_methods = [MonstersKillMethods.angel_blade, MonstersKillMethods.holy_oil,
                           MonstersKillMethods.leviathan_black_goo, MonstersKillMethods.will_of_an_archangel,
                           MonstersKillMethods.will_of_the_darkness,
@@ -727,7 +727,7 @@ class MonsterBase:
                                                                    "bow before the men. To upset God he twisted one of "
                                                                    "the people into Lilith.",
                                 episodes={"S04": [22], "S05": [1, 3, 4, 10, 19, 22], "S07": [1, 2, 15, 17],
-                                          "S11": [9, 10, 11, 14, 15, 18, 21, 22], "S12": [2, 3]})
+                                          "S11": [9, 10, 11, 14, 15, 18, 21, 22], "S12": [2, 3, 7]})
     archangel_lucyfer.clues = [MonstersClues.weird_things_behavior, MonstersClues.true_voice_can_hurt_people,
                                MonstersClues.bright_light, MonstersClues.weird_weather, MonstersClues.visions,
                                MonstersClues.people_seeing_strange_things, MonstersClues.biblical_like_events,
@@ -742,10 +742,11 @@ class MonsterBase:
                                MonstersClues.can_go_and_put_into_a_persons_mind, MonstersClues.can_posses_an_angel,
                                MonstersClues.high_strength, MonstersClues.invulnerable, MonstersClues.can_time_travel,
                                MonstersClues.can_send_people_to_the_past, MonstersClues.people_dead_weirdly,
-                               MonstersClues.burned_eyes, MonstersClues.weird_electronics_behavior,
+                               MonstersClues.travels_as_white_fog,MonstersClues.weird_electronics_behavior,
                                MonstersClues.can_repair_human_body, MonstersClues.has_wings,
+                               MonstersClues.burned_eyes,
 
-                               MonstersClues.travels_as_white_fog, MonstersClues.people_burned_on_the_ceiling,
+                               MonstersClues.people_burned_on_the_ceiling,
                                MonstersClues.in_true_form_burns_eyes_of_people, MonstersClues.bible_burns_it]
     archangel_lucyfer.disable_methods = [MonstersDisableMethods.cage_of_lucyfer_in_hell,
                                          MonstersDisableMethods.colt_of_colt_with_magic_bullets,
@@ -846,7 +847,7 @@ class MonsterBase:
                                       "S07": [1, 6, 8, 22, 23], "S08": [1, 2, 7, 10, 17, 19, 21, 22, 23],
                                       "S09": [2, 4, 6, 10, 11, 16, 17, 21, 23],
                                       "S10": [1, 2, 3, 7, 9, 10, 13, 16, 17, 21, 22, 23],
-                                      "S11": [1, 2, 3, 6, 9, 10, 14, 15, 18, 22, 23], "S12": [1, 2, 3]})
+                                      "S11": [1, 2, 3, 6, 9, 10, 14, 15, 18, 22, 23], "S12": [1, 2, 3, 7]})
     demon_crowley.clues = [MonstersClues.can_vanish, MonstersClues.pact_sealed_with_a_kiss, MonstersClues.telekinesis,
                            MonstersClues.summoned_by_placing_box_in_the_crossroads, MonstersClues.small_earth_quake,
                            MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
@@ -1728,8 +1729,8 @@ class MonsterBase:
                      episodes={"S12": [5]})
     hitler.kill_methods = [MonstersKillMethods.head_shot, MonstersKillMethods.burn_it]
 
-    unknown = Monster("Unknown", description="", episodes={"S12": [6]})
-    unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.flashing_lights]
+    unknown = Monster("Unknown", description="", episodes={"S12": [7]})
+    unknown.clues = []
 
     satyr = Monster("Satyr", description="Half man half goat creature from greek mythology. They lead people to the "
                                          "woods to grand orgies. When orgy is over satyr feeds on the victim.")
