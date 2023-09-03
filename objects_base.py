@@ -104,7 +104,7 @@ class ObjectsBase:
                          episodes={"S04": [16], "S05": [1, 13, 18], "S06": [3, 10, 17, 18, 22], "S07": [21],
                                    "S08": [7, 10, 17, 21, 22, 23], "S09": [1, 2, 3, 6, 9, 10, 11, 14, 16, 18, 21, 22, 23],
                                    "S10": [1, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22],
-                                   "S11": [1, 2, 3, 6, 9, 10, 11, 15, 18, 22, 23], "S12": [1, 3, 6]})
+                                   "S11": [1, 2, 3, 6, 9, 10, 11, 15, 18, 22, 23], "S12": [1, 3, 6, 7]})
     angel_blade.abilities = [ObjectAbilities.can_kill_angels, ObjectAbilities.can_kill_demons]
 
     lucifers_cage = Object("Lucifer's Cage", description="A prison build specifically to contain archangelic powers "
@@ -388,6 +388,11 @@ class ObjectsBase:
                                                  "possess only a body, that has his blood (a relative or any other "
                                                  "person, that has his relative blood inside his/her body).",
                                      episodes={"S12": [5]})
+
+    enochian_handcuffs = Object("Enochian handcuffs", description="Handcuffs, that can limit the power of celestial "
+                                                                  "beings. It seems, that Archangels are immune to it.",
+                                episodes={"S12": [7]})  # TODO: Check in which episode earlier Castiel is held in them
+    enochian_handcuffs.abilities = [ObjectAbilities.traps_an_angel]
 
     # SEASON 13:
 
