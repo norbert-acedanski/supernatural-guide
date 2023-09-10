@@ -586,6 +586,7 @@ class MonstersDisableMethods:
     will_of_an_archangel = "will of an Archangel"
     hand_of_god = "hand of GOD"
     lucifers_spear = "Lucifer's spear"
+    lance_of_archangel_michael = "lance of Archangel Michael"
 
 
 class MonstersCureMethods:
