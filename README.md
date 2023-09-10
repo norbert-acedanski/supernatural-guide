@@ -53,6 +53,7 @@ If you are a fan of Supernatural show, you can play with this project to find ou
 - Sam and Dean's mom is revived in S11E23 by th Darkness
 - Dean killed Hitler in S12E05
 - Sam and Dean are held in prison for at least 6 weeks, 2 days and 10 hours
+- Dean is cursed by Memory Curse in S12E11 and jokes on Sam after being cured
 
 # TODO:
 - finish all seasons and episodes.
