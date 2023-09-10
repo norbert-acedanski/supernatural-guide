@@ -104,8 +104,9 @@ class ObjectsBase:
                          episodes={"S04": [16], "S05": [1, 13, 18], "S06": [3, 10, 17, 18, 22], "S07": [21],
                                    "S08": [7, 10, 17, 21, 22, 23], "S09": [1, 2, 3, 6, 9, 10, 11, 14, 16, 18, 21, 22, 23],
                                    "S10": [1, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22],
-                                   "S11": [1, 2, 3, 6, 9, 10, 11, 15, 18, 22, 23], "S12": [1, 3, 6, 7]})
-    angel_blade.abilities = [ObjectAbilities.can_kill_angels, ObjectAbilities.can_kill_demons]
+                                   "S11": [1, 2, 3, 6, 9, 10, 11, 15, 18, 22, 23], "S12": [1, 3, 6, 7, 9]})
+    angel_blade.abilities = [ObjectAbilities.can_kill_angels, ObjectAbilities.can_kill_demons,
+                             ObjectAbilities.can_kill_reapers]
 
     lucifers_cage = Object("Lucifer's Cage", description="A prison build specifically to contain archangelic powers "
                                                          "(not seen yet). Can be opened with all 4 rings of "
