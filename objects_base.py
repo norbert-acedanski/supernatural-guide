@@ -24,8 +24,10 @@ class ObjectsBase:
                                                       "overhead and the same night those men died at the Alamo. "
                                                       "He made it for a hunter along with 13 bullets. Bullets can be "
                                                       "crafted for this gun. Can kill everything in all creation "
-                                                      "except 5 entities: Archangel Lucyfer, unknown 4 left.",
-                          episodes={"S01": [20, 21, 22], "S02": [1, 22], "S03": [4, 5, 9], "S05": [10], "S06": [18]})
+                                                      "except 5 entities: Archangel Lucyfer, unknown 4 left. Colt is "
+                                                      "lost sometime during the S06 probably. Back in S12E12.",
+                          episodes={"S01": [20, 21, 22], "S02": [1, 22], "S03": [4, 5, 9], "S05": [10], "S06": [18],
+                                    "S12": [12]})
     colt_of_colt.abilities = [ObjectAbilities.can_kill_anything]
 
     # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
@@ -49,7 +51,7 @@ class ObjectsBase:
                                  episodes={"S03": [1, 9, 16], "S04": [1, 9, 20, 22], "S05": [1, 10, 14, 17, 20, 21, 22],
                                            "S06": [10, 20, 21], "S07": [8, 15, 17, 21],
                                            "S08": [1, 2, 7, 10, 14, 17, 19, 23], "S09": [2, 4, 11, 14, 16, 17],
-                                           "S10": [2, 3, 7, 22], "S11": [2, 6, 15], "S12": [6]})
+                                           "S10": [2, 3, 7, 22], "S11": [2, 6, 15], "S12": [6, 12]})
     demon_killing_knife.abilities = [ObjectAbilities.can_kill_demons, ObjectAbilities.cannot_kill_angels,
                                      ObjectAbilities.cannot_kill_knights_of_hell]
 
@@ -104,9 +106,9 @@ class ObjectsBase:
                          episodes={"S04": [16], "S05": [1, 13, 18], "S06": [3, 10, 17, 18, 22], "S07": [21],
                                    "S08": [7, 10, 17, 21, 22, 23], "S09": [1, 2, 3, 6, 9, 10, 11, 14, 16, 18, 21, 22, 23],
                                    "S10": [1, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22],
-                                   "S11": [1, 2, 3, 6, 9, 10, 11, 15, 18, 22, 23], "S12": [1, 3, 6, 7, 9, 10]})
+                                   "S11": [1, 2, 3, 6, 9, 10, 11, 15, 18, 22, 23], "S12": [1, 3, 6, 7, 9, 10, 12]})
     angel_blade.abilities = [ObjectAbilities.can_kill_angels, ObjectAbilities.can_kill_demons,
-                             ObjectAbilities.can_kill_reapers]
+                             ObjectAbilities.can_kill_reapers, ObjectAbilities.cannot_kill_knights_of_hell]
 
     lucifers_cage = Object("Lucifer's Cage", description="A prison build specifically to contain archangelic powers "
                                                          "(not seen yet). Can be opened with all 4 rings of "
@@ -375,7 +377,7 @@ class ObjectsBase:
     # SEASON 12:
 
     angel_knuckle_duster = Object("Angel Knuckle Duster", description="Allows to hurt angels in a direct fight.",
-                                  episodes={"S12": [1, 2]})
+                                  episodes={"S12": [1, 2, 12]})
     angel_knuckle_duster.abilities = [ObjectAbilities.can_hurt_angels]
 
     watch_with_hitlers_soul = Object("Watch with Hitler's soul",
@@ -401,6 +403,14 @@ class ObjectsBase:
                                         episodes={"S12": [8]})
     hyperbolic_pulse_generator.abilities = [ObjectAbilities.removes_demon_from_its_vessel,
                                             ObjectAbilities.removes_archangel_from_its_vessel]
+
+    lance_of_archangel_michael = Object("Lance of Archangel Michael",
+                                        description="It kills the bad ones fast and the good ones slowly and "
+                                                    "painfully. Michael wanted Lucyfer to suffer, when he was stabbed "
+                                                    "with it. It is covered with runes. Whe the Lance os broken, "
+                                                    "wounded beings are healed.", episodes={"S12": [12]})
+    lance_of_archangel_michael.abilities = [ObjectAbilities.can_hurt_angels, ObjectAbilities.can_kill_angels,
+                                            ObjectAbilities.can_kill_demons, ObjectAbilities.can_put_down_holy_oil]
 
     # SEASON 13:
 
