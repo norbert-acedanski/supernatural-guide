@@ -183,9 +183,10 @@ class MonsterBase:
                                            "people are not dying. Rogue reapers (Ajay for example) can smuggle "
                                            "a person across Hell's border, Heaven and the Veil. They have secret ways "
                                            "in and out.When a reaper dies, there are electrical storms. One of the "
-                                           "Reapers is Tesa (killed by Dean in S09E22).",
+                                           "Reapers is Tesa (killed by Dean in S09E22). Reaper Billie is killed by "
+                                           "Castiel in S12E09.",
                      episodes={"S01": [12], "S02": [1], "S04": [15], "S05": [10, 21], "S06": [11], "S07": [10],
-                               "S08": [19], "S09": [3, 22], "S11": [2, 10, 17, 23], "S12": [6]})
+                               "S08": [19], "S09": [3, 22], "S11": [2, 10, 17, 23], "S12": [6, 9]})
     reaper.clues = [MonstersClues.people_dead_weirdly, MonstersClues.people_cured_miraculously,
                     MonstersClues.weird_things_behavior, MonstersClues.people_seeing_things_or_figures,
                     MonstersClues.seen_as_a_person_in_a_suit, MonstersClues.ghost_like_creature,
@@ -271,7 +272,7 @@ class MonsterBase:
                                              "blood. Upon changing, all senses sharpen.",
                       episodes={"S01": [20], "S02": [3], "S03": [7], "S05": [3], "S06": [5, 19], "S07": [22],
                                 "S08": [1, 2, 5, 7, 9, 10, 18, 19], "S09": [2, 16, 19, 20], "S10": [8, 19, 23],
-                                "S11": [12], "S12": [1]})
+                                "S11": [12], "S12": [1, 9]})
     vampire.clues = [MonstersClues.ripped_throat, MonstersClues.no_blood_in_the_body, MonstersClues.needle_like_teeth,
                      MonstersClues.moving_in_groups_usually, MonstersClues.invulnerable, MonstersClues.high_strength,
                      MonstersClues.bright_eyes, MonstersClues.great_sense_of_smell, MonstersClues.white_skin,
@@ -587,7 +588,7 @@ class MonsterBase:
                               "S06": [3, 6, 7, 10, 12, 15, 17, 18, 19, 20, 21, 22], "S07": [1, 17, 20, 21, 23],
                               "S08": [2, 7, 8, 10, 17, 19, 21, 22, 23], "S09": [9, 10, 11, 14, 18, 21, 22, 23],
                               "S10": [1, 2, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22, 23],
-                              "S11": [1, 2, 3, 6, 9, 10, 14, 18, 22, 23], "S12": [1, 2, 3, 7, 8]})
+                              "S11": [1, 2, 3, 6, 9, 10, 14, 18, 22, 23], "S12": [1, 2, 3, 7, 8, 9]})
     angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                    MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion, MonstersClues.has_wings,
                    MonstersClues.leaves_burned_marks, MonstersClues.can_tell_if_somebody_was_recently_healed,
@@ -849,7 +850,7 @@ class MonsterBase:
                                       "S07": [1, 6, 8, 22, 23], "S08": [1, 2, 7, 10, 17, 19, 21, 22, 23],
                                       "S09": [2, 4, 6, 10, 11, 16, 17, 21, 23],
                                       "S10": [1, 2, 3, 7, 9, 10, 13, 16, 17, 21, 22, 23],
-                                      "S11": [1, 2, 3, 6, 9, 10, 14, 15, 18, 22, 23], "S12": [1, 2, 3, 7, 8]})
+                                      "S11": [1, 2, 3, 6, 9, 10, 14, 15, 18, 22, 23], "S12": [1, 2, 3, 7, 8, 9]})
     demon_crowley.clues = [MonstersClues.can_vanish, MonstersClues.pact_sealed_with_a_kiss, MonstersClues.telekinesis,
                            MonstersClues.summoned_by_placing_box_in_the_crossroads, MonstersClues.small_earth_quake,
                            MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
@@ -1736,7 +1737,7 @@ class MonsterBase:
                      episodes={"S12": [5]})
     hitler.kill_methods = [MonstersKillMethods.head_shot, MonstersKillMethods.burn_it]
 
-    unknown = Monster("Unknown", description="", episodes={"S12": [8]})
+    unknown = Monster("Unknown", description="", episodes={"S12": [9]})
     unknown.clues = []
 
     satyr = Monster("Satyr", description="Half man half goat creature from greek mythology. They lead people to the "
