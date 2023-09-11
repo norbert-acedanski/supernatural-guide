@@ -1748,18 +1748,20 @@ class MonsterBase:
                      episodes={"S12": [5]})
     hitler.kill_methods = [MonstersKillMethods.head_shot, MonstersKillMethods.burn_it]
 
-    unknown = Monster("Unknown", description="", episodes={"S12": [17]})
-    unknown.clues = []
-
     satyr = Monster("Satyr", description="Half man half goat creature from greek mythology. They lead people to the "
-                                         "woods to grand orgies. When orgy is over satyr feeds on the victim.")
+                                         "woods to massive orgies. When orgy is over satyr feeds on the victim. Not "
+                                         "seen, only mentioned in S12E18.")
     satyr.clues = [MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                    MonstersClues.goat_man]
 
-    moloch = Monster("Moloch", description="God of sacrifice.")
+    moloch = Monster("Moloch", description="God of sacrifice. WHen fed once a year with fresh human blood grants a "
+                                           "great wealth. Killed by Sam in S12E18.", episodes={"S12": [18]})
     moloch.clues = [MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
-                    MonstersClues.goat_man]
+                    MonstersClues.goat_man, MonstersClues.high_strength]
     moloch.kill_methods = [MonstersKillMethods.colt_of_colt_with_magic_bullets]
+
+    unknown = Monster("Unknown", description="", episodes={"S12": [18]})
+    unknown.clues = []
 
     # ---------------------------------------------------- SEASON 13 ---------------------------------------------------
 
