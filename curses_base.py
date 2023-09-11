@@ -205,7 +205,7 @@ class CursesBase:
                                                                "a pinch of the Sands of Time and a week charge of "
                                                                "a soul) can move a person to another time "
                                                                "to a specific person or their relatives.",
-                              episodes={"S08": [12], "S09": [21]})
+                              episodes={"S08": [12], "S09": [21], "S12": [13]})
     time_travel_spell.clues = [CursesClues.people_appearing_out_of_nowhere]
 
     false_memories_spell = Curse("False memories spell", description="It is used to create false memories into another "
