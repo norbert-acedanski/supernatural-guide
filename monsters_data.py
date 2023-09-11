@@ -433,6 +433,7 @@ class MonstersKillMethods:
     silver_knife_blessed_by_a_priest = "silver knife blessed by a priest"
     silver_knife_dipped_in_dogs_blood = "silver knife dipped in dogs blood"
     silver_bullet_into_the_heart = "silver bullet into the heart"
+    silver_nitrate_injection = "silver nitrate injection"
     demon_killing_knife = "demon killing knife"
     demon_killing_spell = "demon killing spell"
     defigere_et_depurgare_spell = "defigere et depurgare spell (to bind and purge spell)"
