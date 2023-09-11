@@ -401,7 +401,6 @@ class MonstersClues:
     long_tongue = "long tongue"
     ear_ringing = "ear ringing"
     seen_by_drunk_people = "seen by drunk people"
-    roman_corn_syrup = "roman corn syrup"
     tree_tatoo = "tree tatoo (a Celtic magic symbol - the Tree of Pain)"
     eagle_tatoo = "eagle tatoo (Styne family tatoo)"
     black_goo = "black goo"
@@ -510,6 +509,8 @@ class MonstersKillMethods:
     stamp_on_it = "stamp on it"
     wait_for_it_to_die = "wait for it to die"
     man_of_letters_rougarou_gun = "Man of letters Rougarou gun"
+    roman_corn_syrup = "roman corn syrup"
+    avd = "AVD (Anti-Vamp Device) - a gas, that kills only Vampires"
 
 
 class MonstersDisableMethods:

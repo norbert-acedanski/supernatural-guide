@@ -267,7 +267,7 @@ class MonsterBase:
                      MonstersClues.weird_electronics_behavior]
     shtriga.kill_methods = [MonstersKillMethods.consecrated_wrought_iron_when_it_eats]
 
-    vampire = Monster("Vampire", description="They were once people. They need fresh human blood to survive. "
+    vampire = Monster("Vampire", description="They were once people. They need cfresh human blood to survive. "
                                              "A coss will not repel them, sunlight will not kill them. Neither will a "
                                              "stake to the heart. Vampires nest in groups 8 to 10. Smaller packs are "
                                              "sent out to hunt for food. Kidnapped people are taken to nests and then "
@@ -276,7 +276,7 @@ class MonsterBase:
                                              "blood. Upon changing, all senses sharpen.",
                       episodes={"S01": [20], "S02": [3], "S03": [7], "S05": [3], "S06": [5, 19], "S07": [22],
                                 "S08": [1, 2, 5, 7, 9, 10, 18, 19], "S09": [2, 16, 19, 20], "S10": [8, 19, 23],
-                                "S11": [12], "S12": [1, 9]})
+                                "S11": [12], "S12": [1, 9, 14]})
     vampire.clues = [MonstersClues.ripped_throat, MonstersClues.no_blood_in_the_body, MonstersClues.needle_like_teeth,
                      MonstersClues.moving_in_groups_usually, MonstersClues.invulnerable, MonstersClues.high_strength,
                      MonstersClues.bright_eyes, MonstersClues.great_sense_of_smell, MonstersClues.white_skin,
@@ -287,7 +287,7 @@ class MonsterBase:
                      MonstersClues.no_weird_noises, MonstersClues.no_hex_bags, MonstersClues.craving_for_blood]
     vampire.kill_methods = [MonstersKillMethods.decapitation, MonstersKillMethods.angel_blade,
                             MonstersKillMethods.colt_of_colt_with_magic_bullets, MonstersKillMethods.will_of_an_angel,
-                            MonstersClues.roman_corn_syrup]
+                            MonstersKillMethods.roman_corn_syrup, MonstersKillMethods.avd]
     vampire.disable_methods = [MonstersDisableMethods.dead_mans_blood]
     vampire.cure_methods = [MonstersCureMethods.cocktail_made_of_blood_of_the_vampire_that_bit_the_victim]
 
@@ -1043,15 +1043,14 @@ class MonsterBase:
                           MonstersKillMethods.blend_it]
 
     vampire_alpha = Monster("Vampire Alpha", description="First Vampire. All Vampires are descendants of the Alpha. "
-                                                         "Has control over other vampires. He is a son of Eve.",
-                            episodes={"S06": [5, 7], "S07": [22]})
+                                                         "Has control over other vampires. He is a son of Eve. Killed "
+                                                         "in S12E14 by Sam.",
+                            episodes={"S06": [5, 7], "S07": [22], "S12": [14]})
     vampire_alpha.clues = [MonstersClues.can_give_hallucinations, MonstersClues.mind_control, MonstersClues.moves_fast,
                            MonstersClues.great_sense_of_smell, MonstersClues.can_appear_out_of_thin_air,
                            MonstersClues.can_put_a_person_to_sleep, MonstersClues.invulnerable,
                            MonstersClues.needle_like_teeth]
-    vampire_alpha.kill_methods = [
-
-                                  MonstersKillMethods.colt_of_colt_with_magic_bullets]
+    vampire_alpha.kill_methods = [MonstersKillMethods.colt_of_colt_with_magic_bullets]
 
     veritas = Monster("Veritas", description="Goddess of Truth. Can be summoned with a cat skull, grains of paradise "
                                              "seed and devil's shoestring. Loves cats, dogs hate her. Can make people "
@@ -1743,9 +1742,8 @@ class MonsterBase:
                      episodes={"S12": [5]})
     hitler.kill_methods = [MonstersKillMethods.head_shot, MonstersKillMethods.burn_it]
 
-    unknown = Monster("Unknown", description="", episodes={"S12": [13]})
-    unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.invisible_entity, MonstersClues.damaged_organs,
-                     MonstersClues.cold_spots, MonstersClues.ghost_like_creature]
+    unknown = Monster("Unknown", description="", episodes={"S12": [14]})
+    unknown.clues = []
 
     satyr = Monster("Satyr", description="Half man half goat creature from greek mythology. They lead people to the "
                                          "woods to grand orgies. When orgy is over satyr feeds on the victim.")
