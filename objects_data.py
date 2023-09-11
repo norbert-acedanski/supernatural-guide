@@ -65,7 +65,9 @@ class ObjectAbilities:
 
 
 class ObjectMaintenance:
-    pass
+    bullets_for_colt_of_colt = "bullets for Colt of Colt - you need holy oil, sage and myrrh. Make a tincture, coat " \
+                               "a silver bullet and use a spell 'Signum est imitandum' when pointing your hand at " \
+                               "the bullets (it mimics the original etchings)."
 
 
 class ObjectDestroyMethods:
