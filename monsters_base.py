@@ -15,8 +15,9 @@ class MonsterBase:
                                                            "Lucyfer himself before the Atlantis drowned. They were "
                                                            "trained to be demonic generals in the war against Heaven. "
                                                            "Azazel was killed by Dean. Ramiel is the second Prince "
-                                                           "Winchesters encounter.",
-                             episodes={"S01": [1, 21, 22], "S02": [1, 21, 22], "S04": [3, 22], "S06": [1], "S12": [12]})
+                                                           "Winchesters encounter. Dagon appears in S12E13.",
+                             episodes={"S01": [1, 21, 22], "S02": [1, 21, 22], "S04": [3, 22], "S06": [1],
+                                       "S12": [12, 13]})
     # TODO: Check in which episodes does Azazel appear
     prince_of_hell.clues = [MonstersClues.people_burned_on_the_ceiling, MonstersClues.telekinesis,
                             MonstersClues.weird_things_behavior, MonstersClues.yellow_eyes, MonstersClues.weird_weather,
@@ -26,7 +27,7 @@ class MonsterBase:
                             MonstersClues.holy_water_does_not_affect_it, MonstersClues.travels_as_black_fog,
                             MonstersClues.can_posses_a_reaper, MonstersClues.one_can_make_a_deal_with_it,
                             MonstersClues.can_show_past_to_people, MonstersClues.demon_killing_knife_is_ineffective,
-                            MonstersClues.angel_blade_is_ineffective]
+                            MonstersClues.angel_blade_is_ineffective, MonstersClues.can_kill_angels_with_a_touch]
     prince_of_hell.kill_methods = [MonstersKillMethods.colt_of_colt_with_magic_bullets,
                                    MonstersKillMethods.lance_of_archangel_michael,
 
@@ -46,7 +47,7 @@ class MonsterBase:
                               episodes={"S01": [1, 3, 5, 7, 9, 10, 13, 19], "S02": [6, 11, 16, 18, 19],
                                         "S03": [5, 6, 13], "S04": [2, 13, 15, 17], "S05": [9, 11], "S06": [4, 14],
                                         "S07": [7, 10, 13, 17, 19], "S09": [7], "S10": [13, 16], "S11": [7, 23],
-                                        "S12": [3, 6]})
+                                        "S12": [3, 6, 13]})
     vengeful_spirit.clues = [MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                              MonstersClues.people_dead_weirdly, MonstersClues.ghost_like_creature,
                              MonstersClues.weird_electronics_behavior, MonstersClues.weird_things_behavior,
@@ -505,7 +506,7 @@ class MonsterBase:
                                          "spell sensed her death, it revived her.",
                     episodes={"S03": [9], "S04": [7, 12], "S05": [7, 12], "S07": [5], "S08": [7, 15],
                               "S10": [3, 7, 9, 10, 13, 16, 17, 18, 19, 21, 22, 23], "S11": [3, 9, 10, 13, 18, 22, 23],
-                              "S12": [2, 3, 8, 11]})
+                              "S12": [2, 3, 8, 11, 13]})
     witch.clues = [MonstersClues.people_dead_weirdly, MonstersClues.hex_bag_hidden_somewhere, MonstersClues.immortal,
                    MonstersClues.coin_hidden_somewhere, MonstersClues.weird_electronics_behavior,
                    MonstersClues.telekinesis, MonstersClues.can_vanish, MonstersClues.weird_plant_deaths_or_behavior,
@@ -591,7 +592,7 @@ class MonsterBase:
                               "S06": [3, 6, 7, 10, 12, 15, 17, 18, 19, 20, 21, 22], "S07": [1, 17, 20, 21, 23],
                               "S08": [2, 7, 8, 10, 17, 19, 21, 22, 23], "S09": [9, 10, 11, 14, 18, 21, 22, 23],
                               "S10": [1, 2, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22, 23],
-                              "S11": [1, 2, 3, 6, 9, 10, 14, 18, 22, 23], "S12": [1, 2, 3, 7, 8, 9, 10, 11]})
+                              "S11": [1, 2, 3, 6, 9, 10, 14, 18, 22, 23], "S12": [1, 2, 3, 7, 8, 9, 10, 12, 13]})
     angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                    MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion, MonstersClues.has_wings,
                    MonstersClues.leaves_burned_marks, MonstersClues.can_tell_if_somebody_was_recently_healed,
@@ -619,7 +620,6 @@ class MonsterBase:
     angel.kill_methods = [MonstersKillMethods.angel_blade, MonstersKillMethods.holy_oil,
                           MonstersKillMethods.leviathan_black_goo, MonstersKillMethods.will_of_an_archangel,
                           MonstersKillMethods.will_of_the_darkness, MonstersKillMethods.lance_of_archangel_michael,
-
                           MonstersKillMethods.will_of_prince_of_hell]
 
     rougarou = Monster("Rougarou", description="Once a human. Now - rotten teeth, wormy skin. When going through "
@@ -628,11 +628,12 @@ class MonsterBase:
                                                "irresistible. After the first bite of the human flesh, they transform "
                                                "completely and fast. They feed once, they're a monster forever. "
                                                "This may be a genetic condition.",
-                       episodes={"S04": [4], "S06": [10], "S08": [2]})
+                       episodes={"S04": [4], "S06": [10], "S08": [2], "S12": [13]})
     rougarou.clues = [MonstersClues.enormous_appetite, MonstersClues.body_metamorphosis, MonstersClues.high_strength,
                       MonstersClues.bloodshot_eyes, MonstersClues.wormy_skin, MonstersClues.no_bone_marrow_in_bones,
                       MonstersClues.drained_organs, MonstersClues.people_dead_weirdly, MonstersClues.bite_marks]
-    rougarou.kill_methods = [MonstersKillMethods.burn_it, MonstersKillMethods.demon_killing_knife]
+    rougarou.kill_methods = [MonstersKillMethods.burn_it, MonstersKillMethods.demon_killing_knife,
+                             MonstersKillMethods.man_of_letters_rougarou_gun]
 
     samhain = Monster("Samhain", description="A demon that is the origin of Halloween. Celts believed, that the 31st "
                                              "of October is the day, when the veil is the thinnest between the living "
@@ -735,7 +736,7 @@ class MonsterBase:
                                                                    "is revealed, that the Cage is not the place where "
                                                                    "Lucyfer is in S12E12.",
                                 episodes={"S04": [22], "S05": [1, 3, 4, 10, 19, 22], "S07": [1, 2, 15, 17],
-                                          "S11": [9, 10, 11, 14, 15, 18, 21, 22], "S12": [2, 3, 7, 8, 12]})
+                                          "S11": [9, 10, 11, 14, 15, 18, 21, 22], "S12": [2, 3, 7, 8, 12, 13]})
     archangel_lucyfer.clues = [MonstersClues.weird_things_behavior, MonstersClues.true_voice_can_hurt_people,
                                MonstersClues.bright_light, MonstersClues.weird_weather, MonstersClues.visions,
                                MonstersClues.people_seeing_strange_things, MonstersClues.biblical_like_events,
@@ -855,7 +856,7 @@ class MonsterBase:
                                       "S07": [1, 6, 8, 22, 23], "S08": [1, 2, 7, 10, 17, 19, 21, 22, 23],
                                       "S09": [2, 4, 6, 10, 11, 16, 17, 21, 23],
                                       "S10": [1, 2, 3, 7, 9, 10, 13, 16, 17, 21, 22, 23],
-                                      "S11": [1, 2, 3, 6, 9, 10, 14, 15, 18, 22, 23], "S12": [1, 2, 3, 7, 8, 9, 12]})
+                                      "S11": [1, 2, 3, 6, 9, 10, 14, 15, 18, 22, 23], "S12": [1, 2, 3, 7, 8, 9, 12, 13]})
     demon_crowley.clues = [MonstersClues.can_vanish, MonstersClues.pact_sealed_with_a_kiss, MonstersClues.telekinesis,
                            MonstersClues.summoned_by_placing_box_in_the_crossroads, MonstersClues.small_earth_quake,
                            MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
@@ -1742,8 +1743,9 @@ class MonsterBase:
                      episodes={"S12": [5]})
     hitler.kill_methods = [MonstersKillMethods.head_shot, MonstersKillMethods.burn_it]
 
-    unknown = Monster("Unknown", description="", episodes={"S12": [12]})
-    unknown.clues = []
+    unknown = Monster("Unknown", description="", episodes={"S12": [13]})
+    unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.invisible_entity, MonstersClues.damaged_organs,
+                     MonstersClues.cold_spots, MonstersClues.ghost_like_creature]
 
     satyr = Monster("Satyr", description="Half man half goat creature from greek mythology. They lead people to the "
                                          "woods to grand orgies. When orgy is over satyr feeds on the victim.")

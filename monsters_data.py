@@ -509,6 +509,7 @@ class MonstersKillMethods:
     kill_the_other_version = "kill the other version"
     stamp_on_it = "stamp on it"
     wait_for_it_to_die = "wait for it to die"
+    man_of_letters_rougarou_gun = "Man of letters Rougarou gun"
 
 
 class MonstersDisableMethods:
