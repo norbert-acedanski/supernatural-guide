@@ -27,7 +27,7 @@ class ObjectsBase:
                                                       "except 5 entities: Archangel Lucyfer, unknown 4 left. Colt is "
                                                       "lost sometime during the S06 probably. Back in S12E12.",
                           episodes={"S01": [20, 21, 22], "S02": [1, 22], "S03": [4, 5, 9], "S05": [10], "S06": [18],
-                                    "S12": [12, 13, 17]})
+                                    "S12": [12, 13, 17, 18]})
     colt_of_colt.abilities = [ObjectAbilities.can_kill_anything]
     colt_of_colt.maintenance_methods = [ObjectMaintenance.bullets_for_colt_of_colt]
 
