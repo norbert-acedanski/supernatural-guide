@@ -15,7 +15,8 @@ class MonsterBase:
                                                            "Lucyfer himself before the Atlantis drowned. They were "
                                                            "trained to be demonic generals in the war against Heaven. "
                                                            "Azazel was killed by Dean. Ramiel is the second Prince "
-                                                           "Winchesters encounter. Dagon appears in S12E13.",
+                                                           "Winchesters encounter. Dagon appears in S12E13. She is "
+                                                           "mostly known for her psychotic savegery.",
                              episodes={"S01": [1, 21, 22], "S02": [1, 21, 22], "S04": [3, 22], "S06": [1],
                                        "S12": [12, 13]})
     # TODO: Check in which episodes does Azazel appear
@@ -114,7 +115,7 @@ class MonsterBase:
                               "S06": [7, 10, 18, 20, 21, 22], "S07": [8, 15, 17, 21, 23],
                               "S08": [1, 2, 7, 10, 17, 19, 21, 22], "S09": [2, 10, 11, 14, 16, 17, 21, 23],
                               "S10": [1, 2, 3, 7, 9, 10, 13, 16, 17, 21], "S11": [1, 3, 6, 9, 10, 14, 15, 18, 22],
-                              "S12": [1, 12]})
+                              "S12": [1, 12, 15]})
     demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                    MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                    MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -129,9 +130,9 @@ class MonsterBase:
     demon.kill_methods = [MonstersKillMethods.demon_killing_knife, MonstersKillMethods.angel_exorcism,
                           MonstersKillMethods.colt_of_colt_with_magic_bullets, MonstersKillMethods.demon_killing_spell,
                           MonstersKillMethods.angel_blade, MonstersKillMethods.first_blade, MonstersKillMethods.holy_oil,
-                          MonstersKillMethods.defigere_et_depurgare_spell,
+                          MonstersKillMethods.defigere_et_depurgare_spell, MonstersKillMethods.will_of_an_archangel,
 
-                          MonstersKillMethods.will_of_an_archangel, MonstersKillMethods.lance_of_archangel_michael]
+                          MonstersKillMethods.lance_of_archangel_michael]
     demon.disable_methods = [MonstersDisableMethods.holy_water, MonstersDisableMethods.holy_wood,
                              MonstersDisableMethods.exorcism, MonstersDisableMethods.devils_trap,
                              MonstersDisableMethods.witch_spell_to_get_a_demon_out_of_the_body,
@@ -321,9 +322,11 @@ class MonsterBase:
     hell_hound = Monster("Hell Hound", description="Creation of God, but they were too vicious, so God kept them "
                                                    "short. Now they hunt people that sold their souls. According the "
                                                    "the Demon Tablet - dire creatures may be seen only by the damned "
-                                                   "or through an object scorched with holy fire (burning holy oil).",
+                                                   "or through an object scorched with holy fire (burning holy oil). "
+                                                   "Almost all Hell Hounds were killed by Angels, but Lucyfer rescued "
+                                                   "pregnant Ramsey, that is loyal only to him.",
                          episodes={"S02": [8], "S03": [16], "S05": [10, 20], "S06": [4, 10, 14], "S08": [14],
-                                   "S09": [21], "S11": [15]})
+                                   "S09": [21], "S11": [15], "S12": [15]})
     hell_hound.clues = [MonstersClues.victims_hear_dogs_barking_and_growling, MonstersClues.invisible_dogs,
                         MonstersClues.victims_see_black_dogs, MonstersClues.people_seeing_strange_things,
                         MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
@@ -592,7 +595,7 @@ class MonsterBase:
                               "S06": [3, 6, 7, 10, 12, 15, 17, 18, 19, 20, 21, 22], "S07": [1, 17, 20, 21, 23],
                               "S08": [2, 7, 8, 10, 17, 19, 21, 22, 23], "S09": [9, 10, 11, 14, 18, 21, 22, 23],
                               "S10": [1, 2, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22, 23],
-                              "S11": [1, 2, 3, 6, 9, 10, 14, 18, 22, 23], "S12": [1, 2, 3, 7, 8, 9, 10, 12, 13]})
+                              "S11": [1, 2, 3, 6, 9, 10, 14, 18, 22, 23], "S12": [1, 2, 3, 7, 8, 9, 10, 12, 13, 15]})
     angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                    MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion, MonstersClues.has_wings,
                    MonstersClues.leaves_burned_marks, MonstersClues.can_tell_if_somebody_was_recently_healed,
@@ -736,7 +739,7 @@ class MonsterBase:
                                                                    "is revealed, that the Cage is not the place where "
                                                                    "Lucyfer is in S12E12.",
                                 episodes={"S04": [22], "S05": [1, 3, 4, 10, 19, 22], "S07": [1, 2, 15, 17],
-                                          "S11": [9, 10, 11, 14, 15, 18, 21, 22], "S12": [2, 3, 7, 8, 12, 13]})
+                                          "S11": [9, 10, 11, 14, 15, 18, 21, 22], "S12": [2, 3, 7, 8, 12, 13, 15]})
     archangel_lucyfer.clues = [MonstersClues.weird_things_behavior, MonstersClues.true_voice_can_hurt_people,
                                MonstersClues.bright_light, MonstersClues.weird_weather, MonstersClues.visions,
                                MonstersClues.people_seeing_strange_things, MonstersClues.biblical_like_events,
@@ -856,7 +859,8 @@ class MonsterBase:
                                       "S07": [1, 6, 8, 22, 23], "S08": [1, 2, 7, 10, 17, 19, 21, 22, 23],
                                       "S09": [2, 4, 6, 10, 11, 16, 17, 21, 23],
                                       "S10": [1, 2, 3, 7, 9, 10, 13, 16, 17, 21, 22, 23],
-                                      "S11": [1, 2, 3, 6, 9, 10, 14, 15, 18, 22, 23], "S12": [1, 2, 3, 7, 8, 9, 12, 13]})
+                                      "S11": [1, 2, 3, 6, 9, 10, 14, 15, 18, 22, 23],
+                                      "S12": [1, 2, 3, 7, 8, 9, 12, 13, 15]})
     demon_crowley.clues = [MonstersClues.can_vanish, MonstersClues.pact_sealed_with_a_kiss, MonstersClues.telekinesis,
                            MonstersClues.summoned_by_placing_box_in_the_crossroads, MonstersClues.small_earth_quake,
                            MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
@@ -1742,7 +1746,7 @@ class MonsterBase:
                      episodes={"S12": [5]})
     hitler.kill_methods = [MonstersKillMethods.head_shot, MonstersKillMethods.burn_it]
 
-    unknown = Monster("Unknown", description="", episodes={"S12": [14]})
+    unknown = Monster("Unknown", description="", episodes={"S12": [15]})
     unknown.clues = []
 
     satyr = Monster("Satyr", description="Half man half goat creature from greek mythology. They lead people to the "
