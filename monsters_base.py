@@ -116,7 +116,7 @@ class MonsterBase:
                               "S06": [7, 10, 18, 20, 21, 22], "S07": [8, 15, 17, 21, 23],
                               "S08": [1, 2, 7, 10, 17, 19, 21, 22], "S09": [2, 10, 11, 14, 16, 17, 21, 23],
                               "S10": [1, 2, 3, 7, 9, 10, 13, 16, 17, 21], "S11": [1, 3, 6, 9, 10, 14, 15, 18, 22],
-                              "S12": [1, 12, 15, 17]})
+                              "S12": [1, 12, 15, 17, 21]})
     demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                    MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                    MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -326,9 +326,10 @@ class MonsterBase:
                                                    "the Demon Tablet - dire creatures may be seen only by the damned "
                                                    "or through an object scorched with holy fire (burning holy oil). "
                                                    "Almost all Hell Hounds were killed by Angels, but Lucyfer rescued "
-                                                   "pregnant Ramsey, that is loyal only to him.",
+                                                   "pregnant Ramsey, that is loyal only to him. Hell Hound can be "
+                                                   "controlled by a special whistle (showed in S12E21).",
                          episodes={"S02": [8], "S03": [16], "S05": [10, 20], "S06": [4, 10, 14], "S08": [14],
-                                   "S09": [21], "S11": [15], "S12": [15]})
+                                   "S09": [21], "S11": [15], "S12": [15, 21]})
     hell_hound.clues = [MonstersClues.victims_hear_dogs_barking_and_growling, MonstersClues.invisible_dogs,
                         MonstersClues.victims_see_black_dogs, MonstersClues.people_seeing_strange_things,
                         MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
@@ -742,7 +743,7 @@ class MonsterBase:
                                                                    "Lucyfer is in S12E12.",
                                 episodes={"S04": [22], "S05": [1, 3, 4, 10, 19, 22], "S07": [1, 2, 15, 17],
                                           "S11": [9, 10, 11, 14, 15, 18, 21, 22],
-                                          "S12": [2, 3, 7, 8, 12, 13, 15, 17, 19]})
+                                          "S12": [2, 3, 7, 8, 12, 13, 15, 17, 19, 21]})
     archangel_lucyfer.clues = [MonstersClues.weird_things_behavior, MonstersClues.true_voice_can_hurt_people,
                                MonstersClues.bright_light, MonstersClues.weird_weather, MonstersClues.visions,
                                MonstersClues.people_seeing_strange_things, MonstersClues.biblical_like_events,
@@ -769,9 +770,7 @@ class MonsterBase:
                                          MonstersDisableMethods.hand_of_god, MonstersDisableMethods.holy_oil,
 
                                          MonstersDisableMethods.angel_knuckle_duster]
-    archangel_lucyfer.kill_methods = [MonstersKillMethods.archangel_blade,
-
-                                      MonstersKillMethods.the_darkness]
+    archangel_lucyfer.kill_methods = [MonstersKillMethods.archangel_blade, MonstersKillMethods.the_darkness]
 
     # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
 
@@ -863,7 +862,7 @@ class MonsterBase:
                                       "S09": [2, 4, 6, 10, 11, 16, 17, 21, 23],
                                       "S10": [1, 2, 3, 7, 9, 10, 13, 16, 17, 21, 22, 23],
                                       "S11": [1, 2, 3, 6, 9, 10, 14, 15, 18, 22, 23],
-                                      "S12": [1, 2, 3, 7, 8, 9, 12, 13, 15, 17]})
+                                      "S12": [1, 2, 3, 7, 8, 9, 12, 13, 15, 17, 21]})
     demon_crowley.clues = [MonstersClues.can_vanish, MonstersClues.pact_sealed_with_a_kiss, MonstersClues.telekinesis,
                            MonstersClues.summoned_by_placing_box_in_the_crossroads, MonstersClues.small_earth_quake,
                            MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
@@ -881,7 +880,7 @@ class MonsterBase:
     demon_crowley.disable_methods = [MonstersDisableMethods.devils_trap, MonstersDisableMethods.will_of_an_archangel,
                                      MonstersDisableMethods.demonic_handcuffs, MonstersDisableMethods.darkness_powers,
                                      MonstersDisableMethods.rowenas_immobilization_spell,
-                                     MonstersDisableMethods.holy_water]
+                                     MonstersDisableMethods.holy_water, MonstersDisableMethods.angel_blade]
 
     reaper_death = Monster("Reaper - Death", description="One of the Horseman, the pale rider. Angel of Death. "
                                                          "Can be brought to the Earth at midnight through a place of "
@@ -1765,8 +1764,8 @@ class MonsterBase:
                     MonstersClues.goat_man, MonstersClues.high_strength]
     moloch.kill_methods = [MonstersKillMethods.colt_of_colt_with_magic_bullets]
 
-    unknown = Monster("Unknown", description="", episodes={"S12": [20]})
-    unknown.clues = [MonstersClues.missing_heart]
+    unknown = Monster("Unknown", description="", episodes={"S12": [21]})
+    unknown.clues = []
 
     # ---------------------------------------------------- SEASON 13 ---------------------------------------------------
 
