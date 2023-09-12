@@ -9,6 +9,7 @@ class MonstersClues:
     bright_eyes = "bright eyes"
     blue_eyes = "blue eyes"
     white_eyes = "white eyes"
+    purple_eyes = "purple eyes"
     cat_eyes = "cat_eyes"
     snake_eyes = "snake eyes"
     falling_meteor = "falling meteor"

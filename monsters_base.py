@@ -143,7 +143,8 @@ class MonsterBase:
     shapeshifter = Monster("Shapeshifter", description="These creatures can transform themselves into other man or "
                                                        "animals. Can mate with humans (and other Shapeshifters) to "
                                                        "produce Shapeshifter offspring.",
-                           episodes={"S01": [6], "S02": [12], "S04": [5], "S05": [2], "S09": [16, 20], "S10": [6]})
+                           episodes={"S01": [6], "S02": [12], "S04": [5], "S05": [2], "S09": [16, 20], "S10": [6],
+                                     "S12": [20]})
     shapeshifter.clues = [MonstersClues.can_take_form_of_other_people, MonstersClues.skin_left_behind,
                           MonstersClues.being_at_two_places_at_once, MonstersClues.bright_eyes, MonstersClues.no_sulfur,
                           MonstersClues.weird_animal_behavior, MonstersClues.can_copy_memories_of_other_people,
@@ -520,9 +521,8 @@ class MonsterBase:
                    MonstersClues.card_found_on_a_victim, MonstersClues.can_read_peoples_minds,
                    MonstersClues.people_acting_weirdly, MonstersClues.boiled_brain, MonstersClues.red_faces_of_victims,
                    MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_different_areas,
-                   MonstersClues.strange_different_things_happening,
-
-                   MonstersClues.missing_heart]
+                   MonstersClues.strange_different_things_happening, MonstersClues.missing_heart,
+                   MonstersClues.weird_fire_spontaneous_combustion, MonstersClues.purple_eyes]
     witch.disable_methods = [MonstersDisableMethods.stop_it_from_speaking, MonstersDisableMethods.iron_chains,
                              MonstersDisableMethods.witch_catcher]
     witch.kill_methods = [MonstersKillMethods.like_any_human, MonstersKillMethods.death_transfer_spell,
@@ -1765,8 +1765,8 @@ class MonsterBase:
                     MonstersClues.goat_man, MonstersClues.high_strength]
     moloch.kill_methods = [MonstersKillMethods.colt_of_colt_with_magic_bullets]
 
-    unknown = Monster("Unknown", description="", episodes={"S12": [19]})
-    unknown.clues = []
+    unknown = Monster("Unknown", description="", episodes={"S12": [20]})
+    unknown.clues = [MonstersClues.missing_heart]
 
     # ---------------------------------------------------- SEASON 13 ---------------------------------------------------
 
