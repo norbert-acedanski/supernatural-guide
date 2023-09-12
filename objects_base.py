@@ -380,7 +380,7 @@ class ObjectsBase:
     # SEASON 12:
 
     angel_knuckle_duster = Object("Angel Knuckle Duster", description="Allows to hurt angels in a direct fight.",
-                                  episodes={"S12": [1, 2, 12]})
+                                  episodes={"S12": [1, 2, 12, 20]})
     angel_knuckle_duster.abilities = [ObjectAbilities.can_hurt_angels]
 
     watch_with_hitlers_soul = Object("Watch with Hitler's soul",
