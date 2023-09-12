@@ -1764,7 +1764,7 @@ class MonsterBase:
                     MonstersClues.goat_man, MonstersClues.high_strength]
     moloch.kill_methods = [MonstersKillMethods.colt_of_colt_with_magic_bullets]
 
-    unknown = Monster("Unknown", description="", episodes={"S12": [21]})
+    unknown = Monster("Unknown", description="", episodes={"S12": [22]})
     unknown.clues = []
 
     # ---------------------------------------------------- SEASON 13 ---------------------------------------------------
