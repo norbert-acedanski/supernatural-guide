@@ -92,3 +92,4 @@ class CursesDisableMethods:
     will_of_lucifer = "will of Lucifer"
     age_changing_spell = "Age changing spell"
     rowenas_attack_dog_disable_spell = "Rowena's Attack dog disable spell"
+    grimoire_spell = "Grimoire spell"

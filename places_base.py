@@ -11,10 +11,12 @@ class PlacesBase:
                   PlaceClues.flashing_lights, PlaceClues.time_runs_faster_there, PlaceClues.endless_queue,
                   PlaceClues.screaming_people, PlaceClues.skeletons_on_the_ground, PlaceClues.cells_with_people_inside]
 
-    alternate_timeline = Place("Alternate timeline", description="A universe, where the history played out "
-                                                                 "differently. Can be accessed via a spell or an Angel "
-                                                                 "can put you in one.",
-                               episodes={"S04": [17], "S05": [4], "S06": [15, 17]})
+    alternate_timeline = Place("Alternate timeline",
+                               description="A universe, where the history played out differently. Can be accessed via "
+                                           "a spell or an Angel can put you in one. In S12E23 we see a world, where "
+                                           "Sam and Dean are never born and this Universe is in a war between in "
+                                           "Heaven and Hell. Mary and Lucyfer are trapped in there in S12E23.",
+                               episodes={"S04": [17], "S05": [4], "S06": [15, 17], "S12": [23]})
     alternate_timeline.clues = [PlaceClues.different_history, PlaceClues.different_memories,
                                 PlaceClues.strange_feeling_that_things_should_be_different]
 

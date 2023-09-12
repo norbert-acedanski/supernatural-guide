@@ -205,7 +205,7 @@ class CursesBase:
                                                                "a pinch of the Sands of Time and a week charge of "
                                                                "a soul) can move a person to another time "
                                                                "to a specific person or their relatives.",
-                              episodes={"S08": [12], "S09": [21]})
+                              episodes={"S08": [12], "S09": [21], "S12": [13]})
     time_travel_spell.clues = [CursesClues.people_appearing_out_of_nowhere]
 
     false_memories_spell = Curse("False memories spell", description="It is used to create false memories into another "
@@ -364,9 +364,21 @@ class CursesBase:
 
     # SEASON 12:
 
-    memory_curse = Curse("Memory curse")
+    memory_curse = Curse("Memory curse", description="When a person is cursed, their memory slowly fades away. First "
+                                                     "little things fade away, later person forgets habits, their "
+                                                     "name, things they do for a long time. Then they forget how to "
+                                                     "speak, how to swallow and breathe. Eventually becoming a child. "
+                                                     "Curse is casted via an archaic Celtic Glyphs - Ogham Chraobh. "
+                                                     "The Druids used it in their rituals calling it the Language of "
+                                                     "the Trees. There is only one family of witches, that does this "
+                                                     "magic - Loughlin family. Rowena knows them a bit. Members are "
+                                                     "Gideon, Boyd and Catriona (children). Family possessed a "
+                                                     "powerful book of Druidic magic called the Black Grimoire.",
+                         episodes={"S12": [11]})
     memory_curse.clues = [CursesClues.slow_loss_of_the_memory]
-    memory_curse.disable_methods = [CursesDisableMethods.kill_the_witch_that_cursed_a_person]
+    memory_curse.disable_methods = [CursesDisableMethods.grimoire_spell]
+
+    # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
 
     # SEASON 13:
 

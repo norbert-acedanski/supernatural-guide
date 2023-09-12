@@ -14,7 +14,7 @@ class ObjectsBase:
                                       description="A journal of John Winchester, that contains a lot information about "
                                                   "monsters in Supernatural Universe.",
                                       episodes={"S01": [], "S04": [19], "S06": [1, 8, 12], "S07": [8, 11],
-                                                "S08": [8, 12], "S09": [11]})
+                                                "S08": [8, 12], "S09": [11], "S12": [2, 3]})
     john_winchesters_journal._information = {"S04E19": JohnWinchesterJournal.entry_about_johns_other_son,
                                              "S06E12": JohnWinchesterJournal.entry_about_a_skinwalker,
                                              "S08E12": JohnWinchesterJournal.entry_about_torturing_a_demon,
@@ -24,9 +24,13 @@ class ObjectsBase:
                                                       "overhead and the same night those men died at the Alamo. "
                                                       "He made it for a hunter along with 13 bullets. Bullets can be "
                                                       "crafted for this gun. Can kill everything in all creation "
-                                                      "except 5 entities: Archangel Lucyfer, unknown 4 left.",
-                          episodes={"S01": [20, 21, 22], "S02": [1, 22], "S03": [4, 5, 9], "S05": [10], "S06": [18]})
+                                                      "except 5 entities: Archangel Lucyfer, unknown 4 left. Colt is "
+                                                      "lost sometime during the S06 probably. Back in S12E12. It is "
+                                                      "destroyed by Dagon in S12E19.",
+                          episodes={"S01": [20, 21, 22], "S02": [1, 22], "S03": [4, 5, 9], "S05": [10], "S06": [18],
+                                    "S12": [12, 13, 17, 18, 19]})
     colt_of_colt.abilities = [ObjectAbilities.can_kill_anything]
+    colt_of_colt.maintenance_methods = [ObjectMaintenance.bullets_for_colt_of_colt]
 
     # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
 
@@ -49,7 +53,7 @@ class ObjectsBase:
                                  episodes={"S03": [1, 9, 16], "S04": [1, 9, 20, 22], "S05": [1, 10, 14, 17, 20, 21, 22],
                                            "S06": [10, 20, 21], "S07": [8, 15, 17, 21],
                                            "S08": [1, 2, 7, 10, 14, 17, 19, 23], "S09": [2, 4, 11, 14, 16, 17],
-                                           "S10": [2, 3, 7, 22], "S11": [2, 6, 15]})
+                                           "S10": [2, 3, 7, 22], "S11": [2, 6, 15], "S12": [6, 12, 23]})
     demon_killing_knife.abilities = [ObjectAbilities.can_kill_demons, ObjectAbilities.cannot_kill_angels,
                                      ObjectAbilities.cannot_kill_knights_of_hell]
 
@@ -104,8 +108,11 @@ class ObjectsBase:
                          episodes={"S04": [16], "S05": [1, 13, 18], "S06": [3, 10, 17, 18, 22], "S07": [21],
                                    "S08": [7, 10, 17, 21, 22, 23], "S09": [1, 2, 3, 6, 9, 10, 11, 14, 16, 18, 21, 22, 23],
                                    "S10": [1, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22],
-                                   "S11": [1, 2, 3, 6, 9, 10, 11, 15, 18, 22, 23]})
-    angel_blade.abilities = [ObjectAbilities.can_kill_angels, ObjectAbilities.can_kill_demons]
+                                   "S11": [1, 2, 3, 6, 9, 10, 11, 15, 18, 22, 23],
+                                   "S12": [1, 3, 6, 7, 9, 10, 12, 13, 15, 17, 19, 21, 23]})
+    angel_blade.abilities = [ObjectAbilities.can_kill_angels, ObjectAbilities.can_kill_demons,
+                             ObjectAbilities.can_kill_reapers, ObjectAbilities.cannot_kill_knights_of_hell,
+                             ObjectAbilities.cannot_kill_archangels]
 
     lucifers_cage = Object("Lucifer's Cage", description="A prison build specifically to contain archangelic powers "
                                                          "(not seen yet). Can be opened with all 4 rings of "
@@ -141,7 +148,8 @@ class ObjectsBase:
                                                   "collected of a person. Released soul of a person will find a way "
                                                   "back to a body. According to Castiel, one Human Soul contains as "
                                                   "much energy as around 100 suns.",
-                        episodes={"S05": [14], "S06": [11], "S08": [19], "S09": [17], "S11": [5, 6, 9, 21, 22, 23]})
+                        episodes={"S05": [14], "S06": [11], "S08": [19], "S09": [17], "S11": [5, 6, 9, 21, 22, 23],
+                                  "S12": [3]})
 
     ring_of_famine = Object("Ring of Famine", description="Can give people starving sensation for things they "
                                                           "lack/desire. One of the four rings of the Horseman.",
@@ -371,6 +379,44 @@ class ObjectsBase:
     # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
 
     # SEASON 12:
+
+    angel_knuckle_duster = Object("Angel Knuckle Duster", description="Allows to hurt angels in a direct fight.",
+                                  episodes={"S12": [1, 2, 12, 20, 23]})
+    angel_knuckle_duster.abilities = [ObjectAbilities.can_hurt_angels, ObjectAbilities.can_hurt_archangels]
+
+    watch_with_hitlers_soul = Object("Watch with Hitler's soul",
+                                     description="Watch, that contains soul of Hitler. It's hike a horcrux. In the "
+                                                 "bunker, where Hitler supposedly committed suicide, Commandant "
+                                                 "Nauhaus offered a different solution. Store Hitler's soul in a watch "
+                                                 "to resurrect him. After the bunker, the Thule agents, that were "
+                                                 "smuggling Hitler's soul got captured by Soviets and the watch ended "
+                                                 "up with some Russian family. Then Thule tracked it to China, then "
+                                                 "Peru and then in the Antique shop in US. THe Soul of Hitler can "
+                                                 "possess only a body, that has his blood (a relative or any other "
+                                                 "person, that has his relative blood inside his/her body).",
+                                     episodes={"S12": [5]})
+
+    enochian_handcuffs = Object("Enochian handcuffs", description="Handcuffs, that can limit the power of celestial "
+                                                                  "beings. It seems, that Archangels are immune to it.",
+                                episodes={"S12": [7]})  # TODO: Check in which episode earlier Castiel is held in them
+    enochian_handcuffs.abilities = [ObjectAbilities.traps_an_angel]
+
+    hyperbolic_pulse_generator = Object("Hyperbolic Pulse Generator",
+                                        description="It emits a force, which drives the possessing being from the "
+                                                    "vessel. In order to use it, a spell has to be spoken.",
+                                        episodes={"S12": [8]})
+    hyperbolic_pulse_generator.abilities = [ObjectAbilities.removes_demon_from_its_vessel,
+                                            ObjectAbilities.removes_archangel_from_its_vessel]
+
+    lance_of_archangel_michael = Object("Lance of Archangel Michael",
+                                        description="It kills the bad ones fast and the good ones slowly and "
+                                                    "painfully. Michael wanted Lucyfer to suffer, when he was stabbed "
+                                                    "with it. It is covered with runes. Whe the Lance os broken, "
+                                                    "wounded beings are healed.", episodes={"S12": [12]})
+    lance_of_archangel_michael.abilities = [ObjectAbilities.can_hurt_angels, ObjectAbilities.can_kill_angels,
+                                            ObjectAbilities.can_kill_demons, ObjectAbilities.can_put_down_holy_oil]
+
+    # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
 
     # SEASON 13:
 

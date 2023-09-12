@@ -12,20 +12,26 @@ class MonsterBase:
     prince_of_hell = Monster("Prince of Hell", description="Azazel - the yellow eyed demon that made people with "
                                                            "abilities, Ramiel, Asmodeus, Dagon. The oldest of old "
                                                            "demons. One generation after Lilith. They were turned by "
-                                                           "Lucyfer himself before the Atlantis drown. They were "
-                                                           "trained to be demonic generals in the war against heaven.",
-                             episodes={"S01": [1, 21, 22], "S02": [1, 21, 22], "S04": [3, 22], "S06": [1]})
-    # TODO: Check in which episodes does Azazel appear and check in which he dies (probably in S02E22)
-    prince_of_hell.clues = [MonstersClues.people_burned_on_the_ceiling, MonstersClues.telekinesis,
+                                                           "Lucyfer himself before the Atlantis drowned. They were "
+                                                           "trained to be demonic generals in the war against Heaven. "
+                                                           "Azazel was killed by Dean. Ramiel is the second Prince "
+                                                           "Winchesters encounter. Dagon appears in S12E13. She is "
+                                                           "mostly known for her psychotic savagery. Dagon is killed "
+                                                           "by Castiel and the power of Nephilim in S12E19.",
+                             episodes={"S01": [1, 21, 22], "S02": [1, 21, 22], "S04": [3, 22], "S06": [1],
+                                       "S12": [12, 13, 17, 19]})
+    # TODO: Check in which episodes does Azazel appear
+    prince_of_hell.clues = [MonstersClues.people_burned_on_the_ceiling, MonstersClues.can_appear_out_of_thin_air,
                             MonstersClues.weird_things_behavior, MonstersClues.yellow_eyes, MonstersClues.weird_weather,
                             MonstersClues.children_of_victims_that_died_on_the_ceiling_have_abilities,
                             MonstersClues.mothers_burned_when_children_are_6_months_old, MonstersClues.cattle_deaths,
-                            MonstersClues.temperature_fluctuations, MonstersClues.electrical_storms,
+                            MonstersClues.one_can_make_a_deal_with_it, MonstersClues.angel_blade_is_ineffective,
                             MonstersClues.holy_water_does_not_affect_it, MonstersClues.travels_as_black_fog,
-                            MonstersClues.can_posses_a_reaper, MonstersClues.one_can_make_a_deal_with_it,
-                            MonstersClues.can_show_past_to_people]
+                            MonstersClues.can_posses_a_reaper, MonstersClues.can_vanish, MonstersClues.electrical_storms,
+                            MonstersClues.can_show_past_to_people, MonstersClues.demon_killing_knife_is_ineffective,
+                            MonstersClues.can_kill_angels_with_a_touch, MonstersClues.temperature_fluctuations,
+                            MonstersClues.telekinesis, MonstersClues.invulnerable, MonstersClues.can_teleport_people]
     prince_of_hell.kill_methods = [MonstersKillMethods.colt_of_colt_with_magic_bullets,
-
                                    MonstersKillMethods.lance_of_archangel_michael,
                                    MonstersKillMethods.will_of_a_nephilim]
 
@@ -42,7 +48,8 @@ class MonsterBase:
                                           "to an object, place or even electrical signals (like Wi-Fi).",
                               episodes={"S01": [1, 3, 5, 7, 9, 10, 13, 19], "S02": [6, 11, 16, 18, 19],
                                         "S03": [5, 6, 13], "S04": [2, 13, 15, 17], "S05": [9, 11], "S06": [4, 14],
-                                        "S07": [7, 10, 13, 17, 19], "S09": [7], "S10": [13, 16], "S11": [7, 23]})
+                                        "S07": [7, 10, 13, 17, 19], "S09": [7], "S10": [13, 16], "S11": [7, 23],
+                                        "S12": [3, 6, 13]})
     vengeful_spirit.clues = [MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                              MonstersClues.people_dead_weirdly, MonstersClues.ghost_like_creature,
                              MonstersClues.weird_electronics_behavior, MonstersClues.weird_things_behavior,
@@ -63,7 +70,8 @@ class MonsterBase:
                              MonstersClues.can_absorb_other_ghost_energy, MonstersClues.victims_hear_voices,
                              MonstersClues.no_hex_bags, MonstersClues.travels_as_grey_fog, MonstersClues.weird_noises,
                              MonstersClues.amnesia_blackout, MonstersClues.holy_water_does_not_affect_it,
-                             MonstersClues.attached_to_a_specific_object]
+                             MonstersClues.attached_to_a_specific_object, MonstersClues.victims_hear_children_cry,
+                             MonstersClues.leaves_frozen_marks, MonstersClues.frozen_heart]
     vengeful_spirit.disable_methods = [MonstersDisableMethods.bring_the_spirit_to_its_crime_place,
                                        MonstersDisableMethods.bring_the_spirit_what_it_wants,
                                        MonstersDisableMethods.iron_or_iron_bullets,
@@ -107,7 +115,8 @@ class MonsterBase:
                               "S04": [1, 4, 9, 10, 20, 21, 22], "S05": [1, 6, 10, 12, 14, 17, 20, 21, 22],
                               "S06": [7, 10, 18, 20, 21, 22], "S07": [8, 15, 17, 21, 23],
                               "S08": [1, 2, 7, 10, 17, 19, 21, 22], "S09": [2, 10, 11, 14, 16, 17, 21, 23],
-                              "S10": [1, 2, 3, 7, 9, 10, 13, 16, 17, 21], "S11": [1, 3, 6, 9, 10, 14, 15, 18, 22]})
+                              "S10": [1, 2, 3, 7, 9, 10, 13, 16, 17, 21], "S11": [1, 3, 6, 9, 10, 14, 15, 18, 22],
+                              "S12": [1, 12, 15, 17, 21]})
     demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                    MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                    MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -122,9 +131,9 @@ class MonsterBase:
     demon.kill_methods = [MonstersKillMethods.demon_killing_knife, MonstersKillMethods.angel_exorcism,
                           MonstersKillMethods.colt_of_colt_with_magic_bullets, MonstersKillMethods.demon_killing_spell,
                           MonstersKillMethods.angel_blade, MonstersKillMethods.first_blade, MonstersKillMethods.holy_oil,
-                          MonstersKillMethods.defigere_et_depurgare_spell,
+                          MonstersKillMethods.defigere_et_depurgare_spell, MonstersKillMethods.will_of_an_archangel,
 
-                          MonstersKillMethods.will_of_an_archangel, MonstersKillMethods.lance_of_archangel_michael]
+                          MonstersKillMethods.lance_of_archangel_michael]
     demon.disable_methods = [MonstersDisableMethods.holy_water, MonstersDisableMethods.holy_wood,
                              MonstersDisableMethods.exorcism, MonstersDisableMethods.devils_trap,
                              MonstersDisableMethods.witch_spell_to_get_a_demon_out_of_the_body,
@@ -134,7 +143,8 @@ class MonsterBase:
     shapeshifter = Monster("Shapeshifter", description="These creatures can transform themselves into other man or "
                                                        "animals. Can mate with humans (and other Shapeshifters) to "
                                                        "produce Shapeshifter offspring.",
-                           episodes={"S01": [6], "S02": [12], "S04": [5], "S05": [2], "S09": [16, 20], "S10": [6]})
+                           episodes={"S01": [6], "S02": [12], "S04": [5], "S05": [2], "S09": [16, 20], "S10": [6],
+                                     "S12": [20]})
     shapeshifter.clues = [MonstersClues.can_take_form_of_other_people, MonstersClues.skin_left_behind,
                           MonstersClues.being_at_two_places_at_once, MonstersClues.bright_eyes, MonstersClues.no_sulfur,
                           MonstersClues.weird_animal_behavior, MonstersClues.can_copy_memories_of_other_people,
@@ -150,10 +160,12 @@ class MonsterBase:
                                              "(not only spirits, but also the ones in Heaven). Missouri Mosley was "
                                              "a friend of John Winchester. One of the psychics is Oliver Pryce. "
                                              "Man of Letters were teaching him how to control his powers.",
-                      episodes={"S01": [9], "S10": [17]})
-    psychic.clues = [MonstersClues.psychic_abilities,
-
-                     MonstersClues.people_dead_weirdly]
+                      episodes={"S01": [9], "S10": [17], "S12": [4]})
+    psychic.clues = [MonstersClues.psychic_abilities, MonstersClues.people_acting_weirdly, MonstersClues.telekinesis,
+                     MonstersClues.people_dead_weirdly, MonstersClues.can_read_peoples_minds, MonstersClues.no_sulfur,
+                     MonstersClues.people_speaking_languages, MonstersClues.headaches, MonstersClues.no_black_fog,
+                     MonstersClues.head_filled_with_goopy_mush, MonstersClues.marks_on_victims_bodies,
+                     MonstersClues.lack_of_body_control]
     psychic.kill_methods = [MonstersKillMethods.like_any_human]
 
     poltergeist = Monster("Poltergeist", episodes={"S01": [9]})
@@ -178,9 +190,10 @@ class MonsterBase:
                                            "people are not dying. Rogue reapers (Ajay for example) can smuggle "
                                            "a person across Hell's border, Heaven and the Veil. They have secret ways "
                                            "in and out.When a reaper dies, there are electrical storms. One of the "
-                                           "Reapers is Tesa (killed by Dean in S09E22).",
+                                           "Reapers is Tesa (killed by Dean in S09E22). Reaper Billie is killed by "
+                                           "Castiel in S12E09.",
                      episodes={"S01": [12], "S02": [1], "S04": [15], "S05": [10, 21], "S06": [11], "S07": [10],
-                               "S08": [19], "S09": [3, 22], "S11": [2, 10, 17, 23]})
+                               "S08": [19], "S09": [3, 22], "S11": [2, 10, 17, 23], "S12": [6, 9]})
     reaper.clues = [MonstersClues.people_dead_weirdly, MonstersClues.people_cured_miraculously,
                     MonstersClues.weird_things_behavior, MonstersClues.people_seeing_things_or_figures,
                     MonstersClues.seen_as_a_person_in_a_suit, MonstersClues.ghost_like_creature,
@@ -257,7 +270,7 @@ class MonsterBase:
                      MonstersClues.weird_electronics_behavior]
     shtriga.kill_methods = [MonstersKillMethods.consecrated_wrought_iron_when_it_eats]
 
-    vampire = Monster("Vampire", description="They were once people. They need fresh human blood to survive. "
+    vampire = Monster("Vampire", description="They were once people. They need cfresh human blood to survive. "
                                              "A coss will not repel them, sunlight will not kill them. Neither will a "
                                              "stake to the heart. Vampires nest in groups 8 to 10. Smaller packs are "
                                              "sent out to hunt for food. Kidnapped people are taken to nests and then "
@@ -266,7 +279,7 @@ class MonsterBase:
                                              "blood. Upon changing, all senses sharpen.",
                       episodes={"S01": [20], "S02": [3], "S03": [7], "S05": [3], "S06": [5, 19], "S07": [22],
                                 "S08": [1, 2, 5, 7, 9, 10, 18, 19], "S09": [2, 16, 19, 20], "S10": [8, 19, 23],
-                                "S11": [12]})
+                                "S11": [12], "S12": [1, 9, 14]})
     vampire.clues = [MonstersClues.ripped_throat, MonstersClues.no_blood_in_the_body, MonstersClues.needle_like_teeth,
                      MonstersClues.moving_in_groups_usually, MonstersClues.invulnerable, MonstersClues.high_strength,
                      MonstersClues.bright_eyes, MonstersClues.great_sense_of_smell, MonstersClues.white_skin,
@@ -277,7 +290,7 @@ class MonsterBase:
                      MonstersClues.no_weird_noises, MonstersClues.no_hex_bags, MonstersClues.craving_for_blood]
     vampire.kill_methods = [MonstersKillMethods.decapitation, MonstersKillMethods.angel_blade,
                             MonstersKillMethods.colt_of_colt_with_magic_bullets, MonstersKillMethods.will_of_an_angel,
-                            MonstersClues.roman_corn_syrup]
+                            MonstersKillMethods.roman_corn_syrup, MonstersKillMethods.avd]
     vampire.disable_methods = [MonstersDisableMethods.dead_mans_blood]
     vampire.cure_methods = [MonstersCureMethods.cocktail_made_of_blood_of_the_vampire_that_bit_the_victim]
 
@@ -311,9 +324,12 @@ class MonsterBase:
     hell_hound = Monster("Hell Hound", description="Creation of God, but they were too vicious, so God kept them "
                                                    "short. Now they hunt people that sold their souls. According the "
                                                    "the Demon Tablet - dire creatures may be seen only by the damned "
-                                                   "or through an object scorched with holy fire (burning holy oil).",
+                                                   "or through an object scorched with holy fire (burning holy oil). "
+                                                   "Almost all Hell Hounds were killed by Angels, but Lucyfer rescued "
+                                                   "pregnant Ramsey, that is loyal only to him. Hell Hound can be "
+                                                   "controlled by a special whistle (showed in S12E21).",
                          episodes={"S02": [8], "S03": [16], "S05": [10, 20], "S06": [4, 10, 14], "S08": [14],
-                                   "S09": [21], "S11": [15]})
+                                   "S09": [21], "S11": [15], "S12": [15, 21]})
     hell_hound.clues = [MonstersClues.victims_hear_dogs_barking_and_growling, MonstersClues.invisible_dogs,
                         MonstersClues.victims_see_black_dogs, MonstersClues.people_seeing_strange_things,
                         MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
@@ -331,11 +347,12 @@ class MonsterBase:
                                                                "dirt, black cat cone, ones photo in the center of "
                                                                "a crossroad.",
                                episodes={"S02": [8, 22], "S04": [9], "S05": [10], "S06": [4], "S07": [8], "S08": [19],
-                                         "S09": [2, 16], "S10": [1, 3, 10, 13], "S11": [15]})
+                                         "S09": [2, 16], "S10": [1, 3, 10, 13], "S11": [15], "S12": [6]})
     crossroads_demon.clues = [MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
                               MonstersClues.red_eyes, MonstersClues.summoned_by_placing_box_in_the_crossroads,
                               MonstersClues.travels_as_black_fog, MonstersClues.pact_sealed_with_a_kiss,
-                              MonstersClues.people_dead_weirdly, MonstersClues.telekinesis]
+                              MonstersClues.people_dead_weirdly, MonstersClues.telekinesis, MonstersClues.high_strength,
+                              MonstersClues.flashing_lights]
     crossroads_demon.disable_methods = [MonstersDisableMethods.devils_trap, MonstersDisableMethods.holy_water,
                                         MonstersDisableMethods.fry_its_remains]
     crossroads_demon.kill_methods = [MonstersKillMethods.colt_of_colt_with_magic_bullets,
@@ -402,18 +419,18 @@ class MonsterBase:
                                                "lunar cycle. Pure bloods don't blackout during the transformation and "
                                                "can control themselves. Some have been able to subsist off of "
                                                "animal hearts. Also mentioned in S01E16.",
-                       episodes={"S02": [17], "S08": [4], "S09": [12, 20], "S10": [4], "S11": [17]})
+                       episodes={"S02": [17], "S08": [4], "S09": [12, 20], "S10": [4], "S11": [17], "S12": [6, 16]})
     werewolf.clues = [MonstersClues.body_torn_apart, MonstersClues.animal_like_attack, MonstersClues.missing_heart,
                       MonstersClues.murders_during_full_moon_week, MonstersClues.claws, MonstersClues.attacks_at_night,
                       MonstersClues.animal_like_noises, MonstersClues.amnesia_blackout, MonstersClues.high_strength,
                       MonstersClues.people_dead_weirdly, MonstersClues.increased_regeneration, MonstersClues.moves_fast,
                       MonstersClues.bite_marks, MonstersClues.missing_organs, MonstersClues.animals_dead_weirdly,
-                      MonstersClues.missing_or_dead_people_regularly_in_the_same_area, MonstersClues.ripped_throat]
-    werewolf.kill_methods = [MonstersKillMethods.silver_bullet_into_the_heart, MonstersKillMethods.silver_blade]
+                      MonstersClues.missing_or_dead_people_regularly_in_the_same_area, MonstersClues.ripped_throat,
+                      MonstersClues.yellow_eyes]
+    werewolf.kill_methods = [MonstersKillMethods.silver_bullet_into_the_heart, MonstersKillMethods.silver_blade,
+                             MonstersKillMethods.silver_nitrate_injection]
     werewolf.disable_methods = [MonstersDisableMethods.silver_or_silver_bullets]
-    werewolf.cure_methods = [
-
-                             MonstersCureMethods.plasma_therapy_with_the_blood_of_the_werewolf_that_bit_the_victim]
+    werewolf.cure_methods = [MonstersCureMethods.plasma_therapy_with_the_blood_of_the_werewolf_that_bit_the_victim]
 
     jinn = Monster("Jinn", description="Mythical creatures, that feed on people. They have godlike power and can "
                                        "shape reality as they like. Usually reside in ruins - the bigger, the better. "
@@ -492,9 +509,11 @@ class MonsterBase:
                                          "the path, can eke out a modicum of witchly power. Rowena is a natural and is "
                                          "also a mother of Crowley. Rowena was supposedly killed by Lucifer in S11E10. "
                                          "Back in S11E18. It is revealed, that she was prepared for her death - when a "
-                                         "spell sensed her death, it revived her.",
+                                         "spell sensed her death, it revived her. Rowena was killed in S12E23 by "
+                                         "Lucyfer.",
                     episodes={"S03": [9], "S04": [7, 12], "S05": [7, 12], "S07": [5], "S08": [7, 15],
-                              "S10": [3, 7, 9, 10, 13, 16, 17, 18, 19, 21, 22, 23], "S11": [3, 9, 10, 13, 18, 22, 23]})
+                              "S10": [3, 7, 9, 10, 13, 16, 17, 18, 19, 21, 22, 23], "S11": [3, 9, 10, 13, 18, 22, 23],
+                              "S12": [2, 3, 8, 11, 13, 20]})
     witch.clues = [MonstersClues.people_dead_weirdly, MonstersClues.hex_bag_hidden_somewhere, MonstersClues.immortal,
                    MonstersClues.coin_hidden_somewhere, MonstersClues.weird_electronics_behavior,
                    MonstersClues.telekinesis, MonstersClues.can_vanish, MonstersClues.weird_plant_deaths_or_behavior,
@@ -504,9 +523,8 @@ class MonsterBase:
                    MonstersClues.card_found_on_a_victim, MonstersClues.can_read_peoples_minds,
                    MonstersClues.people_acting_weirdly, MonstersClues.boiled_brain, MonstersClues.red_faces_of_victims,
                    MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_different_areas,
-                   MonstersClues.strange_different_things_happening,
-
-                   MonstersClues.missing_heart]
+                   MonstersClues.strange_different_things_happening, MonstersClues.missing_heart,
+                   MonstersClues.weird_fire_spontaneous_combustion, MonstersClues.purple_eyes]
     witch.disable_methods = [MonstersDisableMethods.stop_it_from_speaking, MonstersDisableMethods.iron_chains,
                              MonstersDisableMethods.witch_catcher]
     witch.kill_methods = [MonstersKillMethods.like_any_human, MonstersKillMethods.death_transfer_spell,
@@ -574,16 +592,17 @@ class MonsterBase:
                                          "Castiel, the last time it happened, Lot's wife was turned to salt. The "
                                          "fallout does not affect Angels. An Angel can be possessed by an Archangel. "
                                          "Castiel broke the fourth wall in S06E20. Castiel supposedly died in S07E01, "
-                                         "back in S07E17.",
+                                         "back in S07E17. Castiel is killed by Lucyfer in S12E23 with an Angel Blade.",
                     episodes={"S04": [1, 2, 7, 9, 10, 15, 16, 18, 20, 21, 22],
                               "S05": [1, 2, 3, 4, 5, 8, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22],
                               "S06": [3, 6, 7, 10, 12, 15, 17, 18, 19, 20, 21, 22], "S07": [1, 17, 20, 21, 23],
                               "S08": [2, 7, 8, 10, 17, 19, 21, 22, 23], "S09": [9, 10, 11, 14, 18, 21, 22, 23],
                               "S10": [1, 2, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22, 23],
-                              "S11": [1, 2, 3, 6, 9, 10, 14, 18, 22, 23]})
+                              "S11": [1, 2, 3, 6, 9, 10, 14, 18, 22, 23],
+                              "S12": [1, 2, 3, 7, 8, 9, 10, 12, 13, 15, 19, 23]})
     angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                    MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion, MonstersClues.has_wings,
-                   MonstersClues.leaves_burned_marks, MonstersClues.weird_electronics_behavior,
+                   MonstersClues.leaves_burned_marks, MonstersClues.can_tell_if_somebody_was_recently_healed,
                    MonstersClues.can_repair_human_body, MonstersClues.telekinesis, MonstersClues.invulnerable,
                    MonstersClues.can_put_a_person_to_sleep, MonstersClues.demon_killing_knife_is_ineffective,
                    MonstersClues.true_voice_can_hurt_people, MonstersClues.can_vanish, MonstersClues.high_strength,
@@ -597,18 +616,18 @@ class MonsterBase:
                    MonstersClues.can_erase_and_bring_back_memories, MonstersClues.can_transfer_mental_diseases,
                    MonstersClues.can_go_and_put_into_a_persons_mind, MonstersClues.strange_different_things_happening,
                    MonstersClues.bright_eyes, MonstersClues.vapourised_organs, MonstersClues.travels_as_white_fog,
-                   MonstersClues.blue_eyes]
+                   MonstersClues.blue_eyes, MonstersClues.falling_meteor, MonstersClues.weird_electronics_behavior]
     angel.disable_methods = [MonstersDisableMethods.symbol_made_with_blood_against_angels,
                              MonstersDisableMethods.exorcism_for_angels, MonstersDisableMethods.holy_oil,
                              MonstersDisableMethods.enochian_spell, MonstersDisableMethods.rowenas_immobilization_spell,
                              MonstersDisableMethods.presence_of_the_mother, MonstersDisableMethods.grace_removal,
-                             MonstersDisableMethods.attack_dog_spell, MonstersDisableMethods.angel_blade]
+                             MonstersDisableMethods.attack_dog_spell, MonstersDisableMethods.angel_blade,
+                             MonstersDisableMethods.angel_knuckle_duster, MonstersDisableMethods.enochian_handcuffs,
+                             MonstersDisableMethods.lance_of_archangel_michael]
     angel.kill_methods = [MonstersKillMethods.angel_blade, MonstersKillMethods.holy_oil,
                           MonstersKillMethods.leviathan_black_goo, MonstersKillMethods.will_of_an_archangel,
-                          MonstersKillMethods.will_of_the_darkness,
-
-                          MonstersKillMethods.will_of_prince_of_hell,
-                          MonstersKillMethods.lance_of_archangel_michael]
+                          MonstersKillMethods.will_of_the_darkness, MonstersKillMethods.lance_of_archangel_michael,
+                          MonstersKillMethods.will_of_prince_of_hell]
 
     rougarou = Monster("Rougarou", description="Once a human. Now - rotten teeth, wormy skin. When going through "
                                                "metamorphosis, their hunger increases. At first for everything, but "
@@ -616,11 +635,12 @@ class MonsterBase:
                                                "irresistible. After the first bite of the human flesh, they transform "
                                                "completely and fast. They feed once, they're a monster forever. "
                                                "This may be a genetic condition.",
-                       episodes={"S04": [4], "S06": [10], "S08": [2]})
+                       episodes={"S04": [4], "S06": [10], "S08": [2], "S12": [13]})
     rougarou.clues = [MonstersClues.enormous_appetite, MonstersClues.body_metamorphosis, MonstersClues.high_strength,
                       MonstersClues.bloodshot_eyes, MonstersClues.wormy_skin, MonstersClues.no_bone_marrow_in_bones,
                       MonstersClues.drained_organs, MonstersClues.people_dead_weirdly, MonstersClues.bite_marks]
-    rougarou.kill_methods = [MonstersKillMethods.burn_it, MonstersKillMethods.demon_killing_knife]
+    rougarou.kill_methods = [MonstersKillMethods.burn_it, MonstersKillMethods.demon_killing_knife,
+                             MonstersKillMethods.man_of_letters_rougarou_gun]
 
     samhain = Monster("Samhain", description="A demon that is the origin of Halloween. Celts believed, that the 31st "
                                              "of October is the day, when the veil is the thinnest between the living "
@@ -717,9 +737,14 @@ class MonsterBase:
 
     archangel_lucyfer = Monster("Archangel - Lucyfer", description="Archangel, that disobeyed God when he requested to "
                                                                    "bow before the men. To upset God he twisted one of "
-                                                                   "the people into Lilith.",
+                                                                   "the people into Lilith. Lucyfer is released from "
+                                                                   "his Cage in S11 and is send back not to his cage "
+                                                                   "but to cage, where Crowley resides in S12E08. It "
+                                                                   "is revealed, that the Cage is not the place where "
+                                                                   "Lucyfer is in S12E12.",
                                 episodes={"S04": [22], "S05": [1, 3, 4, 10, 19, 22], "S07": [1, 2, 15, 17],
-                                          "S11": [9, 10, 11, 14, 15, 18, 21, 22]})
+                                          "S11": [9, 10, 11, 14, 15, 18, 21, 22],
+                                          "S12": [2, 3, 7, 8, 12, 13, 15, 17, 19, 21, 23]})
     archangel_lucyfer.clues = [MonstersClues.weird_things_behavior, MonstersClues.true_voice_can_hurt_people,
                                MonstersClues.bright_light, MonstersClues.weird_weather, MonstersClues.visions,
                                MonstersClues.people_seeing_strange_things, MonstersClues.biblical_like_events,
@@ -733,19 +758,20 @@ class MonsterBase:
                                MonstersClues.weird_fire_spontaneous_combustion, MonstersClues.revelation_omens,
                                MonstersClues.can_go_and_put_into_a_persons_mind, MonstersClues.can_posses_an_angel,
                                MonstersClues.high_strength, MonstersClues.invulnerable, MonstersClues.can_time_travel,
-                               MonstersClues.can_send_people_to_the_past,
+                               MonstersClues.can_send_people_to_the_past, MonstersClues.people_dead_weirdly,
+                               MonstersClues.travels_as_white_fog, MonstersClues.weird_electronics_behavior,
+                               MonstersClues.can_repair_human_body, MonstersClues.has_wings, MonstersClues.burned_eyes,
+                               MonstersClues.bible_burns_it, MonstersClues.burned_people,
+                               MonstersClues.angel_blade_is_ineffective,
 
-                               MonstersClues.travels_as_white_fog, MonstersClues.people_burned_on_the_ceiling,
-                               MonstersClues.in_true_form_burns_eyes_of_people, MonstersClues.bible_burns_it]
+                               MonstersClues.people_burned_on_the_ceiling,
+                               MonstersClues.in_true_form_burns_eyes_of_people]
     archangel_lucyfer.disable_methods = [MonstersDisableMethods.cage_of_lucyfer_in_hell,
                                          MonstersDisableMethods.colt_of_colt_with_magic_bullets,
                                          MonstersDisableMethods.symbol_made_with_blood_against_angels,
                                          MonstersDisableMethods.hand_of_god, MonstersDisableMethods.holy_oil,
-
                                          MonstersDisableMethods.angel_knuckle_duster]
-    archangel_lucyfer.kill_methods = [MonstersKillMethods.archangel_blade,
-
-                                      MonstersKillMethods.the_darkness]
+    archangel_lucyfer.kill_methods = [MonstersKillMethods.archangel_blade, MonstersKillMethods.the_darkness]
 
     # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
 
@@ -831,12 +857,14 @@ class MonsterBase:
                                                            "a crossroads demon, he's real name is Fergus Rodric "
                                                            "MacLeod. He was born in Canisbay, Scotland 1661. "
                                                            "Supposedly died in S06E10, but in S06E19 it is revealed he "
-                                                           "was working with Castiel.",
+                                                           "was working with Castiel. Crowley sacrifices himself to "
+                                                           "close the portal in S12E23.",
                             episodes={"S05": [10, 20, 21], "S06": [4, 7, 8, 10, 19, 20, 21, 22],
                                       "S07": [1, 6, 8, 22, 23], "S08": [1, 2, 7, 10, 17, 19, 21, 22, 23],
                                       "S09": [2, 4, 6, 10, 11, 16, 17, 21, 23],
                                       "S10": [1, 2, 3, 7, 9, 10, 13, 16, 17, 21, 22, 23],
-                                      "S11": [1, 2, 3, 6, 9, 10, 14, 15, 18, 22, 23]})
+                                      "S11": [1, 2, 3, 6, 9, 10, 14, 15, 18, 22, 23],
+                                      "S12": [1, 2, 3, 7, 8, 9, 12, 13, 15, 17, 21, 23]})
     demon_crowley.clues = [MonstersClues.can_vanish, MonstersClues.pact_sealed_with_a_kiss, MonstersClues.telekinesis,
                            MonstersClues.summoned_by_placing_box_in_the_crossroads, MonstersClues.small_earth_quake,
                            MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
@@ -848,12 +876,13 @@ class MonsterBase:
                            MonstersClues.red_eyes, MonstersClues.can_posses_a_person_possessed_by_an_angel,
                            MonstersClues.can_give_hallucinations, MonstersClues.burned_by_holy_water,
                            MonstersClues.can_give_others_knowledge, MonstersClues.can_posses_an_archangel,
-
-                           MonstersClues.black_blood]
+                           MonstersClues.can_teleport_people, MonstersClues.can_posses_an_animal]
     demon_crowley.disable_methods = [MonstersDisableMethods.devils_trap, MonstersDisableMethods.will_of_an_archangel,
                                      MonstersDisableMethods.demonic_handcuffs, MonstersDisableMethods.darkness_powers,
                                      MonstersDisableMethods.rowenas_immobilization_spell,
-                                     MonstersDisableMethods.holy_water]
+                                     MonstersDisableMethods.holy_water, MonstersDisableMethods.angel_blade,
+                                     MonstersDisableMethods.demon_killing_knife]
+    demon_crowley.kill_methods = [MonstersKillMethods.angel_blade]
 
     reaper_death = Monster("Reaper - Death", description="One of the Horseman, the pale rider. Angel of Death. "
                                                          "Can be brought to the Earth at midnight through a place of "
@@ -908,8 +937,10 @@ class MonsterBase:
     zombie.kill_methods = [MonstersKillMethods.head_shot]
 
     angel_joshua = Monster("Angel Joshua", description="Angel, that guards the Heavens garden and the one, "
-                                                       "that God talks to.", episodes={"S05": [16]})
+                                                       "that God talks to. He is killed in S12E19 by Dagon.",
+                           episodes={"S05": [16], "S12": [19]})
     angel_joshua.clues = [MonstersClues.can_read_peoples_minds, MonstersClues.can_bring_back_dead_people]
+    angel_joshua.kill_methods = [MonstersKillMethods.will_of_prince_of_hell]
 
     false_prophet = Monster("False Prophet", description="False Prophet rises, when Lucifer walks the Earth. Book of "
                                                          "Revelations calls her 'The Whore of Babylon'. Her goal is to "
@@ -1022,15 +1053,14 @@ class MonsterBase:
                           MonstersKillMethods.blend_it]
 
     vampire_alpha = Monster("Vampire Alpha", description="First Vampire. All Vampires are descendants of the Alpha. "
-                                                         "Has control over other vampires. He is a son of Eve.",
-                            episodes={"S06": [5, 7], "S07": [22]})
+                                                         "Has control over other vampires. He is a son of Eve. Killed "
+                                                         "in S12E14 by Sam.",
+                            episodes={"S06": [5, 7], "S07": [22], "S12": [14]})
     vampire_alpha.clues = [MonstersClues.can_give_hallucinations, MonstersClues.mind_control, MonstersClues.moves_fast,
                            MonstersClues.great_sense_of_smell, MonstersClues.can_appear_out_of_thin_air,
                            MonstersClues.can_put_a_person_to_sleep, MonstersClues.invulnerable,
                            MonstersClues.needle_like_teeth]
-    vampire_alpha.kill_methods = [
-
-                                  MonstersKillMethods.colt_of_colt_with_magic_bullets]
+    vampire_alpha.kill_methods = [MonstersKillMethods.colt_of_colt_with_magic_bullets]
 
     veritas = Monster("Veritas", description="Goddess of Truth. Can be summoned with a cat skull, grains of paradise "
                                              "seed and devil's shoestring. Loves cats, dogs hate her. Can make people "
@@ -1317,9 +1347,10 @@ class MonsterBase:
 
     thule = Monster("Thule", description="Members of The Thule Society. Used blood magic to make themselves almost "
                                          "undead. To kill it you have to break it's neck or shoot it in the head and "
-                                         "burn the body within 12h.", episodes={"S08": [13]})
+                                         "burn the body within 12h.", episodes={"S08": [13], "S11": [14], "S12": [5]})
     thule.clues = [MonstersClues.weird_fire_spontaneous_combustion, MonstersClues.people_dead_weirdly,
-                   MonstersClues.immortal, MonstersClues.invulnerable, MonstersClues.burned_people]
+                   MonstersClues.immortal, MonstersClues.invulnerable, MonstersClues.burned_people,
+                   MonstersClues.no_sulfur, MonstersClues.no_emf]
     thule.kill_methods = [MonstersKillMethods.break_the_neck, MonstersKillMethods.head_shot,
                           MonstersKillMethods.burn_it]
 
@@ -1368,12 +1399,20 @@ class MonsterBase:
                             MonstersClues.can_give_others_knowledge]
     angel_metatron.disable_methods = [MonstersDisableMethods.grace_removal]
 
-    nephilim = Monster("Nephilim", description="Child of human and angel/archangel. Human with an angelic grace.",
+    nephilim = Monster("Nephilim", description="Child of human and Angel/Archangel. Human with an angelic grace. When "
+                                               "a Nephilim is conceived, there is a massive surge in celestial energy. "
+                                               "Depending on the type of celestial being (Angel/Archangel), the surge "
+                                               "differs in power. If Nephilim comes from Lucyfer and the mother "
+                                               "touches the Bible - it burns. Nephilim don't need 9 months to fully "
+                                               "grow (only about 5). Nephilim does not allow its mother to die and can "
+                                               "boost angelic powers. Power of a Nephilim can tear spacetime and open "
+                                               "a portal to an alternate timeline. In S12E23 Jack (the son of Lucyfer) "
+                                               "is born.",
                        episodes={"S08": [22]})
     nephilim.clues = [MonstersClues.can_see_real_appearance_of_entities, MonstersClues.high_strength,
-                      MonstersClues.bright_eyes,
-
-                      MonstersClues.weird_weather, MonstersClues.biblical_like_events]
+                      MonstersClues.bright_eyes, MonstersClues.bible_burns_it, MonstersClues.weird_weather,
+                      MonstersClues.biblical_like_events, MonstersClues.flashing_lights, MonstersClues.grows_fast,
+                      MonstersClues.leaves_burned_marks, MonstersClues.yellow_eyes]
     nephilim.kill_methods = [MonstersKillMethods.angel_blade]
 
     # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
@@ -1571,8 +1610,8 @@ class MonsterBase:
                       MonstersClues.can_teleport_angels, MonstersClues.can_teleport_archangels, MonstersClues.red_sun,
                       MonstersClues.electrical_storms, MonstersClues.can_shake_heaven, MonstersClues.small_earth_quake,
                       MonstersClues.hand_of_god_does_not_affect_it, MonstersClues.can_remove_protection_sigils,
-                      MonstersClues.can_exorcise_archangels, MonstersClues.can_repair_god,
-                      MonstersClues.travels_as_black_fog, MonstersClues.burned_eyes]
+                      MonstersClues.can_exorcise_archangels, MonstersClues.can_bring_back_dead_people,
+                      MonstersClues.travels_as_black_fog, MonstersClues.burned_eyes, MonstersClues.can_repair_god]
     darkness.disable_methods = [MonstersDisableMethods.all_of_angels_single_blow,
                                 MonstersDisableMethods.a_few_witches_power, MonstersDisableMethods.lucifers_spear]
 
@@ -1700,27 +1739,39 @@ class MonsterBase:
                     MonstersClues.people_seeing_strange_things]
     bisaan.kill_methods = [MonstersKillMethods.decapitation]
 
-    unknown = Monster("Unknown", description="", episodes={"S11": [23]})
-    unknown.clues = []
-
     # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
 
     # ---------------------------------------------------- SEASON 12 ---------------------------------------------------
 
-    myling = Monster("Myling", description="Scandinavian children ghost. They try to bring adults and kill them.")
-    myling.clues = [MonstersClues.victims_hear_children_cry, MonstersClues.people_dead_weirdly]
+    myling = Monster("Myling", description="Scandinavian vengeful child ghost. They try to lure adults and kill them "
+                                           "with their cry. Not seen, only mentioned and suspected in S12E03.")
+    myling.clues = [MonstersClues.victims_hear_children_cry, MonstersClues.people_dead_weirdly, MonstersClues.emf,
+                    MonstersClues.weird_things_behavior, MonstersClues.leaves_frozen_marks, MonstersClues.frozen_heart,
+                    MonstersClues.flashing_lights, MonstersClues.cold_spots]
+    myling.disable_methods = [MonstersDisableMethods.iron_or_iron_bullets]
     myling.kill_methods = [MonstersKillMethods.burn_salted_corpse,
                            MonstersKillMethods.destroy_the_object_that_the_ghost_is_bound_to]
 
+    hitler = Monster("Hitler", description="THE Hitler. Resurrected by Nauhaus in S12E05. Killed by Dean in S12E05.",
+                     episodes={"S12": [5]})
+    hitler.kill_methods = [MonstersKillMethods.head_shot, MonstersKillMethods.burn_it]
+
     satyr = Monster("Satyr", description="Half man half goat creature from greek mythology. They lead people to the "
-                                         "woods to grand orgies. When orgy is over satyr feeds on the victim.")
+                                         "woods to massive orgies. When orgy is over satyr feeds on the victim. Not "
+                                         "seen, only mentioned in S12E18.")
     satyr.clues = [MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                    MonstersClues.goat_man]
 
-    moloch = Monster("Moloch", description="God of sacrifice.")
+    moloch = Monster("Moloch", description="God of sacrifice. WHen fed once a year with fresh human blood grants a "
+                                           "great wealth. Killed by Sam in S12E18.", episodes={"S12": [18]})
     moloch.clues = [MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
-                    MonstersClues.goat_man]
+                    MonstersClues.goat_man, MonstersClues.high_strength]
     moloch.kill_methods = [MonstersKillMethods.colt_of_colt_with_magic_bullets]
+
+    unknown = Monster("Unknown", description="", episodes={"S12": [23]})
+    unknown.clues = []
+
+    # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
 
     # ---------------------------------------------------- SEASON 13 ---------------------------------------------------
 

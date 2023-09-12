@@ -6,12 +6,15 @@ class ObjectAbilities:
     can_kill_watcher_angels = "can kill Watcher Angels"
     can_kill_pagan_gods = "can kill pagan gods"
     can_kill_archangels = "can kill archangels"
+    cannot_kill_archangels = "cannot kill archangels"
     cannot_kill_angels = "cannot kill angels"
     can_kill_knights_of_hell = "can kill Knights of Hell"
     cannot_kill_knights_of_hell = "cannot kill Knights of Hell"
     can_kill_entities_when_reconnecting_with_an_angel = \
         "can kill entities (people, demons) when reconnecting with an angel"
     can_kill_zanna = 'can kill Zanna'
+    can_hurt_angels = "can hurt Angels"
+    can_hurt_archangels = "can hurt Archangels"
     can_send_angels_back_to_heaven = "can send angels back to heaven"
     can_appear_as_falling_meteor = "can appear as falling meteor"
     can_make_a_person_sleep_for_days = "can make a person sleep for days"
@@ -31,6 +34,7 @@ class ObjectAbilities:
     can_bind_split_soul_back_together = "can bind split soul back together"
     can_trap_a_witch = "can trap a Witch"
     can_trap_souls = "can trap souls"
+    can_put_down_holy_oil = "can put down holy oil"
     unables_possessions = "unables possessions"
     grants_incredible_luck = "grants incredible luck"
     grants_incredible_power = "grants incredible power"
@@ -39,6 +43,7 @@ class ObjectAbilities:
     the_place_it_hits_is_not_destroyed_but_flourishes = "the place it hits is not destroyed but flourishes"
     traps_a_reaper = "traps a reaper"
     traps_a_demon = "traps a demon"
+    traps_an_angel = "traps an angel"
     traps_an_archangel = "traps an archangel"
     traps_a_soul_of_a_person = "traps a soul of a person"
     traps_a_person = "traps a person"
@@ -57,10 +62,14 @@ class ObjectAbilities:
     creation_and_undoing_of_any_damnation = "creation and undoing of any damnation"
     calls_to_a_person_with_mark_of_cain = "calls to a person with the Mark of Cain"
     shines_in_the_presence_of_god = "shines in the presence of GOD"
+    removes_demon_from_its_vessel = "removes Demon from its vessel"
+    removes_archangel_from_its_vessel = "removes Archangel from its vessel"
 
 
 class ObjectMaintenance:
-    pass
+    bullets_for_colt_of_colt = "bullets for Colt of Colt - you need holy oil, sage and myrrh. Make a tincture, coat " \
+                               "a silver bullet and use a spell 'Signum est imitandum' when pointing your hand at " \
+                               "the bullets (it mimics the original etchings)."
 
 
 class ObjectDestroyMethods:
