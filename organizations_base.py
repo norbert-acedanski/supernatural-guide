@@ -23,7 +23,7 @@ class OrganizationsBase:
                                   episodes={"S08": [12, 13, 14, 16, 20, 22, 23],
                                             "S09": [4, 5, 6, 7, 9, 11, 14, 16, 17],
                                             "S10": [3, 8, 11, 12, 17, 18, 21, 22], "S11": [4, 7, 8, 11, 14, 16],
-                                            "S12": [1, 2]})
+                                            "S12": [1, 2, 22]})
     man_of_letters.knowledge = [OrganizationKnowledge.time_travel, OrganizationKnowledge.demon_killing_knife,
                                 OrganizationKnowledge.haitian_symbol_for_speaking_to_the_dead,
                                 OrganizationKnowledge.knights_of_hell, OrganizationKnowledge.drakopoolos_journal,
@@ -41,7 +41,9 @@ class OrganizationsBase:
                                 OrganizationKnowledge.whispers, OrganizationKnowledge.nachzehrers,
                                 OrganizationKnowledge.pre_biblical_lore, OrganizationKnowledge.zanna_lore,
                                 OrganizationKnowledge.hand_of_god, OrganizationKnowledge.soul_eaters,
-                                OrganizationKnowledge.beacon_sigils_for_monsters, OrganizationKnowledge.spells]
+                                OrganizationKnowledge.beacon_sigils_for_monsters, OrganizationKnowledge.spells,
+                                OrganizationKnowledge.purification_rituals,
+                                OrganizationKnowledge.reset_mechanical_devices]
 
     the_judah_initiative = Organization("The Judah initiative", description="They were active during WW2. A group of "
                                                                             "rabbis that were good saboteurs. "

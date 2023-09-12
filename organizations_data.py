@@ -34,3 +34,5 @@ class OrganizationKnowledge:
     beacon_sigils_for_monsters = "beacon sigils for monsters (signal, when monster is nearby)"
     spells = "spells"
     resurrections = "resurrections"
+    purification_rituals = "purification rituals"
+    reset_mechanical_devices = "reset mechanical devices"
