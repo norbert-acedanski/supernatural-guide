@@ -6,6 +6,7 @@ class ObjectAbilities:
     can_kill_watcher_angels = "can kill Watcher Angels"
     can_kill_pagan_gods = "can kill pagan gods"
     can_kill_archangels = "can kill archangels"
+    cannot_kill_archangels = "cannot kill archangels"
     cannot_kill_angels = "cannot kill angels"
     can_kill_knights_of_hell = "can kill Knights of Hell"
     cannot_kill_knights_of_hell = "cannot kill Knights of Hell"
@@ -13,6 +14,7 @@ class ObjectAbilities:
         "can kill entities (people, demons) when reconnecting with an angel"
     can_kill_zanna = 'can kill Zanna'
     can_hurt_angels = "can hurt Angels"
+    can_hurt_archangels = "can hurt Archangels"
     can_send_angels_back_to_heaven = "can send angels back to heaven"
     can_appear_as_falling_meteor = "can appear as falling meteor"
     can_make_a_person_sleep_for_days = "can make a person sleep for days"

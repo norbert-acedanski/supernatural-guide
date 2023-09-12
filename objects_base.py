@@ -53,7 +53,7 @@ class ObjectsBase:
                                  episodes={"S03": [1, 9, 16], "S04": [1, 9, 20, 22], "S05": [1, 10, 14, 17, 20, 21, 22],
                                            "S06": [10, 20, 21], "S07": [8, 15, 17, 21],
                                            "S08": [1, 2, 7, 10, 14, 17, 19, 23], "S09": [2, 4, 11, 14, 16, 17],
-                                           "S10": [2, 3, 7, 22], "S11": [2, 6, 15], "S12": [6, 12]})
+                                           "S10": [2, 3, 7, 22], "S11": [2, 6, 15], "S12": [6, 12, 23]})
     demon_killing_knife.abilities = [ObjectAbilities.can_kill_demons, ObjectAbilities.cannot_kill_angels,
                                      ObjectAbilities.cannot_kill_knights_of_hell]
 
@@ -109,9 +109,10 @@ class ObjectsBase:
                                    "S08": [7, 10, 17, 21, 22, 23], "S09": [1, 2, 3, 6, 9, 10, 11, 14, 16, 18, 21, 22, 23],
                                    "S10": [1, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22],
                                    "S11": [1, 2, 3, 6, 9, 10, 11, 15, 18, 22, 23],
-                                   "S12": [1, 3, 6, 7, 9, 10, 12, 13, 15, 17, 19, 21]})
+                                   "S12": [1, 3, 6, 7, 9, 10, 12, 13, 15, 17, 19, 21, 23]})
     angel_blade.abilities = [ObjectAbilities.can_kill_angels, ObjectAbilities.can_kill_demons,
-                             ObjectAbilities.can_kill_reapers, ObjectAbilities.cannot_kill_knights_of_hell]
+                             ObjectAbilities.can_kill_reapers, ObjectAbilities.cannot_kill_knights_of_hell,
+                             ObjectAbilities.cannot_kill_archangels]
 
     lucifers_cage = Object("Lucifer's Cage", description="A prison build specifically to contain archangelic powers "
                                                          "(not seen yet). Can be opened with all 4 rings of "
@@ -380,8 +381,8 @@ class ObjectsBase:
     # SEASON 12:
 
     angel_knuckle_duster = Object("Angel Knuckle Duster", description="Allows to hurt angels in a direct fight.",
-                                  episodes={"S12": [1, 2, 12, 20]})
-    angel_knuckle_duster.abilities = [ObjectAbilities.can_hurt_angels]
+                                  episodes={"S12": [1, 2, 12, 20, 23]})
+    angel_knuckle_duster.abilities = [ObjectAbilities.can_hurt_angels, ObjectAbilities.can_hurt_archangels]
 
     watch_with_hitlers_soul = Object("Watch with Hitler's soul",
                                      description="Watch, that contains soul of Hitler. It's hike a horcrux. In the "
@@ -414,6 +415,8 @@ class ObjectsBase:
                                                     "wounded beings are healed.", episodes={"S12": [12]})
     lance_of_archangel_michael.abilities = [ObjectAbilities.can_hurt_angels, ObjectAbilities.can_kill_angels,
                                             ObjectAbilities.can_kill_demons, ObjectAbilities.can_put_down_holy_oil]
+
+    # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
 
     # SEASON 13:
 
