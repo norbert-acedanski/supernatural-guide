@@ -378,6 +378,8 @@ class CursesBase:
     memory_curse.clues = [CursesClues.slow_loss_of_the_memory]
     memory_curse.disable_methods = [CursesDisableMethods.grimoire_spell]
 
+    # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
+
     # SEASON 13:
 
 
