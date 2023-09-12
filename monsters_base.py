@@ -16,24 +16,23 @@ class MonsterBase:
                                                            "trained to be demonic generals in the war against Heaven. "
                                                            "Azazel was killed by Dean. Ramiel is the second Prince "
                                                            "Winchesters encounter. Dagon appears in S12E13. She is "
-                                                           "mostly known for her psychotic savegery.",
+                                                           "mostly known for her psychotic savagery. Dagon is killed "
+                                                           "by Castiel and the power of Nephilim in S12E19.",
                              episodes={"S01": [1, 21, 22], "S02": [1, 21, 22], "S04": [3, 22], "S06": [1],
-                                       "S12": [12, 13, 17]})
+                                       "S12": [12, 13, 17, 19]})
     # TODO: Check in which episodes does Azazel appear
-    prince_of_hell.clues = [MonstersClues.people_burned_on_the_ceiling, MonstersClues.telekinesis,
+    prince_of_hell.clues = [MonstersClues.people_burned_on_the_ceiling, MonstersClues.can_appear_out_of_thin_air,
                             MonstersClues.weird_things_behavior, MonstersClues.yellow_eyes, MonstersClues.weird_weather,
                             MonstersClues.children_of_victims_that_died_on_the_ceiling_have_abilities,
                             MonstersClues.mothers_burned_when_children_are_6_months_old, MonstersClues.cattle_deaths,
-                            MonstersClues.temperature_fluctuations, MonstersClues.electrical_storms,
+                            MonstersClues.one_can_make_a_deal_with_it, MonstersClues.angel_blade_is_ineffective,
                             MonstersClues.holy_water_does_not_affect_it, MonstersClues.travels_as_black_fog,
-                            MonstersClues.can_posses_a_reaper, MonstersClues.one_can_make_a_deal_with_it,
+                            MonstersClues.can_posses_a_reaper, MonstersClues.can_vanish, MonstersClues.electrical_storms,
                             MonstersClues.can_show_past_to_people, MonstersClues.demon_killing_knife_is_ineffective,
-                            MonstersClues.angel_blade_is_ineffective, MonstersClues.can_kill_angels_with_a_touch,
-                            MonstersClues.can_appear_out_of_thin_air, MonstersClues.invulnerable,
-                            MonstersClues.can_vanish, MonstersClues.can_teleport_people]
+                            MonstersClues.can_kill_angels_with_a_touch, MonstersClues.temperature_fluctuations,
+                            MonstersClues.telekinesis, MonstersClues.invulnerable, MonstersClues.can_teleport_people]
     prince_of_hell.kill_methods = [MonstersKillMethods.colt_of_colt_with_magic_bullets,
                                    MonstersKillMethods.lance_of_archangel_michael,
-
                                    MonstersKillMethods.will_of_a_nephilim]
 
     vengeful_spirit = Monster("Vengeful Spirit or Ghost (Bloody Mary, Hook Man)",
@@ -597,7 +596,8 @@ class MonsterBase:
                               "S06": [3, 6, 7, 10, 12, 15, 17, 18, 19, 20, 21, 22], "S07": [1, 17, 20, 21, 23],
                               "S08": [2, 7, 8, 10, 17, 19, 21, 22, 23], "S09": [9, 10, 11, 14, 18, 21, 22, 23],
                               "S10": [1, 2, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22, 23],
-                              "S11": [1, 2, 3, 6, 9, 10, 14, 18, 22, 23], "S12": [1, 2, 3, 7, 8, 9, 10, 12, 13, 15]})
+                              "S11": [1, 2, 3, 6, 9, 10, 14, 18, 22, 23],
+                              "S12": [1, 2, 3, 7, 8, 9, 10, 12, 13, 15, 19]})
     angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                    MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion, MonstersClues.has_wings,
                    MonstersClues.leaves_burned_marks, MonstersClues.can_tell_if_somebody_was_recently_healed,
@@ -741,7 +741,8 @@ class MonsterBase:
                                                                    "is revealed, that the Cage is not the place where "
                                                                    "Lucyfer is in S12E12.",
                                 episodes={"S04": [22], "S05": [1, 3, 4, 10, 19, 22], "S07": [1, 2, 15, 17],
-                                          "S11": [9, 10, 11, 14, 15, 18, 21, 22], "S12": [2, 3, 7, 8, 12, 13, 15, 17]})
+                                          "S11": [9, 10, 11, 14, 15, 18, 21, 22],
+                                          "S12": [2, 3, 7, 8, 12, 13, 15, 17, 19]})
     archangel_lucyfer.clues = [MonstersClues.weird_things_behavior, MonstersClues.true_voice_can_hurt_people,
                                MonstersClues.bright_light, MonstersClues.weird_weather, MonstersClues.visions,
                                MonstersClues.people_seeing_strange_things, MonstersClues.biblical_like_events,
@@ -935,8 +936,10 @@ class MonsterBase:
     zombie.kill_methods = [MonstersKillMethods.head_shot]
 
     angel_joshua = Monster("Angel Joshua", description="Angel, that guards the Heavens garden and the one, "
-                                                       "that God talks to.", episodes={"S05": [16]})
+                                                       "that God talks to. He is killed in S12E19 by Dagon.",
+                           episodes={"S05": [16], "S12": [19]})
     angel_joshua.clues = [MonstersClues.can_read_peoples_minds, MonstersClues.can_bring_back_dead_people]
+    angel_joshua.kill_methods = [MonstersKillMethods.will_of_prince_of_hell]
 
     false_prophet = Monster("False Prophet", description="False Prophet rises, when Lucifer walks the Earth. Book of "
                                                          "Revelations calls her 'The Whore of Babylon'. Her goal is to "
@@ -1399,7 +1402,9 @@ class MonsterBase:
                                                "a Nephilim is conceived, there is a massive surge in celestial energy. "
                                                "Depending on the type of celestial being (Angel/Archangel), the surge "
                                                "differs in power. If Nephilim comes from Lucyfer and the mother "
-                                               "touches the Bible - it burns.",
+                                               "touches the Bible - it burns. Nephilim don't need 9 months to fully "
+                                               "grow (only about 5). Nephilim does not allow its mother to die and can "
+                                               "boost angelic powers.",
                        episodes={"S08": [22]})
     nephilim.clues = [MonstersClues.can_see_real_appearance_of_entities, MonstersClues.high_strength,
                       MonstersClues.bright_eyes, MonstersClues.bible_burns_it,
@@ -1760,7 +1765,7 @@ class MonsterBase:
                     MonstersClues.goat_man, MonstersClues.high_strength]
     moloch.kill_methods = [MonstersKillMethods.colt_of_colt_with_magic_bullets]
 
-    unknown = Monster("Unknown", description="", episodes={"S12": [18]})
+    unknown = Monster("Unknown", description="", episodes={"S12": [19]})
     unknown.clues = []
 
     # ---------------------------------------------------- SEASON 13 ---------------------------------------------------
