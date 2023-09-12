@@ -25,9 +25,10 @@ class ObjectsBase:
                                                       "He made it for a hunter along with 13 bullets. Bullets can be "
                                                       "crafted for this gun. Can kill everything in all creation "
                                                       "except 5 entities: Archangel Lucyfer, unknown 4 left. Colt is "
-                                                      "lost sometime during the S06 probably. Back in S12E12.",
+                                                      "lost sometime during the S06 probably. Back in S12E12. It is "
+                                                      "destroyed by Dagon in S12E19.",
                           episodes={"S01": [20, 21, 22], "S02": [1, 22], "S03": [4, 5, 9], "S05": [10], "S06": [18],
-                                    "S12": [12, 13, 17, 18]})
+                                    "S12": [12, 13, 17, 18, 19]})
     colt_of_colt.abilities = [ObjectAbilities.can_kill_anything]
     colt_of_colt.maintenance_methods = [ObjectMaintenance.bullets_for_colt_of_colt]
 
@@ -108,7 +109,7 @@ class ObjectsBase:
                                    "S08": [7, 10, 17, 21, 22, 23], "S09": [1, 2, 3, 6, 9, 10, 11, 14, 16, 18, 21, 22, 23],
                                    "S10": [1, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22],
                                    "S11": [1, 2, 3, 6, 9, 10, 11, 15, 18, 22, 23],
-                                   "S12": [1, 3, 6, 7, 9, 10, 12, 13, 15, 17]})
+                                   "S12": [1, 3, 6, 7, 9, 10, 12, 13, 15, 17, 19]})
     angel_blade.abilities = [ObjectAbilities.can_kill_angels, ObjectAbilities.can_kill_demons,
                              ObjectAbilities.can_kill_reapers, ObjectAbilities.cannot_kill_knights_of_hell]
 
