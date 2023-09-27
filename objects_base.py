@@ -18,7 +18,8 @@ class ObjectsBase:
     john_winchesters_journal._information = {"S04E19": JohnWinchesterJournal.entry_about_johns_other_son,
                                              "S06E12": JohnWinchesterJournal.entry_about_a_skinwalker,
                                              "S08E12": JohnWinchesterJournal.entry_about_torturing_a_demon,
-                                             "S09E11": JohnWinchesterJournal.entry_about_killing_a_demon_abaddon_and_locker}
+                                             "S09E11": JohnWinchesterJournal.entry_about_killing_a_demon_abaddon_and_locker,
+                                             "S13E02": JohnWinchesterJournal.entry_about_jasper_wyoming}
 
     colt_of_colt = Object("Colt of Colt", description="Colt made by Samuel Colt in 1835, when Halley's Comet was "
                                                       "overhead and the same night those men died at the Alamo. "
@@ -109,7 +110,7 @@ class ObjectsBase:
                                    "S08": [7, 10, 17, 21, 22, 23], "S09": [1, 2, 3, 6, 9, 10, 11, 14, 16, 18, 21, 22, 23],
                                    "S10": [1, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22],
                                    "S11": [1, 2, 3, 6, 9, 10, 11, 15, 18, 22, 23],
-                                   "S12": [1, 3, 6, 7, 9, 10, 12, 13, 15, 17, 19, 21, 23], "S12": [1]})
+                                   "S12": [1, 3, 6, 7, 9, 10, 12, 13, 15, 17, 19, 21, 23], "S13": [1]})
     angel_blade.abilities = [ObjectAbilities.can_kill_angels, ObjectAbilities.can_kill_demons,
                              ObjectAbilities.can_kill_reapers, ObjectAbilities.cannot_kill_knights_of_hell,
                              ObjectAbilities.cannot_kill_archangels]

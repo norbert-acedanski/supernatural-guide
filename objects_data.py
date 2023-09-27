@@ -88,3 +88,6 @@ class JohnWinchesterJournal:
                                     "Abaddon, who is a Knight of Hell."
     entry_about_killing_a_demon_abaddon_and_locker = "entry about killing a demon, Abaddon and locker " \
                                                      "(080379 with 'T' for Tara under the code)"
+    entry_about_jasper_wyoming = "entry about Jasper, Wyoming - it's home to its very own Gate to Hell. This " \
+                                 "particular place leads to 'A place where unimaginable evil emanates from creatures " \
+                                 "too wicked for the Pit to hold.'"
