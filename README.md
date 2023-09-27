@@ -55,6 +55,7 @@ If you are a fan of Supernatural show, you can play with this project to find ou
 - Sam and Dean are held in prison for at least 6 weeks, 2 days and 10 hours
 - Dean is cursed by Memory Curse in S12E11 and jokes on Sam after being cured
 - Castiel shares his feeling (he loves them as a family) to the Winchesters in S12E12
+- According to an Angel from an Alternate timeline, Lucyfer was killed by Archangel Michael
 
 # TODO:
 - finish all seasons and episodes.
