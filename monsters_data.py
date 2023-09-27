@@ -121,6 +121,7 @@ class MonstersClues:
     bloodshot_eyes = "bloodshot eyes"
     wormy_skin = "wormy skin"
     dry_skin = "dry skin"
+    snake_skin = "snake skin"
     emf = "Electromagnetic Field"
     no_emf = "no Electromagnetic Field"
     yellow_blast = "yellow blast"

@@ -17,9 +17,10 @@ class MonsterBase:
                                                            "Azazel was killed by Dean. Ramiel is the second Prince "
                                                            "Winchesters encounter. Dagon appears in S12E13. She is "
                                                            "mostly known for her psychotic savagery. Dagon is killed "
-                                                           "by Castiel and the power of Nephilim in S12E19.",
+                                                           "by Castiel and the power of Nephilim in S12E19. Asmodeus "
+                                                           "appears in S13E02.",
                              episodes={"S01": [1, 21, 22], "S02": [1, 21, 22], "S04": [3, 22], "S06": [1],
-                                       "S12": [12, 13, 17, 19]})
+                                       "S12": [12, 13, 17, 19], "S13": [2]})
     # TODO: Check in which episodes does Azazel appear
     prince_of_hell.clues = [MonstersClues.people_burned_on_the_ceiling, MonstersClues.can_appear_out_of_thin_air,
                             MonstersClues.weird_things_behavior, MonstersClues.yellow_eyes, MonstersClues.weird_weather,
@@ -27,10 +28,12 @@ class MonsterBase:
                             MonstersClues.mothers_burned_when_children_are_6_months_old, MonstersClues.cattle_deaths,
                             MonstersClues.one_can_make_a_deal_with_it, MonstersClues.angel_blade_is_ineffective,
                             MonstersClues.holy_water_does_not_affect_it, MonstersClues.travels_as_black_fog,
-                            MonstersClues.can_posses_a_reaper, MonstersClues.can_vanish, MonstersClues.electrical_storms,
+                            MonstersClues.can_posses_a_reaper, MonstersClues.can_make_themselves_appear_as_they_like,
                             MonstersClues.can_show_past_to_people, MonstersClues.demon_killing_knife_is_ineffective,
                             MonstersClues.can_kill_angels_with_a_touch, MonstersClues.temperature_fluctuations,
-                            MonstersClues.telekinesis, MonstersClues.invulnerable, MonstersClues.can_teleport_people]
+                            MonstersClues.telekinesis, MonstersClues.invulnerable, MonstersClues.can_teleport_people,
+                            MonstersClues.can_kill_demons_with_power_of_will, MonstersClues.electrical_storms,
+                            MonstersClues.can_vanish, MonstersClues.can_hurt_people_with_a_thought]
     prince_of_hell.kill_methods = [MonstersKillMethods.colt_of_colt_with_magic_bullets,
                                    MonstersKillMethods.lance_of_archangel_michael,
                                    MonstersKillMethods.will_of_a_nephilim]
@@ -116,7 +119,7 @@ class MonsterBase:
                               "S06": [7, 10, 18, 20, 21, 22], "S07": [8, 15, 17, 21, 23],
                               "S08": [1, 2, 7, 10, 17, 19, 21, 22], "S09": [2, 10, 11, 14, 16, 17, 21, 23],
                               "S10": [1, 2, 3, 7, 9, 10, 13, 16, 17, 21], "S11": [1, 3, 6, 9, 10, 14, 15, 18, 22],
-                              "S12": [1, 12, 15, 17, 21]})
+                              "S12": [1, 12, 15, 17, 21], "S13": [2]})
     demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                    MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                    MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -599,7 +602,7 @@ class MonsterBase:
                               "S08": [2, 7, 8, 10, 17, 19, 21, 22, 23], "S09": [9, 10, 11, 14, 18, 21, 22, 23],
                               "S10": [1, 2, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22, 23],
                               "S11": [1, 2, 3, 6, 9, 10, 14, 18, 22, 23],
-                              "S12": [1, 2, 3, 7, 8, 9, 10, 12, 13, 15, 19, 23], "S13": [1]})
+                              "S12": [1, 2, 3, 7, 8, 9, 10, 12, 13, 15, 19, 23], "S13": [1, 2]})
     angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                    MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion, MonstersClues.has_wings,
                    MonstersClues.leaves_burned_marks, MonstersClues.can_tell_if_somebody_was_recently_healed,
@@ -717,7 +720,8 @@ class MonsterBase:
                                                          "that Winchesters encounter in S11E21 is professor Donatello "
                                                          "Redfield.",
                       episodes={"S04": [18, 22], "S05": [1, 9, 22], "S07": [21, 22, 23],
-                                "S08": [1, 2, 7, 10, 14, 19, 21, 23], "S09": [2, 6, 9], "S10": [5], "S11": [21, 22]})
+                                "S08": [1, 2, 7, 10, 14, 19, 21, 23], "S09": [2, 6, 9], "S10": [5], "S11": [21, 22],
+                                "S13": [2]})
     prophet.clues = [MonstersClues.can_see_future, MonstersClues.protected_by_an_archangel, MonstersClues.visions,
                      MonstersClues.can_repair_broken_word_of_god, MonstersClues.can_read_word_of_god,
                      MonstersClues.weird_weather, MonstersClues.missing_or_dead_people_regularly_in_different_areas]
@@ -744,7 +748,7 @@ class MonsterBase:
                                                                    "Lucyfer is in S12E12.",
                                 episodes={"S04": [22], "S05": [1, 3, 4, 10, 19, 22], "S07": [1, 2, 15, 17],
                                           "S11": [9, 10, 11, 14, 15, 18, 21, 22],
-                                          "S12": [2, 3, 7, 8, 12, 13, 15, 17, 19, 21, 23], "S13": [1]})
+                                          "S12": [2, 3, 7, 8, 12, 13, 15, 17, 19, 21, 23], "S13": [1, 2]})
     archangel_lucyfer.clues = [MonstersClues.weird_things_behavior, MonstersClues.true_voice_can_hurt_people,
                                MonstersClues.bright_light, MonstersClues.weird_weather, MonstersClues.visions,
                                MonstersClues.people_seeing_strange_things, MonstersClues.biblical_like_events,
@@ -1407,14 +1411,16 @@ class MonsterBase:
                                                "grow (only about 5). Nephilim does not allow its mother to die and can "
                                                "boost angelic powers. Power of a Nephilim can tear spacetime and open "
                                                "a portal to an alternate timeline. In S12E23 Jack (the son of Lucyfer) "
-                                               "is born. Nephilim born from an Archangel is ineffected to Angel blade",
-                       episodes={"S08": [22], "S12": [23], "S13": [1]})
+                                               "is born. Nephilim born from an Archangel is unaffected by Angel blade. "
+                                               "A Nephilim becomes more powerful, than the angel, that sired him.",
+                       episodes={"S08": [22], "S12": [23], "S13": [1, 2]})
     nephilim.clues = [MonstersClues.can_see_real_appearance_of_entities, MonstersClues.high_strength,
                       MonstersClues.bright_eyes, MonstersClues.bible_burns_it, MonstersClues.weird_weather,
                       MonstersClues.biblical_like_events, MonstersClues.flashing_lights, MonstersClues.grows_fast,
                       MonstersClues.leaves_burned_marks, MonstersClues.yellow_eyes, MonstersClues.telekinesis,
                       MonstersClues.can_control_electronics, MonstersClues.immune_to_angel_sigils,
-                      MonstersClues.angel_blade_is_ineffective]
+                      MonstersClues.angel_blade_is_ineffective, MonstersClues.can_erase_anti_angel_marks,
+                      MonstersClues.can_vanish, MonstersClues.invulnerable]
     nephilim.kill_methods = [MonstersKillMethods.angel_blade]
 
     # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
@@ -1774,7 +1780,13 @@ class MonsterBase:
 
     # ---------------------------------------------------- SEASON 13 ---------------------------------------------------
 
-    unknown = Monster("Unknown", description="", episodes={"S13": [1]})
+    shedim = Monster("Shedim", description="According to Asmodeus Hell's most savage. Things so dark and base, GOD "
+                                           "himself would not allow them into the light. Asmodeus believed, that he "
+                                           "could train them. Lucyfer feared them, so he forbade it and locked them up "
+                                           "again.", episodes={"S13": [2]})
+    shedim.clues = [MonstersClues.snake_skin]
+
+    unknown = Monster("Unknown", description="", episodes={"S13": [2]})
     unknown.clues = []
 
     empty = Monster("Empty", description="The place (and a cosmic being) that angels and demons go to when they die. "
