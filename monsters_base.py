@@ -599,7 +599,7 @@ class MonsterBase:
                               "S08": [2, 7, 8, 10, 17, 19, 21, 22, 23], "S09": [9, 10, 11, 14, 18, 21, 22, 23],
                               "S10": [1, 2, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22, 23],
                               "S11": [1, 2, 3, 6, 9, 10, 14, 18, 22, 23],
-                              "S12": [1, 2, 3, 7, 8, 9, 10, 12, 13, 15, 19, 23]})
+                              "S12": [1, 2, 3, 7, 8, 9, 10, 12, 13, 15, 19, 23], "S13": [1]})
     angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                    MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion, MonstersClues.has_wings,
                    MonstersClues.leaves_burned_marks, MonstersClues.can_tell_if_somebody_was_recently_healed,
@@ -744,7 +744,7 @@ class MonsterBase:
                                                                    "Lucyfer is in S12E12.",
                                 episodes={"S04": [22], "S05": [1, 3, 4, 10, 19, 22], "S07": [1, 2, 15, 17],
                                           "S11": [9, 10, 11, 14, 15, 18, 21, 22],
-                                          "S12": [2, 3, 7, 8, 12, 13, 15, 17, 19, 21, 23]})
+                                          "S12": [2, 3, 7, 8, 12, 13, 15, 17, 19, 21, 23], "S13": [1]})
     archangel_lucyfer.clues = [MonstersClues.weird_things_behavior, MonstersClues.true_voice_can_hurt_people,
                                MonstersClues.bright_light, MonstersClues.weird_weather, MonstersClues.visions,
                                MonstersClues.people_seeing_strange_things, MonstersClues.biblical_like_events,
@@ -1407,12 +1407,14 @@ class MonsterBase:
                                                "grow (only about 5). Nephilim does not allow its mother to die and can "
                                                "boost angelic powers. Power of a Nephilim can tear spacetime and open "
                                                "a portal to an alternate timeline. In S12E23 Jack (the son of Lucyfer) "
-                                               "is born.",
-                       episodes={"S08": [22]})
+                                               "is born. Nephilim born from an Archangel is ineffected to Angel blade",
+                       episodes={"S08": [22], "S12": [23], "S13": [1]})
     nephilim.clues = [MonstersClues.can_see_real_appearance_of_entities, MonstersClues.high_strength,
                       MonstersClues.bright_eyes, MonstersClues.bible_burns_it, MonstersClues.weird_weather,
                       MonstersClues.biblical_like_events, MonstersClues.flashing_lights, MonstersClues.grows_fast,
-                      MonstersClues.leaves_burned_marks, MonstersClues.yellow_eyes]
+                      MonstersClues.leaves_burned_marks, MonstersClues.yellow_eyes, MonstersClues.telekinesis,
+                      MonstersClues.can_control_electronics, MonstersClues.immune_to_angel_sigils,
+                      MonstersClues.angel_blade_is_ineffective]
     nephilim.kill_methods = [MonstersKillMethods.angel_blade]
 
     # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
@@ -1768,12 +1770,12 @@ class MonsterBase:
                     MonstersClues.goat_man, MonstersClues.high_strength]
     moloch.kill_methods = [MonstersKillMethods.colt_of_colt_with_magic_bullets]
 
-    unknown = Monster("Unknown", description="", episodes={"S12": [23]})
-    unknown.clues = []
-
     # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
 
     # ---------------------------------------------------- SEASON 13 ---------------------------------------------------
+
+    unknown = Monster("Unknown", description="", episodes={"S13": [1]})
+    unknown.clues = []
 
     empty = Monster("Empty", description="The place (and a cosmic being) that angels and demons go to when they die. "
                                          "THE God has no power there.")

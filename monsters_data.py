@@ -338,6 +338,7 @@ class MonstersClues:
     poisoned_people = "poisoned people"
     demon_killing_knife_is_ineffective = "demon killing knife is ineffective"
     angel_blade_is_ineffective = "angel blade is ineffective"
+    immune_to_angel_sigils = "immune to angel sigils"
     sigils_against_angels_are_ineffective = "sigils against angels are ineffective"
     immortal = "immortal"
     invulnerable = "invulnerable"
