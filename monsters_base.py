@@ -162,8 +162,9 @@ class MonsterBase:
                                              "or in general. Senses energies and spirits and can contact dead people "
                                              "(not only spirits, but also the ones in Heaven). Missouri Mosley was "
                                              "a friend of John Winchester. One of the psychics is Oliver Pryce. "
-                                             "Man of Letters were teaching him how to control his powers.",
-                      episodes={"S01": [9], "S10": [17], "S12": [4]})
+                                             "Man of Letters were teaching him how to control his powers. Missouri is "
+                                             "killed by Wraith in S13E03.",
+                      episodes={"S01": [9], "S10": [17], "S12": [4], "S13": [3]})
     psychic.clues = [MonstersClues.psychic_abilities, MonstersClues.people_acting_weirdly, MonstersClues.telekinesis,
                      MonstersClues.people_dead_weirdly, MonstersClues.can_read_peoples_minds, MonstersClues.no_sulfur,
                      MonstersClues.people_speaking_languages, MonstersClues.headaches, MonstersClues.no_black_fog,
@@ -595,14 +596,15 @@ class MonsterBase:
                                          "Castiel, the last time it happened, Lot's wife was turned to salt. The "
                                          "fallout does not affect Angels. An Angel can be possessed by an Archangel. "
                                          "Castiel broke the fourth wall in S06E20. Castiel supposedly died in S07E01, "
-                                         "back in S07E17. Castiel is killed by Lucyfer in S12E23 with an Angel Blade.",
+                                         "back in S07E17. Castiel is killed by Lucyfer in S12E23 with an Angel Blade "
+                                         "and appears again in S13E03 in Empty.",
                     episodes={"S04": [1, 2, 7, 9, 10, 15, 16, 18, 20, 21, 22],
                               "S05": [1, 2, 3, 4, 5, 8, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22],
                               "S06": [3, 6, 7, 10, 12, 15, 17, 18, 19, 20, 21, 22], "S07": [1, 17, 20, 21, 23],
                               "S08": [2, 7, 8, 10, 17, 19, 21, 22, 23], "S09": [9, 10, 11, 14, 18, 21, 22, 23],
                               "S10": [1, 2, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22, 23],
                               "S11": [1, 2, 3, 6, 9, 10, 14, 18, 22, 23],
-                              "S12": [1, 2, 3, 7, 8, 9, 10, 12, 13, 15, 19, 23], "S13": [1, 2]})
+                              "S12": [1, 2, 3, 7, 8, 9, 10, 12, 13, 15, 19, 23], "S13": [1, 2, 3]})
     angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                    MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion, MonstersClues.has_wings,
                    MonstersClues.leaves_burned_marks, MonstersClues.can_tell_if_somebody_was_recently_healed,
@@ -899,14 +901,14 @@ class MonsterBase:
                           MonstersClues.can_go_to_lucifers_cage_and_back_with_ease]
     reaper_death.kill_methods = [MonstersKillMethods.scythe_of_death]
 
-    wraith = Monster("Wraith", description="Creatures, that crack the head and feed on brain juice. "
-                                           "Can poison people and drive them crazy.", episodes={"S05": [11],
-                                                                                                "S09": [20]})
+    wraith = Monster("Wraith", description="Creatures, that crack the head and feed on brain juice. Can poison people "
+                                           "and drive them crazy. If the spike of a Wraith is broken, it regenerates.",
+                     episodes={"S05": [11], "S09": [20], "S13": [3]})
     wraith.clues = [MonstersClues.people_dead_weirdly, MonstersClues.no_black_fog, MonstersClues.no_cold_spots,
                     MonstersClues.bite_marks_on_peoples_necks, MonstersClues.people_seeing_strange_things,
                     MonstersClues.victims_brain_devoid_of_water, MonstersClues.silver_burns_its_skin,
                     MonstersClues.can_take_form_of_other_people, MonstersClues.people_seeing_things_or_figures,
-                    MonstersClues.people_hear_voices, MonstersClues.long_spike_from_the_arm,
+                    MonstersClues.people_hear_voices, MonstersClues.long_spike_from_the_arm, MonstersClues.black_blood,
                     MonstersClues.real_appearance_can_be_seen_in_a_reflection_or_camera, MonstersClues.no_sulfur,
                     MonstersClues.high_strength, MonstersClues.people_loosing_their_minds]
     wraith.disable_methods = [MonstersDisableMethods.silver_or_silver_bullets]
@@ -1412,8 +1414,9 @@ class MonsterBase:
                                                "boost angelic powers. Power of a Nephilim can tear spacetime and open "
                                                "a portal to an alternate timeline. In S12E23 Jack (the son of Lucyfer) "
                                                "is born. Nephilim born from an Archangel is unaffected by Angel blade. "
-                                               "A Nephilim becomes more powerful, than the angel, that sired him.",
-                       episodes={"S08": [22], "S12": [23], "S13": [1, 2]})
+                                               "A Nephilim becomes more powerful, than the angel, that sired him. "
+                                               "A Nephilim can talk to beings, that are in Empty.",
+                       episodes={"S08": [22], "S12": [23], "S13": [1, 2, 3]})
     nephilim.clues = [MonstersClues.can_see_real_appearance_of_entities, MonstersClues.high_strength,
                       MonstersClues.bright_eyes, MonstersClues.bible_burns_it, MonstersClues.weird_weather,
                       MonstersClues.biblical_like_events, MonstersClues.flashing_lights, MonstersClues.grows_fast,
@@ -1786,7 +1789,7 @@ class MonsterBase:
                                            "again.", episodes={"S13": [2]})
     shedim.clues = [MonstersClues.snake_skin]
 
-    unknown = Monster("Unknown", description="", episodes={"S13": [2]})
+    unknown = Monster("Unknown", description="", episodes={"S13": [3]})
     unknown.clues = []
 
     empty = Monster("Empty", description="The place (and a cosmic being) that angels and demons go to when they die. "
