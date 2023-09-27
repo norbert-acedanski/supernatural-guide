@@ -56,7 +56,8 @@ class PlacesBase:
     oz.clues = [PlaceClues.castle_structure_on_a_hill, PlaceClues.golden_path, PlaceClues.emerald_city]
 
     empty = Place("Empty", description="Place, where a Reaper want's Sam and Dean to go when they die. Mentioned in "
-                                       "S11E17.")
+                                       "S11E17. First appearance in S13E03.", episodes={"S13": [3]})
+    empty.clues = [PlaceClues.dark_place]
 
     def __init__(self):
         self.places = [place for place in self.__class__.__dict__.values() if isinstance(place, Place)]
