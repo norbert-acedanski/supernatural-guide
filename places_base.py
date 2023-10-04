@@ -55,8 +55,13 @@ class PlacesBase:
                                  "spell - it can open door to any place in Oz.", episodes={"S09": [4]})
     oz.clues = [PlaceClues.castle_structure_on_a_hill, PlaceClues.golden_path, PlaceClues.emerald_city]
 
-    empty = Place("Empty", description="Place, where a Reaper want's Sam and Dean to go when they die. Mentioned in "
-                                       "S11E17. First appearance in S13E03.", episodes={"S13": [3]})
+    empty = Place("Empty", description="Place (and a cosmic being), where a Reaper want's Sam and Dean to go when they "
+                                       "die. Mentioned in S11E17. First appearance in S13E03. A place that angels and "
+                                       "demons go to when they die. THE God has no power there. According to Empty "
+                                       "(being), before GOD and Amara there was nothing but Empty. When Angel or a "
+                                       "Demon comes here, they sleep peacefully forever. Castiel is the first being, "
+                                       "that became awake.",
+                  episodes={"S13": [3, 4]})
     empty.clues = [PlaceClues.dark_place]
 
     def __init__(self):
