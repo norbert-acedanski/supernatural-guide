@@ -52,7 +52,7 @@ class MonsterBase:
                               episodes={"S01": [1, 3, 5, 7, 9, 10, 13, 19], "S02": [6, 11, 16, 18, 19],
                                         "S03": [5, 6, 13], "S04": [2, 13, 15, 17], "S05": [9, 11], "S06": [4, 14],
                                         "S07": [7, 10, 13, 17, 19], "S09": [7], "S10": [13, 16], "S11": [7, 23],
-                                        "S12": [3, 6, 13]})
+                                        "S12": [3, 6, 13], "S13": [5]})
     vengeful_spirit.clues = [MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                              MonstersClues.people_dead_weirdly, MonstersClues.ghost_like_creature,
                              MonstersClues.weird_electronics_behavior, MonstersClues.weird_things_behavior,
@@ -197,9 +197,10 @@ class MonsterBase:
                                            "a person across Hell's border, Heaven and the Veil. They have secret ways "
                                            "in and out.When a reaper dies, there are electrical storms. One of the "
                                            "Reapers is Tesa (killed by Dean in S09E22). Reaper Billie is killed by "
-                                           "Castiel in S12E09.",
+                                           "Castiel in S12E09. That meant, that Billie got promoted to be the next "
+                                           "Death (revealed in S13E05).",
                      episodes={"S01": [12], "S02": [1], "S04": [15], "S05": [10, 21], "S06": [11], "S07": [10],
-                               "S08": [19], "S09": [3, 22], "S11": [2, 10, 17, 23], "S12": [6, 9]})
+                               "S08": [19], "S09": [3, 22], "S11": [2, 10, 17, 23], "S12": [6, 9], "S13": [5]})
     reaper.clues = [MonstersClues.people_dead_weirdly, MonstersClues.people_cured_miraculously,
                     MonstersClues.weird_things_behavior, MonstersClues.people_seeing_things_or_figures,
                     MonstersClues.seen_as_a_person_in_a_suit, MonstersClues.ghost_like_creature,
@@ -606,7 +607,7 @@ class MonsterBase:
                               "S08": [2, 7, 8, 10, 17, 19, 21, 22, 23], "S09": [9, 10, 11, 14, 18, 21, 22, 23],
                               "S10": [1, 2, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22, 23],
                               "S11": [1, 2, 3, 6, 9, 10, 14, 18, 22, 23],
-                              "S12": [1, 2, 3, 7, 8, 9, 10, 12, 13, 15, 19, 23], "S13": [1, 2, 3, 4]})
+                              "S12": [1, 2, 3, 7, 8, 9, 10, 12, 13, 15, 19, 23], "S13": [1, 2, 3, 4, 5]})
     angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                    MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion, MonstersClues.has_wings,
                    MonstersClues.leaves_burned_marks, MonstersClues.can_tell_if_somebody_was_recently_healed,
@@ -895,7 +896,9 @@ class MonsterBase:
     reaper_death = Monster("Reaper - Death", description="One of the Horseman, the pale rider. Angel of Death. "
                                                          "Can be brought to the Earth at midnight through a place of "
                                                          "awful carnage. Summoned in S05E10 and his actions seen "
-                                                         "in S05E15.",
+                                                         "in S05E15. According to Reaper Billie, this reality has a "
+                                                         "rule, that states, if a Reaper Death dies, next reaper to "
+                                                         "die, takes his place.",
                            episodes={"S05": [21], "S06": [11], "S07": [1], "S09": [1], "S10": [23]})
     reaper_death.clues = [MonstersClues.number_of_reapers_appearing, MonstersClues.can_bring_back_dead_people,
                           MonstersClues.can_kill_people_with_a_thought, MonstersClues.people_dead_weirdly,
@@ -1799,10 +1802,8 @@ class MonsterBase:
                                          "THE God has no power there.", episodes={"S13": [4]})
     empty.clues = [MonstersClues.can_make_themselves_appear_as_they_like, MonstersClues.can_read_peoples_minds]
 
-    unknown = Monster("Unknown", description="", episodes={"S13": [4]})
-    unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.comes_back_from_the_dead, MonstersClues.no_emf,
-                     MonstersClues.no_flashing_lights, MonstersClues.no_cold_spots, MonstersClues.no_missing_body,
-                     MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area]
+    unknown = Monster("Unknown", description="", episodes={"S13": [5]})
+    unknown.clues = [MonstersClues.ghost_like_creature, MonstersClues.victims_hear_voices, MonstersClues.cold_spots]
 
     # ---------------------------------------------------- SEASON 14 ---------------------------------------------------
 
