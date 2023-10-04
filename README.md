@@ -56,6 +56,7 @@ If you are a fan of Supernatural show, you can play with this project to find ou
 - Dean is cursed by Memory Curse in S12E11 and jokes on Sam after being cured
 - Castiel shares his feeling (he loves them as a family) to the Winchesters in S12E12
 - According to an Angel from an Alternate timeline, Lucyfer was killed by Archangel Michael
+- Reaper Billie reveals in S13E05, that Sam and Dean are of great importance to this Universe after she became Death
 
 # TODO:
 - finish all seasons and episodes.
