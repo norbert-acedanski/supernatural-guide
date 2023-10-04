@@ -147,14 +147,16 @@ class MonsterBase:
                                                        "animals. Can mate with humans (and other Shapeshifters) to "
                                                        "produce Shapeshifter offspring.",
                            episodes={"S01": [6], "S02": [12], "S04": [5], "S05": [2], "S09": [16, 20], "S10": [6],
-                                     "S12": [20]})
+                                     "S12": [20], "S13": [4]})
     shapeshifter.clues = [MonstersClues.can_take_form_of_other_people, MonstersClues.skin_left_behind,
                           MonstersClues.being_at_two_places_at_once, MonstersClues.bright_eyes, MonstersClues.no_sulfur,
                           MonstersClues.weird_animal_behavior, MonstersClues.can_copy_memories_of_other_people,
                           MonstersClues.people_dead_weirdly, MonstersClues.strange_different_things_happening,
                           MonstersClues.can_make_themselves_appear_as_they_like, MonstersClues.silver_burns_its_skin,
                           MonstersClues.no_emf, MonstersClues.missing_or_dead_people_regularly_in_the_same_area,
-                          MonstersClues.high_strength]
+                          MonstersClues.high_strength, MonstersClues.no_flashing_lights, MonstersClues.no_cold_spots,
+                          MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
+                          MonstersClues.no_missing_body]
     shapeshifter.kill_methods = [MonstersKillMethods.silver_bullet_into_the_heart, MonstersKillMethods.silver_blade]
     shapeshifter.disable_methods = [MonstersDisableMethods.silver_or_silver_bullets]
 
@@ -597,14 +599,14 @@ class MonsterBase:
                                          "fallout does not affect Angels. An Angel can be possessed by an Archangel. "
                                          "Castiel broke the fourth wall in S06E20. Castiel supposedly died in S07E01, "
                                          "back in S07E17. Castiel is killed by Lucyfer in S12E23 with an Angel Blade "
-                                         "and appears again in S13E03 in Empty.",
+                                         "and appears again in S13E03 in Empty. Back to Earth in S13E04.",
                     episodes={"S04": [1, 2, 7, 9, 10, 15, 16, 18, 20, 21, 22],
                               "S05": [1, 2, 3, 4, 5, 8, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22],
                               "S06": [3, 6, 7, 10, 12, 15, 17, 18, 19, 20, 21, 22], "S07": [1, 17, 20, 21, 23],
                               "S08": [2, 7, 8, 10, 17, 19, 21, 22, 23], "S09": [9, 10, 11, 14, 18, 21, 22, 23],
                               "S10": [1, 2, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22, 23],
                               "S11": [1, 2, 3, 6, 9, 10, 14, 18, 22, 23],
-                              "S12": [1, 2, 3, 7, 8, 9, 10, 12, 13, 15, 19, 23], "S13": [1, 2, 3]})
+                              "S12": [1, 2, 3, 7, 8, 9, 10, 12, 13, 15, 19, 23], "S13": [1, 2, 3, 4]})
     angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                    MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion, MonstersClues.has_wings,
                    MonstersClues.leaves_burned_marks, MonstersClues.can_tell_if_somebody_was_recently_healed,
@@ -1416,7 +1418,7 @@ class MonsterBase:
                                                "is born. Nephilim born from an Archangel is unaffected by Angel blade. "
                                                "A Nephilim becomes more powerful, than the angel, that sired him. "
                                                "A Nephilim can talk to beings, that are in Empty.",
-                       episodes={"S08": [22], "S12": [23], "S13": [1, 2, 3]})
+                       episodes={"S08": [22], "S12": [23], "S13": [1, 2, 3, 4]})
     nephilim.clues = [MonstersClues.can_see_real_appearance_of_entities, MonstersClues.high_strength,
                       MonstersClues.bright_eyes, MonstersClues.bible_burns_it, MonstersClues.weird_weather,
                       MonstersClues.biblical_like_events, MonstersClues.flashing_lights, MonstersClues.grows_fast,
@@ -1789,11 +1791,18 @@ class MonsterBase:
                                            "again.", episodes={"S13": [2]})
     shedim.clues = [MonstersClues.snake_skin]
 
-    unknown = Monster("Unknown", description="", episodes={"S13": [3]})
-    unknown.clues = []
+    revenant = Monster("Revenant", description="Not seen, only mentioned in S13E04.")
+    revenant.clues = [MonstersClues.people_dead_weirdly, MonstersClues.comes_back_from_the_dead, MonstersClues.no_emf,
+                      MonstersClues.missing_body]
 
-    empty = Monster("Empty", description="The place (and a cosmic being) that angels and demons go to when they die. "
-                                         "THE God has no power there.")
+    empty = Monster("Empty", description="A cosmic being (and a place) that angels and demons go to when they die. "
+                                         "THE God has no power there.", episodes={"S13": [4]})
+    empty.clues = [MonstersClues.can_make_themselves_appear_as_they_like, MonstersClues.can_read_peoples_minds]
+
+    unknown = Monster("Unknown", description="", episodes={"S13": [4]})
+    unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.comes_back_from_the_dead, MonstersClues.no_emf,
+                     MonstersClues.no_flashing_lights, MonstersClues.no_cold_spots, MonstersClues.no_missing_body,
+                     MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area]
 
     # ---------------------------------------------------- SEASON 14 ---------------------------------------------------
 

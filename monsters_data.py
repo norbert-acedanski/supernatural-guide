@@ -93,6 +93,7 @@ class MonstersClues:
     missing_or_dead_people_around_christmas = "missing or dead people around christmas"
     missing_or_dead_people_regularly_in_different_areas = "missing or dead people regularly in different areas"
     missing_body = "missing body/bodies (sometimes from the cemetery)"
+    no_missing_body = "no missing body"
     missing_organs = "missing organs"
     missing_heart = "missing heart"
     missing_babies = "missing babies"
