@@ -607,7 +607,7 @@ class MonsterBase:
                               "S08": [2, 7, 8, 10, 17, 19, 21, 22, 23], "S09": [9, 10, 11, 14, 18, 21, 22, 23],
                               "S10": [1, 2, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22, 23],
                               "S11": [1, 2, 3, 6, 9, 10, 14, 18, 22, 23],
-                              "S12": [1, 2, 3, 7, 8, 9, 10, 12, 13, 15, 19, 23], "S13": [1, 2, 3, 4, 5]})
+                              "S12": [1, 2, 3, 7, 8, 9, 10, 12, 13, 15, 19, 23], "S13": [1, 2, 3, 4, 5, 6]})
     angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                    MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion, MonstersClues.has_wings,
                    MonstersClues.leaves_burned_marks, MonstersClues.can_tell_if_somebody_was_recently_healed,
@@ -738,11 +738,13 @@ class MonsterBase:
 
     ghoul = Monster("Ghoul", description="Ghoul is a creature, that feeds on dead people. It can take the form of a "
                                          "person that it ate with all memories and thoughts.",
-                    episodes={"S04": [19], "S06": [10]})
+                    episodes={"S04": [19], "S06": [10], "S13": [6]})
     ghoul.clues = [MonstersClues.empty_graves, MonstersClues.body_torn_apart, MonstersClues.missing_body,
                    MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
-                   MonstersClues.holy_water_does_not_affect_it, MonstersClues.silver_does_not_affect_it]
-    ghoul.kill_methods = [MonstersKillMethods.decapitation]
+                   MonstersClues.holy_water_does_not_affect_it, MonstersClues.silver_does_not_affect_it,
+                   MonstersClues.moves_fast, MonstersClues.bite_marks, MonstersClues.people_dead_weirdly,
+                   MonstersClues.high_strength]
+    ghoul.kill_methods = [MonstersKillMethods.decapitation, MonstersKillMethods.head_shot]
 
     archangel_lucyfer = Monster("Archangel - Lucyfer", description="Archangel, that disobeyed God when he requested to "
                                                                    "bow before the men. To upset God he twisted one of "
@@ -1420,15 +1422,15 @@ class MonsterBase:
                                                "a portal to an alternate timeline. In S12E23 Jack (the son of Lucyfer) "
                                                "is born. Nephilim born from an Archangel is unaffected by Angel blade. "
                                                "A Nephilim becomes more powerful, than the angel, that sired him. "
-                                               "A Nephilim can talk to beings, that are in Empty.",
-                       episodes={"S08": [22], "S12": [23], "S13": [1, 2, 3, 4]})
+                                               "Nephilim with the power level of Jack can talk to beings in Empty.",
+                       episodes={"S08": [22], "S12": [23], "S13": [1, 2, 3, 4, 6]})
     nephilim.clues = [MonstersClues.can_see_real_appearance_of_entities, MonstersClues.high_strength,
                       MonstersClues.bright_eyes, MonstersClues.bible_burns_it, MonstersClues.weird_weather,
                       MonstersClues.biblical_like_events, MonstersClues.flashing_lights, MonstersClues.grows_fast,
                       MonstersClues.leaves_burned_marks, MonstersClues.yellow_eyes, MonstersClues.telekinesis,
                       MonstersClues.can_control_electronics, MonstersClues.immune_to_angel_sigils,
                       MonstersClues.angel_blade_is_ineffective, MonstersClues.can_erase_anti_angel_marks,
-                      MonstersClues.can_vanish, MonstersClues.invulnerable]
+                      MonstersClues.can_vanish, MonstersClues.invulnerable, MonstersClues.has_wings]
     nephilim.kill_methods = [MonstersKillMethods.angel_blade]
 
     # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
@@ -1802,8 +1804,9 @@ class MonsterBase:
                                          "THE God has no power there.", episodes={"S13": [4]})
     empty.clues = [MonstersClues.can_make_themselves_appear_as_they_like, MonstersClues.can_read_peoples_minds]
 
-    unknown = Monster("Unknown", description="", episodes={"S13": [5]})
-    unknown.clues = [MonstersClues.ghost_like_creature, MonstersClues.victims_hear_voices, MonstersClues.cold_spots]
+    unknown = Monster("Unknown", description="", episodes={"S13": [6]})
+    unknown.clues = [MonstersClues.moves_fast, MonstersClues.bite_marks, MonstersClues.people_dead_weirdly,
+                     MonstersClues.high_strength]
 
     # ---------------------------------------------------- SEASON 14 ---------------------------------------------------
 
