@@ -57,6 +57,7 @@ If you are a fan of Supernatural show, you can play with this project to find ou
 - Castiel shares his feeling (he loves them as a family) to the Winchesters in S12E12
 - According to an Angel from an Alternate timeline, Lucyfer was killed by Archangel Michael
 - Reaper Billie reveals in S13E05, that Sam and Dean are of great importance to this Universe after she became Death
+- Jack leaves Sam, Dean and Cass in S13E06 after he accidentally killed a person
 
 # TODO:
 - finish all seasons and episodes.
