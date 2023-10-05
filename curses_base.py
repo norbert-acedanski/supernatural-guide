@@ -382,7 +382,10 @@ class CursesBase:
 
     # SEASON 13:
 
-
+    spell_to_travel_to_alternate_timeline = Curse("Spell to travel to alternate timeline",
+                                                  description="Spell allows one person to travel to alternate "
+                                                              "timeline. Requires a few ingredients including "
+                                                              "Archangel Grace.", episodes={"S13": [7]})
 
     # SEASON 14:
 
