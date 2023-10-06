@@ -336,6 +336,7 @@ class MonstersClues:
     can_make_people_younger = "can make people younger"
     can_make_people_immortal = "can make people immortal"
     can_shake_heaven = "can shake heaven"
+    can_travel_alternate_timelines_with_their_mind = "can travel alternate timelines with their mind"
     people_with_souls_switched = "people with souls switched"
     poisoned_people = "poisoned people"
     demon_killing_knife_is_ineffective = "demon killing knife is ineffective"

@@ -167,7 +167,7 @@ class MonsterBase:
                                              "a friend of John Winchester. One of the psychics is Oliver Pryce. "
                                              "Man of Letters were teaching him how to control his powers. Missouri is "
                                              "killed by Wraith in S13E03.",
-                      episodes={"S01": [9], "S10": [17], "S12": [4], "S13": [3]})
+                      episodes={"S01": [9], "S10": [17], "S12": [4], "S13": [3, 9]})
     psychic.clues = [MonstersClues.psychic_abilities, MonstersClues.people_acting_weirdly, MonstersClues.telekinesis,
                      MonstersClues.people_dead_weirdly, MonstersClues.can_read_peoples_minds, MonstersClues.no_sulfur,
                      MonstersClues.people_speaking_languages, MonstersClues.headaches, MonstersClues.no_black_fog,
@@ -608,7 +608,7 @@ class MonsterBase:
                               "S08": [2, 7, 8, 10, 17, 19, 21, 22, 23], "S09": [9, 10, 11, 14, 18, 21, 22, 23],
                               "S10": [1, 2, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22, 23],
                               "S11": [1, 2, 3, 6, 9, 10, 14, 18, 22, 23],
-                              "S12": [1, 2, 3, 7, 8, 9, 10, 12, 13, 15, 19, 23], "S13": [1, 2, 3, 4, 5, 6, 7]})
+                              "S12": [1, 2, 3, 7, 8, 9, 10, 12, 13, 15, 19, 23], "S13": [1, 2, 3, 4, 5, 6, 7, 9]})
     angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                    MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion, MonstersClues.has_wings,
                    MonstersClues.leaves_burned_marks, MonstersClues.can_tell_if_somebody_was_recently_healed,
@@ -1426,14 +1426,16 @@ class MonsterBase:
                                                "is born. Nephilim born from an Archangel is unaffected by Angel blade. "
                                                "A Nephilim becomes more powerful, than the angel, that sired him. "
                                                "Nephilim with the power level of Jack can talk to beings in Empty.",
-                       episodes={"S08": [22], "S12": [23], "S13": [1, 2, 3, 4, 6]})
+                       episodes={"S08": [22], "S12": [23], "S13": [1, 2, 3, 4, 6, 9]})
     nephilim.clues = [MonstersClues.can_see_real_appearance_of_entities, MonstersClues.high_strength,
                       MonstersClues.bright_eyes, MonstersClues.bible_burns_it, MonstersClues.weird_weather,
                       MonstersClues.biblical_like_events, MonstersClues.flashing_lights, MonstersClues.grows_fast,
                       MonstersClues.leaves_burned_marks, MonstersClues.yellow_eyes, MonstersClues.telekinesis,
                       MonstersClues.can_control_electronics, MonstersClues.immune_to_angel_sigils,
                       MonstersClues.angel_blade_is_ineffective, MonstersClues.can_erase_anti_angel_marks,
-                      MonstersClues.can_vanish, MonstersClues.invulnerable, MonstersClues.has_wings]
+                      MonstersClues.can_vanish, MonstersClues.invulnerable, MonstersClues.can_hear_angel_radio,
+                      MonstersClues.can_put_a_person_to_sleep, MonstersClues.can_go_and_put_into_a_persons_mind,
+                      MonstersClues.has_wings, MonstersClues.can_read_peoples_minds]
     nephilim.kill_methods = [MonstersKillMethods.angel_blade]
 
     # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
@@ -1807,7 +1809,11 @@ class MonsterBase:
                                          "THE God has no power there.", episodes={"S13": [4]})
     empty.clues = [MonstersClues.can_make_themselves_appear_as_they_like, MonstersClues.can_read_peoples_minds]
 
-    unknown = Monster("Unknown", description="", episodes={"S13": [8]})
+    dream_walker = Monster("Dream walker", description="A person, that can travel to different worlds with his/her "
+                                                       "mind in a dream or by special trans.", episodes={"S13": [9]})
+    dream_walker.clue = [MonstersClues.can_travel_alternate_timelines_with_their_mind]
+
+    unknown = Monster("Unknown", description="", episodes={"S13": [9]})
     unknown.clues = []
 
     # ---------------------------------------------------- SEASON 14 ---------------------------------------------------
