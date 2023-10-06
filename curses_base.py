@@ -392,6 +392,11 @@ class CursesBase:
                                                 "King Solomon, who commissioned it to keep tabs on Queen of Sheba, who "
                                                 "according to the lore was half-angel.", episodes={"S13": [8]})
 
+    love_spell = Curse("Love spell", description="A spell, that allows a person to fall in love in another person.",
+                       episodes={"S13": [11]})
+    love_spell.clues = [CursesClues.blinding_love, CursesClues.people_acting_weirdly, CursesClues.people_dead_weirdly,
+                        CursesClues.hex_bag_hidden_somewhere]
+
     # SEASON 14:
 
 
