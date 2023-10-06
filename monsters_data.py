@@ -601,7 +601,7 @@ class MonstersDisableMethods:
 
 class MonstersCureMethods:
     cocktail_made_of_blood_of_the_vampire_that_bit_the_victim = \
-        "cocktail made of blood of the vampire that bit the victim"
+        "cocktail made of blood of the vampire that bit the victim (sage, little bit of garlic and the blood)"
     plasma_therapy_with_the_blood_of_the_werewolf_that_bit_the_victim = \
         "plasma therapy with the blood of the werewolf that bit the victim"
     demon_curing_ritual = "Demon-curing ritual of Father Thompson"

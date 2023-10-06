@@ -236,16 +236,17 @@ class MonsterBase:
     crazy_humans = Monster("Crazy humans", description="Ordinary humans, that are mad or crazy. "
                                                        "Sometimes can be mistaken for ghosts or vampires. Thinman is "
                                                        "an example of two people working together to bring to life "
-                                                       "a Thinman monster.",
-                           episodes={"S01": [15], "S04": [11], "S09": [15, 20]})
+                                                       "a Thinman monster. In S13E11 there was a group of people, that "
+                                                       "kidnapped people to sell their parts to monsters.",
+                           episodes={"S01": [15], "S04": [11], "S09": [15, 20], "S13": [11]})
     crazy_humans.clues = [MonstersClues.people_kidnapped_weirdly, MonstersClues.weird_electronics_behavior,
                           MonstersClues.flashing_lights, MonstersClues.people_seeing_things_or_figures,
-                          MonstersClues.people_dead_weirdly, MonstersClues.weird_things_behavior,
+                          MonstersClues.people_dead_weirdly, MonstersClues.weird_things_behavior, MonstersClues.claws,
                           MonstersClues.body_torn_apart, MonstersClues.weird_noises, MonstersClues.no_cold_spots,
                           MonstersClues.can_appear_out_of_thin_air, MonstersClues.slender_like_creature,
                           MonstersClues.can_vanish, MonstersClues.no_flashing_lights, MonstersClues.ghost_like_creature,
                           MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
-                          MonstersClues.claws]
+                          MonstersClues.missing_or_dead_people_regularly_in_different_areas]
     crazy_humans.kill_methods = [MonstersKillMethods.like_any_human]
 
     spring_heeled_jacks = Monster("Sprint Heeled Jacks", description="Not seen. Only mentioned in S01E15")
@@ -287,7 +288,7 @@ class MonsterBase:
                                              "blood. Upon changing, all senses sharpen.",
                       episodes={"S01": [20], "S02": [3], "S03": [7], "S05": [3], "S06": [5, 19], "S07": [22],
                                 "S08": [1, 2, 5, 7, 9, 10, 18, 19], "S09": [2, 16, 19, 20], "S10": [8, 19, 23],
-                                "S11": [12], "S12": [1, 9, 14]})
+                                "S11": [12], "S12": [1, 9, 14], "S13": [11]})
     vampire.clues = [MonstersClues.ripped_throat, MonstersClues.no_blood_in_the_body, MonstersClues.needle_like_teeth,
                      MonstersClues.moving_in_groups_usually, MonstersClues.invulnerable, MonstersClues.high_strength,
                      MonstersClues.bright_eyes, MonstersClues.great_sense_of_smell, MonstersClues.white_skin,
@@ -428,7 +429,7 @@ class MonsterBase:
                                                "can control themselves. Some have been able to subsist off of "
                                                "animal hearts. Also mentioned in S01E16.",
                        episodes={"S02": [17], "S08": [4], "S09": [12, 20], "S10": [4], "S11": [17], "S12": [6, 16],
-                                 "S13": [10]})
+                                 "S13": [10, 11]})
     werewolf.clues = [MonstersClues.body_torn_apart, MonstersClues.animal_like_attack, MonstersClues.missing_heart,
                       MonstersClues.murders_during_full_moon_week, MonstersClues.claws, MonstersClues.attacks_at_night,
                       MonstersClues.animal_like_noises, MonstersClues.amnesia_blackout, MonstersClues.high_strength,
@@ -645,7 +646,7 @@ class MonsterBase:
                                                "irresistible. After the first bite of the human flesh, they transform "
                                                "completely and fast. They feed once, they're a monster forever. "
                                                "This may be a genetic condition.",
-                       episodes={"S04": [4], "S06": [10], "S08": [2], "S12": [13]})
+                       episodes={"S04": [4], "S06": [10], "S08": [2], "S12": [13], "S13": [11]})
     rougarou.clues = [MonstersClues.enormous_appetite, MonstersClues.body_metamorphosis, MonstersClues.high_strength,
                       MonstersClues.bloodshot_eyes, MonstersClues.wormy_skin, MonstersClues.no_bone_marrow_in_bones,
                       MonstersClues.drained_organs, MonstersClues.people_dead_weirdly, MonstersClues.bite_marks]
@@ -1145,7 +1146,7 @@ class MonsterBase:
 
     arachne = Monster("Arachne", description="No one has seen it outside of Crete for 2000 years. "
                                              "When in mating time it has a type, that it likes.",
-                      episodes={"S06": [13]})
+                      episodes={"S06": [13], "S13": [11]})
     arachne.clues = [MonstersClues.missing_or_dead_people_regularly_in_the_same_area, MonstersClues.left_cobweb,
                      MonstersClues.high_strength, MonstersClues.multiple_pupils, MonstersClues.fire_does_not_affect_it,
                      MonstersClues.head_shot_does_not_affect_it]
@@ -1822,8 +1823,8 @@ class MonsterBase:
                                                      " where Kaia went, when she slept).", episodes={"S13": [10]})
     bad_place_humanoid_monster.clues = [MonstersClues.grey_goo, MonstersClues.claws]
 
-    unknown = Monster("Unknown", description="", episodes={"S13": [10]})
-    unknown.clues = [MonstersClues.yellow_eyes, MonstersClues.large_mouth_full_of_teeth]
+    unknown = Monster("Unknown", description="", episodes={"S13": [11]})
+    unknown.clues = [MonstersClues.missing_or_dead_people_regularly_in_different_areas]
 
     # ---------------------------------------------------- SEASON 14 ---------------------------------------------------
 
