@@ -387,6 +387,11 @@ class CursesBase:
                                                               "timeline. Requires a few ingredients including "
                                                               "Archangel Grace.", episodes={"S13": [7]})
 
+    nephilim_tracking_spell = Curse("Nephilim tracking spell",
+                                    description="Spell, that allows to track a Nephilim. It dates back to the time of "
+                                                "King Solomon, who commissioned it to keep tabs on Queen of Sheba, who "
+                                                "according to the lore was half-angel.", episodes={"S13": [8]})
+
     # SEASON 14:
 
 
