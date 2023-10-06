@@ -91,3 +91,4 @@ class JohnWinchesterJournal:
     entry_about_jasper_wyoming = "entry about Jasper, Wyoming - it's home to its very own Gate to Hell. This " \
                                  "particular place leads to 'A place where unimaginable evil emanates from creatures " \
                                  "too wicked for the Pit to hold.'"
+    entry_about_dream_walkers = "entry about dream walkers"
