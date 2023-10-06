@@ -167,7 +167,7 @@ class MonsterBase:
                                              "a friend of John Winchester. One of the psychics is Oliver Pryce. "
                                              "Man of Letters were teaching him how to control his powers. Missouri is "
                                              "killed by Wraith in S13E03.",
-                      episodes={"S01": [9], "S10": [17], "S12": [4], "S13": [3, 9]})
+                      episodes={"S01": [9], "S10": [17], "S12": [4], "S13": [3, 9, 10]})
     psychic.clues = [MonstersClues.psychic_abilities, MonstersClues.people_acting_weirdly, MonstersClues.telekinesis,
                      MonstersClues.people_dead_weirdly, MonstersClues.can_read_peoples_minds, MonstersClues.no_sulfur,
                      MonstersClues.people_speaking_languages, MonstersClues.headaches, MonstersClues.no_black_fog,
@@ -427,14 +427,15 @@ class MonsterBase:
                                                "lunar cycle. Pure bloods don't blackout during the transformation and "
                                                "can control themselves. Some have been able to subsist off of "
                                                "animal hearts. Also mentioned in S01E16.",
-                       episodes={"S02": [17], "S08": [4], "S09": [12, 20], "S10": [4], "S11": [17], "S12": [6, 16]})
+                       episodes={"S02": [17], "S08": [4], "S09": [12, 20], "S10": [4], "S11": [17], "S12": [6, 16],
+                                 "S13": [10]})
     werewolf.clues = [MonstersClues.body_torn_apart, MonstersClues.animal_like_attack, MonstersClues.missing_heart,
                       MonstersClues.murders_during_full_moon_week, MonstersClues.claws, MonstersClues.attacks_at_night,
                       MonstersClues.animal_like_noises, MonstersClues.amnesia_blackout, MonstersClues.high_strength,
                       MonstersClues.people_dead_weirdly, MonstersClues.increased_regeneration, MonstersClues.moves_fast,
                       MonstersClues.bite_marks, MonstersClues.missing_organs, MonstersClues.animals_dead_weirdly,
                       MonstersClues.missing_or_dead_people_regularly_in_the_same_area, MonstersClues.ripped_throat,
-                      MonstersClues.yellow_eyes]
+                      MonstersClues.yellow_eyes, MonstersClues.large_mouth_full_of_teeth]
     werewolf.kill_methods = [MonstersKillMethods.silver_bullet_into_the_heart, MonstersKillMethods.silver_blade,
                              MonstersKillMethods.silver_nitrate_injection]
     werewolf.disable_methods = [MonstersDisableMethods.silver_or_silver_bullets]
@@ -1435,7 +1436,8 @@ class MonsterBase:
                       MonstersClues.angel_blade_is_ineffective, MonstersClues.can_erase_anti_angel_marks,
                       MonstersClues.can_vanish, MonstersClues.invulnerable, MonstersClues.can_hear_angel_radio,
                       MonstersClues.can_put_a_person_to_sleep, MonstersClues.can_go_and_put_into_a_persons_mind,
-                      MonstersClues.has_wings, MonstersClues.can_read_peoples_minds]
+                      MonstersClues.has_wings, MonstersClues.can_read_peoples_minds,
+                      MonstersClues.can_travel_to_alternate_timelines]
     nephilim.kill_methods = [MonstersKillMethods.angel_blade]
 
     # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
@@ -1810,11 +1812,18 @@ class MonsterBase:
     empty.clues = [MonstersClues.can_make_themselves_appear_as_they_like, MonstersClues.can_read_peoples_minds]
 
     dream_walker = Monster("Dream walker", description="A person, that can travel to different worlds with his/her "
-                                                       "mind in a dream or by special trans.", episodes={"S13": [9]})
-    dream_walker.clue = [MonstersClues.can_travel_alternate_timelines_with_their_mind]
+                                                       "mind in a dream or by special trans. Kaia is killed in S13E10 "
+                                                       "in the Bad Place alternate timeline.",
+                           episodes={"S13": [9, 10]})
+    dream_walker.clue = [MonstersClues.can_travel_to_alternate_timelines_with_their_mind]
 
-    unknown = Monster("Unknown", description="", episodes={"S13": [9]})
-    unknown.clues = []
+    bad_place_humanoid_monster = Monster("Bad Place humanoid monster",
+                                         description="A humanoid creature, that came from the Bad Place (the place,"
+                                                     " where Kaia went, when she slept).", episodes={"S13": [10]})
+    bad_place_humanoid_monster.clues = [MonstersClues.grey_goo, MonstersClues.claws]
+
+    unknown = Monster("Unknown", description="", episodes={"S13": [10]})
+    unknown.clues = [MonstersClues.yellow_eyes, MonstersClues.large_mouth_full_of_teeth]
 
     # ---------------------------------------------------- SEASON 14 ---------------------------------------------------
 
