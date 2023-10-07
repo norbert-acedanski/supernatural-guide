@@ -1,5 +1,6 @@
 class MonstersClues:
     ripped_throat = "ripped throat"
+    cut_throat = "cut throat"
     in_true_form_burns_eyes_of_people = "in true form burns eyes of people"
     true_voice_can_hurt_people = "true voice can hurt people"
     black_eyes = "black eyes"
@@ -338,6 +339,7 @@ class MonstersClues:
     can_shake_heaven = "can shake heaven"
     can_travel_to_alternate_timelines_with_their_mind = "can travel to alternate timelines with their mind"
     can_travel_to_alternate_timelines = "can travel to alternate timelines"
+    can_eat_angelic_grace = "can eat Angelic grace"
     people_with_souls_switched = "people with souls switched"
     poisoned_people = "poisoned people"
     demon_killing_knife_is_ineffective = "demon killing knife is ineffective"

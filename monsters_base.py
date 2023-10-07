@@ -20,7 +20,7 @@ class MonsterBase:
                                                            "by Castiel and the power of Nephilim in S12E19. Asmodeus "
                                                            "appears in S13E02.",
                              episodes={"S01": [1, 21, 22], "S02": [1, 21, 22], "S04": [3, 22], "S06": [1],
-                                       "S12": [12, 13, 17, 19], "S13": [2, 7]})
+                                       "S12": [12, 13, 17, 19], "S13": [2, 7, 13]})
     # TODO: Check in which episodes does Azazel appear
     prince_of_hell.clues = [MonstersClues.people_burned_on_the_ceiling, MonstersClues.can_appear_out_of_thin_air,
                             MonstersClues.weird_things_behavior, MonstersClues.yellow_eyes, MonstersClues.weird_weather,
@@ -34,7 +34,8 @@ class MonsterBase:
                             MonstersClues.telekinesis, MonstersClues.invulnerable, MonstersClues.can_teleport_people,
                             MonstersClues.can_kill_demons_with_power_of_will, MonstersClues.electrical_storms,
                             MonstersClues.can_vanish, MonstersClues.can_hurt_people_with_a_thought,
-                            MonstersClues.can_kill_people_with_a_thought]
+                            MonstersClues.can_kill_people_with_a_thought, MonstersClues.mimics_human_voice,
+                            MonstersClues.lack_of_body_control]
     prince_of_hell.kill_methods = [MonstersKillMethods.colt_of_colt_with_magic_bullets,
                                    MonstersKillMethods.lance_of_archangel_michael,
                                    MonstersKillMethods.will_of_a_nephilim]
@@ -120,7 +121,7 @@ class MonsterBase:
                               "S06": [7, 10, 18, 20, 21, 22], "S07": [8, 15, 17, 21, 23],
                               "S08": [1, 2, 7, 10, 17, 19, 21, 22], "S09": [2, 10, 11, 14, 16, 17, 21, 23],
                               "S10": [1, 2, 3, 7, 9, 10, 13, 16, 17, 21], "S11": [1, 3, 6, 9, 10, 14, 15, 18, 22],
-                              "S12": [1, 12, 15, 17, 21], "S13": [2, 7, 8, 12]})
+                              "S12": [1, 12, 15, 17, 21], "S13": [2, 7, 8, 12, 13]})
     demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                    MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                    MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -403,8 +404,8 @@ class MonsterBase:
     trickster.kill_methods = [MonstersKillMethods.aspen_pin]
 
     archangel_gabriel = Monster("Archangel - Gabriel", description="Archangel, that enjoys tricking people and killing "
-                                                                   "them afterwards. Died in S05E19.",
-                                episodes={"S02": [15], "S03": [11], "S05": [8, 19]})
+                                                                   "them afterwards. Died in S05E19. Back in S13E13.",
+                                episodes={"S02": [15], "S03": [11], "S05": [8, 19], "S13": [13]})
     archangel_gabriel.clues = [MonstersClues.people_seeing_things_or_figures, MonstersClues.people_seeing_aliens,
                                MonstersClues.telekinesis, MonstersClues.no_emf, MonstersClues.things_disappearing,
                                MonstersClues.weird_noises, MonstersClues.loves_sugar, MonstersClues.immortal,
@@ -584,33 +585,36 @@ class MonsterBase:
     # ---------------------------------------------------- SEASON 4 ----------------------------------------------------
 
     angel = Monster("Angel", description="Angel of God (Castiel, Uriel, Hester, Inias, Samandriel, Ion, Nathaniel, "
-                                         "Naomi). They can bring people back from the dead. Cannot track "
-                                         "people, that use powerful spells to hide themselves. All angels have graces "
-                                         "- energy source for their power. All angels instinctively know the names of "
-                                         "past, present and future prophets. When they disobey (fall), as a punishment "
-                                         "they can become human. When dying, a bright light is produced and they leave "
-                                         "wing marks. Also the organs of the vessel, they are possessing are "
-                                         "vapourised. To possess somebody, they need a consent. When an angel is "
-                                         "tortured, the pain causes a ripple effect and strange things happen nearby. "
-                                         "When an angel looses it's Grace - it becomes human. An Angel without a Grace "
-                                         "can intake another Angel's/Fallen Angel's Grace. When an Angel leaves "
-                                         "a vessel - it leaves a part of himself (a part of his Grace) in it - like "
-                                         "a fingerprint. An Angel can be tracked using a part of the Grace, that it "
-                                         "left in his vessel. All Angels can unify in order to produce a single "
-                                         "angelic blow of power. When that happens, a fallout is produced and the "
-                                         "closer you get to the ground zero, the worse it becomes. According to "
-                                         "Castiel, the last time it happened, Lot's wife was turned to salt. The "
-                                         "fallout does not affect Angels. An Angel can be possessed by an Archangel. "
-                                         "Castiel broke the fourth wall in S06E20. Castiel supposedly died in S07E01, "
-                                         "back in S07E17. Castiel is killed by Lucyfer in S12E23 with an Angel Blade "
-                                         "and appears again in S13E03 in Empty. Back to Earth in S13E04.",
+                                         "Naomi). They can bring people back from the dead. Cannot track people, that "
+                                         "use powerful spells to hide themselves. All angels have graces - energy "
+                                         "source for their power. When some of the grace is removed (either by eating "
+                                         "by another angel or by storing in a container) after some time it is "
+                                         "recharged. But only to a point, the whole grace cannot regenerate. All "
+                                         "angels instinctively know the names of past, present and future prophets. "
+                                         "When they disobey (fall), as a punishment they can become human. When dying, "
+                                         "a bright light is produced and they leave wing marks. Also the organs of the "
+                                         "vessel, they are possessing are vapourised. To possess somebody, they need a "
+                                         "consent. When an angel is tortured, the pain causes a ripple effect and "
+                                         "strange things happen nearby. When an angel looses it's Grace - it becomes "
+                                         "human. An Angel without a Grace can intake another Angel's/Fallen Angel's "
+                                         "Grace. When an Angel leaves a vessel - it leaves a part of himself (a part "
+                                         "of his Grace) in it - like a fingerprint. An Angel can be tracked using a "
+                                         "part of the Grace, that it left in his vessel. All Angels can unify in order "
+                                         "to produce a single angelic blow of power. When that happens, a fallout is "
+                                         "produced and the closer you get to the ground zero, the worse it becomes. "
+                                         "According to Castiel, the last time it happened, Lot's wife was turned to "
+                                         "salt. The fallout does not affect Angels. An Angel can be possessed by an "
+                                         "Archangel. Castiel broke the fourth wall in S06E20. Castiel supposedly died "
+                                         "in S07E01, back in S07E17. Castiel is killed by Lucyfer in S12E23 with an "
+                                         "Angel Blade and appears again in S13E03 in Empty. Back to Earth in S13E04.",
                     episodes={"S04": [1, 2, 7, 9, 10, 15, 16, 18, 20, 21, 22],
                               "S05": [1, 2, 3, 4, 5, 8, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22],
                               "S06": [3, 6, 7, 10, 12, 15, 17, 18, 19, 20, 21, 22], "S07": [1, 17, 20, 21, 23],
                               "S08": [2, 7, 8, 10, 17, 19, 21, 22, 23], "S09": [9, 10, 11, 14, 18, 21, 22, 23],
                               "S10": [1, 2, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22, 23],
                               "S11": [1, 2, 3, 6, 9, 10, 14, 18, 22, 23],
-                              "S12": [1, 2, 3, 7, 8, 9, 10, 12, 13, 15, 19, 23], "S13": [1, 2, 3, 4, 5, 6, 7, 9, 12]})
+                              "S12": [1, 2, 3, 7, 8, 9, 10, 12, 13, 15, 19, 23],
+                              "S13": [1, 2, 3, 4, 5, 6, 7, 9, 12, 13]})
     angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                    MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion, MonstersClues.has_wings,
                    MonstersClues.leaves_burned_marks, MonstersClues.can_tell_if_somebody_was_recently_healed,
@@ -729,7 +733,7 @@ class MonsterBase:
                                                          "Redfield.",
                       episodes={"S04": [18, 22], "S05": [1, 9, 22], "S07": [21, 22, 23],
                                 "S08": [1, 2, 7, 10, 14, 19, 21, 23], "S09": [2, 6, 9], "S10": [5], "S11": [21, 22],
-                                "S13": [2, 7]})
+                                "S13": [2, 7, 13]})
     prophet.clues = [MonstersClues.can_see_future, MonstersClues.protected_by_an_archangel, MonstersClues.visions,
                      MonstersClues.can_repair_broken_word_of_god, MonstersClues.can_read_word_of_god,
                      MonstersClues.weird_weather, MonstersClues.missing_or_dead_people_regularly_in_different_areas]
@@ -759,7 +763,7 @@ class MonsterBase:
                                                                    "Alternate timeline in S12E23, back in S13E07.",
                                 episodes={"S04": [22], "S05": [1, 3, 4, 10, 19, 22], "S07": [1, 2, 15, 17],
                                           "S11": [9, 10, 11, 14, 15, 18, 21, 22],
-                                          "S12": [2, 3, 7, 8, 12, 13, 15, 17, 19, 21, 23], "S13": [1, 2, 7, 12]})
+                                          "S12": [2, 3, 7, 8, 12, 13, 15, 17, 19, 21, 23], "S13": [1, 2, 7, 12, 13]})
     archangel_lucyfer.clues = [MonstersClues.weird_things_behavior, MonstersClues.true_voice_can_hurt_people,
                                MonstersClues.bright_light, MonstersClues.weird_weather, MonstersClues.visions,
                                MonstersClues.people_seeing_strange_things, MonstersClues.biblical_like_events,
@@ -776,8 +780,9 @@ class MonsterBase:
                                MonstersClues.can_send_people_to_the_past, MonstersClues.people_dead_weirdly,
                                MonstersClues.travels_as_white_fog, MonstersClues.weird_electronics_behavior,
                                MonstersClues.can_repair_human_body, MonstersClues.has_wings, MonstersClues.burned_eyes,
-                               MonstersClues.bible_burns_it, MonstersClues.burned_people,
-                               MonstersClues.angel_blade_is_ineffective,
+                               MonstersClues.bible_burns_it, MonstersClues.burned_people, MonstersClues.cut_throat,
+                               MonstersClues.angel_blade_is_ineffective, MonstersClues.can_eat_angelic_grace,
+                               MonstersClues.can_teleport_angels,
 
                                MonstersClues.people_burned_on_the_ceiling,
                                MonstersClues.in_true_form_burns_eyes_of_people]
@@ -927,8 +932,8 @@ class MonsterBase:
     wraith.kill_methods = [MonstersKillMethods.silver_blade]
 
     cupid = Monster("Cupid", description="A lower tier of an angel - cherub, third class angel. "
-                                         "Binds people that are supposed to be with each other.",
-                    episodes={"S05": [14], "S08": [23], "S10": [18]})
+                                         "Binds people that are supposed to be with each other. Cupids have angelic "
+                                         "grace.", episodes={"S05": [14], "S08": [23], "S10": [18], "S13": [13]})
     cupid.clues = [MonstersClues.people_dead_weirdly, MonstersClues.people_acting_weirdly, MonstersClues.no_emf,
                    MonstersClues.no_sulfur, MonstersClues.marks_on_victims_hearts, MonstersClues.invisible_entity,
                    MonstersClues.can_vanish, MonstersClues.invulnerable, MonstersClues.naked_man]
@@ -1823,7 +1828,7 @@ class MonsterBase:
                                                      " where Kaia went, when she slept).", episodes={"S13": [10]})
     bad_place_humanoid_monster.clues = [MonstersClues.grey_goo, MonstersClues.claws]
 
-    unknown = Monster("Unknown", description="", episodes={"S13": [12]})
+    unknown = Monster("Unknown", description="", episodes={"S13": [13]})
     unknown.clues = []
 
     # ---------------------------------------------------- SEASON 14 ---------------------------------------------------
