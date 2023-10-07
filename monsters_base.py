@@ -35,7 +35,7 @@ class MonsterBase:
                             MonstersClues.can_kill_demons_with_power_of_will, MonstersClues.electrical_storms,
                             MonstersClues.can_vanish, MonstersClues.can_hurt_people_with_a_thought,
                             MonstersClues.can_kill_people_with_a_thought, MonstersClues.mimics_human_voice,
-                            MonstersClues.lack_of_body_control]
+                            MonstersClues.lack_of_body_control, MonstersClues.people_acting_weirdly]
     prince_of_hell.kill_methods = [MonstersKillMethods.colt_of_colt_with_magic_bullets,
                                    MonstersKillMethods.lance_of_archangel_michael,
                                    MonstersKillMethods.will_of_a_nephilim]
@@ -614,7 +614,7 @@ class MonsterBase:
                               "S10": [1, 2, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22, 23],
                               "S11": [1, 2, 3, 6, 9, 10, 14, 18, 22, 23],
                               "S12": [1, 2, 3, 7, 8, 9, 10, 12, 13, 15, 19, 23],
-                              "S13": [1, 2, 3, 4, 5, 6, 7, 9, 12, 13]})
+                              "S13": [1, 2, 3, 4, 5, 6, 7, 9, 12, 13, 14]})
     angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                    MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion, MonstersClues.has_wings,
                    MonstersClues.leaves_burned_marks, MonstersClues.can_tell_if_somebody_was_recently_healed,
@@ -642,7 +642,7 @@ class MonsterBase:
     angel.kill_methods = [MonstersKillMethods.angel_blade, MonstersKillMethods.holy_oil,
                           MonstersKillMethods.leviathan_black_goo, MonstersKillMethods.will_of_an_archangel,
                           MonstersKillMethods.will_of_the_darkness, MonstersKillMethods.lance_of_archangel_michael,
-                          MonstersKillMethods.will_of_prince_of_hell]
+                          MonstersKillMethods.will_of_prince_of_hell, MonstersKillMethods.will_of_a_nephilim]
 
     rougarou = Monster("Rougarou", description="Once a human. Now - rotten teeth, wormy skin. When going through "
                                                "metamorphosis, their hunger increases. At first for everything, but "
@@ -715,8 +715,10 @@ class MonsterBase:
                    MonstersClues.real_appearance_can_be_seen_in_a_reflection_or_camera]
     siren.kill_methods = [MonstersKillMethods.its_own_venom]
 
-    angel_zachariah = Monster("Angel Zachariah", description="High Tier Angel. Died in S05E18.",
-                              episodes={"S04": [17, 18, 22], "S05": [1, 4, 16, 18]})
+    angel_zachariah = Monster("Angel Zachariah", description="High Tier Angel. Died in S05E18. Zachariah from the "
+                                                             "alternate timeline appears in S13E14 and is killed in "
+                                                             "the same episode by Jack.",
+                              episodes={"S04": [17, 18, 22], "S05": [1, 4, 16, 18], "S13": [14]})
     angel_zachariah.clues = [MonstersClues.can_put_people_into_alternate_timelines, MonstersClues.can_repair_human_body,
                              MonstersClues.can_erase_and_bring_back_memories, MonstersClues.can_appear_out_of_thin_air,
                              MonstersClues.can_vanish, MonstersClues.can_give_people_diseases,
@@ -733,7 +735,7 @@ class MonsterBase:
                                                          "Redfield.",
                       episodes={"S04": [18, 22], "S05": [1, 9, 22], "S07": [21, 22, 23],
                                 "S08": [1, 2, 7, 10, 14, 19, 21, 23], "S09": [2, 6, 9], "S10": [5], "S11": [21, 22],
-                                "S13": [2, 7, 13]})
+                                "S13": [2, 7, 13, 14]})
     prophet.clues = [MonstersClues.can_see_future, MonstersClues.protected_by_an_archangel, MonstersClues.visions,
                      MonstersClues.can_repair_broken_word_of_god, MonstersClues.can_read_word_of_god,
                      MonstersClues.weird_weather, MonstersClues.missing_or_dead_people_regularly_in_different_areas]
@@ -802,10 +804,11 @@ class MonsterBase:
                                                                    "sword (Sword of Archangel Michael). Can kill other "
                                                                    "angels with a touch. Another Michael exists in "
                                                                    "alternate timeline.",
-                                episodes={"S05": [13, 18, 22], "S13": [2, 7]})
+                                episodes={"S05": [13, 18, 22], "S13": [2, 7, 14]})
     archangel_michael.clues = [MonstersClues.can_put_a_person_to_sleep, MonstersClues.can_erase_and_bring_back_memories,
                                MonstersClues.can_send_people_back_to_their_time, MonstersClues.can_repair_human_body,
                                MonstersClues.can_kill_angels_with_a_touch,
+                               MonstersClues.can_go_and_put_into_a_persons_mind,
 
                                MonstersClues.travels_as_white_fog]
     archangel_michael.disable_methods = [MonstersDisableMethods.holy_oil,
@@ -1433,7 +1436,7 @@ class MonsterBase:
                                                "is born. Nephilim born from an Archangel is unaffected by Angel blade. "
                                                "A Nephilim becomes more powerful, than the angel, that sired him. "
                                                "Nephilim with the power level of Jack can talk to beings in Empty.",
-                       episodes={"S08": [22], "S12": [23], "S13": [1, 2, 3, 4, 6, 9]})
+                       episodes={"S08": [22], "S12": [23], "S13": [1, 2, 3, 4, 6, 9, 14]})
     nephilim.clues = [MonstersClues.can_see_real_appearance_of_entities, MonstersClues.high_strength,
                       MonstersClues.bright_eyes, MonstersClues.bible_burns_it, MonstersClues.weird_weather,
                       MonstersClues.biblical_like_events, MonstersClues.flashing_lights, MonstersClues.grows_fast,
@@ -1442,8 +1445,8 @@ class MonsterBase:
                       MonstersClues.angel_blade_is_ineffective, MonstersClues.can_erase_anti_angel_marks,
                       MonstersClues.can_vanish, MonstersClues.invulnerable, MonstersClues.can_hear_angel_radio,
                       MonstersClues.can_put_a_person_to_sleep, MonstersClues.can_go_and_put_into_a_persons_mind,
-                      MonstersClues.has_wings, MonstersClues.can_read_peoples_minds,
-                      MonstersClues.can_travel_to_alternate_timelines]
+                      MonstersClues.can_read_peoples_minds, MonstersClues.can_kill_angels_with_power_of_will,
+                      MonstersClues.can_travel_to_alternate_timelines, MonstersClues.has_wings]
     nephilim.kill_methods = [MonstersKillMethods.angel_blade]
 
     # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
@@ -1828,7 +1831,16 @@ class MonsterBase:
                                                      " where Kaia went, when she slept).", episodes={"S13": [10]})
     bad_place_humanoid_monster.clues = [MonstersClues.grey_goo, MonstersClues.claws]
 
-    unknown = Monster("Unknown", description="", episodes={"S13": [13]})
+    gog_and_magog = Monster("Gog and Magog", description="Ancient warriors, who enslaved half the Fertile Crescent "
+                                                         "until some priests cast a spell to bind them away in 'a "
+                                                         "place without a place and a time without a time'). They can "
+                                                         "only be killed a a weapon touched by GOD. They are brothers. "
+                                                         "Their weapons were made by Gods. They are primitive beasts "
+                                                         "made of rock and sand. Killed in S13E14 by Dean.",
+                            episodes={"S13": [14]})
+    gog_and_magog.kill_methods = [MonstersKillMethods.angel_blade, MonstersKillMethods.weapon_touched_by_god]
+
+    unknown = Monster("Unknown", description="", episodes={"S13": [14]})
     unknown.clues = []
 
     # ---------------------------------------------------- SEASON 14 ---------------------------------------------------

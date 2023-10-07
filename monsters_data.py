@@ -521,6 +521,7 @@ class MonstersKillMethods:
     man_of_letters_rougarou_gun = "Man of letters Rougarou gun"
     roman_corn_syrup = "roman corn syrup"
     avd = "AVD (Anti-Vamp Device) - a gas, that kills only Vampires"
+    weapon_touched_by_god = "weapon touched by god"
 
 
 class MonstersDisableMethods:
