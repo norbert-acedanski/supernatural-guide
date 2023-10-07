@@ -384,8 +384,24 @@ class CursesBase:
 
     spell_to_travel_to_alternate_timeline = Curse("Spell to travel to alternate timeline",
                                                   description="Spell allows one person to travel to alternate "
-                                                              "timeline. Requires a few ingredients including "
-                                                              "Archangel Grace.", episodes={"S13": [7]})
+                                                              "timeline. There is only one type of spell, but one was "
+                                                              "faked by Donatello. The right on requires four major "
+                                                              "ingredients: Archangel Grace, a fruit from the Tree of "
+                                                              "Life, the Seal of Solomon and the blood of 'a most holy "
+                                                              "man'. The second one was faked by Donatello, but what "
+                                                              "he wrote is as follows: Cleanse the Holy Altar with "
+                                                              "sacramental water, built on a bed of Godsroot. Bless "
+                                                              "the Altar in the tongue of GOD, coat a bronze bowl with "
+                                                              "the Oil of Bramelin, combine Dragon's Blood, Wolfsbane, "
+                                                              "Angelica root and crush into a fine paste. Sprinkle "
+                                                              "with Goofer dust. <Unknown> Mortar and Pescle, combine "
+                                                              "Dead Sea brine, Virgin Lamb's blood and the bone? of a "
+                                                              "lesser saint. <Unknown> mixture, paint three symbols "
+                                                              "<unknown> surrounding the Altar. <Unknown> pastes into "
+                                                              "the <unknown>. Mix thoroughly, top with dried "
+                                                              "<unknown>. Recipe from S13E14 from the page, that "
+                                                              "Donatello deciphered from the Demon Tablet.",
+                                                  episodes={"S13": [7, 14]})
 
     nephilim_tracking_spell = Curse("Nephilim tracking spell",
                                     description="Spell, that allows to track a Nephilim. It dates back to the time of "
