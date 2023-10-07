@@ -59,6 +59,7 @@ If you are a fan of Supernatural show, you can play with this project to find ou
 - Reaper Billie reveals in S13E05, that Sam and Dean are of great importance to this Universe after she became Death
 - Jack leaves Sam, Dean and Cass in S13E06 after he accidentally killed a person
 - Arthur Ketch comes back in S13E07 (revealed, that he had the same spell as Rowena to bring him back, when dead)
+- In S13E13 becomes the ruler of Heaven and sits in Heaven's throne
 
 # TODO:
 - finish all seasons and episodes.
