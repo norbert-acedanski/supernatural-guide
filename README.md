@@ -60,6 +60,7 @@ If you are a fan of Supernatural show, you can play with this project to find ou
 - Jack leaves Sam, Dean and Cass in S13E06 after he accidentally killed a person
 - Arthur Ketch comes back in S13E07 (revealed, that he had the same spell as Rowena to bring him back, when dead)
 - In S13E13 becomes the ruler of Heaven and sits in Heaven's throne
+- No Monsters appear in S13E15
 
 # TODO:
 - finish all seasons and episodes.
