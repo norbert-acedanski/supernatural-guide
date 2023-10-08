@@ -1840,7 +1840,7 @@ class MonsterBase:
                             episodes={"S13": [14]})
     gog_and_magog.kill_methods = [MonstersKillMethods.angel_blade, MonstersKillMethods.weapon_touched_by_god]
 
-    unknown = Monster("Unknown", description="", episodes={"S13": [14]})
+    unknown = Monster("Unknown", description="", episodes={"S13": [15]})
     unknown.clues = []
 
     # ---------------------------------------------------- SEASON 14 ---------------------------------------------------
