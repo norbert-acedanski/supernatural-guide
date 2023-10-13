@@ -40,7 +40,7 @@ If you are a fan of Supernatural show, you can play with this project to find ou
 - Castiel broke the Fourth wall in S06E20
 - Metatron broke the fourth wall in S09E18
 - Deans Blood type is 0 based on S10E03
-- Dean broke the fourth wall in S10E05
+- Dean broke the fourth wall in S10E05, S13E16
 - Impala of Sam and Dean was produced in April 24th, 1967 (from S11E04)
 - Sam had a Zanna friend, named Sully when he was young (from S11E08)
 - Lucifer mentions "Lucifer" TV series about Lucifer solving crimes in S11E10
@@ -61,6 +61,7 @@ If you are a fan of Supernatural show, you can play with this project to find ou
 - Arthur Ketch comes back in S13E07 (revealed, that he had the same spell as Rowena to bring him back, when dead)
 - In S13E13 becomes the ruler of Heaven and sits in Heaven's throne
 - No Monsters appear in S13E15
+- In S13E16 Sam and Dean end up in Scooby Doo tv series
 
 # TODO:
 - finish all seasons and episodes.
