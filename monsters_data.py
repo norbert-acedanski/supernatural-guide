@@ -271,6 +271,8 @@ class MonstersClues:
     can_see_real_appearance_of_entities = "can see real appearance of entities"
     can_create_things_out_of_thin_air = "can create things out of thin air"
     can_put_a_person_in_wonderland = "can put a person in wonderland - dream world inside ones mind"
+    can_put_a_person_into_a_tv = "can put a person into a tv"
+    can_put_an_angel_into_a_tv = "can put an angel into a tv"
     can_show_past_to_people = "can show past to people"
     can_vanish = "can vanish"
     can_appear_out_of_thin_air = "can appear out of thin air"

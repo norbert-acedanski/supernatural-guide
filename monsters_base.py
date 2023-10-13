@@ -54,7 +54,7 @@ class MonsterBase:
                               episodes={"S01": [1, 3, 5, 7, 9, 10, 13, 19], "S02": [6, 11, 16, 18, 19],
                                         "S03": [5, 6, 13], "S04": [2, 13, 15, 17], "S05": [9, 11], "S06": [4, 14],
                                         "S07": [7, 10, 13, 17, 19], "S09": [7], "S10": [13, 16], "S11": [7, 23],
-                                        "S12": [3, 6, 13], "S13": [5]})
+                                        "S12": [3, 6, 13], "S13": [5, 16]})
     vengeful_spirit.clues = [MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                              MonstersClues.people_dead_weirdly, MonstersClues.ghost_like_creature,
                              MonstersClues.weird_electronics_behavior, MonstersClues.weird_things_behavior,
@@ -76,11 +76,12 @@ class MonsterBase:
                              MonstersClues.no_hex_bags, MonstersClues.travels_as_grey_fog, MonstersClues.weird_noises,
                              MonstersClues.amnesia_blackout, MonstersClues.holy_water_does_not_affect_it,
                              MonstersClues.attached_to_a_specific_object, MonstersClues.victims_hear_children_cry,
-                             MonstersClues.leaves_frozen_marks, MonstersClues.frozen_heart]
+                             MonstersClues.leaves_frozen_marks, MonstersClues.frozen_heart,
+                             MonstersClues.can_put_a_person_into_a_tv, MonstersClues.can_put_an_angel_into_a_tv]
     vengeful_spirit.disable_methods = [MonstersDisableMethods.bring_the_spirit_to_its_crime_place,
                                        MonstersDisableMethods.bring_the_spirit_what_it_wants,
                                        MonstersDisableMethods.iron_or_iron_bullets,
-                                       MonstersDisableMethods.salt_or_salted_bullets,
+                                       MonstersDisableMethods.salt_or_salted_bullets, MonstersDisableMethods.holy_oil,
                                        MonstersDisableMethods.finish_its_unfinished_business]
     vengeful_spirit.kill_methods = [MonstersKillMethods.burn_salted_corpse,
                                     MonstersKillMethods.destroy_the_object_that_the_ghost_is_bound_to]
@@ -614,7 +615,7 @@ class MonsterBase:
                               "S10": [1, 2, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22, 23],
                               "S11": [1, 2, 3, 6, 9, 10, 14, 18, 22, 23],
                               "S12": [1, 2, 3, 7, 8, 9, 10, 12, 13, 15, 19, 23],
-                              "S13": [1, 2, 3, 4, 5, 6, 7, 9, 12, 13, 14]})
+                              "S13": [1, 2, 3, 4, 5, 6, 7, 9, 12, 13, 14, 16]})
     angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                    MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion, MonstersClues.has_wings,
                    MonstersClues.leaves_burned_marks, MonstersClues.can_tell_if_somebody_was_recently_healed,
@@ -1840,7 +1841,7 @@ class MonsterBase:
                             episodes={"S13": [14]})
     gog_and_magog.kill_methods = [MonstersKillMethods.angel_blade, MonstersKillMethods.weapon_touched_by_god]
 
-    unknown = Monster("Unknown", description="", episodes={"S13": [15]})
+    unknown = Monster("Unknown", description="", episodes={"S13": [16]})
     unknown.clues = []
 
     # ---------------------------------------------------- SEASON 14 ---------------------------------------------------
