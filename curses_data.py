@@ -88,7 +88,7 @@ class CursesDisableMethods:
     kill_the_person_that_causes_it = "kill the person that causes it"
     kill_goddess_of_truth_veritas = "kill goddess of truth Veritas"
     wait_for_an_opening_from_the_other_side = "wait for an opening from the other side"
-    wait_for_if_to_pass = "wait for if to pass"
+    wait_for_it_to_pass = "wait for it to pass"
     will_of_an_angel_on_soul_juice = "will of an angel on soul juice"
     will_of_lucifer = "will of Lucifer"
     age_changing_spell = "Age changing spell"

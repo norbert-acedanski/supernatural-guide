@@ -289,7 +289,7 @@ class CursesBase:
                                                                              "of will of a person. Used by Magnus.",
                                      episodes={"S09": [16]})
     willpower_removing_spell.clues = [CursesClues.people_acting_weirdly, CursesClues.people_doing_what_they_are_told]
-    willpower_removing_spell.disable_methods = [CursesDisableMethods.wait_for_if_to_pass]
+    willpower_removing_spell.disable_methods = [CursesDisableMethods.wait_for_it_to_pass]
 
     angel_siren_spell = Curse("Angel Siren spell", description="Spell used to attract Angels. Made of a symbol "
                                                                "combined with Griffin feathers, bones of a Fairy and "
@@ -406,7 +406,7 @@ class CursesBase:
                                                               "stays open for 24h.",
                                                   episodes={"S13": [7, 14, 17]})
     spell_to_travel_to_alternate_timeline.clues = [CursesClues.rip_in_the_air]
-    spell_to_travel_to_alternate_timeline.disable_methods = [CursesDisableMethods.wait_for_if_to_pass]
+    spell_to_travel_to_alternate_timeline.disable_methods = [CursesDisableMethods.wait_for_it_to_pass]
 
     nephilim_tracking_spell = Curse("Nephilim tracking spell",
                                     description="Spell, that allows to track a Nephilim. It dates back to the time of "
