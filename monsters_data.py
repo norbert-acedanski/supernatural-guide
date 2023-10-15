@@ -426,6 +426,7 @@ class MonstersClues:
     attached_to_a_specific_object = "attached to a specific object or set of objects"
     hand_of_god_does_not_affect_it = "Hand of GOD does not affect it"
     red_sun = "red sun"
+    tentacles = "tentacles"
 
 
 class MonstersKillMethods:
@@ -533,6 +534,7 @@ class MonstersDisableMethods:
     exorcism_for_angels = "exorcism for angels (sends an angel back to Heaven)"
     iron_or_iron_bullets = "iron bullets/iron in general"
     iron_chains = "iron chains"
+    special_chains = "special chains"
     salt_or_salted_bullets = "salt/salted bullets"
     silver_or_silver_bullets = "silver/silver bullets"
     iridium_or_iridium_blade = "iridium/iridium blade"
