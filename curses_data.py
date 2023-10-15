@@ -70,6 +70,7 @@ class CursesClues:
     meteor_shower_over_earth = 'meteor shower over Earth'
     less_affected_by_telekinesis_of_knight_of_hell = "less affected by telekinesis of Knight of Hell"
     increased_regeneration = "increased regeneration"
+    rip_in_the_air = "rip in the air"
 
 
 class CursesDisableMethods:
