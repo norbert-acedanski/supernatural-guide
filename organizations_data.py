@@ -37,3 +37,4 @@ class OrganizationKnowledge:
     purification_rituals = "purification rituals"
     reset_mechanical_devices = "reset mechanical devices"
     alternate_realities = "alternate realities"
+    king_solomon = "king Solomon"
