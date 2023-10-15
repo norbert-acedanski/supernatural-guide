@@ -160,8 +160,8 @@ class ObjectsBase:
     ring_of_famine.abilities = [ObjectAbilities.can_give_incredible_starving_sensation_for_something]
 
     archangel_blade = Object("Archangel blade", description="A triangular, silvery blade, that each archangel has.",
-                             episodes={"S05": [19], "S13": [7, 13]})
-    archangel_blade.abilities = [ObjectAbilities.can_kill_archangels]
+                             episodes={"S05": [19], "S13": [7, 13, 17]})
+    archangel_blade.abilities = [ObjectAbilities.can_kill_archangels, ObjectAbilities.can_kill_demons]
 
     ring_of_pestilence = Object("Ring of Pestilence", description="Can give people diseases of any kind. One of the "
                                                                   "four rings of the Horseman.",
