@@ -252,6 +252,7 @@ class MonstersClues:
     biblical_like_events = "biblical-like events (storms, diseases, plagues, power losses)"
     empty_graves = "empty graves"
     local_legend_about_somebody_killed_or_died = "local legend about somebody killed/died in the past"
+    killed_reapers = "killed Reapers"
     silent_area = "silent area - not even crickets are heard"
     intelligent = "intelligent"
     can_absorb_other_ghost_energy = "can absorb other ghost energy"
@@ -527,6 +528,7 @@ class MonstersKillMethods:
     roman_corn_syrup = "roman corn syrup"
     avd = "AVD (Anti-Vamp Device) - a gas, that kills only Vampires"
     weapon_touched_by_god = "weapon touched by god"
+    rowenas_spell = "Rowena's spell (from S13E19)"
 
 
 class MonstersDisableMethods:
