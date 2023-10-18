@@ -401,8 +401,8 @@ class ObjectsBase:
 
     enochian_handcuffs = Object("Enochian handcuffs", description="Handcuffs, that can limit the power of celestial "
                                                                   "beings. It seems, that Archangels are immune to it.",
-                                episodes={"S12": [7], "S13": [13]})  # TODO: Check in which episode earlier Castiel is held in them
-    enochian_handcuffs.abilities = [ObjectAbilities.traps_an_angel]
+                                episodes={"S12": [7], "S13": [13, 20]})  # TODO: Check in which episode earlier Castiel is held in them
+    enochian_handcuffs.abilities = [ObjectAbilities.traps_an_angel, ObjectAbilities.traps_an_archangel]
 
     hyperbolic_pulse_generator = Object("Hyperbolic Pulse Generator",
                                         description="It emits a force, which drives the possessing being from the "
