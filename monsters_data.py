@@ -430,6 +430,7 @@ class MonstersClues:
     hand_of_god_does_not_affect_it = "Hand of GOD does not affect it"
     red_sun = "red sun"
     tentacles = "tentacles"
+    astral_projection = "astral projection"
 
 
 class MonstersKillMethods:
@@ -455,6 +456,7 @@ class MonstersKillMethods:
     holy_oil = "holy oil"
     angel_sword = "angel sword"
     samurai_sword_consecrated_with_shinto_blessing = "samurai sword consecrated with shinto blessing"
+    gabriel_sword = "Gabriel's sword"
     colt_of_colt_with_magic_bullets = \
         "colt of Colt with magic bullets (silver bullets covered with holy oil, mirra and sage than use a spell)"
     magic_red_high_heels = "magic red high heels"

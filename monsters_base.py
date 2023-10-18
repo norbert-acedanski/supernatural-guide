@@ -396,20 +396,24 @@ class MonsterBase:
     trickster = Monster("Trickster (Loki, Anansi)", description="Demigod (Loki in Scandinavia, Anansi in West Africa). "
                                                                 "Can create chaos and mischief as easy as breathing. "
                                                                 "Not seen, only appeared to be one, but it was "
-                                                                "Archangel Gabriel.")
+                                                                "Archangel Gabriel. A few thousand epochs ago, Gabriel "
+                                                                "was out for a hike in the Fjords, came across Loki "
+                                                                "bound in a cave with snake dripping venom into his "
+                                                                "eye. He freed him. Killed by Gabriel in S13E20.",
+                        episodes={"S13": [20]})
     trickster.clues = [MonstersClues.people_seeing_things_or_figures, MonstersClues.can_create_things_out_of_thin_air,
                        MonstersClues.people_dead_weirdly, MonstersClues.no_emf, MonstersClues.people_seeing_aliens,
                        MonstersClues.strange_different_things_happening, MonstersClues.things_disappearing,
                        MonstersClues.weird_noises, MonstersClues.immortal, MonstersClues.people_seeing_strange_things,
                        MonstersClues.can_make_themselves_appear_as_they_like, MonstersClues.mimics_human_voice,
                        MonstersClues.loves_sugar, MonstersClues.telekinesis, MonstersClues.sweets_wrappers,
-                       MonstersClues.can_vanish, MonstersClues.high_strength]
-    trickster.kill_methods = [MonstersKillMethods.aspen_pin]
+                       MonstersClues.can_vanish, MonstersClues.high_strength, MonstersClues.astral_projection]
+    trickster.kill_methods = [MonstersKillMethods.gabriel_sword]
 
     archangel_gabriel = Monster("Archangel - Gabriel", description="Archangel, that enjoys tricking people and killing "
                                                                    "them afterwards. Supposedly killed by Lucyfer in "
                                                                    "S05E19. Back in S13E13.",
-                                episodes={"S02": [15], "S03": [11], "S05": [8, 19], "S13": [13, 17, 18]})
+                                episodes={"S02": [15], "S03": [11], "S05": [8, 19], "S13": [13, 17, 18, 20]})
     archangel_gabriel.clues = [MonstersClues.people_seeing_things_or_figures, MonstersClues.people_seeing_aliens,
                                MonstersClues.telekinesis, MonstersClues.no_emf, MonstersClues.things_disappearing,
                                MonstersClues.weird_noises, MonstersClues.loves_sugar, MonstersClues.immortal,
@@ -420,7 +424,8 @@ class MonsterBase:
                                MonstersClues.mimics_human_voice, MonstersClues.high_strength, MonstersClues.has_wings,
                                MonstersClues.can_teleport_people, MonstersClues.can_make_themselves_appear_as_they_like,
                                MonstersClues.can_put_somebody_in_a_time_loop, MonstersClues.bright_light,
-                               MonstersClues.bright_eyes, MonstersClues.can_kill_princes_of_hell_with_a_thought]
+                               MonstersClues.bright_eyes, MonstersClues.can_kill_princes_of_hell_with_a_thought,
+                               MonstersClues.astral_projection]
     archangel_gabriel.disable_methods = [MonstersDisableMethods.holy_oil]
     archangel_gabriel.kill_methods = [MonstersKillMethods.archangel_blade]
 
@@ -741,7 +746,7 @@ class MonsterBase:
                                                          "Redfield.",
                       episodes={"S04": [18, 22], "S05": [1, 9, 22], "S07": [21, 22, 23],
                                 "S08": [1, 2, 7, 10, 14, 19, 21, 23], "S09": [2, 6, 9], "S10": [5], "S11": [21, 22],
-                                "S13": [2, 7, 13, 14]})
+                                "S13": [2, 7, 13, 14, 20]})
     prophet.clues = [MonstersClues.can_see_future, MonstersClues.protected_by_an_archangel, MonstersClues.visions,
                      MonstersClues.can_repair_broken_word_of_god, MonstersClues.can_read_word_of_god,
                      MonstersClues.weird_weather, MonstersClues.missing_or_dead_people_regularly_in_different_areas]
@@ -1443,7 +1448,7 @@ class MonsterBase:
                                                "is born. Nephilim born from an Archangel is unaffected by Angel blade. "
                                                "A Nephilim becomes more powerful, than the angel, that sired him. "
                                                "Nephilim with the power level of Jack can talk to beings in Empty.",
-                       episodes={"S08": [22], "S12": [23], "S13": [1, 2, 3, 4, 6, 9, 14]})
+                       episodes={"S08": [22], "S12": [23], "S13": [1, 2, 3, 4, 6, 9, 14, 20]})
     nephilim.clues = [MonstersClues.can_see_real_appearance_of_entities, MonstersClues.high_strength,
                       MonstersClues.bright_eyes, MonstersClues.bible_burns_it, MonstersClues.weird_weather,
                       MonstersClues.biblical_like_events, MonstersClues.flashing_lights, MonstersClues.grows_fast,
@@ -1855,7 +1860,23 @@ class MonsterBase:
                     MonstersClues.people_dead_weirdly, MonstersClues.tentacles, MonstersClues.invulnerable]
     yokoth.disable_methods = [MonstersDisableMethods.special_chains]
 
-    unknown = Monster("Unknown", description="", episodes={"S13": [19]})
+    fenrir = Monster("Fenrir", description="One of the sons of Loki. Norse Demigod. Represents a tiger. Killed by "
+                                           "Gabriel in S13E20.", episodes={"S13": [20]})
+    fenrir.clues = [MonstersClues.claws, MonstersClues.large_mouth_full_of_teeth, MonstersClues.immortal,
+                    MonstersClues.astral_projection]
+    fenrir.kill_methods = [MonstersKillMethods.gabriel_sword]
+
+    narfi = Monster("Narfi", description="One of the sons of Loki. Norse Demigod. Represents a skul. Killed by Gabriel "
+                                         "in S13E20.", episodes={"S13": [20]})
+    narfi.clues = [MonstersClues.immortal, MonstersClues.astral_projection]
+    narfi.kill_methods = [MonstersKillMethods.gabriel_sword]
+
+    sleipnir = Monster("Sleipnir", description="One of the sons of Loki. Norse Demigod. Represents a horse. Killed by "
+                                               "Gabriel in S13E20.", episodes={"S13": [20]})
+    sleipnir.clues = [MonstersClues.immortal, MonstersClues.astral_projection]
+    sleipnir.kill_methods = [MonstersKillMethods.gabriel_sword]
+
+    unknown = Monster("Unknown", description="", episodes={"S13": [20]})
     unknown.clues = []
 
     # ---------------------------------------------------- SEASON 14 ---------------------------------------------------
