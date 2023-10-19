@@ -420,6 +420,8 @@ class CursesBase:
     love_spell.clues = [CursesClues.blinding_love, CursesClues.people_acting_weirdly, CursesClues.people_dead_weirdly,
                         CursesClues.hex_bag_hidden_somewhere]
 
+    # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
+
     # SEASON 14:
 
 
