@@ -64,6 +64,8 @@ If you are a fan of Supernatural show, you can play with this project to find ou
 - In S13E16 Sam and Dean end up in Scooby Doo tv series
 - There is a version of Charlie in the Apocalypse timeline (appeared in S13E18)
 - According to Naomi in S13E19 at that time there are 10 or 11 Angels left existing
+- Rowena and Archangel Gabriel flirt and have sex in S13E21
+- Sam is killed by a Vampire in S13E21, but brought back by Lucyfer
 
 # TODO:
 - finish all seasons and episodes.
