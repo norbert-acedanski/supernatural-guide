@@ -68,6 +68,7 @@ If you are a fan of Supernatural show, you can play with this project to find ou
 - Sam is killed by a Vampire in S13E21, but brought back by Lucyfer
 - There is an evil version of Castiel, that looks like Hitler in Apocalypse world present in S13E22 and is killed by Castiel from the main timeline
 - Lucyfer shed a tear in S13E22
+- Dean says "Yes" to Michael from Apocalypse World and becomes the Sword of Michael
 
 # TODO:
 - finish all seasons and episodes.
