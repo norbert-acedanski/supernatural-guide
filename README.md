@@ -66,6 +66,8 @@ If you are a fan of Supernatural show, you can play with this project to find ou
 - According to Naomi in S13E19 at that time there are 10 or 11 Angels left existing
 - Rowena and Archangel Gabriel flirt and have sex in S13E21
 - Sam is killed by a Vampire in S13E21, but brought back by Lucyfer
+- There is an evil version of Castiel, that looks like Hitler in Apocalypse world present in S13E22 and is killed by Castiel from the main timeline
+- Lucyfer shed a tear in S13E22
 
 # TODO:
 - finish all seasons and episodes.
