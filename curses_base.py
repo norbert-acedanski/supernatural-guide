@@ -406,7 +406,7 @@ class CursesBase:
                                                               "stays open for 24h. If too small amount of Grace is "
                                                               "used, the rift stays open for very litle time (even a "
                                                               "few seconds).",
-                                                  episodes={"S13": [7, 14, 17, 21]})
+                                                  episodes={"S13": [7, 14, 17, 21, 22]})
     spell_to_travel_to_alternate_timeline.clues = [CursesClues.rip_in_the_air]
     spell_to_travel_to_alternate_timeline.disable_methods = [CursesDisableMethods.wait_for_it_to_pass]
 
