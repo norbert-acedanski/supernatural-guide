@@ -441,7 +441,7 @@ class MonsterBase:
                                                "can control themselves. Some have been able to subsist off of "
                                                "animal hearts. Also mentioned in S01E16.",
                        episodes={"S02": [17], "S08": [4], "S09": [12, 20], "S10": [4], "S11": [17], "S12": [6, 16],
-                                 "S13": [10, 11]})
+                                 "S13": [10, 11, 23]})
     werewolf.clues = [MonstersClues.body_torn_apart, MonstersClues.animal_like_attack, MonstersClues.missing_heart,
                       MonstersClues.murders_during_full_moon_week, MonstersClues.claws, MonstersClues.attacks_at_night,
                       MonstersClues.animal_like_noises, MonstersClues.amnesia_blackout, MonstersClues.high_strength,
@@ -450,7 +450,7 @@ class MonsterBase:
                       MonstersClues.missing_or_dead_people_regularly_in_the_same_area, MonstersClues.ripped_throat,
                       MonstersClues.yellow_eyes, MonstersClues.large_mouth_full_of_teeth]
     werewolf.kill_methods = [MonstersKillMethods.silver_bullet_into_the_heart, MonstersKillMethods.silver_blade,
-                             MonstersKillMethods.silver_nitrate_injection]
+                             MonstersKillMethods.silver_nitrate_injection, MonstersKillMethods.angel_blade]
     werewolf.disable_methods = [MonstersDisableMethods.silver_or_silver_bullets]
     werewolf.cure_methods = [MonstersCureMethods.plasma_therapy_with_the_blood_of_the_werewolf_that_bit_the_victim]
 
@@ -625,7 +625,7 @@ class MonsterBase:
                               "S10": [1, 2, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22, 23],
                               "S11": [1, 2, 3, 6, 9, 10, 14, 18, 22, 23],
                               "S12": [1, 2, 3, 7, 8, 9, 10, 12, 13, 15, 19, 23],
-                              "S13": [1, 2, 3, 4, 5, 6, 7, 9, 12, 13, 14, 16, 18, 19, 21, 22]})
+                              "S13": [1, 2, 3, 4, 5, 6, 7, 9, 12, 13, 14, 16, 18, 19, 21, 22, 23]})
     angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                    MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion, MonstersClues.has_wings,
                    MonstersClues.leaves_burned_marks, MonstersClues.can_tell_if_somebody_was_recently_healed,
@@ -775,11 +775,14 @@ class MonsterBase:
                                                                    "is revealed, that the Cage is not the place where "
                                                                    "Lucyfer is in S12E12. Lucyfer is stuck in "
                                                                    "Alternate timeline in S12E23, back in S13E07. "
-                                                                   "Trapped in Apocalypse World in S13E22.",
+                                                                   "Trapped in Apocalypse World in S13E22, but back in "
+                                                                   "S13E23. Can consume Nephilim Grace and be more "
+                                                                   "powerful. With that power he can kill Archangels "
+                                                                   "with hand on forehead. Killed by Dean in S13E23.",
                                 episodes={"S04": [22], "S05": [1, 3, 4, 10, 19, 22], "S07": [1, 2, 15, 17],
                                           "S11": [9, 10, 11, 14, 15, 18, 21, 22],
                                           "S12": [2, 3, 7, 8, 12, 13, 15, 17, 19, 21, 23],
-                                          "S13": [1, 2, 7, 12, 13, 18, 21, 22]})
+                                          "S13": [1, 2, 7, 12, 13, 18, 21, 22, 23]})
     archangel_lucyfer.clues = [MonstersClues.weird_things_behavior, MonstersClues.true_voice_can_hurt_people,
                                MonstersClues.bright_light, MonstersClues.weird_weather, MonstersClues.visions,
                                MonstersClues.people_seeing_strange_things, MonstersClues.biblical_like_events,
@@ -819,11 +822,12 @@ class MonsterBase:
                                                                    "sword (Sword of Archangel Michael). Can kill other "
                                                                    "angels with a touch. Another Michael exists in "
                                                                    "alternate timeline.",
-                                episodes={"S05": [13, 18, 22], "S13": [2, 7, 14, 22]})
+                                episodes={"S05": [13, 18, 22], "S13": [2, 7, 14, 22, 23]})
     archangel_michael.clues = [MonstersClues.can_put_a_person_to_sleep, MonstersClues.can_erase_and_bring_back_memories,
                                MonstersClues.can_send_people_back_to_their_time, MonstersClues.can_repair_human_body,
                                MonstersClues.can_kill_angels_with_a_touch, MonstersClues.falling_meteor,
-                               MonstersClues.can_go_and_put_into_a_persons_mind,
+                               MonstersClues.can_go_and_put_into_a_persons_mind, MonstersClues.flashing_lights,
+                               MonstersClues.small_earth_quake,
 
                                MonstersClues.travels_as_white_fog]
     archangel_michael.disable_methods = [MonstersDisableMethods.holy_oil,
@@ -1451,7 +1455,7 @@ class MonsterBase:
                                                "is born. Nephilim born from an Archangel is unaffected by Angel blade. "
                                                "A Nephilim becomes more powerful, than the angel, that sired him. "
                                                "Nephilim with the power level of Jack can talk to beings in Empty.",
-                       episodes={"S08": [22], "S12": [23], "S13": [1, 2, 3, 4, 6, 9, 14, 20, 21, 22]})
+                       episodes={"S08": [22], "S12": [23], "S13": [1, 2, 3, 4, 6, 9, 14, 20, 21, 22, 23]})
     nephilim.clues = [MonstersClues.can_see_real_appearance_of_entities, MonstersClues.high_strength,
                       MonstersClues.bright_eyes, MonstersClues.bible_burns_it, MonstersClues.weird_weather,
                       MonstersClues.biblical_like_events, MonstersClues.flashing_lights, MonstersClues.grows_fast,
@@ -1461,8 +1465,9 @@ class MonsterBase:
                       MonstersClues.can_vanish, MonstersClues.invulnerable, MonstersClues.can_hear_angel_radio,
                       MonstersClues.can_put_a_person_to_sleep, MonstersClues.can_go_and_put_into_a_persons_mind,
                       MonstersClues.can_read_peoples_minds, MonstersClues.can_kill_angels_with_power_of_will,
-                      MonstersClues.can_travel_to_alternate_timelines, MonstersClues.has_wings]
-    nephilim.kill_methods = [MonstersKillMethods.angel_blade]
+                      MonstersClues.can_travel_to_alternate_timelines, MonstersClues.has_wings,
+                      MonstersClues.can_hear_prayers, MonstersClues.can_make_an_archangel_tell_the_truth]
+    nephilim.kill_methods = [MonstersKillMethods.angel_blade, MonstersKillMethods.archangel_blade]
 
     # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
 
@@ -1879,8 +1884,10 @@ class MonsterBase:
     sleipnir.clues = [MonstersClues.immortal, MonstersClues.astral_projection]
     sleipnir.kill_methods = [MonstersKillMethods.gabriel_sword]
 
-    unknown = Monster("Unknown", description="", episodes={"S13": [22]})
+    unknown = Monster("Unknown", description="", episodes={"S13": [23]})
     unknown.clues = []
+
+    # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
 
     # ---------------------------------------------------- SEASON 14 ---------------------------------------------------
 
