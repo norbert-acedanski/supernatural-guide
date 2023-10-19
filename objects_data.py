@@ -13,6 +13,7 @@ class ObjectAbilities:
     can_kill_entities_when_reconnecting_with_an_angel = \
         "can kill entities (people, demons) when reconnecting with an angel"
     can_kill_zanna = 'can kill Zanna'
+    can_kill_werewolfs = "can kill werewolfs"
     can_hurt_angels = "can hurt Angels"
     can_hurt_archangels = "can hurt Archangels"
     can_send_angels_back_to_heaven = "can send angels back to heaven"
