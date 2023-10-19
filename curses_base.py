@@ -403,8 +403,10 @@ class CursesBase:
                                                               "the <unknown>. Mix thoroughly, top with dried "
                                                               "<unknown>. Recipe from S13E14 from the page, that "
                                                               "Donatello deciphered from the Demon Tablet. The portal "
-                                                              "stays open for 24h.",
-                                                  episodes={"S13": [7, 14, 17]})
+                                                              "stays open for 24h. If too small amount of Grace is "
+                                                              "used, the rift stays open for very litle time (even a "
+                                                              "few seconds).",
+                                                  episodes={"S13": [7, 14, 17, 21]})
     spell_to_travel_to_alternate_timeline.clues = [CursesClues.rip_in_the_air]
     spell_to_travel_to_alternate_timeline.disable_methods = [CursesDisableMethods.wait_for_it_to_pass]
 
