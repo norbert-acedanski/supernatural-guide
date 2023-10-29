@@ -55,7 +55,8 @@ class ObjectsBase:
                                  episodes={"S03": [1, 9, 16], "S04": [1, 9, 20, 22], "S05": [1, 10, 14, 17, 20, 21, 22],
                                            "S06": [10, 20, 21], "S07": [8, 15, 17, 21],
                                            "S08": [1, 2, 7, 10, 14, 17, 19, 23], "S09": [2, 4, 11, 14, 16, 17],
-                                           "S10": [2, 3, 7, 22], "S11": [2, 6, 15], "S12": [6, 12, 23], "S13": [8]})
+                                           "S10": [2, 3, 7, 22], "S11": [2, 6, 15], "S12": [6, 12, 23], "S13": [8],
+                                           "S14": [1]})
     demon_killing_knife.abilities = [ObjectAbilities.can_kill_demons, ObjectAbilities.cannot_kill_angels,
                                      ObjectAbilities.cannot_kill_knights_of_hell]
 
@@ -112,7 +113,7 @@ class ObjectsBase:
                                    "S10": [1, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22],
                                    "S11": [1, 2, 3, 6, 9, 10, 11, 15, 18, 22, 23],
                                    "S12": [1, 3, 6, 7, 9, 10, 12, 13, 15, 17, 19, 21, 23],
-                                   "S13": [1, 7, 8, 9, 10, 13, 14, 18, 19, 21, 22, 23]})
+                                   "S13": [1, 7, 8, 9, 10, 13, 14, 18, 19, 21, 22, 23], "S14": [1]})
     angel_blade.abilities = [ObjectAbilities.can_kill_angels, ObjectAbilities.can_kill_demons,
                              ObjectAbilities.can_kill_reapers, ObjectAbilities.cannot_kill_knights_of_hell,
                              ObjectAbilities.cannot_kill_archangels, ObjectAbilities.can_kill_werewolfs]
@@ -130,7 +131,7 @@ class ObjectsBase:
     sword_of_archangel_michael = Object("Sword of Archangel Michael", description="A vessel, that Archangel Michael "
                                                                                   "possesses - a very special person, "
                                                                                   "that can hold archangels power.",
-                                        episodes={"S05": [1], "S13": [23]})
+                                        episodes={"S05": [1], "S13": [23], "S14": [1]})
 
     enochian_sigil = Object("Enochian Sigil", description="Hides from every angel in creation (archangels included).",
                             episodes={"S05": [1, 2]})
