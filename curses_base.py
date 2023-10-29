@@ -289,7 +289,7 @@ class CursesBase:
                                                                              "of will of a person. Used by Magnus.",
                                      episodes={"S09": [16]})
     willpower_removing_spell.clues = [CursesClues.people_acting_weirdly, CursesClues.people_doing_what_they_are_told]
-    willpower_removing_spell.disable_methods = [CursesDisableMethods.wait_for_if_to_pass]
+    willpower_removing_spell.disable_methods = [CursesDisableMethods.wait_for_it_to_pass]
 
     angel_siren_spell = Curse("Angel Siren spell", description="Spell used to attract Angels. Made of a symbol "
                                                                "combined with Griffin feathers, bones of a Fairy and "
@@ -382,7 +382,45 @@ class CursesBase:
 
     # SEASON 13:
 
+    spell_to_travel_to_alternate_timeline = Curse("Spell to travel to alternate timeline",
+                                                  description="Spell allows one person to travel to alternate "
+                                                              "timeline. There is only one type of spell, but one was "
+                                                              "faked by Donatello. The right on requires four major "
+                                                              "ingredients: Archangel Grace, a fruit from the Tree of "
+                                                              "Life, the Seal of Solomon (purple gem, that was found "
+                                                              "by Men of Letters), the blood of 'a most holy man' and "
+                                                              "something, that has been there. "
+                                                              "The second one was faked by Donatello, but what he "
+                                                              "wrote is as follows: Cleanse the Holy Altar with "
+                                                              "sacramental water, built on a bed of Godsroot. Bless "
+                                                              "the Altar in the tongue of GOD, coat a bronze bowl with "
+                                                              "the Oil of Bramelin, combine Dragon's Blood, Wolfsbane, "
+                                                              "Angelica root and crush into a fine paste. Sprinkle "
+                                                              "with Goofer dust. <Unknown> Mortar and Pescle, combine "
+                                                              "Dead Sea brine, Virgin Lamb's blood and the bone? of a "
+                                                              "lesser saint. <Unknown> mixture, paint three symbols "
+                                                              "<unknown> surrounding the Altar. <Unknown> pastes into "
+                                                              "the <unknown>. Mix thoroughly, top with dried "
+                                                              "<unknown>. Recipe from S13E14 from the page, that "
+                                                              "Donatello deciphered from the Demon Tablet. The portal "
+                                                              "stays open for 24h. If too small amount of Grace is "
+                                                              "used, the rift stays open for very litle time (even a "
+                                                              "few seconds).",
+                                                  episodes={"S13": [7, 14, 17, 21, 22]})
+    spell_to_travel_to_alternate_timeline.clues = [CursesClues.rip_in_the_air]
+    spell_to_travel_to_alternate_timeline.disable_methods = [CursesDisableMethods.wait_for_it_to_pass]
 
+    nephilim_tracking_spell = Curse("Nephilim tracking spell",
+                                    description="Spell, that allows to track a Nephilim. It dates back to the time of "
+                                                "King Solomon, who commissioned it to keep tabs on Queen of Sheba, who "
+                                                "according to the lore was half-angel.", episodes={"S13": [8]})
+
+    love_spell = Curse("Love spell", description="A spell, that allows a person to fall in love in another person.",
+                       episodes={"S13": [11]})
+    love_spell.clues = [CursesClues.blinding_love, CursesClues.people_acting_weirdly, CursesClues.people_dead_weirdly,
+                        CursesClues.hex_bag_hidden_somewhere]
+
+    # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
 
     # SEASON 14:
 

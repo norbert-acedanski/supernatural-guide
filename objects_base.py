@@ -14,11 +14,13 @@ class ObjectsBase:
                                       description="A journal of John Winchester, that contains a lot information about "
                                                   "monsters in Supernatural Universe.",
                                       episodes={"S01": [], "S04": [19], "S06": [1, 8, 12], "S07": [8, 11],
-                                                "S08": [8, 12], "S09": [11], "S12": [2, 3]})
+                                                "S08": [8, 12], "S09": [11], "S12": [2, 3], "S13": [9]})
     john_winchesters_journal._information = {"S04E19": JohnWinchesterJournal.entry_about_johns_other_son,
                                              "S06E12": JohnWinchesterJournal.entry_about_a_skinwalker,
                                              "S08E12": JohnWinchesterJournal.entry_about_torturing_a_demon,
-                                             "S09E11": JohnWinchesterJournal.entry_about_killing_a_demon_abaddon_and_locker}
+                                             "S09E11": JohnWinchesterJournal.entry_about_killing_a_demon_abaddon_and_locker,
+                                             "S13E02": JohnWinchesterJournal.entry_about_jasper_wyoming,
+                                             "S13E09": JohnWinchesterJournal.entry_about_dream_walkers}
 
     colt_of_colt = Object("Colt of Colt", description="Colt made by Samuel Colt in 1835, when Halley's Comet was "
                                                       "overhead and the same night those men died at the Alamo. "
@@ -53,7 +55,7 @@ class ObjectsBase:
                                  episodes={"S03": [1, 9, 16], "S04": [1, 9, 20, 22], "S05": [1, 10, 14, 17, 20, 21, 22],
                                            "S06": [10, 20, 21], "S07": [8, 15, 17, 21],
                                            "S08": [1, 2, 7, 10, 14, 17, 19, 23], "S09": [2, 4, 11, 14, 16, 17],
-                                           "S10": [2, 3, 7, 22], "S11": [2, 6, 15], "S12": [6, 12, 23]})
+                                           "S10": [2, 3, 7, 22], "S11": [2, 6, 15], "S12": [6, 12, 23], "S13": [8]})
     demon_killing_knife.abilities = [ObjectAbilities.can_kill_demons, ObjectAbilities.cannot_kill_angels,
                                      ObjectAbilities.cannot_kill_knights_of_hell]
 
@@ -109,10 +111,11 @@ class ObjectsBase:
                                    "S08": [7, 10, 17, 21, 22, 23], "S09": [1, 2, 3, 6, 9, 10, 11, 14, 16, 18, 21, 22, 23],
                                    "S10": [1, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22],
                                    "S11": [1, 2, 3, 6, 9, 10, 11, 15, 18, 22, 23],
-                                   "S12": [1, 3, 6, 7, 9, 10, 12, 13, 15, 17, 19, 21, 23]})
+                                   "S12": [1, 3, 6, 7, 9, 10, 12, 13, 15, 17, 19, 21, 23],
+                                   "S13": [1, 7, 8, 9, 10, 13, 14, 18, 19, 21, 22, 23]})
     angel_blade.abilities = [ObjectAbilities.can_kill_angels, ObjectAbilities.can_kill_demons,
                              ObjectAbilities.can_kill_reapers, ObjectAbilities.cannot_kill_knights_of_hell,
-                             ObjectAbilities.cannot_kill_archangels]
+                             ObjectAbilities.cannot_kill_archangels, ObjectAbilities.can_kill_werewolfs]
 
     lucifers_cage = Object("Lucifer's Cage", description="A prison build specifically to contain archangelic powers "
                                                          "(not seen yet). Can be opened with all 4 rings of "
@@ -127,7 +130,7 @@ class ObjectsBase:
     sword_of_archangel_michael = Object("Sword of Archangel Michael", description="A vessel, that Archangel Michael "
                                                                                   "possesses - a very special person, "
                                                                                   "that can hold archangels power.",
-                                        episodes={"S05": [1]})
+                                        episodes={"S05": [1], "S13": [23]})
 
     enochian_sigil = Object("Enochian Sigil", description="Hides from every angel in creation (archangels included).",
                             episodes={"S05": [1, 2]})
@@ -157,8 +160,8 @@ class ObjectsBase:
     ring_of_famine.abilities = [ObjectAbilities.can_give_incredible_starving_sensation_for_something]
 
     archangel_blade = Object("Archangel blade", description="A triangular, silvery blade, that each archangel has.",
-                             episodes={"S05": [19]})
-    archangel_blade.abilities = [ObjectAbilities.can_kill_archangels]
+                             episodes={"S05": [19], "S13": [7, 13, 17, 21, 22, 23]})
+    archangel_blade.abilities = [ObjectAbilities.can_kill_archangels, ObjectAbilities.can_kill_demons]
 
     ring_of_pestilence = Object("Ring of Pestilence", description="Can give people diseases of any kind. One of the "
                                                                   "four rings of the Horseman.",
@@ -235,7 +238,7 @@ class ObjectsBase:
                                                     "by Lucyfer) has information about Angels and how to make "
                                                     "them fall. Found in Lucyfer crypt in S08E17.",
                          episodes={"S07": [21], "S08": [1, 2, 10, 17, 21, 23], "S09": [9, 10, 23], "S10": [18],
-                                   "S11": [6]})
+                                   "S11": [6], "S13": [7, 13, 14]})
     word_of_god.abilities = [ObjectAbilities.can_cause_storms, ObjectAbilities.can_cause_women_to_go_to_labour,
                              ObjectAbilities.when_opened_causes_a_person_to_become_a_prophet]
 
@@ -397,9 +400,10 @@ class ObjectsBase:
                                      episodes={"S12": [5]})
 
     enochian_handcuffs = Object("Enochian handcuffs", description="Handcuffs, that can limit the power of celestial "
-                                                                  "beings. It seems, that Archangels are immune to it.",
-                                episodes={"S12": [7]})  # TODO: Check in which episode earlier Castiel is held in them
-    enochian_handcuffs.abilities = [ObjectAbilities.traps_an_angel]
+                                                                  "beings. It seems, that Archangels are immune to it. "
+                                                                  "Destroyed by Lucyfer in S13E22.",
+                                episodes={"S12": [7], "S13": [13, 20, 22]})  # TODO: Check in which episode earlier Castiel is held in them
+    enochian_handcuffs.abilities = [ObjectAbilities.traps_an_angel, ObjectAbilities.traps_an_archangel]
 
     hyperbolic_pulse_generator = Object("Hyperbolic Pulse Generator",
                                         description="It emits a force, which drives the possessing being from the "
@@ -419,6 +423,8 @@ class ObjectsBase:
     # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
 
     # SEASON 13:
+
+    # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
 
     # SEASON 14:
 

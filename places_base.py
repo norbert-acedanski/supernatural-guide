@@ -16,7 +16,7 @@ class PlacesBase:
                                            "a spell or an Angel can put you in one. In S12E23 we see a world, where "
                                            "Sam and Dean are never born and this Universe is in a war between in "
                                            "Heaven and Hell. Mary and Lucyfer are trapped in there in S12E23.",
-                               episodes={"S04": [17], "S05": [4], "S06": [15, 17], "S12": [23]})
+                               episodes={"S04": [17], "S05": [4], "S06": [15, 17], "S12": [23], "S13": [2, 18, 21, 22]})
     alternate_timeline.clues = [PlaceClues.different_history, PlaceClues.different_memories,
                                 PlaceClues.strange_feeling_that_things_should_be_different]
 
@@ -29,8 +29,10 @@ class PlacesBase:
                                          "created by Metatron, for Angels to travel between those two places. Angels "
                                          "can't sense it because it changes its location. Heaven has it's own prison. "
                                          "A Human can escape his/her heaven by finding a thing, that does not belong "
-                                         "in the place, they are in and following it.",
-                   episodes={"S05": [16], "S08": [7, 10, 17, 23], "S09": [18, 22, 23], "S10": [2, 17], "S11": [18, 22]})
+                                         "in the place, they are in and following it. Heaven is powered by Angels "
+                                         "(according to Naomi from S1319).",
+                   episodes={"S05": [16], "S08": [7, 10, 17, 23], "S09": [18, 22, 23], "S10": [2, 17], "S11": [18, 22],
+                             "S13": [13, 18, 19]})
     heaven.clues = [PlaceClues.good_memories_relived, PlaceClues.changing_scenery, PlaceClues.bright_place]
 
     purgatory = Place("Purgatory", description="A place, where all monsters go, after they die. Can be opened with an "
@@ -55,8 +57,14 @@ class PlacesBase:
                                  "spell - it can open door to any place in Oz.", episodes={"S09": [4]})
     oz.clues = [PlaceClues.castle_structure_on_a_hill, PlaceClues.golden_path, PlaceClues.emerald_city]
 
-    empty = Place("Empty", description="Place, where a Reaper want's Sam and Dean to go when they die. Mentioned in "
-                                       "S11E17.")
+    empty = Place("Empty", description="Place (and a cosmic being), where a Reaper want's Sam and Dean to go when they "
+                                       "die. Mentioned in S11E17. First appearance in S13E03. A place that angels and "
+                                       "demons go to when they die. THE God has no power there. According to Empty "
+                                       "(being), before GOD and Amara there was nothing but Empty. When Angel or a "
+                                       "Demon comes here, they sleep peacefully forever. Castiel is the first being, "
+                                       "that became awake.",
+                  episodes={"S13": [3, 4]})
+    empty.clues = [PlaceClues.dark_place]
 
     def __init__(self):
         self.places = [place for place in self.__class__.__dict__.values() if isinstance(place, Place)]

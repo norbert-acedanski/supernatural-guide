@@ -1,5 +1,6 @@
 class MonstersClues:
     ripped_throat = "ripped throat"
+    cut_throat = "cut throat"
     in_true_form_burns_eyes_of_people = "in true form burns eyes of people"
     true_voice_can_hurt_people = "true voice can hurt people"
     black_eyes = "black eyes"
@@ -93,6 +94,7 @@ class MonstersClues:
     missing_or_dead_people_around_christmas = "missing or dead people around christmas"
     missing_or_dead_people_regularly_in_different_areas = "missing or dead people regularly in different areas"
     missing_body = "missing body/bodies (sometimes from the cemetery)"
+    no_missing_body = "no missing body"
     missing_organs = "missing organs"
     missing_heart = "missing heart"
     missing_babies = "missing babies"
@@ -121,6 +123,7 @@ class MonstersClues:
     bloodshot_eyes = "bloodshot eyes"
     wormy_skin = "wormy skin"
     dry_skin = "dry skin"
+    snake_skin = "snake skin"
     emf = "Electromagnetic Field"
     no_emf = "no Electromagnetic Field"
     yellow_blast = "yellow blast"
@@ -249,6 +252,7 @@ class MonstersClues:
     biblical_like_events = "biblical-like events (storms, diseases, plagues, power losses)"
     empty_graves = "empty graves"
     local_legend_about_somebody_killed_or_died = "local legend about somebody killed/died in the past"
+    killed_reapers = "killed Reapers"
     silent_area = "silent area - not even crickets are heard"
     intelligent = "intelligent"
     can_absorb_other_ghost_energy = "can absorb other ghost energy"
@@ -268,6 +272,8 @@ class MonstersClues:
     can_see_real_appearance_of_entities = "can see real appearance of entities"
     can_create_things_out_of_thin_air = "can create things out of thin air"
     can_put_a_person_in_wonderland = "can put a person in wonderland - dream world inside ones mind"
+    can_put_a_person_into_a_tv = "can put a person into a tv"
+    can_put_an_angel_into_a_tv = "can put an angel into a tv"
     can_show_past_to_people = "can show past to people"
     can_vanish = "can vanish"
     can_appear_out_of_thin_air = "can appear out of thin air"
@@ -290,6 +296,7 @@ class MonstersClues:
     can_kill_demons_with_power_of_will = "can kill demons with power of will (with enough power)"
     can_kill_angels_with_power_of_will = "can kill Angels with power of will"
     can_kill_archangels_with_finger_snap = "can kill archangels with finger snap"
+    can_kill_princes_of_hell_with_a_thought = "can kill Princes of Hell with a thought"
     can_put_a_person_to_sleep = "can put a person to sleep"
     can_contact_a_person_in_a_dream = "can contact a person in a dream"
     can_send_people_to_the_past = "can send people to the past"
@@ -302,8 +309,10 @@ class MonstersClues:
     can_give_hallucinations = "can give hallucinations"
     can_hear_angel_radio = "can hear angel radio"
     can_hear_demon_radio = "can hear demon radio"
+    can_hear_prayers = "can hear prayers"
     can_exorcise_certain_demons_with_hand_on_forehead = "can exorcise certain demons with hand on forehead"
     can_kill_humans_with_hand_on_forehead = "can kill humans with hand on forehead"
+    can_kill_humans_with_a_thought = "can kill humans with a thought"
     can_put_people_into_alternate_timelines = "can put people into alternate timelines"
     can_erase_and_bring_back_memories = "can erase and bring back memories"
     can_exorcise_demons_with_a_thought = "can exorcise demons with a thought"
@@ -333,11 +342,16 @@ class MonstersClues:
     can_give_others_knowledge = "can give others knowledge"
     can_make_people_younger = "can make people younger"
     can_make_people_immortal = "can make people immortal"
+    can_make_an_archangel_tell_the_truth = "can make an Archangel tell the truth"
     can_shake_heaven = "can shake heaven"
+    can_travel_to_alternate_timelines_with_their_mind = "can travel to alternate timelines with their mind"
+    can_travel_to_alternate_timelines = "can travel to alternate timelines"
+    can_eat_angelic_grace = "can eat Angelic grace"
     people_with_souls_switched = "people with souls switched"
     poisoned_people = "poisoned people"
     demon_killing_knife_is_ineffective = "demon killing knife is ineffective"
     angel_blade_is_ineffective = "angel blade is ineffective"
+    immune_to_angel_sigils = "immune to angel sigils"
     sigils_against_angels_are_ineffective = "sigils against angels are ineffective"
     immortal = "immortal"
     invulnerable = "invulnerable"
@@ -417,6 +431,8 @@ class MonstersClues:
     attached_to_a_specific_object = "attached to a specific object or set of objects"
     hand_of_god_does_not_affect_it = "Hand of GOD does not affect it"
     red_sun = "red sun"
+    tentacles = "tentacles"
+    astral_projection = "astral projection"
 
 
 class MonstersKillMethods:
@@ -442,6 +458,7 @@ class MonstersKillMethods:
     holy_oil = "holy oil"
     angel_sword = "angel sword"
     samurai_sword_consecrated_with_shinto_blessing = "samurai sword consecrated with shinto blessing"
+    gabriel_sword = "Gabriel's sword"
     colt_of_colt_with_magic_bullets = \
         "colt of Colt with magic bullets (silver bullets covered with holy oil, mirra and sage than use a spell)"
     magic_red_high_heels = "magic red high heels"
@@ -514,6 +531,8 @@ class MonstersKillMethods:
     man_of_letters_rougarou_gun = "Man of letters Rougarou gun"
     roman_corn_syrup = "roman corn syrup"
     avd = "AVD (Anti-Vamp Device) - a gas, that kills only Vampires"
+    weapon_touched_by_god = "weapon touched by god"
+    rowenas_spell = "Rowena's spell (from S13E19)"
 
 
 class MonstersDisableMethods:
@@ -523,6 +542,7 @@ class MonstersDisableMethods:
     exorcism_for_angels = "exorcism for angels (sends an angel back to Heaven)"
     iron_or_iron_bullets = "iron bullets/iron in general"
     iron_chains = "iron chains"
+    special_chains = "special chains"
     salt_or_salted_bullets = "salt/salted bullets"
     silver_or_silver_bullets = "silver/silver bullets"
     iridium_or_iridium_blade = "iridium/iridium blade"
@@ -596,7 +616,7 @@ class MonstersDisableMethods:
 
 class MonstersCureMethods:
     cocktail_made_of_blood_of_the_vampire_that_bit_the_victim = \
-        "cocktail made of blood of the vampire that bit the victim"
+        "cocktail made of blood of the vampire that bit the victim (sage, little bit of garlic and the blood)"
     plasma_therapy_with_the_blood_of_the_werewolf_that_bit_the_victim = \
         "plasma therapy with the blood of the werewolf that bit the victim"
     demon_curing_ritual = "Demon-curing ritual of Father Thompson"

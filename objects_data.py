@@ -13,6 +13,7 @@ class ObjectAbilities:
     can_kill_entities_when_reconnecting_with_an_angel = \
         "can kill entities (people, demons) when reconnecting with an angel"
     can_kill_zanna = 'can kill Zanna'
+    can_kill_werewolfs = "can kill werewolfs"
     can_hurt_angels = "can hurt Angels"
     can_hurt_archangels = "can hurt Archangels"
     can_send_angels_back_to_heaven = "can send angels back to heaven"
@@ -88,3 +89,7 @@ class JohnWinchesterJournal:
                                     "Abaddon, who is a Knight of Hell."
     entry_about_killing_a_demon_abaddon_and_locker = "entry about killing a demon, Abaddon and locker " \
                                                      "(080379 with 'T' for Tara under the code)"
+    entry_about_jasper_wyoming = "entry about Jasper, Wyoming - it's home to its very own Gate to Hell. This " \
+                                 "particular place leads to 'A place where unimaginable evil emanates from creatures " \
+                                 "too wicked for the Pit to hold.'"
+    entry_about_dream_walkers = "entry about dream walkers"

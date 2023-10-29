@@ -40,7 +40,7 @@ If you are a fan of Supernatural show, you can play with this project to find ou
 - Castiel broke the Fourth wall in S06E20
 - Metatron broke the fourth wall in S09E18
 - Deans Blood type is 0 based on S10E03
-- Dean broke the fourth wall in S10E05
+- Dean broke the fourth wall in S10E05, S13E16
 - Impala of Sam and Dean was produced in April 24th, 1967 (from S11E04)
 - Sam had a Zanna friend, named Sully when he was young (from S11E08)
 - Lucifer mentions "Lucifer" TV series about Lucifer solving crimes in S11E10
@@ -55,6 +55,20 @@ If you are a fan of Supernatural show, you can play with this project to find ou
 - Sam and Dean are held in prison for at least 6 weeks, 2 days and 10 hours
 - Dean is cursed by Memory Curse in S12E11 and jokes on Sam after being cured
 - Castiel shares his feeling (he loves them as a family) to the Winchesters in S12E12
+- According to an Angel from an Alternate timeline, Lucyfer was killed by Archangel Michael
+- Reaper Billie reveals in S13E05, that Sam and Dean are of great importance to this Universe after she became Death
+- Jack leaves Sam, Dean and Cass in S13E06 after he accidentally killed a person
+- Arthur Ketch comes back in S13E07 (revealed, that he had the same spell as Rowena to bring him back, when dead)
+- In S13E13 Lucyfer becomes the ruler of Heaven and sits in Heaven's throne
+- No Monsters appear in S13E15
+- In S13E16 Sam and Dean end up in Scooby Doo tv series
+- There is a version of Charlie in the Apocalypse timeline (appeared in S13E18)
+- According to Naomi in S13E19 at that time there are 10 or 11 Angels left existing
+- Rowena and Archangel Gabriel flirt and have sex in S13E21
+- Sam is killed by a Vampire in S13E21, but brought back by Lucyfer
+- There is an evil version of Castiel, that looks like Hitler in Apocalypse world present in S13E22 and is killed by Castiel from the main timeline
+- Lucyfer shed a tear in S13E22
+- Dean says "Yes" to Michael from Apocalypse World and becomes the Sword of Michael
 
 # TODO:
 - finish all seasons and episodes.
