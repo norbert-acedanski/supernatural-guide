@@ -124,7 +124,7 @@ class MonsterBase:
                               "S06": [7, 10, 18, 20, 21, 22], "S07": [8, 15, 17, 21, 23],
                               "S08": [1, 2, 7, 10, 17, 19, 21, 22], "S09": [2, 10, 11, 14, 16, 17, 21, 23],
                               "S10": [1, 2, 3, 7, 9, 10, 13, 16, 17, 21], "S11": [1, 3, 6, 9, 10, 14, 15, 18, 22],
-                              "S12": [1, 12, 15, 17, 21], "S13": [2, 7, 8, 12, 13, 17, 18]})
+                              "S12": [1, 12, 15, 17, 21], "S13": [2, 7, 8, 12, 13, 17, 18], "S14": [1]})
     demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                    MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                    MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -292,7 +292,7 @@ class MonsterBase:
                                              "blood. Upon changing, all senses sharpen.",
                       episodes={"S01": [20], "S02": [3], "S03": [7], "S05": [3], "S06": [5, 19], "S07": [22],
                                 "S08": [1, 2, 5, 7, 9, 10, 18, 19], "S09": [2, 16, 19, 20], "S10": [8, 19, 23],
-                                "S11": [12], "S12": [1, 9, 14], "S13": [11, 21]})
+                                "S11": [12], "S12": [1, 9, 14], "S13": [11, 21], "S14": [1]})
     vampire.clues = [MonstersClues.ripped_throat, MonstersClues.no_blood_in_the_body, MonstersClues.needle_like_teeth,
                      MonstersClues.moving_in_groups_usually, MonstersClues.invulnerable, MonstersClues.high_strength,
                      MonstersClues.bright_eyes, MonstersClues.great_sense_of_smell, MonstersClues.white_skin,
@@ -625,7 +625,7 @@ class MonsterBase:
                               "S10": [1, 2, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22, 23],
                               "S11": [1, 2, 3, 6, 9, 10, 14, 18, 22, 23],
                               "S12": [1, 2, 3, 7, 8, 9, 10, 12, 13, 15, 19, 23],
-                              "S13": [1, 2, 3, 4, 5, 6, 7, 9, 12, 13, 14, 16, 18, 19, 21, 22, 23]})
+                              "S13": [1, 2, 3, 4, 5, 6, 7, 9, 12, 13, 14, 16, 18, 19, 21, 22, 23], "S14": [1]})
     angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                    MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion, MonstersClues.has_wings,
                    MonstersClues.leaves_burned_marks, MonstersClues.can_tell_if_somebody_was_recently_healed,
@@ -822,12 +822,13 @@ class MonsterBase:
                                                                    "sword (Sword of Archangel Michael). Can kill other "
                                                                    "angels with a touch. Another Michael exists in "
                                                                    "alternate timeline.",
-                                episodes={"S05": [13, 18, 22], "S13": [2, 7, 14, 22, 23]})
+                                episodes={"S05": [13, 18, 22], "S13": [2, 7, 14, 22, 23], "S14": [1]})
     archangel_michael.clues = [MonstersClues.can_put_a_person_to_sleep, MonstersClues.can_erase_and_bring_back_memories,
                                MonstersClues.can_send_people_back_to_their_time, MonstersClues.can_repair_human_body,
                                MonstersClues.can_kill_angels_with_a_touch, MonstersClues.falling_meteor,
                                MonstersClues.can_go_and_put_into_a_persons_mind, MonstersClues.flashing_lights,
-                               MonstersClues.small_earth_quake,
+                               MonstersClues.small_earth_quake, MonstersClues.can_sense_number_of_angels_in_the_world,
+                               MonstersClues.telekinesis,
 
                                MonstersClues.travels_as_white_fog]
     archangel_michael.disable_methods = [MonstersDisableMethods.holy_oil,
@@ -1455,7 +1456,7 @@ class MonsterBase:
                                                "is born. Nephilim born from an Archangel is unaffected by Angel blade. "
                                                "A Nephilim becomes more powerful, than the angel, that sired him. "
                                                "Nephilim with the power level of Jack can talk to beings in Empty.",
-                       episodes={"S08": [22], "S12": [23], "S13": [1, 2, 3, 4, 6, 9, 14, 20, 21, 22, 23]})
+                       episodes={"S08": [22], "S12": [23], "S13": [1, 2, 3, 4, 6, 9, 14, 20, 21, 22, 23], "S14": [1]})
     nephilim.clues = [MonstersClues.can_see_real_appearance_of_entities, MonstersClues.high_strength,
                       MonstersClues.bright_eyes, MonstersClues.bible_burns_it, MonstersClues.weird_weather,
                       MonstersClues.biblical_like_events, MonstersClues.flashing_lights, MonstersClues.grows_fast,
@@ -1884,12 +1885,12 @@ class MonsterBase:
     sleipnir.clues = [MonstersClues.immortal, MonstersClues.astral_projection]
     sleipnir.kill_methods = [MonstersKillMethods.gabriel_sword]
 
-    unknown = Monster("Unknown", description="", episodes={"S13": [23]})
-    unknown.clues = []
-
     # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
 
     # ---------------------------------------------------- SEASON 14 ---------------------------------------------------
+
+    unknown = Monster("Unknown", description="", episodes={"S14": [1]})
+    unknown.clues = []
 
     # ---------------------------------------------------- SEASON 15 ---------------------------------------------------
 
