@@ -463,15 +463,21 @@ class MonsterBase:
                                        "They poison people, who see nightmares or paradise of theirs. The poison is "
                                        "transferred by touch. It can be cured. Not all Jinn look different than "
                                        "humans, some look just like regular people. There is an offshoot of jinn, "
-                                       "that liquefies the organs of the victims. "
-                                       "It can be killed like a regular jinn.",
-                   episodes={"S02": [20], "S06": [1], "S08": [20], "S09": [20]})
+                                       "that liquefies the organs of the victims. It can be killed like a regular "
+                                       "jinn. A jinn can be upgraded with Archangel Blood. After the upgrade, it reads "
+                                       "minds, sees nightmares after just one touch and can bring those nightmares "
+                                       "into the world, that turn to dust, when killed. After the upgrade bullets are "
+                                       "less affective.",
+                   episodes={"S02": [20], "S06": [1], "S08": [20], "S09": [20], "S14": [5]})
     jinn.clues = [MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                   MonstersClues.blue_eyes, MonstersClues.can_put_a_person_in_wonderland, MonstersClues.feeds_on_blood,
                   MonstersClues.blue_fire_on_its_arms, MonstersClues.poisoned_people, MonstersClues.people_dead_weirdly,
                   MonstersClues.seen_as_human_when_not_feeding, MonstersClues.people_seeing_strange_things,
                   MonstersClues.liquefied_organs, MonstersClues.no_black_goo, MonstersClues.can_appear_out_of_thin_air,
-                  MonstersClues.leaves_blue_handprint, MonstersClues.no_burn_marks, MonstersClues.deep_voice]
+                  MonstersClues.leaves_blue_handprint, MonstersClues.no_burn_marks, MonstersClues.deep_voice,
+                  MonstersClues.being_at_two_places_at_once, MonstersClues.people_seeing_things_or_figures,
+                  MonstersClues.people_seeing_strange_things]
+    jinn.disable_methods = [MonstersDisableMethods.gun_shot]
     jinn.kill_methods = [MonstersKillMethods.silver_knife_dipped_in_lambs_blood]
 
     acheri = Monster("Acheri", description="Demon, that disguises itself as a little girl.", episodes={"S02": [21]})
@@ -1898,9 +1904,9 @@ class MonsterBase:
 
     # ---------------------------------------------------- SEASON 14 ---------------------------------------------------
 
-    unknown = Monster("Unknown", description="", episodes={"S14": [4]})
-    unknown.clues = [MonstersClues.weird_things_behavior, MonstersClues.invisible_entity, MonstersClues.cold_spots,
-                     MonstersClues.emf]
+    unknown = Monster("Unknown", description="", episodes={"S14": [5]})
+    unknown.clues = [MonstersClues.no_bite_marks, MonstersClues.holy_water_does_not_affect_it,
+                     MonstersClues.being_at_two_places_at_once]
 
     # ---------------------------------------------------- SEASON 15 ---------------------------------------------------
 
