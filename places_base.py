@@ -62,8 +62,8 @@ class PlacesBase:
                                        "demons go to when they die. THE God has no power there. According to Empty "
                                        "(being), before GOD and Amara there was nothing but Empty. When Angel or a "
                                        "Demon comes here, they sleep peacefully forever. Castiel is the first being, "
-                                       "that became awake.",
-                  episodes={"S13": [3, 4]})
+                                       "that became awake, Lucyfer is the second in S14E07.",
+                  episodes={"S13": [3, 4], "S14": [7]})
     empty.clues = [PlaceClues.dark_place]
 
     def __init__(self):
