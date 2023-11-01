@@ -131,7 +131,7 @@ class ObjectsBase:
     sword_of_archangel_michael = Object("Sword of Archangel Michael", description="A vessel, that Archangel Michael "
                                                                                   "possesses - a very special person, "
                                                                                   "that can hold archangels power.",
-                                        episodes={"S05": [1], "S13": [23], "S14": [1]})
+                                        episodes={"S05": [1], "S13": [23], "S14": [1, 2, 3]})
 
     enochian_sigil = Object("Enochian Sigil", description="Hides from every angel in creation (archangels included).",
                             episodes={"S05": [1, 2]})
