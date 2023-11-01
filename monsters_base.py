@@ -322,10 +322,13 @@ class MonsterBase:
                       MonstersClues.cannot_enter_a_home_without_invitation]
     rakshasa.kill_methods = [MonstersKillMethods.dagger_made_of_pure_brass]
 
-    resurrected_person = Monster("Resurrected person", description="Brought back from the dead by ancient "
-                                                                   "Greek necromancy ritual.", episodes={"S02": [4]})
-    resurrected_person.clues = [MonstersClues.people_dead_weirdly, MonstersClues.missing_body,
-                                MonstersClues.weird_plant_deaths_or_behavior, MonstersClues.invulnerable]
+    resurrected_person = Monster("Resurrected person",
+                                 description="Brought back from the dead by ancient Greek necromancy ritual. Has to "
+                                             "eat people to stay 'alive'", episodes={"S02": [4], "S14": [6]})
+    resurrected_person.clues = [MonstersClues.invulnerable, MonstersClues.missing_body, MonstersClues.ripped_throat,
+                                MonstersClues.weird_plant_deaths_or_behavior, MonstersClues.people_dead_weirdly,
+                                MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area]
+    resurrected_person.disable_methods = [MonstersDisableMethods.silver_or_silver_bullets]
     resurrected_person.kill_methods = [MonstersKillMethods.nail_it_back_to_the_grave]
 
     death_omen = Monster("Death omen", description="A spirit, that appears, when somebody will die soon.",
@@ -545,7 +548,7 @@ class MonsterBase:
                                          "Lucyfer. Back in S13E12.",
                     episodes={"S03": [9], "S04": [7, 12], "S05": [7, 12], "S07": [5], "S08": [7, 15],
                               "S10": [3, 7, 9, 10, 13, 16, 17, 18, 19, 21, 22, 23], "S11": [3, 9, 10, 13, 18, 22, 23],
-                              "S12": [2, 3, 8, 11, 13, 20], "S13": [7, 12, 19, 21, 22], "S14": [3]})
+                              "S12": [2, 3, 8, 11, 13, 20], "S13": [7, 12, 19, 21, 22], "S14": [3, 6]})
     witch.clues = [MonstersClues.people_dead_weirdly, MonstersClues.hex_bag_hidden_somewhere, MonstersClues.immortal,
                    MonstersClues.coin_hidden_somewhere, MonstersClues.weird_electronics_behavior,
                    MonstersClues.telekinesis, MonstersClues.can_vanish, MonstersClues.weird_plant_deaths_or_behavior,
@@ -1471,7 +1474,7 @@ class MonsterBase:
                                                "and allowing the Grace to escape. After that it can take from a month "
                                                "to a century for the Grace to regenerate.",
                        episodes={"S08": [22], "S12": [23], "S13": [1, 2, 3, 4, 6, 9, 14, 20, 21, 22, 23],
-                                 "S14": [1, 2, 3]})
+                                 "S14": [1, 2, 3, 6]})
     nephilim.clues = [MonstersClues.can_see_real_appearance_of_entities, MonstersClues.high_strength,
                       MonstersClues.bright_eyes, MonstersClues.bible_burns_it, MonstersClues.weird_weather,
                       MonstersClues.biblical_like_events, MonstersClues.flashing_lights, MonstersClues.grows_fast,
@@ -1904,9 +1907,19 @@ class MonsterBase:
 
     # ---------------------------------------------------- SEASON 14 ---------------------------------------------------
 
-    unknown = Monster("Unknown", description="", episodes={"S14": [5]})
-    unknown.clues = [MonstersClues.no_bite_marks, MonstersClues.holy_water_does_not_affect_it,
-                     MonstersClues.being_at_two_places_at_once]
+    musca = Monster("Musca", description="A hybrid between a man and a fly. A lot of stories about them exist, but no "
+                                         "one has ever seen one in real life. Every few hundred years there's a "
+                                         "'bad egg'. When a male fails to find a mate, he abandons his community and "
+                                         "starts using people's bodies to nest, biding them together with a viscous "
+                                         "goo.", episodes={"S14": [6]})
+    musca.clues = [MonstersClues.people_dead_weirdly, MonstersClues.bite_marks, MonstersClues.green_ectoplasm,
+                   MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
+                   MonstersClues.lots_of_flies, MonstersClues.fly_man, MonstersClues.human_like_creature]
+    musca.kill_methods = [MonstersKillMethods.brass_nail_dipped_in_sugar_water, MonstersKillMethods.head_shot]
+
+    unknown = Monster("Unknown", description="", episodes={"S14": [6]})
+    unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.bite_marks, MonstersClues.green_ectoplasm,
+                     MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area]
 
     # ---------------------------------------------------- SEASON 15 ---------------------------------------------------
 

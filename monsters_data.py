@@ -244,6 +244,7 @@ class MonstersClues:
     bible_burns_it = "Bible burns it"
     invisible_dogs = "invisible dogs"
     goat_man = "goat-man"
+    fly_man = "fly-man"
     coin_hidden_somewhere = "coin hidden somewhere"
     hex_bag_hidden_somewhere = "hex bag hidden somewhere"
     no_hex_bags = "no hex bags"
@@ -434,6 +435,7 @@ class MonstersClues:
     red_sun = "red sun"
     tentacles = "tentacles"
     astral_projection = "astral projection"
+    lots_of_flies = "lots of flies"
 
 
 class MonstersKillMethods:
@@ -497,6 +499,7 @@ class MonstersKillMethods:
     make_a_story_that_it_will_unite_with_and_weaken = "make a story that it will unite with and weaken because of it"
     consecrated_wrought_iron_when_it_eats = "consecrated wrought iron when it eats"
     dagger_made_of_pure_brass = "dagger made of pure brass"
+    brass_nail_dipped_in_sugar_water = "brass nail dipped in sugar water"
     nail_it_back_to_the_grave = "nail it back to the grave"
     aspen_pin = "aspen pin"
     evergreen_pin = "evergreen pin"
