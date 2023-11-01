@@ -56,7 +56,7 @@ class MonsterBase:
                               episodes={"S01": [1, 3, 5, 7, 9, 10, 13, 19], "S02": [6, 11, 16, 18, 19],
                                         "S03": [5, 6, 13], "S04": [2, 13, 15, 17], "S05": [9, 11], "S06": [4, 14],
                                         "S07": [7, 10, 13, 17, 19], "S09": [7], "S10": [13, 16], "S11": [7, 23],
-                                        "S12": [3, 6, 13], "S13": [5, 16]})
+                                        "S12": [3, 6, 13], "S13": [5, 16], "S14": [4]})
     vengeful_spirit.clues = [MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                              MonstersClues.people_dead_weirdly, MonstersClues.ghost_like_creature,
                              MonstersClues.weird_electronics_behavior, MonstersClues.weird_things_behavior,
@@ -1898,8 +1898,9 @@ class MonsterBase:
 
     # ---------------------------------------------------- SEASON 14 ---------------------------------------------------
 
-    unknown = Monster("Unknown", description="", episodes={"S14": [3]})
-    unknown.clues = []
+    unknown = Monster("Unknown", description="", episodes={"S14": [4]})
+    unknown.clues = [MonstersClues.weird_things_behavior, MonstersClues.invisible_entity, MonstersClues.cold_spots,
+                     MonstersClues.emf]
 
     # ---------------------------------------------------- SEASON 15 ---------------------------------------------------
 
