@@ -548,7 +548,7 @@ class MonsterBase:
                                          "Lucyfer. Back in S13E12.",
                     episodes={"S03": [9], "S04": [7, 12], "S05": [7, 12], "S07": [5], "S08": [7, 15],
                               "S10": [3, 7, 9, 10, 13, 16, 17, 18, 19, 21, 22, 23], "S11": [3, 9, 10, 13, 18, 22, 23],
-                              "S12": [2, 3, 8, 11, 13, 20], "S13": [7, 12, 19, 21, 22], "S14": [3, 6]})
+                              "S12": [2, 3, 8, 11, 13, 20], "S13": [7, 12, 19, 21, 22], "S14": [3, 6, 7]})
     witch.clues = [MonstersClues.people_dead_weirdly, MonstersClues.hex_bag_hidden_somewhere, MonstersClues.immortal,
                    MonstersClues.coin_hidden_somewhere, MonstersClues.weird_electronics_behavior,
                    MonstersClues.telekinesis, MonstersClues.can_vanish, MonstersClues.weird_plant_deaths_or_behavior,
@@ -638,7 +638,7 @@ class MonsterBase:
                               "S10": [1, 2, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22, 23],
                               "S11": [1, 2, 3, 6, 9, 10, 14, 18, 22, 23],
                               "S12": [1, 2, 3, 7, 8, 9, 10, 12, 13, 15, 19, 23],
-                              "S13": [1, 2, 3, 4, 5, 6, 7, 9, 12, 13, 14, 16, 18, 19, 21, 22, 23], "S14": [1, 2, 3]})
+                              "S13": [1, 2, 3, 4, 5, 6, 7, 9, 12, 13, 14, 16, 18, 19, 21, 22, 23], "S14": [1, 2, 3, 7]})
     angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                    MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion, MonstersClues.has_wings,
                    MonstersClues.leaves_burned_marks, MonstersClues.can_tell_if_somebody_was_recently_healed,
@@ -791,11 +791,12 @@ class MonsterBase:
                                                                    "Trapped in Apocalypse World in S13E22, but back in "
                                                                    "S13E23. Can consume Nephilim Grace and be more "
                                                                    "powerful. With that power he can kill Archangels "
-                                                                   "with hand on forehead. Killed by Dean in S13E23.",
+                                                                   "with hand on forehead. Killed by Dean in S13E23. "
+                                                                   "Seen again in Empty in S14E07.",
                                 episodes={"S04": [22], "S05": [1, 3, 4, 10, 19, 22], "S07": [1, 2, 15, 17],
                                           "S11": [9, 10, 11, 14, 15, 18, 21, 22],
                                           "S12": [2, 3, 7, 8, 12, 13, 15, 17, 19, 21, 23],
-                                          "S13": [1, 2, 7, 12, 13, 18, 21, 22, 23]})
+                                          "S13": [1, 2, 7, 12, 13, 18, 21, 22, 23], "S14": [7]})
     archangel_lucyfer.clues = [MonstersClues.weird_things_behavior, MonstersClues.true_voice_can_hurt_people,
                                MonstersClues.bright_light, MonstersClues.weird_weather, MonstersClues.visions,
                                MonstersClues.people_seeing_strange_things, MonstersClues.biblical_like_events,
@@ -1474,7 +1475,7 @@ class MonsterBase:
                                                "and allowing the Grace to escape. After that it can take from a month "
                                                "to a century for the Grace to regenerate.",
                        episodes={"S08": [22], "S12": [23], "S13": [1, 2, 3, 4, 6, 9, 14, 20, 21, 22, 23],
-                                 "S14": [1, 2, 3, 6]})
+                                 "S14": [1, 2, 3, 6, 7]})
     nephilim.clues = [MonstersClues.can_see_real_appearance_of_entities, MonstersClues.high_strength,
                       MonstersClues.bright_eyes, MonstersClues.bible_burns_it, MonstersClues.weird_weather,
                       MonstersClues.biblical_like_events, MonstersClues.flashing_lights, MonstersClues.grows_fast,
@@ -1917,9 +1918,8 @@ class MonsterBase:
                    MonstersClues.lots_of_flies, MonstersClues.fly_man, MonstersClues.human_like_creature]
     musca.kill_methods = [MonstersKillMethods.brass_nail_dipped_in_sugar_water, MonstersKillMethods.head_shot]
 
-    unknown = Monster("Unknown", description="", episodes={"S14": [6]})
-    unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.bite_marks, MonstersClues.green_ectoplasm,
-                     MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area]
+    unknown = Monster("Unknown", description="", episodes={"S14": [7]})
+    unknown.clues = []
 
     # ---------------------------------------------------- SEASON 15 ---------------------------------------------------
 
