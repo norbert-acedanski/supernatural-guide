@@ -539,7 +539,7 @@ class MonsterBase:
                                          "Lucyfer. Back in S13E12.",
                     episodes={"S03": [9], "S04": [7, 12], "S05": [7, 12], "S07": [5], "S08": [7, 15],
                               "S10": [3, 7, 9, 10, 13, 16, 17, 18, 19, 21, 22, 23], "S11": [3, 9, 10, 13, 18, 22, 23],
-                              "S12": [2, 3, 8, 11, 13, 20], "S13": [7, 12, 19, 21, 22]})
+                              "S12": [2, 3, 8, 11, 13, 20], "S13": [7, 12, 19, 21, 22], "S14": [3]})
     witch.clues = [MonstersClues.people_dead_weirdly, MonstersClues.hex_bag_hidden_somewhere, MonstersClues.immortal,
                    MonstersClues.coin_hidden_somewhere, MonstersClues.weird_electronics_behavior,
                    MonstersClues.telekinesis, MonstersClues.can_vanish, MonstersClues.weird_plant_deaths_or_behavior,
