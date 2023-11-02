@@ -69,6 +69,8 @@ If you are a fan of Supernatural show, you can play with this project to find ou
 - There is an evil version of Castiel, that looks like Hitler in Apocalypse world present in S13E22 and is killed by Castiel from the main timeline
 - Lucyfer shed a tear in S13E22
 - Dean says "Yes" to Michael from Apocalypse World and becomes the Sword of Michael in S13E23
+- Jack and Kelly meet for the first time in Heaven in S14E08
+- Castiel exchanges his life for Jacks for the Empty in S14E08
 
 # TODO:
 - finish all seasons and episodes.
