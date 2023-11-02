@@ -638,7 +638,8 @@ class MonsterBase:
                               "S10": [1, 2, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22, 23],
                               "S11": [1, 2, 3, 6, 9, 10, 14, 18, 22, 23],
                               "S12": [1, 2, 3, 7, 8, 9, 10, 12, 13, 15, 19, 23],
-                              "S13": [1, 2, 3, 4, 5, 6, 7, 9, 12, 13, 14, 16, 18, 19, 21, 22, 23], "S14": [1, 2, 3, 7]})
+                              "S13": [1, 2, 3, 4, 5, 6, 7, 9, 12, 13, 14, 16, 18, 19, 21, 22, 23],
+                              "S14": [1, 2, 3, 7, 8]})
     angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                    MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion, MonstersClues.has_wings,
                    MonstersClues.leaves_burned_marks, MonstersClues.can_tell_if_somebody_was_recently_healed,
@@ -1468,14 +1469,14 @@ class MonsterBase:
                                                "grow (only about 5). Nephilim does not allow its mother to die and can "
                                                "boost angelic powers. Power of a Nephilim can tear spacetime and open "
                                                "a portal to an alternate timeline. In S12E23 Jack (the son of Lucyfer) "
-                                               "is born. Nephilim born from an Archangel is unaffected by Angel blade. "
-                                               "A Nephilim becomes more powerful, than the angel, that sired him. "
-                                               "Nephilim with the power level of Jack can talk to beings in Empty. "
-                                               "A Nephilim can have part of his Grace removed by cutting his throat "
-                                               "and allowing the Grace to escape. After that it can take from a month "
-                                               "to a century for the Grace to regenerate.",
+                                               "is born. Dies in S14E08. Nephilim born from an Archangel is unaffected "
+                                               "by Angel blade. A Nephilim becomes more powerful, than the angel, that "
+                                               "sired him. Nephilim with the power level of Jack can talk to beings in "
+                                               "Empty. A Nephilim can have part of his Grace removed by cutting his "
+                                               "throat and allowing the Grace to escape. After that it can take from "
+                                               "a month to a century for the Grace to regenerate.",
                        episodes={"S08": [22], "S12": [23], "S13": [1, 2, 3, 4, 6, 9, 14, 20, 21, 22, 23],
-                                 "S14": [1, 2, 3, 6, 7]})
+                                 "S14": [1, 2, 3, 6, 7, 8]})
     nephilim.clues = [MonstersClues.can_see_real_appearance_of_entities, MonstersClues.high_strength,
                       MonstersClues.bright_eyes, MonstersClues.bible_burns_it, MonstersClues.weird_weather,
                       MonstersClues.biblical_like_events, MonstersClues.flashing_lights, MonstersClues.grows_fast,
@@ -1857,8 +1858,10 @@ class MonsterBase:
                       MonstersClues.missing_body]
 
     empty = Monster("Empty", description="A cosmic being (and a place) that angels and demons go to when they die. "
-                                         "THE God has no power there.", episodes={"S13": [4]})
-    empty.clues = [MonstersClues.can_make_themselves_appear_as_they_like, MonstersClues.can_read_peoples_minds]
+                                         "THE God has no power there.", episodes={"S13": [4], "S14": [8]})
+    empty.clues = [MonstersClues.can_make_themselves_appear_as_they_like, MonstersClues.can_read_peoples_minds,
+                   MonstersClues.telekinesis, MonstersClues.high_strength, MonstersClues.can_posses_an_angel,
+                   MonstersClues.black_goo]
 
     dream_walker = Monster("Dream walker", description="A person, that can travel to different worlds with his/her "
                                                        "mind in a dream or by special trans. Kaia is killed in S13E10 "
@@ -1918,7 +1921,16 @@ class MonsterBase:
                    MonstersClues.lots_of_flies, MonstersClues.fly_man, MonstersClues.human_like_creature]
     musca.kill_methods = [MonstersKillMethods.brass_nail_dipped_in_sugar_water, MonstersKillMethods.head_shot]
 
-    unknown = Monster("Unknown", description="", episodes={"S14": [7]})
+    anubis = Monster("Anubis", description="Guardian of the Dead. Ancient Egyptians believed, that when you die, "
+                                           "Anubis would weigh your heart on his scale against justice's feather. His "
+                                           "father is Osiris. Anubis works with Heaven. WHen GOD left, Heaven needed "
+                                           "a new judge and Anubis was the choice. Can be summoned with a proper spell.",
+                     episodes={"S14": [8]})
+    anubis.clues = [MonstersClues.human_like_creature, MonstersClues.can_appear_out_of_thin_air,
+                    MonstersClues.can_vanish]
+    anubis.disable_methods = [MonstersDisableMethods.palm_oil]
+
+    unknown = Monster("Unknown", description="", episodes={"S14": [8]})
     unknown.clues = []
 
     # ---------------------------------------------------- SEASON 15 ---------------------------------------------------

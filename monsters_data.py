@@ -557,6 +557,7 @@ class MonstersDisableMethods:
     finish_its_unfinished_business = "finish its unfinished business"
     symbols_of_anasazi = "symbols of anasazi - can't cross it"
     holy_oil = "holy oil - can't cross it"
+    palm_oil = "palm oil - can't cross it"
     dead_mans_blood = "dead mans blood"
     decapitation = "decapitation"
     cage_of_lucyfer_in_hell = "cage of Lucyfer in hell"
