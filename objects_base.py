@@ -113,7 +113,7 @@ class ObjectsBase:
                                    "S10": [1, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22],
                                    "S11": [1, 2, 3, 6, 9, 10, 11, 15, 18, 22, 23],
                                    "S12": [1, 3, 6, 7, 9, 10, 12, 13, 15, 17, 19, 21, 23],
-                                   "S13": [1, 7, 8, 9, 10, 13, 14, 18, 19, 21, 22, 23], "S14": [1, 5, 8]})
+                                   "S13": [1, 7, 8, 9, 10, 13, 14, 18, 19, 21, 22, 23], "S14": [1, 5, 8, 9]})
     angel_blade.abilities = [ObjectAbilities.can_kill_angels, ObjectAbilities.can_kill_demons,
                              ObjectAbilities.can_kill_reapers, ObjectAbilities.cannot_kill_knights_of_hell,
                              ObjectAbilities.cannot_kill_archangels, ObjectAbilities.can_kill_werewolfs]
@@ -131,7 +131,7 @@ class ObjectsBase:
     sword_of_archangel_michael = Object("Sword of Archangel Michael", description="A vessel, that Archangel Michael "
                                                                                   "possesses - a very special person, "
                                                                                   "that can hold archangels power.",
-                                        episodes={"S05": [1], "S13": [23], "S14": [1, 2, 3]})
+                                        episodes={"S05": [1], "S13": [23], "S14": [1, 2, 3, 9]})
 
     enochian_sigil = Object("Enochian Sigil", description="Hides from every angel in creation (archangels included).",
                             episodes={"S05": [1, 2]})
@@ -408,8 +408,9 @@ class ObjectsBase:
 
     hyperbolic_pulse_generator = Object("Hyperbolic Pulse Generator",
                                         description="It emits a force, which drives the possessing being from the "
-                                                    "vessel. In order to use it, a spell has to be spoken.",
-                                        episodes={"S12": [8]})
+                                                    "vessel. In order to use it, a spell has to be spoken. It is "
+                                                    "destroyed in S14E09 by Archangel Michael.",
+                                        episodes={"S12": [8], "S14": [9]})
     hyperbolic_pulse_generator.abilities = [ObjectAbilities.removes_demon_from_its_vessel,
                                             ObjectAbilities.removes_archangel_from_its_vessel]
 
@@ -428,6 +429,12 @@ class ObjectsBase:
     # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
 
     # SEASON 14:
+
+    # TODO: Find the episode, that the spear appears first
+    bad_place_spear = Object("Bad Place Spear", description="Spear, that belongs to Kaia from the Bad Place Alternate "
+                                                            "Timeline. It is broken by Archangel Michael in S14E09.",
+                             episodes={"S14": [3, 9]})
+    bad_place_spear.abilities = [ObjectAbilities.can_hurt_archangels]
 
     # SEASON 15:
 
