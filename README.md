@@ -71,6 +71,7 @@ If you are a fan of Supernatural show, you can play with this project to find ou
 - Dean says "Yes" to Michael from Apocalypse World and becomes the Sword of Michael in S13E23
 - Jack and Kelly meet for the first time in Heaven in S14E08
 - Castiel exchanges his life for Jacks for the Empty in S14E08
+- Garth appears back in S14E09
 
 # TODO:
 - finish all seasons and episodes.
