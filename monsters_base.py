@@ -447,7 +447,7 @@ class MonsterBase:
                                                "Archangel blood (from S14E02) to be immune to silver. Only "
                                                "decapitation is effective on them then.",
                        episodes={"S02": [17], "S08": [4], "S09": [12, 20], "S10": [4], "S11": [17], "S12": [6, 16],
-                                 "S13": [10, 11, 23], "S14": [2]})
+                                 "S13": [10, 11, 23], "S14": [2, 9]})
     werewolf.clues = [MonstersClues.body_torn_apart, MonstersClues.animal_like_attack, MonstersClues.missing_heart,
                       MonstersClues.murders_during_full_moon_week, MonstersClues.claws, MonstersClues.attacks_at_night,
                       MonstersClues.animal_like_noises, MonstersClues.amnesia_blackout, MonstersClues.high_strength,
@@ -639,7 +639,7 @@ class MonsterBase:
                               "S11": [1, 2, 3, 6, 9, 10, 14, 18, 22, 23],
                               "S12": [1, 2, 3, 7, 8, 9, 10, 12, 13, 15, 19, 23],
                               "S13": [1, 2, 3, 4, 5, 6, 7, 9, 12, 13, 14, 16, 18, 19, 21, 22, 23],
-                              "S14": [1, 2, 3, 7, 8]})
+                              "S14": [1, 2, 3, 7, 8, 9]})
     angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                    MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion, MonstersClues.has_wings,
                    MonstersClues.leaves_burned_marks, MonstersClues.can_tell_if_somebody_was_recently_healed,
@@ -837,7 +837,7 @@ class MonsterBase:
                                                                    "sword (Sword of Archangel Michael). Can kill other "
                                                                    "angels with a touch. Another Michael exists in "
                                                                    "alternate timeline.",
-                                episodes={"S05": [13, 18, 22], "S13": [2, 7, 14, 22, 23], "S14": [1, 2, 3]})
+                                episodes={"S05": [13, 18, 22], "S13": [2, 7, 14, 22, 23], "S14": [1, 2, 3, 9]})
     archangel_michael.clues = [MonstersClues.can_put_a_person_to_sleep, MonstersClues.can_erase_and_bring_back_memories,
                                MonstersClues.can_send_people_back_to_their_time, MonstersClues.can_repair_human_body,
                                MonstersClues.can_kill_angels_with_a_touch, MonstersClues.falling_meteor,
@@ -845,6 +845,7 @@ class MonsterBase:
                                MonstersClues.small_earth_quake, MonstersClues.can_sense_number_of_angels_in_the_world,
                                MonstersClues.telekinesis, MonstersClues.burned_eyes, MonstersClues.people_dead_weirdly,
                                MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
+                               MonstersClues.has_wings,
 
                                MonstersClues.travels_as_white_fog]
     archangel_michael.disable_methods = [MonstersDisableMethods.holy_oil, MonstersDisableMethods.bad_place_spear,
@@ -1476,7 +1477,7 @@ class MonsterBase:
                                                "throat and allowing the Grace to escape. After that it can take from "
                                                "a month to a century for the Grace to regenerate.",
                        episodes={"S08": [22], "S12": [23], "S13": [1, 2, 3, 4, 6, 9, 14, 20, 21, 22, 23],
-                                 "S14": [1, 2, 3, 6, 7, 8]})
+                                 "S14": [1, 2, 3, 6, 7, 8, 9]})
     nephilim.clues = [MonstersClues.can_see_real_appearance_of_entities, MonstersClues.high_strength,
                       MonstersClues.bright_eyes, MonstersClues.bible_burns_it, MonstersClues.weird_weather,
                       MonstersClues.biblical_like_events, MonstersClues.flashing_lights, MonstersClues.grows_fast,
@@ -1930,7 +1931,7 @@ class MonsterBase:
                     MonstersClues.can_vanish]
     anubis.disable_methods = [MonstersDisableMethods.palm_oil]
 
-    unknown = Monster("Unknown", description="", episodes={"S14": [8]})
+    unknown = Monster("Unknown", description="", episodes={"S14": [9]})
     unknown.clues = []
 
     # ---------------------------------------------------- SEASON 15 ---------------------------------------------------
