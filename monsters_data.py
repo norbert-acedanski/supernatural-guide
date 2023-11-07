@@ -619,6 +619,7 @@ class MonstersDisableMethods:
     lucifers_spear = "Lucifer's spear"
     bad_place_spear = "Bad place spear (brought by Kaia)"
     lance_of_archangel_michael = "lance of Archangel Michael"
+    sword_of_michael_mind = "Sword of Michael's mind"
 
 
 class MonstersCureMethods:
