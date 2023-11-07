@@ -72,6 +72,8 @@ If you are a fan of Supernatural show, you can play with this project to find ou
 - Jack and Kelly meet for the first time in Heaven in S14E08
 - Castiel exchanges his life for Jacks for the Empty in S14E08
 - Garth appears back in S14E09
+- Michael is trapped in Dean's mind in S14E10
+- Billie shows Dean in S14E10 the only way Dean dies, that does not involve Michael escaping his mind
 
 # TODO:
 - finish all seasons and episodes.
