@@ -113,7 +113,7 @@ class ObjectsBase:
                                    "S10": [1, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22],
                                    "S11": [1, 2, 3, 6, 9, 10, 11, 15, 18, 22, 23],
                                    "S12": [1, 3, 6, 7, 9, 10, 12, 13, 15, 17, 19, 21, 23],
-                                   "S13": [1, 7, 8, 9, 10, 13, 14, 18, 19, 21, 22, 23], "S14": [1, 5, 8, 9, 10]})
+                                   "S13": [1, 7, 8, 9, 10, 13, 14, 18, 19, 21, 22, 23], "S14": [1, 5, 8, 9, 10, 11]})
     angel_blade.abilities = [ObjectAbilities.can_kill_angels, ObjectAbilities.can_kill_demons,
                              ObjectAbilities.can_kill_reapers, ObjectAbilities.cannot_kill_knights_of_hell,
                              ObjectAbilities.cannot_kill_archangels, ObjectAbilities.can_kill_werewolfs]
@@ -435,6 +435,10 @@ class ObjectsBase:
                                                             "Timeline. It is broken by Archangel Michael in S14E09.",
                              episodes={"S14": [3, 9]})
     bad_place_spear.abilities = [ObjectAbilities.can_hurt_archangels]
+
+    ma_lak_box = Object("Ma'lak Box", description="A coffin-like box, that can trap anything. The recipe is handed to "
+                                                  "Dean by Billie (Reaper) in S14E10.", episodes={"S14": [11]})
+    ma_lak_box.abilities = [ObjectAbilities.traps_an_archangel]
 
     # SEASON 15:
 
