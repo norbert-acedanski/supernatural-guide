@@ -124,7 +124,7 @@ class MonsterBase:
                               "S06": [7, 10, 18, 20, 21, 22], "S07": [8, 15, 17, 21, 23],
                               "S08": [1, 2, 7, 10, 17, 19, 21, 22], "S09": [2, 10, 11, 14, 16, 17, 21, 23],
                               "S10": [1, 2, 3, 7, 9, 10, 13, 16, 17, 21], "S11": [1, 3, 6, 9, 10, 14, 15, 18, 22],
-                              "S12": [1, 12, 15, 17, 21], "S13": [2, 7, 8, 12, 13, 17, 18], "S14": [1]})
+                              "S12": [1, 12, 15, 17, 21], "S13": [2, 7, 8, 12, 13, 17, 18], "S14": [1, 11]})
     demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                    MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                    MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -1935,7 +1935,7 @@ class MonsterBase:
                     MonstersClues.can_vanish]
     anubis.disable_methods = [MonstersDisableMethods.palm_oil]
 
-    unknown = Monster("Unknown", description="", episodes={"S14": [10]})
+    unknown = Monster("Unknown", description="", episodes={"S14": [11]})
     unknown.clues = []
 
     # ---------------------------------------------------- SEASON 15 ---------------------------------------------------
