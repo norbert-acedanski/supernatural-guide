@@ -16,7 +16,8 @@ class PlacesBase:
                                            "a spell or an Angel can put you in one. In S12E23 we see a world, where "
                                            "Sam and Dean are never born and this Universe is in a war between in "
                                            "Heaven and Hell. Mary and Lucyfer are trapped in there in S12E23.",
-                               episodes={"S04": [17], "S05": [4], "S06": [15, 17], "S12": [23], "S13": [2, 18, 21, 22]})
+                               episodes={"S04": [17], "S05": [4], "S06": [15, 17], "S12": [23], "S13": [2, 18, 21, 22],
+                                         "S14": [13]})
     alternate_timeline.clues = [PlaceClues.different_history, PlaceClues.different_memories,
                                 PlaceClues.strange_feeling_that_things_should_be_different]
 
