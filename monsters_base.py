@@ -56,7 +56,7 @@ class MonsterBase:
                               episodes={"S01": [1, 3, 5, 7, 9, 10, 13, 19], "S02": [6, 11, 16, 18, 19],
                                         "S03": [5, 6, 13], "S04": [2, 13, 15, 17], "S05": [9, 11], "S06": [4, 14],
                                         "S07": [7, 10, 13, 17, 19], "S09": [7], "S10": [13, 16], "S11": [7, 23],
-                                        "S12": [3, 6, 13], "S13": [5, 16], "S14": [4, 12]})
+                                        "S12": [3, 6, 13], "S13": [5, 16], "S14": [4, 12, 13]})
     vengeful_spirit.clues = [MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                              MonstersClues.people_dead_weirdly, MonstersClues.ghost_like_creature,
                              MonstersClues.weird_electronics_behavior, MonstersClues.weird_things_behavior,
@@ -641,7 +641,7 @@ class MonsterBase:
                               "S11": [1, 2, 3, 6, 9, 10, 14, 18, 22, 23],
                               "S12": [1, 2, 3, 7, 8, 9, 10, 12, 13, 15, 19, 23],
                               "S13": [1, 2, 3, 4, 5, 6, 7, 9, 12, 13, 14, 16, 18, 19, 21, 22, 23],
-                              "S14": [1, 2, 3, 7, 8, 9, 10, 12]})
+                              "S14": [1, 2, 3, 7, 8, 9, 10, 12, 13]})
     angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                    MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion, MonstersClues.has_wings,
                    MonstersClues.leaves_burned_marks, MonstersClues.can_tell_if_somebody_was_recently_healed,
@@ -746,7 +746,7 @@ class MonsterBase:
     angel_zachariah = Monster("Angel Zachariah", description="High Tier Angel. Died in S05E18. Zachariah from the "
                                                              "alternate timeline appears in S13E14 and is killed in "
                                                              "the same episode by Jack.",
-                              episodes={"S04": [17, 18, 22], "S05": [1, 4, 16, 18], "S13": [14]})
+                              episodes={"S04": [17, 18, 22], "S05": [1, 4, 16, 18], "S13": [14], "S14": [13]})
     angel_zachariah.clues = [MonstersClues.can_put_people_into_alternate_timelines, MonstersClues.can_repair_human_body,
                              MonstersClues.can_erase_and_bring_back_memories, MonstersClues.can_appear_out_of_thin_air,
                              MonstersClues.can_vanish, MonstersClues.can_give_people_diseases,
@@ -1937,9 +1937,8 @@ class MonsterBase:
                     MonstersClues.can_vanish]
     anubis.disable_methods = [MonstersDisableMethods.palm_oil]
 
-    unknown = Monster("Unknown", description="", episodes={"S14": [12]})
-    unknown.clues = [MonstersClues.marks_on_victims_bodies, MonstersClues.people_dead_weirdly,
-                     MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area]
+    unknown = Monster("Unknown", description="", episodes={"S14": [13]})
+    unknown.clues = [MonstersClues.cold_spots]
 
     # ---------------------------------------------------- SEASON 15 ---------------------------------------------------
 
