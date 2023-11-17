@@ -84,5 +84,8 @@ If you are a fan of Supernatural show, you can play with this project to find ou
 - add information about all unique monsters, that died in the series until S05E19.
 - add base class not to duplicate methods
 
+# References:
+- https://supernatural.fandom.com/wiki/Supernatural_Wiki
+
 # Licence
 Distributed under the MIT License. See LICENSE file for more information.
