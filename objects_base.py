@@ -437,7 +437,7 @@ class ObjectsBase:
     bad_place_spear.abilities = [ObjectAbilities.can_hurt_archangels]
 
     ma_lak_box = Object("Ma'lak Box", description="A coffin-like box, that can trap anything. The recipe is handed to "
-                                                  "Dean by Billie (Reaper) in S14E10.", episodes={"S14": [11]})
+                                                  "Dean by Billie (Reaper) in S14E10.", episodes={"S14": [11, 12]})
     ma_lak_box.abilities = [ObjectAbilities.traps_an_archangel]
 
     # SEASON 15:
