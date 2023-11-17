@@ -74,6 +74,8 @@ If you are a fan of Supernatural show, you can play with this project to find ou
 - Garth appears back in S14E09
 - Michael is trapped in Dean's mind in S14E10
 - Billie shows Dean in S14E10 the only way Dean dies, that does not involve Michael escaping his mind
+- John Winchester is brought back by Dean through Baozhu (Chinese pearl, that grants wishes)
+- In S14E13 timeline is changed after Dean's wish and is restored in the same episode
 
 # TODO:
 - finish all seasons and episodes.
