@@ -97,6 +97,7 @@ class MonstersClues:
     no_missing_body = "no missing body"
     missing_organs = "missing organs"
     missing_heart = "missing heart"
+    missing_eyes = "missing eyes"
     missing_babies = "missing babies"
     missing_part_of_the_brain = "missing part of the brain"
     missing_attacked_virgin_women = "missing attacked virgin women"
@@ -436,6 +437,7 @@ class MonstersClues:
     tentacles = "tentacles"
     astral_projection = "astral projection"
     lots_of_flies = "lots of flies"
+    paralysis = "paralysis"
 
 
 class MonstersKillMethods:
@@ -449,6 +451,7 @@ class MonstersKillMethods:
                                       "Sword of St. George, Excalibur, Sword of Bruncvik)"
     reaper_blade_combined_with_a_spell = "reaper blade combined with a spell"
     iridium_blade_decapitation = "iridium blade decapitation"
+    silver_blade_decapitation = "silver blade decapitation"
     silver_blade = "silver blade"
     silver_knife_dipped_in_lambs_blood = "silver knife dipped in lambs blood"
     silver_knife_blessed_by_a_priest = "silver knife blessed by a priest"
@@ -620,6 +623,7 @@ class MonstersDisableMethods:
     bad_place_spear = "Bad place spear (brought by Kaia)"
     lance_of_archangel_michael = "lance of Archangel Michael"
     sword_of_michael_mind = "Sword of Michael's mind"
+    gorgon_venom = "Gorgon venom"
 
 
 class MonstersCureMethods:

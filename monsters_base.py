@@ -550,7 +550,7 @@ class MonsterBase:
                                          "Lucyfer. Back in S13E12.",
                     episodes={"S03": [9], "S04": [7, 12], "S05": [7, 12], "S07": [5], "S08": [7, 15],
                               "S10": [3, 7, 9, 10, 13, 16, 17, 18, 19, 21, 22, 23], "S11": [3, 9, 10, 13, 18, 22, 23],
-                              "S12": [2, 3, 8, 11, 13, 20], "S13": [7, 12, 19, 21, 22], "S14": [3, 6, 7]})
+                              "S12": [2, 3, 8, 11, 13, 20], "S13": [7, 12, 19, 21, 22], "S14": [3, 6, 7, 14]})
     witch.clues = [MonstersClues.people_dead_weirdly, MonstersClues.hex_bag_hidden_somewhere, MonstersClues.immortal,
                    MonstersClues.coin_hidden_somewhere, MonstersClues.weird_electronics_behavior,
                    MonstersClues.telekinesis, MonstersClues.can_vanish, MonstersClues.weird_plant_deaths_or_behavior,
@@ -641,7 +641,7 @@ class MonsterBase:
                               "S11": [1, 2, 3, 6, 9, 10, 14, 18, 22, 23],
                               "S12": [1, 2, 3, 7, 8, 9, 10, 12, 13, 15, 19, 23],
                               "S13": [1, 2, 3, 4, 5, 6, 7, 9, 12, 13, 14, 16, 18, 19, 21, 22, 23],
-                              "S14": [1, 2, 3, 7, 8, 9, 10, 12, 13]})
+                              "S14": [1, 2, 3, 7, 8, 9, 10, 12, 13, 14]})
     angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                    MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion, MonstersClues.has_wings,
                    MonstersClues.leaves_burned_marks, MonstersClues.can_tell_if_somebody_was_recently_healed,
@@ -666,7 +666,7 @@ class MonsterBase:
                              MonstersDisableMethods.presence_of_the_mother, MonstersDisableMethods.grace_removal,
                              MonstersDisableMethods.attack_dog_spell, MonstersDisableMethods.angel_blade,
                              MonstersDisableMethods.angel_knuckle_duster, MonstersDisableMethods.enochian_handcuffs,
-                             MonstersDisableMethods.lance_of_archangel_michael]
+                             MonstersDisableMethods.lance_of_archangel_michael, MonstersDisableMethods.gorgon_venom]
     angel.kill_methods = [MonstersKillMethods.angel_blade, MonstersKillMethods.holy_oil,
                           MonstersKillMethods.leviathan_black_goo, MonstersKillMethods.will_of_an_archangel,
                           MonstersKillMethods.will_of_the_darkness, MonstersKillMethods.lance_of_archangel_michael,
@@ -840,27 +840,25 @@ class MonsterBase:
                                                                    "brought down Lucifer to Hell. He did it with his "
                                                                    "sword (Sword of Archangel Michael). Can kill other "
                                                                    "angels with a touch. Another Michael exists in "
-                                                                   "alternate timeline.",
-                                episodes={"S05": [13, 18, 22], "S13": [2, 7, 14, 22, 23], "S14": [1, 2, 3, 9, 10]})
+                                                                   "alternate timeline. Michael is killed by Jack in "
+                                                                   "S14E14.",
+                                episodes={"S05": [13, 18, 22], "S13": [2, 7, 14, 22, 23], "S14": [1, 2, 3, 9, 10, 14]})
     archangel_michael.clues = [MonstersClues.can_put_a_person_to_sleep, MonstersClues.can_erase_and_bring_back_memories,
                                MonstersClues.can_send_people_back_to_their_time, MonstersClues.can_repair_human_body,
-                               MonstersClues.can_kill_angels_with_a_touch, MonstersClues.falling_meteor,
+                               MonstersClues.can_kill_angels_with_a_touch, MonstersClues.travels_as_white_fog,
                                MonstersClues.can_go_and_put_into_a_persons_mind, MonstersClues.flashing_lights,
                                MonstersClues.small_earth_quake, MonstersClues.can_sense_number_of_angels_in_the_world,
                                MonstersClues.telekinesis, MonstersClues.burned_eyes, MonstersClues.people_dead_weirdly,
                                MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                                MonstersClues.has_wings, MonstersClues.can_see_real_appearance_of_entities,
-
-                               MonstersClues.travels_as_white_fog]
+                               MonstersClues.falling_meteor]
     archangel_michael.disable_methods = [MonstersDisableMethods.holy_oil, MonstersDisableMethods.bad_place_spear,
                                          MonstersDisableMethods.cage_of_lucyfer_in_hell,
                                          MonstersDisableMethods.enochian_handcuffs,
                                          MonstersDisableMethods.sword_of_michael_mind,
 
                                          MonstersDisableMethods.symbol_made_with_blood_against_angels]
-    archangel_michael.kill_methods = [MonstersKillMethods.archangel_blade,
-
-                                      MonstersKillMethods.the_darkness]
+    archangel_michael.kill_methods = [MonstersKillMethods.archangel_blade, MonstersKillMethods.will_of_a_nephilim]
 
     god = Monster("THE GOD", description="The light, the beginning of everything. Brother of the Darkness. A being "
                                          "with almost unlimited power. Only mentioned for now. According to Death - he "
@@ -1483,7 +1481,7 @@ class MonsterBase:
                                                "throat and allowing the Grace to escape. After that it can take from "
                                                "a month to a century for the Grace to regenerate.",
                        episodes={"S08": [22], "S12": [23], "S13": [1, 2, 3, 4, 6, 9, 14, 20, 21, 22, 23],
-                                 "S14": [1, 2, 3, 6, 7, 8, 9, 10]})
+                                 "S14": [1, 2, 3, 6, 7, 8, 9, 10, 14]})
     nephilim.clues = [MonstersClues.can_see_real_appearance_of_entities, MonstersClues.high_strength,
                       MonstersClues.bright_eyes, MonstersClues.bible_burns_it, MonstersClues.weird_weather,
                       MonstersClues.biblical_like_events, MonstersClues.flashing_lights, MonstersClues.grows_fast,
@@ -1494,7 +1492,8 @@ class MonsterBase:
                       MonstersClues.can_put_a_person_to_sleep, MonstersClues.can_go_and_put_into_a_persons_mind,
                       MonstersClues.can_read_peoples_minds, MonstersClues.can_kill_angels_with_power_of_will,
                       MonstersClues.can_travel_to_alternate_timelines, MonstersClues.has_wings,
-                      MonstersClues.can_hear_prayers, MonstersClues.can_make_an_archangel_tell_the_truth]
+                      MonstersClues.can_hear_prayers, MonstersClues.can_make_an_archangel_tell_the_truth,
+                      MonstersClues.can_kill_archangels_with_finger_snap]
     nephilim.kill_methods = [MonstersKillMethods.angel_blade, MonstersKillMethods.archangel_blade]
 
     # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
@@ -1937,8 +1936,22 @@ class MonsterBase:
                     MonstersClues.can_vanish]
     anubis.disable_methods = [MonstersDisableMethods.palm_oil]
 
-    unknown = Monster("Unknown", description="", episodes={"S14": [13]})
-    unknown.clues = [MonstersClues.cold_spots]
+    gorgon = Monster("Gorgon", description="An Ancient, cursed being, with an affinity for snakes and a hunger for "
+                                           "human flesh. Every few months the Gorgon goes on a spree and gorges itself "
+                                           "like a snake. SOme lore says, that Gorgon can tell people's fates and, by "
+                                           "consuming human eyes, they may \"glimpse the future\". Cannot see the "
+                                           "future of Angels and Nephilims. Killed by Jack in S14E14.",
+                     episodes={"S14": [14]})
+    gorgon.clues = [MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_different_areas,
+                    MonstersClues.people_dead_weirdly, MonstersClues.missing_eyes, MonstersClues.can_see_future,
+                    MonstersClues.missing_organs, MonstersClues.snake_skin, MonstersClues.snake_eyes,
+                    MonstersClues.paralysis]
+    gorgon.kill_methods = [MonstersKillMethods.silver_blade_decapitation]
+
+    unknown = Monster("Unknown", description="", episodes={"S14": [14]})
+    unknown.clues = [MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_different_areas,
+                     MonstersClues.people_dead_weirdly, MonstersClues.snake_eyes, MonstersClues.can_see_future,
+                     MonstersClues.missing_organs]
 
     # ---------------------------------------------------- SEASON 15 ---------------------------------------------------
 
