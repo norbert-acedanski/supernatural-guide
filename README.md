@@ -76,6 +76,8 @@ If you are a fan of Supernatural show, you can play with this project to find ou
 - Billie shows Dean in S14E10 the only way Dean dies, that does not involve Michael escaping his mind
 - John Winchester is brought back by Dean through Baozhu (Chinese pearl, that grants wishes)
 - In S14E13 timeline is changed after Dean's wish and is restored in the same episode
+- Archangel Michael breaks loose and possesses Rowena in S14E14
+- Jack kills Archangel Michael in S14E14 and consumes his grace
 
 # TODO:
 - finish all seasons and episodes.
