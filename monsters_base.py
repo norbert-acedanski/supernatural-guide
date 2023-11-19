@@ -1482,7 +1482,7 @@ class MonsterBase:
                                                "throat and allowing the Grace to escape. After that it can take from "
                                                "a month to a century for the Grace to regenerate.",
                        episodes={"S08": [22], "S12": [23], "S13": [1, 2, 3, 4, 6, 9, 14, 20, 21, 22, 23],
-                                 "S14": [1, 2, 3, 6, 7, 8, 9, 10, 14, 15]})
+                                 "S14": [1, 2, 3, 6, 7, 8, 9, 10, 14, 15, 16]})
     nephilim.clues = [MonstersClues.can_see_real_appearance_of_entities, MonstersClues.high_strength,
                       MonstersClues.bright_eyes, MonstersClues.bible_burns_it, MonstersClues.weird_weather,
                       MonstersClues.biblical_like_events, MonstersClues.flashing_lights, MonstersClues.grows_fast,
@@ -1494,7 +1494,7 @@ class MonsterBase:
                       MonstersClues.can_read_peoples_minds, MonstersClues.can_kill_angels_with_power_of_will,
                       MonstersClues.can_travel_to_alternate_timelines, MonstersClues.has_wings,
                       MonstersClues.can_hear_prayers, MonstersClues.can_make_an_archangel_tell_the_truth,
-                      MonstersClues.can_kill_archangels_with_finger_snap]
+                      MonstersClues.can_kill_archangels_with_finger_snap, MonstersClues.can_repair_human_body]
     nephilim.kill_methods = [MonstersKillMethods.angel_blade, MonstersKillMethods.archangel_blade]
 
     # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
@@ -1949,10 +1949,18 @@ class MonsterBase:
                     MonstersClues.paralysis]
     gorgon.kill_methods = [MonstersKillMethods.silver_blade_decapitation]
 
-    unknown = Monster("Unknown", description="", episodes={"S14": [15]})
-    unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.weird_noises, MonstersClues.people_acting_weirdly,
-                     MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
-                     MonstersClues.telekinesis, MonstersClues.mind_control]
+    kohonta = Monster("Kohonta", description="A monster from Native American legend, that roams the woods \"driven to "
+                                             "consume sweet mortal flesh\". They get so starving, they spit up stomach "
+                                             "acid. Kohonta means Whistler. They are not born, they are made by a "
+                                             "curse.", episodes={"S14": [16]})
+    kohonta.clues = [MonstersClues.ripped_throat, MonstersClues.bite_marks, MonstersClues.whistle_noises,
+                     MonstersClues.feeds_on_human_flesh, MonstersClues.human_like_creature, MonstersClues.moves_fast,
+                     MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area]
+    kohonta.kill_methods = [MonstersKillMethods.silver_blade_through_the_heart]
+
+    unknown = Monster("Unknown", description="", episodes={"S14": [16]})
+    unknown.clues = [MonstersClues.ripped_throat, MonstersClues.bite_marks,
+                     MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area]
 
     # ---------------------------------------------------- SEASON 15 ---------------------------------------------------
 
