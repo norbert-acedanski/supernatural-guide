@@ -37,6 +37,7 @@ If you are a fan of Supernatural show, you can play with this project to find ou
 
 # Fun Facts:
 - Sam has a chronic fear of clowns
+- Dean has a chronic fear of snakes
 - Castiel broke the Fourth wall in S06E20
 - Metatron broke the fourth wall in S09E18
 - Deans Blood type is 0 based on S10E03
