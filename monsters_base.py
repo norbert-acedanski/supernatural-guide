@@ -172,12 +172,13 @@ class MonsterBase:
                                              "a friend of John Winchester. One of the psychics is Oliver Pryce. "
                                              "Man of Letters were teaching him how to control his powers. Missouri is "
                                              "killed by Wraith in S13E03.",
-                      episodes={"S01": [9], "S10": [17], "S12": [4], "S13": [3, 9, 10]})
+                      episodes={"S01": [9], "S10": [17], "S12": [4], "S13": [3, 9, 10], "S14": [15]})
     psychic.clues = [MonstersClues.psychic_abilities, MonstersClues.people_acting_weirdly, MonstersClues.telekinesis,
                      MonstersClues.people_dead_weirdly, MonstersClues.can_read_peoples_minds, MonstersClues.no_sulfur,
                      MonstersClues.people_speaking_languages, MonstersClues.headaches, MonstersClues.no_black_fog,
                      MonstersClues.head_filled_with_goopy_mush, MonstersClues.marks_on_victims_bodies,
-                     MonstersClues.lack_of_body_control]
+                     MonstersClues.lack_of_body_control, MonstersClues.weird_noises, MonstersClues.mind_control,
+                     MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area]
     psychic.kill_methods = [MonstersKillMethods.like_any_human]
 
     poltergeist = Monster("Poltergeist", episodes={"S01": [9]})
@@ -641,7 +642,7 @@ class MonsterBase:
                               "S11": [1, 2, 3, 6, 9, 10, 14, 18, 22, 23],
                               "S12": [1, 2, 3, 7, 8, 9, 10, 12, 13, 15, 19, 23],
                               "S13": [1, 2, 3, 4, 5, 6, 7, 9, 12, 13, 14, 16, 18, 19, 21, 22, 23],
-                              "S14": [1, 2, 3, 7, 8, 9, 10, 12, 13, 14]})
+                              "S14": [1, 2, 3, 7, 8, 9, 10, 12, 13, 14, 15]})
     angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                    MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion, MonstersClues.has_wings,
                    MonstersClues.leaves_burned_marks, MonstersClues.can_tell_if_somebody_was_recently_healed,
@@ -763,7 +764,7 @@ class MonsterBase:
                                                          "Redfield.",
                       episodes={"S04": [18, 22], "S05": [1, 9, 22], "S07": [21, 22, 23],
                                 "S08": [1, 2, 7, 10, 14, 19, 21, 23], "S09": [2, 6, 9], "S10": [5], "S11": [21, 22],
-                                "S13": [2, 7, 13, 14, 20], "S14": [12]})
+                                "S13": [2, 7, 13, 14, 20], "S14": [12, 15]})
     prophet.clues = [MonstersClues.can_see_future, MonstersClues.protected_by_an_archangel, MonstersClues.visions,
                      MonstersClues.can_repair_broken_word_of_god, MonstersClues.can_read_word_of_god,
                      MonstersClues.weird_weather, MonstersClues.missing_or_dead_people_regularly_in_different_areas,
@@ -1481,7 +1482,7 @@ class MonsterBase:
                                                "throat and allowing the Grace to escape. After that it can take from "
                                                "a month to a century for the Grace to regenerate.",
                        episodes={"S08": [22], "S12": [23], "S13": [1, 2, 3, 4, 6, 9, 14, 20, 21, 22, 23],
-                                 "S14": [1, 2, 3, 6, 7, 8, 9, 10, 14]})
+                                 "S14": [1, 2, 3, 6, 7, 8, 9, 10, 14, 15]})
     nephilim.clues = [MonstersClues.can_see_real_appearance_of_entities, MonstersClues.high_strength,
                       MonstersClues.bright_eyes, MonstersClues.bible_burns_it, MonstersClues.weird_weather,
                       MonstersClues.biblical_like_events, MonstersClues.flashing_lights, MonstersClues.grows_fast,
@@ -1948,10 +1949,10 @@ class MonsterBase:
                     MonstersClues.paralysis]
     gorgon.kill_methods = [MonstersKillMethods.silver_blade_decapitation]
 
-    unknown = Monster("Unknown", description="", episodes={"S14": [14]})
-    unknown.clues = [MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_different_areas,
-                     MonstersClues.people_dead_weirdly, MonstersClues.snake_eyes, MonstersClues.can_see_future,
-                     MonstersClues.missing_organs]
+    unknown = Monster("Unknown", description="", episodes={"S14": [15]})
+    unknown.clues = [MonstersClues.people_dead_weirdly, MonstersClues.weird_noises, MonstersClues.people_acting_weirdly,
+                     MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
+                     MonstersClues.telekinesis, MonstersClues.mind_control]
 
     # ---------------------------------------------------- SEASON 15 ---------------------------------------------------
 
