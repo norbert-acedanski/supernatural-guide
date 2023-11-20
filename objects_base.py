@@ -114,7 +114,7 @@ class ObjectsBase:
                                    "S11": [1, 2, 3, 6, 9, 10, 11, 15, 18, 22, 23],
                                    "S12": [1, 3, 6, 7, 9, 10, 12, 13, 15, 17, 19, 21, 23],
                                    "S13": [1, 7, 8, 9, 10, 13, 14, 18, 19, 21, 22, 23],
-                                   "S14": [1, 5, 8, 9, 10, 11, 13, 14, 15, 16]})
+                                   "S14": [1, 5, 8, 9, 10, 11, 13, 14, 15, 16, 17]})
     angel_blade.abilities = [ObjectAbilities.can_kill_angels, ObjectAbilities.can_kill_demons,
                              ObjectAbilities.can_kill_reapers, ObjectAbilities.cannot_kill_knights_of_hell,
                              ObjectAbilities.cannot_kill_archangels, ObjectAbilities.can_kill_werewolfs]
@@ -142,7 +142,7 @@ class ObjectsBase:
                                                       "Dean, when they were kids. It is switched off until GOD turns "
                                                       "it on in S11E20. This is the episode, that the Winchesters "
                                                       "recognize Chuck Shurley as GOD.",
-                          episodes={"S03": [8], "S05": [2, 16], "S11": [20, 21]})
+                          episodes={"S03": [8], "S05": [2, 16], "S11": [20, 21], "S14": [17]})
     magic_amulet.abilities = [ObjectAbilities.shines_in_the_presence_of_god]
 
     ring_of_war = Object("Ring of War", description="Can give people hallucinations. One of the four rings of "
@@ -152,7 +152,8 @@ class ObjectsBase:
     human_soul = Object("Human soul", description="Objects of enourmous energy. As an object is very bright. Can be "
                                                   "collected of a person. Released soul of a person will find a way "
                                                   "back to a body. According to Castiel, one Human Soul contains as "
-                                                  "much energy as around 100 suns.",
+                                                  "much energy as around 100 suns. If somebody burns his soul, only "
+                                                  "GOD can restore it.",
                         episodes={"S05": [14], "S06": [11], "S08": [19], "S09": [17], "S11": [5, 6, 9, 21, 22, 23],
                                   "S12": [3]})
 
