@@ -314,7 +314,8 @@ class ObjectsBase:
                                             "person, that has the Mark of Cain. It is written in obscure Sumerian "
                                             "dialect. It can be tracked by a magic compas. The book is protected by "
                                             "a spell and cannot be destroyed.", episodes={"S10": [18, 19, 21, 23],
-                                                                                          "S11": [3, 9], "S14": [7]})
+                                                                                          "S11": [3, 9],
+                                                                                          "S14": [7, 18]})
     book_of_the_damned.abilities = [ObjectAbilities.creation_and_undoing_of_any_damnation,
                                     ObjectAbilities.calls_to_a_person_with_mark_of_cain]
 
