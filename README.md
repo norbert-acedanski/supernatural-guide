@@ -35,7 +35,7 @@ Python 3.9.10
 # Usage
 If you are a fan of Supernatural show, you can play with this project to find out what are the clues, that a particular entity/curse/event/object/place leaves behind and try to determine that like Sam and Dean would ;)  
 
-# Fun Facts:
+# Fun Facts (with spoilers):
 - Sam has a chronic fear of clowns
 - Dean has a chronic fear of snakes
 - Castiel broke the Fourth wall in S06E20
