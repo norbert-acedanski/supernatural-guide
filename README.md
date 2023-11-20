@@ -79,6 +79,8 @@ If you are a fan of Supernatural show, you can play with this project to find ou
 - In S14E13 timeline is changed after Dean's wish and is restored in the same episode
 - Archangel Michael breaks loose and possesses Rowena in S14E14
 - Jack kills Archangel Michael in S14E14 and consumes his grace
+- Nick contacts Lucyfer in S14E17 via Donatello (Prophet), who tells him how to bring him back
+- Nick is killed by Jack in S14E17
 
 # TODO:
 - finish all seasons and episodes.
