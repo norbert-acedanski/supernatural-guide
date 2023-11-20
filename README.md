@@ -81,6 +81,7 @@ If you are a fan of Supernatural show, you can play with this project to find ou
 - Jack kills Archangel Michael in S14E14 and consumes his grace
 - Nick contacts Lucyfer in S14E17 via Donatello (Prophet), who tells him how to bring him back
 - Nick is killed by Jack in S14E17
+- Jack killed Mary Winchester in S14E17, but her body is brought back in S14E18
 
 # TODO:
 - finish all seasons and episodes.
