@@ -64,8 +64,8 @@ class PlacesBase:
                                        "(being), before GOD and Amara there was nothing but Empty. When Angel or a "
                                        "Demon comes here, they sleep peacefully forever. Castiel is the first being, "
                                        "that became awake, Lucyfer is the second in S14E07.",
-                  episodes={"S13": [3, 4], "S14": [7]})
-    empty.clues = [PlaceClues.dark_place]
+                  episodes={"S13": [3, 4], "S14": [7, 17]})
+    empty.clues = [PlaceClues.dark_place, PlaceClues.levitating_black_goo]
 
     def __init__(self):
         self.places = [place for place in self.__class__.__dict__.values() if isinstance(place, Place)]

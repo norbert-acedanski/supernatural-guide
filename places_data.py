@@ -20,3 +20,4 @@ class PlaceClues:
     emerald_city = "emerald city"
     skeletons_on_the_ground = "skeletons on the ground"
     cells_with_people_inside = "cells with people inside"
+    levitating_black_goo = "levitating black goo"
