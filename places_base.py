@@ -15,7 +15,8 @@ class PlacesBase:
                                description="A universe, where the history played out differently. Can be accessed via "
                                            "a spell or an Angel can put you in one. In S12E23 we see a world, where "
                                            "Sam and Dean are never born and this Universe is in a war between in "
-                                           "Heaven and Hell. Mary and Lucyfer are trapped in there in S12E23.",
+                                           "Heaven and Hell. Mary and Lucyfer are trapped in there in S12E23. GOD lost "
+                                           "count on how many Universes there are.",
                                episodes={"S04": [17], "S05": [4], "S06": [15, 17], "S12": [23], "S13": [2, 18, 21, 22],
                                          "S14": [13]})
     alternate_timeline.clues = [PlaceClues.different_history, PlaceClues.different_memories,
@@ -64,7 +65,7 @@ class PlacesBase:
                                        "(being), before GOD and Amara there was nothing but Empty. When Angel or a "
                                        "Demon comes here, they sleep peacefully forever. Castiel is the first being, "
                                        "that became awake, Lucyfer is the second in S14E07.",
-                  episodes={"S13": [3, 4], "S14": [7, 17]})
+                  episodes={"S13": [3, 4], "S14": [7, 17, 20]})
     empty.clues = [PlaceClues.dark_place, PlaceClues.levitating_black_goo]
 
     def __init__(self):
