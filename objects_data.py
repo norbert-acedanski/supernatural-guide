@@ -49,6 +49,7 @@ class ObjectAbilities:
     traps_a_soul_of_a_person = "traps a soul of a person"
     traps_a_person = "traps a person"
     traps_a_banshee = "traps a banshee"
+    cannot_trap_archangel_nephilim = "cannot trap Nephilim, that is an offspring of an Archangel"
     angels_cant_get_past_it = "angels can't get past it"
     archangels_cant_get_past_it = "archangels cant get past it"
     hides_a_person_from_all_angels = "hides a person from all angels"
