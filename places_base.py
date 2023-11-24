@@ -15,8 +15,10 @@ class PlacesBase:
                                description="A universe, where the history played out differently. Can be accessed via "
                                            "a spell or an Angel can put you in one. In S12E23 we see a world, where "
                                            "Sam and Dean are never born and this Universe is in a war between in "
-                                           "Heaven and Hell. Mary and Lucyfer are trapped in there in S12E23.",
-                               episodes={"S04": [17], "S05": [4], "S06": [15, 17], "S12": [23], "S13": [2, 18, 21, 22]})
+                                           "Heaven and Hell. Mary and Lucyfer are trapped in there in S12E23. GOD lost "
+                                           "count on how many Universes there are.",
+                               episodes={"S04": [17], "S05": [4], "S06": [15, 17], "S12": [23], "S13": [2, 18, 21, 22],
+                                         "S14": [13]})
     alternate_timeline.clues = [PlaceClues.different_history, PlaceClues.different_memories,
                                 PlaceClues.strange_feeling_that_things_should_be_different]
 
@@ -32,7 +34,7 @@ class PlacesBase:
                                          "in the place, they are in and following it. Heaven is powered by Angels "
                                          "(according to Naomi from S1319).",
                    episodes={"S05": [16], "S08": [7, 10, 17, 23], "S09": [18, 22, 23], "S10": [2, 17], "S11": [18, 22],
-                             "S13": [13, 18, 19]})
+                             "S13": [13, 18, 19], "S14": [8, 19]})
     heaven.clues = [PlaceClues.good_memories_relived, PlaceClues.changing_scenery, PlaceClues.bright_place]
 
     purgatory = Place("Purgatory", description="A place, where all monsters go, after they die. Can be opened with an "
@@ -62,9 +64,9 @@ class PlacesBase:
                                        "demons go to when they die. THE God has no power there. According to Empty "
                                        "(being), before GOD and Amara there was nothing but Empty. When Angel or a "
                                        "Demon comes here, they sleep peacefully forever. Castiel is the first being, "
-                                       "that became awake.",
-                  episodes={"S13": [3, 4]})
-    empty.clues = [PlaceClues.dark_place]
+                                       "that became awake, Lucyfer is the second in S14E07.",
+                  episodes={"S13": [3, 4], "S14": [7, 17, 20]})
+    empty.clues = [PlaceClues.dark_place, PlaceClues.levitating_black_goo]
 
     def __init__(self):
         self.places = [place for place in self.__class__.__dict__.values() if isinstance(place, Place)]

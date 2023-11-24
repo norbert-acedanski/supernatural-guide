@@ -38,3 +38,4 @@ class OrganizationKnowledge:
     reset_mechanical_devices = "reset mechanical devices"
     alternate_realities = "alternate realities"
     king_solomon = "king Solomon"
+    classification_of_angels = "classification of Angels (Book of Jubilees)"

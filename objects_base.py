@@ -55,7 +55,8 @@ class ObjectsBase:
                                  episodes={"S03": [1, 9, 16], "S04": [1, 9, 20, 22], "S05": [1, 10, 14, 17, 20, 21, 22],
                                            "S06": [10, 20, 21], "S07": [8, 15, 17, 21],
                                            "S08": [1, 2, 7, 10, 14, 17, 19, 23], "S09": [2, 4, 11, 14, 16, 17],
-                                           "S10": [2, 3, 7, 22], "S11": [2, 6, 15], "S12": [6, 12, 23], "S13": [8]})
+                                           "S10": [2, 3, 7, 22], "S11": [2, 6, 15], "S12": [6, 12, 23], "S13": [8],
+                                           "S14": [1]})
     demon_killing_knife.abilities = [ObjectAbilities.can_kill_demons, ObjectAbilities.cannot_kill_angels,
                                      ObjectAbilities.cannot_kill_knights_of_hell]
 
@@ -112,7 +113,8 @@ class ObjectsBase:
                                    "S10": [1, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22],
                                    "S11": [1, 2, 3, 6, 9, 10, 11, 15, 18, 22, 23],
                                    "S12": [1, 3, 6, 7, 9, 10, 12, 13, 15, 17, 19, 21, 23],
-                                   "S13": [1, 7, 8, 9, 10, 13, 14, 18, 19, 21, 22, 23]})
+                                   "S13": [1, 7, 8, 9, 10, 13, 14, 18, 19, 21, 22, 23],
+                                   "S14": [1, 5, 8, 9, 10, 11, 13, 14, 15, 16, 17, 19, 20]})
     angel_blade.abilities = [ObjectAbilities.can_kill_angels, ObjectAbilities.can_kill_demons,
                              ObjectAbilities.can_kill_reapers, ObjectAbilities.cannot_kill_knights_of_hell,
                              ObjectAbilities.cannot_kill_archangels, ObjectAbilities.can_kill_werewolfs]
@@ -130,7 +132,7 @@ class ObjectsBase:
     sword_of_archangel_michael = Object("Sword of Archangel Michael", description="A vessel, that Archangel Michael "
                                                                                   "possesses - a very special person, "
                                                                                   "that can hold archangels power.",
-                                        episodes={"S05": [1], "S13": [23]})
+                                        episodes={"S05": [1], "S13": [23], "S14": [1, 2, 3, 9, 10]})
 
     enochian_sigil = Object("Enochian Sigil", description="Hides from every angel in creation (archangels included).",
                             episodes={"S05": [1, 2]})
@@ -140,7 +142,7 @@ class ObjectsBase:
                                                       "Dean, when they were kids. It is switched off until GOD turns "
                                                       "it on in S11E20. This is the episode, that the Winchesters "
                                                       "recognize Chuck Shurley as GOD.",
-                          episodes={"S03": [8], "S05": [2, 16], "S11": [20, 21]})
+                          episodes={"S03": [8], "S05": [2, 16], "S11": [20, 21], "S14": [17]})
     magic_amulet.abilities = [ObjectAbilities.shines_in_the_presence_of_god]
 
     ring_of_war = Object("Ring of War", description="Can give people hallucinations. One of the four rings of "
@@ -150,7 +152,8 @@ class ObjectsBase:
     human_soul = Object("Human soul", description="Objects of enourmous energy. As an object is very bright. Can be "
                                                   "collected of a person. Released soul of a person will find a way "
                                                   "back to a body. According to Castiel, one Human Soul contains as "
-                                                  "much energy as around 100 suns.",
+                                                  "much energy as around 100 suns. If somebody burns his soul, only "
+                                                  "GOD can restore it.",
                         episodes={"S05": [14], "S06": [11], "S08": [19], "S09": [17], "S11": [5, 6, 9, 21, 22, 23],
                                   "S12": [3]})
 
@@ -160,7 +163,7 @@ class ObjectsBase:
     ring_of_famine.abilities = [ObjectAbilities.can_give_incredible_starving_sensation_for_something]
 
     archangel_blade = Object("Archangel blade", description="A triangular, silvery blade, that each archangel has.",
-                             episodes={"S05": [19], "S13": [7, 13, 17, 21, 22, 23]})
+                             episodes={"S05": [19], "S13": [7, 13, 17, 21, 22, 23], "S14": [20]})
     archangel_blade.abilities = [ObjectAbilities.can_kill_archangels, ObjectAbilities.can_kill_demons]
 
     ring_of_pestilence = Object("Ring of Pestilence", description="Can give people diseases of any kind. One of the "
@@ -311,7 +314,8 @@ class ObjectsBase:
                                             "person, that has the Mark of Cain. It is written in obscure Sumerian "
                                             "dialect. It can be tracked by a magic compas. The book is protected by "
                                             "a spell and cannot be destroyed.", episodes={"S10": [18, 19, 21, 23],
-                                                                                          "S11": [3, 9]})
+                                                                                          "S11": [3, 9],
+                                                                                          "S14": [7, 18]})
     book_of_the_damned.abilities = [ObjectAbilities.creation_and_undoing_of_any_damnation,
                                     ObjectAbilities.calls_to_a_person_with_mark_of_cain]
 
@@ -402,13 +406,14 @@ class ObjectsBase:
     enochian_handcuffs = Object("Enochian handcuffs", description="Handcuffs, that can limit the power of celestial "
                                                                   "beings. It seems, that Archangels are immune to it. "
                                                                   "Destroyed by Lucyfer in S13E22.",
-                                episodes={"S12": [7], "S13": [13, 20, 22]})  # TODO: Check in which episode earlier Castiel is held in them
+                                episodes={"S12": [7], "S13": [13, 20, 22], "S14": [10]})  # TODO: Check in which episode earlier Castiel is held in them
     enochian_handcuffs.abilities = [ObjectAbilities.traps_an_angel, ObjectAbilities.traps_an_archangel]
 
     hyperbolic_pulse_generator = Object("Hyperbolic Pulse Generator",
                                         description="It emits a force, which drives the possessing being from the "
-                                                    "vessel. In order to use it, a spell has to be spoken.",
-                                        episodes={"S12": [8]})
+                                                    "vessel. In order to use it, a spell has to be spoken. It is "
+                                                    "destroyed in S14E09 by Archangel Michael.",
+                                        episodes={"S12": [8], "S14": [9]})
     hyperbolic_pulse_generator.abilities = [ObjectAbilities.removes_demon_from_its_vessel,
                                             ObjectAbilities.removes_archangel_from_its_vessel]
 
@@ -427,6 +432,27 @@ class ObjectsBase:
     # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
 
     # SEASON 14:
+
+    # TODO: Find the episode, that the spear appears first
+    bad_place_spear = Object("Bad Place Spear", description="Spear, that belongs to Kaia from the Bad Place Alternate "
+                                                            "Timeline. It is broken by Archangel Michael in S14E09.",
+                             episodes={"S14": [3, 9]})
+    bad_place_spear.abilities = [ObjectAbilities.can_hurt_archangels]
+
+    ma_lak_box = Object("Ma'lak Box", description="A coffin-like box, that can trap anything. The recipe is handed to "
+                                                  "Dean by Billie (Reaper) in S14E10. Destroyed by Jack in S14E19.",
+                        episodes={"S14": [11, 12, 19]})
+    ma_lak_box.abilities = [ObjectAbilities.traps_an_archangel, ObjectAbilities.cannot_trap_archangel_nephilim]
+
+    god_gun = Object("GOD gun", description="Gun created by GOD in order to kill anything. Also known as "
+                                            "'The Equalizer', 'The Hammurabi'. It doesn't use bullets. Instead it "
+                                            "sends a wave of multidimensional energy across a perfectly balanced "
+                                            "quantum link between whoever is shooting it, and whoever they're shooting "
+                                            "at. Both beings die, when this is fired - the one firing and the one "
+                                            "fired at.", episodes={"S14": [20]})
+    god_gun.abilities = [ObjectAbilities.can_kill_anything, ObjectAbilities.cannot_kill_god]
+
+    # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
 
     # SEASON 15:
 

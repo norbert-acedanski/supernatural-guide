@@ -35,8 +35,9 @@ Python 3.9.10
 # Usage
 If you are a fan of Supernatural show, you can play with this project to find out what are the clues, that a particular entity/curse/event/object/place leaves behind and try to determine that like Sam and Dean would ;)  
 
-# Fun Facts:
+# Fun Facts (with spoilers):
 - Sam has a chronic fear of clowns
+- Dean has a chronic fear of snakes
 - Castiel broke the Fourth wall in S06E20
 - Metatron broke the fourth wall in S09E18
 - Deans Blood type is 0 based on S10E03
@@ -68,7 +69,24 @@ If you are a fan of Supernatural show, you can play with this project to find ou
 - Sam is killed by a Vampire in S13E21, but brought back by Lucyfer
 - There is an evil version of Castiel, that looks like Hitler in Apocalypse world present in S13E22 and is killed by Castiel from the main timeline
 - Lucyfer shed a tear in S13E22
-- Dean says "Yes" to Michael from Apocalypse World and becomes the Sword of Michael
+- Dean says "Yes" to Michael from Apocalypse World and becomes the Sword of Michael in S13E23
+- Jack and Kelly meet for the first time in Heaven in S14E08
+- Castiel exchanges his life for Jacks for the Empty in S14E08
+- Garth appears back in S14E09
+- Michael is trapped in Dean's mind in S14E10
+- Billie shows Dean in S14E10 the only way Dean dies, that does not involve Michael escaping his mind
+- John Winchester is brought back by Dean through Baozhu (Chinese pearl, that grants wishes)
+- In S14E13 timeline is changed after Dean's wish and is restored in the same episode
+- Archangel Michael breaks loose and possesses Rowena in S14E14
+- Jack kills Archangel Michael in S14E14 and consumes his grace
+- Nick contacts Lucyfer in S14E17 via Donatello (Prophet), who tells him how to bring him back
+- Nick is killed by Jack in S14E17
+- Jack killed Mary Winchester in S14E17, but her body is brought back in S14E18
+- Jack creates Angels out of people in S14E19
+- Jack goes into Mal'ak box in S14E19 willingly, but breaks out in the same episode
+- Sam shoots GOD with GOD gun, but nothing happens to GOD
+- Jack is killed by GOD in S14E20 and ends up in Empty
+- GOD releases all souls from Hell and raises the dead in S14E20, starting The End
 
 # TODO:
 - finish all seasons and episodes.
@@ -78,6 +96,9 @@ If you are a fan of Supernatural show, you can play with this project to find ou
 - fill missing information about each monster, curse, spell, object, event, etc.
 - add information about all unique monsters, that died in the series until S05E19.
 - add base class not to duplicate methods
+
+# References:
+- https://supernatural.fandom.com/wiki/Supernatural_Wiki
 
 # Licence
 Distributed under the MIT License. See LICENSE file for more information.
