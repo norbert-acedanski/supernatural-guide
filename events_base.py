@@ -15,7 +15,7 @@ class EventsBase:
                         EventClues.rippers_killed_under_the_solstice_moon, EventClues.ten_extinct_species_in_one_day,
                         EventClues.fifteen_fishing_man_blind, EventClues.somebody_killing_66_children,
                         EventClues.last_seal, EventClues.biblical_like_events]
-    disable_methods = [EventDisableMethods.prevent_all_seals_from_being_broken]
+    apocalypse.disable_methods = [EventDisableMethods.prevent_all_seals_from_being_broken]
 
     def __init__(self):
         self.events = [event for event in self.__class__.__dict__.values() if isinstance(event, Event)]
