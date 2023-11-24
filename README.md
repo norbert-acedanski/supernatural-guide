@@ -84,6 +84,9 @@ If you are a fan of Supernatural show, you can play with this project to find ou
 - Jack killed Mary Winchester in S14E17, but her body is brought back in S14E18
 - Jack creates Angels out of people in S14E19
 - Jack goes into Mal'ak box in S14E19 willingly, but breaks out in the same episode
+- Sam shoots GOD with GOD gun, but nothing happens to GOD
+- Jack is killed by GOD in S14E20 and ends up in Empty
+- GOD releases all souls from Hell and raises the dead in S14E20, starting The End
 
 # TODO:
 - finish all seasons and episodes.
