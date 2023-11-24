@@ -500,6 +500,7 @@ class MonstersKillMethods:
     will_of_a_person_with_abilities = "will of a person with abilities"
     will_of_an_angel = "will of an angel"
     will_of_an_angel_on_soul_juice = "will of an angel on soul juice"
+    will_of_god = "will of GOD"
     celtic_sigil = "celtic sigil (created by Man of Letters) made of blood in the house and in the nest"
     the_darkness = "The Darkness"
     like_any_human = "like any human"

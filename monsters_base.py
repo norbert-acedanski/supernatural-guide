@@ -1501,7 +1501,8 @@ class MonsterBase:
                       MonstersClues.can_teleport_people, MonstersClues.can_turn_people_into_pillar_of_salt,
                       MonstersClues.can_make_angels_out_of_people, MonstersClues.ma_lak_box_does_not_trap_it,
                       MonstersClues.can_make_people_tell_the_truth]
-    nephilim.kill_methods = [MonstersKillMethods.angel_blade, MonstersKillMethods.archangel_blade]
+    nephilim.kill_methods = [MonstersKillMethods.angel_blade, MonstersKillMethods.archangel_blade,
+                             MonstersKillMethods.will_of_god]
 
     # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
 
