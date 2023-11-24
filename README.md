@@ -82,6 +82,8 @@ If you are a fan of Supernatural show, you can play with this project to find ou
 - Nick contacts Lucyfer in S14E17 via Donatello (Prophet), who tells him how to bring him back
 - Nick is killed by Jack in S14E17
 - Jack killed Mary Winchester in S14E17, but her body is brought back in S14E18
+- Jack creates Angels out of people in S14E19
+- Jack goes into Mal'ak box in S14E19 willingly, but breaks out in the same episode
 
 # TODO:
 - finish all seasons and episodes.
