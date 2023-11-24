@@ -114,7 +114,7 @@ class ObjectsBase:
                                    "S11": [1, 2, 3, 6, 9, 10, 11, 15, 18, 22, 23],
                                    "S12": [1, 3, 6, 7, 9, 10, 12, 13, 15, 17, 19, 21, 23],
                                    "S13": [1, 7, 8, 9, 10, 13, 14, 18, 19, 21, 22, 23],
-                                   "S14": [1, 5, 8, 9, 10, 11, 13, 14, 15, 16, 17, 19]})
+                                   "S14": [1, 5, 8, 9, 10, 11, 13, 14, 15, 16, 17, 19, 20]})
     angel_blade.abilities = [ObjectAbilities.can_kill_angels, ObjectAbilities.can_kill_demons,
                              ObjectAbilities.can_kill_reapers, ObjectAbilities.cannot_kill_knights_of_hell,
                              ObjectAbilities.cannot_kill_archangels, ObjectAbilities.can_kill_werewolfs]
@@ -163,7 +163,7 @@ class ObjectsBase:
     ring_of_famine.abilities = [ObjectAbilities.can_give_incredible_starving_sensation_for_something]
 
     archangel_blade = Object("Archangel blade", description="A triangular, silvery blade, that each archangel has.",
-                             episodes={"S05": [19], "S13": [7, 13, 17, 21, 22, 23]})
+                             episodes={"S05": [19], "S13": [7, 13, 17, 21, 22, 23], "S14": [20]})
     archangel_blade.abilities = [ObjectAbilities.can_kill_archangels, ObjectAbilities.can_kill_demons]
 
     ring_of_pestilence = Object("Ring of Pestilence", description="Can give people diseases of any kind. One of the "
@@ -443,6 +443,16 @@ class ObjectsBase:
                                                   "Dean by Billie (Reaper) in S14E10. Destroyed by Jack in S14E19.",
                         episodes={"S14": [11, 12, 19]})
     ma_lak_box.abilities = [ObjectAbilities.traps_an_archangel, ObjectAbilities.cannot_trap_archangel_nephilim]
+
+    god_gun = Object("GOD gun", description="Gun created by GOD in order to kill anything. Also known as "
+                                            "'The Equalizer', 'The Hammurabi'. It doesn't use bullets. Instead it "
+                                            "sends a wave of multidimensional energy across a perfectly balanced "
+                                            "quantum link between whoever is shooting it, and whoever they're shooting "
+                                            "at. Both beings die, when this is fired - the one firing and the one "
+                                            "fired at.", episodes={"S14": [20]})
+    god_gun.abilities = [ObjectAbilities.can_kill_anything, ObjectAbilities.cannot_kill_god]
+
+    # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
 
     # SEASON 15:
 
