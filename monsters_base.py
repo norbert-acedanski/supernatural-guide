@@ -56,7 +56,7 @@ class MonsterBase:
                               episodes={"S01": [1, 3, 5, 7, 9, 10, 13, 19], "S02": [6, 11, 16, 18, 19],
                                         "S03": [5, 6, 13], "S04": [2, 13, 15, 17], "S05": [9, 11], "S06": [4, 14],
                                         "S07": [7, 10, 13, 17, 19], "S09": [7], "S10": [13, 16], "S11": [7, 23],
-                                        "S12": [3, 6, 13], "S13": [5, 16], "S14": [4, 12, 13]})
+                                        "S12": [3, 6, 13], "S13": [5, 16], "S14": [4, 12, 13, 20]})
     vengeful_spirit.clues = [MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                              MonstersClues.people_dead_weirdly, MonstersClues.ghost_like_creature,
                              MonstersClues.weird_electronics_behavior, MonstersClues.weird_things_behavior,
@@ -124,7 +124,7 @@ class MonsterBase:
                               "S06": [7, 10, 18, 20, 21, 22], "S07": [8, 15, 17, 21, 23],
                               "S08": [1, 2, 7, 10, 17, 19, 21, 22], "S09": [2, 10, 11, 14, 16, 17, 21, 23],
                               "S10": [1, 2, 3, 7, 9, 10, 13, 16, 17, 21], "S11": [1, 3, 6, 9, 10, 14, 15, 18, 22],
-                              "S12": [1, 12, 15, 17, 21], "S13": [2, 7, 8, 12, 13, 17, 18], "S14": [1, 11, 17]})
+                              "S12": [1, 12, 15, 17, 21], "S13": [2, 7, 8, 12, 13, 17, 18], "S14": [1, 11, 17, 20]})
     demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                    MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                    MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -208,7 +208,7 @@ class MonsterBase:
                                            "Death (revealed in S13E05).",
                      episodes={"S01": [12], "S02": [1], "S04": [15], "S05": [10, 21], "S06": [11], "S07": [10],
                                "S08": [19], "S09": [3, 22], "S11": [2, 10, 17, 23], "S12": [6, 9], "S13": [5, 19],
-                               "S14": [10]})
+                               "S14": [10, 20]})
     reaper.clues = [MonstersClues.people_dead_weirdly, MonstersClues.people_cured_miraculously,
                     MonstersClues.weird_things_behavior, MonstersClues.people_seeing_things_or_figures,
                     MonstersClues.seen_as_a_person_in_a_suit, MonstersClues.ghost_like_creature,
@@ -642,7 +642,7 @@ class MonsterBase:
                               "S11": [1, 2, 3, 6, 9, 10, 14, 18, 22, 23],
                               "S12": [1, 2, 3, 7, 8, 9, 10, 12, 13, 15, 19, 23],
                               "S13": [1, 2, 3, 4, 5, 6, 7, 9, 12, 13, 14, 16, 18, 19, 21, 22, 23],
-                              "S14": [1, 2, 3, 7, 8, 9, 10, 12, 13, 14, 15, 17, 18, 19]})
+                              "S14": [1, 2, 3, 7, 8, 9, 10, 12, 13, 14, 15, 17, 18, 19, 20]})
     angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                    MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion, MonstersClues.has_wings,
                    MonstersClues.leaves_burned_marks, MonstersClues.can_tell_if_somebody_was_recently_healed,
@@ -869,14 +869,16 @@ class MonsterBase:
                                          "is GOD. According to GOD, he is being, Amara is nothingness. HE created "
                                          "life, because he was lonely. Whenever he created a new world, Amara would "
                                          "destroy it. GOD is heavily weakened by the Darkness in S11E22.",
-                  episodes={"S11": [4, 20, 21, 22, 23]})
+                  episodes={"S11": [4, 20, 21, 22, 23], "S14": [20]})
     god.clues = [MonstersClues.can_bring_back_dead_angels, MonstersClues.can_teleport_people, MonstersClues.can_vanish,
                  MonstersClues.shining_of_magic_amulet, MonstersClues.visions, MonstersClues.can_appear_out_of_thin_air,
                  MonstersClues.can_bring_back_angelic_grace, MonstersClues.knows_past, MonstersClues.telekinesis,
                  MonstersClues.can_make_themselves_appear_as_they_like, MonstersClues.weird_electronics_behavior,
                  MonstersClues.can_give_others_knowledge, MonstersClues.people_cured_miraculously,
                  MonstersClues.weird_things_behavior, MonstersClues.things_disappearing,
-                 MonstersClues.travels_as_white_fog, MonstersClues.can_repair_an_archangel]
+                 MonstersClues.travels_as_white_fog, MonstersClues.can_repair_an_archangel,
+                 MonstersClues.can_teleport_angels, MonstersClues.can_control_electronics,
+                 MonstersClues.can_kill_nephilim]
     god.disable_methods = [MonstersDisableMethods.darkness_powers]
     god.kill_methods = [MonstersKillMethods.the_darkness]
 
@@ -1482,7 +1484,7 @@ class MonsterBase:
                                                "throat and allowing the Grace to escape. After that it can take from "
                                                "a month to a century for the Grace to regenerate.",
                        episodes={"S08": [22], "S12": [23], "S13": [1, 2, 3, 4, 6, 9, 14, 20, 21, 22, 23],
-                                 "S14": [1, 2, 3, 6, 7, 8, 9, 10, 14, 15, 16, 17, 18, 19]})
+                                 "S14": [1, 2, 3, 6, 7, 8, 9, 10, 14, 15, 16, 17, 18, 19, 20]})
     nephilim.clues = [MonstersClues.can_see_real_appearance_of_entities, MonstersClues.high_strength,
                       MonstersClues.bright_eyes, MonstersClues.bible_burns_it, MonstersClues.weird_weather,
                       MonstersClues.biblical_like_events, MonstersClues.flashing_lights, MonstersClues.grows_fast,
@@ -1497,7 +1499,8 @@ class MonsterBase:
                       MonstersClues.can_kill_archangels_with_finger_snap, MonstersClues.can_repair_human_body,
                       MonstersClues.can_hurt_people_with_a_thought, MonstersClues.can_kill_people_with_a_thought,
                       MonstersClues.can_teleport_people, MonstersClues.can_turn_people_into_pillar_of_salt,
-                      MonstersClues.can_make_angels_out_of_people, MonstersClues.ma_lak_box_does_not_trap_it]
+                      MonstersClues.can_make_angels_out_of_people, MonstersClues.ma_lak_box_does_not_trap_it,
+                      MonstersClues.can_make_people_tell_the_truth]
     nephilim.kill_methods = [MonstersKillMethods.angel_blade, MonstersKillMethods.archangel_blade]
 
     # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
@@ -1868,7 +1871,7 @@ class MonsterBase:
                       MonstersClues.missing_body]
 
     empty = Monster("Empty", description="A cosmic being (and a place) that angels and demons go to when they die. "
-                                         "THE God has no power there.", episodes={"S13": [4], "S14": [8]})
+                                         "THE God has no power there.", episodes={"S13": [4], "S14": [8, 20]})
     empty.clues = [MonstersClues.can_make_themselves_appear_as_they_like, MonstersClues.can_read_peoples_minds,
                    MonstersClues.telekinesis, MonstersClues.high_strength, MonstersClues.can_posses_an_angel,
                    MonstersClues.black_goo]
@@ -1961,8 +1964,10 @@ class MonsterBase:
                      MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area]
     kohonta.kill_methods = [MonstersKillMethods.silver_blade_through_the_heart]
 
-    unknown = Monster("Unknown", description="", episodes={"S14": [19]})
+    unknown = Monster("Unknown", description="", episodes={"S14": [20]})
     unknown.clues = []
+
+    # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
 
     # ---------------------------------------------------- SEASON 15 ---------------------------------------------------
 
