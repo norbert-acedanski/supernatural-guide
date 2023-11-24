@@ -642,7 +642,7 @@ class MonsterBase:
                               "S11": [1, 2, 3, 6, 9, 10, 14, 18, 22, 23],
                               "S12": [1, 2, 3, 7, 8, 9, 10, 12, 13, 15, 19, 23],
                               "S13": [1, 2, 3, 4, 5, 6, 7, 9, 12, 13, 14, 16, 18, 19, 21, 22, 23],
-                              "S14": [1, 2, 3, 7, 8, 9, 10, 12, 13, 14, 15, 17, 18]})
+                              "S14": [1, 2, 3, 7, 8, 9, 10, 12, 13, 14, 15, 17, 18, 19]})
     angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                    MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion, MonstersClues.has_wings,
                    MonstersClues.leaves_burned_marks, MonstersClues.can_tell_if_somebody_was_recently_healed,
@@ -965,7 +965,7 @@ class MonsterBase:
 
     wraith = Monster("Wraith", description="Creatures, that crack the head and feed on brain juice. Can poison people "
                                            "and drive them crazy. If the spike of a Wraith is broken, it regenerates.",
-                     episodes={"S05": [11], "S09": [20], "S13": [3]})
+                     episodes={"S05": [11], "S09": [20], "S13": [3], "S14": [19]})
     wraith.clues = [MonstersClues.people_dead_weirdly, MonstersClues.no_black_fog, MonstersClues.no_cold_spots,
                     MonstersClues.bite_marks_on_peoples_necks, MonstersClues.people_seeing_strange_things,
                     MonstersClues.victims_brain_devoid_of_water, MonstersClues.silver_burns_its_skin,
@@ -1482,7 +1482,7 @@ class MonsterBase:
                                                "throat and allowing the Grace to escape. After that it can take from "
                                                "a month to a century for the Grace to regenerate.",
                        episodes={"S08": [22], "S12": [23], "S13": [1, 2, 3, 4, 6, 9, 14, 20, 21, 22, 23],
-                                 "S14": [1, 2, 3, 6, 7, 8, 9, 10, 14, 15, 16, 17, 18]})
+                                 "S14": [1, 2, 3, 6, 7, 8, 9, 10, 14, 15, 16, 17, 18, 19]})
     nephilim.clues = [MonstersClues.can_see_real_appearance_of_entities, MonstersClues.high_strength,
                       MonstersClues.bright_eyes, MonstersClues.bible_burns_it, MonstersClues.weird_weather,
                       MonstersClues.biblical_like_events, MonstersClues.flashing_lights, MonstersClues.grows_fast,
@@ -1496,7 +1496,8 @@ class MonsterBase:
                       MonstersClues.can_hear_prayers, MonstersClues.can_make_an_archangel_tell_the_truth,
                       MonstersClues.can_kill_archangels_with_finger_snap, MonstersClues.can_repair_human_body,
                       MonstersClues.can_hurt_people_with_a_thought, MonstersClues.can_kill_people_with_a_thought,
-                      MonstersClues.can_teleport_people]
+                      MonstersClues.can_teleport_people, MonstersClues.can_turn_people_into_pillar_of_salt,
+                      MonstersClues.can_make_angels_out_of_people, MonstersClues.ma_lak_box_does_not_trap_it]
     nephilim.kill_methods = [MonstersKillMethods.angel_blade, MonstersKillMethods.archangel_blade]
 
     # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
@@ -1960,7 +1961,7 @@ class MonsterBase:
                      MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area]
     kohonta.kill_methods = [MonstersKillMethods.silver_blade_through_the_heart]
 
-    unknown = Monster("Unknown", description="", episodes={"S14": [18]})
+    unknown = Monster("Unknown", description="", episodes={"S14": [19]})
     unknown.clues = []
 
     # ---------------------------------------------------- SEASON 15 ---------------------------------------------------

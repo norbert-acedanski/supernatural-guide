@@ -336,6 +336,7 @@ class MonstersClues:
     can_stop_time = "can stop time"
     can_time_travel = "can time travel"
     can_turn_people_into_monsters = "can turn people into monsters"
+    can_turn_people_into_pillar_of_salt = "can turn people into pillar of salt"
     can_remove_death_binding_spell = "can remove death binding spell"
     can_remove_protection_sigils = "can remove protection sigils"
     can_transfer_mental_diseases = "can transfer mental diseases"
@@ -346,6 +347,7 @@ class MonstersClues:
     can_give_others_knowledge = "can give others knowledge"
     can_make_people_younger = "can make people younger"
     can_make_people_immortal = "can make people immortal"
+    can_make_angels_out_of_people = "can make Angels out of people"
     can_make_an_archangel_tell_the_truth = "can make an Archangel tell the truth"
     can_shake_heaven = "can shake heaven"
     can_travel_to_alternate_timelines_with_their_mind = "can travel to alternate timelines with their mind"
@@ -439,6 +441,7 @@ class MonstersClues:
     astral_projection = "astral projection"
     lots_of_flies = "lots of flies"
     paralysis = "paralysis"
+    ma_lak_box_does_not_trap_it = "Ma'lak Box does not trap it"
 
 
 class MonstersKillMethods:
