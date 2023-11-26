@@ -632,6 +632,7 @@ class MonstersDisableMethods:
     lance_of_archangel_michael = "lance of Archangel Michael"
     sword_of_michael_mind = "Sword of Michael's mind"
     gorgon_venom = "Gorgon venom"
+    god_gun = "GOD gun"
 
 
 class MonstersCureMethods:

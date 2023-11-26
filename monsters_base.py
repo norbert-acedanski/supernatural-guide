@@ -56,7 +56,7 @@ class MonsterBase:
                               episodes={"S01": [1, 3, 5, 7, 9, 10, 13, 19], "S02": [6, 11, 16, 18, 19],
                                         "S03": [5, 6, 13], "S04": [2, 13, 15, 17], "S05": [9, 11], "S06": [4, 14],
                                         "S07": [7, 10, 13, 17, 19], "S09": [7], "S10": [13, 16], "S11": [7, 23],
-                                        "S12": [3, 6, 13], "S13": [5, 16], "S14": [4, 12, 13, 20], "S15": [1]})
+                                        "S12": [3, 6, 13], "S13": [5, 16], "S14": [4, 12, 13, 20], "S15": [1, 2]})
     vengeful_spirit.clues = [MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                              MonstersClues.people_dead_weirdly, MonstersClues.ghost_like_creature,
                              MonstersClues.weird_electronics_behavior, MonstersClues.weird_things_behavior,
@@ -125,7 +125,7 @@ class MonsterBase:
                               "S08": [1, 2, 7, 10, 17, 19, 21, 22], "S09": [2, 10, 11, 14, 16, 17, 21, 23],
                               "S10": [1, 2, 3, 7, 9, 10, 13, 16, 17, 21], "S11": [1, 3, 6, 9, 10, 14, 15, 18, 22],
                               "S12": [1, 12, 15, 17, 21], "S13": [2, 7, 8, 12, 13, 17, 18], "S14": [1, 11, 17, 20],
-                              "S15": [1]})
+                              "S15": [1, 2]})
     demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                    MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                    MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -552,7 +552,8 @@ class MonsterBase:
                                          "Lucyfer. Back in S13E12.",
                     episodes={"S03": [9], "S04": [7, 12], "S05": [7, 12], "S07": [5], "S08": [7, 15],
                               "S10": [3, 7, 9, 10, 13, 16, 17, 18, 19, 21, 22, 23], "S11": [3, 9, 10, 13, 18, 22, 23],
-                              "S12": [2, 3, 8, 11, 13, 20], "S13": [7, 12, 19, 21, 22], "S14": [3, 6, 7, 14, 18]})
+                              "S12": [2, 3, 8, 11, 13, 20], "S13": [7, 12, 19, 21, 22], "S14": [3, 6, 7, 14, 18],
+                              "S15": [2]})
     witch.clues = [MonstersClues.people_dead_weirdly, MonstersClues.hex_bag_hidden_somewhere, MonstersClues.immortal,
                    MonstersClues.coin_hidden_somewhere, MonstersClues.weird_electronics_behavior,
                    MonstersClues.telekinesis, MonstersClues.can_vanish, MonstersClues.weird_plant_deaths_or_behavior,
@@ -643,7 +644,7 @@ class MonsterBase:
                               "S11": [1, 2, 3, 6, 9, 10, 14, 18, 22, 23],
                               "S12": [1, 2, 3, 7, 8, 9, 10, 12, 13, 15, 19, 23],
                               "S13": [1, 2, 3, 4, 5, 6, 7, 9, 12, 13, 14, 16, 18, 19, 21, 22, 23],
-                              "S14": [1, 2, 3, 7, 8, 9, 10, 12, 13, 14, 15, 17, 18, 19, 20], "S15": [1]})
+                              "S14": [1, 2, 3, 7, 8, 9, 10, 12, 13, 14, 15, 17, 18, 19, 20], "S15": [1, 2]})
     angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                    MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion, MonstersClues.has_wings,
                    MonstersClues.leaves_burned_marks, MonstersClues.can_tell_if_somebody_was_recently_healed,
@@ -870,7 +871,7 @@ class MonsterBase:
                                          "is GOD. According to GOD, he is being, Amara is nothingness. HE created "
                                          "life, because he was lonely. Whenever he created a new world, Amara would "
                                          "destroy it. GOD is heavily weakened by the Darkness in S11E22.",
-                  episodes={"S11": [4, 20, 21, 22, 23], "S14": [20]})
+                  episodes={"S11": [4, 20, 21, 22, 23], "S14": [20], "S15": [2]})
     god.clues = [MonstersClues.can_bring_back_dead_angels, MonstersClues.can_teleport_people, MonstersClues.can_vanish,
                  MonstersClues.shining_of_magic_amulet, MonstersClues.visions, MonstersClues.can_appear_out_of_thin_air,
                  MonstersClues.can_bring_back_angelic_grace, MonstersClues.knows_past, MonstersClues.telekinesis,
@@ -880,7 +881,7 @@ class MonsterBase:
                  MonstersClues.travels_as_white_fog, MonstersClues.can_repair_an_archangel, MonstersClues.burned_eyes,
                  MonstersClues.can_teleport_angels, MonstersClues.can_control_electronics,
                  MonstersClues.can_kill_nephilim]
-    god.disable_methods = [MonstersDisableMethods.darkness_powers]
+    god.disable_methods = [MonstersDisableMethods.darkness_powers, MonstersDisableMethods.god_gun]
     god.kill_methods = [MonstersKillMethods.the_darkness]
 
     horseman_war = Monster("Horseman War", description="One of the four horseman. Can give people hallucinations with "
@@ -1579,8 +1580,10 @@ class MonsterBase:
                                                      "is stuck on Earth even though his body was cremated by Dean. "
                                                      "According to Kevin, every person, that died after the Angels "
                                                      "fell cannot go to Heaven. It is revealed by GOD, that he was in "
-                                                     "the Veil the whole time. GOD moved him to Heaven in S11E21.",
-                          episodes={"S09": [14], "S11": [21]})
+                                                     "the Veil the whole time. GOD supposedly moved him to Heaven in "
+                                                     "S11E21, but as in S15E02 it is revealed, that he was send to "
+                                                     "Hell by GOD.",
+                          episodes={"S09": [14], "S11": [21], "S15": [2]})
     ghost_kevin.clues = [MonstersClues.weird_things_behavior, MonstersClues.emf, MonstersClues.ghost_like_creature,
                          MonstersClues.weird_electronics_behavior, MonstersClues.can_appear_out_of_thin_air,
                          MonstersClues.can_vanish, MonstersClues.invisible_entity]
@@ -1689,7 +1692,7 @@ class MonsterBase:
                                                "by all of the Angels single blow for a while. If that happens, a lot "
                                                "of darkness is released to the neighbourhood. When she wakes up, she "
                                                "can take in the darkness back, but is hurt by the blow.",
-                       episodes={"S10": [23], "S11": [1, 2, 3, 5, 6, 9, 10, 18, 21, 22, 23]})
+                       episodes={"S10": [23], "S11": [1, 2, 3, 5, 6, 9, 10, 18, 21, 22, 23], "S15": [2]})
     darkness.clues = [MonstersClues.enormous_black_fog, MonstersClues.can_teleport_people, MonstersClues.can_vanish,
                       MonstersClues.seen_as_a_woman, MonstersClues.people_dead_weirdly, MonstersClues.black_veins,
                       MonstersClues.leaves_zombie_like_people_with_black_veins_around_neck, MonstersClues.telekinesis,
@@ -1970,7 +1973,7 @@ class MonsterBase:
 
     # ---------------------------------------------------- SEASON 15 ---------------------------------------------------
 
-    unknown = Monster("Unknown", description="", episodes={"S15": [1]})
+    unknown = Monster("Unknown", description="", episodes={"S15": [2]})
     unknown.clues = []
 
     def __init__(self):
