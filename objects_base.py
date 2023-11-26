@@ -379,8 +379,9 @@ class ObjectsBase:
                             episodes={"S11": [18]})
     horn_of_joshua.abilities = [ObjectAbilities.grants_incredible_power]
 
-    soul_cristal = Object("Soul crystal", description="Crystal prepared by Rowena in S11E23 to capture souls of Ghosts",
-                          episodes={"S11": [23]})
+    soul_cristal = Object("Soul crystal", description="Crystal prepared by Rowena in S11E23 to capture souls of "
+                                                      "Ghosts. Again prepared to capture Ghosts from Hell.",
+                          episodes={"S11": [23], "S15": [2]})
     soul_cristal.abilities = [ObjectAbilities.can_trap_souls]
 
     # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
@@ -449,7 +450,7 @@ class ObjectsBase:
                                             "sends a wave of multidimensional energy across a perfectly balanced "
                                             "quantum link between whoever is shooting it, and whoever they're shooting "
                                             "at. Both beings die, when this is fired - the one firing and the one "
-                                            "fired at.", episodes={"S14": [20], "S15": [1]})
+                                            "fired at.", episodes={"S14": [20], "S15": [1, 2]})
     god_gun.abilities = [ObjectAbilities.can_kill_anything, ObjectAbilities.cannot_kill_god]
 
     # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
