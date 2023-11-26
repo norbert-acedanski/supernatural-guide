@@ -428,6 +428,10 @@ class CursesBase:
 
     # SEASON 15:
 
+    magical_salt_circle = Curse("Magical Salt Circle", description="Salt circle created by a spell with 1 mile radius. "
+                                                                   "It requires a bag of salt and fresh human heart.",
+                                episodes={"S15": [1]})
+    magical_salt_circle.clues = [CursesClues.ghosts_cannot_cross_it]
 
     def __init__(self):
         self.curses = [curse for curse in self.__class__.__dict__.values() if isinstance(curse, Curse)]
