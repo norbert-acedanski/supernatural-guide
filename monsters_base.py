@@ -56,7 +56,7 @@ class MonsterBase:
                               episodes={"S01": [1, 3, 5, 7, 9, 10, 13, 19], "S02": [6, 11, 16, 18, 19],
                                         "S03": [5, 6, 13], "S04": [2, 13, 15, 17], "S05": [9, 11], "S06": [4, 14],
                                         "S07": [7, 10, 13, 17, 19], "S09": [7], "S10": [13, 16], "S11": [7, 23],
-                                        "S12": [3, 6, 13], "S13": [5, 16], "S14": [4, 12, 13, 20]})
+                                        "S12": [3, 6, 13], "S13": [5, 16], "S14": [4, 12, 13, 20], "S15": [1]})
     vengeful_spirit.clues = [MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                              MonstersClues.people_dead_weirdly, MonstersClues.ghost_like_creature,
                              MonstersClues.weird_electronics_behavior, MonstersClues.weird_things_behavior,
@@ -124,7 +124,8 @@ class MonsterBase:
                               "S06": [7, 10, 18, 20, 21, 22], "S07": [8, 15, 17, 21, 23],
                               "S08": [1, 2, 7, 10, 17, 19, 21, 22], "S09": [2, 10, 11, 14, 16, 17, 21, 23],
                               "S10": [1, 2, 3, 7, 9, 10, 13, 16, 17, 21], "S11": [1, 3, 6, 9, 10, 14, 15, 18, 22],
-                              "S12": [1, 12, 15, 17, 21], "S13": [2, 7, 8, 12, 13, 17, 18], "S14": [1, 11, 17, 20]})
+                              "S12": [1, 12, 15, 17, 21], "S13": [2, 7, 8, 12, 13, 17, 18], "S14": [1, 11, 17, 20],
+                              "S15": [1]})
     demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                    MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                    MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -642,7 +643,7 @@ class MonsterBase:
                               "S11": [1, 2, 3, 6, 9, 10, 14, 18, 22, 23],
                               "S12": [1, 2, 3, 7, 8, 9, 10, 12, 13, 15, 19, 23],
                               "S13": [1, 2, 3, 4, 5, 6, 7, 9, 12, 13, 14, 16, 18, 19, 21, 22, 23],
-                              "S14": [1, 2, 3, 7, 8, 9, 10, 12, 13, 14, 15, 17, 18, 19, 20]})
+                              "S14": [1, 2, 3, 7, 8, 9, 10, 12, 13, 14, 15, 17, 18, 19, 20], "S15": [1]})
     angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                    MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion, MonstersClues.has_wings,
                    MonstersClues.leaves_burned_marks, MonstersClues.can_tell_if_somebody_was_recently_healed,
@@ -876,7 +877,7 @@ class MonsterBase:
                  MonstersClues.can_make_themselves_appear_as_they_like, MonstersClues.weird_electronics_behavior,
                  MonstersClues.can_give_others_knowledge, MonstersClues.people_cured_miraculously,
                  MonstersClues.weird_things_behavior, MonstersClues.things_disappearing,
-                 MonstersClues.travels_as_white_fog, MonstersClues.can_repair_an_archangel,
+                 MonstersClues.travels_as_white_fog, MonstersClues.can_repair_an_archangel, MonstersClues.burned_eyes,
                  MonstersClues.can_teleport_angels, MonstersClues.can_control_electronics,
                  MonstersClues.can_kill_nephilim]
     god.disable_methods = [MonstersDisableMethods.darkness_powers]
@@ -1965,12 +1966,12 @@ class MonsterBase:
                      MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area]
     kohonta.kill_methods = [MonstersKillMethods.silver_blade_through_the_heart]
 
-    unknown = Monster("Unknown", description="", episodes={"S14": [20]})
-    unknown.clues = []
-
     # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
 
     # ---------------------------------------------------- SEASON 15 ---------------------------------------------------
+
+    unknown = Monster("Unknown", description="", episodes={"S15": [1]})
+    unknown.clues = []
 
     def __init__(self):
         self.monsters = [monster for monster in self.__class__.__dict__.values() if isinstance(monster, Monster)]
