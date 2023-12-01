@@ -56,7 +56,7 @@ class ObjectsBase:
                                            "S06": [10, 20, 21], "S07": [8, 15, 17, 21],
                                            "S08": [1, 2, 7, 10, 14, 17, 19, 23], "S09": [2, 4, 11, 14, 16, 17],
                                            "S10": [2, 3, 7, 22], "S11": [2, 6, 15], "S12": [6, 12, 23], "S13": [8],
-                                           "S14": [1]})
+                                           "S14": [1], "S15": [5]})
     demon_killing_knife.abilities = [ObjectAbilities.can_kill_demons, ObjectAbilities.cannot_kill_angels,
                                      ObjectAbilities.cannot_kill_knights_of_hell]
 
@@ -114,7 +114,7 @@ class ObjectsBase:
                                    "S11": [1, 2, 3, 6, 9, 10, 11, 15, 18, 22, 23],
                                    "S12": [1, 3, 6, 7, 9, 10, 12, 13, 15, 17, 19, 21, 23],
                                    "S13": [1, 7, 8, 9, 10, 13, 14, 18, 19, 21, 22, 23],
-                                   "S14": [1, 5, 8, 9, 10, 11, 13, 14, 15, 16, 17, 19, 20], "S15": [1, 3]})
+                                   "S14": [1, 5, 8, 9, 10, 11, 13, 14, 15, 16, 17, 19, 20], "S15": [1, 3, 5]})
     angel_blade.abilities = [ObjectAbilities.can_kill_angels, ObjectAbilities.can_kill_demons,
                              ObjectAbilities.can_kill_reapers, ObjectAbilities.cannot_kill_knights_of_hell,
                              ObjectAbilities.cannot_kill_archangels, ObjectAbilities.can_kill_werewolfs]
@@ -450,7 +450,8 @@ class ObjectsBase:
                                             "sends a wave of multidimensional energy across a perfectly balanced "
                                             "quantum link between whoever is shooting it, and whoever they're shooting "
                                             "at. Both beings die, when this is fired - the one firing and the one "
-                                            "fired at.", episodes={"S14": [20], "S15": [1, 2]})
+                                            "fired at. It is destroyed by Lilith in S15E05.",
+                     episodes={"S14": [20], "S15": [1, 2, 5]})
     god_gun.abilities = [ObjectAbilities.can_kill_anything, ObjectAbilities.cannot_kill_god]
 
     # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
