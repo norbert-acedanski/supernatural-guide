@@ -6,7 +6,8 @@ from places_data import PlaceClues
 class PlacesBase:
     hell = Place("Hell", description="Place of eternal torture. People are either tortured, or torture others. Hell "
                                      "can be accessed via a Portal guarded by a Reaper in S11E10.",
-                 episodes={"S03": [16], "S04": [1, 8, 10], "S06": [20], "S08": [19], "S10": [3], "S11": [9, 10]})
+                 episodes={"S03": [16], "S04": [1, 8, 10], "S06": [20], "S08": [19], "S10": [3], "S11": [9, 10],
+                           "S15": [3]})
     hell.clues = [PlaceClues.people_chained_in_a_void, PlaceClues.electrical_storms, PlaceClues.dark_place,
                   PlaceClues.flashing_lights, PlaceClues.time_runs_faster_there, PlaceClues.endless_queue,
                   PlaceClues.screaming_people, PlaceClues.skeletons_on_the_ground, PlaceClues.cells_with_people_inside]
