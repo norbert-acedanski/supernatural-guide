@@ -88,6 +88,9 @@ If you are a fan of Supernatural show, you can play with this project to find ou
 - Jack is killed by GOD in S14E20 and ends up in Empty
 - GOD releases all souls from Hell and raises the dead in S14E20, starting The End
 - Rowena flirts with Ketch in S15E02
+- Ketch's heart is ripped out in S15E03 by Demon Ardat
+- Castiel and Belphegor jump into the rip, that leads to Hell in S15E03
+- Rowena persuades Sam to kill her in S15E03 in order to close the rift, that GOD opened
 
 # TODO:
 - finish all seasons and episodes.
