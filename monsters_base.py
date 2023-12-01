@@ -451,14 +451,14 @@ class MonsterBase:
                                                "Archangel blood (from S14E02) to be immune to silver. Only "
                                                "decapitation is effective on them then.",
                        episodes={"S02": [17], "S08": [4], "S09": [12, 20], "S10": [4], "S11": [17], "S12": [6, 16],
-                                 "S13": [10, 11, 23], "S14": [2, 9, 10]})
+                                 "S13": [10, 11, 23], "S14": [2, 9, 10], "S15": [5]})
     werewolf.clues = [MonstersClues.body_torn_apart, MonstersClues.animal_like_attack, MonstersClues.missing_heart,
                       MonstersClues.murders_during_full_moon_week, MonstersClues.claws, MonstersClues.attacks_at_night,
                       MonstersClues.animal_like_noises, MonstersClues.amnesia_blackout, MonstersClues.high_strength,
                       MonstersClues.people_dead_weirdly, MonstersClues.increased_regeneration, MonstersClues.moves_fast,
                       MonstersClues.bite_marks, MonstersClues.missing_organs, MonstersClues.animals_dead_weirdly,
-                      MonstersClues.missing_or_dead_people_regularly_in_the_same_area, MonstersClues.ripped_throat,
-                      MonstersClues.yellow_eyes, MonstersClues.large_mouth_full_of_teeth]
+                      MonstersClues.missing_or_dead_people_regularly_in_the_same_area, MonstersClues.needle_like_teeth,
+                      MonstersClues.yellow_eyes, MonstersClues.large_mouth_full_of_teeth, MonstersClues.ripped_throat]
     werewolf.kill_methods = [MonstersKillMethods.silver_bullet_into_the_heart, MonstersKillMethods.silver_blade,
                              MonstersKillMethods.silver_nitrate_injection, MonstersKillMethods.angel_blade,
                              MonstersKillMethods.decapitation, MonstersKillMethods.will_of_a_nephilim]
@@ -580,11 +580,12 @@ class MonsterBase:
     demon_astaroth.kill_methods = [MonstersKillMethods.demon_killing_knife]
 
     first_demon = Monster("First Demon - Lilith", description="First demon created by Lucifer out of a human soul by "
-                                                              "twisting it. Killed in S04E22.",
-                          episodes={"S03": [12, 16], "S04": [18, 22]})
+                                                              "twisting it. Killed in S04E22. Brought back by GOD in "
+                                                              "S15E05, when Sam and Dean face her.",
+                          episodes={"S03": [12, 16], "S04": [18, 22], "S15": [5]})
     first_demon.clues = [MonstersClues.white_eyes, MonstersClues.yellow_blast, MonstersClues.telekinesis,
                          MonstersClues.unable_to_hurt_people_with_abilities_with_its_yellow_blast,
-                         MonstersClues.travels_as_black_fog]
+                         MonstersClues.travels_as_black_fog, MonstersClues.can_hurt_people_with_a_thought]
     first_demon.kill_methods = [MonstersKillMethods.will_of_a_person_with_abilities]
 
     death_echo = Monster("Death echo", description="Echos are trapped in a loop. They keep replaying how they "
@@ -1974,8 +1975,8 @@ class MonsterBase:
 
     # ---------------------------------------------------- SEASON 15 ---------------------------------------------------
 
-    unknown = Monster("Unknown", description="", episodes={"S15": [4]})
-    unknown.clues = []
+    unknown = Monster("Unknown", description="", episodes={"S15": [5]})
+    unknown.clues = [MonstersClues.animal_like_attack, MonstersClues.claws, MonstersClues.needle_like_teeth]
 
     def __init__(self):
         self.monsters = [monster for monster in self.__class__.__dict__.values() if isinstance(monster, Monster)]
