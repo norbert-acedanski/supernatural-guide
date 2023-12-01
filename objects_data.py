@@ -37,6 +37,7 @@ class ObjectAbilities:
     can_trap_a_witch = "can trap a Witch"
     can_trap_souls = "can trap souls"
     can_put_down_holy_oil = "can put down holy oil"
+    can_draw_demons_into_wielder = "can draw demons into wielder"
     unables_possessions = "unables possessions"
     grants_incredible_luck = "grants incredible luck"
     grants_incredible_power = "grants incredible power"
