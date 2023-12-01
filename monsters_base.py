@@ -56,7 +56,7 @@ class MonsterBase:
                               episodes={"S01": [1, 3, 5, 7, 9, 10, 13, 19], "S02": [6, 11, 16, 18, 19],
                                         "S03": [5, 6, 13], "S04": [2, 13, 15, 17], "S05": [9, 11], "S06": [4, 14],
                                         "S07": [7, 10, 13, 17, 19], "S09": [7], "S10": [13, 16], "S11": [7, 23],
-                                        "S12": [3, 6, 13], "S13": [5, 16], "S14": [4, 12, 13, 20], "S15": [1, 2]})
+                                        "S12": [3, 6, 13], "S13": [5, 16], "S14": [4, 12, 13, 20], "S15": [1, 2, 3]})
     vengeful_spirit.clues = [MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                              MonstersClues.people_dead_weirdly, MonstersClues.ghost_like_creature,
                              MonstersClues.weird_electronics_behavior, MonstersClues.weird_things_behavior,
@@ -125,7 +125,7 @@ class MonsterBase:
                               "S08": [1, 2, 7, 10, 17, 19, 21, 22], "S09": [2, 10, 11, 14, 16, 17, 21, 23],
                               "S10": [1, 2, 3, 7, 9, 10, 13, 16, 17, 21], "S11": [1, 3, 6, 9, 10, 14, 15, 18, 22],
                               "S12": [1, 12, 15, 17, 21], "S13": [2, 7, 8, 12, 13, 17, 18], "S14": [1, 11, 17, 20],
-                              "S15": [1, 2]})
+                              "S15": [1, 2, 3]})
     demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                    MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                    MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -549,11 +549,12 @@ class MonsterBase:
                                          "also a mother of Crowley. Rowena was supposedly killed by Lucifer in S11E10. "
                                          "Back in S11E18. It is revealed, that she was prepared for her death - when a "
                                          "spell sensed her death, it revived her. Rowena was killed in S12E23 by "
-                                         "Lucyfer. Back in S13E12.",
+                                         "Lucyfer. Back in S13E12. Sam kills Rowena in order to close the rip, that "
+                                         "GOD opened.",
                     episodes={"S03": [9], "S04": [7, 12], "S05": [7, 12], "S07": [5], "S08": [7, 15],
                               "S10": [3, 7, 9, 10, 13, 16, 17, 18, 19, 21, 22, 23], "S11": [3, 9, 10, 13, 18, 22, 23],
                               "S12": [2, 3, 8, 11, 13, 20], "S13": [7, 12, 19, 21, 22], "S14": [3, 6, 7, 14, 18],
-                              "S15": [2]})
+                              "S15": [2, 3]})
     witch.clues = [MonstersClues.people_dead_weirdly, MonstersClues.hex_bag_hidden_somewhere, MonstersClues.immortal,
                    MonstersClues.coin_hidden_somewhere, MonstersClues.weird_electronics_behavior,
                    MonstersClues.telekinesis, MonstersClues.can_vanish, MonstersClues.weird_plant_deaths_or_behavior,
@@ -644,7 +645,7 @@ class MonsterBase:
                               "S11": [1, 2, 3, 6, 9, 10, 14, 18, 22, 23],
                               "S12": [1, 2, 3, 7, 8, 9, 10, 12, 13, 15, 19, 23],
                               "S13": [1, 2, 3, 4, 5, 6, 7, 9, 12, 13, 14, 16, 18, 19, 21, 22, 23],
-                              "S14": [1, 2, 3, 7, 8, 9, 10, 12, 13, 14, 15, 17, 18, 19, 20], "S15": [1, 2]})
+                              "S14": [1, 2, 3, 7, 8, 9, 10, 12, 13, 14, 15, 17, 18, 19, 20], "S15": [1, 2, 3]})
     angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                    MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion, MonstersClues.has_wings,
                    MonstersClues.leaves_burned_marks, MonstersClues.can_tell_if_somebody_was_recently_healed,
@@ -1973,7 +1974,7 @@ class MonsterBase:
 
     # ---------------------------------------------------- SEASON 15 ---------------------------------------------------
 
-    unknown = Monster("Unknown", description="", episodes={"S15": [2]})
+    unknown = Monster("Unknown", description="", episodes={"S15": [3]})
     unknown.clues = []
 
     def __init__(self):
