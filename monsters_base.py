@@ -647,7 +647,7 @@ class MonsterBase:
                               "S11": [1, 2, 3, 6, 9, 10, 14, 18, 22, 23],
                               "S12": [1, 2, 3, 7, 8, 9, 10, 12, 13, 15, 19, 23],
                               "S13": [1, 2, 3, 4, 5, 6, 7, 9, 12, 13, 14, 16, 18, 19, 21, 22, 23],
-                              "S14": [1, 2, 3, 7, 8, 9, 10, 12, 13, 14, 15, 17, 18, 19, 20], "S15": [1, 2, 3, 6]})
+                              "S14": [1, 2, 3, 7, 8, 9, 10, 12, 13, 14, 15, 17, 18, 19, 20], "S15": [1, 2, 3, 6, 7]})
     angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                    MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion, MonstersClues.has_wings,
                    MonstersClues.leaves_burned_marks, MonstersClues.can_tell_if_somebody_was_recently_healed,
@@ -1976,8 +1976,17 @@ class MonsterBase:
 
     # ---------------------------------------------------- SEASON 15 ---------------------------------------------------
 
-    unknown = Monster("Unknown", description="", episodes={"S15": [6]})
-    unknown.clues = [MonstersClues.no_blood_in_the_body]
+    marid = Monster("Marid", description="As song as this monster is fed with blood, it gives one money, health and "
+                                         "everything one dreamed of.", episodes={"S15": [7]})
+    marid.clues = [MonstersClues.feeds_on_blood, MonstersClues.human_like_creature, MonstersClues.no_blood_in_the_body,
+                   MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
+                   MonstersClues.needle_like_teeth]
+    marid.kill_methods = [MonstersKillMethods.decapitation]
+
+    unknown = Monster("Unknown", description="", episodes={"S15": [7]})
+    unknown.clues = [MonstersClues.feeds_on_blood, MonstersClues.human_like_creature,
+                     MonstersClues.no_blood_in_the_body,
+                     MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area]
 
     def __init__(self):
         self.monsters = [monster for monster in self.__class__.__dict__.values() if isinstance(monster, Monster)]
