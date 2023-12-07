@@ -94,6 +94,7 @@ If you are a fan of Supernatural show, you can play with this project to find ou
 - Vicky is back in S15E04 and is snapped by GOD with her family in the same episode
 - In S15E06 it is mentioned, that a soul from Hell cannot enter Heaven, yet they were able to get Bobby's soul from Hell to Heaven in one of the previous seasons
 - Eileen comes back as a spirit in S15E06 and is brought back by Sam in the same episode
+- Sam went into GOD's head in S15E07 after Castiel tried to probe his wound
 
 # TODO:
 - finish all seasons and episodes.
