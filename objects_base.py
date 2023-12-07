@@ -450,8 +450,8 @@ class ObjectsBase:
                                             "sends a wave of multidimensional energy across a perfectly balanced "
                                             "quantum link between whoever is shooting it, and whoever they're shooting "
                                             "at. Both beings die, when this is fired - the one firing and the one "
-                                            "fired at. It is destroyed by Lilith in S15E05.",
-                     episodes={"S14": [20], "S15": [1, 2, 5]})
+                                            "fired at. It fires a piece of one's soul. It is destroyed by Lilith in "
+                                            "S15E05.", episodes={"S14": [20], "S15": [1, 2, 5]})
     god_gun.abilities = [ObjectAbilities.can_kill_anything, ObjectAbilities.cannot_kill_god]
 
     # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
