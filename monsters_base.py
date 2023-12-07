@@ -483,7 +483,7 @@ class MonsterBase:
                   MonstersClues.liquefied_organs, MonstersClues.no_black_goo, MonstersClues.can_appear_out_of_thin_air,
                   MonstersClues.leaves_blue_handprint, MonstersClues.no_burn_marks, MonstersClues.deep_voice,
                   MonstersClues.being_at_two_places_at_once, MonstersClues.people_seeing_things_or_figures,
-                  MonstersClues.people_seeing_strange_things]
+                  MonstersClues.no_blood_in_the_body]
     jinn.disable_methods = [MonstersDisableMethods.gun_shot]
     jinn.kill_methods = [MonstersKillMethods.silver_knife_dipped_in_lambs_blood, MonstersKillMethods.will_of_a_nephilim,
                          MonstersKillMethods.angel_blade]
