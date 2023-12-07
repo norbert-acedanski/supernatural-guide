@@ -114,7 +114,7 @@ class ObjectsBase:
                                    "S11": [1, 2, 3, 6, 9, 10, 11, 15, 18, 22, 23],
                                    "S12": [1, 3, 6, 7, 9, 10, 12, 13, 15, 17, 19, 21, 23],
                                    "S13": [1, 7, 8, 9, 10, 13, 14, 18, 19, 21, 22, 23],
-                                   "S14": [1, 5, 8, 9, 10, 11, 13, 14, 15, 16, 17, 19, 20], "S15": [1, 3, 5]})
+                                   "S14": [1, 5, 8, 9, 10, 11, 13, 14, 15, 16, 17, 19, 20], "S15": [1, 3, 5, 6]})
     angel_blade.abilities = [ObjectAbilities.can_kill_angels, ObjectAbilities.can_kill_demons,
                              ObjectAbilities.can_kill_reapers, ObjectAbilities.cannot_kill_knights_of_hell,
                              ObjectAbilities.cannot_kill_archangels, ObjectAbilities.can_kill_werewolfs]
