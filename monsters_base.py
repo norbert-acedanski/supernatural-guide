@@ -56,7 +56,7 @@ class MonsterBase:
                               episodes={"S01": [1, 3, 5, 7, 9, 10, 13, 19], "S02": [6, 11, 16, 18, 19],
                                         "S03": [5, 6, 13], "S04": [2, 13, 15, 17], "S05": [9, 11], "S06": [4, 14],
                                         "S07": [7, 10, 13, 17, 19], "S09": [7], "S10": [13, 16], "S11": [7, 23],
-                                        "S12": [3, 6, 13], "S13": [5, 16], "S14": [4, 12, 13, 20], "S15": [1, 2, 3]})
+                                        "S12": [3, 6, 13], "S13": [5, 16], "S14": [4, 12, 13, 20], "S15": [1, 2, 3, 6]})
     vengeful_spirit.clues = [MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                              MonstersClues.people_dead_weirdly, MonstersClues.ghost_like_creature,
                              MonstersClues.weird_electronics_behavior, MonstersClues.weird_things_behavior,
@@ -475,7 +475,7 @@ class MonsterBase:
                                        "minds, sees nightmares after just one touch and can bring those nightmares "
                                        "into the world, that turn to dust, when killed. After the upgrade bullets are "
                                        "less affective.",
-                   episodes={"S02": [20], "S06": [1], "S08": [20], "S09": [20], "S14": [5, 10]})
+                   episodes={"S02": [20], "S06": [1], "S08": [20], "S09": [20], "S14": [5, 10], "S15": [6]})
     jinn.clues = [MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                   MonstersClues.blue_eyes, MonstersClues.can_put_a_person_in_wonderland, MonstersClues.feeds_on_blood,
                   MonstersClues.blue_fire_on_its_arms, MonstersClues.poisoned_people, MonstersClues.people_dead_weirdly,
@@ -485,7 +485,8 @@ class MonsterBase:
                   MonstersClues.being_at_two_places_at_once, MonstersClues.people_seeing_things_or_figures,
                   MonstersClues.people_seeing_strange_things]
     jinn.disable_methods = [MonstersDisableMethods.gun_shot]
-    jinn.kill_methods = [MonstersKillMethods.silver_knife_dipped_in_lambs_blood, MonstersKillMethods.will_of_a_nephilim]
+    jinn.kill_methods = [MonstersKillMethods.silver_knife_dipped_in_lambs_blood, MonstersKillMethods.will_of_a_nephilim,
+                         MonstersKillMethods.angel_blade]
 
     acheri = Monster("Acheri", description="Demon, that disguises itself as a little girl.", episodes={"S02": [21]})
     acheri.clues = [MonstersClues.seen_as_a_little_girl, MonstersClues.claws, MonstersClues.animal_like_attack]
@@ -554,7 +555,7 @@ class MonsterBase:
                     episodes={"S03": [9], "S04": [7, 12], "S05": [7, 12], "S07": [5], "S08": [7, 15],
                               "S10": [3, 7, 9, 10, 13, 16, 17, 18, 19, 21, 22, 23], "S11": [3, 9, 10, 13, 18, 22, 23],
                               "S12": [2, 3, 8, 11, 13, 20], "S13": [7, 12, 19, 21, 22], "S14": [3, 6, 7, 14, 18],
-                              "S15": [2, 3]})
+                              "S15": [2, 3, 6]})
     witch.clues = [MonstersClues.people_dead_weirdly, MonstersClues.hex_bag_hidden_somewhere, MonstersClues.immortal,
                    MonstersClues.coin_hidden_somewhere, MonstersClues.weird_electronics_behavior,
                    MonstersClues.telekinesis, MonstersClues.can_vanish, MonstersClues.weird_plant_deaths_or_behavior,
@@ -646,7 +647,7 @@ class MonsterBase:
                               "S11": [1, 2, 3, 6, 9, 10, 14, 18, 22, 23],
                               "S12": [1, 2, 3, 7, 8, 9, 10, 12, 13, 15, 19, 23],
                               "S13": [1, 2, 3, 4, 5, 6, 7, 9, 12, 13, 14, 16, 18, 19, 21, 22, 23],
-                              "S14": [1, 2, 3, 7, 8, 9, 10, 12, 13, 14, 15, 17, 18, 19, 20], "S15": [1, 2, 3]})
+                              "S14": [1, 2, 3, 7, 8, 9, 10, 12, 13, 14, 15, 17, 18, 19, 20], "S15": [1, 2, 3, 6]})
     angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                    MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion, MonstersClues.has_wings,
                    MonstersClues.leaves_burned_marks, MonstersClues.can_tell_if_somebody_was_recently_healed,
@@ -1975,8 +1976,8 @@ class MonsterBase:
 
     # ---------------------------------------------------- SEASON 15 ---------------------------------------------------
 
-    unknown = Monster("Unknown", description="", episodes={"S15": [5]})
-    unknown.clues = [MonstersClues.animal_like_attack, MonstersClues.claws, MonstersClues.needle_like_teeth]
+    unknown = Monster("Unknown", description="", episodes={"S15": [6]})
+    unknown.clues = [MonstersClues.no_blood_in_the_body]
 
     def __init__(self):
         self.monsters = [monster for monster in self.__class__.__dict__.values() if isinstance(monster, Monster)]
