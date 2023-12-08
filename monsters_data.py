@@ -355,6 +355,7 @@ class MonstersClues:
     can_travel_to_alternate_timelines_with_their_mind = "can travel to alternate timelines with their mind"
     can_travel_to_alternate_timelines = "can travel to alternate timelines"
     can_eat_angelic_grace = "can eat Angelic grace"
+    can_open_rift_to_purgatory = "can open a rift to Purgatory"
     people_with_souls_switched = "people with souls switched"
     poisoned_people = "poisoned people"
     demon_killing_knife_is_ineffective = "demon killing knife is ineffective"
