@@ -440,7 +440,7 @@ class CursesBase:
                                            description="Spell, that allows to seal GOD or Darkness away. Ingredients "
                                                        "are myrrh, cassia, rockrose and to bind the spell together - "
                                                        "the nectar from a Leviathan blossom (a flower, that grows in "
-                                                       "Purgatory).", episodes={"S15": [8]})
+                                                       "Purgatory).", episodes={"S15": [8, 9]})
 
     def __init__(self):
         self.curses = [curse for curse in self.__class__.__dict__.values() if isinstance(curse, Curse)]
