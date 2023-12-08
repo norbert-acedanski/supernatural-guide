@@ -209,7 +209,7 @@ class MonsterBase:
                                            "Death (revealed in S13E05).",
                      episodes={"S01": [12], "S02": [1], "S04": [15], "S05": [10, 21], "S06": [11], "S07": [10],
                                "S08": [19], "S09": [3, 22], "S11": [2, 10, 17, 23], "S12": [6, 9], "S13": [5, 19],
-                               "S14": [10, 20]})
+                               "S14": [10, 20], "S15": [9]})
     reaper.clues = [MonstersClues.people_dead_weirdly, MonstersClues.people_cured_miraculously,
                     MonstersClues.weird_things_behavior, MonstersClues.people_seeing_things_or_figures,
                     MonstersClues.seen_as_a_person_in_a_suit, MonstersClues.ghost_like_creature,
@@ -650,7 +650,8 @@ class MonsterBase:
                               "S11": [1, 2, 3, 6, 9, 10, 14, 18, 22, 23],
                               "S12": [1, 2, 3, 7, 8, 9, 10, 12, 13, 15, 19, 23],
                               "S13": [1, 2, 3, 4, 5, 6, 7, 9, 12, 13, 14, 16, 18, 19, 21, 22, 23],
-                              "S14": [1, 2, 3, 7, 8, 9, 10, 12, 13, 14, 15, 17, 18, 19, 20], "S15": [1, 2, 3, 6, 7, 8]})
+                              "S14": [1, 2, 3, 7, 8, 9, 10, 12, 13, 14, 15, 17, 18, 19, 20],
+                              "S15": [1, 2, 3, 6, 7, 8, 9]})
     angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                    MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion, MonstersClues.has_wings,
                    MonstersClues.leaves_burned_marks, MonstersClues.can_tell_if_somebody_was_recently_healed,
@@ -880,16 +881,17 @@ class MonsterBase:
                                          "is GOD. According to GOD, he is being, Amara is nothingness. HE created "
                                          "life, because he was lonely. Whenever he created a new world, Amara would "
                                          "destroy it. GOD is heavily weakened by the Darkness in S11E22.",
-                  episodes={"S11": [4, 20, 21, 22, 23], "S14": [20], "S15": [2, 4, 8]})
+                  episodes={"S11": [4, 20, 21, 22, 23], "S14": [20], "S15": [2, 4, 8, 9]})
     god.clues = [MonstersClues.can_bring_back_dead_angels, MonstersClues.can_teleport_people, MonstersClues.can_vanish,
                  MonstersClues.shining_of_magic_amulet, MonstersClues.visions, MonstersClues.can_appear_out_of_thin_air,
-                 MonstersClues.can_bring_back_angelic_grace, MonstersClues.knows_past, MonstersClues.telekinesis,
+                 MonstersClues.can_bring_back_angelic_grace, MonstersClues.knows_past, MonstersClues.can_kill_nephilim,
                  MonstersClues.can_make_themselves_appear_as_they_like, MonstersClues.weird_electronics_behavior,
-                 MonstersClues.can_give_others_knowledge, MonstersClues.people_cured_miraculously,
-                 MonstersClues.weird_things_behavior, MonstersClues.things_disappearing,
+                 MonstersClues.weird_things_behavior, MonstersClues.things_disappearing, MonstersClues.telekinesis,
                  MonstersClues.travels_as_white_fog, MonstersClues.can_repair_an_archangel, MonstersClues.burned_eyes,
-                 MonstersClues.can_teleport_angels, MonstersClues.can_control_electronics,
-                 MonstersClues.can_kill_nephilim, MonstersClues.people_dead_weirdly, MonstersClues.can_posses_a_person]
+                 MonstersClues.can_teleport_angels, MonstersClues.can_control_electronics, MonstersClues.invulnerable,
+                 MonstersClues.can_give_others_knowledge, MonstersClues.people_cured_miraculously,
+                 MonstersClues.people_dead_weirdly, MonstersClues.can_posses_a_person,
+                 MonstersClues.lack_of_body_control]
     god.disable_methods = [MonstersDisableMethods.darkness_powers, MonstersDisableMethods.god_gun]
     god.kill_methods = [MonstersKillMethods.the_darkness]
 
@@ -1271,7 +1273,8 @@ class MonsterBase:
                                                  "creation, so he locked them away in Purgatory. Leviathan description "
                                                  "by Franck Devereaux in S07E20, minute 13. "
                                                  "Kill method revealed in S07E20 in the Word of GOD.",
-                        episodes={"S07": [1, 2, 3, 5, 6, 9, 16, 20, 21, 22, 23], "S08": [5, 7], "S10": [19]})
+                        episodes={"S07": [1, 2, 3, 5, 6, 9, 16, 20, 21, 22, 23], "S08": [5, 7], "S10": [19],
+                                  "S15": [9]})
     leviathan.clues = [MonstersClues.high_strength, MonstersClues.can_posses_an_angel, MonstersClues.black_veins,
                        MonstersClues.black_blood, MonstersClues.moves_in_water, MonstersClues.people_dead_weirdly,
                        MonstersClues.animal_like_attack, MonstersClues.being_at_two_places_at_once,
@@ -1495,7 +1498,7 @@ class MonsterBase:
                                                "throat and allowing the Grace to escape. After that it can take from "
                                                "a month to a century for the Grace to regenerate.",
                        episodes={"S08": [22], "S12": [23], "S13": [1, 2, 3, 4, 6, 9, 14, 20, 21, 22, 23],
-                                 "S14": [1, 2, 3, 6, 7, 8, 9, 10, 14, 15, 16, 17, 18, 19, 20]})
+                                 "S14": [1, 2, 3, 6, 7, 8, 9, 10, 14, 15, 16, 17, 18, 19, 20], "S15": [9]})
     nephilim.clues = [MonstersClues.can_see_real_appearance_of_entities, MonstersClues.high_strength,
                       MonstersClues.bright_eyes, MonstersClues.bible_burns_it, MonstersClues.weird_weather,
                       MonstersClues.biblical_like_events, MonstersClues.flashing_lights, MonstersClues.grows_fast,
@@ -1989,8 +1992,8 @@ class MonsterBase:
                    MonstersClues.needle_like_teeth]
     marid.kill_methods = [MonstersKillMethods.decapitation]
 
-    unknown = Monster("Unknown", description="", episodes={"S15": [8]})
-    unknown.clues = [MonstersClues.people_dead_weirdly]
+    unknown = Monster("Unknown", description="", episodes={"S15": [9]})
+    unknown.clues = []
 
     def __init__(self):
         self.monsters = [monster for monster in self.__class__.__dict__.values() if isinstance(monster, Monster)]
