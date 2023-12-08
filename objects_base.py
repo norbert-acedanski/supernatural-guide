@@ -114,7 +114,7 @@ class ObjectsBase:
                                    "S11": [1, 2, 3, 6, 9, 10, 11, 15, 18, 22, 23],
                                    "S12": [1, 3, 6, 7, 9, 10, 12, 13, 15, 17, 19, 21, 23],
                                    "S13": [1, 7, 8, 9, 10, 13, 14, 18, 19, 21, 22, 23],
-                                   "S14": [1, 5, 8, 9, 10, 11, 13, 14, 15, 16, 17, 19, 20], "S15": [1, 3, 5, 6]})
+                                   "S14": [1, 5, 8, 9, 10, 11, 13, 14, 15, 16, 17, 19, 20], "S15": [1, 3, 5, 6, 8]})
     angel_blade.abilities = [ObjectAbilities.can_kill_angels, ObjectAbilities.can_kill_demons,
                              ObjectAbilities.can_kill_reapers, ObjectAbilities.cannot_kill_knights_of_hell,
                              ObjectAbilities.cannot_kill_archangels, ObjectAbilities.can_kill_werewolfs]
@@ -241,7 +241,7 @@ class ObjectsBase:
                                                     "by Lucyfer) has information about Angels and how to make "
                                                     "them fall. Found in Lucyfer crypt in S08E17.",
                          episodes={"S07": [21], "S08": [1, 2, 10, 17, 21, 23], "S09": [9, 10, 23], "S10": [18],
-                                   "S11": [6], "S13": [7, 13, 14]})
+                                   "S11": [6], "S13": [7, 13, 14], "S15": [8]})
     word_of_god.abilities = [ObjectAbilities.can_cause_storms, ObjectAbilities.can_cause_women_to_go_to_labour,
                              ObjectAbilities.when_opened_causes_a_person_to_become_a_prophet]
 
@@ -407,7 +407,7 @@ class ObjectsBase:
     enochian_handcuffs = Object("Enochian handcuffs", description="Handcuffs, that can limit the power of celestial "
                                                                   "beings. It seems, that Archangels are immune to it. "
                                                                   "Destroyed by Lucyfer in S13E22.",
-                                episodes={"S12": [7], "S13": [13, 20, 22], "S14": [10]})  # TODO: Check in which episode earlier Castiel is held in them
+                                episodes={"S12": [7], "S13": [13, 20, 22], "S14": [10], "S15": [8]})  # TODO: Check in which episode earlier Castiel is held in them
     enochian_handcuffs.abilities = [ObjectAbilities.traps_an_angel, ObjectAbilities.traps_an_archangel]
 
     hyperbolic_pulse_generator = Object("Hyperbolic Pulse Generator",
