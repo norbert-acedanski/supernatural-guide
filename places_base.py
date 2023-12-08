@@ -50,7 +50,7 @@ class PlacesBase:
                                                "proximity. GOD made a back door for humans to escape if one ever got "
                                                "to Purgatory. It also has a direct connection to Hell through "
                                                "a portal, where 3 trees meet 1. A rogue reaper can transfer "
-                                               "a person into it.", episodes={"S07": [23], "S08": [1, 19]})
+                                               "a person into it.", episodes={"S07": [23], "S08": [1, 19], "S15": [9]})
     purgatory.clues = [PlaceClues.dark_place, PlaceClues.monsters_nearby,
                        PlaceClues.when_a_person_comes_back_from_it_a_bright_light_appears]
 
