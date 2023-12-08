@@ -433,6 +433,15 @@ class CursesBase:
                                 episodes={"S15": [1]})
     magical_salt_circle.clues = [CursesClues.ghosts_cannot_cross_it]
 
+    travel_to_hell_spell = Curse("Travel to Hell spell", description="Spell prepared by Rowena to travel to Hell.",
+                                 episodes={"S15": [3, 8]})
+
+    sealing_primordial_being_spell = Curse("Sealing Primordial Being spell",
+                                           description="Spell, that allows to seal GOD or Darkness away. Ingredients "
+                                                       "are myrrh, cassia, rockrose and to bind the spell together - "
+                                                       "the nectar from a Leviathan blossom (a flower, that grows in "
+                                                       "Purgatory).", episodes={"S15": [8]})
+
     def __init__(self):
         self.curses = [curse for curse in self.__class__.__dict__.values() if isinstance(curse, Curse)]
         self.clues = [clue for key, clue in list(CursesClues.__dict__.items()) if not key.startswith("__")]
