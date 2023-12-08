@@ -153,7 +153,7 @@ class MonsterBase:
                                                        "animals. Can mate with humans (and other Shapeshifters) to "
                                                        "produce Shapeshifter offspring.",
                            episodes={"S01": [6], "S02": [12], "S04": [5], "S05": [2], "S09": [16, 20], "S10": [6],
-                                     "S12": [20], "S13": [4, 10]})
+                                     "S12": [20], "S13": [4, 10], "S15": [10]})
     shapeshifter.clues = [MonstersClues.can_take_form_of_other_people, MonstersClues.skin_left_behind,
                           MonstersClues.being_at_two_places_at_once, MonstersClues.bright_eyes, MonstersClues.no_sulfur,
                           MonstersClues.weird_animal_behavior, MonstersClues.can_copy_memories_of_other_people,
@@ -296,7 +296,7 @@ class MonsterBase:
                                              "blood. Upon changing, all senses sharpen.",
                       episodes={"S01": [20], "S02": [3], "S03": [7], "S05": [3], "S06": [5, 19], "S07": [22],
                                 "S08": [1, 2, 5, 7, 9, 10, 18, 19], "S09": [2, 16, 19, 20], "S10": [8, 19, 23],
-                                "S11": [12], "S12": [1, 9, 14], "S13": [11, 21], "S14": [1, 2, 3, 10], "S15": [4]})
+                                "S11": [12], "S12": [1, 9, 14], "S13": [11, 21], "S14": [1, 2, 3, 10], "S15": [4, 10]})
     vampire.clues = [MonstersClues.ripped_throat, MonstersClues.no_blood_in_the_body, MonstersClues.needle_like_teeth,
                      MonstersClues.moving_in_groups_usually, MonstersClues.invulnerable, MonstersClues.high_strength,
                      MonstersClues.bright_eyes, MonstersClues.great_sense_of_smell, MonstersClues.white_skin,
@@ -451,7 +451,7 @@ class MonsterBase:
                                                "Archangel blood (from S14E02) to be immune to silver. Only "
                                                "decapitation is effective on them then.",
                        episodes={"S02": [17], "S08": [4], "S09": [12, 20], "S10": [4], "S11": [17], "S12": [6, 16],
-                                 "S13": [10, 11, 23], "S14": [2, 9, 10], "S15": [5, 8]})
+                                 "S13": [10, 11, 23], "S14": [2, 9, 10], "S15": [5, 8, 10]})
     werewolf.clues = [MonstersClues.body_torn_apart, MonstersClues.animal_like_attack, MonstersClues.missing_heart,
                       MonstersClues.murders_during_full_moon_week, MonstersClues.claws, MonstersClues.attacks_at_night,
                       MonstersClues.animal_like_noises, MonstersClues.amnesia_blackout, MonstersClues.high_strength,
@@ -475,7 +475,7 @@ class MonsterBase:
                                        "minds, sees nightmares after just one touch and can bring those nightmares "
                                        "into the world, that turn to dust, when killed. After the upgrade bullets are "
                                        "less affective.",
-                   episodes={"S02": [20], "S06": [1], "S08": [20], "S09": [20], "S14": [5, 10], "S15": [6]})
+                   episodes={"S02": [20], "S06": [1], "S08": [20], "S09": [20], "S14": [5, 10], "S15": [6, 10]})
     jinn.clues = [MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                   MonstersClues.blue_eyes, MonstersClues.can_put_a_person_in_wonderland, MonstersClues.feeds_on_blood,
                   MonstersClues.blue_fire_on_its_arms, MonstersClues.poisoned_people, MonstersClues.people_dead_weirdly,
@@ -980,7 +980,7 @@ class MonsterBase:
 
     wraith = Monster("Wraith", description="Creatures, that crack the head and feed on brain juice. Can poison people "
                                            "and drive them crazy. If the spike of a Wraith is broken, it regenerates.",
-                     episodes={"S05": [11], "S09": [20], "S13": [3], "S14": [19]})
+                     episodes={"S05": [11], "S09": [20], "S13": [3], "S14": [19], "S15": [10]})
     wraith.clues = [MonstersClues.people_dead_weirdly, MonstersClues.no_black_fog, MonstersClues.no_cold_spots,
                     MonstersClues.bite_marks_on_peoples_necks, MonstersClues.people_seeing_strange_things,
                     MonstersClues.victims_brain_devoid_of_water, MonstersClues.silver_burns_its_skin,
@@ -1992,7 +1992,7 @@ class MonsterBase:
                    MonstersClues.needle_like_teeth]
     marid.kill_methods = [MonstersKillMethods.decapitation]
 
-    unknown = Monster("Unknown", description="", episodes={"S15": [9]})
+    unknown = Monster("Unknown", description="", episodes={"S15": [10]})
     unknown.clues = []
 
     def __init__(self):
