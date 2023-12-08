@@ -2031,7 +2031,7 @@ class MonsterBase:
                 monster_clues_dict[monster_number] = clues_intersection
         sorted_monster_clues_dict = {m: c for m, c in sorted(monster_clues_dict.items(), key=lambda item: item[1],
                                                              reverse=True)}
-        print(f"\n{len(sorted_monster_clues_dict)} MATCHED MONSTERS FOUND: \n")
+        print(f"\n{len(sorted_monster_clues_dict)} MATCHING MONSTERS FOUND: \n")
         for monster_number, number_of_matching_clues in sorted_monster_clues_dict.items():
             print(Colors.BOLD + Colors.BLUE + f"{number_of_matching_clues}/{len(selected_clues)} Matches:"
                   + Colors.ENDC, end=" ")

@@ -475,7 +475,7 @@ class CursesBase:
                 curses_clues_dict[curse_number] = clues_intersection
         sorted_curses_clues_dict = {m: c for m, c in sorted(curses_clues_dict.items(), key=lambda item: item[1],
                                                             reverse=True)}
-        print(f"\n{len(sorted_curses_clues_dict)} MATCHED CURSES FOUND: \n")
+        print(f"\n{len(sorted_curses_clues_dict)} MATCHING CURSES FOUND: \n")
         for curse_number, number_of_matching_clues in sorted_curses_clues_dict.items():
             print(Colors.BOLD + Colors.BLUE + f"{number_of_matching_clues}/{len(selected_clues)} Matches:"
                   + Colors.ENDC, end=" ")
