@@ -97,6 +97,8 @@ If you are a fan of Supernatural show, you can play with this project to find ou
 - Sam went into GOD's head in S15E07 after Castiel tried to probe his wound
 - Rowena becomes the ruler of Hell after she dies (revealed in S15E08, when Sam, Dean and Castiel travel to Hell)
 - John Winchester's son Adam is back in S15E08
+- Leviathan scull can be seen in S15E09 in Purgatory
+- Sam looks at the future in S15E09
 
 # TODO:
 - finish all seasons and episodes.
