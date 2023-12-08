@@ -99,6 +99,8 @@ If you are a fan of Supernatural show, you can play with this project to find ou
 - John Winchester's son Adam is back in S15E08
 - Leviathan scull can be seen in S15E09 in Purgatory
 - Sam looks at the future in S15E09
+- Sam and Dean have a really bad day in S15E10 (Sam got burned in the kitchen, tripped, got sick, Dean's card and car broke and his teeth hurt and throws up)
+- Garth destroys Monster Fight Club with C4 in S15E10
 
 # TODO:
 - finish all seasons and episodes.
