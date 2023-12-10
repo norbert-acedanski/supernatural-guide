@@ -651,7 +651,7 @@ class MonsterBase:
                               "S12": [1, 2, 3, 7, 8, 9, 10, 12, 13, 15, 19, 23],
                               "S13": [1, 2, 3, 4, 5, 6, 7, 9, 12, 13, 14, 16, 18, 19, 21, 22, 23],
                               "S14": [1, 2, 3, 7, 8, 9, 10, 12, 13, 14, 15, 17, 18, 19, 20],
-                              "S15": [1, 2, 3, 6, 7, 8, 9]})
+                              "S15": [1, 2, 3, 6, 7, 8, 9, 11]})
     angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                    MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion, MonstersClues.has_wings,
                    MonstersClues.leaves_burned_marks, MonstersClues.can_tell_if_somebody_was_recently_healed,
@@ -1498,7 +1498,7 @@ class MonsterBase:
                                                "throat and allowing the Grace to escape. After that it can take from "
                                                "a month to a century for the Grace to regenerate.",
                        episodes={"S08": [22], "S12": [23], "S13": [1, 2, 3, 4, 6, 9, 14, 20, 21, 22, 23],
-                                 "S14": [1, 2, 3, 6, 7, 8, 9, 10, 14, 15, 16, 17, 18, 19, 20], "S15": [9]})
+                                 "S14": [1, 2, 3, 6, 7, 8, 9, 10, 14, 15, 16, 17, 18, 19, 20], "S15": [9, 11]})
     nephilim.clues = [MonstersClues.can_see_real_appearance_of_entities, MonstersClues.high_strength,
                       MonstersClues.bright_eyes, MonstersClues.bible_burns_it, MonstersClues.weird_weather,
                       MonstersClues.biblical_like_events, MonstersClues.flashing_lights, MonstersClues.grows_fast,
@@ -1683,11 +1683,12 @@ class MonsterBase:
                                                                    "send a long time ago to Earth and went rogue. It "
                                                                    "was believed to be executed, but one of them "
                                                                    "remained - Tamiel (killed in S10E20 by Claire - "
-                                                                   "Jimmy Novac's daughter).", episodes={"S10": [20]})
+                                                                   "Jimmy Novac's daughter).", episodes={"S10": [20],
+                                                                                                         "S15": [11]})
     watcher_angel.clues = [MonstersClues.can_put_a_person_to_sleep, MonstersClues.can_put_a_person_in_wonderland,
                            MonstersClues.can_repair_human_body, MonstersClues.triangle_wound_with_burns,
                            MonstersClues.invulnerable]
-    watcher_angel.kill_methods = [MonstersKillMethods.angel_sword]
+    watcher_angel.kill_methods = [MonstersKillMethods.angel_sword, MonstersKillMethods.angel_blade]
 
     darkness = Monster("Darkness", description="Before there was light, before there was GOD and the archangels, there "
                                                "wasn't nothing. There was the Darkness - horribly destructive, amoral "
@@ -1992,7 +1993,13 @@ class MonsterBase:
                    MonstersClues.needle_like_teeth]
     marid.kill_methods = [MonstersKillMethods.decapitation]
 
-    unknown = Monster("Unknown", description="", episodes={"S15": [10]})
+    atrox_fortuna = Monster("Atrox Fortuna", description="Roman goddess of luck. She run a bar for people to exchange "
+                                                         "luck, but she also took a part of it herself. She has a son "
+                                                         "Pax.", episodes={"S15": [11]})
+    atrox_fortuna.clues = [MonstersClues.people_dead_weirdly, MonstersClues.bad_luck,
+                           MonstersClues.can_make_themselves_appear_as_they_like]
+
+    unknown = Monster("Unknown", description="", episodes={"S15": [11]})
     unknown.clues = []
 
     def __init__(self):
