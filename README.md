@@ -102,6 +102,8 @@ If you are a fan of Supernatural show, you can play with this project to find ou
 - Sam and Dean have a really bad day in S15E10 (Sam got burned in the kitchen, tripped, got sick, Dean's card and car broke and his teeth hurt and throws up)
 - Garth destroys Monster Fight Club with C4 in S15E10
 - Hero's Luck taken by GOD in S15E10 is granted back by Atrox Fortuna in S15E11
+- In S15E12 GOD starts to destroy all other Universes except for the one, that main Sam and Dean live in
+- In S15E12 Reaper Death reveals, that Jack, Sam and Dean are the messengers of GODs destruction
 
 # TODO:
 - finish all seasons and episodes.
