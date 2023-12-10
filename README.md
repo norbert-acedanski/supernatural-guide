@@ -101,6 +101,7 @@ If you are a fan of Supernatural show, you can play with this project to find ou
 - Sam looks at the future in S15E09
 - Sam and Dean have a really bad day in S15E10 (Sam got burned in the kitchen, tripped, got sick, Dean's card and car broke and his teeth hurt and throws up)
 - Garth destroys Monster Fight Club with C4 in S15E10
+- Hero's Luck taken by GOD in S15E10 is granted back by Atrox Fortuna in S15E11
 
 # TODO:
 - finish all seasons and episodes.
