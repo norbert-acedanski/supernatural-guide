@@ -19,7 +19,7 @@ class PlacesBase:
                                            "Heaven and Hell. Mary and Lucyfer are trapped in there in S12E23. GOD lost "
                                            "count on how many Universes there are.",
                                episodes={"S04": [17], "S05": [4], "S06": [15, 17], "S12": [23], "S13": [2, 18, 21, 22],
-                                         "S14": [13]})
+                                         "S14": [13], "S15": [12]})
     alternate_timeline.clues = [PlaceClues.different_history, PlaceClues.different_memories,
                                 PlaceClues.strange_feeling_that_things_should_be_different]
 
