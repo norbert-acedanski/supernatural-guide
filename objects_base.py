@@ -178,7 +178,7 @@ class ObjectsBase:
                                ObjectAbilities.person_with_it_can_teleport]
 
     scythe_of_death = Object("Scythe of Death", description="A weapon used to kill people, demons, angels, reapers, "
-                                                            "etc.", episodes={"S05": [21], "S10": [23]})
+                                                            "etc.", episodes={"S05": [21], "S10": [23], "S15": [12]})
     scythe_of_death.abilities = [ObjectAbilities.can_kill_demons, ObjectAbilities.can_kill_demons,
                                  ObjectAbilities.can_kill_reapers]
 
