@@ -7,7 +7,7 @@ class PlacesBase:
     hell = Place("Hell", description="Place of eternal torture. People are either tortured, or torture others. Hell "
                                      "can be accessed via a Portal guarded by a Reaper in S11E10.",
                  episodes={"S03": [16], "S04": [1, 8, 10], "S06": [20], "S08": [19], "S10": [3], "S11": [9, 10],
-                           "S15": [3, 8]})
+                           "S15": [3, 8, 13]})
     hell.clues = [PlaceClues.people_chained_in_a_void, PlaceClues.electrical_storms, PlaceClues.dark_place,
                   PlaceClues.flashing_lights, PlaceClues.time_runs_faster_there, PlaceClues.endless_queue,
                   PlaceClues.screaming_people, PlaceClues.skeletons_on_the_ground, PlaceClues.cells_with_people_inside]
@@ -66,7 +66,7 @@ class PlacesBase:
                                        "(being), before GOD and Amara there was nothing but Empty. When Angel or a "
                                        "Demon comes here, they sleep peacefully forever. Castiel is the first being, "
                                        "that became awake, Lucyfer is the second in S14E07.",
-                  episodes={"S13": [3, 4], "S14": [7, 17, 20]})
+                  episodes={"S13": [3, 4], "S14": [7, 17, 20], "S15": [13]})
     empty.clues = [PlaceClues.dark_place, PlaceClues.levitating_black_goo]
 
     def __init__(self):
