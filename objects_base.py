@@ -164,7 +164,7 @@ class ObjectsBase:
     ring_of_famine.abilities = [ObjectAbilities.can_give_incredible_starving_sensation_for_something]
 
     archangel_blade = Object("Archangel blade", description="A triangular, silvery blade, that each archangel has.",
-                             episodes={"S05": [19], "S13": [7, 13, 17, 21, 22, 23], "S14": [20]})
+                             episodes={"S05": [19], "S13": [7, 13, 17, 21, 22, 23], "S14": [20], "S15": [14]})
     archangel_blade.abilities = [ObjectAbilities.can_kill_archangels, ObjectAbilities.can_kill_demons]
 
     ring_of_pestilence = Object("Ring of Pestilence", description="Can give people diseases of any kind. One of the "
@@ -250,7 +250,7 @@ class ObjectsBase:
 
     # SEASON 8:
 
-    mjolnir = Object("Mjolnir", description="The hammer of Thor.", episodes={"S08": [2]})
+    mjolnir = Object("Mjolnir", description="The hammer of Thor.", episodes={"S08": [2], "S15": [14]})
     mjolnir.abilities = [ObjectAbilities.can_kill_pagan_gods]
 
     demonic_handcuffs = Object("Demonic handcuffs", description="When worn by a Demon, it cannot teleport, "
@@ -408,7 +408,7 @@ class ObjectsBase:
     enochian_handcuffs = Object("Enochian handcuffs", description="Handcuffs, that can limit the power of celestial "
                                                                   "beings. It seems, that Archangels are immune to it. "
                                                                   "Destroyed by Lucyfer in S13E22.",
-                                episodes={"S12": [7], "S13": [13, 20, 22], "S14": [10], "S15": [8]})  # TODO: Check in which episode earlier Castiel is held in them
+                                episodes={"S12": [7], "S13": [13, 20, 22], "S14": [10], "S15": [8, 14]})  # TODO: Check in which episode earlier Castiel is held in them
     enochian_handcuffs.abilities = [ObjectAbilities.traps_an_angel, ObjectAbilities.traps_an_archangel]
 
     hyperbolic_pulse_generator = Object("Hyperbolic Pulse Generator",
