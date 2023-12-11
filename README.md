@@ -104,6 +104,8 @@ If you are a fan of Supernatural show, you can play with this project to find ou
 - Hero's Luck taken by GOD in S15E10 is granted back by Atrox Fortuna in S15E11
 - In S15E12 GOD starts to destroy all other Universes except for the one, that main Sam and Dean live in
 - In S15E12 Reaper Death reveals, that Jack, Sam and Dean are the messengers of GODs destruction
+- Sam and Dean from Alternate timeline appear in S15E13
+- Jacks Soul is restored in S15E13, when he went to the Garden of Eden
 
 # TODO:
 - finish all seasons and episodes.
