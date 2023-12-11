@@ -125,7 +125,7 @@ class MonsterBase:
                               "S08": [1, 2, 7, 10, 17, 19, 21, 22], "S09": [2, 10, 11, 14, 16, 17, 21, 23],
                               "S10": [1, 2, 3, 7, 9, 10, 13, 16, 17, 21], "S11": [1, 3, 6, 9, 10, 14, 15, 18, 22],
                               "S12": [1, 12, 15, 17, 21], "S13": [2, 7, 8, 12, 13, 17, 18], "S14": [1, 11, 17, 20],
-                              "S15": [1, 2, 3, 8]})
+                              "S15": [1, 2, 3, 8, 13]})
     demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                    MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                    MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -209,7 +209,7 @@ class MonsterBase:
                                            "Death (revealed in S13E05).",
                      episodes={"S01": [12], "S02": [1], "S04": [15], "S05": [10, 21], "S06": [11], "S07": [10],
                                "S08": [19], "S09": [3, 22], "S11": [2, 10, 17, 23], "S12": [6, 9], "S13": [5, 19],
-                               "S14": [10, 20], "S15": [9, 12]})
+                               "S14": [10, 20], "S15": [9, 12, 13]})
     reaper.clues = [MonstersClues.people_dead_weirdly, MonstersClues.people_cured_miraculously,
                     MonstersClues.weird_things_behavior, MonstersClues.people_seeing_things_or_figures,
                     MonstersClues.seen_as_a_person_in_a_suit, MonstersClues.ghost_like_creature,
@@ -350,7 +350,7 @@ class MonsterBase:
                                                    "pregnant Ramsey, that is loyal only to him. Hell Hound can be "
                                                    "controlled by a special whistle (showed in S12E21).",
                          episodes={"S02": [8], "S03": [16], "S05": [10, 20], "S06": [4, 10, 14], "S08": [14],
-                                   "S09": [21], "S11": [15], "S12": [15, 21]})
+                                   "S09": [21], "S11": [15], "S12": [15, 21], "S15": [13]})
     hell_hound.clues = [MonstersClues.victims_hear_dogs_barking_and_growling, MonstersClues.invisible_dogs,
                         MonstersClues.victims_see_black_dogs, MonstersClues.people_seeing_strange_things,
                         MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
@@ -651,7 +651,7 @@ class MonsterBase:
                               "S12": [1, 2, 3, 7, 8, 9, 10, 12, 13, 15, 19, 23],
                               "S13": [1, 2, 3, 4, 5, 6, 7, 9, 12, 13, 14, 16, 18, 19, 21, 22, 23],
                               "S14": [1, 2, 3, 7, 8, 9, 10, 12, 13, 14, 15, 17, 18, 19, 20],
-                              "S15": [1, 2, 3, 6, 7, 8, 9, 11, 12]})
+                              "S15": [1, 2, 3, 6, 7, 8, 9, 11, 12, 13]})
     angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                    MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion, MonstersClues.has_wings,
                    MonstersClues.leaves_burned_marks, MonstersClues.can_tell_if_somebody_was_recently_healed,
@@ -1498,7 +1498,7 @@ class MonsterBase:
                                                "throat and allowing the Grace to escape. After that it can take from "
                                                "a month to a century for the Grace to regenerate.",
                        episodes={"S08": [22], "S12": [23], "S13": [1, 2, 3, 4, 6, 9, 14, 20, 21, 22, 23],
-                                 "S14": [1, 2, 3, 6, 7, 8, 9, 10, 14, 15, 16, 17, 18, 19, 20], "S15": [9, 11, 12]})
+                                 "S14": [1, 2, 3, 6, 7, 8, 9, 10, 14, 15, 16, 17, 18, 19, 20], "S15": [9, 11, 12, 13]})
     nephilim.clues = [MonstersClues.can_see_real_appearance_of_entities, MonstersClues.high_strength,
                       MonstersClues.bright_eyes, MonstersClues.bible_burns_it, MonstersClues.weird_weather,
                       MonstersClues.biblical_like_events, MonstersClues.flashing_lights, MonstersClues.grows_fast,
@@ -1889,7 +1889,8 @@ class MonsterBase:
                       MonstersClues.missing_body]
 
     empty = Monster("Empty", description="A cosmic being (and a place) that angels and demons go to when they die. "
-                                         "THE God has no power there.", episodes={"S13": [4], "S14": [8, 20]})
+                                         "THE God has no power there.", episodes={"S13": [4], "S14": [8, 20],
+                                                                                  "S15": [13]})
     empty.clues = [MonstersClues.can_make_themselves_appear_as_they_like, MonstersClues.can_read_peoples_minds,
                    MonstersClues.telekinesis, MonstersClues.high_strength, MonstersClues.can_posses_an_angel,
                    MonstersClues.black_goo]
@@ -2000,7 +2001,7 @@ class MonsterBase:
     atrox_fortuna.clues = [MonstersClues.people_dead_weirdly, MonstersClues.bad_luck,
                            MonstersClues.can_make_themselves_appear_as_they_like]
 
-    unknown = Monster("Unknown", description="", episodes={"S15": [12]})
+    unknown = Monster("Unknown", description="", episodes={"S15": [13]})
     unknown.clues = []
 
     def __init__(self):
