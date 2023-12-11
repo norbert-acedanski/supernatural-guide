@@ -45,7 +45,7 @@ class OrganizationsBase:
                                 OrganizationKnowledge.purification_rituals,
                                 OrganizationKnowledge.reset_mechanical_devices,
                                 OrganizationKnowledge.alternate_realities, OrganizationKnowledge.king_solomon,
-                                OrganizationKnowledge.classification_of_angels]
+                                OrganizationKnowledge.classification_of_angels, OrganizationKnowledge.the_occultum]
 
     the_judah_initiative = Organization("The Judah initiative", description="They were active during WW2. A group of "
                                                                             "rabbis that were good saboteurs. "
