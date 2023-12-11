@@ -246,7 +246,7 @@ class MonsterBase:
                                                        "an example of two people working together to bring to life "
                                                        "a Thinman monster. In S13E11 there was a group of people, that "
                                                        "kidnapped people to sell their parts to monsters.",
-                           episodes={"S01": [15], "S04": [11], "S09": [15, 20], "S13": [11]})
+                           episodes={"S01": [15], "S04": [11], "S09": [15, 20], "S13": [11], "S15": [15]})
     crazy_humans.clues = [MonstersClues.people_kidnapped_weirdly, MonstersClues.weird_electronics_behavior,
                           MonstersClues.flashing_lights, MonstersClues.people_seeing_things_or_figures,
                           MonstersClues.people_dead_weirdly, MonstersClues.weird_things_behavior, MonstersClues.claws,
@@ -254,7 +254,8 @@ class MonsterBase:
                           MonstersClues.can_appear_out_of_thin_air, MonstersClues.slender_like_creature,
                           MonstersClues.can_vanish, MonstersClues.no_flashing_lights, MonstersClues.ghost_like_creature,
                           MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
-                          MonstersClues.missing_or_dead_people_regularly_in_different_areas]
+                          MonstersClues.missing_or_dead_people_regularly_in_different_areas, MonstersClues.no_sulfur,
+                          MonstersClues.victims_hear_voices, MonstersClues.no_hex_bags]
     crazy_humans.kill_methods = [MonstersKillMethods.like_any_human]
 
     spring_heeled_jacks = Monster("Sprint Heeled Jacks", description="Not seen. Only mentioned in S01E15")
@@ -369,7 +370,8 @@ class MonsterBase:
                                                                "dirt, black cat cone, ones photo in the center of "
                                                                "a crossroad.",
                                episodes={"S02": [8, 22], "S04": [9], "S05": [10], "S06": [4], "S07": [8], "S08": [19],
-                                         "S09": [2, 16], "S10": [1, 3, 10, 13], "S11": [15], "S12": [6], "S13": [8]})
+                                         "S09": [2, 16], "S10": [1, 3, 10, 13], "S11": [15], "S12": [6], "S13": [8],
+                                         "S15": [15]})
     crossroads_demon.clues = [MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
                               MonstersClues.red_eyes, MonstersClues.summoned_by_placing_box_in_the_crossroads,
                               MonstersClues.travels_as_black_fog, MonstersClues.pact_sealed_with_a_kiss,
@@ -652,7 +654,7 @@ class MonsterBase:
                               "S12": [1, 2, 3, 7, 8, 9, 10, 12, 13, 15, 19, 23],
                               "S13": [1, 2, 3, 4, 5, 6, 7, 9, 12, 13, 14, 16, 18, 19, 21, 22, 23],
                               "S14": [1, 2, 3, 7, 8, 9, 10, 12, 13, 14, 15, 17, 18, 19, 20],
-                              "S15": [1, 2, 3, 6, 7, 8, 9, 11, 12, 13]})
+                              "S15": [1, 2, 3, 6, 7, 8, 9, 11, 12, 13, 15]})
     angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                    MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion, MonstersClues.has_wings,
                    MonstersClues.leaves_burned_marks, MonstersClues.can_tell_if_somebody_was_recently_healed,
@@ -1500,7 +1502,7 @@ class MonsterBase:
                                                "a month to a century for the Grace to regenerate.",
                        episodes={"S08": [22], "S12": [23], "S13": [1, 2, 3, 4, 6, 9, 14, 20, 21, 22, 23],
                                  "S14": [1, 2, 3, 6, 7, 8, 9, 10, 14, 15, 16, 17, 18, 19, 20],
-                                 "S15": [9, 11, 12, 13, 14]})
+                                 "S15": [9, 11, 12, 13, 14, 15]})
     nephilim.clues = [MonstersClues.can_see_real_appearance_of_entities, MonstersClues.high_strength,
                       MonstersClues.bright_eyes, MonstersClues.bible_burns_it, MonstersClues.weird_weather,
                       MonstersClues.biblical_like_events, MonstersClues.flashing_lights, MonstersClues.grows_fast,
@@ -1707,7 +1709,7 @@ class MonsterBase:
                                                "by all of the Angels single blow for a while. If that happens, a lot "
                                                "of darkness is released to the neighbourhood. When she wakes up, she "
                                                "can take in the darkness back, but is hurt by the blow.",
-                       episodes={"S10": [23], "S11": [1, 2, 3, 5, 6, 9, 10, 18, 21, 22, 23], "S15": [2]})
+                       episodes={"S10": [23], "S11": [1, 2, 3, 5, 6, 9, 10, 18, 21, 22, 23], "S15": [2, 15]})
     darkness.clues = [MonstersClues.enormous_black_fog, MonstersClues.can_teleport_people, MonstersClues.can_vanish,
                       MonstersClues.seen_as_a_woman, MonstersClues.people_dead_weirdly, MonstersClues.black_veins,
                       MonstersClues.leaves_zombie_like_people_with_black_veins_around_neck, MonstersClues.telekinesis,
@@ -2011,8 +2013,9 @@ class MonsterBase:
                         MonstersClues.can_repair_human_body, MonstersClues.can_appear_out_of_thin_air,
                         MonstersClues.can_vanish]
 
-    unknown = Monster("Unknown", description="", episodes={"S15": [14]})
-    unknown.clues = []
+    unknown = Monster("Unknown", description="", episodes={"S15": [15]})
+    unknown.clues = [MonstersClues.victims_hear_voices, MonstersClues.no_hex_bags, MonstersClues.no_sulfur,
+                     MonstersClues.no_cold_spots, MonstersClues.people_dead_weirdly]
 
     def __init__(self):
         self.monsters = [monster for monster in self.__class__.__dict__.values() if isinstance(monster, Monster)]
