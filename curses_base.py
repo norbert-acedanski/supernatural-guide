@@ -434,7 +434,7 @@ class CursesBase:
     magical_salt_circle.clues = [CursesClues.ghosts_cannot_cross_it]
 
     travel_to_hell_spell = Curse("Travel to Hell spell", description="Spell prepared by Rowena to travel to Hell.",
-                                 episodes={"S15": [3, 8]})
+                                 episodes={"S15": [3, 8, 13]})
 
     sealing_primordial_being_spell = Curse("Sealing Primordial Being spell",
                                            description="Spell, that allows to seal GOD or Darkness away. Ingredients "
