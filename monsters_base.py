@@ -296,7 +296,8 @@ class MonsterBase:
                                              "blood. Upon changing, all senses sharpen.",
                       episodes={"S01": [20], "S02": [3], "S03": [7], "S05": [3], "S06": [5, 19], "S07": [22],
                                 "S08": [1, 2, 5, 7, 9, 10, 18, 19], "S09": [2, 16, 19, 20], "S10": [8, 19, 23],
-                                "S11": [12], "S12": [1, 9, 14], "S13": [11, 21], "S14": [1, 2, 3, 10], "S15": [4, 10]})
+                                "S11": [12], "S12": [1, 9, 14], "S13": [11, 21], "S14": [1, 2, 3, 10],
+                                "S15": [4, 10, 14]})
     vampire.clues = [MonstersClues.ripped_throat, MonstersClues.no_blood_in_the_body, MonstersClues.needle_like_teeth,
                      MonstersClues.moving_in_groups_usually, MonstersClues.invulnerable, MonstersClues.high_strength,
                      MonstersClues.bright_eyes, MonstersClues.great_sense_of_smell, MonstersClues.white_skin,
@@ -1498,7 +1499,8 @@ class MonsterBase:
                                                "throat and allowing the Grace to escape. After that it can take from "
                                                "a month to a century for the Grace to regenerate.",
                        episodes={"S08": [22], "S12": [23], "S13": [1, 2, 3, 4, 6, 9, 14, 20, 21, 22, 23],
-                                 "S14": [1, 2, 3, 6, 7, 8, 9, 10, 14, 15, 16, 17, 18, 19, 20], "S15": [9, 11, 12, 13]})
+                                 "S14": [1, 2, 3, 6, 7, 8, 9, 10, 14, 15, 16, 17, 18, 19, 20],
+                                 "S15": [9, 11, 12, 13, 14]})
     nephilim.clues = [MonstersClues.can_see_real_appearance_of_entities, MonstersClues.high_strength,
                       MonstersClues.bright_eyes, MonstersClues.bible_burns_it, MonstersClues.weird_weather,
                       MonstersClues.biblical_like_events, MonstersClues.flashing_lights, MonstersClues.grows_fast,
@@ -2001,7 +2003,15 @@ class MonsterBase:
     atrox_fortuna.clues = [MonstersClues.people_dead_weirdly, MonstersClues.bad_luck,
                            MonstersClues.can_make_themselves_appear_as_they_like]
 
-    unknown = Monster("Unknown", description="", episodes={"S15": [13]})
+    wood_nymph = Monster("Wood Nymph", description="Wood Nymphs, though naturally docile, react violently when home or "
+                                                   "family are threatened. One encountered is Mrs. Butters.",
+                         episodes={"S15": [14]})
+    wood_nymph.clues = [MonstersClues.magic_abilities, MonstersClues.high_strength, MonstersClues.human_like_creature,
+                        MonstersClues.can_sense_peoples_souls, MonstersClues.telekinesis, MonstersClues.green_eyes,
+                        MonstersClues.can_repair_human_body, MonstersClues.can_appear_out_of_thin_air,
+                        MonstersClues.can_vanish]
+
+    unknown = Monster("Unknown", description="", episodes={"S15": [14]})
     unknown.clues = []
 
     def __init__(self):
