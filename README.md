@@ -116,7 +116,6 @@ If you are a fan of Supernatural show, you can play with this project to find ou
 - The Supernatural crew can be seen at the end of S15E20
 
 # TODO:
-- finish all seasons and episodes.
 - fill missing appearances of John Winchester's Journal until S04E19.
 - add devil's trap to objects from all episodes
 - add disable methods for objects like sigils (that can be disabled by breaking the integrity of the drawing)
