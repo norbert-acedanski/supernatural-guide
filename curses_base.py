@@ -442,6 +442,8 @@ class CursesBase:
                                                        "the nectar from a Leviathan blossom (a flower, that grows in "
                                                        "Purgatory).", episodes={"S15": [8, 9]})
 
+    # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
+
     def __init__(self):
         self.curses = [curse for curse in self.__class__.__dict__.values() if isinstance(curse, Curse)]
         self.clues = [clue for key, clue in list(CursesClues.__dict__.items()) if not key.startswith("__")]
