@@ -33,9 +33,10 @@ class PlacesBase:
                                          "can't sense it because it changes its location. Heaven has it's own prison. "
                                          "A Human can escape his/her heaven by finding a thing, that does not belong "
                                          "in the place, they are in and following it. Heaven is powered by Angels "
-                                         "(according to Naomi from S1319).",
+                                         "(according to Naomi from S1319). Jack changes Heaven before leaving so that "
+                                         "all people are in the same Heaven.",
                    episodes={"S05": [16], "S08": [7, 10, 17, 23], "S09": [18, 22, 23], "S10": [2, 17], "S11": [18, 22],
-                             "S13": [13, 18, 19], "S14": [8, 19], "S15": [17]})
+                             "S13": [13, 18, 19], "S14": [8, 19], "S15": [17, 20]})
     heaven.clues = [PlaceClues.good_memories_relived, PlaceClues.changing_scenery, PlaceClues.bright_place]
 
     purgatory = Place("Purgatory", description="A place, where all monsters go, after they die. Can be opened with an "
