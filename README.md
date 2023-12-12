@@ -107,6 +107,8 @@ If you are a fan of Supernatural show, you can play with this project to find ou
 - Sam and Dean from Alternate timeline appear in S15E13
 - Jacks Soul is restored in S15E13, when he went to the Garden of Eden
 - GOD and Amara merge into one being in S15E17
+- In S15E18 Castiel sacrifices himself to Empty to save Dean
+- In S15E18 GOD snaps everyone out of existence
 
 # TODO:
 - finish all seasons and episodes.
