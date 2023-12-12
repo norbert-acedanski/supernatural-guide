@@ -1,4 +1,3 @@
-import traceback
 import re
 
 from events_base import EventsBase
@@ -83,13 +82,10 @@ def choose_option():
 
 
 if __name__ == "__main__":
-    try:
-        base_of_monsters = MonsterBase()
-        base_of_curses = CursesBase()
-        base_of_objects = ObjectsBase()
-        base_of_places = PlacesBase()
-        base_of_events = EventsBase()
-        base_of_organizations = OrganizationsBase()
-        choose_option()
-    except Exception as e:
-        print(traceback.format_exc())
+    base_of_monsters = MonsterBase()
+    base_of_curses = CursesBase()
+    base_of_objects = ObjectsBase()
+    base_of_places = PlacesBase()
+    base_of_events = EventsBase()
+    base_of_organizations = OrganizationsBase()
+    choose_option()
