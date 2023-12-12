@@ -1,3 +1,7 @@
+from colorama import init
+init()
+
+
 class Colors:
     HEADER = '\033[95m'
     BLUE = '\033[94m'
