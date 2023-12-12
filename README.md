@@ -109,6 +109,8 @@ If you are a fan of Supernatural show, you can play with this project to find ou
 - GOD and Amara merge into one being in S15E17
 - In S15E18 Castiel sacrifices himself to Empty to save Dean
 - In S15E18 GOD snaps everyone out of existence except Jack, Sam and Dean
+- Lucyfer is resurrected by GOD in S15E19, but killed by Archangel Michael in the same episode
+- Jack absorbs all the GOD's power in S15E19, becomes a new GOD and brings back everybody
 
 # TODO:
 - finish all seasons and episodes.
