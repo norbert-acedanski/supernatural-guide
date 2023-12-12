@@ -111,6 +111,9 @@ If you are a fan of Supernatural show, you can play with this project to find ou
 - In S15E18 GOD snaps everyone out of existence except Jack, Sam and Dean
 - Lucyfer is resurrected by GOD in S15E19, but killed by Archangel Michael in the same episode
 - Jack absorbs all the GOD's power in S15E19, becomes a new GOD and brings back everybody
+- Dean dies in S15E20 (killed by a Vampire by throwing him to a sticking piece of wire), gets a Hunter's funeral and enters Heaven
+- Sam becomes a father in S15E20 after Dean dies, gets old, dies as a happy man and reunites with Dean in Heaven
+- The Supernatural crew can be seen at the end of S15E20
 
 # TODO:
 - finish all seasons and episodes.
