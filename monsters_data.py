@@ -641,6 +641,8 @@ class MonstersDisableMethods:
     god_gun = "GOD gun"
     separate_the_ring_from_the_body = "separate the ring from the body"
     nephilim_bomb = "Nephilim bomb (Nephilim, that was born from an Archangel filled with power of Adam's rib)"
+    power_of_nephilim_on_juice = "power of Nephilim on juice (Nephilim, that was born from an Archangel, that " \
+                                 "absorbed Archangel and GOD's power)"
 
 
 class MonstersCureMethods:

@@ -813,11 +813,13 @@ class MonsterBase:
                                                                    "S13E23. Can consume Nephilim Grace and be more "
                                                                    "powerful. With that power he can kill Archangels "
                                                                    "with hand on forehead. Killed by Dean in S13E23. "
-                                                                   "Seen again in Empty in S14E07.",
+                                                                   "Seen again in Empty in S14E07. Lucyfer is brought "
+                                                                   "back by GOD in S15E19 and is killed by Archangel "
+                                                                   "Michael in the same episode.",
                                 episodes={"S04": [22], "S05": [1, 3, 4, 10, 19, 22], "S07": [1, 2, 15, 17],
                                           "S11": [9, 10, 11, 14, 15, 18, 21, 22],
                                           "S12": [2, 3, 7, 8, 12, 13, 15, 17, 19, 21, 23],
-                                          "S13": [1, 2, 7, 12, 13, 18, 21, 22, 23], "S14": [7, 17]})
+                                          "S13": [1, 2, 7, 12, 13, 18, 21, 22, 23], "S14": [7, 17], "S15": [19]})
     archangel_lucyfer.clues = [MonstersClues.weird_things_behavior, MonstersClues.true_voice_can_hurt_people,
                                MonstersClues.bright_light, MonstersClues.weird_weather, MonstersClues.visions,
                                MonstersClues.people_seeing_strange_things, MonstersClues.biblical_like_events,
@@ -856,10 +858,11 @@ class MonsterBase:
                                                                    "brought down Lucifer to Hell. He did it with his "
                                                                    "sword (Sword of Archangel Michael). Can kill other "
                                                                    "angels with a touch. Another Michael exists in "
-                                                                   "alternate timeline. Michael is killed by Jack in "
-                                                                   "S14E14.",
+                                                                   "alternate timeline. Alternate Timeline Michael is "
+                                                                   "killed by Jack in S14E14. Michael is killed in "
+                                                                   "S15E19 by GOD.",
                                 episodes={"S05": [13, 18, 22], "S13": [2, 7, 14, 22, 23], "S14": [1, 2, 3, 9, 10, 14],
-                                          "S15": [8]})
+                                          "S15": [8, 19]})
     archangel_michael.clues = [MonstersClues.can_put_a_person_to_sleep, MonstersClues.can_erase_and_bring_back_memories,
                                MonstersClues.can_send_people_back_to_their_time, MonstersClues.can_repair_human_body,
                                MonstersClues.can_kill_angels_with_a_touch, MonstersClues.travels_as_white_fog,
@@ -877,7 +880,8 @@ class MonsterBase:
                                          MonstersDisableMethods.sword_of_michael_mind,
 
                                          MonstersDisableMethods.symbol_made_with_blood_against_angels]
-    archangel_michael.kill_methods = [MonstersKillMethods.archangel_blade, MonstersKillMethods.will_of_a_nephilim]
+    archangel_michael.kill_methods = [MonstersKillMethods.archangel_blade, MonstersKillMethods.will_of_a_nephilim,
+                                      MonstersKillMethods.will_of_god]
 
     god = Monster("THE GOD", description="The light, the beginning of everything. Brother of the Darkness. A being "
                                          "with almost unlimited power. Only mentioned for now. According to Death - he "
@@ -886,8 +890,9 @@ class MonsterBase:
                                          "in S07E01 talking to Castiel. In S11E20 it is revealed, that Chuck Shurley "
                                          "is GOD. According to GOD, he is being, Amara is nothingness. HE created "
                                          "life, because he was lonely. Whenever he created a new world, Amara would "
-                                         "destroy it. GOD is heavily weakened by the Darkness in S11E22.",
-                  episodes={"S11": [4, 20, 21, 22, 23], "S14": [20], "S15": [2, 4, 8, 9, 12, 17]})
+                                         "destroy it. GOD is heavily weakened by the Darkness in S11E22. In S15E19 GOD "
+                                         "becomes human - looses his power to Jack.",
+                  episodes={"S11": [4, 20, 21, 22, 23], "S14": [20], "S15": [2, 4, 8, 9, 12, 17, 19]})
     god.clues = [MonstersClues.can_bring_back_dead_angels, MonstersClues.can_teleport_people, MonstersClues.can_vanish,
                  MonstersClues.shining_of_magic_amulet, MonstersClues.visions, MonstersClues.can_appear_out_of_thin_air,
                  MonstersClues.can_bring_back_angelic_grace, MonstersClues.knows_past, MonstersClues.can_kill_nephilim,
@@ -896,9 +901,10 @@ class MonsterBase:
                  MonstersClues.travels_as_white_fog, MonstersClues.can_repair_an_archangel, MonstersClues.burned_eyes,
                  MonstersClues.can_teleport_angels, MonstersClues.can_control_electronics, MonstersClues.invulnerable,
                  MonstersClues.can_give_others_knowledge, MonstersClues.people_cured_miraculously,
-                 MonstersClues.people_dead_weirdly, MonstersClues.can_posses_a_person,
-                 MonstersClues.lack_of_body_control]
-    god.disable_methods = [MonstersDisableMethods.darkness_powers, MonstersDisableMethods.god_gun]
+                 MonstersClues.people_dead_weirdly, MonstersClues.can_posses_a_person, MonstersClues.high_strength,
+                 MonstersClues.lack_of_body_control, MonstersClues.can_hurt_people_with_a_thought]
+    god.disable_methods = [MonstersDisableMethods.darkness_powers, MonstersDisableMethods.god_gun,
+                           MonstersDisableMethods.power_of_nephilim_on_juice]
     god.kill_methods = [MonstersKillMethods.the_darkness]
 
     horseman_war = Monster("Horseman War", description="One of the four horseman. Can give people hallucinations with "
@@ -1505,7 +1511,7 @@ class MonsterBase:
                                                "a month to a century for the Grace to regenerate.",
                        episodes={"S08": [22], "S12": [23], "S13": [1, 2, 3, 4, 6, 9, 14, 20, 21, 22, 23],
                                  "S14": [1, 2, 3, 6, 7, 8, 9, 10, 14, 15, 16, 17, 18, 19, 20],
-                                 "S15": [9, 11, 12, 13, 14, 15, 17, 18]})
+                                 "S15": [9, 11, 12, 13, 14, 15, 17, 18, 19]})
     nephilim.clues = [MonstersClues.can_see_real_appearance_of_entities, MonstersClues.high_strength,
                       MonstersClues.bright_eyes, MonstersClues.bible_burns_it, MonstersClues.weird_weather,
                       MonstersClues.biblical_like_events, MonstersClues.flashing_lights, MonstersClues.grows_fast,
@@ -2028,7 +2034,7 @@ class MonsterBase:
     baba_yaga.disable_methods = [MonstersDisableMethods.separate_the_ring_from_the_body]
     baba_yaga.kill_methods = [MonstersKillMethods.destroy_the_ring]
 
-    unknown = Monster("Unknown", description="", episodes={"S15": [18]})
+    unknown = Monster("Unknown", description="", episodes={"S15": [19]})
     unknown.clues = []
 
     def __init__(self):
