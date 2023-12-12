@@ -72,7 +72,6 @@ def choose_option():
             print("Thank you for playing with this project!")
         else:
             print("Choose option from the list...")
-            pass
 
 
 if __name__ == "__main__":
