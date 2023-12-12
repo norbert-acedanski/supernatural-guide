@@ -94,6 +94,7 @@ class MonstersClues:
     missing_or_dead_people_regularly_in_the_same_area = "groups of people missing/dead regularly in the same area"
     missing_or_dead_people_around_christmas = "missing or dead people around christmas"
     missing_or_dead_people_regularly_in_different_areas = "missing or dead people regularly in different areas"
+    missing_or_dead_children_regularly_in_different_places = "missing or dead children regularly in different places"
     missing_body = "missing body/bodies (sometimes from the cemetery)"
     no_missing_body = "no missing body"
     missing_organs = "missing organs"
@@ -482,6 +483,7 @@ class MonstersKillMethods:
     burn_salted_corpse = "burn salted corpse/remains"
     burn_the_remains = "burn the remains"
     destroy_the_object_that_the_ghost_is_bound_to = "destroy the object, that the ghost is bound to"
+    destroy_the_ring = "destroy the ring"
     burn_it = "burn it"
     # bullet_into_the_head = "bullet into the head"  ???
     angelica_root_mixture = "mixture of Angelica root, Van Van oil, dust from the crossroads and other 'odds and ends' " \
@@ -634,6 +636,7 @@ class MonstersDisableMethods:
     sword_of_michael_mind = "Sword of Michael's mind"
     gorgon_venom = "Gorgon venom"
     god_gun = "GOD gun"
+    separate_the_ring_from_the_body = "separate the ring from the body"
 
 
 class MonstersCureMethods:

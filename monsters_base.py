@@ -209,7 +209,7 @@ class MonsterBase:
                                            "Death (revealed in S13E05).",
                      episodes={"S01": [12], "S02": [1], "S04": [15], "S05": [10, 21], "S06": [11], "S07": [10],
                                "S08": [19], "S09": [3, 22], "S11": [2, 10, 17, 23], "S12": [6, 9], "S13": [5, 19],
-                               "S14": [10, 20], "S15": [9, 12, 13]})
+                               "S14": [10, 20], "S15": [9, 12, 13, 16]})
     reaper.clues = [MonstersClues.people_dead_weirdly, MonstersClues.people_cured_miraculously,
                     MonstersClues.weird_things_behavior, MonstersClues.people_seeing_things_or_figures,
                     MonstersClues.seen_as_a_person_in_a_suit, MonstersClues.ghost_like_creature,
@@ -2013,9 +2013,22 @@ class MonsterBase:
                         MonstersClues.can_repair_human_body, MonstersClues.can_appear_out_of_thin_air,
                         MonstersClues.can_vanish]
 
-    unknown = Monster("Unknown", description="", episodes={"S15": [15]})
-    unknown.clues = [MonstersClues.victims_hear_voices, MonstersClues.no_hex_bags, MonstersClues.no_sulfur,
-                     MonstersClues.no_cold_spots, MonstersClues.people_dead_weirdly]
+    baba_yaga = Monster("Baba Yaga", description="A witch, who feeds on children's fear using hallucinations. She "
+                                                 "wears a red ring, that is a source of her power (which is her "
+                                                 "heart). If it's broken, witch is disabled.", episodes={"S15": [16]})
+    baba_yaga.clues = [MonstersClues.people_seeing_things_or_figures, MonstersClues.weird_electronics_behavior,
+                       MonstersClues.people_dead_weirdly, MonstersClues.ghost_like_creature, MonstersClues.invulnerable,
+                       MonstersClues.weird_things_behavior, MonstersClues.immortal,
+                       MonstersClues.missing_or_dead_children_regularly_in_different_places,
+                       MonstersClues.can_make_themselves_appear_as_they_like]
+    baba_yaga.disable_methods = [MonstersDisableMethods.separate_the_ring_from_the_body]
+    baba_yaga.kill_methods = [MonstersKillMethods.destroy_the_ring]
+
+    unknown = Monster("Unknown", description="", episodes={"S15": [16]})
+    unknown.clues = [MonstersClues.people_seeing_things_or_figures, MonstersClues.weird_electronics_behavior,
+                     MonstersClues.people_dead_weirdly, MonstersClues.ghost_like_creature,
+                     MonstersClues.weird_things_behavior,
+                     MonstersClues.missing_or_dead_children_regularly_in_different_places]
 
     def __init__(self):
         self.monsters = [monster for monster in self.__class__.__dict__.values() if isinstance(monster, Monster)]
