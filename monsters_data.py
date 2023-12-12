@@ -94,6 +94,7 @@ class MonstersClues:
     missing_or_dead_people_regularly_in_the_same_area = "groups of people missing/dead regularly in the same area"
     missing_or_dead_people_around_christmas = "missing or dead people around christmas"
     missing_or_dead_people_regularly_in_different_areas = "missing or dead people regularly in different areas"
+    missing_or_dead_children_regularly_in_different_places = "missing or dead children regularly in different places"
     missing_body = "missing body/bodies (sometimes from the cemetery)"
     no_missing_body = "no missing body"
     missing_organs = "missing organs"
@@ -299,6 +300,7 @@ class MonstersClues:
     can_kill_demons_with_power_of_will = "can kill demons with power of will (with enough power)"
     can_kill_angels_with_power_of_will = "can kill Angels with power of will"
     can_kill_archangels_with_finger_snap = "can kill archangels with finger snap"
+    can_kill_reapers_with_finger_snap = "can kill Reapers with finger snap"
     can_kill_princes_of_hell_with_a_thought = "can kill Princes of Hell with a thought"
     can_kill_nephilim = "can kill Nephilim"
     can_put_a_person_to_sleep = "can put a person to sleep"
@@ -308,6 +310,7 @@ class MonstersClues:
     can_teleport_people = "can teleport people"
     can_teleport_angels = "can teleport Angels"
     can_teleport_archangels = "can teleport Archangels"
+    can_teleport_nephilim = "can teleport Nephilim"
     can_tell_if_somebody_was_recently_healed = "can tell if somebody was recently healed"
     can_give_people_diseases = "can give people diseases"
     can_give_hallucinations = "can give hallucinations"
@@ -355,6 +358,7 @@ class MonstersClues:
     can_travel_to_alternate_timelines_with_their_mind = "can travel to alternate timelines with their mind"
     can_travel_to_alternate_timelines = "can travel to alternate timelines"
     can_eat_angelic_grace = "can eat Angelic grace"
+    can_open_rift_to_purgatory = "can open a rift to Purgatory"
     people_with_souls_switched = "people with souls switched"
     poisoned_people = "poisoned people"
     demon_killing_knife_is_ineffective = "demon killing knife is ineffective"
@@ -481,6 +485,7 @@ class MonstersKillMethods:
     burn_salted_corpse = "burn salted corpse/remains"
     burn_the_remains = "burn the remains"
     destroy_the_object_that_the_ghost_is_bound_to = "destroy the object, that the ghost is bound to"
+    destroy_the_ring = "destroy the ring"
     burn_it = "burn it"
     # bullet_into_the_head = "bullet into the head"  ???
     angelica_root_mixture = "mixture of Angelica root, Van Van oil, dust from the crossroads and other 'odds and ends' " \
@@ -612,6 +617,7 @@ class MonstersDisableMethods:
     ashes_of_a_phoenix = "ashes of a phoenix"
     angel_blade = "angel blade"
     first_blade = "first blade"
+    scythe_of_death = "Scythe of Death"
     presence_of_the_mother = "presence of the mother"
     stab_with_rams_horn = "stab with ram's horn"
     sodium_borate_burns_it = "sodium borate (a chemical found in industrial chemicals and soaps) burns it"
@@ -632,6 +638,11 @@ class MonstersDisableMethods:
     lance_of_archangel_michael = "lance of Archangel Michael"
     sword_of_michael_mind = "Sword of Michael's mind"
     gorgon_venom = "Gorgon venom"
+    god_gun = "GOD gun"
+    separate_the_ring_from_the_body = "separate the ring from the body"
+    nephilim_bomb = "Nephilim bomb (Nephilim, that was born from an Archangel filled with power of Adam's rib)"
+    power_of_nephilim_on_juice = "power of Nephilim on juice (Nephilim, that was born from an Archangel, that " \
+                                 "absorbed Archangel and GOD's power)"
 
 
 class MonstersCureMethods:

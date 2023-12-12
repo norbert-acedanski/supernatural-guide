@@ -39,3 +39,5 @@ class OrganizationKnowledge:
     alternate_realities = "alternate realities"
     king_solomon = "king Solomon"
     classification_of_angels = "classification of Angels (Book of Jubilees)"
+    the_occultum = "the Occultum"
+    key_to_death = "Key to Death (it opens the door to Death's library)"

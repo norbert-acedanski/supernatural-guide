@@ -6,7 +6,8 @@ from places_data import PlaceClues
 class PlacesBase:
     hell = Place("Hell", description="Place of eternal torture. People are either tortured, or torture others. Hell "
                                      "can be accessed via a Portal guarded by a Reaper in S11E10.",
-                 episodes={"S03": [16], "S04": [1, 8, 10], "S06": [20], "S08": [19], "S10": [3], "S11": [9, 10]})
+                 episodes={"S03": [16], "S04": [1, 8, 10], "S06": [20], "S08": [19], "S10": [3], "S11": [9, 10],
+                           "S15": [3, 8, 13]})
     hell.clues = [PlaceClues.people_chained_in_a_void, PlaceClues.electrical_storms, PlaceClues.dark_place,
                   PlaceClues.flashing_lights, PlaceClues.time_runs_faster_there, PlaceClues.endless_queue,
                   PlaceClues.screaming_people, PlaceClues.skeletons_on_the_ground, PlaceClues.cells_with_people_inside]
@@ -18,7 +19,7 @@ class PlacesBase:
                                            "Heaven and Hell. Mary and Lucyfer are trapped in there in S12E23. GOD lost "
                                            "count on how many Universes there are.",
                                episodes={"S04": [17], "S05": [4], "S06": [15, 17], "S12": [23], "S13": [2, 18, 21, 22],
-                                         "S14": [13]})
+                                         "S14": [13], "S15": [12]})
     alternate_timeline.clues = [PlaceClues.different_history, PlaceClues.different_memories,
                                 PlaceClues.strange_feeling_that_things_should_be_different]
 
@@ -32,9 +33,10 @@ class PlacesBase:
                                          "can't sense it because it changes its location. Heaven has it's own prison. "
                                          "A Human can escape his/her heaven by finding a thing, that does not belong "
                                          "in the place, they are in and following it. Heaven is powered by Angels "
-                                         "(according to Naomi from S1319).",
+                                         "(according to Naomi from S1319). Jack changes Heaven before leaving so that "
+                                         "all people are in the same Heaven.",
                    episodes={"S05": [16], "S08": [7, 10, 17, 23], "S09": [18, 22, 23], "S10": [2, 17], "S11": [18, 22],
-                             "S13": [13, 18, 19], "S14": [8, 19]})
+                             "S13": [13, 18, 19], "S14": [8, 19], "S15": [17, 20]})
     heaven.clues = [PlaceClues.good_memories_relived, PlaceClues.changing_scenery, PlaceClues.bright_place]
 
     purgatory = Place("Purgatory", description="A place, where all monsters go, after they die. Can be opened with an "
@@ -49,7 +51,7 @@ class PlacesBase:
                                                "proximity. GOD made a back door for humans to escape if one ever got "
                                                "to Purgatory. It also has a direct connection to Hell through "
                                                "a portal, where 3 trees meet 1. A rogue reaper can transfer "
-                                               "a person into it.", episodes={"S07": [23], "S08": [1, 19]})
+                                               "a person into it.", episodes={"S07": [23], "S08": [1, 19], "S15": [9]})
     purgatory.clues = [PlaceClues.dark_place, PlaceClues.monsters_nearby,
                        PlaceClues.when_a_person_comes_back_from_it_a_bright_light_appears]
 
@@ -65,7 +67,7 @@ class PlacesBase:
                                        "(being), before GOD and Amara there was nothing but Empty. When Angel or a "
                                        "Demon comes here, they sleep peacefully forever. Castiel is the first being, "
                                        "that became awake, Lucyfer is the second in S14E07.",
-                  episodes={"S13": [3, 4], "S14": [7, 17, 20]})
+                  episodes={"S13": [3, 4], "S14": [7, 17, 20], "S15": [13]})
     empty.clues = [PlaceClues.dark_place, PlaceClues.levitating_black_goo]
 
     def __init__(self):

@@ -428,6 +428,21 @@ class CursesBase:
 
     # SEASON 15:
 
+    magical_salt_circle = Curse("Magical Salt Circle", description="Salt circle created by a spell with 1 mile radius. "
+                                                                   "It requires a bag of salt and fresh human heart.",
+                                episodes={"S15": [1]})
+    magical_salt_circle.clues = [CursesClues.ghosts_cannot_cross_it]
+
+    travel_to_hell_spell = Curse("Travel to Hell spell", description="Spell prepared by Rowena to travel to Hell.",
+                                 episodes={"S15": [3, 8, 13]})
+
+    sealing_primordial_being_spell = Curse("Sealing Primordial Being spell",
+                                           description="Spell, that allows to seal GOD or Darkness away. Ingredients "
+                                                       "are myrrh, cassia, rockrose and to bind the spell together - "
+                                                       "the nectar from a Leviathan blossom (a flower, that grows in "
+                                                       "Purgatory).", episodes={"S15": [8, 9]})
+
+    # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
 
     def __init__(self):
         self.curses = [curse for curse in self.__class__.__dict__.values() if isinstance(curse, Curse)]
@@ -462,7 +477,7 @@ class CursesBase:
                 curses_clues_dict[curse_number] = clues_intersection
         sorted_curses_clues_dict = {m: c for m, c in sorted(curses_clues_dict.items(), key=lambda item: item[1],
                                                             reverse=True)}
-        print(f"\n{len(sorted_curses_clues_dict)} MATCHED CURSES FOUND: \n")
+        print(f"\n{len(sorted_curses_clues_dict)} MATCHING CURSES FOUND: \n")
         for curse_number, number_of_matching_clues in sorted_curses_clues_dict.items():
             print(Colors.BOLD + Colors.BLUE + f"{number_of_matching_clues}/{len(selected_clues)} Matches:"
                   + Colors.ENDC, end=" ")

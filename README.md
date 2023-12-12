@@ -87,6 +87,33 @@ If you are a fan of Supernatural show, you can play with this project to find ou
 - Sam shoots GOD with GOD gun, but nothing happens to GOD
 - Jack is killed by GOD in S14E20 and ends up in Empty
 - GOD releases all souls from Hell and raises the dead in S14E20, starting The End
+- Rowena flirts with Ketch in S15E02
+- Ketch's heart is ripped out in S15E03 by Demon Ardat
+- Castiel and Belphegor jump into the rip, that leads to Hell in S15E03
+- Rowena persuades Sam to kill her in S15E03 in order to close the rift, that GOD opened
+- Vicky is back in S15E04 and is snapped by GOD with her family in the same episode
+- In S15E06 it is mentioned, that a soul from Hell cannot enter Heaven, yet they were able to get Bobby's soul from Hell to Heaven in one of the previous seasons
+- Eileen comes back as a spirit in S15E06 and is brought back by Sam in the same episode
+- Sam went into GOD's head in S15E07 after Castiel tried to probe his wound
+- Rowena becomes the ruler of Hell after she dies (revealed in S15E08, when Sam, Dean and Castiel travel to Hell)
+- John Winchester's son Adam is back in S15E08
+- Leviathan scull can be seen in S15E09 in Purgatory
+- Sam looks at the future in S15E09
+- Sam and Dean have a really bad day in S15E10 (Sam got burned in the kitchen, tripped, got sick, Dean's card and car broke and his teeth hurt and throws up)
+- Garth destroys Monster Fight Club with C4 in S15E10
+- Hero's Luck taken by GOD in S15E10 is granted back by Atrox Fortuna in S15E11
+- In S15E12 GOD starts to destroy all other Universes except for the one, that main Sam and Dean live in
+- In S15E12 Reaper Death reveals, that Jack, Sam and Dean are the messengers of GODs destruction
+- Sam and Dean from Alternate timeline appear in S15E13
+- Jacks Soul is restored in S15E13, when he went to the Garden of Eden
+- GOD and Amara merge into one being in S15E17
+- In S15E18 Castiel sacrifices himself to Empty to save Dean
+- In S15E18 GOD snaps everyone out of existence except Jack, Sam and Dean
+- Lucyfer is resurrected by GOD in S15E19, but killed by Archangel Michael in the same episode
+- Jack absorbs all the GOD's power in S15E19, becomes a new GOD and brings back everybody
+- Dean dies in S15E20 (killed by a Vampire by throwing him to a sticking piece of wire), gets a Hunter's funeral and enters Heaven
+- Sam becomes a father in S15E20 after Dean dies, gets old, dies as a happy man and reunites with Dean in Heaven
+- The Supernatural crew can be seen at the end of S15E20
 
 # TODO:
 - finish all seasons and episodes.
