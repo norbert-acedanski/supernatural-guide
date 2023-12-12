@@ -11,24 +11,18 @@ from colors import Colors
 
 def choose_option():
     chosen_option = 1
+    print_values = ["print all monster names", "print all monsters with their attributes",
+                    "print all clues of monsters", "find matching monster",
+                    "print all curses names",  "print all curses with their attributes",
+                    "print all clues of curses", "find matching curse",
+                    "print all objects names", "print all objects with their attributes",
+                    "print all places names", "print all places with their attributes",
+                    "print all events names", "print all events with their attributes",
+                    "print all organizations names", "print all organizations with their attributes"]
     while chosen_option != 0:
         print(Colors.GREEN + Colors.BOLD + "\nChoose option: " + Colors.ENDC)
-        print(Colors.MAGENTA + "1" + Colors.ENDC + " - print all monster names")
-        print(Colors.MAGENTA + "2" + Colors.ENDC + " - print all monsters with their attributes")
-        print(Colors.MAGENTA + "3" + Colors.ENDC + " - print all clues of monsters")
-        print(Colors.MAGENTA + "4" + Colors.ENDC + " - find matching monster")
-        print(Colors.MAGENTA + "5" + Colors.ENDC + " - print all curses names")
-        print(Colors.MAGENTA + "6" + Colors.ENDC + " - print all curses with their attributes")
-        print(Colors.MAGENTA + "7" + Colors.ENDC + " - print all clues of curses")
-        print(Colors.MAGENTA + "8" + Colors.ENDC + " - find matching curse")
-        print(Colors.MAGENTA + "9" + Colors.ENDC + " - print all objects names")
-        print(Colors.MAGENTA + "10" + Colors.ENDC + " - print all objects with their attributes")
-        print(Colors.MAGENTA + "11" + Colors.ENDC + " - print all places names")
-        print(Colors.MAGENTA + "12" + Colors.ENDC + " - print all places with their attributes")
-        print(Colors.MAGENTA + "13" + Colors.ENDC + " - print all events names")
-        print(Colors.MAGENTA + "14" + Colors.ENDC + " - print all events with their attributes")
-        print(Colors.MAGENTA + "15" + Colors.ENDC + " - print all organizations names")
-        print(Colors.MAGENTA + "16" + Colors.ENDC + " - print all organizations with their attributes")
+        for option_number, print_value in zip(range(1, 17), print_values):
+            print(Colors.MAGENTA + str(option_number) + Colors.ENDC + " - " + print_value)
         print(Colors.MAGENTA + "0" + Colors.ENDC + " - exit")
         chosen_option_str = input()
         chosen_option_str = re.sub('[a-zA-Z,.&^%$#@?|/:;"_=]', '', chosen_option_str)
