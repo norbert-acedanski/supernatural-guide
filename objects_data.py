@@ -96,3 +96,5 @@ class JohnWinchesterJournal:
                                  "particular place leads to 'A place where unimaginable evil emanates from creatures " \
                                  "too wicked for the Pit to hold.'"
     entry_about_dream_walkers = "entry about dream walkers"
+    entry_about_kidnappings = "entry about kidnappings in 1986 along Route 77. Witness draw a skull face. Kids were " \
+                              "taken, the adults, that weren't drained had their tongues ripped out"

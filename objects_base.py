@@ -14,13 +14,14 @@ class ObjectsBase:
                                       description="A journal of John Winchester, that contains a lot information about "
                                                   "monsters in Supernatural Universe.",
                                       episodes={"S01": [], "S04": [19], "S06": [1, 8, 12], "S07": [8, 11],
-                                                "S08": [8, 12], "S09": [11], "S12": [2, 3], "S13": [9]})
+                                                "S08": [8, 12], "S09": [11], "S12": [2, 3], "S13": [9], "S15": [20]})
     john_winchesters_journal._information = {"S04E19": JohnWinchesterJournal.entry_about_johns_other_son,
                                              "S06E12": JohnWinchesterJournal.entry_about_a_skinwalker,
                                              "S08E12": JohnWinchesterJournal.entry_about_torturing_a_demon,
                                              "S09E11": JohnWinchesterJournal.entry_about_killing_a_demon_abaddon_and_locker,
                                              "S13E02": JohnWinchesterJournal.entry_about_jasper_wyoming,
-                                             "S13E09": JohnWinchesterJournal.entry_about_dream_walkers}
+                                             "S13E09": JohnWinchesterJournal.entry_about_dream_walkers,
+                                             "S15E20": JohnWinchesterJournal.entry_about_kidnappings}
 
     colt_of_colt = Object("Colt of Colt", description="Colt made by Samuel Colt in 1835, when Halley's Comet was "
                                                       "overhead and the same night those men died at the Alamo. "
@@ -465,6 +466,8 @@ class ObjectsBase:
                                                          "destroyed by Castiel in S15E03 in order to stop Belphegor.",
                            episodes={"S15": [3]})
     liliths_crook.abilities = [ObjectAbilities.can_draw_demons_into_wielder]
+
+    # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
 
     def __init__(self):
         self.objects = [obj for obj in self.__class__.__dict__.values() if isinstance(obj, Object)]
