@@ -300,6 +300,7 @@ class MonstersClues:
     can_kill_demons_with_power_of_will = "can kill demons with power of will (with enough power)"
     can_kill_angels_with_power_of_will = "can kill Angels with power of will"
     can_kill_archangels_with_finger_snap = "can kill archangels with finger snap"
+    can_kill_reapers_with_finger_snap = "can kill Reapers with finger snap"
     can_kill_princes_of_hell_with_a_thought = "can kill Princes of Hell with a thought"
     can_kill_nephilim = "can kill Nephilim"
     can_put_a_person_to_sleep = "can put a person to sleep"

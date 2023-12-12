@@ -209,7 +209,7 @@ class MonsterBase:
                                            "Death (revealed in S13E05).",
                      episodes={"S01": [12], "S02": [1], "S04": [15], "S05": [10, 21], "S06": [11], "S07": [10],
                                "S08": [19], "S09": [3, 22], "S11": [2, 10, 17, 23], "S12": [6, 9], "S13": [5, 19],
-                               "S14": [10, 20], "S15": [9, 12, 13, 16]})
+                               "S14": [10, 20], "S15": [9, 12, 13, 16, 17]})
     reaper.clues = [MonstersClues.people_dead_weirdly, MonstersClues.people_cured_miraculously,
                     MonstersClues.weird_things_behavior, MonstersClues.people_seeing_things_or_figures,
                     MonstersClues.seen_as_a_person_in_a_suit, MonstersClues.ghost_like_creature,
@@ -654,7 +654,7 @@ class MonsterBase:
                               "S12": [1, 2, 3, 7, 8, 9, 10, 12, 13, 15, 19, 23],
                               "S13": [1, 2, 3, 4, 5, 6, 7, 9, 12, 13, 14, 16, 18, 19, 21, 22, 23],
                               "S14": [1, 2, 3, 7, 8, 9, 10, 12, 13, 14, 15, 17, 18, 19, 20],
-                              "S15": [1, 2, 3, 6, 7, 8, 9, 11, 12, 13, 15]})
+                              "S15": [1, 2, 3, 6, 7, 8, 9, 11, 12, 13, 15, 17]})
     angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                    MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion, MonstersClues.has_wings,
                    MonstersClues.leaves_burned_marks, MonstersClues.can_tell_if_somebody_was_recently_healed,
@@ -884,7 +884,7 @@ class MonsterBase:
                                          "is GOD. According to GOD, he is being, Amara is nothingness. HE created "
                                          "life, because he was lonely. Whenever he created a new world, Amara would "
                                          "destroy it. GOD is heavily weakened by the Darkness in S11E22.",
-                  episodes={"S11": [4, 20, 21, 22, 23], "S14": [20], "S15": [2, 4, 8, 9, 12]})
+                  episodes={"S11": [4, 20, 21, 22, 23], "S14": [20], "S15": [2, 4, 8, 9, 12, 17]})
     god.clues = [MonstersClues.can_bring_back_dead_angels, MonstersClues.can_teleport_people, MonstersClues.can_vanish,
                  MonstersClues.shining_of_magic_amulet, MonstersClues.visions, MonstersClues.can_appear_out_of_thin_air,
                  MonstersClues.can_bring_back_angelic_grace, MonstersClues.knows_past, MonstersClues.can_kill_nephilim,
@@ -1502,7 +1502,7 @@ class MonsterBase:
                                                "a month to a century for the Grace to regenerate.",
                        episodes={"S08": [22], "S12": [23], "S13": [1, 2, 3, 4, 6, 9, 14, 20, 21, 22, 23],
                                  "S14": [1, 2, 3, 6, 7, 8, 9, 10, 14, 15, 16, 17, 18, 19, 20],
-                                 "S15": [9, 11, 12, 13, 14, 15]})
+                                 "S15": [9, 11, 12, 13, 14, 15, 17]})
     nephilim.clues = [MonstersClues.can_see_real_appearance_of_entities, MonstersClues.high_strength,
                       MonstersClues.bright_eyes, MonstersClues.bible_burns_it, MonstersClues.weird_weather,
                       MonstersClues.biblical_like_events, MonstersClues.flashing_lights, MonstersClues.grows_fast,
@@ -1709,7 +1709,7 @@ class MonsterBase:
                                                "by all of the Angels single blow for a while. If that happens, a lot "
                                                "of darkness is released to the neighbourhood. When she wakes up, she "
                                                "can take in the darkness back, but is hurt by the blow.",
-                       episodes={"S10": [23], "S11": [1, 2, 3, 5, 6, 9, 10, 18, 21, 22, 23], "S15": [2, 15]})
+                       episodes={"S10": [23], "S11": [1, 2, 3, 5, 6, 9, 10, 18, 21, 22, 23], "S15": [2, 15, 17]})
     darkness.clues = [MonstersClues.enormous_black_fog, MonstersClues.can_teleport_people, MonstersClues.can_vanish,
                       MonstersClues.seen_as_a_woman, MonstersClues.people_dead_weirdly, MonstersClues.black_veins,
                       MonstersClues.leaves_zombie_like_people_with_black_veins_around_neck, MonstersClues.telekinesis,
@@ -1894,10 +1894,10 @@ class MonsterBase:
 
     empty = Monster("Empty", description="A cosmic being (and a place) that angels and demons go to when they die. "
                                          "THE God has no power there.", episodes={"S13": [4], "S14": [8, 20],
-                                                                                  "S15": [13]})
+                                                                                  "S15": [13, 17]})
     empty.clues = [MonstersClues.can_make_themselves_appear_as_they_like, MonstersClues.can_read_peoples_minds,
                    MonstersClues.telekinesis, MonstersClues.high_strength, MonstersClues.can_posses_an_angel,
-                   MonstersClues.black_goo]
+                   MonstersClues.black_goo, MonstersClues.can_kill_reapers_with_finger_snap]
 
     dream_walker = Monster("Dream walker", description="A person, that can travel to different worlds with his/her "
                                                        "mind in a dream or by special trans. Kaia is killed in S13E10 "
@@ -2024,11 +2024,8 @@ class MonsterBase:
     baba_yaga.disable_methods = [MonstersDisableMethods.separate_the_ring_from_the_body]
     baba_yaga.kill_methods = [MonstersKillMethods.destroy_the_ring]
 
-    unknown = Monster("Unknown", description="", episodes={"S15": [16]})
-    unknown.clues = [MonstersClues.people_seeing_things_or_figures, MonstersClues.weird_electronics_behavior,
-                     MonstersClues.people_dead_weirdly, MonstersClues.ghost_like_creature,
-                     MonstersClues.weird_things_behavior,
-                     MonstersClues.missing_or_dead_children_regularly_in_different_places]
+    unknown = Monster("Unknown", description="", episodes={"S15": [17]})
+    unknown.clues = []
 
     def __init__(self):
         self.monsters = [monster for monster in self.__class__.__dict__.values() if isinstance(monster, Monster)]
