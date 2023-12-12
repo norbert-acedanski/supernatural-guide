@@ -301,7 +301,7 @@ class MonsterBase:
                       episodes={"S01": [20], "S02": [3], "S03": [7], "S05": [3], "S06": [5, 19], "S07": [22],
                                 "S08": [1, 2, 5, 7, 9, 10, 18, 19], "S09": [2, 16, 19, 20], "S10": [8, 19, 23],
                                 "S11": [12], "S12": [1, 9, 14], "S13": [11, 21], "S14": [1, 2, 3, 10],
-                                "S15": [4, 10, 14]})
+                                "S15": [4, 10, 14, 20]})
     vampire.clues = [MonstersClues.ripped_throat, MonstersClues.no_blood_in_the_body, MonstersClues.needle_like_teeth,
                      MonstersClues.moving_in_groups_usually, MonstersClues.invulnerable, MonstersClues.high_strength,
                      MonstersClues.bright_eyes, MonstersClues.great_sense_of_smell, MonstersClues.white_skin,
@@ -2034,8 +2034,7 @@ class MonsterBase:
     baba_yaga.disable_methods = [MonstersDisableMethods.separate_the_ring_from_the_body]
     baba_yaga.kill_methods = [MonstersKillMethods.destroy_the_ring]
 
-    unknown = Monster("Unknown", description="", episodes={"S15": [19]})
-    unknown.clues = []
+    # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
 
     def __init__(self):
         self.monsters = [monster for monster in self.__class__.__dict__.values() if isinstance(monster, Monster)]
