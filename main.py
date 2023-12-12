@@ -1,4 +1,5 @@
 import re
+import os
 
 from events_base import EventsBase
 from monsters_base import MonsterBase
@@ -24,10 +25,13 @@ def choose_option():
         for option_number, print_value in zip(range(1, 17), print_values):
             print(Colors.MAGENTA + str(option_number) + Colors.ENDC + " - " + print_value)
         print(Colors.MAGENTA + "0" + Colors.ENDC + " - exit")
+        print(Colors.MAGENTA + "c" + Colors.ENDC + " - clear the screen")
         chosen_option_str = input()
-        chosen_option_str = re.sub('[a-zA-Z,.&^%$#@?|/:;"_=]', '', chosen_option_str)
+        chosen_option_str = re.sub('[a-bd-zA-Z,.&^%$#@?|/:;"_=]', '', chosen_option_str)
         if chosen_option_str.isdigit():
             chosen_option = int(chosen_option_str)
+        elif chosen_option_str == "c":
+            chosen_option = -2
         else:
             chosen_option = -1
         if chosen_option == 1:
@@ -70,6 +74,8 @@ def choose_option():
             base_of_organizations.print_all_organizations()
         elif chosen_option == 0:
             print("Thank you for playing with this project!")
+        elif chosen_option == -2:
+            os.system('cls' if os.name == 'nt' else 'clear')
         else:
             print("Choose option from the list...")
 
