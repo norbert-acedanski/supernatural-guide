@@ -106,6 +106,7 @@ If you are a fan of Supernatural show, you can play with this project to find ou
 - In S15E12 Reaper Death reveals, that Jack, Sam and Dean are the messengers of GODs destruction
 - Sam and Dean from Alternate timeline appear in S15E13
 - Jacks Soul is restored in S15E13, when he went to the Garden of Eden
+- GOD and Amara merge into one being in S15E17
 
 # TODO:
 - finish all seasons and episodes.
