@@ -310,6 +310,7 @@ class MonstersClues:
     can_teleport_people = "can teleport people"
     can_teleport_angels = "can teleport Angels"
     can_teleport_archangels = "can teleport Archangels"
+    can_teleport_nephilim = "can teleport Nephilim"
     can_tell_if_somebody_was_recently_healed = "can tell if somebody was recently healed"
     can_give_people_diseases = "can give people diseases"
     can_give_hallucinations = "can give hallucinations"
@@ -616,6 +617,7 @@ class MonstersDisableMethods:
     ashes_of_a_phoenix = "ashes of a phoenix"
     angel_blade = "angel blade"
     first_blade = "first blade"
+    scythe_of_death = "Scythe of Death"
     presence_of_the_mother = "presence of the mother"
     stab_with_rams_horn = "stab with ram's horn"
     sodium_borate_burns_it = "sodium borate (a chemical found in industrial chemicals and soaps) burns it"
@@ -638,6 +640,7 @@ class MonstersDisableMethods:
     gorgon_venom = "Gorgon venom"
     god_gun = "GOD gun"
     separate_the_ring_from_the_body = "separate the ring from the body"
+    nephilim_bomb = "Nephilim bomb (Nephilim, that was born from an Archangel filled with power of Adam's rib)"
 
 
 class MonstersCureMethods:

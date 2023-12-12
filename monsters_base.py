@@ -209,7 +209,7 @@ class MonsterBase:
                                            "Death (revealed in S13E05).",
                      episodes={"S01": [12], "S02": [1], "S04": [15], "S05": [10, 21], "S06": [11], "S07": [10],
                                "S08": [19], "S09": [3, 22], "S11": [2, 10, 17, 23], "S12": [6, 9], "S13": [5, 19],
-                               "S14": [10, 20], "S15": [9, 12, 13, 16, 17]})
+                               "S14": [10, 20], "S15": [9, 12, 13, 16, 17, 18]})
     reaper.clues = [MonstersClues.people_dead_weirdly, MonstersClues.people_cured_miraculously,
                     MonstersClues.weird_things_behavior, MonstersClues.people_seeing_things_or_figures,
                     MonstersClues.seen_as_a_person_in_a_suit, MonstersClues.ghost_like_creature,
@@ -217,10 +217,13 @@ class MonsterBase:
                     MonstersClues.can_make_themselves_appear_as_they_like, MonstersClues.people_not_dying,
                     MonstersClues.strange_different_things_happening, MonstersClues.invisible_entity,
                     MonstersClues.electrical_storms, MonstersClues.can_appear_out_of_thin_air,
-                    MonstersClues.bright_light, MonstersClues.can_collect_souls_of_the_dead]
-    reaper.disable_methods = [MonstersDisableMethods.reaper_imprison_sigil, MonstersDisableMethods.angel_blade]
+                    MonstersClues.bright_light, MonstersClues.can_collect_souls_of_the_dead, MonstersClues.telekinesis,
+                    MonstersClues.can_teleport_nephilim]
+    reaper.disable_methods = [MonstersDisableMethods.reaper_imprison_sigil, MonstersDisableMethods.angel_blade,
+                              MonstersDisableMethods.scythe_of_death]
     reaper.kill_methods = [MonstersKillMethods.reaper_blade_combined_with_a_spell, MonstersKillMethods.angel_blade,
-                           MonstersKillMethods.first_blade, MonstersKillMethods.rowenas_spell]
+                           MonstersKillMethods.first_blade, MonstersKillMethods.rowenas_spell,
+                           MonstersKillMethods.scythe_of_death]
 
     people_with_abilities = Monster("People with abilities", description="People, that were infants, when prince of "
                                                                          "Hell killed their mother on the ceiling. "
@@ -654,7 +657,7 @@ class MonsterBase:
                               "S12": [1, 2, 3, 7, 8, 9, 10, 12, 13, 15, 19, 23],
                               "S13": [1, 2, 3, 4, 5, 6, 7, 9, 12, 13, 14, 16, 18, 19, 21, 22, 23],
                               "S14": [1, 2, 3, 7, 8, 9, 10, 12, 13, 14, 15, 17, 18, 19, 20],
-                              "S15": [1, 2, 3, 6, 7, 8, 9, 11, 12, 13, 15, 17]})
+                              "S15": [1, 2, 3, 6, 7, 8, 9, 11, 12, 13, 15, 17, 18]})
     angel.clues = [MonstersClues.can_bring_back_dead_people, MonstersClues.in_true_form_burns_eyes_of_people,
                    MonstersClues.place_where_person_was_resurrected_looks_like_after_explosion, MonstersClues.has_wings,
                    MonstersClues.leaves_burned_marks, MonstersClues.can_tell_if_somebody_was_recently_healed,
@@ -1502,7 +1505,7 @@ class MonsterBase:
                                                "a month to a century for the Grace to regenerate.",
                        episodes={"S08": [22], "S12": [23], "S13": [1, 2, 3, 4, 6, 9, 14, 20, 21, 22, 23],
                                  "S14": [1, 2, 3, 6, 7, 8, 9, 10, 14, 15, 16, 17, 18, 19, 20],
-                                 "S15": [9, 11, 12, 13, 14, 15, 17]})
+                                 "S15": [9, 11, 12, 13, 14, 15, 17, 18]})
     nephilim.clues = [MonstersClues.can_see_real_appearance_of_entities, MonstersClues.high_strength,
                       MonstersClues.bright_eyes, MonstersClues.bible_burns_it, MonstersClues.weird_weather,
                       MonstersClues.biblical_like_events, MonstersClues.flashing_lights, MonstersClues.grows_fast,
@@ -1893,11 +1896,12 @@ class MonsterBase:
                       MonstersClues.missing_body]
 
     empty = Monster("Empty", description="A cosmic being (and a place) that angels and demons go to when they die. "
-                                         "THE God has no power there.", episodes={"S13": [4], "S14": [8, 20],
-                                                                                  "S15": [13, 17]})
+                                         "THE God has no power there. The Empty cannot go to Earth on its own. It has "
+                                         "to be summoned.", episodes={"S13": [4], "S14": [8, 20], "S15": [13, 17, 18]})
     empty.clues = [MonstersClues.can_make_themselves_appear_as_they_like, MonstersClues.can_read_peoples_minds,
                    MonstersClues.telekinesis, MonstersClues.high_strength, MonstersClues.can_posses_an_angel,
                    MonstersClues.black_goo, MonstersClues.can_kill_reapers_with_finger_snap]
+    empty.disable_methods = [MonstersDisableMethods.nephilim_bomb]
 
     dream_walker = Monster("Dream walker", description="A person, that can travel to different worlds with his/her "
                                                        "mind in a dream or by special trans. Kaia is killed in S13E10 "
@@ -2024,7 +2028,7 @@ class MonsterBase:
     baba_yaga.disable_methods = [MonstersDisableMethods.separate_the_ring_from_the_body]
     baba_yaga.kill_methods = [MonstersKillMethods.destroy_the_ring]
 
-    unknown = Monster("Unknown", description="", episodes={"S15": [17]})
+    unknown = Monster("Unknown", description="", episodes={"S15": [18]})
     unknown.clues = []
 
     def __init__(self):
