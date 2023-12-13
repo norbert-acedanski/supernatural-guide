@@ -25,7 +25,7 @@ def choose_option():
         for option_number, print_value in zip(range(1, 17), print_values):
             print(Colors.MAGENTA + str(option_number) + Colors.ENDC + " - " + print_value)
         print(Colors.MAGENTA + "0" + Colors.ENDC + " - exit")
-        print(Colors.MAGENTA + "c" + Colors.ENDC + " - clear the screen")
+        print(Colors.MAGENTA + "c" + Colors.ENDC + " - clear")
         chosen_option_str = input()
         chosen_option_str = re.sub('[a-bd-zA-Z,.&^%$#@?|/:;"_=]', '', chosen_option_str)
         if chosen_option_str.isdigit():
