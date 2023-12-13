@@ -31,6 +31,7 @@ Python 3.9.10
     - ***15 - print all organizations names*** - prints all organizations names currently in a database.
     - ***16 - print all organizations with their attributes*** - prints all organizations names, a brief description, episodes, that an organization was seen, knowledge (if available).
     - ***0 - exit*** - end the program
+    - ***c - clear*** - clear the screen
 
 # Usage
 If you are a fan of Supernatural show, you can play with this project to find out what are the clues, that a particular entity/curse/event/object/place leaves behind and try to determine that like Sam and Dean would ;)  
