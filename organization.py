@@ -27,7 +27,7 @@ class Organization:
     def print_knowledge_base(self):
         print(Colors.YELLOW + "Knowledge:" + Colors.ENDC)
         if self.knowledge is not None:
-            for knowledge in self.knowledge:
+            for knowledge in sorted(self.knowledge):
                 print("  »  " + knowledge)
         else:
             print("  »  None found")

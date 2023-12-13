@@ -28,7 +28,7 @@ class Event:
     def print_clues_base(self):
         print(Colors.YELLOW + "Clues:" + Colors.ENDC)
         if self.clues is not None:
-            for clue in self.clues:
+            for clue in sorted(self.clues):
                 print("  »  " + clue)
         else:
             print("  »  None found")
@@ -36,7 +36,7 @@ class Event:
     def print_disable_methods(self):
         if self.disable_methods is not None:
             print(Colors.MAGENTA + "Disable Methods:" + Colors.ENDC)
-            for method in self.disable_methods:
+            for method in sorted(self.disable_methods):
                 print("  »  " + method)
 
     def print_all(self):

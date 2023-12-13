@@ -30,7 +30,7 @@ class Object:
     def print_abilities(self):
         print(Colors.YELLOW + "Abilities:" + Colors.ENDC)
         if self.abilities is not None:
-            for ability in self.abilities:
+            for ability in sorted(self.abilities):
                 print("  *  " + ability)
         else:
             print("  *  None found")
@@ -38,7 +38,7 @@ class Object:
     def print_maintenance_methods(self):
         print(Colors.MAGENTA + "Maintenance Methods:" + Colors.ENDC)
         if self.maintenance_methods is not None:
-            for method in self.maintenance_methods:
+            for method in sorted(self.maintenance_methods):
                 print("  *  " + method)
         else:
             print("  *  None found...")
@@ -46,7 +46,7 @@ class Object:
     def print_destroy_methods(self):
         print(Colors.MAGENTA + "Destroy Methods:" + Colors.ENDC)
         if self.destroy_methods is not None:
-            for method in self.destroy_methods:
+            for method in sorted(self.destroy_methods):
                 print("  *  " + method)
         else:
             print("  *  None found...")

@@ -27,7 +27,7 @@ class Place:
     def print_clues_base(self):
         print(Colors.YELLOW + "Clues:" + Colors.ENDC)
         if self.clues is not None:
-            for clue in self.clues:
+            for clue in sorted(self.clues):
                 print("  »  " + clue)
         else:
             print("  »  None found")

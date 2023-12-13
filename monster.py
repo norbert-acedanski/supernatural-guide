@@ -30,7 +30,7 @@ class Monster:
     def print_clues_base(self):
         print(Colors.YELLOW + "Clues:" + Colors.ENDC)
         if self.clues is not None:
-            for clue in self.clues:
+            for clue in sorted(self.clues):
                 print("  »  " + clue)
         else:
             print("  »  None found")
@@ -38,13 +38,13 @@ class Monster:
     def print_disable_methods(self):
         if self.disable_methods is not None:
             print(Colors.MAGENTA + "Disable Methods:" + Colors.ENDC)
-            for method in self.disable_methods:
+            for method in sorted(self.disable_methods):
                 print("  »  " + method)
 
     def print_kill_methods_base(self):
         print(Colors.RED + "Kill methods:" + Colors.ENDC)
         if self.kill_methods is not None:
-            for kill_method in self.kill_methods:
+            for kill_method in sorted(self.kill_methods):
                 print("  »  " + kill_method)
         else:
             print("  »  None found")
@@ -52,7 +52,7 @@ class Monster:
     def print_cure_methods_base(self):
         if self.cure_methods is not None:
             print(Colors.CYAN + "Cure methods:" + Colors.ENDC)
-            for cure in self.cure_methods:
+            for cure in sorted(self.cure_methods):
                 print("  »  " + cure)
 
     def print_all(self):
