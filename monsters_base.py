@@ -2066,6 +2066,9 @@ class MonsterBase:
         return chosen_clues
 
     def print_all_matches(self, selected_clues: List[str]):
+        print(Colors.YELLOW + "\nSelected clues:" + Colors.ENDC)
+        for clue in sorted(selected_clues):
+            print(" *  " + clue)
         monster_clues_dict = {}
         for monster_number, monster in enumerate(self.monsters):
             if monster.clues is not None \

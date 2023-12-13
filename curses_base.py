@@ -471,6 +471,9 @@ class CursesBase:
         return chosen_clues
 
     def print_all_matches(self, selected_clues: List[str]):
+        print(Colors.YELLOW + "\nSelected clues:" + Colors.ENDC)
+        for clue in sorted(selected_clues):
+            print(" *  " + clue)
         curses_clues_dict = {}
         for curse_number, curse in enumerate(self.curses):
             if curse.clues is not None \
