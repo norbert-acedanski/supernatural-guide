@@ -24,9 +24,9 @@ class EventsBase:
                                 if not key.startswith("__")]
 
     def print_events_names(self):
-        sorted_places = sorted([place.name for place in self.events])
+        sorted_events = sorted([event.name for event in self.events])
         print(Colors.RED + Colors.BOLD + "All events:" + Colors.ENDC)
-        for place in sorted_places:
+        for place in sorted_events:
             print(" *  " + place)
 
     def print_all_sorted_clues(self):
@@ -36,5 +36,5 @@ class EventsBase:
             print(" »%5d  " % clue_number + clue)
 
     def print_all_events(self):
-        for place in self.events:
-            place.print_all()
+        for event in sorted(self.events, key=lambda event: event.name):
+            event.print_all()

@@ -485,7 +485,7 @@ class CursesBase:
             print("")
 
     def print_all_curses(self):
-        for curse in self.curses:
+        for curse in sorted(self.curses, key=lambda curse: curse.name):
             curse.print_all()
 
     def print_curses_names(self):

@@ -483,5 +483,5 @@ class ObjectsBase:
             print(" *  " + obj)
 
     def print_all_objects(self):
-        for obj in self.objects:
+        for obj in sorted(self.objects, key=lambda obj: obj.name):
             obj.print_all()

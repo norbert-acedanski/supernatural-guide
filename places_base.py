@@ -81,5 +81,5 @@ class PlacesBase:
             print(" *  " + place)
 
     def print_all_places(self):
-        for place in self.places:
+        for place in sorted(self.places, key=lambda place: place.name):
             place.print_all()
