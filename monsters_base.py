@@ -2080,7 +2080,7 @@ class MonsterBase:
             print("")
 
     def print_all_monsters(self):
-        for monster in self.monsters:
+        for monster in sorted(self.monsters, key=lambda monster: monster.name):
             monster.print_all()
 
     def print_monsters_names(self):

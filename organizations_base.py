@@ -76,8 +76,8 @@ class OrganizationsBase:
                                     episodes={"S10": [18, 21, 22]})
 
     def __init__(self):
-        self.organizations = [organization for organization in self.__dict__.values() if isinstance(organization,
-                                                                                                    Organization)]
+        self.organizations = [organization for organization in self.__class__.__dict__.values()
+                              if isinstance(organization, Organization)]
 
     def print_organizations_names(self):
         sorted_organizations = sorted([organization.name for organization in self.organizations])
@@ -86,5 +86,5 @@ class OrganizationsBase:
             print(" *  " + organization)
 
     def print_all_organizations(self):
-        for organization in self.organizations:
+        for organization in sorted(self.organizations, key=lambda organization: organization.name):
             organization.print_all()
