@@ -13,16 +13,16 @@ from colors import Colors
 def choose_option():
     chosen_option = 1
     print_values = ["print all monster names", "print all monsters with their attributes",
-                    "print all clues of monsters", "find matching monster",
+                    "print all clues of monsters", "find matching monster", "print monster data by name",
                     "print all curses names",  "print all curses with their attributes",
-                    "print all clues of curses", "find matching curse",
+                    "print all clues of curses", "find matching curse", "print curse data by name",
                     "print all objects names", "print all objects with their attributes",
                     "print all places names", "print all places with their attributes",
                     "print all events names", "print all events with their attributes",
                     "print all organizations names", "print all organizations with their attributes"]
     while chosen_option != 0:
         print(Colors.GREEN + Colors.BOLD + "\nChoose option: " + Colors.ENDC)
-        for option_number, print_value in zip(range(1, 17), print_values):
+        for option_number, print_value in zip(range(1, 19), print_values):
             print(Colors.MAGENTA + str(option_number) + Colors.ENDC + " - " + print_value)
         print(Colors.MAGENTA + "0" + Colors.ENDC + " - exit")
         print(Colors.MAGENTA + "c" + Colors.ENDC + " - clear")
@@ -46,31 +46,37 @@ def choose_option():
                 print("No clues chosen, try again...")
             base_of_monsters.print_all_matches(chosen_clues)
         elif chosen_option == 5:
-            base_of_curses.print_curses_names()
+            name = input("Input monster name: ")
+            base_of_monsters.print_monster_data_by_name(name=name)
         elif chosen_option == 6:
-            base_of_curses.print_all_curses()
+            base_of_curses.print_curses_names()
         elif chosen_option == 7:
-            base_of_curses.print_all_sorted_clues()
+            base_of_curses.print_all_curses()
         elif chosen_option == 8:
+            base_of_curses.print_all_sorted_clues()
+        elif chosen_option == 9:
             base_of_curses.print_all_clues()
             while not (chosen_clues := base_of_curses.choose_clues()):
                 print("No clues chosen, try again...")
             base_of_curses.print_all_matches(chosen_clues)
-        elif chosen_option == 9:
-            base_of_objects.print_objects_names()
         elif chosen_option == 10:
-            base_of_objects.print_all_objects()
+            name = input("Input curse name: ")
+            base_of_curses.print_curse_data_by_name(name=name)
         elif chosen_option == 11:
-            base_of_places.print_places_names()
+            base_of_objects.print_objects_names()
         elif chosen_option == 12:
-            base_of_places.print_all_places()
+            base_of_objects.print_all_objects()
         elif chosen_option == 13:
-            base_of_events.print_events_names()
+            base_of_places.print_places_names()
         elif chosen_option == 14:
-            base_of_events.print_all_events()
+            base_of_places.print_all_places()
         elif chosen_option == 15:
-            base_of_organizations.print_organizations_names()
+            base_of_events.print_events_names()
         elif chosen_option == 16:
+            base_of_events.print_all_events()
+        elif chosen_option == 17:
+            base_of_organizations.print_organizations_names()
+        elif chosen_option == 18:
             base_of_organizations.print_all_organizations()
         elif chosen_option == 0:
             print("Thank you for playing with this project!")

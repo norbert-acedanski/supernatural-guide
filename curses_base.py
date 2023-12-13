@@ -1,3 +1,4 @@
+import difflib
 import re
 from typing import List
 
@@ -493,3 +494,17 @@ class CursesBase:
         print(Colors.RED + Colors.BOLD + "All curses:" + Colors.ENDC)
         for curse in sorted_curses:
             print(" *  " + curse)
+
+    def print_curse_data_by_name(self, name: str):
+        list_of_similarities = {}
+        for curse in self.curses:
+            if curse.name.lower() == name.lower():
+                curse.print_all()
+                break
+            list_of_similarities[curse] = difflib.SequenceMatcher(None, curse.name.lower(), name.lower()).ratio()*100
+        else:
+            print(Colors.RED + Colors.BOLD + f"No curse with name '{name}' found." + Colors.ENDC)
+            closest_curse = [curse for curse, ratio in list_of_similarities.items()
+                             if ratio == max(list(list_of_similarities.values()))][0]
+            print(Colors.BLUE + f"Curse with highest name similarity of {list_of_similarities[closest_curse]:.2f}% is:" + Colors.ENDC)
+            closest_curse.print_all()
