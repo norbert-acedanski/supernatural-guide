@@ -125,7 +125,6 @@ If you are a fan of Supernatural show, you can play with this project to find ou
 - fill missing information about each monster, curse, spell, object, event, etc.
 - add information about all unique monsters, that died in the series until S05E19.
 - add base class not to duplicate methods
-- sort clues and monsters to show to the user
 
 # References:
 - https://supernatural.fandom.com/wiki/Supernatural_Wiki
