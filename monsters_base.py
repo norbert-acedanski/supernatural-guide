@@ -2097,8 +2097,9 @@ class MonsterBase:
                 monster.print_all()
                 break
             list_of_similarities[monster] = difflib.SequenceMatcher(None, monster.name.lower(), name.lower()).ratio()*100
-        print(Colors.RED + Colors.BOLD + f"No monster with name '{name}' found." + Colors.ENDC)
-        closest_monster = [monster for monster, ratio in list_of_similarities.items()
-                           if ratio == max(list(list_of_similarities.values()))][0]
-        print(Colors.BLUE + f"Monster with highest name similarity of {list_of_similarities[closest_monster]:.2f}% is:" + Colors.ENDC)
-        closest_monster.print_all()
+        else:
+            print(Colors.RED + Colors.BOLD + f"No monster with name '{name}' found." + Colors.ENDC)
+            closest_monster = [monster for monster, ratio in list_of_similarities.items()
+                               if ratio == max(list(list_of_similarities.values()))][0]
+            print(Colors.BLUE + f"Monster with highest name similarity of {list_of_similarities[closest_monster]:.2f}% is:" + Colors.ENDC)
+            closest_monster.print_all()
