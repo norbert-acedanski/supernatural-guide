@@ -23,14 +23,15 @@ Python 3.9.10
     - ***7 - print all curses with their attributes*** - prints all curses names, a brief description, episodes, that a monster was seen, possible traces or clues they leave behind, disable and killing methods.
     - ***8 - print all clues for curses*** - prints the list of all the clues, that are currently in the database, that all curses leave behind.
     - ***9 - find matching curse*** - prints the list of all the clues, just like the previous option, but lets you pick all the clues and after that, prints matches with the information of number of hits.
-    - ***10 - print all objects names*** - prints all objects names currently in a database.
-    - ***11 - print all objects with their attributes*** - prints all objects names, a brief description, episodes, that an object was seen, abilities of the object, maintenance and destroy methods (if available).
-    - ***12 - print all places names*** - prints all places names currently in a database.
-    - ***13 - print all places with their attributes*** - prints all places names, a brief description, episodes, that a place was seen and clues.
-    - ***14 - print all events names*** - prints all events names currently in a database.
-    - ***15 - print all events with their attributes*** - prints all events names, a brief description, episodes, that an event was seen, clues and disable methods (if available).
-    - ***16 - print all organizations names*** - prints all organizations names currently in a database.
-    - ***17 - print all organizations with their attributes*** - prints all organizations names, a brief description, episodes, that an organization was seen, knowledge (if available).
+    - ***10 print curse data by name*** - prints curse data by name.
+    - ***11 - print all objects names*** - prints all objects names currently in a database.
+    - ***12 - print all objects with their attributes*** - prints all objects names, a brief description, episodes, that an object was seen, abilities of the object, maintenance and destroy methods (if available).
+    - ***13 - print all places names*** - prints all places names currently in a database.
+    - ***14 - print all places with their attributes*** - prints all places names, a brief description, episodes, that a place was seen and clues.
+    - ***15 - print all events names*** - prints all events names currently in a database.
+    - ***16 - print all events with their attributes*** - prints all events names, a brief description, episodes, that an event was seen, clues and disable methods (if available).
+    - ***17 - print all organizations names*** - prints all organizations names currently in a database.
+    - ***18 - print all organizations with their attributes*** - prints all organizations names, a brief description, episodes, that an organization was seen, knowledge (if available).
     - ***0 - exit*** - end the program
     - ***c - clear*** - clear the screen
 
