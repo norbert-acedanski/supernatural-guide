@@ -460,13 +460,13 @@ class CursesBase:
 
     def print_all_clues(self):
         print(Colors.BOLD + Colors.YELLOW + "\nBase of all clues:" + Colors.ENDC)
-        for clue_number, clue in enumerate(self.clues, 1):
+        for clue_number, clue in enumerate(sorted(self.clues, key=lambda clue: clue.lower()), 1):
             print(" *%5d  " % clue_number + clue)
     
     def choose_clues(self) -> List[str]:
         clues = input(Colors.UNDERLINE + "\nChoose clues:" + Colors.ENDC + " ")
         clues = re.sub('[a-zA-Z,&^%$#@?|/:;"_=]', ' ', clues)
-        chosen_clues = [self.clues[int(clue) - 1] for clue in clues.split()
+        chosen_clues = [sorted(self.clues, key=lambda clue: clue.lower())[int(clue) - 1] for clue in clues.split()
                         if (clue.isdigit() and int(clue) <= len(self.clues))]
         return chosen_clues
 
