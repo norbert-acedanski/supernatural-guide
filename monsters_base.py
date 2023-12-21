@@ -135,7 +135,7 @@ class MonsterBase:
                    MonstersClues.amnesia_blackout, MonstersClues.telekinesis, MonstersClues.can_vanish,
                    MonstersClues.lack_of_body_control, MonstersClues.can_hurt_people_with_a_thought,
                    MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
-                   MonstersClues.animals_dead_weirdly,
+                   MonstersClues.animals_dead_weirdly, MonstersClues.weird_things_behavior,
 
                    MonstersClues.black_blood]
     demon.kill_methods = [MonstersKillMethods.demon_killing_knife, MonstersKillMethods.angel_exorcism,
