@@ -120,7 +120,7 @@ class MonsterBase:
     demon = Monster("Demon", description="In every religion there is information about demonic possessions. Demons are "
                                          "man that were stuck in Hell for a long time. A demon can be cured by "
                                          "Father Thompson's curing ritual.",
-                    episodes={"S01": [4, 21, 22], "S02": [1, 14], "S03": [1, 2, 4, 12, 15, 16],
+                    episodes={"S01": [4, 16, 21, 22], "S02": [1, 14], "S03": [1, 2, 4, 12, 15, 16],
                               "S04": [1, 4, 9, 10, 20, 21, 22], "S05": [1, 6, 10, 12, 14, 17, 20, 21, 22],
                               "S06": [7, 10, 18, 20, 21, 22], "S07": [8, 15, 17, 21, 23],
                               "S08": [1, 2, 7, 10, 17, 19, 21, 22], "S09": [2, 10, 11, 14, 16, 17, 21, 23],
@@ -292,6 +292,13 @@ class MonsterBase:
                      MonstersClues.weird_electronics_behavior]
     shtriga.kill_methods = [MonstersKillMethods.consecrated_wrought_iron_when_it_eats]
 
+    death_omen = Monster("Death omen", description="A spirit, that appears, when somebody will die soon.",
+                         episodes={"S01": [19], "S02": [7]})
+    death_omen.clues = [MonstersClues.invisible_entity, MonstersClues.people_dead_weirdly,
+                        MonstersClues.people_seeing_things_or_figures, MonstersClues.flashing_lights,
+                        MonstersClues.weird_electronics_behavior]
+    death_omen.disable_methods = [MonstersDisableMethods.bring_the_spirit_what_it_wants]
+
     vampire = Monster("Vampire", description="They were once people. They need fresh human blood to survive. "
                                              "A coss will not repel them, sunlight will not kill them. Neither will a "
                                              "stake to the heart. Vampires nest in groups 8 to 10. Smaller packs are "
@@ -340,13 +347,6 @@ class MonsterBase:
                                 MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area]
     resurrected_person.disable_methods = [MonstersDisableMethods.silver_or_silver_bullets]
     resurrected_person.kill_methods = [MonstersKillMethods.nail_it_back_to_the_grave]
-
-    death_omen = Monster("Death omen", description="A spirit, that appears, when somebody will die soon.",
-                         episodes={"S02": [7]})
-    death_omen.clues = [MonstersClues.invisible_entity, MonstersClues.people_dead_weirdly,
-                        MonstersClues.people_seeing_things_or_figures, MonstersClues.flashing_lights,
-                        MonstersClues.weird_electronics_behavior]
-    death_omen.disable_methods = [MonstersDisableMethods.bring_the_spirit_what_it_wants]
 
     hell_hound = Monster("Hell Hound", description="Creation of God, but they were too vicious, so God kept them "
                                                    "short. Now they hunt people that sold their souls. According the "
