@@ -41,6 +41,8 @@ If you are a fan of Supernatural show, you can play with this project to find ou
 # Fun Facts (with spoilers):
 - Sam has a chronic fear of clowns
 - Dean has a chronic fear of snakes
+- Castiel is mentioned at the end of S03E06 in a spell to summon the captain of the Espírito Santo
+- based on S04E03 Sam and Dean got their names from their Grandparents on Mom's site (Deanna and Samuel)
 - Castiel broke the Fourth wall in S06E20
 - Metatron broke the fourth wall in S09E18
 - Deans Blood type is 0 based on S10E03
