@@ -10,11 +10,11 @@ from colors import Colors
 class MonsterBase:
     # ---------------------------------------------------- SEASON 1 ----------------------------------------------------
 
-    prince_of_hell = Monster("Prince of Hell", description="Azazel - the yellow eyed demon that made people with "
-                                                           "abilities, Ramiel, Asmodeus, Dagon. The oldest of old "
-                                                           "demons. One generation after Lilith. They were turned by "
-                                                           "Lucyfer himself before the Atlantis drowned. They were "
-                                                           "trained to be demonic generals in the war against Heaven. "
+    prince_of_hell = Monster("Prince of Hell", description="The oldest of old demons. One generation after Lilith. "
+                                                           "They were turned by Lucyfer himself before the Atlantis "
+                                                           "drowned. They were trained to be demonic generals in the "
+                                                           "war against Heaven. Azazel - the yellow eyed demon that "
+                                                           "made people with abilities, Ramiel, Asmodeus, Dagon. "
                                                            "Azazel was killed by Dean. Ramiel is the second Prince "
                                                            "Winchesters encounter. Dagon appears in S12E13. She is "
                                                            "mostly known for her psychotic savagery. Dagon is killed "
