@@ -84,12 +84,44 @@ class ObjectDestroyMethods:
 
 
 class JohnWinchesterJournal:
+    entry_to_dean_and_about_woman_in_white = "entry to Dean (35-111 - coordinates to the Wendigo hunt)"
+    entry_about_wendigo = "entry about Wendigo (Drawing of one and symbols, that they cannot cross)"
+    exorcism_for_demons = "exorcism for demons"
+    photo_and_entry_about_missouri = "photo of the Winchester family beside their old house and a tree + entry about " \
+                                     "psychic Missouri Mosley (I went to Missouri and I learned the truth)"
+    entry_about_dead_teenagers_in_roosevelt_asylum = "entry about teenagers, that died in a fire in Roosevelt Asylum"
+    entry_about_possible_area_of_phantom_attacks = "entry about marked area of possible phantom attacker " \
+                                                   "(and details about them)"
+    entry_about_murders_in_new_york = "entry about three exact same murders in upstate New York. First on in 1912, " \
+                                      "second in 1945, the last one in 1970"
+    entry_about_elkins = "entry about Daniel Elkins (970-555-0156), K. Johnson, T. Bradford"
+    entry_about_reapers = "entry about Reapers (that Reapers can alter human perception)"
+    entry_about_werewolf_theory = "werewolf theory - Lycanthropy might have a cure if you kill the werewolf who bit you severing " \
+                      "the bloodline"
+    spell_to_summon_the_captain_of_espirito_santo = "spell to summon the captain of the Espírito Santo"
+    monsters = "monsters (young Sam finds John's Journal and reads about monsters)"
+    entry_about_doc_benton = "entry about Doc Benton (real-life doctor, who lived in New Hampshire, who was obsessed " \
+                             "with alchemy - especially how to live forever)"
+    entries_about_azazel = "entries about Azazel and his strikes (Whitshire farm 1973, Liddy Walsh May 03. 1973)"
+    no_entries = "no entries, only appearance"
     entry_about_johns_other_son = "entry about John's other son (Adam) - Minnesota January of 1990. " \
                                   "John was heading there to check out a case. Next two pages are torn out. " \
                                   "Next entry in September 29th 2004 - One word: Minnesota."
     entry_about_a_skinwalker = "entry about a skinwalker - a drawing and not fully visible description"
+    entry_about_vetala = "entry about Vetala - silver knife to the heart, twist and they're done. There are " \
+                         "maladjusted loner types, like to knock a guy out, drag him home, feed slow."
+    entry_about_cacao = "entry about Cacao - Mayan athletes were treated like kings. The Mayan jocks made sacrifices " \
+                        "to Cacao by killing a victim, pulling out his heart and eating it. They believed the " \
+                        "rituals gave them super-charged power over their opponents."
+    entry_about_werewolfs = "entry about werewolfs - Werewolfs, that are turned up to four generations from " \
+                            "pureblood are less feral and can transform before, during and after the lunar cycle. " \
+                            "Purebloods don't black out during the transformation. They can control themselves. Some " \
+                            "have been able to subsist off of animal hearts."
     entry_about_torturing_a_demon = "entry about torturing a demon, which said, that he made his bones working with " \
                                     "Abaddon, who is a Knight of Hell."
+    entry_about_djins = "entry about Djins, that there is a bastard offshoot. Their eyes light up blue, they pass as " \
+                        "humans, except these leave their victims with jelly-like insides. When they poison their " \
+                        "victims, they leave behind a blue handprint. They die like regular Djin."
     entry_about_killing_a_demon_abaddon_and_locker = "entry about killing a demon, Abaddon and locker " \
                                                      "(080379 with 'T' for Tara under the code)"
     entry_about_jasper_wyoming = "entry about Jasper, Wyoming - it's home to its very own Gate to Hell. This " \
