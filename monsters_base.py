@@ -15,7 +15,7 @@ class MonsterBase:
                                                            "drowned. They were trained to be demonic generals in the "
                                                            "war against Heaven. Azazel - the yellow eyed demon that "
                                                            "made people with abilities, Ramiel, Asmodeus, Dagon. "
-                                                           "Azazel was killed by Dean. Ramiel is the second Prince "
+                                                           "Azazel was killed by Dean in S02E22. Ramiel is the second Prince "
                                                            "Winchesters encounter. Dagon appears in S12E13. She is "
                                                            "mostly known for her psychotic savagery. Dagon is killed "
                                                            "by Castiel and the power of Nephilim in S12E19. Asmodeus "
@@ -54,7 +54,7 @@ class MonsterBase:
                                           "them if they were killed by supernatural. Witnesses can be put to rest "
                                           "by a special spell (has to be cast over an open fire). A Ghost can be bound "
                                           "to an object, place or even electrical signals (like Wi-Fi).",
-                              episodes={"S01": [1, 3, 5, 7, 9, 10, 13, 19], "S02": [6, 11, 16, 18, 19],
+                              episodes={"S01": [1, 3, 5, 7, 9, 10, 13, 19], "S02": [6, 11, 16, 18, 19, 22],
                                         "S03": [5, 6, 13], "S04": [2, 13, 15, 17], "S05": [9, 11], "S06": [4, 14],
                                         "S07": [7, 10, 13, 17, 19], "S09": [7], "S10": [13, 16], "S11": [7, 23],
                                         "S12": [3, 6, 13], "S13": [5, 16], "S14": [4, 12, 13, 20], "S15": [1, 2, 3, 6]})
@@ -120,7 +120,7 @@ class MonsterBase:
     demon = Monster("Demon", description="In every religion there is information about demonic possessions. Demons are "
                                          "man that were stuck in Hell for a long time. A demon can be cured by "
                                          "Father Thompson's curing ritual.",
-                    episodes={"S01": [4, 16, 21, 22], "S02": [1, 14], "S03": [1, 2, 4, 12, 15, 16],
+                    episodes={"S01": [4, 16, 21, 22], "S02": [1, 9, 14, 22], "S03": [1, 2, 4, 12, 15, 16],
                               "S04": [1, 4, 9, 10, 20, 21, 22], "S05": [1, 6, 10, 12, 14, 17, 20, 21, 22],
                               "S06": [7, 10, 18, 20, 21, 22], "S07": [8, 15, 17, 21, 23],
                               "S08": [1, 2, 7, 10, 17, 19, 21, 22], "S09": [2, 10, 11, 14, 16, 17, 21, 23],
@@ -233,7 +233,7 @@ class MonsterBase:
                                                                          "time, a person becomes addicted to it like "
                                                                          "to a drug. With enough power, that person's "
                                                                          "eyes become black as for a demon.",
-                                    episodes={"S01": [14], "S02": [5, 10], "S03": [16],
+                                    episodes={"S01": [14], "S02": [5, 10, 21, 22], "S03": [16],
                                               "S04": [1, 4, 7, 9, 15, 16, 18, 20, 21, 22], "S05": [14, 22]})
     people_with_abilities.clues = [MonstersClues.people_dead_weirdly, MonstersClues.weird_things_behavior,
                                    MonstersClues.telekinesis, MonstersClues.mind_control, MonstersClues.can_see_future,
