@@ -15,13 +15,13 @@ class MonsterBase:
                                                            "drowned. They were trained to be demonic generals in the "
                                                            "war against Heaven. Azazel - the yellow eyed demon that "
                                                            "made people with abilities, Ramiel, Asmodeus, Dagon. "
-                                                           "Azazel was killed by Dean in S02E22. Ramiel is the second Prince "
-                                                           "Winchesters encounter. Dagon appears in S12E13. She is "
-                                                           "mostly known for her psychotic savagery. Dagon is killed "
-                                                           "by Castiel and the power of Nephilim in S12E19. Asmodeus "
-                                                           "appears in S13E02. Prince of Hell can improve his power by "
-                                                           "ingesting Archangel Grace. Asmodeus is killed in S13E18 by "
-                                                           "Archangel Gabriel.",
+                                                           "Azazel was killed by Dean in S02E22. Ramiel is the second "
+                                                           "Prince Winchesters encounter. Dagon appears in S12E13. She "
+                                                           "is mostly known for her psychotic savagery. Dagon is "
+                                                           "killed by Castiel and the power of Nephilim in S12E19. "
+                                                           "Asmodeus appears in S13E02. Prince of Hell can improve his "
+                                                           "power by ingesting Archangel Grace. Asmodeus is killed in "
+                                                           "S13E18 by Archangel Gabriel.",
                              episodes={"S01": [1, 21, 22], "S02": [1, 21, 22], "S04": [3, 22], "S06": [1],
                                        "S12": [12, 13, 17, 19], "S13": [2, 7, 13, 17, 18]})
     # TODO: Check in which episodes does Azazel appear
@@ -55,7 +55,7 @@ class MonsterBase:
                                           "by a special spell (has to be cast over an open fire). A Ghost can be bound "
                                           "to an object, place or even electrical signals (like Wi-Fi).",
                               episodes={"S01": [1, 3, 5, 7, 9, 10, 13, 19], "S02": [6, 11, 16, 18, 19, 22],
-                                        "S03": [5, 6, 13], "S04": [2, 13, 15, 17], "S05": [9, 11], "S06": [4, 14],
+                                        "S03": [5, 6, 13], "S04": [2, 7, 13, 15, 17], "S05": [9, 11], "S06": [4, 14],
                                         "S07": [7, 10, 13, 17, 19], "S09": [7], "S10": [13, 16], "S11": [7, 23],
                                         "S12": [3, 6, 13], "S13": [5, 16], "S14": [4, 12, 13, 20], "S15": [1, 2, 3, 6]})
     vengeful_spirit.clues = [MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
@@ -121,12 +121,12 @@ class MonsterBase:
                                          "man that were stuck in Hell for a long time. A demon can be cured by "
                                          "Father Thompson's curing ritual.",
                     episodes={"S01": [4, 16, 21, 22], "S02": [1, 9, 14, 22], "S03": [1, 2, 4, 9, 12, 15, 16],
-                              "S04": [1, 4, 9, 10, 20, 21, 22], "S05": [1, 6, 10, 12, 14, 17, 20, 21, 22],
-                              "S06": [7, 10, 18, 20, 21, 22], "S07": [8, 15, 17, 21, 23],
-                              "S08": [1, 2, 7, 10, 17, 19, 21, 22], "S09": [2, 10, 11, 14, 16, 17, 21, 23],
-                              "S10": [1, 2, 3, 7, 9, 10, 13, 16, 17, 21], "S11": [1, 3, 6, 9, 10, 14, 15, 18, 22],
-                              "S12": [1, 12, 15, 17, 21], "S13": [2, 7, 8, 12, 13, 17, 18], "S14": [1, 11, 17, 20],
-                              "S15": [1, 2, 3, 8, 13]})
+                              "S04": [1, 2, 3, 4, 9, 10, 12, 15, 16, 20, 21, 22],
+                              "S05": [1, 6, 10, 12, 14, 17, 20, 21, 22], "S06": [7, 10, 18, 20, 21, 22],
+                              "S07": [8, 15, 17, 21, 23], "S08": [1, 2, 7, 10, 17, 19, 21, 22],
+                              "S09": [2, 10, 11, 14, 16, 17, 21, 23], "S10": [1, 2, 3, 7, 9, 10, 13, 16, 17, 21],
+                              "S11": [1, 3, 6, 9, 10, 14, 15, 18, 22], "S12": [1, 12, 15, 17, 21],
+                              "S13": [2, 7, 8, 12, 13, 17, 18], "S14": [1, 11, 17, 20], "S15": [1, 2, 3, 8, 13]})
     demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                    MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
                    MonstersClues.burned_by_holy_water, MonstersClues.reacts_to_gods_name_in_latin,
@@ -171,10 +171,10 @@ class MonsterBase:
     psychic = Monster("Psychic", description="A person, that can read minds, knows past, present and future of people "
                                              "or in general. Senses energies and spirits and can contact dead people "
                                              "(not only spirits, but also the ones in Heaven). Missouri Mosley was "
-                                             "a friend of John Winchester. One of the psychics is Oliver Pryce. "
-                                             "Man of Letters were teaching him how to control his powers. Missouri is "
-                                             "killed by Wraith in S13E03.",
-                      episodes={"S01": [9], "S10": [17], "S12": [4], "S13": [3, 9, 10], "S14": [15]})
+                                             "a friend of John Winchester. Pamela Barnes was a friend Sam, Dean and "
+                                             "Bobby. One of the psychics is Oliver Pryce. Man of Letters were teaching "
+                                             "him how to control his powers. Missouri is killed by Wraith in S13E03.",
+                      episodes={"S01": [9], "S04": [1, 7, 15], "S10": [17], "S12": [4], "S13": [3, 9, 10], "S14": [15]})
     psychic.clues = [MonstersClues.psychic_abilities, MonstersClues.people_acting_weirdly, MonstersClues.telekinesis,
                      MonstersClues.people_dead_weirdly, MonstersClues.can_read_peoples_minds, MonstersClues.no_sulfur,
                      MonstersClues.people_speaking_languages, MonstersClues.headaches, MonstersClues.no_black_fog,
@@ -293,7 +293,7 @@ class MonsterBase:
     shtriga.kill_methods = [MonstersKillMethods.consecrated_wrought_iron_when_it_eats]
 
     death_omen = Monster("Death omen", description="A spirit or a vision, that appears, when somebody will die soon.",
-                         episodes={"S01": [19], "S02": [7], "S03": [6]})
+                         episodes={"S01": [19], "S02": [7], "S03": [6], "S04": [15]})
     death_omen.clues = [MonstersClues.invisible_entity, MonstersClues.people_dead_weirdly,
                         MonstersClues.people_seeing_things_or_figures, MonstersClues.flashing_lights,
                         MonstersClues.weird_electronics_behavior]
@@ -589,9 +589,9 @@ class MonsterBase:
     demon_astaroth.kill_methods = [MonstersKillMethods.demon_killing_knife]
 
     first_demon = Monster("First Demon - Lilith", description="First demon created by Lucifer out of a human soul by "
-                                                              "twisting it. Killed in S04E22. Brought back by GOD in "
-                                                              "S15E05, when Sam and Dean face her. Snapped by "
-                                                              "Archangel Michael in S15E08.",
+                                                              "twisting it. Killed in S04E22 by Sam with powers. "
+                                                              "Brought back by GOD in S15E05, when Sam and Dean face "
+                                                              "her. Snapped by Archangel Michael in S15E08.",
                           episodes={"S03": [12, 16], "S04": [18, 22], "S15": [5, 8]})
     first_demon.clues = [MonstersClues.white_eyes, MonstersClues.yellow_blast, MonstersClues.telekinesis,
                          MonstersClues.unable_to_hurt_people_with_abilities_with_its_yellow_blast,
@@ -650,7 +650,7 @@ class MonsterBase:
                                          "in S07E01, back in S07E17. Castiel is killed by Lucyfer in S12E23 with an "
                                          "Angel Blade and appears again in S13E03 in Empty. Back to Earth in S13E04. "
                                          "It is not possible for an Angel to heal an Archangel.",
-                    episodes={"S04": [1, 2, 7, 9, 10, 15, 16, 18, 20, 21, 22],
+                    episodes={"S04": [1, 2, 3, 7, 9, 10, 15, 16, 18, 20, 21, 22],
                               "S05": [1, 2, 3, 4, 5, 8, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22],
                               "S06": [3, 6, 7, 10, 12, 15, 17, 18, 19, 20, 21, 22], "S07": [1, 17, 20, 21, 23],
                               "S08": [2, 7, 8, 10, 17, 19, 21, 22, 23], "S09": [9, 10, 11, 14, 18, 21, 22, 23],
@@ -740,7 +740,7 @@ class MonsterBase:
                                  MonstersKillMethods.will_of_an_archangel]
 
     demon_alastair = Monster("Demon Alastair", description="A very powerful demon. Tortures souls in Hell. "
-                                                           "Killed in S04E16.",
+                                                           "Killed in S04E16 by Sam with powers.",
                              episodes={"S04": [9, 10, 15, 16]})
     demon_alastair.clues = [MonstersClues.white_eyes, MonstersClues.demon_killing_knife_is_ineffective,
                             MonstersClues.immune_to_extrusion_by_people_with_abilities,
@@ -790,8 +790,18 @@ class MonsterBase:
     prophet.kill_methods = [MonstersKillMethods.will_of_an_angel, MonstersKillMethods.like_any_human]
 
     archangel = Monster("Archangel", description="They are heaven's most terrifying weapon. "
-                                                 "They are fierce and absolute.", episodes={"S04": [18, 22]})
+                                                 "They are fierce and absolute.", episodes={"S04": [22]})
     archangel.clues = [MonstersClues.small_earth_quake, MonstersClues.bright_light]
+
+    archangel_raphael = Monster("Archangel Raphael", description="One of the Archangels of God. Wanted to bring the "
+                                                                 "Apocalypse. Killed by Castiel in S06E22.",
+                                episodes={"S04": [18], "S05": [3], "S06": [3, 15, 20, 22]})
+    archangel_raphael.clues = [MonstersClues.small_earth_quake, MonstersClues.bright_light, MonstersClues.invulnerable,
+                               MonstersClues.can_vanish, MonstersClues.can_hurt_people_with_a_thought,
+                               MonstersClues.telekinesis]
+    archangel_raphael.disable_methods = [MonstersDisableMethods.holy_oil]
+    archangel_raphael.kill_methods = [MonstersKillMethods.archangel_blade,
+                                      MonstersKillMethods.will_of_an_angel_on_soul_juice]
 
     ghoul = Monster("Ghoul", description="Ghoul is a creature, that feeds on dead people. It can take the form of a "
                                          "person that it ate with all memories and thoughts.",
@@ -918,15 +928,6 @@ class MonsterBase:
                           MonstersClues.can_take_form_of_other_people, MonstersClues.can_read_peoples_minds,
                           MonstersClues.can_give_hallucinations]
     horseman_war.disable_methods = [MonstersDisableMethods.demon_killing_knife]
-
-    archangel_raphael = Monster("Archangel Raphael", description="One of the Archangels of God. Wanted to bring the "
-                                                                 "Apocalypse. Killed by Castiel in S06E22.",
-                                episodes={"S05": [3], "S06": [3, 15, 20, 22]})
-    archangel_raphael.clues = [MonstersClues.bright_light, MonstersClues.invulnerable, MonstersClues.telekinesis,
-                               MonstersClues.can_vanish, MonstersClues.can_hurt_people_with_a_thought]
-    archangel_raphael.disable_methods = [MonstersDisableMethods.holy_oil]
-    archangel_raphael.kill_methods = [MonstersKillMethods.archangel_blade,
-                                      MonstersKillMethods.will_of_an_angel_on_soul_juice]
 
     pagan_god_leshii = Monster("Pagan god Leshi", description="Guardian of the forest in Balkan legends. He is "
                                                               "a mischievous god and can take infinite forms. Can only "
