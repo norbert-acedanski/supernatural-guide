@@ -51,13 +51,14 @@ class MonsterBase:
                                           "necromantic summoning rituals. Sometimes it's a spirit of a person, that is "
                                           "in the coma. Ghosts can be forced to rise and keep risen. "
                                           "If it is done with very powerful spell, then a Mark of Witness remains on "
-                                          "them if they were killed by supernatural. Witnesses can be put to rest "
+                                          "them if t hey were killed by supernatural. Witnesses can be put to rest "
                                           "by a special spell (has to be cast over an open fire). A Ghost can be bound "
                                           "to an object, place or even electrical signals (like Wi-Fi).",
                               episodes={"S01": [1, 3, 5, 7, 9, 10, 13, 19], "S02": [6, 11, 16, 18, 19, 22],
-                                        "S03": [5, 6, 13], "S04": [2, 7, 13, 15, 17], "S05": [9, 11], "S06": [4, 14],
-                                        "S07": [7, 10, 13, 17, 19], "S09": [7], "S10": [13, 16], "S11": [7, 23],
-                                        "S12": [3, 6, 13], "S13": [5, 16], "S14": [4, 12, 13, 20], "S15": [1, 2, 3, 6]})
+                                        "S03": [5, 6, 13], "S04": [2, 7, 13, 15, 17], "S05": [9, 11, 12],
+                                        "S06": [4, 14], "S07": [7, 10, 13, 17, 19], "S09": [7], "S10": [13, 16],
+                                        "S11": [7, 23], "S12": [3, 6, 13], "S13": [5, 16], "S14": [4, 12, 13, 20],
+                                        "S15": [1, 2, 3, 6]})
     vengeful_spirit.clues = [MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                              MonstersClues.people_dead_weirdly, MonstersClues.ghost_like_creature,
                              MonstersClues.weird_electronics_behavior, MonstersClues.weird_things_behavior,
@@ -174,7 +175,8 @@ class MonsterBase:
                                              "a friend of John Winchester. Pamela Barnes was a friend Sam, Dean and "
                                              "Bobby. One of the psychics is Oliver Pryce. Man of Letters were teaching "
                                              "him how to control his powers. Missouri is killed by Wraith in S13E03.",
-                      episodes={"S01": [9], "S04": [1, 7, 15], "S10": [17], "S12": [4], "S13": [3, 9, 10], "S14": [15]})
+                      episodes={"S01": [9], "S04": [1, 7, 15], "S05": [16], "S10": [17], "S12": [4], "S13": [3, 9, 10],
+                                "S14": [15]})
     psychic.clues = [MonstersClues.psychic_abilities, MonstersClues.people_acting_weirdly, MonstersClues.telekinesis,
                      MonstersClues.people_dead_weirdly, MonstersClues.can_read_peoples_minds, MonstersClues.no_sulfur,
                      MonstersClues.people_speaking_languages, MonstersClues.headaches, MonstersClues.no_black_fog,
@@ -293,7 +295,7 @@ class MonsterBase:
     shtriga.kill_methods = [MonstersKillMethods.consecrated_wrought_iron_when_it_eats]
 
     death_omen = Monster("Death omen", description="A spirit or a vision, that appears, when somebody will die soon.",
-                         episodes={"S01": [19], "S02": [7], "S03": [6], "S04": [15]})
+                         episodes={"S01": [19], "S02": [7], "S03": [6], "S04": [15], "S05": [9]})
     death_omen.clues = [MonstersClues.invisible_entity, MonstersClues.people_dead_weirdly,
                         MonstersClues.people_seeing_things_or_figures, MonstersClues.flashing_lights,
                         MonstersClues.weird_electronics_behavior]
@@ -651,7 +653,7 @@ class MonsterBase:
                                          "Angel Blade and appears again in S13E03 in Empty. Back to Earth in S13E04. "
                                          "It is not possible for an Angel to heal an Archangel.",
                     episodes={"S04": [1, 2, 3, 7, 9, 10, 15, 16, 18, 20, 21, 22],
-                              "S05": [1, 2, 3, 4, 5, 8, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22],
+                              "S05": [1, 2, 3, 4, 5, 6, 8, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22],
                               "S06": [3, 6, 7, 10, 12, 15, 17, 18, 19, 20, 21, 22], "S07": [1, 17, 20, 21, 23],
                               "S08": [2, 7, 8, 10, 17, 19, 21, 22, 23], "S09": [9, 10, 11, 14, 18, 21, 22, 23],
                               "S10": [1, 2, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22, 23],
@@ -851,7 +853,7 @@ class MonsterBase:
                                MonstersClues.bible_burns_it, MonstersClues.burned_people, MonstersClues.cut_throat,
                                MonstersClues.angel_blade_is_ineffective, MonstersClues.can_eat_angelic_grace,
                                MonstersClues.can_teleport_angels, MonstersClues.can_kill_humans_with_a_thought,
-                               MonstersClues.can_bring_back_dead_people,
+                               MonstersClues.can_bring_back_dead_people, MonstersClues.small_earth_quake,
 
                                MonstersClues.people_burned_on_the_ceiling,
                                MonstersClues.in_true_form_burns_eyes_of_people]
@@ -873,7 +875,7 @@ class MonsterBase:
                                                                    "alternate timeline. Alternate Timeline Michael is "
                                                                    "killed by Jack in S14E14. Michael is killed in "
                                                                    "S15E19 by GOD.",
-                                episodes={"S05": [13, 18, 22], "S13": [2, 7, 14, 22, 23], "S14": [1, 2, 3, 9, 10, 14],
+                                episodes={"S05": [4, 13, 18, 22], "S13": [2, 7, 14, 22, 23], "S14": [1, 2, 3, 9, 10, 14],
                                           "S15": [8, 19]})
     archangel_michael.clues = [MonstersClues.can_put_a_person_to_sleep, MonstersClues.can_erase_and_bring_back_memories,
                                MonstersClues.can_send_people_back_to_their_time, MonstersClues.can_repair_human_body,
@@ -932,7 +934,8 @@ class MonsterBase:
     pagan_god_leshii = Monster("Pagan god Leshi", description="Guardian of the forest in Balkan legends. He is "
                                                               "a mischievous god and can take infinite forms. Can only "
                                                               "be pleased with the blood of his worshippers. He would "
-                                                              "drain them, then stuff their stomachs with seeds.",
+                                                              "drain them, then stuff their stomachs with seeds. "
+                                                              "Killed in S05E05 by Sam.",
                                episodes={"S05": [5]})
     pagan_god_leshii.clues = [MonstersClues.weird_electronics_behavior, MonstersClues.weird_things_behavior,
                               MonstersClues.cold_spots, MonstersClues.can_make_themselves_appear_as_they_like,
