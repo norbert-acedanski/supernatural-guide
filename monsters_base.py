@@ -56,7 +56,7 @@ class MonsterBase:
                                           "to an object, place or even electrical signals (like Wi-Fi).",
                               episodes={"S01": [1, 3, 5, 7, 9, 10, 13, 19], "S02": [6, 11, 16, 18, 19, 22],
                                         "S03": [5, 6, 13], "S04": [2, 7, 13, 15, 17], "S05": [9, 11, 12],
-                                        "S06": [4, 14], "S07": [7, 10, 13, 17, 19], "S09": [7], "S10": [13, 16],
+                                        "S06": [4, 11, 14], "S07": [7, 10, 13, 17, 19], "S09": [7], "S10": [13, 16],
                                         "S11": [7, 23], "S12": [3, 6, 13], "S13": [5, 16], "S14": [4, 12, 13, 20],
                                         "S15": [1, 2, 3, 6]})
     vengeful_spirit.clues = [MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
@@ -123,7 +123,7 @@ class MonsterBase:
                                          "Father Thompson's curing ritual.",
                     episodes={"S01": [4, 16, 21, 22], "S02": [1, 9, 14, 22], "S03": [1, 2, 4, 9, 12, 15, 16],
                               "S04": [1, 2, 3, 4, 9, 10, 12, 15, 16, 20, 21, 22],
-                              "S05": [1, 6, 10, 12, 14, 17, 20, 21, 22], "S06": [7, 10, 18, 20, 21, 22],
+                              "S05": [1, 6, 10, 12, 14, 17, 20, 21, 22], "S06": [7, 10, 18, 19, 20, 21, 22],
                               "S07": [8, 15, 17, 21, 23], "S08": [1, 2, 7, 10, 17, 19, 21, 22],
                               "S09": [2, 10, 11, 14, 16, 17, 21, 23], "S10": [1, 2, 3, 7, 9, 10, 13, 16, 17, 21],
                               "S11": [1, 3, 6, 9, 10, 14, 15, 18, 22], "S12": [1, 12, 15, 17, 21],
@@ -154,7 +154,7 @@ class MonsterBase:
     shapeshifter = Monster("Shapeshifter", description="These creatures can transform themselves into other man or "
                                                        "animals. Can mate with humans (and other Shapeshifters) to "
                                                        "produce Shapeshifter offspring.",
-                           episodes={"S01": [6], "S02": [12], "S04": [5], "S05": [2], "S09": [16, 20], "S10": [6],
+                           episodes={"S01": [6], "S02": [12], "S04": [5], "S06": [2], "S09": [16, 20], "S10": [6],
                                      "S12": [20], "S13": [4, 10], "S15": [10]})
     shapeshifter.clues = [MonstersClues.can_take_form_of_other_people, MonstersClues.skin_left_behind,
                           MonstersClues.being_at_two_places_at_once, MonstersClues.bright_eyes, MonstersClues.no_sulfur,
@@ -308,7 +308,7 @@ class MonsterBase:
                                              "bleeding them for days or weeks. Sometimes nests keep humans alive for "
                                              "years as blood slaves. One can become a vampire, when drinking vampire "
                                              "blood. Upon changing, all senses sharpen.",
-                      episodes={"S01": [20], "S02": [3], "S03": [7], "S05": [3], "S06": [5, 19], "S07": [22],
+                      episodes={"S01": [20], "S02": [3], "S03": [7], "S05": [3], "S06": [5, 7, 10, 19, 20], "S07": [22],
                                 "S08": [1, 2, 5, 7, 9, 10, 18, 19], "S09": [2, 16, 19, 20], "S10": [8, 19, 23],
                                 "S11": [12], "S12": [1, 9, 14], "S13": [11, 21], "S14": [1, 2, 3, 10],
                                 "S15": [4, 10, 14, 20]})
@@ -484,7 +484,7 @@ class MonsterBase:
                                        "minds, sees nightmares after just one touch and can bring those nightmares "
                                        "into the world, that turn to dust, when killed. After the upgrade bullets are "
                                        "less affective.",
-                   episodes={"S02": [20], "S06": [1], "S08": [20], "S09": [20], "S14": [5, 10], "S15": [6, 10]})
+                   episodes={"S02": [20], "S06": [1, 10], "S08": [20], "S09": [20], "S14": [5, 10], "S15": [6, 10]})
     jinn.clues = [MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
                   MonstersClues.blue_eyes, MonstersClues.can_put_a_person_in_wonderland, MonstersClues.feeds_on_blood,
                   MonstersClues.blue_fire_on_its_arms, MonstersClues.poisoned_people, MonstersClues.people_dead_weirdly,
@@ -1122,7 +1122,7 @@ class MonsterBase:
                                                                    "between it and it's babies. Even an elephant "
                                                                    "tranquilizes does not affect it long enough. "
                                                                    "Killed in S06E10.",
-                                 episodes={"S05": [2, 10]})
+                                 episodes={"S06": [2, 10]})
     alpha_shapeshifter.clues = [MonstersClues.people_dead_weirdly, MonstersClues.no_sulfur, MonstersClues.moves_fast,
                                 MonstersClues.missing_babies, MonstersClues.no_emf, MonstersClues.high_strength,
                                 MonstersClues.silver_does_not_affect_it,
@@ -1218,7 +1218,7 @@ class MonsterBase:
                                                          "the Earth 10 000 years ago. Every monster can be traced back "
                                                          "to her. Can talk to every monster, that is alive. "
                                                          "Killed in S06E19.",
-                            episodes={"S06": [12, 16]})
+                            episodes={"S06": [12, 16, 19]})
     mother_of_all.clues = [MonstersClues.people_acting_weirdly, MonstersClues.weird_electronics_behavior,
                            MonstersClues.mind_control, MonstersClues.people_dead_weirdly, MonstersClues.telekinesis,
                            MonstersClues.people_hear_voices, MonstersClues.can_make_themselves_appear_as_they_like,
@@ -1244,7 +1244,7 @@ class MonsterBase:
     possessing_worm.disable_methods = [MonstersDisableMethods.electricity]
     possessing_worm.kill_methods = [MonstersKillMethods.electricity]
 
-    fate = Monster("Fate", description="Sisters Fates (Atropos, two other unknown) from Greek Mythology. "
+    fate = Monster("Fate", description="Sisters Fates (Atropos, Clotho and Lachesis) from Greek Mythology. "
                                        "They are responsible for the way you die.", episodes={"S06": [17]})
     fate.clues = [MonstersClues.weird_things_behavior, MonstersClues.people_dead_weirdly, MonstersClues.no_emf,
                   MonstersClues.bad_luck, MonstersClues.left_gold_thread, MonstersClues.can_stop_time]
