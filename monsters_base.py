@@ -125,7 +125,7 @@ class MonsterBase:
                               "S04": [1, 2, 3, 4, 9, 10, 12, 15, 16, 20, 21, 22],
                               "S05": [1, 6, 10, 12, 14, 17, 20, 21, 22], "S06": [7, 10, 18, 19, 20, 21, 22],
                               "S07": [8, 15, 17, 21, 23], "S08": [1, 2, 7, 10, 17, 19, 21, 22, 23],
-                              "S09": [2, 10, 11, 14, 16, 17, 21, 23], "S10": [1, 2, 3, 7, 9, 10, 13, 16, 17, 21],
+                              "S09": [2, 6, 10, 11, 14, 16, 17, 21, 23], "S10": [1, 2, 3, 7, 9, 10, 13, 16, 17, 21],
                               "S11": [1, 3, 6, 9, 10, 14, 15, 18, 22], "S12": [1, 12, 15, 17, 21],
                               "S13": [2, 7, 8, 12, 13, 17, 18], "S14": [1, 11, 17, 20], "S15": [1, 2, 3, 8, 13]})
     demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
@@ -1344,7 +1344,8 @@ class MonsterBase:
     vetala = Monster("Vetala", description="Similar to vampires, they feed on blood, but have cat eyes. They're "
                                            "maladjusted loner types and feed slow on people. They have a venom, that "
                                            "they inject into victims. They hunt in pairs (almost always). You have to "
-                                           "twist a blade, when stabbed into the heart.", episodes={"S07": [11]})
+                                           "twist a blade, when stabbed into the heart.",
+                     episodes={"S07": [11], "S09": [20]})
     vetala.clues = [MonstersClues.cat_eyes, MonstersClues.blue_eyes, MonstersClues.needle_like_teeth,
                     MonstersClues.no_blood_in_the_body, MonstersClues.animal_like_attack, MonstersClues.high_strength,
                     MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
