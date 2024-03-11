@@ -56,7 +56,7 @@ class MonsterBase:
                                           "to an object, place or even electrical signals (like Wi-Fi).",
                               episodes={"S01": [1, 3, 5, 7, 9, 10, 13, 19], "S02": [6, 11, 16, 18, 19, 22],
                                         "S03": [5, 6, 13], "S04": [2, 7, 13, 15, 17], "S05": [9, 11, 12],
-                                        "S06": [4, 11, 14], "S07": [7, 10, 13, 17, 19], "S09": [7], "S10": [13, 16],
+                                        "S06": [4, 11, 14], "S07": [4, 7, 10, 13, 17, 19], "S09": [7], "S10": [13, 16],
                                         "S11": [7, 23], "S12": [3, 6, 13], "S13": [5, 16], "S14": [4, 12, 13, 20],
                                         "S15": [1, 2, 3, 6]})
     vengeful_spirit.clues = [MonstersClues.missing_or_dead_people_in_similar_way_randomly_across_time_in_the_same_area,
@@ -175,8 +175,8 @@ class MonsterBase:
                                              "a friend of John Winchester. Pamela Barnes was a friend Sam, Dean and "
                                              "Bobby. One of the psychics is Oliver Pryce. Man of Letters were teaching "
                                              "him how to control his powers. Missouri is killed by Wraith in S13E03.",
-                      episodes={"S01": [9], "S04": [1, 7, 15], "S05": [16], "S10": [17], "S12": [4], "S13": [3, 9, 10],
-                                "S14": [15]})
+                      episodes={"S01": [9], "S04": [1, 7, 15], "S05": [16], "S07": [7] , "S10": [17], "S12": [4],
+                                "S13": [3, 9, 10], "S14": [15]})
     psychic.clues = [MonstersClues.psychic_abilities, MonstersClues.people_acting_weirdly, MonstersClues.telekinesis,
                      MonstersClues.people_dead_weirdly, MonstersClues.can_read_peoples_minds, MonstersClues.no_sulfur,
                      MonstersClues.people_speaking_languages, MonstersClues.headaches, MonstersClues.no_black_fog,
@@ -295,7 +295,7 @@ class MonsterBase:
     shtriga.kill_methods = [MonstersKillMethods.consecrated_wrought_iron_when_it_eats]
 
     death_omen = Monster("Death omen", description="A spirit or a vision, that appears, when somebody will die soon.",
-                         episodes={"S01": [19], "S02": [7], "S03": [6], "S04": [15], "S05": [9]})
+                         episodes={"S01": [19], "S02": [7], "S03": [6], "S04": [15], "S05": [9], "S07": [7, 19]})
     death_omen.clues = [MonstersClues.invisible_entity, MonstersClues.people_dead_weirdly,
                         MonstersClues.people_seeing_things_or_figures, MonstersClues.flashing_lights,
                         MonstersClues.weird_electronics_behavior]
@@ -1291,7 +1291,7 @@ class MonsterBase:
                                                  "creation, so he locked them away in Purgatory. Leviathan description "
                                                  "by Franck Devereaux in S07E20, minute 13. "
                                                  "Kill method revealed in S07E20 in the Word of GOD.",
-                        episodes={"S07": [1, 2, 3, 5, 6, 9, 16, 20, 21, 22, 23], "S08": [5, 7], "S10": [19],
+                        episodes={"S07": [1, 2, 3, 5, 6, 9, 10, 16, 20, 21, 22, 23], "S08": [5, 7], "S10": [19],
                                   "S15": [9]})
     leviathan.clues = [MonstersClues.high_strength, MonstersClues.can_posses_an_angel, MonstersClues.black_veins,
                        MonstersClues.black_blood, MonstersClues.moves_in_water, MonstersClues.people_dead_weirdly,
