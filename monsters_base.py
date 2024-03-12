@@ -125,7 +125,7 @@ class MonsterBase:
                               "S04": [1, 2, 3, 4, 9, 10, 12, 15, 16, 20, 21, 22],
                               "S05": [1, 6, 10, 12, 14, 17, 20, 21, 22], "S06": [7, 10, 18, 19, 20, 21, 22],
                               "S07": [8, 15, 17, 21, 23], "S08": [1, 2, 7, 10, 17, 19, 21, 22, 23],
-                              "S09": [2, 6, 10, 11, 14, 16, 17, 21, 23], "S10": [1, 2, 3, 7, 9, 10, 13, 16, 17, 21],
+                              "S09": [2, 6, 10, 11, 14, 16, 17, 21, 23], "S10": [1, 2, 3, 7, 9, 10, 13, 14, 16, 17, 21],
                               "S11": [1, 3, 6, 9, 10, 14, 15, 18, 22], "S12": [1, 12, 15, 17, 21],
                               "S13": [2, 7, 8, 12, 13, 17, 18], "S14": [1, 11, 17, 20], "S15": [1, 2, 3, 8, 13]})
     demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
@@ -376,7 +376,7 @@ class MonsterBase:
                                                                "dirt, black cat cone, ones photo in the center of "
                                                                "a crossroad.",
                                episodes={"S02": [8, 22], "S03": [5, 15], "S04": [9], "S05": [10], "S06": [4],
-                                         "S07": [8], "S08": [19], "S09": [2, 16], "S10": [1, 3, 10, 13], "S11": [15],
+                                         "S07": [8], "S08": [19], "S09": [2, 16], "S10": [1, 3, 10, 14], "S11": [15],
                                          "S12": [6], "S13": [8], "S15": [15]})
     crossroads_demon.clues = [MonstersClues.victims_got_better_at_something_up_to_ten_years_earlier,
                               MonstersClues.red_eyes, MonstersClues.summoned_by_placing_box_in_the_crossroads,
@@ -563,7 +563,7 @@ class MonsterBase:
                                          "Lucyfer. Back in S13E12. Sam kills Rowena in order to close the rip, that "
                                          "GOD opened.",
                     episodes={"S03": [9], "S04": [7, 12], "S05": [7, 12], "S07": [5], "S08": [7, 15],
-                              "S10": [3, 7, 9, 10, 13, 16, 17, 18, 19, 21, 22, 23], "S11": [3, 9, 10, 13, 18, 22, 23],
+                              "S10": [3, 7, 9, 10, 14, 16, 17, 18, 19, 21, 22, 23], "S11": [3, 9, 10, 13, 18, 22, 23],
                               "S12": [2, 3, 8, 11, 13, 20], "S13": [7, 12, 19, 21, 22], "S14": [3, 6, 7, 14, 18],
                               "S15": [2, 3, 6, 8]})
     witch.clues = [MonstersClues.people_dead_weirdly, MonstersClues.hex_bag_hidden_somewhere, MonstersClues.immortal,
@@ -656,7 +656,7 @@ class MonsterBase:
                               "S05": [1, 2, 3, 4, 5, 6, 8, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22],
                               "S06": [3, 6, 7, 10, 12, 15, 17, 18, 19, 20, 21, 22], "S07": [1, 17, 20, 21, 23],
                               "S08": [2, 7, 8, 10, 17, 19, 21, 22, 23], "S09": [9, 10, 11, 14, 18, 21, 22, 23],
-                              "S10": [1, 2, 3, 7, 9, 10, 13, 17, 18, 20, 21, 22, 23],
+                              "S10": [1, 2, 3, 7, 9, 10, 14, 17, 18, 20, 21, 22, 23],
                               "S11": [1, 2, 3, 6, 9, 10, 14, 18, 22, 23],
                               "S12": [1, 2, 3, 7, 8, 9, 10, 12, 13, 15, 19, 23],
                               "S13": [1, 2, 3, 4, 5, 6, 7, 9, 12, 13, 14, 16, 18, 19, 21, 22, 23],
@@ -961,7 +961,7 @@ class MonsterBase:
                             episodes={"S05": [10, 20, 21], "S06": [4, 7, 8, 10, 19, 20, 21, 22],
                                       "S07": [1, 6, 8, 22, 23], "S08": [1, 2, 7, 10, 17, 19, 21, 22, 23],
                                       "S09": [2, 4, 6, 10, 11, 16, 17, 21, 23],
-                                      "S10": [1, 2, 3, 7, 9, 10, 13, 16, 17, 21, 22, 23],
+                                      "S10": [1, 2, 3, 7, 9, 10, 14, 16, 17, 21, 22, 23],
                                       "S11": [1, 2, 3, 6, 9, 10, 14, 15, 18, 22, 23],
                                       "S12": [1, 2, 3, 7, 8, 9, 12, 13, 15, 17, 21, 23]})
     demon_crowley.clues = [MonstersClues.can_vanish, MonstersClues.pact_sealed_with_a_kiss, MonstersClues.telekinesis,
@@ -1592,7 +1592,7 @@ class MonsterBase:
                                        "demons. According to Cain, he killed Abel because he made a deal with Lucyfer. "
                                        "Cain's soul in Hell for Abel's soul in Heaven, but Cain was supposed to be the "
                                        "one that kills Abel. He is Adam and Eve's firstborn. Killed in S10E14.",
-                   episodes={"S09": [11], "S10": [13]})
+                   episodes={"S09": [11], "S10": [14]})
     cain.clues = [MonstersClues.invulnerable, MonstersClues.red_light, MonstersClues.immortal, MonstersClues.can_vanish,
                   MonstersClues.can_appear_out_of_thin_air, MonstersClues.can_take_voice_of_a_demon,
                   MonstersClues.can_exorcise_certain_demons_with_hand_on_forehead, MonstersClues.can_teleport_people,
@@ -1633,6 +1633,10 @@ class MonsterBase:
                                                 MonstersDisableMethods.demonic_handcuffs]
     person_with_mark_of_cain.cure_methods = [MonstersCureMethods.demon_curing_ritual]
 
+    # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
+
+    # ---------------------------------------------------- SEASON 10 ---------------------------------------------------
+
     calliope = Monster("Calliope", description="The Goddess of epic poetry (she is a muse). She is associated with "
                                                "Borage (Starflower). She manifests creatures from the stories she has "
                                                "tuned into. She uses these manifestations to inspire the author and "
@@ -1643,19 +1647,15 @@ class MonsterBase:
                       MonstersClues.can_teleport_people]
     calliope.kill_methods = [MonstersKillMethods.blessed_wooden_stake]
 
-    # ------------------------------------------------ ALL EPISODES DONE -----------------------------------------------
-
-    # ---------------------------------------------------- SEASON 10 ---------------------------------------------------
-
-    soul_versions_people = Monster("Soul versions people",
-                                   description="Two people, that are created out of a good and dark part of the "
-                                               "original person's soul. Can be created by Inner key of Ozz. Good and "
-                                               "Bad versions of a person are connected physically - if one gets hurt, "
-                                               "the other one gets hurt.", episodes={"S10": [11]})
-    soul_versions_people.clues = [MonstersClues.being_at_two_places_at_once, MonstersClues.people_acting_weirdly,
-                                  MonstersClues.no_sulfur, MonstersClues.no_weird_noises]
-    soul_versions_people.disable_methods = [MonstersDisableMethods.use_inner_key_of_ozz_on_them]
-    soul_versions_people.kill_methods = [MonstersKillMethods.like_any_human, MonstersKillMethods.kill_the_other_version]
+    soul_doppelganger = Monster("Soul Doppelgänger",
+                                description="Two people, that are created out of a good and dark part of the original "
+                                            "person's soul. Can be created by Inner key of Ozz. Good and Bad versions "
+                                            "of a person are connected physically - if one gets hurt, the other one "
+                                            "gets hurt.", episodes={"S10": [11]})
+    soul_doppelganger.clues = [MonstersClues.being_at_two_places_at_once, MonstersClues.people_acting_weirdly,
+                               MonstersClues.no_sulfur, MonstersClues.no_weird_noises]
+    soul_doppelganger.disable_methods = [MonstersDisableMethods.use_inner_key_of_ozz_on_them]
+    soul_doppelganger.kill_methods = [MonstersKillMethods.like_any_human, MonstersKillMethods.kill_the_other_version]
 
     wizard_of_ozz = Monster("Wizard of Ozz", description="A dark version of one of the Man of Letters members - Clive "
                                                          "Dillon. He was kidnapped by coven of witches in Ozz and they "
