@@ -126,7 +126,7 @@ class MonsterBase:
                               "S05": [1, 6, 10, 12, 14, 17, 20, 21, 22], "S06": [7, 10, 18, 19, 20, 21, 22],
                               "S07": [8, 15, 17, 21, 23], "S08": [1, 2, 7, 10, 17, 19, 21, 22, 23],
                               "S09": [2, 6, 10, 11, 14, 16, 17, 21, 23], "S10": [1, 2, 3, 7, 9, 10, 13, 14, 16, 17, 21],
-                              "S11": [1, 3, 6, 9, 10, 14, 15, 18, 22], "S12": [1, 12, 15, 17, 21],
+                              "S11": [1, 3, 6, 9, 10, 14, 15, 18, 22], "S12": [1, 2, 12, 15, 17, 21],
                               "S13": [2, 7, 8, 12, 13, 17, 18], "S14": [1, 11, 17, 20], "S15": [1, 2, 3, 8, 13]})
     demon.clues = [MonstersClues.black_eyes, MonstersClues.travels_as_black_fog, MonstersClues.emf,
                    MonstersClues.weird_electronics_behavior, MonstersClues.high_strength, MonstersClues.sulfur,
@@ -295,7 +295,8 @@ class MonsterBase:
     shtriga.kill_methods = [MonstersKillMethods.consecrated_wrought_iron_when_it_eats]
 
     death_omen = Monster("Death omen", description="A spirit or a vision, that appears, when somebody will die soon.",
-                         episodes={"S01": [19], "S02": [7], "S03": [6], "S04": [15], "S05": [9], "S07": [7, 19]})
+                         episodes={"S01": [19], "S02": [7], "S03": [6], "S04": [15], "S05": [9], "S07": [7, 19],
+                                   "S12": [3]})
     death_omen.clues = [MonstersClues.invisible_entity, MonstersClues.people_dead_weirdly,
                         MonstersClues.people_seeing_things_or_figures, MonstersClues.flashing_lights,
                         MonstersClues.weird_electronics_behavior]
@@ -564,7 +565,7 @@ class MonsterBase:
                                          "GOD opened.",
                     episodes={"S03": [9], "S04": [7, 12], "S05": [7, 12], "S07": [5], "S08": [7, 15],
                               "S10": [3, 7, 9, 10, 14, 16, 17, 18, 19, 21, 22, 23], "S11": [3, 9, 10, 13, 18, 22, 23],
-                              "S12": [2, 3, 8, 11, 13, 20], "S13": [7, 12, 19, 21, 22], "S14": [3, 6, 7, 14, 18],
+                              "S12": [2, 3, 6, 8, 11, 13, 20], "S13": [7, 12, 19, 21, 22], "S14": [3, 6, 7, 14, 18],
                               "S15": [2, 3, 6, 8]})
     witch.clues = [MonstersClues.people_dead_weirdly, MonstersClues.hex_bag_hidden_somewhere, MonstersClues.immortal,
                    MonstersClues.coin_hidden_somewhere, MonstersClues.weird_electronics_behavior,
