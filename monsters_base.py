@@ -1925,7 +1925,7 @@ class MonsterBase:
 
     bad_place_humanoid_monster = Monster("Bad Place humanoid monster",
                                          description="A humanoid creature, that came from the Bad Place (the place,"
-                                                     " where Kaia went, when she slept).", episodes={"S13": [10],
+                                                     " where Kaia went, when she slept).", episodes={"S13": [9, 10],
                                                                                                      "S15": [12]})
     bad_place_humanoid_monster.clues = [MonstersClues.grey_goo, MonstersClues.claws, MonstersClues.human_like_creature]
 
