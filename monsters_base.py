@@ -311,7 +311,7 @@ class MonsterBase:
                                              "blood. Upon changing, all senses sharpen.",
                       episodes={"S01": [20], "S02": [3], "S03": [7], "S05": [3], "S06": [5, 7, 10, 19, 20], "S07": [22],
                                 "S08": [1, 2, 5, 7, 9, 10, 18, 19], "S09": [2, 16, 19, 20], "S10": [8, 19, 23],
-                                "S11": [12], "S12": [1, 9, 14], "S13": [11, 21], "S14": [1, 2, 3, 10],
+                                "S11": [12], "S12": [1, 9, 14], "S13": [11, 21], "S14": [1, 2, 3, 9, 10],
                                 "S15": [4, 10, 14, 20]})
     vampire.clues = [MonstersClues.ripped_throat, MonstersClues.no_blood_in_the_body, MonstersClues.needle_like_teeth,
                      MonstersClues.moving_in_groups_usually, MonstersClues.invulnerable, MonstersClues.high_strength,
