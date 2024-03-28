@@ -212,7 +212,7 @@ class MonsterBase:
                                            "Death (revealed in S13E05).",
                      episodes={"S01": [12], "S02": [1], "S04": [15], "S05": [10, 21], "S06": [11], "S07": [10],
                                "S08": [19], "S09": [3, 22], "S11": [2, 10, 17, 23], "S12": [6, 9], "S13": [5, 19],
-                               "S14": [10, 20], "S15": [9, 12, 13, 16, 17, 18]})
+                               "S14": [10, 20], "S15": [9, 12, 13, 16, 17, 18, 19]})
     reaper.clues = [MonstersClues.people_dead_weirdly, MonstersClues.people_cured_miraculously,
                     MonstersClues.weird_things_behavior, MonstersClues.people_seeing_things_or_figures,
                     MonstersClues.seen_as_a_person_in_a_suit, MonstersClues.ghost_like_creature,
@@ -1451,7 +1451,8 @@ class MonsterBase:
 
     thule = Monster("Thule", description="Members of The Thule Society. Used blood magic to make themselves almost "
                                          "undead. To kill it you have to break it's neck or shoot it in the head and "
-                                         "burn the body within 12h.", episodes={"S08": [13], "S11": [14], "S12": [5]})
+                                         "burn the body within 12h.", episodes={"S08": [13], "S11": [14], "S12": [5],
+                                                                                "S15": [14]})
     thule.clues = [MonstersClues.weird_fire_spontaneous_combustion, MonstersClues.people_dead_weirdly,
                    MonstersClues.immortal, MonstersClues.invulnerable, MonstersClues.burned_people,
                    MonstersClues.no_sulfur, MonstersClues.no_emf]
