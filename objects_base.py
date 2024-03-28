@@ -7,20 +7,56 @@ class ObjectsBase:
 
     # SEASON 1:
 
-    # TODO: Watch each episode until S04E18 that contains John's journal
     # List of episodes, that the journal appears in:
     # https://supernatural.fandom.com/wiki/John_Winchester%27s_Journal#Appearances
     john_winchesters_journal = Object("John Winchester's Journal",
                                       description="A journal of John Winchester, that contains a lot information about "
-                                                  "monsters in Supernatural Universe.",
-                                      episodes={"S01": [], "S04": [19], "S06": [1, 8, 12], "S07": [8, 11],
-                                                "S08": [8, 12], "S09": [11], "S12": [2, 3], "S13": [9], "S15": [20]})
-    john_winchesters_journal._information = {"S04E19": JohnWinchesterJournal.entry_about_johns_other_son,
+                                                  "monsters in Supernatural Universe. According to Sam from S01E01 "
+                                                  "John doesn't go anywhere without it.",
+                                      episodes={"S01": [1, 2, 4, 9, 10, 15, 19, 20], "S02": [1, 8, 17],
+                                                "S03": [6, 8, 15], "S04": [3, 15, 19], "S05": [1, 3], "S06": [1, 8, 12],
+                                                "S07": [11, 12, 14, 18], "S08": [3, 4, 8, 12, 20], "S09": [11],
+                                                "S12": [2, 3, 9], "S13": [2, 9], "S14": [5, 19], "S15": [14, 20]})
+    john_winchesters_journal._information = {"S01E01": JohnWinchesterJournal.entry_to_dean_and_about_woman_in_white,
+                                             "S01E02": JohnWinchesterJournal.entry_about_wendigo,
+                                             "S01E04": JohnWinchesterJournal.exorcism_for_demons,
+                                             "S01E09": JohnWinchesterJournal.photo_and_entry_about_missouri,
+                                             "S01E10": JohnWinchesterJournal.entry_about_dead_teenagers_in_roosevelt_asylum,
+                                             "S01E15": JohnWinchesterJournal.entry_about_possible_area_of_phantom_attacks,
+                                             "S01E19": JohnWinchesterJournal.entry_about_murders_in_new_york,
+                                             "S01E20": JohnWinchesterJournal.entry_about_elkins,
+                                             "S02E01": JohnWinchesterJournal.entry_about_reapers,
+                                             "S02E08": JohnWinchesterJournal.exorcism_for_demons,
+                                             "S02E17": JohnWinchesterJournal.entry_about_werewolf_theory,
+                                             "S03E06": JohnWinchesterJournal.spell_to_summon_the_captain_of_espirito_santo,
+                                             "S03E08": JohnWinchesterJournal.monsters,
+                                             "S03E15": JohnWinchesterJournal.entry_about_doc_benton,
+                                             "S04E03": JohnWinchesterJournal.entries_about_azazel,
+                                             "S04E15": JohnWinchesterJournal.no_entries,
+                                             "S04E19": JohnWinchesterJournal.entry_about_johns_other_son,
+                                             "S05E01": JohnWinchesterJournal.no_entries,
+                                             "S05E03": JohnWinchesterJournal.no_entries,
+                                             "S06E01": JohnWinchesterJournal.no_entries,
+                                             "S06E08": JohnWinchesterJournal.no_entries,
                                              "S06E12": JohnWinchesterJournal.entry_about_a_skinwalker,
+                                             "S07E11": JohnWinchesterJournal.entry_about_vetala,
+                                             "S07E12": JohnWinchesterJournal.no_entries,
+                                             "S07E14": JohnWinchesterJournal.no_entries,
+                                             "S07E18": JohnWinchesterJournal.no_entries,
+                                             "S08E03": JohnWinchesterJournal.entry_about_cacao,
+                                             "S08E04": JohnWinchesterJournal.entry_about_werewolfs,
+                                             "S08E08": JohnWinchesterJournal.no_entries,
                                              "S08E12": JohnWinchesterJournal.entry_about_torturing_a_demon,
+                                             "S08E20": JohnWinchesterJournal.entry_about_djins,
                                              "S09E11": JohnWinchesterJournal.entry_about_killing_a_demon_abaddon_and_locker,
+                                             "S12E02": JohnWinchesterJournal.no_entries,
+                                             "S12E03": JohnWinchesterJournal.no_entries,
+                                             "S12E09": JohnWinchesterJournal.no_entries,
                                              "S13E02": JohnWinchesterJournal.entry_about_jasper_wyoming,
                                              "S13E09": JohnWinchesterJournal.entry_about_dream_walkers,
+                                             "S14E05": JohnWinchesterJournal.no_entries,
+                                             "S14E19": JohnWinchesterJournal.no_entries,
+                                             "S15E14": JohnWinchesterJournal.no_entries,
                                              "S15E20": JohnWinchesterJournal.entry_about_kidnappings}
 
     colt_of_colt = Object("Colt of Colt", description="Colt made by Samuel Colt in 1835, when Halley's Comet was "

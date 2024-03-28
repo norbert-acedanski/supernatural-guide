@@ -41,6 +41,8 @@ If you are a fan of Supernatural show, you can play with this project to find ou
 # Fun Facts (with spoilers):
 - Sam has a chronic fear of clowns
 - Dean has a chronic fear of snakes
+- Castiel is mentioned at the end of S03E06 in a spell to summon the captain of the Espírito Santo
+- based on S04E03 Sam and Dean got their names from their Grandparents on Mom's site (Deanna and Samuel)
 - Castiel broke the Fourth wall in S06E20
 - Metatron broke the fourth wall in S09E18
 - Deans Blood type is 0 based on S10E03
@@ -119,12 +121,9 @@ If you are a fan of Supernatural show, you can play with this project to find ou
 - The Supernatural crew can be seen at the end of S15E20
 
 # TODO:
-- fill missing appearances of John Winchester's Journal until S04E19.
 - add devil's trap to objects from all episodes
 - add disable methods for objects like sigils (that can be disabled by breaking the integrity of the drawing)
-- fill missing information about each monster, curse, spell, object, event, etc.
 - add information about all unique monsters, that died in the series until S05E19.
-- add base class not to duplicate methods
 
 # References:
 - https://supernatural.fandom.com/wiki/Supernatural_Wiki
