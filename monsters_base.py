@@ -43,7 +43,8 @@ class MonsterBase:
                                    MonstersKillMethods.lance_of_archangel_michael,
                                    MonstersKillMethods.will_of_a_nephilim, MonstersKillMethods.will_of_an_archangel]
 
-    vengeful_spirit = Monster("Vengeful Spirit or Ghost (Bloody Mary, Hook Man)",
+    vengeful_spirit = Monster("Vengeful Spirit or Ghost (Bloody Mary - killed in S01E05 by Dean, Hook Man - "
+                              "killed in S01E07)",
                               description="Appears, when somebody died tragically, committed suicide or was killed "
                                           "violently. Usually bound to a place or to things. Ghost can occasionally "
                                           "possess people. When they do, sometimes they can travel for a while before "
@@ -508,7 +509,8 @@ class MonsterBase:
 
     seven_deadly_sins = Monster("Seven deadly sins", description="In 1589 Binsfeld's classification of demons, he IDd "
                                                                  "all of them not just as human vices but "
-                                                                 "as actual devils.", episodes={"S03": [1]})
+                                                                 "as actual devils. Some of them are killed in S03E11.",
+                                episodes={"S03": [1]})
     seven_deadly_sins.clues = [MonstersClues.black_eyes, MonstersClues.mind_control, MonstersClues.no_emf,
                                MonstersClues.burned_by_holy_water, MonstersClues.travels_as_black_fog,
                                MonstersClues.people_acting_weirdly, MonstersClues.people_dead_weirdly,
@@ -764,9 +766,10 @@ class MonsterBase:
                    MonstersClues.real_appearance_can_be_seen_in_a_reflection_or_camera]
     siren.kill_methods = [MonstersKillMethods.its_own_venom]
 
-    angel_zachariah = Monster("Angel Zachariah", description="High Tier Angel. Died in S05E18. Zachariah from the "
-                                                             "alternate timeline appears in S13E14 and is killed in "
-                                                             "the same episode by Jack.",
+    angel_zachariah = Monster("Angel Zachariah", description="High Tier Angel. Killed in S05E18 by Dean. "
+                                                             "Zachariah from the alternate timeline appears in S13E14 "
+                                                             "and is killed in the same episode by Jack + in S14E13 "
+                                                             "and is killed by Sam.",
                               episodes={"S04": [17, 18, 22], "S05": [1, 4, 16, 18], "S13": [14], "S14": [13]})
     angel_zachariah.clues = [MonstersClues.can_put_people_into_alternate_timelines, MonstersClues.can_repair_human_body,
                              MonstersClues.can_erase_and_bring_back_memories, MonstersClues.can_appear_out_of_thin_air,
@@ -1047,7 +1050,8 @@ class MonsterBase:
     false_prophet = Monster("False Prophet", description="False Prophet rises, when Lucifer walks the Earth. Book of "
                                                          "Revelations calls her 'The Whore of Babylon'. Her goal is to "
                                                          "drag as many souls to Hell as possible. Can only be killed "
-                                                         "by a true servant of heaven (like a devoted priest).",
+                                                         "by a true servant of heaven (like a devoted priest). Killed "
+                                                         "in S05E17.",
                             episodes={"S05": [17]})
     false_prophet.clues = [MonstersClues.can_read_peoples_minds, MonstersClues.can_take_form_of_other_people,
                            MonstersClues.can_see_future, MonstersClues.telekinesis, MonstersClues.can_control_demons,
