@@ -43,7 +43,8 @@ class MonsterBase:
                                    MonstersKillMethods.lance_of_archangel_michael,
                                    MonstersKillMethods.will_of_a_nephilim, MonstersKillMethods.will_of_an_archangel]
 
-    vengeful_spirit = Monster("Vengeful Spirit or Ghost (Bloody Mary, Hook Man)",
+    vengeful_spirit = Monster("Vengeful Spirit or Ghost (Bloody Mary - killed in S01E05 by Dean, Hook Man - "
+                              "killed in S01E07)",
                               description="Appears, when somebody died tragically, committed suicide or was killed "
                                           "violently. Usually bound to a place or to things. Ghost can occasionally "
                                           "possess people. When they do, sometimes they can travel for a while before "
