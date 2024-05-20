@@ -509,7 +509,8 @@ class MonsterBase:
 
     seven_deadly_sins = Monster("Seven deadly sins", description="In 1589 Binsfeld's classification of demons, he IDd "
                                                                  "all of them not just as human vices but "
-                                                                 "as actual devils.", episodes={"S03": [1]})
+                                                                 "as actual devils. Some of them are killed in S03E11.",
+                                episodes={"S03": [1]})
     seven_deadly_sins.clues = [MonstersClues.black_eyes, MonstersClues.mind_control, MonstersClues.no_emf,
                                MonstersClues.burned_by_holy_water, MonstersClues.travels_as_black_fog,
                                MonstersClues.people_acting_weirdly, MonstersClues.people_dead_weirdly,
